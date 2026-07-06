@@ -20,7 +20,7 @@ from tools.unicode_registry import read_jsonl
 
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_CACHE = ROOT / ".cache" / "unicode-docs"
-USER_AGENT = "mojidata-llm-wiki/0.1 (+https://unicode.org/)"
+USER_AGENT = "mojidata-llm-wiki/0.1 (+https://github.com/mandel59/mojidata-llm-wiki)"
 
 
 def safe_name(value: str) -> str:

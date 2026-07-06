@@ -25,7 +25,7 @@ from tools.unicode_registry import (
 DEFAULT_CONFIG = ROOT / "config" / "registries.json"
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_CACHE = ROOT / ".cache" / "unicode-registry"
-USER_AGENT = "mojidata-llm-wiki/0.1 (+https://unicode.org/)"
+USER_AGENT = "mojidata-llm-wiki/0.1 (+https://github.com/mandel59/mojidata-llm-wiki)"
 
 
 def fetch_text(url: str, cache_dir: Path, offline: bool = False, refresh: bool = False) -> str:
