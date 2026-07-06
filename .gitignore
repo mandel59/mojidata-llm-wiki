@@ -3,6 +3,29 @@
 tmp/
 raw/
 downloads/
+
+# Local editor/app state
+.obsidian/
+**/.obsidian/
+.trash/
+**/.trash/
+
+# Obsidian Folder Notes stubs for top-level wiki directories
+wiki/documents.md
+wiki/families.md
+wiki/meetings.md
+wiki/people.md
+wiki/topics.md
+
+# Obsidian local scratch files at the vault root
+wiki/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md
+wiki/*.base
+wiki/*.canvas
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
 *.pyc
 __pycache__/
-
