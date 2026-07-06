@@ -23,6 +23,7 @@ from tools.unicode_registry import (
 
 
 DEFAULT_CONFIG = ROOT / "config" / "registries.json"
+DEFAULT_DERIVED_DOCUMENTS = ROOT / "config" / "derived_documents.json"
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_CACHE = ROOT / ".cache" / "unicode-registry"
 USER_AGENT = "mojidata-llm-wiki/0.1 (+https://github.com/mandel59/mojidata-llm-wiki)"
@@ -50,11 +51,33 @@ def fetch_text(url: str, cache_dir: Path, offline: bool = False, refresh: bool =
     return text
 
 
+def load_derived_documents(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8") as fh:
+        data = json.load(fh)
+    return data.get("entries", [])
+
+
+def merge_derived_entries(entries: list[dict], registry_key: str, derived_entries: list[dict]) -> list[dict]:
+    existing_entry_ids = {entry["entry_id"] for entry in entries}
+    merged = list(entries)
+    for entry in derived_entries:
+        if entry.get("registry") != registry_key:
+            continue
+        if entry["entry_id"] in existing_entry_ids:
+            continue
+        merged.append(entry)
+        existing_entry_ids.add(entry["entry_id"])
+    return merged
+
+
 def sync_one(
     registry_key: str,
     registry_config: dict,
     catalog_dir: Path,
     cache_dir: Path,
+    derived_entries: list[dict],
     latest_only: bool,
     offline: bool,
     refresh: bool,
@@ -79,6 +102,8 @@ def sync_one(
             }
         )
 
+    register_document_count = len(entries)
+    entries = merge_derived_entries(entries, registry_key, derived_entries)
     entries = dedupe_entries(entries)
     target_dir = catalog_dir / registry_key
     write_jsonl(target_dir / "documents.jsonl", entries)
@@ -87,6 +112,7 @@ def sync_one(
         "registry": registry_key,
         "name": registry_config["name"],
         "latest_only": latest_only,
+        "derived_document_count": len(entries) - register_document_count,
         "document_count": len(entries),
         "registers": registers,
     }
@@ -104,6 +130,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--offline", action="store_true", help="Use cached registry HTML only.")
     parser.add_argument("--refresh", action="store_true", help="Refetch registry HTML even when cached.")
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--derived-documents", type=Path, default=DEFAULT_DERIVED_DOCUMENTS)
     parser.add_argument("--catalog-dir", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--cache-dir", type=Path, default=DEFAULT_CACHE)
     return parser.parse_args(argv)
@@ -112,6 +139,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     config = load_config(args.config)
+    derived_entries = load_derived_documents(args.derived_documents)
     registries = config["registries"]
     selected = registries.keys() if args.registry == "all" else [args.registry]
 
@@ -121,6 +149,7 @@ def main(argv: list[str] | None = None) -> int:
             registries[registry_key],
             args.catalog_dir,
             args.cache_dir,
+            derived_entries,
             args.latest_only,
             args.offline,
             args.refresh,

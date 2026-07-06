@@ -1,0 +1,85 @@
+{
+  "entries": [
+    {
+      "catalog_source": "derived",
+      "date": "",
+      "date_note": "Referenced by IRG N2890 dated 2025-10-10; exact publication date not found in the IRG register.",
+      "display_number": "IRG N2878",
+      "doc_number": "IRG N2878",
+      "document_url": null,
+      "entry_id": "irg-n2878",
+      "provenance": [
+        {
+          "entry_id": "irg-n2878r3",
+          "note": "Listed in the executive summary revision lineage.",
+          "url": "https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf"
+        },
+        {
+          "entry_id": "irg-n2890",
+          "note": "Feedback target named in the title.",
+          "url": "https://www.unicode.org/irg/docs/n2890-IRGN2878Feedback.pdf"
+        }
+      ],
+      "register_url": null,
+      "registry": "irg",
+      "related_links": [],
+      "source": "China & TCA",
+      "status": "referenced",
+      "subject": "Updated proposal to encode CJK Unified Ideographs Components"
+    },
+    {
+      "catalog_source": "derived",
+      "date": "",
+      "date_note": "Referenced by IRG Meeting #66 agenda; exact publication date not found in the IRG register.",
+      "display_number": "IRG N2878R",
+      "doc_number": "IRG N2878R",
+      "document_url": "https://www.unicode.org/irg/docs/n2878r-CJKComponents4IDS.pdf",
+      "entry_id": "irg-n2878r",
+      "provenance": [
+        {
+          "entry_id": "irg-n2899",
+          "note": "Linked from IRG Meeting #66 agenda item 4.19.",
+          "url": "https://www.unicode.org/irg/docs/n2899-ScheduleAgenda.html"
+        },
+        {
+          "entry_id": "irg-n2826",
+          "note": "Reviewed by IRG #65 recommendation M65.23.",
+          "url": "https://www.unicode.org/irg/docs/n2826-Recommendations.pdf"
+        }
+      ],
+      "register_url": null,
+      "registry": "irg",
+      "related_links": [],
+      "source": "China & TCA",
+      "status": "referenced",
+      "subject": "Updated proposal to encode CJK Unified Ideographs Components and CJK Unified Ideographs Jianzi Musical Notation Components"
+    },
+    {
+      "catalog_source": "derived",
+      "date": "",
+      "date_note": "Required by IRG #65 action item for 2025-12-19 and referenced by IRG N2917 dated 2026-03-02; exact publication date not found in the IRG register.",
+      "display_number": "IRG N2878R2",
+      "doc_number": "IRG N2878R2",
+      "document_url": null,
+      "entry_id": "irg-n2878r2",
+      "provenance": [
+        {
+          "entry_id": "irg-n2826",
+          "note": "Action item requests an R2 version by 2025-12-19.",
+          "url": "https://www.unicode.org/irg/docs/n2826-Recommendations.pdf"
+        },
+        {
+          "entry_id": "irg-n2917",
+          "note": "Feedback target named in the title.",
+          "url": "https://www.unicode.org/irg/docs/n2917-IRGN2878R2Feedback.pdf"
+        }
+      ],
+      "register_url": null,
+      "registry": "irg",
+      "related_links": [],
+      "source": "China & TCA",
+      "status": "referenced",
+      "subject": "Final proposal to encode CJK Unified Ideographs Components"
+    }
+  ]
+}
