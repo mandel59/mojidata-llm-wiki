@@ -5,7 +5,7 @@ description: 2026 年の UTC current documents に見える CJK / Unihan / ideog
 slug: recent-utc-cjk-unihan-documents
 kind: topic
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
+documents: [utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-068, utc-l2-26-071, utc-l2-26-072, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-080, utc-l2-26-082, utc-l2-26-083, utc-l2-26-084, utc-l2-26-085, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148, wg2-n5354, irg-n2909]
 status: active
 tags: [utc, cjk, unihan, ideographic, source-data]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -37,9 +37,17 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 ### UTC #187 recommendations が hub になっている
 
-`L2/26-099` は、2026-04-03 の CJK & Unihan Working Group meeting に基づく UTC #187 向け recommendations である。単一の proposal ではなく、public feedback、PRI feedback、document review をまとめ、Unicode Version 18.0 target の consensus / action item を並べる hub 文書になっている。
+[`L2/26-099`](../documents/utc-l2-26-099.md) は、2026-04-03 の CJK & Unihan Working Group meeting に基づく UTC #187 向け recommendations である。単一の proposal ではなく、public feedback、PRI feedback、document review をまとめ、Unicode Version 18.0 target の consensus / action item を並べる hub 文書になっている。
 
 特に `L2/26-099` は、U+2B158 / U+2B25D の `kRSUnicode` / `kTotalStrokes`、Draft UAX #60 の `kSEAL_Rad` / `kSEAL_THXSrc` syntax、PRI #534 に基づく UAX #38 / Unihan data changes、UAX #45 USourceData.txt 追加、V-source representative glyph change、`kJapaneseNewVariant` / `kJapaneseOldVariant` の追加などを扱う。これは UTC 側で CJK / Unihan data maintenance が、IRG source data、Small Seal、U-source、security confusables、variation data と交差していることを示す。
+
+### L2/26-099 の関連文書の構造
+
+`L2/26-099` に直接関係する UTC documents は、UTC #187 の agenda / minutes、Public Review Issues、個別提案文書に分かれる。`L2/26-092` は UTC #187 agenda、`L2/26-093` は minutes であり、`L2/26-099` 自体は CJK & Unihan Working Group から UTC #187 への recommendations である。
+
+関連する個別文書のうち、`L2/26-068`、`L2/26-074`、`L2/26-084` は Unihan database / UAX #38 側の更新である。`L2/26-043`、`L2/26-044`、`L2/26-057`、`L2/26-064`、`L2/26-071`、`L2/26-072`、`L2/26-080`、`L2/26-083`、`L2/26-085` は UAX #45 / U-source additions として reviewed され、UTC-03660 から UTC-03689 までの 30 records が `FutureWS` として accepted になった。`L2/26-073R` は CJK Strokes の 17 standardized variation sequences、`L2/26-082` は CJK confusables review の初回文書で、後続の `L2/26-127` につながる。
+
+`L2/26-099` の一部は WG2 #73 の `WG2 N5354` Recommendation M73.02 に取り込まれた。M73.02 は、`L2/26-099` Section 01、04、07、11、13、19、20、32 を参照して、representative glyph changes、property value changes、CJK Strokes variation sequences を ISO/IEC 10646 CD 側の CJK additions and changes に含めるよう勧告している。
 
 ### UAX #38 / UTS #37 / RSIndex の機械可読データ整備
 
@@ -72,6 +80,10 @@ timestamp: 2026-07-07T00:00:00+09:00
 ## 関連文書
 
 - `L2/26-099` - CJK & Unihan Working Group Recommendations for UTC #187。
+- `L2/26-043`, `044`, `057`, `064`, `071`, `072`, `080`, `083`, `085` - `L2/26-099` Sections 23-31 で reviewed された UAX #45 / U-source additions。
+- `L2/26-068`, `074`, `084` - `L2/26-099` Sections 20-22 で reviewed された UAX #38 / Unihan database documents。
+- `L2/26-073R` - `L2/26-099` Section 32 で reviewed された CJK Strokes standardized variation sequences。
+- `L2/26-082`, `L2/26-127` - CJK confusables review documents。
 - `L2/26-105` - Proposed Update UAX #38 Unicode Han Database。
 - `L2/26-112` - Proposed Update UTS #37 Unicode Ideographic Variation Database。
 - `L2/26-127` - second request for review of CJK confusables。
@@ -80,6 +92,7 @@ timestamp: 2026-07-07T00:00:00+09:00
 - `L2/26-136` - WHITE IDEOGRAPHIC COMMA proposal。
 - `L2/26-147` / `IRG N2961` - U-source horizontal extension。
 - `L2/26-148` - `kTotalStrokes` changes for 458 ideographs。
+- `WG2 N5354` - WG2 #73 recommendations。M73.02 が `L2/26-099` の selected sections を ISO/IEC 10646 CD の CJK additions and changes に取り込む。
 
 ## 関連トピック
 
@@ -99,6 +112,22 @@ timestamp: 2026-07-07T00:00:00+09:00
 ## 出典
 
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
+- `utc-l2-26-043` - <https://www.unicode.org/L2/L2026/26043-uax45-addition.pdf>
+- `utc-l2-26-044` - <https://www.unicode.org/L2/L2026/26044-uax45-japanese-place-names.pdf>
+- `utc-l2-26-057` - <https://www.unicode.org/L2/L2026/26057-additions-uax45.pdf>
+- `utc-l2-26-064` - <https://www.unicode.org/L2/L2026/26064-ideograph-proposal.pdf>
+- `utc-l2-26-068` - <https://www.unicode.org/L2/L2026/26068-v-source-character-u2b8a0.pdf>
+- `utc-l2-26-071` - <https://www.unicode.org/L2/L2026/26071-3-ideographs.pdf>
+- `utc-l2-26-072` - <https://www.unicode.org/L2/L2026/26072-uax45-hosogyo-samuhara.pdf>
+- `utc-l2-26-073r` - <https://www.unicode.org/L2/L2026/26073r-strokes-svs-with-attachment.pdf>
+- `utc-l2-26-074` - <https://www.unicode.org/L2/L2026/26074-two-new-unihan-properties.pdf>
+- `utc-l2-26-080` - <https://www.unicode.org/L2/L2026/26080-1-addition-uax45.pdf>
+- `utc-l2-26-082` - <https://www.unicode.org/L2/L2026/26082-review-cjk-confusables.pdf>
+- `utc-l2-26-083` - <https://www.unicode.org/L2/L2026/26083-5-ideographs.pdf>
+- `utc-l2-26-084` - <https://www.unicode.org/L2/L2026/26084-kMan-feedback.pdf>
+- `utc-l2-26-085` - <https://www.unicode.org/L2/L2026/26085-uax45-abbr.pdf>
+- `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
+- `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
 - `utc-l2-26-127` - <https://www.unicode.org/L2/L2026/26127-2nd-cjk-confusables.pdf>
@@ -107,3 +136,4 @@ timestamp: 2026-07-07T00:00:00+09:00
 - `utc-l2-26-136` - <https://www.unicode.org/L2/L2026/26136-white-ideographic-comma.pdf>
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
+- `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
