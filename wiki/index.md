@@ -24,6 +24,7 @@ okf_version: "0.1"
 - [kIRG_SGSource](topics/kirg-sgsource.md) - Singapore characters を独立した normative IRG source property として扱う提案。
 - [CJKV Components](topics/cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。
+- [CJK Security Confusables](topics/cjk-security-confusables.md) - UTS #39 security data における CJK confusable pairs と CJK WG review。
 
 ## Current Families
 
