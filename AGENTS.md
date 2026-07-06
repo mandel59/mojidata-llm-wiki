@@ -192,7 +192,7 @@ uv run python tools/sync_registries.py --registry all --latest-only
 uv run python tools/check_catalog.py
 ```
 
-広く過去分を取り込むときは `--latest-only` を外す。更新後は `catalog/registries/*/documents.jsonl` と `registers.json` の差分を見る。新規・変更された文書番号だけを `wiki/log.md` に記録する。
+`--latest-only` は既存の full manifest に最新 register の entries だけを差し替え merge する用途で使う。既存 manifest がある状態で過去年分が消える差分、または `document_count` が最新 register だけの件数へ大きく減る差分は異常なのでコミットしない。広く過去分を取り込むときは `--latest-only` を外す。更新後は `catalog/registries/*/documents.jsonl` と `registers.json` の差分を見る。新規・変更された文書番号だけを `wiki/log.md` に記録する。
 
 ### Materialize Documents
 

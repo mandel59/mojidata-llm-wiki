@@ -18,6 +18,7 @@ from tools.unicode_registry import (
     discover_register_urls,
     load_config,
     parse_register_documents,
+    read_jsonl,
     write_jsonl,
 )
 
@@ -72,6 +73,45 @@ def merge_derived_entries(entries: list[dict], registry_key: str, derived_entrie
     return merged
 
 
+def load_register_metadata(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def merge_latest_entries(existing_entries: list[dict], latest_entries: list[dict]) -> list[dict]:
+    latest_ids = {(entry["registry"], entry["entry_id"]) for entry in latest_entries}
+    preserved_entries = [
+        entry
+        for entry in existing_entries
+        if (entry["registry"], entry["entry_id"]) not in latest_ids
+    ]
+    return preserved_entries + latest_entries
+
+
+def merge_register_metadata(existing_metadata: dict | None, latest_registers: list[dict]) -> list[dict]:
+    if not existing_metadata:
+        return latest_registers
+
+    by_url = {
+        register["url"]: dict(register)
+        for register in existing_metadata.get("registers", [])
+    }
+    for register in latest_registers:
+        by_url[register["url"]] = dict(register)
+    return list(by_url.values())
+
+
+def count_derived_entries(entries: list[dict], registry_key: str, derived_entries: list[dict]) -> int:
+    derived_entry_ids = {
+        entry["entry_id"]
+        for entry in derived_entries
+        if entry.get("registry") == registry_key
+    }
+    return sum(1 for entry in entries if entry["entry_id"] in derived_entry_ids)
+
+
 def sync_one(
     registry_key: str,
     registry_config: dict,
@@ -102,17 +142,28 @@ def sync_one(
             }
         )
 
+    fetched_register_document_count = len(entries)
+    target_dir = catalog_dir / registry_key
+    existing_metadata = load_register_metadata(target_dir / "registers.json")
+    existing_entries: list[dict] = []
+    if latest_only:
+        existing_entries = read_jsonl(target_dir / "documents.jsonl")
+        if existing_entries:
+            entries = merge_latest_entries(existing_entries, entries)
+            registers = merge_register_metadata(existing_metadata, registers)
+
     register_document_count = len(entries)
     entries = merge_derived_entries(entries, registry_key, derived_entries)
     entries = dedupe_entries(entries)
-    target_dir = catalog_dir / registry_key
     write_jsonl(target_dir / "documents.jsonl", entries)
 
     metadata = {
         "registry": registry_key,
         "name": registry_config["name"],
-        "latest_only": latest_only,
-        "derived_document_count": len(entries) - register_document_count,
+        "latest_only": bool(latest_only and not existing_entries),
+        "last_sync_latest_only": latest_only,
+        "last_sync_register_document_count": fetched_register_document_count,
+        "derived_document_count": count_derived_entries(entries, registry_key, derived_entries),
         "document_count": len(entries),
         "registers": registers,
     }
