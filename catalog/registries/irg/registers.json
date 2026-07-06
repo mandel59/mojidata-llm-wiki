@@ -1,0 +1,56 @@
+{
+  "document_count": 2981,
+  "latest_only": false,
+  "name": "IRG Document Register",
+  "registers": [
+    {
+      "document_count": 220,
+      "url": "https://www.unicode.org/irg/IRG-curdoc.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-0001.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-0251.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-0501.html"
+    },
+    {
+      "document_count": 249,
+      "url": "https://www.unicode.org/irg/Register-0751.html"
+    },
+    {
+      "document_count": 262,
+      "url": "https://www.unicode.org/irg/Register-1001.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-1251.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-1501.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-1751.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-2001.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-2251.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/irg/Register-2501.html"
+    }
+  ],
+  "registry": "irg"
+}

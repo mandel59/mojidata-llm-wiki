@@ -1,0 +1,34 @@
+{
+  "registries": {
+    "utc": {
+      "kind": "utc",
+      "name": "UTC Document Registry",
+      "root_url": "https://www.unicode.org/L2/",
+      "latest_url": "https://www.unicode.org/L2/L-curdoc.htm",
+      "register_href_patterns": [
+        "L-curdoc\\.htm$",
+        "L\\d{4}/Register-\\d{4}\\.html$"
+      ]
+    },
+    "wg2": {
+      "kind": "wg2",
+      "name": "WG2 Document Registry",
+      "root_url": "https://www.unicode.org/wg2/WG2-registry.html",
+      "latest_url": "https://www.unicode.org/wg2/WG2-curdoc.html",
+      "register_href_patterns": [
+        "WG2-curdoc\\.html$",
+        "Register-\\d{4}\\.html$"
+      ]
+    },
+    "irg": {
+      "kind": "irg",
+      "name": "IRG Document Register",
+      "root_url": "https://www.unicode.org/irg/IRG-register.html",
+      "latest_url": "https://www.unicode.org/irg/IRG-curdoc.html",
+      "register_href_patterns": [
+        "IRG-curdoc\\.html$",
+        "Register-\\d{4}\\.html$"
+      ]
+    }
+  }
+}

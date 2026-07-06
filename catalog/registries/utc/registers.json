@@ -1,0 +1,156 @@
+{
+  "document_count": 11073,
+  "latest_only": false,
+  "name": "UTC Document Registry",
+  "registers": [
+    {
+      "document_count": 149,
+      "url": "https://www.unicode.org/L2/L-curdoc.htm"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1990/Register-1990.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1991/Register-1991.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1992/Register-1992.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1993/Register-1993.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1994/Register-1994.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1995/Register-1995.html"
+    },
+    {
+      "document_count": 0,
+      "url": "https://www.unicode.org/L2/L1996/Register-1996.html"
+    },
+    {
+      "document_count": 290,
+      "url": "https://www.unicode.org/L2/L1997/Register-1997.html"
+    },
+    {
+      "document_count": 427,
+      "url": "https://www.unicode.org/L2/L1998/Register-1998.html"
+    },
+    {
+      "document_count": 391,
+      "url": "https://www.unicode.org/L2/L1999/Register-1999.html"
+    },
+    {
+      "document_count": 437,
+      "url": "https://www.unicode.org/L2/L2000/Register-2000.html"
+    },
+    {
+      "document_count": 488,
+      "url": "https://www.unicode.org/L2/L2001/Register-2001.html"
+    },
+    {
+      "document_count": 474,
+      "url": "https://www.unicode.org/L2/L2002/Register-2002.html"
+    },
+    {
+      "document_count": 455,
+      "url": "https://www.unicode.org/L2/L2003/Register-2003.html"
+    },
+    {
+      "document_count": 433,
+      "url": "https://www.unicode.org/L2/L2004/Register-2004.html"
+    },
+    {
+      "document_count": 386,
+      "url": "https://www.unicode.org/L2/L2005/Register-2005.html"
+    },
+    {
+      "document_count": 407,
+      "url": "https://www.unicode.org/L2/L2006/Register-2006.html"
+    },
+    {
+      "document_count": 423,
+      "url": "https://www.unicode.org/L2/L2007/Register-2007.html"
+    },
+    {
+      "document_count": 431,
+      "url": "https://www.unicode.org/L2/L2008/Register-2008.html"
+    },
+    {
+      "document_count": 425,
+      "url": "https://www.unicode.org/L2/L2009/Register-2009.html"
+    },
+    {
+      "document_count": 476,
+      "url": "https://www.unicode.org/L2/L2010/Register-2010.html"
+    },
+    {
+      "document_count": 451,
+      "url": "https://www.unicode.org/L2/L2011/Register-2011.html"
+    },
+    {
+      "document_count": 391,
+      "url": "https://www.unicode.org/L2/L2012/Register-2012.html"
+    },
+    {
+      "document_count": 243,
+      "url": "https://www.unicode.org/L2/L2013/Register-2013.html"
+    },
+    {
+      "document_count": 304,
+      "url": "https://www.unicode.org/L2/L2014/Register-2014.html"
+    },
+    {
+      "document_count": 343,
+      "url": "https://www.unicode.org/L2/L2015/Register-2015.html"
+    },
+    {
+      "document_count": 385,
+      "url": "https://www.unicode.org/L2/L2016/Register-2016.html"
+    },
+    {
+      "document_count": 442,
+      "url": "https://www.unicode.org/L2/L2017/Register-2017.html"
+    },
+    {
+      "document_count": 346,
+      "url": "https://www.unicode.org/L2/L2018/Register-2018.html"
+    },
+    {
+      "document_count": 405,
+      "url": "https://www.unicode.org/L2/L2019/Register-2019.html"
+    },
+    {
+      "document_count": 294,
+      "url": "https://www.unicode.org/L2/L2020/Register-2020.html"
+    },
+    {
+      "document_count": 248,
+      "url": "https://www.unicode.org/L2/L2021/Register-2021.html"
+    },
+    {
+      "document_count": 290,
+      "url": "https://www.unicode.org/L2/L2022/Register-2022.html"
+    },
+    {
+      "document_count": 286,
+      "url": "https://www.unicode.org/L2/L2023/Register-2023.html"
+    },
+    {
+      "document_count": 278,
+      "url": "https://www.unicode.org/L2/L2024/Register-2024.html"
+    },
+    {
+      "document_count": 275,
+      "url": "https://www.unicode.org/L2/L2025/Register-2025.html"
+    }
+  ],
+  "registry": "utc"
+}

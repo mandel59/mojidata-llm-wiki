@@ -1,0 +1,8 @@
+.cache/
+.tmp/
+tmp/
+raw/
+downloads/
+*.pyc
+__pycache__/
+

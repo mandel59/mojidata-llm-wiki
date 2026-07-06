@@ -1,0 +1,68 @@
+{
+  "document_count": 3641,
+  "latest_only": false,
+  "name": "WG2 Document Registry",
+  "registers": [
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-1750.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-2000.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-2250.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-2500.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-2750.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-3000.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-3250.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-3500.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-3750.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-4000.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-4250.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-4500.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-4750.html"
+    },
+    {
+      "document_count": 250,
+      "url": "https://www.unicode.org/wg2/Register-5000.html"
+    },
+    {
+      "document_count": 141,
+      "url": "https://www.unicode.org/wg2/WG2-curdoc.html"
+    }
+  ],
+  "registry": "wg2"
+}
