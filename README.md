@@ -2,6 +2,8 @@
 
 UTC、WG2、IRG の公開 Document Registry を材料に、Unicode 関連の標準化議論を追うための LLM-Wiki です。
 
+このリポジトリは、Jxck の記事「[Web 標準の議論を LLM-Wiki で追う](https://blog.jxck.io/entries/2026-06-29/tc39-llm-wiki.html)」で紹介されている TC39 LLM-Wiki の考え方を参考に作成しています。
+
 このリポジトリでは、外部取得した HTML/PDF/DOCX/XLSX などの実体は Git に入れません。Git に入れるのは、取得元 URL、文書番号、表題、出典、日付、ローカルキャッシュの再現手順を持つ目録だけです。
 
 ## 基本方針
