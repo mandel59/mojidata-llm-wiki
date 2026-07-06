@@ -53,6 +53,7 @@ IRG Meeting #67 agenda では、IRG #66 の action items として持ち越さ�
 
 ## 関連文書
 
+- [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting #67](../meetings/irg/meeting-67.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)

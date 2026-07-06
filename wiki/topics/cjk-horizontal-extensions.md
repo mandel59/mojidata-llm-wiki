@@ -47,6 +47,7 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 
 ## 関連文書
 
+- [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting #67](../meetings/irg/meeting-67.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)

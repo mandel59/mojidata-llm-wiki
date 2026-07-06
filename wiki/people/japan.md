@@ -6,7 +6,7 @@ slug: japan
 kind: member-body
 bodies: [IRG, WG2]
 documents: [wg2-n5221, irg-n2721, wg2-n5284, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, irg-n2859, irg-n2870, irg-n2934r]
-topics: [irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
+topics: [j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
 tags: [member-body, source, japan, j-source]
 timestamp: 2026-07-06T23:08:00+09:00
 ---
@@ -74,6 +74,7 @@ WG2 Meeting #72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 N
 
 ## 関連トピック
 
+- [J-source and JMJ Source Issues](../topics/j-source.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [SAT](sat.md)
