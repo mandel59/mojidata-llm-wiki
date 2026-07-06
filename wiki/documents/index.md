@@ -21,4 +21,6 @@
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
-- [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì` feedback summary。
+- [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
+- [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。
+- [WG2 N5369](wg2-n5369.md) - ISO/IEC 10646 7th edition CD.4 disposition。
