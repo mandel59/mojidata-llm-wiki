@@ -4,6 +4,7 @@
 
 ## 2026-07-06
 
+- **Refine**: Revised the CJKV Components chronology so `IRG N2878` is dated as `2025-10-10以前` from surrounding evidence instead of a year-only entry, and clarified the `N2878R` / `R2` / `R3` sequence.
 - **Catalog**: Updated registry extraction so primary document URLs can supply revision suffixes and same-number linked `original` / `draft` / `revision` documents are emitted as separate catalog entries. Regenerated UTC and WG2 manifests from the offline registry cache.
 - **Clarify**: Added the role of `IRG N2878` / `IRG N2878R` to [CJKV Components](topics/cjkv-components.md), noting that they are intermediate revisions cited by `IRG N2878R3` and feedback documents rather than standalone catalog entries.
 - **Track**: Expanded [CJKV Components](topics/cjkv-components.md) into a discussion-tracking page covering IRG #63 through #67, IRG N2733R, N2799, N2852, N2878R3, N2890, N2917, WG2 N5358, and the Unicode 19.0 target status. Added source document summaries for the main proposal and feedback documents.
