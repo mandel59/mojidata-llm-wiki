@@ -1,0 +1,33 @@
+---
+title: Kushim Jiang
+slug: kushim-jiang
+kind: person
+bodies: [IRG]
+documents: [irg-n2878r3, irg-n2957]
+topics: [cjkv-components, irg-source-data-and-representative-glyphs]
+tags: [person, components, g-source, feedback]
+---
+
+# Kushim Jiang
+
+## 概要
+
+Kushim Jiang は、この wiki では CJKV Components proposal の author list と、G-source issues feedback の source として記録する。人物ページでは、文書上で確認できる役割に限定して扱う。
+
+## この wiki での関与
+
+| 文書 | 役割 |
+| --- | --- |
+| `IRG N2878R3` | CJK Unified Ideographs Components proposal の author list に含まれる。 |
+| `IRG N2957` | `IRG N2956` への feedback。Extension C の GBK-source glyph / source reference issues への見解を示す。 |
+
+## 関連トピック
+
+- [CJKV Components](../topics/cjkv-components.md)
+- [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
+
+## 出典
+
+- `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
+- `irg-n2957` - <https://www.unicode.org/irg/docs/n2957-IRGN2956Feedback.pdf>
+

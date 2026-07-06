@@ -72,6 +72,15 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 - [WG2 meeting #73](../meetings/wg2/meeting-73.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 
+## 関連人物・組織
+
+- [Michel Suignard](../people/michel-suignard.md)
+- [Richard Cook](../people/richard-cook.md)
+- [WG2](../people/wg2.md)
+- [UTC](../people/utc.md)
+- [China](../people/china.md)
+- [TCA](../people/tca.md)
+
 ## 出典
 
 - `utc-l2-14-242` - <https://www.unicode.org/L2/L2014/14242-n4634.pdf>
@@ -88,4 +97,3 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 - `wg2-n5348` - <https://www.unicode.org/wg2/docs/n5348R-SmallSealFeedback.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>
-
