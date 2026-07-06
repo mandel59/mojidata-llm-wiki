@@ -34,6 +34,7 @@ IRG Meeting #67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid mee
 
 ## 後続確認
 
+- [IRG Meeting #66](meeting-66.md) - #67 agenda の Section 4 は #66 recommendations / action items の follow-up。
 - `IRG N2933` - WS2024 Version 5.0 consolidated comments。`IRG N2935` では agenda に載るが、2026-07-06 の作業時点では文書実体を取得できなかった。
 - `IRG N2929R` - China Horizontal Extension の revised document。`IRG N2909` の action item では 2026-09-25 までに提出予定。
 - `IRG N2952` - Rules for Assigning Radicals。agenda と catalog にはあるが、2026-07-06 の作業時点では文書実体を取得できなかった。
@@ -43,4 +44,3 @@ IRG Meeting #67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid mee
 
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
-

@@ -19,3 +19,7 @@ Created IRG Meeting #67 agenda page and topic pages for IRG Working Set 2024, CJ
 ## [2026-07-06] ingest | People and member body pages
 
 Created initial People pages for core standards bodies, IRG member bodies / sources, and recurring contributors connected to Small Seal Script and IRG Meeting #67 agenda topics.
+
+## [2026-07-06] summarise | IRG Meeting #66
+
+Created an IRG Meeting #66 summary from IRG N2899, N2909, N2910, and N2911, linking the recommendations to WS2024, horizontal extension, source data, kIRG_SGSource, CJKV Components, and indexing rule topics.
