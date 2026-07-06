@@ -4,6 +4,7 @@
 
 ## 2026-07-07
 
+- **Summarise**: Added [UTC Meeting #187](meetings/utc/meeting-187.md) and [UTC Meeting #188](meetings/utc/meeting-188.md), separating published #187 agenda/minutes and working group reports from the #188 Unicode 18.0 content-finalization tracking page.
 - **Ingest**: Added [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) and [L2/26-102](documents/utc-l2-26-102.md), covering the official Unicode 18.0 draft / beta pages, RMG timeline, UCD / UAX / UTS change sources, and ISO/IEC 10646 7th edition synchronization points.
 - **Refine**: Split the time-based Recent UTC CJK and Unihan Documents page into durable concept topics: [Unihan Database Maintenance](topics/unihan-database-maintenance.md), [UAX #45 U-Source Ideographs](topics/uax45-u-source-ideographs.md), [CJK Security Confusables](topics/cjk-security-confusables.md), and [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md).
 - **Ingest**: Added [L2/26-099](documents/utc-l2-26-099.md) as a source document page for CJK & Unihan Working Group Recommendations for UTC #187, and linked its PRI, UAX #45, IRG #66, and WG2 #73 follow-up documents from related topic and meeting pages.

@@ -5,7 +5,7 @@ description: "Unicode 18.0 の変更点を調べるための公式資料と関�
 slug: unicode-18-change-sources
 kind: topic
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, wg2-n5354, irg-n2935]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, wg2-n5354, irg-n2935]
 status: draft-release
 tags: [unicode-18, release, beta, ucd, migration]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -25,9 +25,10 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 2026-04-23 | UTC | `L2/26-102` | UTC #187 で beta content を finalize する予定。 |
 | 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が Unicode 18.0 target の Unihan / UAX #45 / UAX #60 / UTS #39 / chart updates を勧告。 |
 | 2026-04-15 | UTC | `L2/26-102` | RMG が UTC #187 に Unicode 18.0 timeline、beta deliverables、ISO/IEC 10646 7th edition との同期上の変更を報告。 |
+| 2026-04-21/23 | UTC | `L2/26-092`, `L2/26-093` | [UTC Meeting #187](../meetings/utc/meeting-187.md)。Agenda / minutes が Unicode 18.0 beta review authorization と WG reports を束ねる。 |
 | 2026-05-26 | UTC | Unicode 18.0 beta review page | Beta review 開始。beta UCD、delta charts、annex proposed updates、notable issues を公開。 |
 | 2026-07-07 | UTC | Unicode 18.0 beta review page | Beta public review close / feedback snapshot。 |
-| 2026-07-30 | UTC | `L2/26-102` | UTC #188 で 18.0 content finalize 予定。 |
+| 2026-07-30 | UTC | `L2/26-102` | [UTC Meeting #188](../meetings/utc/meeting-188.md) で 18.0 content finalize 予定。2026-07-07 時点で agenda / minutes は未掲載。 |
 | 2026-09-16 | UTC | Unicode 18.0 beta page | 公式 beta page 上の planned release date。 |
 
 ## 主な論点
@@ -62,6 +63,8 @@ WG2 #73 の `WG2 N5354` は、Small Seal、CJK additions and changes、UAX #60 t
 
 - [L2/26-099](../documents/utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187。
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group Report to UTC #187。
+- [UTC Meeting #187](../meetings/utc/meeting-187.md) - Unicode 18.0 beta review authorization と working group reports。
+- [UTC Meeting #188](../meetings/utc/meeting-188.md) - Unicode 18.0 content finalize 予定の tracking page。
 - `L2/26-105` - Proposed Update UAX #38。
 - `L2/26-112` - Proposed Update UTS #37。
 - `WG2 N5354` - WG2 #73 recommendations。
@@ -81,6 +84,8 @@ WG2 #73 の `WG2 N5354` は、Small Seal、CJK additions and changes、UAX #60 t
 - Unicode 18.0.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
+- `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
+- `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
