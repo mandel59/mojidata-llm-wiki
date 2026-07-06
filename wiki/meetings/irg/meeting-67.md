@@ -1,7 +1,7 @@
 ---
 type: Meeting
-title: IRG Meeting #67
-description: 2026-10 Tokyo hybrid IRG Meeting #67 の agenda と主要議題。
+title: "IRG Meeting #67"
+description: "2026-10 Tokyo hybrid IRG Meeting #67 の agenda と主要議題。"
 slug: irg-meeting-67
 kind: meeting
 body: IRG

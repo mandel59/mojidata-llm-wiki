@@ -27,9 +27,9 @@ J-source は、ISO/IEC 10646 / Unicode の CJK Unified Ideographs における J
 | 2024-09-17 | WG2 / IRG | `WG2 N5284` / `IRG N2721` | IRG Convenor が Japan に IRG active member body への復帰を要請。`WG2 N5221` の大規模 horizontal extension は WG2 より IRG review に向く、と位置づける。 |
 | 2024-09-18 | IRG | `IRG N2722` | Yi Bai と Eiso Chan が `WG2 N5221` 後の JMJ horizontal extension について、IDS / glyph shape から複数の issue を指摘。JMJ-016916 / 016917、JMJ-043941、JMJ-046312 / 046313、JMJ-055359 / 055360 などを挙げる。 |
 | 2025-02-18 | WG2 | `WG2 N5296` | CheonHyeong Sim が JMJ-source related glyph issues を提出。code chart generation の font selection により、JK-source / J-source glyphs が HeiseiMincho / MS Mincho から IPAmjMincho へ変わって見える問題を指摘し、Japan NB と WG2 に検討を求める。 |
-| 2025-06-23/27 | WG2 | `WG2 N5301`, `WG2 N5304` | WG2 Meeting #72 が `WG2 N5296` を errata / modification として扱う。Recommendation M72.07 は、Project Editor が `WG2 N5296` に記載された J-source glyph changes を revert するよう勧告する。 |
-| 2025-08-13 | IRG | `IRG N2859` | IRG Convenor が `IRG N2676`、`IRG N2722`、`IRG N2780`、`IRG N2846` などに基づき、`kIRG_JSource` property value と J-source representative glyph changes の disposition を整理し、Japan NB に 2025-09-26 までの feedback を求める。 |
-| 2025-09-25 | IRG | `IRG N2870` | National Body of Japan が `IRG N2859` へ回答。published encoded characters に disunification を適用しない原則を再確認し、U+2A50D、U+5CC0、U+72CA、U+7BF9、U+26B20、U+2F93B、U+21694 の current status を維持すべきと述べる。 |
+| 2025-06-23/27 | WG2 | `WG2 N5301`, `WG2 N5304` | [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md)。WG2 側で chart glyph stability の問題として処理された。 |
+| 2025-08-13 | IRG | `IRG N2859` | [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)。IRG 側で source reference / Unihan data maintenance を含む disposition 案に進んだ。 |
+| 2025-09-25 | IRG | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。Japan NB が符号化済み文字の current status 維持を求めた。 |
 
 ## 主な論点
 
@@ -49,13 +49,11 @@ J-source は、ISO/IEC 10646 / Unicode の CJK Unified Ideographs における J
 
 `WG2 N5296` は、code chart generation における font selection の変更が J-source representative glyph の見え方を変えた問題を扱う。CJK Extension C の JK-source characters と compatibility block の J-source characters で、HeiseiMincho / MS Mincho から IPAmjMincho へ変わった例があり、文書は Japan NB の明確な position を求めている。
 
-WG2 #72 minutes `WG2 N5301` は、Project Editor が `WG2 N5296` の first part に基づく修正に同意したことを記録する。`WG2 N5304` の Recommendation M72.07 は、`WG2 N5296` に記載された J-source glyph changes を revert するよう Project Editor に勧告した。
+WG2 #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。この topic では、JMJ horizontal extension と IRG 側の disposition とは別の chart glyph stability issue として位置づける。
 
 ### disunification と published encoded characters
 
-`IRG N2859` は、U+2A50D、U+5CC0、U+72CA、U+26B20 などについて、`kIRG_JSource` value、representative glyph、`kJapanese`、`kMojiJoho`、`kMorohashi` への影響を含めた変更案を示す。これらは glyph correction だけではなく、既存 code point の identity、horizontal extension、Unihan data maintenance に関わる。
-
-`IRG N2870` は Japan NB の回答として、published encoded characters には disunification を適用しないという原則を示し、`IRG N2859` が検討した複数 code point の current status 維持を求める。したがって、この topic の未決点は「J-source data の整合性を高める変更」と「符号化済み文字の安定性」の衝突である。
+`IRG N2859` の disposition request と `IRG N2870` の Japan NB feedback は、それぞれ [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md) と [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md) に集約する。この topic の未決点は「J-source data の整合性を高める変更」と「符号化済み文字の安定性」の衝突である。
 
 ## 現状
 
@@ -69,6 +67,12 @@ WG2 #72 minutes `WG2 N5301` は、Project Editor が `WG2 N5296` の first part 
 - [WG2 Meeting #72](../meetings/wg2/meeting-72.md) - M72.07 J-source glyph correction。
 - `IRG N2859` - J-source disposition recommendations。
 - `IRG N2870` - Japan NB comment on `IRG N2859`。
+
+## 関連出来事
+
+- [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md)
+- [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)
+- [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)
 
 ## 関連トピック
 

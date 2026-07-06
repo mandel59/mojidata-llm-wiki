@@ -114,7 +114,7 @@ tags: [script, cjk]
 
 ```yaml
 ---
-title: IRG Meeting #66 Recommendations and Action Items
+title: "IRG Meeting #66 Recommendations and Action Items"
 entry_id: irg-n2909
 doc_number: IRG N2909
 registry: irg
@@ -140,7 +140,7 @@ tags: [document, recommendations]
 ---
 type: Event
 title: WG2 M72.07 J-source glyph revert recommendation
-description: WG2 #72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
+description: "WG2 #72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。"
 slug: wg2-m72-07-j-source-glyph-revert
 kind: event
 date: "2025-06-27"

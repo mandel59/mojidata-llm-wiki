@@ -24,9 +24,9 @@ Japan は、この wiki では IRG / WG2 の member body、および `kIRG_JSour
 | 2023-04-24 | `WG2 N5221` | Japan NB が、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に関係する 36,422 characters について、ISO/IEC 10646 の J-column へ JMJ references を追加する horizontal extension を WG2 に提出。 | 近年の WG2 における Japan NB の最大の直接提出。後続文書では、IRG Convenor がこの規模の horizontal extension は IRG で review する方が適切だったと指摘する。 |
 | 2024-09-17 | `IRG N2721` / `WG2 N5284` | IRG Convenor が Japan に IRG active member body への復帰を要請。2019 年に Japan が human resource 不足を理由に IRG Working Set review へ参加しない方針を示した経緯を引用しつつ、balloting phase での comment や large horizontal extension の提出実績を踏まえ、IRG 内で早期に review へ参加する意義を述べる。 | Japan NB の近年の位置づけを示す入口文書。Japan は inactive とされていたが、IRG からは Han ideograph 標準化の expertise を持つ member body として復帰を求められている。 |
 | 2025-02-18 | `WG2 N5296` | CheonHyeong Sim が、JMJ-source / J-source glyph issues を WG2 と Japan NB に提示。Unicode / ISO code chart 生成時の font change により、JK-source characters in CJK Extension C や compatibility block の一部 J-source glyphs が HeiseiMincho / MS Mincho から IPAmjMincho へ変わった問題を指摘する。 | Japan NB の提出ではないが、WG2 が Japan / J-source owner の明確な position を必要とした文書。J-source 管理の実務上の複雑さが表面化している。 |
-| 2025-06-23/27 | `WG2 N5301`, `WG2 N5304` | WG2 Meeting #72 が Niigata, Japan で hybrid 開催。Japan から Shuichi Tashiro、Tamaru Kenzaburo、Tatuso Kobayashi、Takada Tomokazu、Masanori Kusunoki らが参加。Recommendation M72.07 は `WG2 N5296` に基づき、Project Editor に J-source glyph changes の revert を勧告した。 | WG2 側で J-source glyph issue が実際に処理された会合。minutes では Japan の IRG 復帰についても議論され、Japan representative は参加可能性を検討できるが human resources / workload が課題だと述べている。 |
-| 2025-08-13 | `IRG N2859` | IRG Convenor が、`IRG N2676`、`IRG N2722`、`IRG N2780`、`IRG N2846` などに関係する `kIRG_JSource` property value と J-source representative glyph changes の disposition を勧告し、Japan NB に feedback を求める。 | J-source の具体的な保守・変更判断が Japan NB の確認事項として扱われている。Unicode 18.0 Alpha review と ISO/IEC 10646 Seventh Edition synchronization が背景にある。 |
-| 2025-09-25 | `IRG N2870` | National Body of Japan が `IRG N2859` へ回答。published encoded characters には disunification を適用しないという原則を再確認し、U+2A50D、U+5CC0、U+72CA、U+7BF9、U+26B20、U+2F93B、U+21694 の current status を維持すべきと述べる。 | Japan NB の最新の明示的 position。既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
+| 2025-06-23/27 | `WG2 N5301`, `WG2 N5304` | WG2 Meeting #72 が Niigata, Japan で hybrid 開催。[WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) も採択された。 | WG2 側で J-source glyph issue が実際に処理された会合。minutes では Japan の IRG 復帰についても議論され、human resources / workload が課題とされた。 |
+| 2025-08-13 | `IRG N2859` | [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)。 | J-source の具体的な保守・変更判断が Japan NB の確認事項として扱われている。 |
+| 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | Japan NB の最新の明示的 position。既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
 | 2026-04-02 | `IRG N2934R` | IRG Meeting #67 の First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
 
 ## 主な論点
@@ -41,7 +41,7 @@ Japan は、この wiki では IRG / WG2 の member body、および `kIRG_JSour
 
 `WG2 N5296` は、JMJ-source related glyph issues を Japan NB と WG2 に検討依頼した文書である。問題の中心は、code chart generation における J-source font selection の変更により、既存の J-source representative glyphs が意図せず変化して見える点にある。
 
-WG2 Meeting #72 minutes `WG2 N5301` は、この議論を errata / modification の agenda item として扱い、Project Editor が `WG2 N5296` の first part に基づく修正に同意したことを記録している。Recommendation `M72.07` は、`WG2 N5296` に記載された J-source glyph changes を revert するよう Project Editor に勧告した。これは WG2 側で Japan / J-source に関係する最近の具体的な処理結果である。
+WG2 Meeting #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。Japan ページでは、Japan / J-source owner の position が求められた WG2 側の具体的な処理結果として扱う。
 
 ### WG2 #72 Niigata host
 
@@ -53,9 +53,7 @@ WG2 Meeting #72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 N
 
 ### J-source disposition
 
-`IRG N2859` は、複数の J-source glyph / source reference issues について Japan NB の feedback を求める文書である。対象には U+2A50D、U+5CC0、U+72CA、U+7BF9、U+26B20 などが含まれ、`kIRG_JSource`、`kJapanese`、`kMojiJoho`、`kMorohashi` といった Unicode / Unihan data への波及も明示されている。
-
-`IRG N2870` では、Japan NB が「published encoded characters には disunification を適用しない」という原則を示し、`IRG N2859` が検討した複数 code point について current status の維持を求めた。このため、J-source 関連の最近の活動は、単なる glyph correction ではなく、符号化済み文字の安定性と post-encoding correction の境界に関わる。
+`IRG N2859` と `IRG N2870` の経緯は [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md) と [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md) に集約する。Japan ページでは、J-source 関連の最近の活動が単なる glyph correction ではなく、符号化済み文字の安定性と post-encoding correction の境界に関わる点を重視する。
 
 ### 東京開催の IRG #67
 
@@ -71,6 +69,12 @@ WG2 Meeting #72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 N
 - `IRG N2859` - J-source disposition recommendations; Japan NB feedback request。
 - `IRG N2870` - National Body of Japan による `IRG N2859` への comment。
 - `IRG N2934R` - IRG Meeting #67 First Call, Tōkyō, Japan。
+
+## 関連出来事
+
+- [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md)
+- [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)
+- [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)
 
 ## 関連トピック
 
