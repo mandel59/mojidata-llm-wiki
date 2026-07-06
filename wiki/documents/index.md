@@ -4,6 +4,11 @@
 
 ## 一覧
 
+- [IRG N2206](irg-n2206.md) - easily confused ideographs への annotation proposal。
+- [L2/19-282](utc-l2-19-282.md) - `kSpoofingVariant` field の初期 data proposal。
+- [L2/19-328](utc-l2-19-328.md) - `kSpoofingVariant` data と review process の問題提起。
+- [L2/22-133](utc-l2-22-133.md) - `kSpoofingVariant` / `kZVariant` の追加候補。
+- [L2/25-031](utc-l2-25-031.md) - default identifiers 向け common-use Han subset。
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。

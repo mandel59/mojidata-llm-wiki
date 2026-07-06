@@ -4,6 +4,7 @@
 
 ## 2026-07-07
 
+- **Ingest**: Expanded [CJK Security Confusables](topics/cjk-security-confusables.md) with earlier `IRG N2206`, `L2/19-282`, `L2/19-328`, `L2/22-133`, and `L2/25-031` context, connecting UTS #39 confusables to Unihan `kSpoofingVariant` / `kZVariant`, Han identifier policy, and easily confused ideograph annotations.
 - **Ingest**: Tracked [CJK Security Confusables](topics/cjk-security-confusables.md) through `L2/26-082`, `L2/26-086`, `L2/26-099`, and `L2/26-127`, adding source document pages for the first review request, broader mid-priority confusables listing, and second review request.
 - **Summarise**: Added [UTC Meeting #187](meetings/utc/meeting-187.md) and [UTC Meeting #188](meetings/utc/meeting-188.md), separating published #187 agenda/minutes and working group reports from the #188 Unicode 18.0 content-finalization tracking page.
 - **Ingest**: Added [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) and [L2/26-102](documents/utc-l2-26-102.md), covering the official Unicode 18.0 draft / beta pages, RMG timeline, UCD / UAX / UTS change sources, and ISO/IEC 10646 7th edition synchronization points.
