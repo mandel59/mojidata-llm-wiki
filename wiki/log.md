@@ -4,6 +4,7 @@
 
 ## 2026-07-06
 
+- **Ingest**: Added [Japan](people/japan.md) as a member body page from `IRG N2721` / `WG2 N5284`, `IRG N2859`, `IRG N2870`, and `IRG N2934R`, summarising recent Japan NB / J-source activity.
 - **Catalog**: Added derived document entries for `IRG N2878`, `IRG N2878R`, and `IRG N2878R2` with `status: referenced` and provenance, so revision lineage outside IRG register rows remains visible in the catalog.
 - **Refine**: Updated the [CJKV Components](topics/cjkv-components.md) chronology to cite the new `irg-n2878`, `irg-n2878r`, and `irg-n2878r2` catalog entries and their provenance directly.
 - **Refine**: Fetched `IRG N2878R`, recorded its document-header date `2025-10-12` in the derived catalog entry, and replaced relative chronology labels such as `2025-10-10以前` and `2025-12-19期限` in [CJKV Components](topics/cjkv-components.md).

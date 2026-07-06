@@ -11,6 +11,7 @@
 ## Member Bodies / Organizations
 
 - [China](china.md) - G-source と Small Seal / CJKV Components 関連の member body。
+- [Japan](japan.md) - J-source と最近の Japan NB / IRG participation 関連の member body。
 - [TCA](tca.md) - T-source と Small Seal 関連の member body。
 - [UK](uk.md) - UK-source horizontal extension / glyph change 関連の member body。
 - [Vietnam](vietnam.md) - V-source / Nom glyph data 関連の member body。
