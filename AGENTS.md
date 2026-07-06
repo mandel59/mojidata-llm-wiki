@@ -40,6 +40,7 @@ tools/
   check_catalog.py                目録の機械検査
   check_events.py                 event ページと参照整合性の検査
   generate_event_indexes.py       event metadata から index を生成
+  rewrite_event_timelines.py      event metadata から marker block の timeline を更新
   check_okf.py                    wiki の OKF v0.1 互換検査
   unicode_registry.py             Registry parser と共通処理
 .cache/
@@ -225,7 +226,8 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 2. `wiki/events/<slug>.md` に canonical summary を作成する。
 3. 関連する topic / meeting / people / family / document ページでは、重複説明を event link と短い文脈説明へ縮約する。
 4. `uv run python tools/generate_event_indexes.py` で `wiki/events/index.md` を更新する。
-5. `uv run python tools/check_events.py` と `uv run python tools/check_okf.py` を実行する。
+5. timeline を機械更新する場合は `uv run python tools/rewrite_event_timelines.py --topic <slug>` で dry-run し、`<!-- events:start -->` / `<!-- events:end -->` の marker block があるページだけ `--write` で更新する。
+6. `uv run python tools/check_events.py` と `uv run python tools/check_okf.py` を実行する。
 
 ### Query
 
