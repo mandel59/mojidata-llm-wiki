@@ -1,5 +1,5 @@
 {
-  "document_count": 11073,
+  "document_count": 11079,
   "latest_only": false,
   "name": "UTC Document Registry",
   "registers": [
@@ -52,7 +52,7 @@
       "url": "https://www.unicode.org/L2/L2000/Register-2000.html"
     },
     {
-      "document_count": 488,
+      "document_count": 489,
       "url": "https://www.unicode.org/L2/L2001/Register-2001.html"
     },
     {
@@ -108,7 +108,7 @@
       "url": "https://www.unicode.org/L2/L2014/Register-2014.html"
     },
     {
-      "document_count": 343,
+      "document_count": 348,
       "url": "https://www.unicode.org/L2/L2015/Register-2015.html"
     },
     {

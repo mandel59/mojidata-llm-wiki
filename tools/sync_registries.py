@@ -91,7 +91,9 @@ def sync_one(
         "registers": registers,
     }
     target_dir.mkdir(parents=True, exist_ok=True)
-    (target_dir / "registers.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    with (target_dir / "registers.json").open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write(json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True))
+        fh.write("\n")
     return metadata
 
 

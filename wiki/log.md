@@ -4,6 +4,7 @@
 
 ## 2026-07-06
 
+- **Catalog**: Updated registry extraction so primary document URLs can supply revision suffixes and same-number linked `original` / `draft` / `revision` documents are emitted as separate catalog entries. Regenerated UTC and WG2 manifests from the offline registry cache.
 - **Clarify**: Added the role of `IRG N2878` / `IRG N2878R` to [CJKV Components](topics/cjkv-components.md), noting that they are intermediate revisions cited by `IRG N2878R3` and feedback documents rather than standalone catalog entries.
 - **Track**: Expanded [CJKV Components](topics/cjkv-components.md) into a discussion-tracking page covering IRG #63 through #67, IRG N2733R, N2799, N2852, N2878R3, N2890, N2917, WG2 N5358, and the Unicode 19.0 target status. Added source document summaries for the main proposal and feedback documents.
 - **Migration**: Converted the wiki to an OKF v0.1 bundle structure by adding [index](index.md), replacing README stubs with directory indexes, and adding OKF concept metadata.

@@ -1,22 +1,22 @@
 {
-  "document_count": 3641,
+  "document_count": 3667,
   "latest_only": false,
   "name": "WG2 Document Registry",
   "registers": [
     {
-      "document_count": 250,
+      "document_count": 254,
       "url": "https://www.unicode.org/wg2/Register-1750.html"
     },
     {
-      "document_count": 250,
+      "document_count": 254,
       "url": "https://www.unicode.org/wg2/Register-2000.html"
     },
     {
-      "document_count": 250,
+      "document_count": 251,
       "url": "https://www.unicode.org/wg2/Register-2250.html"
     },
     {
-      "document_count": 250,
+      "document_count": 260,
       "url": "https://www.unicode.org/wg2/Register-2500.html"
     },
     {
@@ -52,11 +52,11 @@
       "url": "https://www.unicode.org/wg2/Register-4500.html"
     },
     {
-      "document_count": 250,
+      "document_count": 253,
       "url": "https://www.unicode.org/wg2/Register-4750.html"
     },
     {
-      "document_count": 250,
+      "document_count": 254,
       "url": "https://www.unicode.org/wg2/Register-5000.html"
     },
     {

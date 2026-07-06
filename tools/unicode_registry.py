@@ -78,10 +78,16 @@ class RegistryHTMLParser(HTMLParser):
             self._row_cells = None
 
 
-UTC_DOC_RE = re.compile(r"^L2/(\d{2})-(\d{3})(R\d*)?$", re.IGNORECASE)
-WG2_DOC_RE = re.compile(r"^(?:WG2\s*)?N?(\d{3,4})(R\d*)?$", re.IGNORECASE)
-IRG_DOC_RE = re.compile(r"^IRG\s+N(\d{3,4})(R\d*)?(?:\s+\(unused\))?$", re.IGNORECASE)
+UTC_REVISION_SUFFIX_RE = r"R[0-9A-Z]*"
+NUMBERED_REVISION_SUFFIX_RE = r"R\d*"
+UTC_DOC_RE = re.compile(rf"^L2/(\d{{2}})-(\d{{3}})({UTC_REVISION_SUFFIX_RE})?$", re.IGNORECASE)
+WG2_DOC_RE = re.compile(rf"^(?:WG2\s*)?N?(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?$", re.IGNORECASE)
+IRG_DOC_RE = re.compile(rf"^IRG\s+N(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?:\s+\(unused\))?$", re.IGNORECASE)
+UTC_URL_DOC_RE = re.compile(rf"(?<!\d)(\d{{2}})-?(\d{{3}})({UTC_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
+WG2_URL_DOC_RE = re.compile(rf"(?:^|[/_-])n0*(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
+IRG_URL_DOC_RE = re.compile(rf"(?:^|[/_-])n0*(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
 DATE_RE = re.compile(r"\b(19|20)\d{2}-\d{2}-\d{2}\b")
+VERSION_LINK_RE = re.compile(r"\b(original|previous|revision|revised|draft|proposed)\b", re.IGNORECASE)
 
 
 def parse_html(html_text: str, base_url: str) -> RegistryHTMLParser:
@@ -134,23 +140,103 @@ def parse_register_documents(registry: str, html_text: str, register_url: str) -
     entries: list[dict] = []
 
     for row in parser.rows:
-        entry = parse_row(registry, row, register_url)
-        if entry is not None:
-            entries.append(entry)
+        entries.extend(parse_row_entries(registry, row, register_url))
 
     return entries
 
 
 def parse_row(registry: str, row: tuple[Cell, ...], register_url: str) -> dict | None:
+    entries = parse_row_entries(registry, row, register_url)
+    return entries[0] if entries else None
+
+
+def parse_row_entries(registry: str, row: tuple[Cell, ...], register_url: str) -> list[dict]:
     if not row:
-        return None
+        return []
 
     first = row[0].text
     full_row_text = clean_text(" ".join(cell.text for cell in row))
     parsed_number = parse_doc_number(registry, first)
     if parsed_number is None:
-        return None
+        return []
 
+    all_links = [link for cell in row for link in cell.links]
+    number_links = list(row[0].links)
+    document_url = number_links[0].url if number_links else None
+    primary_number = choose_primary_doc_number(registry, parsed_number, document_url)
+
+    entries = [
+        make_catalog_entry(
+            registry=registry,
+            parsed_number=primary_number,
+            row=row,
+            register_url=register_url,
+            full_row_text=full_row_text,
+            all_links=all_links,
+            document_url=document_url,
+        )
+    ]
+
+    primary_base = doc_base_key(registry, primary_number[1])
+    seen = {(entries[0]["entry_id"], entries[0].get("document_url"))}
+    for link in all_links:
+        if link.url == document_url:
+            continue
+        linked_number = parse_doc_number(registry, link.text) or parse_doc_number_from_url(registry, link.url)
+        if linked_number is None:
+            continue
+        if doc_base_key(registry, linked_number[1]) != primary_base:
+            continue
+        if linked_number[2] == primary_number[2]:
+            continue
+        if not is_version_link(registry, link):
+            continue
+
+        entry = make_catalog_entry(
+            registry=registry,
+            parsed_number=linked_number,
+            row=row,
+            register_url=register_url,
+            full_row_text=full_row_text,
+            all_links=all_links,
+            document_url=link.url,
+        )
+        key = (entry["entry_id"], entry.get("document_url"))
+        if key not in seen:
+            entries.append(entry)
+            seen.add(key)
+
+    return entries
+
+
+def choose_primary_doc_number(
+    registry: str,
+    parsed_number: tuple[str, str, str],
+    document_url: str | None,
+) -> tuple[str, str, str]:
+    if not document_url:
+        return parsed_number
+
+    url_number = parse_doc_number_from_url(registry, document_url)
+    if url_number is None:
+        return parsed_number
+    if doc_base_key(registry, url_number[1]) != doc_base_key(registry, parsed_number[1]):
+        return parsed_number
+    if doc_revision(registry, url_number[1]) and not doc_revision(registry, parsed_number[1]):
+        return url_number
+    return parsed_number
+
+
+def make_catalog_entry(
+    *,
+    registry: str,
+    parsed_number: tuple[str, str, str],
+    row: tuple[Cell, ...],
+    register_url: str,
+    full_row_text: str,
+    all_links: list[Link],
+    document_url: str | None,
+) -> dict:
     display_number, canonical_number, entry_id = parsed_number
     subject = row[1].text if len(row) > 1 else ""
     source = row[2].text if len(row) > 2 else ""
@@ -158,10 +244,6 @@ def parse_row(registry: str, row: tuple[Cell, ...], register_url: str) -> dict |
     if not DATE_RE.fullmatch(date):
         date_match = DATE_RE.search(full_row_text)
         date = date_match.group(0) if date_match else date
-
-    all_links = [link for cell in row for link in cell.links]
-    number_links = list(row[0].links)
-    document_url = number_links[0].url if number_links else None
 
     status = "available" if document_url else "unposted"
     lowered = full_row_text.lower()
@@ -189,6 +271,69 @@ def parse_row(registry: str, row: tuple[Cell, ...], register_url: str) -> dict |
         "related_links": related_links,
         "register_url": register_url,
     }
+
+
+def parse_doc_number_from_url(registry: str, url: str) -> tuple[str, str, str] | None:
+    basename = Path(urlparse(url).path).name
+
+    if registry == "utc":
+        match = UTC_URL_DOC_RE.search(basename)
+        if not match:
+            return None
+        yy, number, revision = match.groups()
+        return parse_doc_number("utc", f"L2/{yy}-{number}{revision or ''}")
+
+    if registry == "wg2":
+        match = WG2_URL_DOC_RE.search(basename)
+        if not match:
+            return None
+        number, revision = match.groups()
+        return parse_doc_number("wg2", f"WG2 N{int(number)}{revision or ''}")
+
+    if registry == "irg":
+        match = IRG_URL_DOC_RE.search(basename)
+        if not match:
+            return None
+        number, revision = match.groups()
+        return parse_doc_number("irg", f"IRG N{int(number)}{revision or ''}")
+
+    raise ValueError(f"unknown registry: {registry}")
+
+
+def doc_base_key(registry: str, doc_number: str) -> tuple[str, ...] | None:
+    if registry == "utc":
+        match = UTC_DOC_RE.search(doc_number)
+        return match.group(1, 2) if match else None
+
+    if registry == "wg2":
+        match = WG2_DOC_RE.search(doc_number)
+        return (str(int(match.group(1))),) if match else None
+
+    if registry == "irg":
+        match = IRG_DOC_RE.search(doc_number)
+        return (str(int(match.group(1))),) if match else None
+
+    raise ValueError(f"unknown registry: {registry}")
+
+
+def doc_revision(registry: str, doc_number: str) -> str:
+    if registry == "utc":
+        match = UTC_DOC_RE.search(doc_number)
+    elif registry == "wg2":
+        match = WG2_DOC_RE.search(doc_number)
+    elif registry == "irg":
+        match = IRG_DOC_RE.search(doc_number)
+    else:
+        raise ValueError(f"unknown registry: {registry}")
+    if not match:
+        return ""
+    return (match.groups()[-1] or "").upper()
+
+
+def is_version_link(registry: str, link: Link) -> bool:
+    if parse_doc_number(registry, link.text) is not None:
+        return True
+    return bool(VERSION_LINK_RE.search(link.text))
 
 
 def parse_doc_number(registry: str, text: str) -> tuple[str, str, str] | None:
@@ -230,7 +375,7 @@ def parse_doc_number(registry: str, text: str) -> tuple[str, str, str] | None:
 
 def write_jsonl(path: Path, rows: Iterable[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as fh:
+    with path.open("w", encoding="utf-8", newline="\n") as fh:
         for row in rows:
             fh.write(json.dumps(row, ensure_ascii=False, sort_keys=True))
             fh.write("\n")
