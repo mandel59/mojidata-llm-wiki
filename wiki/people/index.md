@@ -20,6 +20,7 @@
 ## Individuals
 
 - [Michel Suignard](michel-suignard.md)
+- [Ken Lunde](ken-lunde.md)
 - [Richard Cook](richard-cook.md)
 - [Eiso Chan](eiso-chan.md)
 - [Henry Chan](henry-chan.md)
