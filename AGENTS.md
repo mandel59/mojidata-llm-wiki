@@ -30,6 +30,7 @@ wiki/
   log.md                          OKF 形式の作業ログ
   topics/<slug>.md                論点・文字集合・script・block などの精読ページ
   documents/<entry-id>.md         重要文書の要約ページ
+  events/<slug>.md                勧告、action item、状態変更などの出来事
   meetings/<body>/<meeting>.md    UTC/WG2/IRG 会合単位の要約
   people/<slug>.md                人物・組織・member body
   families/<slug>.md              関連トピック横断の synthesis
@@ -37,6 +38,8 @@ tools/
   sync_registries.py              Registry を読んで catalog を再生成
   fetch_documents.py              目録に基づいて文書実体を .cache/ に取得
   check_catalog.py                目録の機械検査
+  check_events.py                 event ページと参照整合性の検査
+  generate_event_indexes.py       event metadata から index を生成
   check_okf.py                    wiki の OKF v0.1 互換検査
   unicode_registry.py             Registry parser と共通処理
 .cache/
@@ -129,6 +132,39 @@ tags: [document, recommendations]
 3. `## 論点` - 後続文書や他 body との関係。
 4. `## 出典` - `catalog` の `entry_id`、`document_url`、取得日ではなく registry 上の日付。
 
+### `wiki/events/<slug>.md`
+
+出来事を canonical summary として独立させる。topic / meeting / people / family / document ページで同じ出来事の概要を説明し直さず、event へのリンクとそのページ固有の読み取りだけを書く。
+
+```yaml
+---
+type: Event
+title: WG2 M72.07 J-source glyph revert recommendation
+description: WG2 #72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
+slug: wg2-m72-07-j-source-glyph-revert
+kind: event
+date: "2025-06-27"
+bodies: [WG2]
+documents: [wg2-n5296, wg2-n5301, wg2-n5304]
+topics: [j-source, irg-source-data-and-representative-glyphs]
+people: [japan, wg2, michel-suignard]
+status: adopted
+tags: [event, j-source, glyph, recommendation]
+timestamp: 2026-07-06T23:30:00+09:00
+---
+```
+
+本文:
+
+1. `## 概要` - 出来事そのものの canonical summary。
+2. `## 背景` - 前提文書、会合、議論。
+3. `## 結果` - recommendation、action item、status change、follow-up。
+4. `## 影響範囲` - topic / people / meeting から見た意味。
+5. `## 関連ページ` - wiki 内リンク。
+6. `## 出典` - 参照した `entry_id` と公開 URL。
+
+event は文書そのものではなく、文書・会合・勧告・action item・状態変更によって発生した意味のある出来事を表す。1 文書に複数 event がある場合も、複数文書で 1 event を構成する場合もある。
+
 ### `wiki/meetings/<body>/<meeting>.md`
 
 会合単位で、agenda、minutes、recommendations、action items、activity report を束ねる。
@@ -183,6 +219,14 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 3. `wiki/meetings/<body>/<meeting>.md` に、議題、決定、未決、後続文書をまとめる。
 4. 関連 topic ページへリンクを戻す。
 
+### Ingest Event
+
+1. 出来事を構成する文書、会合、recommendation、action item を catalog と wiki から特定する。
+2. `wiki/events/<slug>.md` に canonical summary を作成する。
+3. 関連する topic / meeting / people / family / document ページでは、重複説明を event link と短い文脈説明へ縮約する。
+4. `uv run python tools/generate_event_indexes.py` で `wiki/events/index.md` を更新する。
+5. `uv run python tools/check_events.py` と `uv run python tools/check_okf.py` を実行する。
+
 ### Query
 
 1. `wiki/index.md` と `catalog/registries/*/documents.jsonl` を入口に検索する。
@@ -193,6 +237,7 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 
 - 目録 JSONL が壊れていないか `uv run python tools/check_catalog.py` で見る。
 - wiki が OKF v0.1 の最小条件を満たすか `uv run python tools/check_okf.py` で見る。
+- event metadata と参照整合性を `uv run python tools/check_events.py` で見る。
 - wiki の主張に出典があるか確認する。
 - topic、document、meeting、family の相互リンク漏れを見る。
 - UTC/WG2/IRG 間で同一トピックの状態が食い違う場合、時点と body を明示しているか確認する。
