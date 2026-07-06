@@ -10,6 +10,7 @@ okf_version: "0.1"
 
 - [Topics](topics/) - script、block、property、proposal、論点ごとの精読ページ
 - [Documents](documents/) - 重要文書の要約
+- [Events](events/) - 勧告、action item、状態変更などの出来事
 - [Meetings](meetings/) - UTC/WG2/IRG 会合単位の要約
 - [People](people/) - 人物、組織、member body
 - [Families](families/) - 関連 topic を束ねる横断ページ
