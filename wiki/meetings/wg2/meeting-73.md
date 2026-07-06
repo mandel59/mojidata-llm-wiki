@@ -29,7 +29,7 @@ WG2 meeting #73 は 2026-06-22/26 に Paris で開催された。Small Seal は 
 
 ## 決定事項
 
-Recommendation M73.01 は、SC2 が 7th edition CD4 の disposition of comments を受け入れることを WG2 として勧告した。その significant changes に、Small Seal character names を `SEAL CHARACTER-XXXXX` から `SMALL SEAL CHARACTER-XXXXX` に変更することと、26 characters の Small Seal property correction が含まれている。
+Recommendation M73.01 は、[WG2 M73.01 Small Seal CD4 disposition](../../events/wg2-m73-01-small-seal-cd4-disposition.md) として整理する。
 
 Recommendation M73.04 は、M73.01 から M73.03 の変更と final disposition を含めて 7th edition DIS text を準備し、SC2 secretariat へ balloting 用に回付することを勧告した。target は DIS 2026-10-01、IS 2027-06-01。
 
@@ -38,6 +38,10 @@ Recommendation M73.04 は、M73.01 から M73.03 の変更と final disposition 
 - `WG2 N5369` disposition of comments on 10646 Ed.7 CD.4
 - DIS 2026-10-01 target
 - ISO/IEC 10646 7th edition IS 2027-06-01 target
+
+## 関連出来事
+
+- [WG2 M73.01 Small Seal CD4 disposition](../../events/wg2-m73-01-small-seal-cd4-disposition.md)
 
 ## 出典
 

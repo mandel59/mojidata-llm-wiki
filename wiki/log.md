@@ -4,6 +4,7 @@
 
 ## 2026-07-06
 
+- **Migration**: Extracted Small Seal, CJKV Components, and `kIRG_SGSource` milestones into Event pages and linked related topic, meeting, and people pages to those canonical summaries.
 - **Migration**: Added Event pages for J-source milestones and shortened duplicate summaries in [J-source and JMJ Source Issues](topics/j-source.md), [Japan](people/japan.md), and [WG2 Meeting #72](meetings/wg2/meeting-72.md) to event links.
 - **Ingest**: Added [J-source and JMJ Source Issues](topics/j-source.md), covering `WG2 N5221`, `IRG N2722`, `WG2 N5296`, WG2 #72 `M72.07`, `IRG N2859`, and `IRG N2870`.
 - **Refine**: Expanded [Japan](people/japan.md) with WG2-specific activity from `WG2 N5221`, `WG2 N5296`, `WG2 N5301`, `WG2 N5304`, and `WG2 N5311`, and updated [WG2 Meeting #72](meetings/wg2/meeting-72.md) with J-source glyph correction and Niigata host details.

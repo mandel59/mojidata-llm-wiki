@@ -24,7 +24,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2026-02 | IRG | `IRG N2926` | Eiso Chan が new normative `kIRG_SGSource` property を提案。 |
-| 2026-03 | IRG | `IRG N2909` | IRG #66 Recommendation M66.16 が `kIRG_SGSource` の establishment を勧告。 |
+| 2026-03 | IRG | `IRG N2909` | [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)。 |
 | 2026-05 | IRG / WG2 | `IRG N2935` | agenda は、IRG Convenor が `IRG N2926` を WG2 #73 へ提出したと記録。 |
 | 2026-06 | WG2 / SC2 | `IRG N2935` | agenda は、WG2 が追加を recommend し、SC2 が ISO/IEC 10646 Seventh Edition Amendment 1 として accept したと記録。 |
 | 2027 target | Unicode | `IRG N2935` | agenda は Unicode Version 19.0 target としている。 |
@@ -41,12 +41,16 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ### target version
 
-Meeting #67 agenda の current status では、WG2 と SC2 の acceptance を経て、`kIRG_SGSource` は Unicode Version 19.0 (2027) target とされている。Meeting #67 では主に follow-up / status tracking の対象である。
+Meeting #67 agenda の current status では、WG2 と SC2 の acceptance を経て、`kIRG_SGSource` は Unicode Version 19.0 (2027) target とされている。IRG #66 での establishment は [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md) に集約する。
 
 ## 関連文書
 
 - [IRG Meeting #67](../meetings/irg/meeting-67.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
+
+## 関連出来事
+
+- [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)
 
 ## 関連トピック
 

@@ -32,6 +32,11 @@ Eiso Chan は、この wiki では CJKV Components proposal の author list、`k
 - [kIRG_SGSource](../topics/kirg-sgsource.md)
 - [IRG Indexing Rules](../topics/irg-indexing-rules.md)
 
+## 関連出来事
+
+- [IRG N2878R3 CJKV Components final proposal](../events/irg-n2878r3-cjkv-components-final-proposal.md)
+- [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)
+
 ## 出典
 
 - `irg-n2799` - <https://www.unicode.org/irg/docs/n2799-CJKComponents4IDS.pdf>
