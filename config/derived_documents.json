@@ -29,8 +29,8 @@
     },
     {
       "catalog_source": "derived",
-      "date": "",
-      "date_note": "Referenced by IRG Meeting #66 agenda; exact publication date not found in the IRG register.",
+      "date": "2025-10-12",
+      "date_note": "Date taken from the document header of IRG N2878R; the entry itself is derived because IRG N2878R is not a standalone IRG register row.",
       "display_number": "IRG N2878R",
       "doc_number": "IRG N2878R",
       "document_url": "https://www.unicode.org/irg/docs/n2878r-CJKComponents4IDS.pdf",

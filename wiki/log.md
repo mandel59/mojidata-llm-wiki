@@ -6,6 +6,7 @@
 
 - **Catalog**: Added derived document entries for `IRG N2878`, `IRG N2878R`, and `IRG N2878R2` with `status: referenced` and provenance, so revision lineage outside IRG register rows remains visible in the catalog.
 - **Refine**: Updated the [CJKV Components](topics/cjkv-components.md) chronology to cite the new `irg-n2878`, `irg-n2878r`, and `irg-n2878r2` catalog entries and their provenance directly.
+- **Refine**: Fetched `IRG N2878R`, recorded its document-header date `2025-10-12` in the derived catalog entry, and replaced relative chronology labels such as `2025-10-10以前` and `2025-12-19期限` in [CJKV Components](topics/cjkv-components.md).
 - **Refine**: Revised the CJKV Components chronology so `IRG N2878` is dated as `2025-10-10以前` from surrounding evidence instead of a year-only entry, and clarified the `N2878R` / `R2` / `R3` sequence.
 - **Catalog**: Updated registry extraction so primary document URLs can supply revision suffixes and same-number linked `original` / `draft` / `revision` documents are emitted as separate catalog entries. Regenerated UTC and WG2 manifests from the offline registry cache.
 - **Clarify**: Added the role of `IRG N2878` / `IRG N2878R` to [CJKV Components](topics/cjkv-components.md), noting that they are intermediate revisions cited by `IRG N2878R3` and feedback documents rather than standalone catalog entries.
