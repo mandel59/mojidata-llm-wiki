@@ -143,13 +143,15 @@ tags: [document, recommendations]
 
 ## 操作
 
+Python tools は `uv run python` で実行する。`python` / `python3` が PATH に無い環境があるため、直接呼び出しを前提にしない。`uv` の既定 cache や managed Python へのアクセスに失敗する場合は、`UV_CACHE_DIR=.tmp/uv-cache` と利用可能な Python への `UV_PYTHON` を指定してから実行する。
+
 ### Update Catalog
 
 Document Registry から目録を更新する。文書実体は取得しない。
 
 ```sh
-python3 tools/sync_registries.py --registry all --latest-only
-python3 tools/check_catalog.py
+uv run python tools/sync_registries.py --registry all --latest-only
+uv run python tools/check_catalog.py
 ```
 
 広く過去分を取り込むときは `--latest-only` を外す。更新後は `catalog/registries/*/documents.jsonl` と `registers.json` の差分を見る。新規・変更された文書番号だけを `wiki/log.md` に記録する。
@@ -159,8 +161,8 @@ python3 tools/check_catalog.py
 wiki 作成に必要な文書だけを `.cache/` に取得する。
 
 ```sh
-python3 tools/fetch_documents.py --registry wg2 --grep "Small Seal" --limit 10
-python3 tools/fetch_documents.py --registry irg --doc "IRG N2909"
+uv run python tools/fetch_documents.py --registry wg2 --grep "Small Seal" --limit 10
+uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 ```
 
 取得した実体は Git に入れない。wiki には公開 URL と `entry_id` を出典として残す。
@@ -189,8 +191,8 @@ python3 tools/fetch_documents.py --registry irg --doc "IRG N2909"
 
 ### Lint
 
-- 目録 JSONL が壊れていないか `python3 tools/check_catalog.py` で見る。
-- wiki が OKF v0.1 の最小条件を満たすか `python3 tools/check_okf.py` で見る。
+- 目録 JSONL が壊れていないか `uv run python tools/check_catalog.py` で見る。
+- wiki が OKF v0.1 の最小条件を満たすか `uv run python tools/check_okf.py` で見る。
 - wiki の主張に出典があるか確認する。
 - topic、document、meeting、family の相互リンク漏れを見る。
 - UTC/WG2/IRG 間で同一トピックの状態が食い違う場合、時点と body を明示しているか確認する。
