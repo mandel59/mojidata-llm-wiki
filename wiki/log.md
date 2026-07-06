@@ -4,8 +4,9 @@
 
 ## 2026-07-07
 
+- **Refine**: Split the time-based Recent UTC CJK and Unihan Documents page into durable concept topics: [Unihan Database Maintenance](topics/unihan-database-maintenance.md), [UAX #45 U-Source Ideographs](topics/uax45-u-source-ideographs.md), [CJK Security Confusables](topics/cjk-security-confusables.md), and [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md).
 - **Ingest**: Added [L2/26-099](documents/utc-l2-26-099.md) as a source document page for CJK & Unihan Working Group Recommendations for UTC #187, and linked its PRI, UAX #45, IRG #66, and WG2 #73 follow-up documents from related topic and meeting pages.
-- **Ingest**: Added [Recent UTC CJK and Unihan Documents](topics/recent-utc-cjk-unihan-documents.md), summarising recent UTC current documents `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-127`, `L2/26-133`, `L2/26-134`, `L2/26-136`, `L2/26-147`, and `L2/26-148`, and added [Ken Lunde](people/ken-lunde.md) as a recurring UTC / CJK & Unihan document source.
+- **Ingest**: Added initial UTC CJK / Unihan coverage for `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-127`, `L2/26-133`, `L2/26-134`, `L2/26-136`, `L2/26-147`, and `L2/26-148`, and added [Ken Lunde](people/ken-lunde.md) as a recurring UTC / CJK & Unihan document source.
 
 ## 2026-07-06
 

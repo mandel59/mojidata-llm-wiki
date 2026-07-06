@@ -6,7 +6,7 @@ slug: ken-lunde
 kind: person
 bodies: [UTC, IRG]
 documents: [utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148]
-topics: [recent-utc-cjk-unihan-documents, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules]
+topics: [unihan-database-maintenance, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules]
 tags: [person, utc, cjk, unihan, source-data]
 timestamp: 2026-07-07T00:00:00+09:00
 ---
@@ -21,16 +21,17 @@ Ken Lunde は、この wiki では UTC current documents における CJK / Unih
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
-| `L2/26-099` | CJK & Unihan Working Group Recommendations for UTC #187 の source。 | [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md) |
-| `L2/26-105` | Proposed Update UAX #38, Unicode Han Database の source。 | [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md) |
-| `L2/26-112` | Proposed Update UTS #37, Unicode Ideographic Variation Database の source。 | [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md) |
+| `L2/26-099` | CJK & Unihan Working Group Recommendations for UTC #187 の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [UAX #45 U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
+| `L2/26-105` | Proposed Update UAX #38, Unicode Han Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
+| `L2/26-112` | Proposed Update UTS #37, Unicode Ideographic Variation Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 | `L2/26-134` | `RSIndex.txt` syntax enhancement proposal の source。 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
 | `L2/26-147` / `IRG N2961` | U-source horizontal extension proposal の source。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
-| `L2/26-148` | 458 ideographs の `kTotalStrokes` property values 修正 proposal の source。 | [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md) |
+| `L2/26-148` | 458 ideographs の `kTotalStrokes` property values 修正 proposal の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 
 ## 関連トピック
 
-- [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md)
+- [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
+- [UAX #45 U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [IRG Indexing Rules](../topics/irg-indexing-rules.md)

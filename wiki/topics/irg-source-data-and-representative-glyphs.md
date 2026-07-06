@@ -59,7 +59,7 @@ IRG Meeting #67 agenda では、IRG #66 の action items として持ち越さ�
 
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting #67](../meetings/irg/meeting-67.md)
-- [Recent UTC CJK and Unihan Documents](recent-utc-cjk-unihan-documents.md)
+- [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [kIRG_SGSource](kirg-sgsource.md)

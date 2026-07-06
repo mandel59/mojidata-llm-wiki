@@ -6,7 +6,7 @@ slug: utc
 kind: organization
 bodies: [UTC, IRG, WG2]
 documents: [irg-n2935, irg-n2961, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
-topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, recent-utc-cjk-unihan-documents, small-seal-script]
+topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]
 tags: [organization, standards-body, utc]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -23,7 +23,9 @@ UTC は、この wiki では Unicode 側の標準化 body として扱う。UTC 
 | --- | --- | --- |
 | `L2/22-279`, `L2/25-049`, `L2/25-111` | Small Seal Script の source mapping、repertoire 整理、converging proposal。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2961` / `L2/26-147` | U-source horizontal extension として 40 CJK Unified Ideographs への `kIRG_USource` values と U-source representative glyphs を提案。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
-| `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-127`, `L2/26-133`, `L2/26-134`, `L2/26-136`, `L2/26-148` | UTC current documents における CJK / Unihan / ideographic punctuation / source data maintenance の最近の流れ。 | [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md) |
+| `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-134`, `L2/26-148` | Unihan database、UAX #38、UTS #37、radical / stroke data の保守。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
+| `L2/26-127` | CJK confusables の security data review。 | [CJK Security Confusables](../topics/cjk-security-confusables.md) |
+| `L2/26-133`, `L2/26-136` | ideographic punctuation の追加提案。 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) |
 | `IRG N2935` | UTC CJK & Unihan Working Group / UTC Meeting #187 を経た source data changes が Unicode Version 18.0 Beta review に反映された status を記録。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
 
 ## 関連文書
@@ -46,7 +48,10 @@ UTC は、この wiki では Unicode 側の標準化 body として扱う。UTC 
 - [Small Seal Script](../topics/small-seal-script.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
-- [Recent UTC CJK and Unihan Documents](../topics/recent-utc-cjk-unihan-documents.md)
+- [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
+- [UAX #45 U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
+- [CJK Security Confusables](../topics/cjk-security-confusables.md)
+- [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md)
 
 ## 出典
 

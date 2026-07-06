@@ -26,7 +26,7 @@ WG2 meeting #73 は 2026-06-22/26 に Paris で開催された。Small Seal は 
 - Code charts の linked content 化
 - First amendment project subdivision
 - IRG source / CJK additions
-- [Recent UTC CJK and Unihan Documents](../../topics/recent-utc-cjk-unihan-documents.md) - `L2/26-099` は agenda 9.3.1 に載り、Recommendation M73.02 の CJK additions and changes に反映された。
+- [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099` は agenda 9.3.1 に載り、Recommendation M73.02 の CJK additions and changes に反映された。
 
 ## 決定事項
 
