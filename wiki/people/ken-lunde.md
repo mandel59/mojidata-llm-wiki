@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Ken Lunde
-description: UTC / CJK & Unihan Working Group の文書 source として現れる contributor のページ。
+description: UTC / CJK & Unihan Working Group で CJK / Unihan data maintenance に関わる contributor。
 slug: ken-lunde
 kind: person
 bodies: [UTC, IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 ## 概要
 
-Ken Lunde は、この wiki では UTC current documents における CJK / Unihan data maintenance、UAX #38、UTS #37、RSIndex.txt、U-source horizontal extension、`kTotalStrokes` 修正の文書 source として記録する。`L2/26-099` では CJK & Unihan Working Group recommendations の source に含まれ、UTC #187 に向けた Unihan / source data / technical report updates の hub 文書に関係する。
+Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan data maintenance に継続して関わる contributor である。`L2/26-099` では CJK & Unihan Working Group recommendations の source に含まれ、UTC #187 に向けた Unihan database、source data、UAX #38、UTS #37、RSIndex.txt、U-source horizontal extension、`kTotalStrokes` 修正などの更新作業に関係している。
 
 ## この wiki での関与
 

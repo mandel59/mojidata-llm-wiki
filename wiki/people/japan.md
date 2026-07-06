@@ -1,7 +1,7 @@
 ---
 type: Member Body
 title: Japan
-description: 最近の Japan NB / J-source / WG2 関連 activity を追跡する member body ページ。
+description: Japan NB / J-source / WG2 関連 activity に関わる IRG / WG2 member body。
 slug: japan
 kind: member-body
 bodies: [IRG, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T23:08:00+09:00
 
 ## 概要
 
-Japan は、この wiki では IRG / WG2 の member body、および `kIRG_JSource` / `J-source` の source owner として扱う。最近の公開文書では、WG2 への大規模 JMJ horizontal extension、Japan NB の IRG active participation への復帰要請、J-source representative glyph / source reference の disposition、WG2 Meeting #72 の新潟開催、IRG Meeting #67 の東京開催がまとまって確認できる。
+Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `J-source` に関する source owner として CJK source data の確認・回答を担う。最近の公開文書では、WG2 への大規模 JMJ horizontal extension、Japan NB の IRG active participation への復帰要請、J-source representative glyph / source reference の disposition、WG2 Meeting #72 の新潟開催、IRG Meeting #67 の東京開催がまとまって確認できる。
 
 ## 最近の活動
 
@@ -41,7 +41,7 @@ Japan は、この wiki では IRG / WG2 の member body、および `kIRG_JSour
 
 `WG2 N5296` は、JMJ-source related glyph issues を Japan NB と WG2 に検討依頼した文書である。問題の中心は、code chart generation における J-source font selection の変更により、既存の J-source representative glyphs が意図せず変化して見える点にある。
 
-WG2 Meeting #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。Japan ページでは、Japan / J-source owner の position が求められた WG2 側の具体的な処理結果として扱う。
+WG2 Meeting #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。この recommendation は、Japan / J-source owner の position が求められた WG2 側の具体的な処理結果である。
 
 ### WG2 #72 Niigata host
 
@@ -57,7 +57,7 @@ WG2 Meeting #72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 N
 
 ### 東京開催の IRG #67
 
-`IRG N2934R` は、IRG Meeting #67 が 2026-10-12/16 に東京で開催されることを告知する。host は SAT Daizōkyō Text Database Committee であり、Japan NB の position paper ではない。ただし、日本国内での IRG 会合開催は、Japan / Japanese experts / SAT の IRG activity を追跡するうえで関連イベントとして扱う。
+`IRG N2934R` は、IRG Meeting #67 が 2026-10-12/16 に東京で開催されることを告知する。host は SAT Daizōkyō Text Database Committee であり、Japan NB の position paper ではない。ただし、日本国内での IRG 会合開催は、Japan / Japanese experts / SAT の IRG activity を追跡するうえで関連するイベントである。
 
 ## 関連文書
 

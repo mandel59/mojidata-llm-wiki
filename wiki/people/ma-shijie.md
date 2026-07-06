@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Ma Shijie
-description: G-source、SAT-source、representative glyph 修正に関係する contributor のページ。
+description: G-source、SAT-source、representative glyph 修正に関係する contributor。
 slug: ma-shijie
 kind: person
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-Ma Shijie は、この wiki では G-source glyph revision と SAT-source glyph issues の contributor として記録する。`IRG N2958` は G-source glyphs、`IRG N2959` は SAT-source glyphs を扱う。
+Ma Shijie は、IRG 文書で G-source glyph revision と SAT-source glyph issues を扱う contributor である。`IRG N2958` では G-source glyphs、`IRG N2959` では SAT-source glyphs について、original evidence と current representative glyph の関係を検討している。
 
 ## この wiki での関与
 

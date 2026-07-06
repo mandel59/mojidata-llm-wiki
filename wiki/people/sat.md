@@ -1,7 +1,7 @@
 ---
 type: Organization
 title: SAT
-description: SAT-source と IRG source data に関係する organization のページ。
+description: SAT-source と IRG source data に関係する organization。
 slug: sat
 kind: organization
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-SAT は、この wiki では IRG の source / organization として扱う。IRG Meeting #67 では、SAT Daizōkyō Text Database Committee が host として agenda に記録され、SAT-source glyph issues も Section 9.1 の議題に入っている。
+SAT は、大蔵経テキストデータベースに関わる organization / source で、IRG 文書では SAT-source glyph issues と IRG meeting host として現れる。IRG Meeting #67 では、SAT Daizōkyō Text Database Committee が host として agenda に記録され、SAT-source glyph issues も Section 9.1 の議題に入っている。
 
 ## この wiki での関与
 

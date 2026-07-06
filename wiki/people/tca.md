@@ -1,7 +1,7 @@
 ---
 type: Member Body
 title: TCA
-description: T-source、Small Seal Script、CJKV Components に関係する TCA member body のページ。
+description: T-source、Small Seal Script、CJKV Components に関係する TCA member body。
 slug: tca
 kind: member-body
 bodies: [IRG, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-TCA は、この wiki では IRG / WG2 の member body / source として扱う。Small Seal Script、CJKV Components、T-source representative glyph issues に関係している。
+TCA は、IRG / WG2 に参加する member body / source で、T-source data と関連する glyph / source evidence の確認に関わる。Small Seal Script、CJKV Components、T-source representative glyph issues に関係している。
 
 ## この wiki での関与
 

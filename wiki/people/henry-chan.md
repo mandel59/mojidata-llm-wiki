@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Henry Chan
-description: IRG radical assignment、indexing rules、CJKV Components feedback に関係する contributor のページ。
+description: IRG radical assignment、indexing rules、CJKV Components feedback に関係する contributor。
 slug: henry-chan
 kind: person
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 ## 概要
 
-Henry Chan は、この wiki では CJK Unified Ideographs Components への feedback と、Primary / Secondary Radical assignment rules の更新提案 source として記録する。`IRG N2917` は HCP source reference、component / variant の境界、radical data について `IRG N2878R2` へ feedback した文書である。`IRG N2925` は、WS2017 / WS2021 で続いた radical assignment の議論を背景に、semantic radical、discoverability、secondary radical の扱いを整理している。
+Henry Chan は、CJK Unified Ideographs Components への feedback と Primary / Secondary Radical assignment rules の更新提案に関わる contributor である。`IRG N2917` は HCP source reference、component / variant の境界、radical data について `IRG N2878R2` へ feedback した文書である。`IRG N2925` は、WS2017 / WS2021 で続いた radical assignment の議論を背景に、semantic radical、discoverability、secondary radical の扱いを整理している。
 
 ## この wiki での関与
 

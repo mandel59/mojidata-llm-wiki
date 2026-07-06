@@ -1,7 +1,7 @@
 ---
 type: Organization
 title: IRG
-description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group のページ。
+description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group。
 slug: irg
 kind: organization
 bodies: [IRG, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-IRG は、この wiki では CJK Unified Ideographs、IRG Working Set、source reference、representative glyph、UCV / NUCV、radical assignment などを扱う主要 body として記録する。文書 registry 上では `IRG Nxxxx` の文書番号で、agenda、recommendations、activity reports、member body submissions、individual contributions が公開されている。
+IRG は、CJK Unified Ideographs の review、IRG Working Set、source reference、representative glyph、UCV / NUCV、radical assignment などを扱う専門 body である。公開 Document Register では `IRG Nxxxx` の文書番号で、agenda、recommendations、activity reports、member body submissions、individual contributions が公開されている。
 
 ## この wiki での関与
 

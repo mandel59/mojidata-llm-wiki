@@ -1,7 +1,7 @@
 ---
 type: Organization
 title: UTC
-description: Unicode Technical Committee と UTC / WG2 / IRG 間の関連トピックを記録するページ。
+description: Unicode Standard の技術的な検討と承認を担う Unicode Technical Committee。
 slug: utc
 kind: organization
 bodies: [UTC, IRG, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-UTC は、この wiki では Unicode 側の標準化 body として扱う。UTC 文書は `L2/yy-nnn` で記録され、IRG や WG2 の文書と同じ proposal / feedback が二重登録されることがある。
+UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Consortium の標準化 body である。UTC 文書は `L2/yy-nnn` の番号で公開され、script / character proposals、UAX / UTS updates、UCD data changes、working group reports、meeting minutes を扱う。IRG や WG2 の文書と同じ proposal / feedback が UTC registry にも登録されることがある。
 
 ## この wiki での関与
 

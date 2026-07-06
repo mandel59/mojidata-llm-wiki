@@ -1,7 +1,7 @@
 ---
 type: Member Body
 title: China
-description: G-source、Small Seal Script、CJKV Components に関係する China member body のページ。
+description: G-source、Small Seal Script、CJKV Components に関係する China member body。
 slug: china
 kind: member-body
 bodies: [IRG, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-China は、この wiki では IRG / WG2 の member body / source として扱う。IRG Meeting #67 では、G-source horizontal extension、G-source representative glyph / source reference issues、CJKV Components、Small Seal Script に関係している。
+China は、IRG / WG2 に参加する member body / source で、G-source data、CJKV Components、Small Seal Script などの提案・確認に関わる。IRG Meeting #67 では、G-source horizontal extension、G-source representative glyph / source reference issues、CJKV Components、Small Seal Script が China 関連の主要議題になっている。
 
 ## この wiki での関与
 

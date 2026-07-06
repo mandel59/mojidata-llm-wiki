@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Kushim Jiang
-description: CJKV Components proposal と G-source data feedback に関係する contributor のページ。
+description: CJKV Components proposal と G-source data feedback に関係する contributor。
 slug: kushim-jiang
 kind: person
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 ## 概要
 
-Kushim Jiang は、この wiki では CJKV Components proposal の author list と、G-source issues feedback の source として記録する。`IRG N2733R`、`IRG N2799`、`IRG N2878R3` の CJKV Components proposal に継続して関与している。人物ページでは、文書上で確認できる役割に限定して扱う。
+Kushim Jiang は、CJKV Components proposal の author list と G-source issues feedback に名前が現れる contributor である。公開文書上では、`IRG N2733R`、`IRG N2799`、`IRG N2878R3` の CJKV Components proposal に継続して関与し、CJK components の repertoire / source data 整理に関わっている。
 
 ## この wiki での関与
 

@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Roy Wang
-description: G-source representative glyph と source reference 修正に関係する contributor のページ。
+description: G-source representative glyph と source reference 修正に関係する contributor。
 slug: roy-wang
 kind: person
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-Roy Wang は、この wiki では G-source representative glyph / source reference issues を提起した contributor として記録する。`IRG N2954` と `IRG N2956` は、original evidence、current glyph、source reference の不一致を検討する文書である。
+Roy Wang は、G-source representative glyph / source reference issues を提起した contributor である。`IRG N2954` と `IRG N2956` では、original evidence、current glyph、source reference の不一致を検討している。
 
 ## この wiki での関与
 

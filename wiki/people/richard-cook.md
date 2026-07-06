@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Richard Cook
-description: Small Seal Script source mapping data に関係する contributor のページ。
+description: Small Seal Script source mapping data に関係する contributor。
 slug: richard-cook
 kind: person
 bodies: [UTC]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-Richard Cook は、この wiki では Small Seal Script の source mapping data を提出した contributor として記録する。`L2/22-279` は、後続の repertoire / database 整理の土台として [Small Seal Script](../topics/small-seal-script.md) に位置づけている。
+Richard Cook は、Small Seal Script の source mapping data を提出した contributor である。`L2/22-279` の UCS Seal Script Source Mapping Data は、後続の repertoire / database 整理の土台になっている。
 
 ## この wiki での関与
 

@@ -1,7 +1,7 @@
 ---
 type: Organization
 title: WG2
-description: ISO/IEC JTC 1/SC 2/WG 2 と Unicode 標準化トピックの接点を記録するページ。
+description: ISO/IEC 10646 の repertoire と edition / amendment progression を扱う WG2。
 slug: wg2
 kind: organization
 bodies: [WG2, IRG, UTC]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-WG2 は、この wiki では ISO/IEC 10646 側の working group として扱う。UTC / IRG から上がる proposal や IRG recommendation が、WG2 meeting、SC2 resolution、ISO/IEC 10646 の edition / amendment progression と接続する地点になる。
+WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoire、code charts、edition / amendment progression を扱う。UTC / IRG から上がる proposal や IRG recommendation は、WG2 meeting と SC2 resolution を経て ISO/IEC 10646 の CD / DIS / IS text に接続する。
 
 ## この wiki での関与
 

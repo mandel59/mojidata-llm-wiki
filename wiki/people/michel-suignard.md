@@ -1,7 +1,7 @@
 ---
 type: Person
 title: Michel Suignard
-description: Small Seal Script proposal と WG2 project editor 関連文書に関わる contributor のページ。
+description: Small Seal Script proposal と WG2 project editor 関連文書に関わる contributor。
 slug: michel-suignard
 kind: person
 bodies: [UTC, WG2]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-Michel Suignard は、この wiki では Small Seal Script encoding initiative の proposal / feedback 整理を継続的に担った contributor / project editor として記録する。公的な所属や経歴ではなく、catalog と文書上で確認できる役割に限定する。
+Michel Suignard は、Small Seal Script encoding initiative で proposal / feedback 整理を継続的に担った contributor / project editor である。公開文書では、Small Seal の repertoire、code chart、database、WG2 feedback disposition をまとめる作業に関与している。
 
 ## この wiki での関与
 

@@ -1,7 +1,7 @@
 ---
 type: Member Body
 title: UK
-description: UK-source horizontal extension と glyph change に関係する UK member body のページ。
+description: UK-source horizontal extension と glyph change に関係する UK member body。
 slug: uk
 kind: member-body
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-UK は、この wiki では IRG の member body / source として扱う。IRG Meeting #67 では、UK-source representative glyph issues と UK Horizontal Extensions が議題に入っている。
+UK は、IRG に参加する member body / source で、UK-source representative glyphs と source data の確認に関わる。IRG Meeting #67 では、UK-source representative glyph issues と UK Horizontal Extensions が議題に入っている。
 
 ## この wiki での関与
 

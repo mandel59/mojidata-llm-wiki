@@ -1,7 +1,7 @@
 ---
 type: Member Body
 title: Vietnam
-description: V-source と Nom glyph data に関係する Vietnam member body のページ。
+description: V-source と Nom glyph data に関係する Vietnam member body。
 slug: vietnam
 kind: member-body
 bodies: [IRG]
@@ -15,7 +15,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-Vietnam は、この wiki では IRG の member body / source として扱う。IRG Meeting #66 から #67 にかけて、V-source representative glyphs for U+268A1 / U+268A2 が議題になっている。
+Vietnam は、IRG に参加する member body / source で、V-source の representative glyphs や source evidence に関する確認を担う。IRG Meeting #66 から #67 にかけて、U+268A1 / U+268A2 の V-source representative glyphs が議題になっている。
 
 ## この wiki での関与
 
