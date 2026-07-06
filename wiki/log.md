@@ -4,6 +4,7 @@
 
 ## 2026-07-07
 
+- **Ingest**: Added [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) and [L2/26-102](documents/utc-l2-26-102.md), covering the official Unicode 18.0 draft / beta pages, RMG timeline, UCD / UAX / UTS change sources, and ISO/IEC 10646 7th edition synchronization points.
 - **Refine**: Split the time-based Recent UTC CJK and Unihan Documents page into durable concept topics: [Unihan Database Maintenance](topics/unihan-database-maintenance.md), [UAX #45 U-Source Ideographs](topics/uax45-u-source-ideographs.md), [CJK Security Confusables](topics/cjk-security-confusables.md), and [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md).
 - **Ingest**: Added [L2/26-099](documents/utc-l2-26-099.md) as a source document page for CJK & Unihan Working Group Recommendations for UTC #187, and linked its PRI, UAX #45, IRG #66, and WG2 #73 follow-up documents from related topic and meeting pages.
 - **Ingest**: Added initial UTC CJK / Unihan coverage for `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-127`, `L2/26-133`, `L2/26-134`, `L2/26-136`, `L2/26-147`, and `L2/26-148`, and added [Ken Lunde](people/ken-lunde.md) as a recurring UTC / CJK & Unihan document source.

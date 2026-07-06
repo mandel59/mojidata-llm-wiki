@@ -5,7 +5,7 @@ description: "Unihan database、UAX #38、UTS #37、関連 k* properties の保�
 slug: unihan-database-maintenance
 kind: topic
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354]
+documents: [utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -51,6 +51,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 
 ## 関連トピック
 
+- [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [IRG Indexing Rules](irg-indexing-rules.md)
 - [UAX #45 U-Source Ideographs](uax45-u-source-ideographs.md)

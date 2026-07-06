@@ -8,7 +8,7 @@ body: WG2
 meeting: 73
 date: "2026-06-22/26"
 location: Paris, France
-documents: [wg2-n5350, wg2-n5354, utc-l2-26-099]
+documents: [wg2-n5350, wg2-n5354, utc-l2-26-099, utc-l2-26-102]
 tags: [meeting, wg2, small-seal, cjk, unihan]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -27,6 +27,7 @@ WG2 meeting #73 は 2026-06-22/26 に Paris で開催された。Small Seal は 
 - First amendment project subdivision
 - IRG source / CJK additions
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099` は agenda 9.3.1 に載り、Recommendation M73.02 の CJK additions and changes に反映された。
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` が示す 18.0 / ISO/IEC 10646 7th edition synchronization risk の後続として、WG2 #73 recommendations が CD / DIS progression に接続する。
 
 ## 決定事項
 
@@ -52,3 +53,4 @@ Recommendation M73.04 は、M73.01 から M73.03 の変更と final disposition 
 - `wg2-n5350` - <https://www.unicode.org/wg2/docs/n5350R8-Meeting73Agenda.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
+- `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>

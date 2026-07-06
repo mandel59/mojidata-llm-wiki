@@ -5,6 +5,7 @@
 ## 一覧
 
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
+- [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。

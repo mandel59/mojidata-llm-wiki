@@ -5,7 +5,7 @@ description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script 
 slug: small-seal-script
 kind: topic
 bodies: [UTC, WG2]
-documents: [utc-l2-14-242, utc-l2-15-281, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, wg2-n4634, wg2-n4688, wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5318, wg2-n5344, wg2-n5348, wg2-n5355]
+documents: [utc-l2-14-242, utc-l2-15-281, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, wg2-n4634, wg2-n4688, wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5318, wg2-n5344, wg2-n5348, wg2-n5354, wg2-n5355]
 status: in-ballot-pipeline
 tags: [script, seal, cjk, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -62,6 +62,8 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 
 `WG2 N5344` では script property と character names は ISO 15924 に合わせて `Seal` を使う案だった。WG2 #73 の CD4 disposition による名称・property 変更は [WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md) に集約する。
 
+Unicode 18.0 draft release page と beta review page では、Seal が Unicode 18.0 の 4 new scripts の一つとして扱われ、Seal block は `3D000..3FC3F`、新 data file として `SealSources.txt` が示されている。Unicode 18.0 全体の変更点資料は [Unicode 18.0 Change Sources](unicode-18-change-sources.md) にまとめる。
+
 ## 現状
 
 2026-06-26 の WG2 #73 recommendations 時点では、Small Seal は ISO/IEC 10646 7th edition CD4 の disposition に含まれており、M73.04 はその変更を含む DIS text を SC2 secretariat に回すことを勧告している。M73.04 の target は DIS 2026-10-01、IS 2027-06-01。
@@ -73,6 +75,7 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 - `WG2 N5355` - `zhèngzhuàn` / `chóngwén` clarification
 - [WG2 meeting #72](../meetings/wg2/meeting-72.md)
 - [WG2 meeting #73](../meetings/wg2/meeting-73.md)
+- [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 
 ## 関連出来事
@@ -105,3 +108,5 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 - `wg2-n5348` - <https://www.unicode.org/wg2/docs/n5348R-SmallSealFeedback.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>
+- Unicode 18.0 draft release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
