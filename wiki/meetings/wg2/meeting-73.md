@@ -1,5 +1,7 @@
 ---
+type: Meeting
 title: WG2 Meeting #73
+description: 2026-06 WG2 Meeting #73 の Small Seal Script と ISO/IEC 10646 7th edition DIS 進行。
 slug: wg2-meeting-73
 kind: meeting
 body: WG2
@@ -8,6 +10,7 @@ date: "2026-06-22/26"
 location: Paris, France
 documents: [wg2-n5350, wg2-n5354]
 tags: [meeting, wg2, small-seal]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # WG2 Meeting #73
@@ -40,4 +43,3 @@ Recommendation M73.04 は、M73.01 から M73.03 の変更と final disposition 
 
 - `wg2-n5350` - <https://www.unicode.org/wg2/docs/n5350R8-Meeting73Agenda.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
-

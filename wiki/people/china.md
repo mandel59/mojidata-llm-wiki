@@ -1,11 +1,14 @@
 ---
+type: Member Body
 title: China
+description: G-source、Small Seal Script、CJKV Components に関係する China member body のページ。
 slug: china
 kind: member-body
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2929, irg-n2935, wg2-n5318]
 topics: [cjk-horizontal-extensions, cjkv-components, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # China
@@ -43,4 +46,3 @@ China は、この wiki では IRG / WG2 の member body / source として扱�
 - `irg-n2929` - <https://www.unicode.org/irg/docs/n2929-ChinaHorizontalExtension.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `wg2-n5318` - <https://www.unicode.org/wg2/docs/n5318R-Proposal%20to%20encode%20Four-Column%20Small%20Seal%20Script%20in%20UCS.pdf>
-

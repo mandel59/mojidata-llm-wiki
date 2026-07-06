@@ -1,5 +1,7 @@
 ---
+type: Meeting
 title: IRG Meeting #67
+description: 2026-10 Tokyo hybrid IRG Meeting #67 の agenda と主要議題。
 slug: irg-meeting-67
 kind: meeting
 body: IRG
@@ -9,6 +11,7 @@ location: Tokyo, Japan
 documents: [irg-n2935]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [meeting, irg, agenda, ws2024]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # IRG Meeting #67

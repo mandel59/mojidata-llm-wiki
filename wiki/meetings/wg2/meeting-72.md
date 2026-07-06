@@ -1,5 +1,7 @@
 ---
+type: Meeting
 title: WG2 Meeting #72
+description: 2025-06 WG2 Meeting #72 の Small Seal Script 関連 recommendations。
 slug: wg2-meeting-72
 kind: meeting
 body: WG2
@@ -8,6 +10,7 @@ date: "2025-06-23/27"
 location: Niigata, Japan
 documents: [wg2-n5301, wg2-n5304]
 tags: [meeting, wg2, small-seal]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # WG2 Meeting #72
@@ -39,4 +42,3 @@ Recommendation M72.13 は、11,339 Small Seal characters を `38000..3AC4A` に�
 
 - `wg2-n5301` - <https://www.unicode.org/wg2/docs/n5301-m72minutes-JP-2025-rev5.pdf>
 - `wg2-n5304` - <https://www.unicode.org/wg2/docs/n5304-Mtg72-Niigata-Recs-rev5-final.pdf>
-

@@ -1,11 +1,14 @@
 ---
+type: Organization
 title: IRG
+description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group のページ。
 slug: irg
 kind: organization
 bodies: [IRG, WG2]
 documents: [irg-n2909, irg-n2935]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [organization, standards-body, irg]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # IRG
@@ -39,4 +42,3 @@ IRG は、この wiki では CJK Unified Ideographs、IRG Working Set、source r
 
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
-

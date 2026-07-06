@@ -1,9 +1,12 @@
 ---
+type: Synthesis
 title: Han Ideographic Scripts
+description: Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 slug: han-ideographic-scripts
 kind: family
 members: [small-seal-script, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [family, han, ideographic]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Han Ideographic Scripts

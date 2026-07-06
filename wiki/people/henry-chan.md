@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Henry Chan
+description: IRG radical assignment と indexing rules に関係する contributor のページ。
 slug: henry-chan
 kind: person
 bodies: [IRG]
 documents: [irg-n2925]
 topics: [irg-indexing-rules]
 tags: [person, radicals, indexing]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Henry Chan
@@ -27,4 +30,3 @@ Henry Chan は、この wiki では Primary / Secondary Radical assignment rules
 ## 出典
 
 - `irg-n2925` - <https://www.unicode.org/irg/docs/n2925-RadicalAssignments.pdf>
-

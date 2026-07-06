@@ -1,11 +1,14 @@
 ---
+type: Topic
 title: IRG Working Set 2024
+description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 kind: topic
 bodies: [IRG]
 documents: [irg-n2909, irg-n2932, irg-n2933, irg-n2935]
 status: active
 tags: [irg, working-set, cjk, ws2024]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # IRG Working Set 2024
@@ -61,4 +64,3 @@ Meeting #67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ideo
 - `irg-n2932` - <https://www.unicode.org/irg/docs/n2932-WS2024v5.pdf>
 - `irg-n2933` - <https://www.unicode.org/irg/docs/n2933-WS2024v5ConsolidatedComments.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
-

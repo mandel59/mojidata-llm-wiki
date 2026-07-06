@@ -1,11 +1,14 @@
 ---
+type: Organization
 title: SAT
+description: SAT-source と IRG source data に関係する organization のページ。
 slug: sat
 kind: organization
 bodies: [IRG]
 documents: [irg-n2935, irg-n2959]
 topics: [irg-source-data-and-representative-glyphs, irg-working-set-2024]
 tags: [organization, source, sat-source]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # SAT
@@ -36,4 +39,3 @@ SAT は、この wiki では IRG の source / organization として扱う。IRG
 
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2959` - <https://www.unicode.org/irg/docs/n2959-SSourceGlyphIssues.pdf>
-

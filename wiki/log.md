@@ -1,25 +1,11 @@
 # Wiki Log
 
-このファイルは append-only の作業ログです。
+このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
-形式:
+## 2026-07-06
 
-```text
-## [YYYY-MM-DD] operation | summary
-```
-
-## [2026-07-06] ingest | Small Seal Script
-
-Created the initial Small Seal Script topic from UTC/WG2 registry manifests and WG2 documents N5294, N5306, N5317, N5318, N5344, N5348, N5354, and N5355. Added meeting summaries for WG2 #72 and #73.
-
-## [2026-07-06] ingest | IRG Meeting #67 agenda topics
-
-Created IRG Meeting #67 agenda page and topic pages for IRG Working Set 2024, CJK Horizontal Extensions, IRG source data and representative glyphs, kIRG_SGSource, CJKV Components, and IRG indexing rules from IRG N2935 plus related IRG documents N2878R3, N2909, N2925, N2926, N2929, N2931, N2932, N2951, N2953-N2962.
-
-## [2026-07-06] ingest | People and member body pages
-
-Created initial People pages for core standards bodies, IRG member bodies / sources, and recurring contributors connected to Small Seal Script and IRG Meeting #67 agenda topics.
-
-## [2026-07-06] summarise | IRG Meeting #66
-
-Created an IRG Meeting #66 summary from IRG N2899, N2909, N2910, and N2911, linking the recommendations to WS2024, horizontal extension, source data, kIRG_SGSource, CJKV Components, and indexing rule topics.
+- **Migration**: Converted the wiki to an OKF v0.1 bundle structure by adding [index](index.md), replacing README stubs with directory indexes, and adding OKF concept metadata.
+- **Summarise**: Created an [IRG Meeting #66](meetings/irg/meeting-66.md) summary from IRG N2899, N2909, N2910, and N2911, linking the recommendations to WS2024, horizontal extension, source data, kIRG_SGSource, CJKV Components, and indexing rule topics.
+- **Ingest**: Created initial [People](people/) pages for core standards bodies, IRG member bodies / sources, and recurring contributors connected to Small Seal Script and IRG Meeting #67 agenda topics.
+- **Ingest**: Created [IRG Meeting #67](meetings/irg/meeting-67.md) agenda page and topic pages for [IRG Working Set 2024](topics/irg-working-set-2024.md), [CJK Horizontal Extensions](topics/cjk-horizontal-extensions.md), [IRG source data and representative glyphs](topics/irg-source-data-and-representative-glyphs.md), [kIRG_SGSource](topics/kirg-sgsource.md), [CJKV Components](topics/cjkv-components.md), and [IRG indexing rules](topics/irg-indexing-rules.md) from IRG N2935 plus related IRG documents N2878R3, N2909, N2925, N2926, N2929, N2931, N2932, N2951, and N2953-N2962.
+- **Ingest**: Created the initial [Small Seal Script](topics/small-seal-script.md) topic from UTC/WG2 registry manifests and WG2 documents N5294, N5306, N5317, N5318, N5344, N5348, N5354, and N5355. Added meeting summaries for WG2 #72 and #73.

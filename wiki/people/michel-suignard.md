@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Michel Suignard
+description: Small Seal Script proposal と WG2 project editor 関連文書に関わる contributor のページ。
 slug: michel-suignard
 kind: person
 bodies: [UTC, WG2]
 documents: [wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344, wg2-n5348, utc-l2-25-049, utc-l2-25-111]
 topics: [small-seal-script]
 tags: [person, project-editor, small-seal]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Michel Suignard
@@ -37,4 +40,3 @@ Michel Suignard は、この wiki では Small Seal Script encoding initiative �
 - `wg2-n5348` - <https://www.unicode.org/wg2/docs/n5348R-SmallSealFeedback.pdf>
 - `utc-l2-25-049` - <https://www.unicode.org/L2/L2025/25049r-considerations-small-seal.pdf>
 - `utc-l2-25-111` - <https://www.unicode.org/L2/L2025/25111-converging-small-seal.pdf>
-

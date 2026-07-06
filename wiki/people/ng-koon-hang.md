@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Ng Koon Hang
+description: V-source representative glyph と Nom glyph data に関係する contributor のページ。
 slug: ng-koon-hang
 kind: person
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
 topics: [irg-source-data-and-representative-glyphs]
 tags: [person, v-source, representative-glyphs, nom]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Ng Koon Hang
@@ -30,4 +33,3 @@ Ng Koon Hang は、この wiki では V-source representative glyph issues for U
 
 - `irg-n2928` - <https://www.unicode.org/irg/docs/n2928-VSourceGlyphIssues.pdf>
 - `irg-n2953` - <https://www.unicode.org/irg/docs/n2953-IRGN2928Followup.pdf>
-

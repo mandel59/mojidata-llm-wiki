@@ -1,6 +1,10 @@
+---
+okf_version: "0.1"
+---
+
 # Unicode LLM Wiki
 
-この wiki は UTC、WG2、IRG の公開文書を読み、Unicode 標準化の議論を後から辿るための作業場所です。
+この wiki は UTC、WG2、IRG の公開文書を読み、Unicode 標準化の議論を後から辿るための OKF bundle です。
 
 ## Sections
 
@@ -22,10 +26,10 @@
 
 ## Current Families
 
-- [Han Ideographic Scripts](families/han-ideographic-scripts.md)
+- [Han Ideographic Scripts](families/han-ideographic-scripts.md) - Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 
 ## Source Entry Points
 
-- [UTC manifest](../catalog/registries/utc/)
-- [WG2 manifest](../catalog/registries/wg2/)
-- [IRG manifest](../catalog/registries/irg/)
+- [UTC manifest](../catalog/registries/utc/) - UTC Document Registry 由来の目録
+- [WG2 manifest](../catalog/registries/wg2/) - WG2 Document Registry 由来の目録
+- [IRG manifest](../catalog/registries/irg/) - IRG Document Register 由来の目録

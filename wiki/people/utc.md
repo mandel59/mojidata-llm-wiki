@@ -1,11 +1,14 @@
 ---
+type: Organization
 title: UTC
+description: Unicode Technical Committee と UTC / WG2 / IRG 間の関連トピックを記録するページ。
 slug: utc
 kind: organization
 bodies: [UTC, IRG, WG2]
 documents: [irg-n2935, irg-n2961, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111]
 topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, small-seal-script]
 tags: [organization, standards-body, utc]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # UTC
@@ -42,4 +45,3 @@ UTC は、この wiki では Unicode 側の標準化 body として扱う。UTC 
 - `utc-l2-22-279` - <https://www.unicode.org/L2/L2022/22279-ucs-seal-map.pdf>
 - `utc-l2-25-049` - <https://www.unicode.org/L2/L2025/25049r-considerations-small-seal.pdf>
 - `utc-l2-25-111` - <https://www.unicode.org/L2/L2025/25111-converging-small-seal.pdf>
-

@@ -1,11 +1,14 @@
 ---
+type: Member Body
 title: TCA
+description: T-source、Small Seal Script、CJKV Components に関係する TCA member body のページ。
 slug: tca
 kind: member-body
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2927r, wg2-n5318]
 topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script]
 tags: [member-body, source, tca, t-source]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # TCA
@@ -39,4 +42,3 @@ TCA は、この wiki では IRG / WG2 の member body / source として扱う�
 - `wg2-n5318` - <https://www.unicode.org/wg2/docs/n5318R-Proposal%20to%20encode%20Four-Column%20Small%20Seal%20Script%20in%20UCS.pdf>
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>
-

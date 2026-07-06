@@ -1,11 +1,14 @@
 ---
+type: Member Body
 title: Vietnam
+description: V-source と Nom glyph data に関係する Vietnam member body のページ。
 slug: vietnam
 kind: member-body
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
 topics: [irg-source-data-and-representative-glyphs]
 tags: [member-body, source, vietnam, v-source, nom]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Vietnam
@@ -34,4 +37,3 @@ Vietnam は、この wiki では IRG の member body / source として扱う。
 
 - `irg-n2928` - <https://www.unicode.org/irg/docs/n2928-VSourceGlyphIssues.pdf>
 - `irg-n2953` - <https://www.unicode.org/irg/docs/n2953-IRGN2928Followup.pdf>
-

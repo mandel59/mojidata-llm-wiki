@@ -1,11 +1,14 @@
 ---
+type: Topic
 title: Small Seal Script
+description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 kind: topic
 bodies: [UTC, WG2]
 documents: [utc-l2-14-242, utc-l2-15-281, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, wg2-n4634, wg2-n4688, wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5318, wg2-n5344, wg2-n5348, wg2-n5355]
 status: in-ballot-pipeline
 tags: [script, seal, cjk, ideographic]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Small Seal Script

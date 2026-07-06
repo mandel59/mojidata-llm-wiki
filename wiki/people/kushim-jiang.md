@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Kushim Jiang
+description: CJKV Components と G-source data feedback に関係する contributor のページ。
 slug: kushim-jiang
 kind: person
 bodies: [IRG]
 documents: [irg-n2878r3, irg-n2957]
 topics: [cjkv-components, irg-source-data-and-representative-glyphs]
 tags: [person, components, g-source, feedback]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Kushim Jiang
@@ -30,4 +33,3 @@ Kushim Jiang は、この wiki では CJKV Components proposal の author list �
 
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
 - `irg-n2957` - <https://www.unicode.org/irg/docs/n2957-IRGN2956Feedback.pdf>
-

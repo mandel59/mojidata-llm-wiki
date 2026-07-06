@@ -1,11 +1,14 @@
 ---
+type: Topic
 title: CJKV Components
+description: CJK Unified Ideographs Components-A/B の標準化提案と IRG / WG2 の扱い。
 slug: cjkv-components
 kind: topic
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2909, irg-n2935]
 status: accepted-for-future-version
 tags: [cjk, components, irg, ideographic]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # CJKV Components

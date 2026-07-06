@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Richard Cook
+description: Small Seal Script source mapping data に関係する contributor のページ。
 slug: richard-cook
 kind: person
 bodies: [UTC]
 documents: [utc-l2-22-279]
 topics: [small-seal-script]
 tags: [person, small-seal, source-mapping]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Richard Cook
@@ -27,4 +30,3 @@ Richard Cook は、この wiki では Small Seal Script の source mapping data 
 ## 出典
 
 - `utc-l2-22-279` - <https://www.unicode.org/L2/L2022/22279-ucs-seal-map.pdf>
-

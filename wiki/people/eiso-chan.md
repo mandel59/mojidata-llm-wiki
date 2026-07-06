@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Eiso Chan
+description: kIRG_SGSource と IRG indexing rules に関係する contributor のページ。
 slug: eiso-chan
 kind: person
 bodies: [IRG]
 documents: [irg-n2926, irg-n2951]
 topics: [kirg-sgsource, irg-indexing-rules]
 tags: [person, unihan, source-data, indexing]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Eiso Chan
@@ -30,4 +33,3 @@ Eiso Chan は、この wiki では `kIRG_SGSource` と FS / SC guidelines の文
 
 - `irg-n2926` - <https://www.unicode.org/irg/docs/n2926-SGSource.pdf>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
-

@@ -1,11 +1,14 @@
 ---
+type: Topic
 title: CJK Horizontal Extensions
+description: 既存 CJK Unified Ideographs に G / UK / U source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 kind: topic
 bodies: [IRG, UTC]
 documents: [irg-n2909, irg-n2929, irg-n2935, irg-n2960, irg-n2961]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # CJK Horizontal Extensions

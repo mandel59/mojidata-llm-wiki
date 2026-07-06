@@ -1,11 +1,14 @@
 ---
+type: Topic
 title: IRG Source Data and Representative Glyphs
+description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 kind: topic
 bodies: [IRG, UTC, WG2]
 documents: [irg-n2909, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # IRG Source Data and Representative Glyphs

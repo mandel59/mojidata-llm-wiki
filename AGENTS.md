@@ -26,8 +26,8 @@ catalog/
     irg/documents.jsonl           IRG Document Register 由来の目録
     irg/registers.json
 wiki/
-  README.md                       wiki の入口
-  log.md                          append-only の作業ログ
+  index.md                        OKF bundle root index
+  log.md                          OKF 形式の作業ログ
   topics/<slug>.md                論点・文字集合・script・block などの精読ページ
   documents/<entry-id>.md         重要文書の要約ページ
   meetings/<body>/<meeting>.md    UTC/WG2/IRG 会合単位の要約
@@ -37,6 +37,7 @@ tools/
   sync_registries.py              Registry を読んで catalog を再生成
   fetch_documents.py              目録に基づいて文書実体を .cache/ に取得
   check_catalog.py                目録の機械検査
+  check_okf.py                    wiki の OKF v0.1 互換検査
   unicode_registry.py             Registry parser と共通処理
 .cache/
   unicode-registry/               Registry HTML の非 Git キャッシュ
@@ -44,6 +45,20 @@ tools/
 ```
 
 `.cache/`、`raw/`、`downloads/` は `.gitignore` で除外する。文書実体を誤ってコミットしない。
+
+## OKF 互換性
+
+`wiki/` は Open Knowledge Format (OKF) v0.1 の knowledge bundle として扱う。
+
+- bundle root は `wiki/`。
+- 入口は `wiki/index.md`。`index.md` と `log.md` は OKF reserved filenames として扱う。
+- `wiki/` 配下の `README.md` スタブは作らない。ディレクトリ一覧は各ディレクトリの `index.md` に置く。
+- `index.md` は directory listing とし、root の `wiki/index.md` だけ `okf_version: "0.1"` frontmatter を持ってよい。
+- `log.md` は `## YYYY-MM-DD` の date heading と flat list の entries を新しい日付順に置く。
+- `index.md` と `log.md` 以外の `.md` は concept document とし、YAML frontmatter に非空の `type` を必ず持つ。
+- 既存の `kind`、`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
+- `tags` は YAML list とする。外部根拠は本文末尾の `## 出典` に公開 URL と `entry_id` を残す。
+- wiki 内リンクからローカル `.cache/`、`raw/`、`downloads/` へリンクしない。
 
 ## 出典の優先順位
 
@@ -168,13 +183,14 @@ python3 tools/fetch_documents.py --registry irg --doc "IRG N2909"
 
 ### Query
 
-1. `wiki/README.md` と `catalog/registries/*/documents.jsonl` を入口に検索する。
+1. `wiki/index.md` と `catalog/registries/*/documents.jsonl` を入口に検索する。
 2. 回答は出典付きで書く。
 3. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
 
 ### Lint
 
 - 目録 JSONL が壊れていないか `python3 tools/check_catalog.py` で見る。
+- wiki が OKF v0.1 の最小条件を満たすか `python3 tools/check_okf.py` で見る。
 - wiki の主張に出典があるか確認する。
 - topic、document、meeting、family の相互リンク漏れを見る。
 - UTC/WG2/IRG 間で同一トピックの状態が食い違う場合、時点と body を明示しているか確認する。
@@ -187,4 +203,3 @@ python3 tools/fetch_documents.py --registry irg --doc "IRG N2909"
 - schema 変更: `[schema] update source handling policy`
 
 外部文書実体、Registry HTML cache、変換済みテキスト cache はコミットしない。
-

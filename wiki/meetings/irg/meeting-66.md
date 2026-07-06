@@ -1,5 +1,7 @@
 ---
+type: Meeting
 title: IRG Meeting #66
+description: 2026-03-16/20 の IRG Meeting #66 recommendations と Meeting #67 へ引き継がれた action items。
 slug: irg-meeting-66
 kind: meeting
 body: IRG
@@ -9,6 +11,7 @@ location: Virtual
 documents: [irg-n2899, irg-n2909, irg-n2910, irg-n2911]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [meeting, irg, recommendations, ws2024]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # IRG Meeting #66
@@ -62,4 +65,3 @@ IRG Meeting #66 は 2026-03-16/20 に virtual meeting として開催された�
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2910` - <https://www.unicode.org/irg/docs/n2910-EditorialReport.pdf>
 - `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>
-

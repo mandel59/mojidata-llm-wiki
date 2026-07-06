@@ -1,11 +1,14 @@
 ---
+type: Person
 title: Lin Anning
+description: G-source representative glyph 修正に関係する contributor のページ。
 slug: lin-anning
 kind: person
 bodies: [IRG]
 documents: [irg-n2962]
 topics: [irg-source-data-and-representative-glyphs]
 tags: [person, g-source, representative-glyphs]
+timestamp: 2026-07-06T21:31:45+09:00
 ---
 
 # Lin Anning
@@ -28,4 +31,3 @@ Lin Anning は、この wiki では 9 G-source glyphs の revision request の c
 ## 出典
 
 - `irg-n2962` - <https://www.unicode.org/irg/docs/n2962-GSourceGlyphIssues.pdf>
-
