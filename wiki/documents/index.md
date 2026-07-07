@@ -49,12 +49,19 @@
 - [L2/25-031](utc-l2-25-031.md) - default identifiers 向け common-use Han subset。
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
+- [L2/26-092](utc-l2-26-092.md) - UTC \#187 agenda。
 - [L2/26-093](utc-l2-26-093.md) - UTC \#187 meeting minutes。
+- [L2/26-096](utc-l2-26-096.md) - UTC \#187 Properties & Algorithms Group report。
+- [L2/26-097](utc-l2-26-097.md) - UTC \#187 Editorial WG report。
+- [L2/26-098](utc-l2-26-098.md) - UTC \#187 Emoji Standard & Research WG report。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC \#187 Meeting。
+- [L2/26-100](utc-l2-26-100.md) - UTC \#187 Script Encoding WG recommendations。
+- [L2/26-101](utc-l2-26-101.md) - UTC \#187 Charts WG report。
 - [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX \#38 Revision 40 proposed update。
 - [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
+- [L2/26-126](utc-l2-26-126.md) - ICU4X / TC39 liaison update to UTC \#187。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
 - [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
 - [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。

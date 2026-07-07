@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Digested the latest public UTC \#187 working group reports, adding Source Document pages for `L2/26-092`, `096`, `097`, `098`, `100`, `101`, and `126`, and created topic entries for release coordination, properties / algorithms, script pipeline, and emoji interoperability.
 - **Refine**: Unified [Kana](topics/kana.md) chronology document cells on Source Document links, added `L2/99-238` and `WG2 N2092` digests, and documented / checked the derived document catalog overlay used for exceptional non-registry entries.
 - **Ingest**: Implemented topic split issue \#10 by adding [CJK Multi-Syllabic and Abbreviation Characters](topics/cjk-multi-syllabic-and-abbreviation-characters.md), digesting `IRG N2792`, `IRG N2828`, `IRG N2867R`, and `IRG N2885R`, and keeping [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) focused on script-hybrid block policy.
 - **Ingest**: Implemented topic split issue \#9 by adding [JMJ Horizontal Extension Review Path](topics/jmj-horizontal-extension-review-path.md), digesting `WG2 N5221`, `IRG N2721` / `WG2 N5284`, `IRG N2722`, and `WG2 N5301`, and narrowing [J-source and JMJ Source Issues](topics/j-source.md) to post-extension correction / disposition.

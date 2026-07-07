@@ -9,7 +9,7 @@ meeting: 187
 date: "2026-04-21/23"
 location: Hybrid online/in-person
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-126]
-topics: [unicode-18-change-sources, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
+topics: [unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
 events: [utc-187-uax45-futurews-additions]
 tags: [meeting, utc, unicode-18, beta, cjk]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -23,22 +23,26 @@ UTC Meeting \#187 は 2026-04-21/23 に hybrid online/in-person meeting とし�
 
 ## 主要議題
 
-- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` の timeline、beta deliverables、ISO/IEC 10646 7th edition synchronization。
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - [L2/26-102](../../documents/utc-l2-26-102.md) の timeline、beta deliverables、ISO/IEC 10646 7th edition synchronization。
+- [Unicode Release Coordination and Publication](../../topics/unicode-release-coordination-and-publication.md) - [L2/26-097](../../documents/utc-l2-26-097.md)、[L2/26-101](../../documents/utc-l2-26-101.md)、[L2/26-126](../../documents/utc-l2-26-126.md) の editorial / charts / liaison reports。
+- [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [L2/26-096](../../documents/utc-l2-26-096.md) の PAG recommendations、UCD properties、line breaking、segmentation、collation、security data。
+- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-100](../../documents/utc-l2-26-100.md) の SEW recommendations、provisional assignments、保留中の script model issues。
+- [Emoji Interoperability and Intake](../../topics/emoji-interoperability-and-intake.md) - [L2/26-098](../../documents/utc-l2-26-098.md) の ESR report、monarch butterfly feedback、CLDR keyword intake。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099`、`L2/26-105`、`L2/26-112` などの Unihan / UAX \#38 / UTS \#37 changes。
 - [Unihan Data Format and Property Syntax](../../topics/unihan-data-format-and-property-syntax.md) - UAX \#38 / UTS \#37 の data format / property syntax 更新。
 - [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX \#45 additions。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - `L2/26-082` / `L2/26-099` / `L2/26-127` の CJK confusables review。
-- Script Encoding WG、Properties & Algorithms WG、Editorial WG、Charts WG、Emoji Standard & Research WG、RMG reports。
-- ICU4X and TC39 liaison update `L2/26-126`。
 
 ## 決定事項
 
 | 区分 | 文書 | 要点 |
 | --- | --- | --- |
-| Unicode 18.0 beta review | `L2/26-102`, `L2/26-093` | UTC は Unicode 18.0 beta review の開始を authorize した。RMG / PAG / UTC に beta review landing page、PRI page、publication coordination の action items が置かれた。 |
+| Unicode 18.0 beta review | [L2/26-102](../../documents/utc-l2-26-102.md), [L2/26-093](../../documents/utc-l2-26-093.md) | UTC は Unicode 18.0 beta review の開始を authorize した。RMG / PAG / UTC に beta review landing page、PRI page、publication coordination の action items が置かれた。 |
 | CJK & Unihan | `L2/26-099` | UTC \#187 向け CJK & Unihan WG recommendations。Unihan database、[UAX \#45 FutureWS additions](../../events/utc-187-uax45-futurews-additions.md)、UAX \#60、CJK Strokes variation sequences、CJK confusables、IRG \#66 follow-up を処理する。 |
-| Scripts | `L2/26-100` | Script Encoding WG が UTC \#187 向け recommendations を提出。Unicode 18.0 と ISO/IEC 10646 7th edition の新規 script / character progression に関係する。 |
-| Charts / Editorial / PAG / ESR | `L2/26-096`-`L2/26-101` | Unicode 18.0 beta review に向け、properties、charts、editorial text、emoji の各 WG が report / recommendations を提出。 |
+| Properties / Algorithms | [L2/26-096](../../documents/utc-l2-26-096.md) | PAG が Unicode 18.0 向けの property、line break、segmentation、collation、security / confusables、UTS \#61 updates を勧告した。 |
+| Scripts | [L2/26-100](../../documents/utc-l2-26-100.md) | Script Encoding WG が UTC \#187 向け recommendations を提出。Latin / Arabic / currency / alchemical symbols の progression と、joining model / stability issues を扱う。 |
+| Charts / Editorial / Liaison | [L2/26-097](../../documents/utc-l2-26-097.md), [L2/26-101](../../documents/utc-l2-26-101.md), [L2/26-126](../../documents/utc-l2-26-126.md) | Unicode 18.0 beta review に向け、core spec text、charts publication、NamesList ownership、ICU4X / TC39 implementation liaison が報告された。 |
+| Emoji | [L2/26-098](../../documents/utc-l2-26-098.md) | ESR が monarch butterfly feedback、emoji interoperability、CLDR keyword intake、Emoji 19.0 intake window を報告した。 |
 
 ## 後続確認
 

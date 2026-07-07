@@ -41,6 +41,10 @@ okf_version: "0.1"
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - Unicode 18.0 の変更点を調べるための公式資料と関連文書。
 - [Unihan Database Maintenance](topics/unihan-database-maintenance.md) - Unihan database、UAX \#38、UTS \#37、関連 k* properties の保守論点。
 - [Unihan Data Format and Property Syntax](topics/unihan-data-format-and-property-syntax.md) - UAX \#38 / UTS \#37 / RSIndex.txt / kTotalStrokes など Unihan 周辺 data format と property syntax の更新論点。
+- [Emoji Interoperability and Intake](topics/emoji-interoperability-and-intake.md) - UTC \#187 ESR report を入口にした emoji interoperability、CLDR keyword、intake process。
+- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#187 SEW report を入口にした script proposal の progression、保留、安定性論点。
+- [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
+- [Unicode Release Coordination and Publication](topics/unicode-release-coordination-and-publication.md) - Unicode 18.0 beta review に向けた release、charts、editorial、liaison coordination。
 
 ## Current Families
 
