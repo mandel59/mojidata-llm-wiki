@@ -20,7 +20,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2022-08-23 | UTC | `L2/22-181` | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、Japanese readings を hiragana / katakana で記録する。 |
+| 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、Japanese readings を hiragana / katakana で記録する。 |
 | 2025-08-19 | UTC | `L2/25-213` | [L2/25-213](../documents/utc-l2-25-213.md) が `kJapanese` に含まれる Katakana 表記の kun'yomi を調査し、definition と values の修正を提案。 |
 | 2026-04-03 | UTC | `L2/26-105` | Proposed Update UAX #38 Revision 40。Unicode 18.0.0 向けに Unihan database の説明、property、history を更新する。 |
 | 2026-04-03 | UTC | `L2/26-112` | Proposed Update UTS #37 Revision 15。Ideographic Variation Database と IVS 登録手順を更新する。 |
@@ -44,7 +44,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 
 ### `kJapanese` と kana readings
 
-`L2/22-181` は、Moji Jōhō Kiban 由来の Japanese readings を hiragana / katakana で記録する `kJapanese` property を提案した。`L2/25-213` は、Katakana 表記が常に on'yomi とは限らず、taxonomic terms や non-Sino-Japanese loanwords などで Katakana 表記の kun'yomi が現れることを指摘する。これは [Kana](kana.md) の仮名表記議論とも接続する。
+[L2/22-181](../documents/utc-l2-22-181.md) は、Moji Jōhō Kiban 由来の Japanese readings を hiragana / katakana で記録する `kJapanese` property を提案した。`L2/25-213` は、Katakana 表記が常に on'yomi とは限らず、taxonomic terms や non-Sino-Japanese loanwords などで Katakana 表記の kun'yomi が現れることを指摘する。これは [Kana](kana.md) の仮名表記議論とも接続する。
 
 ### CJK Hybrid Characters の property 設計
 
@@ -53,6 +53,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 ## 関連文書
 
 - [L2/26-099](../documents/utc-l2-26-099.md)
+- [L2/22-181](../documents/utc-l2-22-181.md)
 - [L2/25-213](../documents/utc-l2-25-213.md)
 - `L2/26-105` - Proposed Update UAX #38。
 - `L2/26-112` - Proposed Update UTS #37。

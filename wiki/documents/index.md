@@ -6,6 +6,9 @@
 
 - [L2/07-159](utc-l2-07-159.md) - U-source database を public / versioned UTR にする提案。
 - [L2/07-160](utc-l2-07-160.md) - Extension C の U-source attribution correction。
+- [L2/07-421](utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E proposal。
+- [L2/08-117](utc-l2-08-117.md) - two Kana characters concerning YE への UTC / L2 review request。
+- [L2/08-358](utc-l2-08-358.md) - Japan NB feedback on HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
 - [L2/08-284](utc-l2-08-284.md) - Draft UTR #45: U-Source Ideographs。
 - [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
 - [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
@@ -16,6 +19,16 @@
 - [L2/22-185](utc-l2-22-185.md) - UAX #45 status value names。
 - [L2/25-199](utc-l2-25-199.md) - UAX #45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
+- [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
+- [L2/16-188](utc-l2-16-188.md) - Hentaigana revised repertoire。
+- [L2/17-091](utc-l2-17-091.md) - Small Kana Characters に対する Japan NB contribution。
+- [L2/19-381](utc-l2-19-381.md) - missing Japanese Kana proposal。
+- [L2/19-382](utc-l2-19-382.md) - Late Middle Japanese transcription 用 kana character proposal。
+- [L2/22-181](utc-l2-22-181.md) - provisional Unihan `kJapanese` property proposal。
+- [L2/23-112](utc-l2-23-112.md) - missing Kana-Ligatures proposal。
+- [L2/23-118](utc-l2-23-118.md) - Ryukyuan languages 用 superscript Katakana proposal。
+- [L2/23-123](utc-l2-23-123.md) - Ryukyuan superscript Katakana proposal feedback。
+- [L2/23-127](utc-l2-23-127.md) - alternate Katakana NE / WI introduction。
 - [IRG N2206](irg-n2206.md) - easily confused ideographs への annotation proposal。
 - [L2/19-282](utc-l2-19-282.md) - `kSpoofingVariant` field の初期 data proposal。
 - [L2/19-328](utc-l2-19-328.md) - `kSpoofingVariant` data と review process の問題提起。
