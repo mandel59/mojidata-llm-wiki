@@ -41,6 +41,7 @@ tools/
   fetch_documents.py              目録に基づいて文書実体を .cache/ に取得
   check_catalog.py                目録の機械検査
   check_wiki_review.py            wiki の高水準レビュー検査
+  find_digest_candidates.py       wiki で参照されているが未 digest の文書候補を抽出
   check_events.py                 event ページと参照整合性の検査
   generate_event_indexes.py       event metadata から index を生成
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
@@ -278,10 +279,11 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 2. `uv run python tools/query_wiki.py list --type Topic` や `--topic <slug>` / `--people <slug>` / `--document <entry_id>` / `--alias <name>` で concept metadata を絞り込む。
 3. `uv run python tools/query_wiki.py related <slug-or-alias> --depth 1` で frontmatter と Markdown 内部リンクから関連 concept を辿る。
 4. `uv run python tools/document_sections.py toc <slug-or-alias>` で Markdown page の見出し一覧を出し、`uv run python tools/document_sections.py section <slug-or-alias> <heading>` で特定 section だけを読む。
-5. 必要なら `--format json` で機械処理用に出力する。
-6. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
-7. 回答は出典付きで書く。
-8. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
+5. 未 digest の文書候補は `uv run python tools/find_digest_candidates.py --topic <slug>`、または `uv run python tools/find_digest_candidates.py --exclude-topic kana --min-refs 2` のように、wiki relation / 本文 mention と catalog を突き合わせて抽出する。
+6. 必要なら `--format json` で機械処理用に出力する。
+7. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
+8. 回答は出典付きで書く。
+9. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
 
 ### Lint
 
