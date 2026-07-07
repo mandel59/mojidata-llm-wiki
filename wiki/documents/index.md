@@ -80,6 +80,13 @@
 - [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
 - [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
 - [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。
+- [IRG N2954](irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
+- [IRG N2955](irg-n2955.md) - `IRG N2954` への G-source glyph feedback。
+- [IRG N2956](irg-n2956.md) - Extension C の G-source glyph / source reference issues。
+- [IRG N2957](irg-n2957.md) - `IRG N2956` への Extension C source data feedback。
+- [IRG N2958](irg-n2958.md) - G-source glyph revision request。
+- [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
+- [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting #72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。

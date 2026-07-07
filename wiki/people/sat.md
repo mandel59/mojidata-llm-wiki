@@ -5,7 +5,7 @@ description: SAT-source と IRG source data に関係する organization。
 slug: sat
 bodies: [IRG]
 documents: [irg-n2935, irg-n2959]
-topics: [irg-source-data-and-representative-glyphs, irg-working-set-2024]
+topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs, irg-working-set-2024]
 tags: [organization, source, sat-source]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -21,7 +21,7 @@ SAT は、大蔵経テキストデータベースに関わる organization / sou
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `IRG N2935` | Meeting #67 host として SAT Daizōkyō Text Database Committee を記録。WS2024 Version 5.0 の SAT-source items も agenda に含まれる。 | [IRG Meeting #67](../meetings/irg/irg-meeting-67.md) |
-| `IRG N2959` | SAT-source glyphs に関する issue document。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
+| `IRG N2959` | SAT-source glyphs に関する issue document。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
 
 ## 関連文書
 
@@ -32,6 +32,7 @@ SAT は、大蔵経テキストデータベースに関わる organization / sou
 
 - [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Working Set 2024](../topics/irg-working-set-2024.md)
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
 ## 出典

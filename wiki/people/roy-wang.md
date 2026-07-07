@@ -5,7 +5,7 @@ description: G-source representative glyph と source reference 修正に関係�
 slug: roy-wang
 bodies: [IRG]
 documents: [irg-n2954, irg-n2956]
-topics: [irg-source-data-and-representative-glyphs]
+topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs]
 tags: [person, g-source, representative-glyphs, source-reference]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -25,6 +25,7 @@ Roy Wang は、G-source representative glyph / source reference issues を提起
 
 ## 関連トピック
 
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [China](china.md)
 

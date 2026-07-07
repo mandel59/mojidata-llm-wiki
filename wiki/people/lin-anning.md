@@ -5,7 +5,7 @@ description: G-source representative glyph 修正に関係する contributor。
 slug: lin-anning
 bodies: [IRG]
 documents: [irg-n2962]
-topics: [irg-source-data-and-representative-glyphs]
+topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs]
 tags: [person, g-source, representative-glyphs]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -24,6 +24,7 @@ Lin Anning は、9 G-source glyphs の revision request を提出した contribu
 
 ## 関連トピック
 
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [China](china.md)
 

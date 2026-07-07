@@ -5,7 +5,7 @@ description: G-source、Small Seal Script、CJKV Components に関係する Chin
 slug: china
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2929, irg-n2935, wg2-n5318, wg2-n5355, wg2-n5369]
-topics: [cjk-horizontal-extensions, cjkv-components, small-seal-script, irg-source-data-and-representative-glyphs]
+topics: [cjk-horizontal-extensions, cjkv-components, g-source-glyph-and-reference-issues, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -25,7 +25,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | `WG2 N5318` | TCA とともに Four-Column Small Seal Script proposal を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5355` | TCA とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5369` | CD.4 disposition の China comment `CN6-025` として Small Seal radical / modern CJK corrections を提示。 | [Small Seal Script](../topics/small-seal-script.md) |
-| `IRG N2935` | Meeting #67 agenda で G-source reference / glyph response、G-source horizontal extension revised document の follow-up が予定されている。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
+| `IRG N2935` | Meeting #67 agenda で G-source reference / glyph response、G-source horizontal extension revised document の follow-up が予定されている。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
 
 ## 関連文書
 
@@ -40,6 +40,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [CJKV Components](../topics/cjkv-components.md)
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Small Seal Script](../topics/small-seal-script.md)
 

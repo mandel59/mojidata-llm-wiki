@@ -5,7 +5,7 @@ description: G-source、SAT-source、representative glyph 修正に関係する 
 slug: ma-shijie
 bodies: [IRG]
 documents: [irg-n2958, irg-n2959]
-topics: [irg-source-data-and-representative-glyphs]
+topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs]
 tags: [person, g-source, sat-source, representative-glyphs]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -25,6 +25,7 @@ Ma Shijie は、IRG 文書で G-source glyph revision と SAT-source glyph issue
 
 ## 関連トピック
 
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [SAT](sat.md)
 

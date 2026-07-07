@@ -21,6 +21,7 @@ okf_version: "0.1"
 - [IRG Working Set 2024](topics/irg-working-set-2024.md) - IRG Meeting #67 の中心議題である WS2024 Version 5.0 review。
 - [CJK Horizontal Extensions](topics/cjk-horizontal-extensions.md) - G / UK / U source の horizontal extension 提案。
 - [IRG Source Data and Representative Glyphs](topics/irg-source-data-and-representative-glyphs.md) - IRG source reference、representative glyph、Unihan property 修正の論点。
+- [G-source Glyph and Source Reference Issues](topics/g-source-glyph-and-reference-issues.md) - G-source representative glyph と source reference correction の個別論点。
 - [kIRG_SGSource](topics/kirg-sgsource.md) - Singapore characters を独立した normative IRG source property として扱う提案。
 - [CJKV Components](topics/cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。

@@ -3,8 +3,8 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
-topics: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
+members: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
+topics: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [family, han, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -24,6 +24,7 @@ Han / ideographic 系の script、block、source data、variation database に�
 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) | active | IRG Meeting #67 の中心議題である WS2024 Version 5.0 review。 |
 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) | active | 既存 CJK Unified Ideographs に G / UK / U source data を追加する提案群。 |
 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) | active | member body source reference、representative glyph、Unihan property の修正論点。 |
+| [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) | active | G-source representative glyph と source reference correction の個別論点。 |
 | [kIRG_SGSource](../topics/kirg-sgsource.md) | accepted-for-future-version | Singapore characters を `kIRG_GSource` から分離する normative source property。 |
 | [CJKV Components](../topics/cjkv-components.md) | accepted-for-future-version | CJK Unified Ideographs Components-A/B の encoding proposal。 |
 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) | active | UCV / NUCV、FS / SC、radical assignment rules の review。 |

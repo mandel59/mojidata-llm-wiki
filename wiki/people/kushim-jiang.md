@@ -5,7 +5,7 @@ description: CJKV Components proposal と G-source data feedback に関係する
 slug: kushim-jiang
 bodies: [IRG]
 documents: [irg-n2733r, irg-n2799, irg-n2878r3, irg-n2957]
-topics: [cjkv-components, irg-source-data-and-representative-glyphs]
+topics: [cjkv-components, g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs]
 tags: [person, components, g-source, feedback]
 timestamp: 2026-07-06T21:58:00+09:00
 ---
@@ -28,6 +28,7 @@ Kushim Jiang は、CJKV Components proposal の author list と G-source issues 
 ## 関連トピック
 
 - [CJKV Components](../topics/cjkv-components.md)
+- [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
 ## 出典

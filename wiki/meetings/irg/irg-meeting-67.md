@@ -9,7 +9,7 @@ meeting: 67
 date: "2026-10-12/16"
 location: Tokyo, Japan
 documents: [irg-n2935, utc-l2-26-147]
-topics: [irg-working-set-2024, cjk-horizontal-extensions, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
+topics: [irg-working-set-2024, cjk-horizontal-extensions, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [meeting, irg, agenda, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -28,6 +28,7 @@ IRG Meeting #67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid mee
 - [CJK Horizontal Extensions](../../topics/cjk-horizontal-extensions.md) - China `G-source` 9156 characters、UK 2 characters、UTC 40 characters の horizontal extension を扱う。
 - [UAX #45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `IRG N2961` / `L2/26-147` の U-source horizontal extension と `kIRG_USource` data。
 - [IRG Source Data and Representative Glyphs](../../topics/irg-source-data-and-representative-glyphs.md) - `G` / `T` / `K` / `UK` / `V` / `SAT` / `U` source の representative glyph、source reference、Unihan property の修正。
+- [G-source Glyph and Source Reference Issues](../../topics/g-source-glyph-and-reference-issues.md) - `IRG N2954` から `IRG N2962` までの G-source glyph / source reference issue chain。
 - [kIRG_SGSource](../../topics/kirg-sgsource.md) - Singapore characters を `kIRG_GSource` から独立した normative `kIRG_SGSource` へ移す案件の follow-up。
 - [CJKV Components](../../topics/cjkv-components.md) - `CJK Unified Ideographs Components-A` / `Components-B` の標準化と WS2024 との重複整理。
 - [IRG Indexing Rules](../../topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC guidelines、radical assignment rules の review。
