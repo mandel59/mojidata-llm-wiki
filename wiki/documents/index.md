@@ -13,6 +13,7 @@
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
+- [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
 - [L2/24-150](utc-l2-24-150.md) - missing three Kana-Ligatures。
 - [L2/24-279](utc-l2-24-279.md) - KATAKANA DIGRAPH YORI。

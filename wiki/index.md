@@ -24,6 +24,8 @@ okf_version: "0.1"
 - [kIRG_SGSource](topics/kirg-sgsource.md) - Singapore characters を独立した normative IRG source property として扱う提案。
 - [CJKV Components](topics/cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。
+- [CJK Strokes Variation Sequences](topics/cjk-strokes-variation-sequences.md) - CJK Strokes characters の standardized variation sequences と StandardizedVariants.txt 更新。
+- [UAX #60 Data for Large East Asian Scripts](topics/uax60-large-east-asian-scripts.md) - UAX #60 の title / data model と Small Seal data の保守。
 - [CJK Security Confusables](topics/cjk-security-confusables.md) - UTS #39 security data における CJK confusable pairs と CJK WG review。
 - [Kana](topics/kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan `kJapanese` readings。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。

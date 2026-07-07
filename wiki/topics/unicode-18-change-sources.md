@@ -4,7 +4,8 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, wg2-n5354, irg-n2935]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, wg2-n5354, irg-n2935]
+topics: [cjk-strokes-variation-sequences, uax60-large-east-asian-scripts]
 status: draft-release
 tags: [unicode-18, release, beta, ucd, migration]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -64,6 +65,8 @@ WG2 #73 の `WG2 N5354` は、Small Seal、CJK additions and changes、UAX #60 t
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group Report to UTC #187。
 - [UTC Meeting #187](../meetings/utc/utc-meeting-187.md) - Unicode 18.0 beta review authorization と working group reports。
 - [UTC Meeting #188](../meetings/utc/utc-meeting-188.md) - Unicode 18.0 content finalize 予定の tracking page。
+- [CJK Strokes Variation Sequences](cjk-strokes-variation-sequences.md)
+- [UAX #60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)
 - `L2/26-105` - Proposed Update UAX #38。
 - `L2/26-112` - Proposed Update UTS #37。
 - `WG2 N5354` - WG2 #73 recommendations。
