@@ -67,6 +67,8 @@ tools/
 - 種別は `type` に統一し、`kind` は使わない。`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
 - `slug` または `entry_id` を持つ concept document は、ファイル名 stem をその値に一致させる。
 - type ごとの required fields、list fields、relation fields は `schema/concept_types.json` で管理する。checker や query tool に type schema を重複して埋め込まない。
+- 本文中の Markdown link は実在する wiki page または外部 URL に限る。まだページ化されていないが関連として残したい概念・文書・会合・人物・出来事は、本文リンクではなく frontmatter の `documents`、`topics`、`people`、`meetings`、`events` に slug / entry_id として記録する。
+- frontmatter relation は未ページ化 target を許容する。`tools/query_wiki.py` の JSON 出力では、既存 concept へ解決できた relation は `links` に入り、未解決 relation は `unresolved_relations` に残る。
 - `tags` は YAML list とする。外部根拠は本文末尾の `## 出典` に公開 URL と `entry_id` を残す。
 - wiki 内リンクからローカル `.cache/`、`raw/`、`downloads/` へリンクしない。
 
@@ -74,7 +76,7 @@ tools/
 
 `tools/wiki_store.py` は wiki の programmatic access layer とする。Markdown frontmatter の split / parse、concept identity、concept graph、Markdown link resolution、schema validation、marker block 置換など、複数 tool で再利用する処理はここへ置く。
 
-`check_okf.py` は OKF bundle と `schema/concept_types.json` に基づく repository schema の検査に集中する。`check_events.py` は Event 固有の意味検査、たとえば catalog / derived documents と topic / people / meeting 参照の存在確認に集中する。`query_wiki.py`、`generate_event_indexes.py`、`rewrite_event_timelines.py` は `wiki_store.py` の API を使い、validation tool を共通 library として import しない。
+`check_okf.py` は OKF bundle と `schema/concept_types.json` に基づく repository schema の検査に集中する。`check_events.py` は Event 固有の意味検査、たとえば event documents が catalog / derived documents に存在することの確認に集中する。topic / people / meeting / event relation は、未ページ化 target を残せるよう存在確認で失敗させない。`query_wiki.py`、`generate_event_indexes.py`、`rewrite_event_timelines.py` は `wiki_store.py` の API を使い、validation tool を共通 library として import しない。
 
 ## 出典の優先順位
 
@@ -222,7 +224,7 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 2. 必要な文書だけ `.cache/` に取得する。
 3. proposal、minutes、recommendations、action items、activity reports の順に読む。
 4. `wiki/topics/<slug>.md` または `wiki/documents/<entry-id>.md` を作成・更新する。
-5. 関連 topic、meeting、family へ相互リンクする。
+5. 関連 topic、meeting、family、people、event を frontmatter relation に記録する。相手ページが存在する場合だけ本文 Markdown link も追加する。
 6. `wiki/log.md` に一行追記する。
 
 ### Summarise Meeting
@@ -230,13 +232,13 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 1. 会合番号で agenda / minutes / recommendations / action items を catalog から探す。
 2. 必要なら activity reports も追加する。
 3. `wiki/meetings/<body>/<meeting>.md` に、議題、決定、未決、後続文書をまとめる。
-4. 関連 topic ページへリンクを戻す。
+4. 関連 topic / people / event を frontmatter relation に記録する。相手ページが存在する場合だけ本文 Markdown link も追加する。
 
 ### Ingest Event
 
 1. 出来事を構成する文書、会合、recommendation、action item を catalog と wiki から特定する。
 2. `wiki/events/<slug>.md` に canonical summary を作成する。
-3. 関連する topic / meeting / people / family / document ページでは、重複説明を event link と短い文脈説明へ縮約する。
+3. 関連する topic / meeting / people / family / document ページでは、frontmatter relation に event slug を記録する。相手ページが存在する場合は、重複説明を event link と短い文脈説明へ縮約する。
 4. `uv run python tools/generate_event_indexes.py` で `wiki/events/index.md` を更新する。
 5. timeline を機械更新する場合は `uv run python tools/rewrite_event_timelines.py --topic <slug>` で dry-run し、`<!-- events:start -->` / `<!-- events:end -->` の marker block があるページだけ `--write` で更新する。
 6. `uv run python tools/check_events.py` と `uv run python tools/check_okf.py` を実行する。
@@ -257,7 +259,7 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 - wiki が OKF v0.1 の最小条件を満たすか `uv run python tools/check_okf.py` で見る。
 - event metadata と参照整合性を `uv run python tools/check_events.py` で見る。
 - wiki の主張に出典があるか確認する。
-- topic、document、meeting、family の相互リンク漏れを見る。
+- topic、document、meeting、family の relation 漏れを見る。本文 Markdown link は実在ページに限り、未ページ化 target は frontmatter relation として残す。
 - UTC/WG2/IRG 間で同一トピックの状態が食い違う場合、時点と body を明示しているか確認する。
 
 ## コミット規約

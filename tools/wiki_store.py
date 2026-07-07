@@ -48,6 +48,7 @@ class Concept:
     frontmatter: dict[str, object]
     body: str
     relations: dict[str, list[str]]
+    unresolved_relations: dict[str, list[str]]
     links: list[str]
     backlinks: list[str]
 
@@ -221,6 +222,7 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         path_to_id[path.resolve()] = cid
 
     link_map: dict[str, list[str]] = {}
+    unresolved_relation_map: dict[str, dict[str, list[str]]] = {}
     for cid, row in rows.items():
         path = row["path"]
         body = row["body"]
@@ -234,9 +236,14 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
             if target in rows and target != cid
         )
         frontmatter_links: list[str] = []
+        unresolved_relations: dict[str, list[str]] = {}
         for key in RELATION_KEYS:
             frontmatter_links.extend(item for item in relations[key] if item in rows)
+            missing = [item for item in relations[key] if item not in rows]
+            if missing:
+                unresolved_relations[key] = missing
         link_map[cid] = sorted(set(links + frontmatter_links))
+        unresolved_relation_map[cid] = unresolved_relations
 
     backlinks = {cid: sorted(source for source, links in link_map.items() if cid in links) for cid in rows}
 
@@ -250,6 +257,7 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
             frontmatter=row["frontmatter"],  # type: ignore[arg-type]
             body=str(row["body"]),
             relations=row["relations"],  # type: ignore[arg-type]
+            unresolved_relations=unresolved_relation_map[cid],
             links=link_map[cid],
             backlinks=backlinks[cid],
         )

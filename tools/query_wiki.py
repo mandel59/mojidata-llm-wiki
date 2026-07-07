@@ -26,6 +26,7 @@ def public_concept(concept: Concept) -> dict[str, object]:
         "people": concept.relations["people"],
         "meetings": concept.relations["meetings"],
         "events": concept.relations["events"],
+        "unresolved_relations": concept.unresolved_relations,
         "links": concept.links,
         "backlinks": concept.backlinks,
     }
