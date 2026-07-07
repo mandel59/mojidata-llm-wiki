@@ -4,7 +4,7 @@ title: Kana
 description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名を追跡する topic。"
 slug: kana
 bodies: [UTC, WG2]
-documents: [utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-20-233, utc-l2-20-280, utc-l2-20-209r, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
+documents: [utc-l2-99-238, wg2-n2092, utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-20-233, utc-l2-20-280, utc-l2-20-209r, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
 status: active
 tags: [kana, hiragana, katakana, hentaigana]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -22,20 +22,20 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 1999-07-15 | UTC | [L2/99-238](https://www.unicode.org/L2/L1999/99238-non-kanji2.pdf) | JCS Committee が JIS X 0213 系の非漢字追加として、linguistic signs、dentist signs、enclosed numbers、publishing signs、Katakana などを UTC に提出。 |
-| 1999-09-13 | WG2 | [WG2 N2092](https://www.unicode.org/wg2/docs/n2092.pdf) | Japan NB が kana / punctuation を含む 48 characters の追加を WG2 に提出。 |
-| 2008-01-14 | UTC / WG2 | [L2/07-421](../documents/utc-l2-07-421.md) / [WG2 N3388](https://www.unicode.org/wg2/docs/n3388.pdf) | Nozomu Kato が YE に関する 2 kana characters の符号化を提案。 |
-| 2008-02-28 | UTC / WG2 | [L2/08-117](../documents/utc-l2-08-117.md) / [WG2 N3394](https://www.unicode.org/wg2/docs/n3394.pdf) | UTC / L2 が Japan NB に review を求め、個別符号化か obsolete kana / hentaigana の大きな枠組みで扱うかを論点化。 |
-| 2008-10-14 | UTC / WG2 | [L2/08-358](../documents/utc-l2-08-358.md) / [WG2 N3528](https://www.unicode.org/wg2/docs/n3528.pdf) | Japan NB が HIRAGANA LETTER YE は支持し、KATAKANA LETTER ORIGINAL E は時点では反対と回答。YE と hentaigana を混同しないことを求めた。 |
+| 1999-07-15 | UTC | [L2/99-238](../documents/utc-l2-99-238.md) | JCS Committee が JIS X 0213 系の非漢字追加として、linguistic signs、dentist signs、enclosed numbers、publishing signs、Katakana などを UTC に提出。 |
+| 1999-09-13 | WG2 | [WG2 N2092](../documents/wg2-n2092.md) | Japan NB が kana / punctuation を含む 48 characters の追加を WG2 に提出。 |
+| 2008-01-14 | UTC / WG2 | [L2/07-421](../documents/utc-l2-07-421.md) / [WG2 N3388](../documents/utc-l2-07-421.md) | Nozomu Kato が YE に関する 2 kana characters の符号化を提案。 |
+| 2008-02-28 | UTC / WG2 | [L2/08-117](../documents/utc-l2-08-117.md) / [WG2 N3394](../documents/utc-l2-08-117.md) | UTC / L2 が Japan NB に review を求め、個別符号化か obsolete kana / hentaigana の大きな枠組みで扱うかを論点化。 |
+| 2008-10-14 | UTC / WG2 | [L2/08-358](../documents/utc-l2-08-358.md) / [WG2 N3528](../documents/utc-l2-08-358.md) | Japan NB が HIRAGANA LETTER YE は支持し、KATAKANA LETTER ORIGINAL E は時点では反対と回答。YE と hentaigana を混同しないことを求めた。 |
 | 2009-01-28 | UTC | [L2/09-062](../documents/utc-l2-09-062.md) | Nozomu Kato が、あ行 E とヤ行 YE の歴史的区別、カタカナ エと江の関係を日本語史背景として整理。 |
-| 2015-10-09 | UTC / WG2 | [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](https://www.unicode.org/wg2/docs/n4674-Japan_Hentaigana_Proposal-a.zip) | Japan NB が 299 文字の Japanese HENTAIGANA 初期 proposal を提出。 |
+| 2015-10-09 | UTC / WG2 | [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](../documents/utc-l2-15-239.md) | Japan NB が 299 文字の Japanese HENTAIGANA 初期 proposal を提出。 |
 | 2015-12-15 | UTC | [L2/15-343](../documents/utc-l2-15-343.md) | Japan NB が Hentaigana revised proposal を提出。phonetic value と mother ideograph に基づく命名・統合の整理を示す。 |
 | 2016-07-15 | UTC | [L2/16-188](../documents/utc-l2-16-188.md) | Japan NB が Hentaigana revised repertoire を提出。`HENTAIGANA LETTER E-1` withdrawal と U+1B001 name alias の流れに接続する。 |
 | 2016-11-04 | UTC | [L2/16-334](../documents/utc-l2-16-334.md) | CheonHyeong Sim が small WI / WE の Hiragana / Katakana 4 文字を提案。 |
 | 2016-11-06 | UTC | [L2/16-354](../documents/utc-l2-16-354.md) | Ryusei Yamaguchi が phonetic extension system として 12 文字の Kana small letters を提案。 |
-| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / [WG2 N4803](https://www.unicode.org/wg2/docs/n4803-small-kana-fdbk.pdf) | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC \#149 で受理された 7 文字を示す。 |
+| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / [WG2 N4803](../documents/utc-l2-16-358r.md) | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC \#149 で受理された 7 文字を示す。 |
 | 2017-01-17 | UTC | [L2/17-014](../documents/utc-l2-17-014.md) | Japan NB / Tetsuji Orita が ARCHAIC HIRAGANA YE は HENTAIGANA「江」の用法の一つだと整理。 |
-| 2017-04-07 | UTC / WG2 | [L2/17-091](../documents/utc-l2-17-091.md) / [WG2 N4826](https://www.unicode.org/wg2/docs/n4826-JNB-SmallKanaCharacters.pdf) | Japan NB が Small Kana Characters に関する contribution を提出。PDAM 1.2 の 9 small kana だけを選ぶ根拠が不明で、より広い repertoire または modifier model を検討すべきと主張。 |
+| 2017-04-07 | UTC / WG2 | [L2/17-091](../documents/utc-l2-17-091.md) / [WG2 N4826](../documents/utc-l2-17-091.md) | Japan NB が Small Kana Characters に関する contribution を提出。PDAM 1.2 の 9 small kana だけを選ぶ根拠が不明で、より広い repertoire または modifier model を検討すべきと主張。 |
 | 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Abraham Gross が Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
 | 2019-11-22 | UTC | [L2/19-382](../documents/utc-l2-19-382.md) | Alexander Zapryagaev が Late Middle Japanese の final -t を転写する HENTAIGANA LETTER SMALL TU-2 を提案。 |
 | 2020-06-25 | UTC | [L2/20-152](../documents/utc-l2-20-152.md) | Abraham Gross が HIRAGANA LETTER ARCHAIC WU の origin character を U+6C59 汙とする annotation を推奨。 |
@@ -57,7 +57,7 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 
 ### YE と hentaigana の境界
 
-[L2/07-421](../documents/utc-l2-07-421.md) / `WG2 N3388` は、historical Japanese の /e/ と /ye/ の区別を扱うために HIRAGANA LETTER YE と KATAKANA LETTER ORIGINAL E を提案した。UTC / L2 は [L2/08-117](../documents/utc-l2-08-117.md) で Japan NB review を求め、Japan NB は [L2/08-358](../documents/utc-l2-08-358.md) で HIRAGANA LETTER YE には賛成したが、KATAKANA LETTER ORIGINAL E にはさらなる調査が必要だとして反対した。[L2/09-062](../documents/utc-l2-09-062.md) は、その背景として、あ行 E とヤ行 YE の歴史的区別、カタカナ エと江の関係を日本語資料で説明する。
+[L2/07-421](../documents/utc-l2-07-421.md) / [WG2 N3388](../documents/utc-l2-07-421.md) は、historical Japanese の /e/ と /ye/ の区別を扱うために HIRAGANA LETTER YE と KATAKANA LETTER ORIGINAL E を提案した。UTC / L2 は [L2/08-117](../documents/utc-l2-08-117.md) で Japan NB review を求め、Japan NB は [L2/08-358](../documents/utc-l2-08-358.md) で HIRAGANA LETTER YE には賛成したが、KATAKANA LETTER ORIGINAL E にはさらなる調査が必要だとして反対した。[L2/09-062](../documents/utc-l2-09-062.md) は、その背景として、あ行 E とヤ行 YE の歴史的区別、カタカナ エと江の関係を日本語資料で説明する。
 
 重要なのは、Japan NB が YE の追加を hentaigana 一般の符号化とは別問題として扱うよう求めた点である。江（U+6C5F）由来の字形は hentaigana とも重なるため、歴史的音価 /ye/ を表す文字なのか、既存 hiragana え の異体字なのかを区別する必要があった。
 
@@ -65,7 +65,7 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 
 ### 変体仮名の repertoire と統合基準
 
-Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japanese HENTAIGANA 299 文字を初期 proposal として提出した。後続の [L2/15-343](../documents/utc-l2-15-343.md) と [L2/16-188](../documents/utc-l2-16-188.md) は、この repertoire を phonetic value と mother ideograph で整理する。たとえば 江、衣、盈、縁、要などを母字とする E 系 hentaigana は同じ現代仮名「え」に対応し得るが、字形・母字・文献用途は異なる。
+Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](../documents/utc-l2-15-239.md) は、Japanese HENTAIGANA 299 文字を初期 proposal として提出した。後続の [L2/15-343](../documents/utc-l2-15-343.md) と [L2/16-188](../documents/utc-l2-16-188.md) は、この repertoire を phonetic value と mother ideograph で整理する。たとえば 江、衣、盈、縁、要などを母字とする E 系 hentaigana は同じ現代仮名「え」に対応し得るが、字形・母字・文献用途は異なる。
 
 この系譜は、単に未符号化 kana を増やす話ではなく、歴史資料を plain text でどこまで再現するか、glyph variation と encoded character の境界をどう決めるかという問題である。
 
@@ -105,6 +105,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 ## 関連文書
 
+- [L2/99-238](../documents/utc-l2-99-238.md) / [WG2 N2092](../documents/wg2-n2092.md) - JIS X 0213 compatibility を背景にした Ainu Katakana、small Hiragana、bidakuon 系 kana。
 - [L2/07-421](../documents/utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
 - [L2/08-117](../documents/utc-l2-08-117.md) / [L2/08-358](../documents/utc-l2-08-358.md) / [L2/09-062](../documents/utc-l2-09-062.md) / [L2/17-014](../documents/utc-l2-17-014.md) - YE proposal、Japan NB feedback、E / YE 背景、HENTAIGANA「江」と ARCHAIC HIRAGANA YE の整理。
 - [L2/15-239](../documents/utc-l2-15-239.md) / [L2/15-343](../documents/utc-l2-15-343.md) / [L2/16-188](../documents/utc-l2-16-188.md) - Hentaigana proposal と revised repertoire。
@@ -128,6 +129,8 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 ## 出典
 
+- `utc-l2-99-238` - <https://www.unicode.org/L2/L1999/99238-non-kanji2.pdf>
+- `wg2-n2092` - <http://www.unicode.org/wg2/docs/n2092.pdf>
 - `utc-l2-07-421` - <https://www.unicode.org/L2/L2007/07421-e-ye.pdf>
 - `utc-l2-08-117` - <https://www.unicode.org/L2/L2008/08117-kana-letter.pdf>
 - `utc-l2-08-358` - <https://www.unicode.org/L2/L2008/08358-n3528.pdf>

@@ -68,7 +68,9 @@ def merge_derived_entries(entries: list[dict], registry_key: str, derived_entrie
             continue
         if entry["entry_id"] in existing_entry_ids:
             continue
-        merged.append(entry)
+        derived_entry = dict(entry)
+        derived_entry.setdefault("catalog_source", "derived")
+        merged.append(derived_entry)
         existing_entry_ids.add(entry["entry_id"])
     return merged
 
@@ -104,12 +106,11 @@ def merge_register_metadata(existing_metadata: dict | None, latest_registers: li
 
 
 def count_derived_entries(entries: list[dict], registry_key: str, derived_entries: list[dict]) -> int:
-    derived_entry_ids = {
-        entry["entry_id"]
-        for entry in derived_entries
-        if entry.get("registry") == registry_key
-    }
-    return sum(1 for entry in entries if entry["entry_id"] in derived_entry_ids)
+    return sum(
+        1
+        for entry in entries
+        if entry.get("registry") == registry_key and entry.get("catalog_source") == "derived"
+    )
 
 
 def sync_one(

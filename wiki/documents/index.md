@@ -6,6 +6,8 @@
 
 - [L2/07-159](utc-l2-07-159.md) - U-source database を public / versioned UTR にする提案。
 - [L2/07-160](utc-l2-07-160.md) - Extension C の U-source attribution correction。
+- [L2/99-238](utc-l2-99-238.md) - JIS X 0213 compatibility を背景にした非漢字・Kana proposal 群。
+- [WG2 N2092](wg2-n2092.md) - kana / punctuation を含む 48 characters proposal。
 - [L2/07-421](utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E proposal。
 - [L2/08-117](utc-l2-08-117.md) - two Kana characters concerning YE への UTC / L2 review request。
 - [L2/08-358](utc-l2-08-358.md) - Japan NB feedback on HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。

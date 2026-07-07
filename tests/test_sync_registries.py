@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from tools.sync_registries import merge_derived_entries
+from tools.sync_registries import count_derived_entries, merge_derived_entries
 
 
 class SyncRegistriesTest(unittest.TestCase):
@@ -39,6 +39,36 @@ class SyncRegistriesTest(unittest.TestCase):
 
         self.assertEqual([entry["entry_id"] for entry in merged], ["irg-n2878r3", "irg-n2878"])
         self.assertEqual(merged[1]["status"], "referenced")
+        self.assertEqual(merged[1]["catalog_source"], "derived")
+
+    def test_count_derived_entries_only_counts_materialized_overlay_entries(self) -> None:
+        entries = [
+            {
+                "entry_id": "irg-n2878",
+                "registry": "irg",
+                "doc_number": "IRG N2878",
+                "catalog_source": "derived",
+            },
+            {
+                "entry_id": "irg-n2878r3",
+                "registry": "irg",
+                "doc_number": "IRG N2878R3",
+            },
+        ]
+        derived = [
+            {
+                "entry_id": "irg-n2878",
+                "registry": "irg",
+                "doc_number": "IRG N2878",
+            },
+            {
+                "entry_id": "irg-n2878r3",
+                "registry": "irg",
+                "doc_number": "IRG N2878R3",
+            },
+        ]
+
+        self.assertEqual(count_derived_entries(entries, "irg", derived), 1)
 
 
 if __name__ == "__main__":
