@@ -9,6 +9,7 @@
 - [L2/07-421](utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E proposal。
 - [L2/08-117](utc-l2-08-117.md) - two Kana characters concerning YE への UTC / L2 review request。
 - [L2/08-358](utc-l2-08-358.md) - Japan NB feedback on HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
+- [L2/09-062](utc-l2-09-062.md) - 仮名の E / YE 区別に関する背景資料。
 - [L2/08-284](utc-l2-08-284.md) - Draft UTR #45: U-Source Ideographs。
 - [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
 - [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
@@ -20,11 +21,17 @@
 - [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
 - [L2/25-199](utc-l2-25-199.md) - UAX #45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
+- [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
 - [L2/16-188](utc-l2-16-188.md) - Hentaigana revised repertoire。
+- [L2/16-334](utc-l2-16-334.md) - small WI / WE の Hiragana / Katakana proposal。
+- [L2/16-354](utc-l2-16-354.md) - 12 文字の Kana small letters proposal。
+- [L2/16-358R](utc-l2-16-358r.md) - `L2/16-334` / `L2/16-354` への small kana feedback。
+- [L2/17-014](utc-l2-17-014.md) - HENTAIGANA「江」と ARCHAIC HIRAGANA YE の notes。
 - [L2/17-091](utc-l2-17-091.md) - Small Kana Characters に対する Japan NB contribution。
 - [L2/19-381](utc-l2-19-381.md) - missing Japanese Kana proposal。
 - [L2/19-382](utc-l2-19-382.md) - Late Middle Japanese transcription 用 kana character proposal。
+- [L2/20-152](utc-l2-20-152.md) - HIRAGANA LETTER ARCHAIC WU の origin character annotation。
 - [L2/22-181](utc-l2-22-181.md) - provisional Unihan `kJapanese` property proposal。
 - [L2/23-112](utc-l2-23-112.md) - missing Kana-Ligatures proposal。
 - [L2/23-118](utc-l2-23-118.md) - Ryukyuan languages 用 superscript Katakana proposal。

@@ -223,6 +223,13 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         }
         path_to_id[path.resolve()] = cid
 
+    alias_to_id: dict[str, str] = {}
+    for cid, row in rows.items():
+        alias_to_id.setdefault(normalize_lookup_key(cid), cid)
+        for alias in row["aliases"]:  # type: ignore[union-attr]
+            if isinstance(alias, str):
+                alias_to_id.setdefault(normalize_lookup_key(alias), cid)
+
     link_map: dict[str, list[str]] = {}
     unresolved_relation_map: dict[str, dict[str, list[str]]] = {}
     for cid, row in rows.items():
@@ -240,8 +247,10 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         frontmatter_links: list[str] = []
         unresolved_relations: dict[str, list[str]] = {}
         for key in RELATION_KEYS:
-            frontmatter_links.extend(item for item in relations[key] if item in rows)
-            missing = [item for item in relations[key] if item not in rows]
+            resolved_items = [resolve_relation_target(item, rows, alias_to_id) for item in relations[key]]
+            found = [item for item in resolved_items if item is not None]
+            frontmatter_links.extend(found)
+            missing = [item for item, resolved in zip(relations[key], resolved_items) if resolved is None]
             if missing:
                 unresolved_relations[key] = missing
         link_map[cid] = sorted(set(links + frontmatter_links))
@@ -266,6 +275,14 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         )
         for cid, row in rows.items()
     }
+
+
+def resolve_relation_target(
+    target: str, rows: dict[str, dict[str, object]], alias_to_id: dict[str, str]
+) -> str | None:
+    if target in rows:
+        return target
+    return alias_to_id.get(normalize_lookup_key(target))
 
 
 def concepts_by_type(concepts: Iterable[Concept], type_name: str) -> list[Concept]:
