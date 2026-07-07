@@ -4,7 +4,7 @@ title: Kana
 description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名を追跡する topic。"
 slug: kana
 bodies: [UTC, WG2]
-documents: [utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
+documents: [utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-20-233, utc-l2-20-280, utc-l2-20-209r, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
 status: active
 tags: [kana, hiragana, katakana, hentaigana]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -39,6 +39,9 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Abraham Gross が Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
 | 2019-11-22 | UTC | [L2/19-382](../documents/utc-l2-19-382.md) | Alexander Zapryagaev が Late Middle Japanese の final -t を転写する HENTAIGANA LETTER SMALL TU-2 を提案。 |
 | 2020-06-25 | UTC | [L2/20-152](../documents/utc-l2-20-152.md) | Abraham Gross が HIRAGANA LETTER ARCHAIC WU の origin character を U+6C59 汙とする annotation を推奨。 |
+| 2020-09-18 | UTC | [L2/20-233](../documents/utc-l2-20-233.md) | Eiso Chan が Taiwanese Kana proposal に feedback を出し、Min Nan naming、U+0323 / U+0305 の扱い、縦書きと shakuhachi notation の衝突を指摘。 |
+| 2020-11-10 | UTC | [L2/20-280](../documents/utc-l2-20-280.md) | Fredrick R. Brennan が Taiwanese Kana の tone marks を Kana Extended-B として符号化する proposal を提出。 |
+| 2021-01-04 | UTC | [L2/20-209R](../documents/utc-l2-20-209r.md) | Fredrick R. Brennan が revised final proposal を提出し、Minnan tone / nasalized tone marks 13 文字と U+0323 / U+0305 の利用を整理。 |
 | 2023-04-25 | UTC | [L2/23-112](../documents/utc-l2-23-112.md) | Gen Kojitani が missing kana ligatures を広く提案。合略仮名を複数 kana の単なる連綿と区別する criteria を提示。 |
 | 2023-05-08 | UTC | [L2/23-118](../documents/utc-l2-23-118.md) | Gen Kojitani が Ryukyuan languages 用 superscript katakana letters 8 characters を提案。 |
 | 2023-05-25 | UTC | [L2/23-123](../documents/utc-l2-23-123.md) | Eiso Chan が `L2/23-118` へ feedback を出し、usage stability、vertical layout、提出主体などの確認を求めた。 |
@@ -92,6 +95,14 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 [L2/23-123](../documents/utc-l2-23-123.md) は、この proposal に対して usage stability、running text、vertical layout、UAX #50、地方政府公式 orthography と Japan NB / Okinawa Prefecture の提出主体などを確認すべきだと指摘した。この論点は、kana repertoire そのものだけでなく、地域言語表記政策を Unicode proposal としてどう担保するかに関わる。
 
+### Taiwanese Kana / Minnan tone marks
+
+[L2/20-280](../documents/utc-l2-20-280.md) と [L2/20-209R](../documents/utc-l2-20-209r.md) は、Taiwanese Hokkien / Min Nan を kana と tone marks で注記する Taiwanese Kana の proposal である。最終案は Kana Extended-B U+1AFF0..U+1AFFF に、Minnan tone marks と nasalized tone marks 13 文字を置く。現行 Unicode code chart でも、Kana Extended-B は Minnan Chinese を annotate する furigana extensions の tone marks として説明される。
+
+この論点は、日本語の仮名追加ではなく、kana-derived annotation system の符号化である。Japanese colonial-period dictionaries、Mojikyo の legacy support、modern dictionary / Wikipedia usage が evidence として使われる一方、character names では `Taiwanese` / `Hokkien` ではなく `Minnan` が採用される。
+
+[L2/20-233](../documents/utc-l2-20-233.md) は、この proposal に対する feedback として、language name、U+0323 COMBINING DOT BELOW、U+0305 COMBINING OVERLINE、vertical layout、shakuhachi notation との衝突を指摘した。したがって Taiwanese Kana は、repertoire だけでなく UAX #50 / font layout / combining mark behavior も併せて追う必要がある。
+
 ## 関連文書
 
 - [L2/07-421](../documents/utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
@@ -99,6 +110,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - [L2/15-239](../documents/utc-l2-15-239.md) / [L2/15-343](../documents/utc-l2-15-343.md) / [L2/16-188](../documents/utc-l2-16-188.md) - Hentaigana proposal と revised repertoire。
 - [L2/16-334](../documents/utc-l2-16-334.md) / [L2/16-354](../documents/utc-l2-16-354.md) / [L2/16-358R](../documents/utc-l2-16-358r.md) / [L2/17-091](../documents/utc-l2-17-091.md) - Small Kana Characters の proposal、feedback、Japan NB contribution。
 - [L2/19-381](../documents/utc-l2-19-381.md) / [L2/19-382](../documents/utc-l2-19-382.md) / [L2/20-152](../documents/utc-l2-20-152.md) - missing kana、Late Middle Japanese transcription 用 kana、ARCHAIC WU の origin character annotation。
+- [L2/20-233](../documents/utc-l2-20-233.md) / [L2/20-280](../documents/utc-l2-20-280.md) / [L2/20-209R](../documents/utc-l2-20-209r.md) - Taiwanese Kana / Minnan tone marks proposal と feedback。
 - [L2/23-112](../documents/utc-l2-23-112.md) - missing Kana-Ligatures の広い proposal。
 - [L2/23-118](../documents/utc-l2-23-118.md) / [L2/23-123](../documents/utc-l2-23-123.md) - Ryukyuan superscript Katakana proposal と feedback。
 - [L2/23-127](../documents/utc-l2-23-127.md) - alternate Katakana NE / WI の introduction。
@@ -131,6 +143,10 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - `utc-l2-19-381` - <https://www.unicode.org/L2/L2019/19381-missing-kana.pdf>
 - `utc-l2-19-382` - <https://www.unicode.org/L2/L2019/19382-mid-japanese-kana.pdf>
 - `utc-l2-20-152` - <https://www.unicode.org/L2/L2020/20152-archaic-wu-origin.pdf>
+- `utc-l2-20-233` - <https://www.unicode.org/L2/L2020/20233-kana-fdbk-shakuhachi.pdf>
+- `utc-l2-20-280` - <https://www.unicode.org/L2/L2020/20280-taiwan-kana.pdf>
+- `utc-l2-20-209r` - <https://www.unicode.org/L2/L2020/20209r-taiwan-kana.pdf>
+- Unicode code chart, Kana Extended-B - <https://www.unicode.org/charts/PDF/U1AFF0.pdf>
 - `utc-l2-23-112` - <https://www.unicode.org/L2/L2023/23112-missing-kana-ligatures.pdf>
 - `utc-l2-23-118` - <https://www.unicode.org/L2/L2023/23118-ryukyu-kana.pdf>
 - `utc-l2-23-123` - <https://www.unicode.org/L2/L2023/23123-ryukyu-kana-feedback.pdf>

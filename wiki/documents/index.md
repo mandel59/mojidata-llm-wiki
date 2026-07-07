@@ -32,6 +32,9 @@
 - [L2/19-381](utc-l2-19-381.md) - missing Japanese Kana proposal。
 - [L2/19-382](utc-l2-19-382.md) - Late Middle Japanese transcription 用 kana character proposal。
 - [L2/20-152](utc-l2-20-152.md) - HIRAGANA LETTER ARCHAIC WU の origin character annotation。
+- [L2/20-233](utc-l2-20-233.md) - Taiwanese Kana proposal への feedback と shakuhachi notation の縦書き情報。
+- [L2/20-280](utc-l2-20-280.md) - Taiwanese Kana / Minnan tone marks proposal。
+- [L2/20-209R](utc-l2-20-209r.md) - Taiwanese Kana revised final proposal。
 - [L2/22-181](utc-l2-22-181.md) - provisional Unihan `kJapanese` property proposal。
 - [L2/23-112](utc-l2-23-112.md) - missing Kana-Ligatures proposal。
 - [L2/23-118](utc-l2-23-118.md) - Ryukyuan languages 用 superscript Katakana proposal。
