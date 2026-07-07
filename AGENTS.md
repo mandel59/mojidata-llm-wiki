@@ -40,6 +40,7 @@ tools/
   sync_registries.py              Registry を読んで catalog を再生成
   fetch_documents.py              目録に基づいて文書実体を .cache/ に取得
   check_catalog.py                目録の機械検査
+  check_wiki_review.py            wiki の高水準レビュー検査
   check_events.py                 event ページと参照整合性の検査
   generate_event_indexes.py       event metadata から index を生成
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
@@ -103,6 +104,19 @@ concept lookup は `id`、ファイル path、`title`、`doc_number`、frontmatt
 - 文書番号、会議体名、Unicode property 名、UAX/UTS/TR 番号、script/block 名、規格名、人物名、member body 名は原文表記を保つ。
 - 発言や決定文を引用するときは短く引用し、必要なら日本語で要約する。
 - 不確かな推論は「推定」と書き、根拠文書を添える。
+
+## Wiki レビュー観点
+
+レビューのゴールは、文字の標準化について簡潔にまとまった wiki として読める状態を保つこと。機械的に検出できるものは `tools/check_wiki_review.py` などの tool に寄せ、人間のレビューでは次を見る。
+
+- 入口性: `wiki/index.md`、各 directory index、topic の関連文書から、主要な標準化案件へ迷わず到達できるか。網羅だけでなく、現在読むべき一次文書と canonical event が見えるか。
+- 文書・会合・出来事の分離: proposal page に後続決定を書きすぎていないか。recommendation / minutes / action-items は文書自身の決定として書き、複数ページで使う意味のある節目は event に集約しているか。
+- body と時点: UTC、WG2、IRG、SC2 で同じ案件の状態が違う場合、どの body の何年何月何日の記録かを明示しているか。後続 status で過去の recommendation を上書きしていないか。
+- 簡潔さ: `## 要約` は 3〜8 行を目安にし、読み手が「何が変わったか」「誰が決めたか」「現在の状態」「次に読む一次文書」を把握できるか。表や列挙は判断に必要な粒度に抑える。
+- stale claim: 「未確認」「取得できなかった」「予定文書」などの作業時点依存の記述は、現在の catalog と矛盾していないか。catalog で available になった文書は記述を更新し、頻出する重要文書は `wiki/documents/` にページ化する。
+- relation の意図: 未ページ化 target は frontmatter relation に残してよいが、本文 Markdown link は実在ページに限る。高頻度で参照される available document、recommendation、agenda、minutes は Source Document page 候補として扱う。
+- 重複の抑制: topic、meeting、people、family で同じ出来事の要約を繰り返していないか。canonical event への link と、そのページ固有の読み取りに縮約できるか。
+- 出典の濃度: 主張ごとに過剰な引用をせず、`## 出典` で `entry_id` と公開 URL が追えるか。ローカル cache や変換済みテキストへのリンクを混ぜていないか。
 
 ## ページ形式
 
@@ -273,6 +287,7 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 
 - 目録 JSONL が壊れていないか `uv run python tools/check_catalog.py` で見る。
 - wiki が OKF v0.1 の最小条件を満たすか `uv run python tools/check_okf.py` で見る。
+- wiki review の高水準な機械検査を `uv run python tools/check_wiki_review.py` で見る。
 - event metadata と参照整合性を `uv run python tools/check_events.py` で見る。
 - wiki の主張に出典があるか確認する。
 - topic、document、meeting、family の relation 漏れを見る。本文 Markdown link は実在ページに限り、未ページ化 target は frontmatter relation として残す。
