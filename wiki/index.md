@@ -26,6 +26,7 @@ okf_version: "0.1"
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。
 - [CJK Security Confusables](topics/cjk-security-confusables.md) - UTS #39 security data における CJK confusable pairs と CJK WG review。
 - [Kana](topics/kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan `kJapanese` readings。
+- [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
 
 ## Current Families
 

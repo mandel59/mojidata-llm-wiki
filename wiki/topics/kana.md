@@ -94,6 +94,7 @@ Japan NB の `L2/15-343` と `L2/16-188` は、Hentaigana を phonetic value と
 
 ## 関連トピック
 
+- [CJK Hybrid Characters](cjk-hybrid-characters.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 

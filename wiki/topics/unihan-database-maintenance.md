@@ -47,6 +47,10 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 
 `L2/22-181` は、Moji Jōhō Kiban 由来の Japanese readings を hiragana / katakana で記録する `kJapanese` property を提案した。`L2/25-213` は、Katakana 表記が常に on'yomi とは限らず、taxonomic terms や non-Sino-Japanese loanwords などで Katakana 表記の kun'yomi が現れることを指摘する。これは [Kana](kana.md) の仮名表記議論とも接続する。
 
+### CJK Hybrid Characters の property 設計
+
+`IRG N2826` M65.24 は、CJK Hybrid Characters に Unihan database properties を付与する場合、IRG review process で IRG source references、Kangxi radical、stroke count、readings などの規則を議論できると整理した。CJKUI と別 block に置く場合でも、CJK text で使われる文字として検索・分類 data をどう持つかは [CJK Hybrid Characters](cjk-hybrid-characters.md) 側の未決点である。
+
 ## 関連文書
 
 - [L2/26-099](../documents/utc-l2-26-099.md)
@@ -64,6 +68,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 - [UAX #45 U-Source Ideographs](uax45-u-source-ideographs.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 - [Kana](kana.md)
+- [CJK Hybrid Characters](cjk-hybrid-characters.md)
 
 ## 出典
 

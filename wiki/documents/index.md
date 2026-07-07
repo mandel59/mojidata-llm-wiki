@@ -24,9 +24,12 @@
 - [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
+- [IRG N2826](irg-n2826.md) - IRG #65 recommendations; CJK Hybrid Characters policy。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
+- [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
+- [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
