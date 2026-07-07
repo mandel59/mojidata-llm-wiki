@@ -5,8 +5,8 @@ description: Japan NB が IRG N2859 へ回答し、published encoded characters 
 slug: irg-n2870-japan-feedback-on-j-source-disposition
 date: "2025-09-25"
 bodies: [IRG]
-documents: [irg-n2870]
-topics: [j-source, irg-source-data-and-representative-glyphs]
+documents: [irg-n2722, irg-n2859, irg-n2870]
+topics: [j-source, jmj-horizontal-extension-review-path, irg-source-data-and-representative-glyphs]
 people: [japan, irg]
 status: feedback-submitted
 tags: [event, j-source, disunification, source-data]
@@ -34,10 +34,13 @@ Japan NB は、U+2A50D、U+5CC0、U+72CA、U+7BF9、U+26B20、U+2F93B、U+21694 
 ## 関連ページ
 
 - [J-source and JMJ Source Issues](../topics/j-source.md)
+- [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Japan](../people/japan.md)
 - [IRG](../people/irg.md)
 
 ## 出典
 
+- `irg-n2722` - <https://www.unicode.org/irg/docs/n2722-JSourceIssues.pdf>
+- `irg-n2859` - <https://www.unicode.org/irg/docs/n2859-JapanRecommendations.pdf>
 - `irg-n2870` - <https://www.unicode.org/irg/docs/n2870-IRGN2859Feedback.pdf>

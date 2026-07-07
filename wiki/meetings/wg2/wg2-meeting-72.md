@@ -8,7 +8,8 @@ bodies: [WG2]
 meeting: 72
 date: "2025-06-23/27"
 location: Niigata, Japan
-documents: [wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311]
+documents: [irg-n2721, wg2-n5284, wg2-n5221, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311]
+topics: [jmj-horizontal-extension-review-path, j-source, small-seal-script]
 tags: [meeting, wg2, small-seal, j-source, japan]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -17,11 +18,13 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-WG2 meeting \#72 は 2025-06-23/27 に新潟で開催された。Small Seal については `N5306`、`N5317R3`、`N5318R`、`N5341` を参照し、将来版に向けた候補として扱う recommendation が採択された。Japan / J-source については、`WG2 N5296` の JMJ-source related glyph issues を受けて、J-source glyph changes の revert を勧告した。
+WG2 meeting \#72 は 2025-06-23/27 に新潟で開催された。Small Seal については `N5306`、`N5317R3`、`N5318R`、`N5341` を参照し、将来版に向けた候補として扱う recommendation が採択された。Japan / J-source については、`WG2 N5284` の Japan IRG participation request と、`WG2 N5296` の JMJ-source related glyph issues を扱った。
 
 ## 主要議題
 
 - [Small Seal Script](../../topics/small-seal-script.md)
+- [JMJ Horizontal Extension Review Path](../../topics/jmj-horizontal-extension-review-path.md)
+- [J-source and JMJ Source Issues](../../topics/j-source.md)
 - [Japan](../../people/japan.md)
 - Khitan Small Script additions
 - Jurchen Script naming
@@ -35,12 +38,16 @@ Recommendation M72.13 は、[WG2 M72.13 Small Seal future edition candidate](../
 
 Recommendation M72.07 は、[WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md) として整理する。この meeting ページでは、WG2 \#72 の決定事項の一つとして扱う。
 
+Section 8.2 では [IRG N2721](../../documents/irg-n2721.md) / `WG2 N5284` を扱い、Japan の IRG active participation と `WG2 N5221` の large JMJ horizontal extension が IRG review path に接続することを確認した。この議論は [JMJ Horizontal Extension Review Path](../../topics/jmj-horizontal-extension-review-path.md) で追う。
+
 Appreciation M72.21 は、IPSJ/ITSCJ を JISC から accredited された Japanese National Body として host に感謝し、Masaru Takechi、Shuichi Tashiro、Toki Messe staff の support も記録している。
 
 ## 後続確認
 
 - `WG2 N5344` revised proposal
 - `WG2 N5348` modern CJK value feedback
+- [IRG N2721](../../documents/irg-n2721.md) / `WG2 N5284` - Japan active IRG participation request。
+- [WG2 N5301](../../documents/wg2-n5301.md) - WG2 \#72 minutes and action items。
 - [WG2 M72.13 Small Seal future edition candidate](../../events/wg2-m72-13-small-seal-future-candidate.md)
 - [WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md)
 - [WG2 meeting \#73](wg2-meeting-73.md)

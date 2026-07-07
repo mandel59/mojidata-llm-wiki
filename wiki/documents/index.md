@@ -68,6 +68,9 @@
 - [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX \#45 に追加する提案。
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
+- [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
+- [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
+- [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
@@ -95,6 +98,7 @@
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
+- [WG2 N5301](wg2-n5301.md) - WG2 Meeting \#72 minutes and action items。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting \#72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。

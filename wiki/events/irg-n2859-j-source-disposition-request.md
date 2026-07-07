@@ -5,8 +5,8 @@ description: IRG Convenor が J-source representative glyph / source reference i
 slug: irg-n2859-j-source-disposition-request
 date: "2025-08-13"
 bodies: [IRG]
-documents: [irg-n2859]
-topics: [j-source, irg-source-data-and-representative-glyphs]
+documents: [irg-n2722, irg-n2859]
+topics: [j-source, jmj-horizontal-extension-review-path, irg-source-data-and-representative-glyphs]
 people: [japan, irg]
 status: feedback-requested
 tags: [event, j-source, source-data, representative-glyph]
@@ -34,10 +34,12 @@ timestamp: 2026-07-06T23:30:00+09:00
 ## 関連ページ
 
 - [J-source and JMJ Source Issues](../topics/j-source.md)
+- [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Japan](../people/japan.md)
 - [IRG](../people/irg.md)
 
 ## 出典
 
+- `irg-n2722` - <https://www.unicode.org/irg/docs/n2722-JSourceIssues.pdf>
 - `irg-n2859` - <https://www.unicode.org/irg/docs/n2859-JapanRecommendations.pdf>

@@ -20,6 +20,7 @@ okf_version: "0.1"
 - [Small Seal Script](topics/small-seal-script.md) - `Shuowen Jiezi` に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 - [IRG Working Set 2024](topics/irg-working-set-2024.md) - IRG Meeting \#67 の中心議題である WS2024 Version 5.0 review。
 - [CJK Horizontal Extensions](topics/cjk-horizontal-extensions.md) - G / UK / U source の horizontal extension 提案。
+- [JMJ Horizontal Extension Review Path](topics/jmj-horizontal-extension-review-path.md) - JMJ references の J-column horizontal extension と IRG review path。
 - [IRG Source Data and Representative Glyphs](topics/irg-source-data-and-representative-glyphs.md) - IRG source reference、representative glyph、Unihan property 修正の論点。
 - [G-source Glyph and Source Reference Issues](topics/g-source-glyph-and-reference-issues.md) - G-source representative glyph と source reference correction の個別論点。
 - [kIRG_SGSource](topics/kirg-sgsource.md) - Singapore characters を独立した normative IRG source property として扱う提案。
@@ -34,7 +35,7 @@ okf_version: "0.1"
 - [Japanese Historical Ideographs](topics/japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
 - [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
-- [J-source and JMJ Source Issues](topics/j-source.md) - J-source / JMJ-source horizontal extension、glyph、`kIRG_JSource` disposition。
+- [J-source and JMJ Source Issues](topics/j-source.md) - JMJ-source expansion 後の glyph、source reference、`kIRG_JSource` disposition。
 - [UAX \#45 / U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX \#45 の U-source database、`kIRG_USource`、FutureWS、horizontal extension の保守論点。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - Unicode 18.0 の変更点を調べるための公式資料と関連文書。
 - [Unihan Database Maintenance](topics/unihan-database-maintenance.md) - Unihan database、UAX \#38、UTS \#37、関連 k* properties の保守論点。

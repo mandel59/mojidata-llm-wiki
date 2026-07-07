@@ -1,11 +1,11 @@
 ---
 type: Topic
 title: CJK Horizontal Extensions
-description: 既存 CJK Unified Ideographs に G / UK / U source data を追加する horizontal extension 提案。
+description: 既存 CJK Unified Ideographs に JMJ / G / UK / U source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
-bodies: [IRG, UTC]
-documents: [irg-n2369r, irg-n2909, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
-topics: [uax45-u-source-ideographs, irg-source-data-and-representative-glyphs]
+bodies: [IRG, WG2, UTC]
+documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, irg-n2909, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
+topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -17,13 +17,16 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 CJK horizontal extension は、既に encoded されている CJK Unified Ideographs に対して、member body source の source reference と representative glyph を追加する作業である。新しい code point を追加する proposal ではなく、既存文字への source data / glyph data の追加・更新として扱われる。
 
-IRG Meeting \#67 agenda では、China の `G-source` 9156 characters、UK の 2 characters、UTC の `U-source` 40 characters が Horizontal Extension Proposals & Documents として載っている。
+近年の例には、Japan NB の JMJ references、China の `G-source` 9156 characters、UK の 2 characters、UTC の `U-source` 40 characters がある。大規模 source addition は、単なる property 追加ではなく、source owner の review、representative glyph、Unihan source property maintenance に接続する。
 
 ## 経緯
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2019-05 | IRG / WG2 | `IRG N2369R` / `WG2 N5085` | UAX \#45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
+| 2023-04 | WG2 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column へ追加する large horizontal extension request を提出。 |
+| 2024-09 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が、`WG2 N5221` 規模の horizontal extension は IRG review に向くとして Japan の IRG active participation を求めた。 |
+| 2024-09 | IRG | [IRG N2722](../documents/irg-n2722.md) | JMJ horizontal extension 後の source reference / glyph correspondence issue を指摘。 |
 | 2026-03 | IRG | [IRG N2929](../documents/irg-n2929.md) | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
 | 2026-03 | IRG | `IRG N2909` | M66.09 が `IRG N2929` の review と revised document `IRG N2929R` の準備を action item 化。 |
 | 2026-06 | IRG | `IRG N2960` | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
@@ -31,6 +34,12 @@ IRG Meeting \#67 agenda では、China の `G-source` 9156 characters、UK の 2
 | 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 8 に G-source、UK、U-source horizontal extension が載った。 |
 
 ## 主な論点
+
+### JMJ horizontal extension
+
+[WG2 N5221](../documents/wg2-n5221.md) は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に関係する JMJ references を ISO/IEC 10646 の J-source column へ追加する proposal である。registry subject は 36,422 horizontal extensions とし、関連 chart PDF が別リンクで提供された。
+
+[IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` は、同規模の horizontal extension は WG2 より IRG に提出し、CJK experts が早い段階で review するべきだったと位置づける。詳細な review path は [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md) に分ける。
 
 ### G-source 9156 characters
 
@@ -50,7 +59,11 @@ IRG Meeting \#67 agenda では、China の `G-source` 9156 characters、UK の 2
 
 ## 関連文書
 
+- [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 - [J-source and JMJ Source Issues](j-source.md)
+- [WG2 N5221](../documents/wg2-n5221.md)
+- [IRG N2721](../documents/irg-n2721.md)
+- [IRG N2722](../documents/irg-n2722.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2929](../documents/irg-n2929.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
@@ -60,16 +73,21 @@ IRG Meeting \#67 agenda では、China の `G-source` 9156 characters、UK の 2
 ## 関連トピック
 
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
+- [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 
 ## 関連人物・組織
 
+- [Japan](../people/japan.md)
 - [China](../people/china.md)
 - [UK](../people/uk.md)
 - [UTC](../people/utc.md)
 
 ## 出典
 
+- `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>
+- `irg-n2721` - <https://www.unicode.org/irg/docs/n2721-JapanIRGParticipation.pdf>
+- `irg-n2722` - <https://www.unicode.org/irg/docs/n2722-JSourceIssues.pdf>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2929` - <https://www.unicode.org/irg/docs/n2929-ChinaHorizontalExtension.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
