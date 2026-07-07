@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Tooling**: Added a wiki review check for source-document body mentions of cataloged documents that are not captured in frontmatter or links, and added Source Document pages for `L2/22-279`, `L2/26-105`, `WG2 N5296`, and `WG2 N5306` to clear high-frequency unresolved document references.
 - **Digest**: Added source document pages for Kana-related documents from `L2/07-421` through `L2/23-127`, covering YE, Hentaigana, small kana, missing kana, Unihan `kJapanese`, Kana ligatures, Ryukyuan superscript Katakana, and alternate Katakana NE / WI.
 - **Ingest**: Integrated broader U-source coverage into [UAX #45 / U-Source Ideographs](topics/uax45-u-source-ideographs.md), added document digests from `L2/07-159` through `L2/26-147`, and added [John H. Jenkins](people/john-h-jenkins.md) as a recurring UAX #45 / Unihan contributor.
 - **Review**: Added source document pages for `IRG N2909`, `IRG N2935`, `WG2 N5304`, and `WG2 N5354`, and replaced stale unconfirmed/tentative references for catalog-available IRG follow-up documents.

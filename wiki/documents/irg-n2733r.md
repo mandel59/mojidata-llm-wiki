@@ -9,6 +9,7 @@ document_type: proposal
 registry: irg
 date: "2024-10-13"
 source: China
+documents: [irg-n2799]
 topics: [cjkv-components]
 tags: [document, proposal, components, cjk]
 timestamp: 2026-07-06T21:58:00+09:00

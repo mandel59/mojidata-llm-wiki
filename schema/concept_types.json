@@ -62,6 +62,7 @@
         "document_type": ["proposal", "recommendation", "minutes", "action-items", "feedback", "report", "data", "registry", "notice", "other"]
       },
       "relations": {
+        "documents": "document",
         "topics": "topic",
         "people": "people",
         "meetings": "meeting",

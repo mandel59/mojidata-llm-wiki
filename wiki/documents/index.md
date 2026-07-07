@@ -17,6 +17,7 @@
 - [IRG N2439](irg-n2439.md) - two U-source ideographs の UNC proposal。
 - [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
 - [L2/22-185](utc-l2-22-185.md) - UAX #45 status value names。
+- [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
 - [L2/25-199](utc-l2-25-199.md) - UAX #45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
@@ -37,6 +38,7 @@
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
+- [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX #38 Revision 40 proposed update。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
@@ -63,7 +65,9 @@
 - [IRG N2909](irg-n2909.md) - IRG Meeting #66 recommendations and action items。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
+- [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting #72 recommendations。
+- [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
 - [WG2 N5354](wg2-n5354.md) - WG2 Meeting #73 recommendations。

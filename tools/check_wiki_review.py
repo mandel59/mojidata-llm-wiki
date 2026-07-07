@@ -19,7 +19,9 @@ from wiki_store import (
     read_page,
     scalar,
     string_list,
+    normalize_lookup_key,
 )
+from unicode_registry import parse_doc_number
 
 
 CATALOG = ROOT / "catalog" / "registries"
@@ -34,10 +36,22 @@ UNAVAILABLE_PATTERNS = [
 TENTATIVE_PATTERNS = [
     "予定文書",
 ]
+MENTIONED_DOC_RE = re.compile(
+    r"(?:"
+    r"\b(?:"
+    r"L2/\d{2}-\d{3}(?:R[0-9A-Z]*)?"
+    r"|WG2\s*N\d{3,4}(?:R\d*)?"
+    r"|IRG\s+N\d{3,4}(?:R\d*)?"
+    r")\b"
+    r"|(?<![A-Za-z0-9_-])(?-i:N\d{3,4}(?:R\d*)?)\b"
+    r")",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
 class CatalogEntry:
+    registry: str
     entry_id: str
     doc_number: str
     status: str
@@ -74,6 +88,7 @@ def load_catalog() -> dict[str, CatalogEntry]:
             if not isinstance(entry_id, str) or not entry_id:
                 continue
             entries[entry_id] = CatalogEntry(
+                registry=str(data.get("registry") or ""),
                 entry_id=entry_id,
                 doc_number=str(data.get("doc_number") or ""),
                 status=str(data.get("status") or ""),
@@ -270,6 +285,102 @@ def catalog_names(entry: CatalogEntry) -> set[str]:
     return names
 
 
+def catalog_by_doc_number(catalog: dict[str, CatalogEntry]) -> dict[str, CatalogEntry]:
+    by_number: dict[str, CatalogEntry] = {}
+    for entry in catalog.values():
+        if entry.doc_number:
+            by_number[normalize_lookup_key(entry.doc_number)] = entry
+    return by_number
+
+
+def concept_by_alias(concepts: dict[str, Concept]) -> dict[str, Concept]:
+    aliases: dict[str, Concept] = {}
+    for concept in concepts.values():
+        for alias in concept.aliases:
+            aliases.setdefault(normalize_lookup_key(alias), concept)
+    return aliases
+
+
+def mentioned_catalog_entry(
+    mention: str, by_doc_number: dict[str, CatalogEntry], context_registry: str
+) -> CatalogEntry | None:
+    if re.match(r"^L2/", mention, re.IGNORECASE):
+        candidates = [("utc", mention)]
+    elif re.match(r"^WG2\s*N", mention, re.IGNORECASE):
+        candidates = [("wg2", mention)]
+    elif re.match(r"^IRG\s+N", mention, re.IGNORECASE):
+        candidates = [("irg", mention)]
+    elif re.match(r"^N\d{3,4}(?:R\d*)?$", mention):
+        if context_registry == "wg2":
+            candidates = [("wg2", mention)]
+        elif context_registry == "irg":
+            candidates = [("irg", f"IRG {mention}")]
+        else:
+            return None
+    else:
+        return None
+
+    for registry, text in candidates:
+        parsed = parse_doc_number(registry, text)
+        if parsed is None:
+            continue
+        _display, canonical, _entry_id = parsed
+        return by_doc_number.get(normalize_lookup_key(canonical))
+    return None
+
+
+def concept_captures_mentioned_document(concept: Concept, target_id: str) -> bool:
+    if target_id == concept.id:
+        return True
+    if target_id in concept.links:
+        return True
+    return target_id in concept.relations.get("documents", [])
+
+
+def check_source_document_mentions_captured(
+    concepts: dict[str, Concept], catalog: dict[str, CatalogEntry]
+) -> list[str]:
+    by_doc_number = catalog_by_doc_number(catalog)
+    by_alias = concept_by_alias(concepts)
+    errors: list[str] = []
+
+    for concept in sorted(concepts.values(), key=lambda item: item.rel_path):
+        if concept.type != "Source Document":
+            continue
+
+        context_registry = scalar(concept.frontmatter, "registry")
+        seen_targets: set[str] = set()
+        for line_number, line in enumerate(concept.body.splitlines(), start=1):
+            for match in MENTIONED_DOC_RE.finditer(line):
+                mention = match.group(0)
+                alias_target = by_alias.get(normalize_lookup_key(mention))
+                if alias_target is not None:
+                    if concept_captures_mentioned_document(concept, alias_target.id):
+                        continue
+                    if alias_target.id in seen_targets:
+                        continue
+                    seen_targets.add(alias_target.id)
+                    errors.append(
+                        f"{concept.rel_path}:{line_number}: mentions {mention} but does not capture "
+                        f"{alias_target.id} in documents relation or Markdown link"
+                    )
+                    continue
+
+                entry = mentioned_catalog_entry(mention, by_doc_number, context_registry)
+                if entry is None or not entry.available:
+                    continue
+                if concept_captures_mentioned_document(concept, entry.entry_id):
+                    continue
+                if entry.entry_id in seen_targets:
+                    continue
+                seen_targets.add(entry.entry_id)
+                errors.append(
+                    f"{concept.rel_path}:{line_number}: mentions available catalog document {mention} "
+                    f"({entry.entry_id}) but does not capture it in documents relation or Markdown link"
+                )
+    return errors
+
+
 def line_describes_document_as_unavailable(line: str, entry: CatalogEntry) -> bool:
     has_unavailable_claim = any(pattern in line for pattern in UNAVAILABLE_PATTERNS)
     for sentence in re.split(r"(?<=。)", line):
@@ -352,6 +463,7 @@ def run_checks(args: argparse.Namespace) -> list[str]:
 
     errors.extend(check_stale_unavailable_text(catalog))
     errors.extend(check_frequent_unresolved_documents(concepts, catalog, args.min_unresolved_doc_refs))
+    errors.extend(check_source_document_mentions_captured(concepts, catalog))
     return errors
 
 
