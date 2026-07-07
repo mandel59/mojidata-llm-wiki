@@ -77,6 +77,7 @@
 - [IRG N2925](irg-n2925.md) - Primary / Secondary Radical assignment rules proposal。
 - [IRG N2926](irg-n2926.md) - `kIRG_SGSource` normative property proposal。
 - [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
+- [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
 - [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
 - [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。

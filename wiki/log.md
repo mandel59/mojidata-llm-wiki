@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Ingest**: Implemented topic split issue #7 by adding [UCV and NUCV Lists](topics/ucv-nucv-lists.md), digesting `IRG N2931`, and linking the unification-policy angle from IRG indexing, CJKV Components, Unihan maintenance, and Meeting #67 pages.
 - **Tooling**: Tightened frontmatter parsing to reject unquoted `#` in values, fixed affected metadata including `L2/26-105`, and added regression tests for scalar and inline-list aliases.
 - **Ingest**: Opened tracking issues for topic split candidates and implemented issue #6 by splitting [G-source Glyph and Source Reference Issues](topics/g-source-glyph-and-reference-issues.md) from the broader IRG source data topic, adding source document pages for `IRG N2954` through `IRG N2962`.
 - **Digest**: Added IRG source document pages for J-source disposition, `kIRG_SGSource`, G-source horizontal extension, WS2024 v5, radical assignment rules, and FS / SC guidelines; noted registry 404s for `IRG N2933` and `IRG N2952`.

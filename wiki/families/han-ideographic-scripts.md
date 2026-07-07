@@ -3,8 +3,8 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
-topics: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
+members: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
+topics: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
 tags: [family, han, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -28,6 +28,7 @@ Han / ideographic 系の script、block、source data、variation database に�
 | [kIRG_SGSource](../topics/kirg-sgsource.md) | accepted-for-future-version | Singapore characters を `kIRG_GSource` から分離する normative source property。 |
 | [CJKV Components](../topics/cjkv-components.md) | accepted-for-future-version | CJK Unified Ideographs Components-A/B の encoding proposal。 |
 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) | active | UCV / NUCV、FS / SC、radical assignment rules の review。 |
+| [UCV and NUCV Lists](../topics/ucv-nucv-lists.md) | active | component variation の unification / disunification 境界を整理する IRG reference lists。 |
 
 ## 横断テーマ
 
