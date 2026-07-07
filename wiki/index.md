@@ -25,6 +25,7 @@ okf_version: "0.1"
 - [CJKV Components](topics/cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。
 - [CJK Security Confusables](topics/cjk-security-confusables.md) - UTS #39 security data における CJK confusable pairs と CJK WG review。
+- [Kana](topics/kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan `kJapanese` readings。
 
 ## Current Families
 

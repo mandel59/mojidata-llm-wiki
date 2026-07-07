@@ -14,6 +14,14 @@
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
+- [L2/24-150](utc-l2-24-150.md) - missing three Kana-Ligatures。
+- [L2/24-279](utc-l2-24-279.md) - KATAKANA DIGRAPH YORI。
+- [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。
+- [L2/25-036](utc-l2-25-036.md) - KATAKANA LETTER SMALL ARCHAIC YE。
+- [L2/25-042](utc-l2-25-042.md) - KATAKANA LETTER SMALL NE。
+- [L2/25-060](utc-l2-25-060.md) - KATAKANA LETTER SMALL NE proposal addendum。
+- [L2/25-151R](utc-l2-25-151r.md) - KATAKANA LETTER ALTERNATE NE / WI。
+- [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。

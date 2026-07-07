@@ -4,6 +4,7 @@
 
 ## 2026-07-07
 
+- **Ingest**: Added [Kana](topics/kana.md) covering YE, hentaigana, small kana, kana ligatures, alternate Katakana NE / WI, and Unihan `kJapanese` readings, with source document pages for recent UTC kana proposals from `L2/24-150` through `L2/25-213`.
 - **Ingest**: Expanded [WG2 M73.01 Small Seal CD4 disposition](events/wg2-m73-01-small-seal-cd4-disposition.md) with `WG2 N5369` details, added [WG2 N5355](documents/wg2-n5355.md) and [WG2 N5369](documents/wg2-n5369.md), and clarified `zhèngzì`（正字）, `zhèngzhuàn`（正篆）, `chóngwén`（重文）, and `liding`（隷定）notations.
 - **Ingest**: Expanded [CJK Security Confusables](topics/cjk-security-confusables.md) with earlier `IRG N2206`, `L2/19-282`, `L2/19-328`, `L2/22-133`, and `L2/25-031` context, connecting UTS #39 confusables to Unihan `kSpoofingVariant` / `kZVariant`, Han identifier policy, and easily confused ideograph annotations.
 - **Ingest**: Tracked [CJK Security Confusables](topics/cjk-security-confusables.md) through `L2/26-082`, `L2/26-086`, `L2/26-099`, and `L2/26-127`, adding source document pages for the first review request, broader mid-priority confusables listing, and second review request.
