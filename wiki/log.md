@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Prepared UTC \#188 candidate coverage from post-\#187 documents, adding Source Document pages for `L2/26-128` through `L2/26-149` candidates and opening topics for East Asian quotation marks, Chinese folk music notation, Indic script notation/rendering, Leibnizian historic math symbols, Maya hieroglyph encoding, and plain-text composition / overstriking.
 - **Digest**: Digested the latest public UTC \#187 working group reports, adding Source Document pages for `L2/26-092`, `096`, `097`, `098`, `100`, `101`, and `126`, and created topic entries for release coordination, properties / algorithms, script pipeline, and emoji interoperability.
 - **Refine**: Unified [Kana](topics/kana.md) chronology document cells on Source Document links, added `L2/99-238` and `WG2 N2092` digests, and documented / checked the derived document catalog overlay used for exceptional non-registry entries.
 - **Ingest**: Implemented topic split issue \#10 by adding [CJK Multi-Syllabic and Abbreviation Characters](topics/cjk-multi-syllabic-and-abbreviation-characters.md), digesting `IRG N2792`, `IRG N2828`, `IRG N2867R`, and `IRG N2885R`, and keeping [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) focused on script-hybrid block policy.

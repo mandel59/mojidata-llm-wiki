@@ -45,6 +45,12 @@ okf_version: "0.1"
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#187 SEW report を入口にした script proposal の progression、保留、安定性論点。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
 - [Unicode Release Coordination and Publication](topics/unicode-release-coordination-and-publication.md) - Unicode 18.0 beta review に向けた release、charts、editorial、liaison coordination。
+- [East Asian Quotation Marks](topics/east-asian-quotation-marks.md) - East Asian text における quotation marks の core spec guidance、縦横組、地域差。
+- [Chinese Folk Music Notation](topics/chinese-folk-music-notation.md) - Chinese folk music / Xiqu / Quyi notation の musical symbols と format controls。
+- [Indic Script Notation and Rendering](topics/indic-script-notation-and-rendering.md) - Indic scripts における Vedic notation、combining marks、rendering guidance。
+- [Leibnizian and Historic Mathematical Symbols](topics/leibnizian-and-historic-mathematical-symbols.md) - Leibnizian ambiguous signs と historic mathematical sources 用 symbols。
+- [Maya Hieroglyph Encoding](topics/maya-hieroglyph-encoding.md) - Codical Maya と Classic Maya Hieroglyphs Extended-A の staged / unified encoding。
+- [Plain-Text Composition and Overstriking](topics/plain-text-composition-and-overstriking.md) - COMPOSE character、overstriking、format controls と Unicode text model の境界。
 
 ## Current Families
 

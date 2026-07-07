@@ -63,8 +63,25 @@
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-126](utc-l2-26-126.md) - ICU4X / TC39 liaison update to UTC \#187。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
+- [L2/26-128](utc-l2-26-128.md) - East Asian quotation marks の core spec text update proposal。
+- [L2/26-129](utc-l2-26-129.md) - Leke script proposal。
+- [L2/26-130](utc-l2-26-130.md) - Chinese folk music notation の musical symbol / format controls proposal。
+- [L2/26-131](utc-l2-26-131.md) - Kannada 用 Samavedic svara markers proposal。
+- [L2/26-132](utc-l2-26-132.md) - KORE SEBELI script proposal。
+- [L2/26-133](utc-l2-26-133.md) - DOUBLE IDEOGRAPHIC FULL STOP proposal。
 - [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
+- [L2/26-136](utc-l2-26-136.md) - WHITE IDEOGRAPHIC COMMA proposal。
+- [L2/26-137](utc-l2-26-137.md) - LTR scripts 向け Joining_Type discussion。
+- [L2/26-138](utc-l2-26-138.md) - Indic scripts の consecutive anusvaras FYI。
+- [L2/26-139](utc-l2-26-139.md) - COMPOSE / overstriking proposal。
+- [L2/26-140](utc-l2-26-140.md) - historic mathematical sources 用 miscellaneous symbols proposal。
+- [L2/26-141](utc-l2-26-141.md) - slashed digits 用 combining marks proposal。
+- [L2/26-142](utc-l2-26-142.md) - historic letterlike symbols proposal。
+- [L2/26-143](utc-l2-26-143.md) - Leibnizian ambiguous signs proposal。
+- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
+- [L2/26-146](utc-l2-26-146.md) - Maya Hieroglyphs Extended-A draft proposal。
 - [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。
+- [L2/26-149](utc-l2-26-149.md) - Leibniz Unicode Characters Project feedback。
 - [L2/24-150](utc-l2-24-150.md) - missing three Kana-Ligatures。
 - [L2/24-279](utc-l2-24-279.md) - KATAKANA DIGRAPH YORI。
 - [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。
