@@ -9,7 +9,7 @@ meeting: 187
 date: "2026-04-21/23"
 location: Hybrid online/in-person
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-126]
-topics: [unicode-18-change-sources, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
+topics: [unicode-18-change-sources, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
 events: [utc-187-uax45-futurews-additions]
 tags: [meeting, utc, unicode-18, beta, cjk]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -25,6 +25,7 @@ UTC Meeting #187 は 2026-04-21/23 に hybrid online/in-person meeting として
 
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` の timeline、beta deliverables、ISO/IEC 10646 7th edition synchronization。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099`、`L2/26-105`、`L2/26-112` などの Unihan / UAX #38 / UTS #37 changes。
+- [Unihan Data Format and Property Syntax](../../topics/unihan-data-format-and-property-syntax.md) - UAX #38 / UTS #37 の data format / property syntax 更新。
 - [UAX #45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX #45 additions。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - `L2/26-082` / `L2/26-099` / `L2/26-127` の CJK confusables review。
 - Script Encoding WG、Properties & Algorithms WG、Editorial WG、Charts WG、Emoji Standard & Research WG、RMG reports。

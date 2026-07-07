@@ -38,6 +38,7 @@ okf_version: "0.1"
 - [UAX #45 / U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX #45 の U-source database、`kIRG_USource`、FutureWS、horizontal extension の保守論点。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - Unicode 18.0 の変更点を調べるための公式資料と関連文書。
 - [Unihan Database Maintenance](topics/unihan-database-maintenance.md) - Unihan database、UAX #38、UTS #37、関連 k* properties の保守論点。
+- [Unihan Data Format and Property Syntax](topics/unihan-data-format-and-property-syntax.md) - UAX #38 / UTS #37 / RSIndex.txt / kTotalStrokes など Unihan 周辺 data format と property syntax の更新論点。
 
 ## Current Families
 

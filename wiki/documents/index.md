@@ -47,9 +47,12 @@
 - [L2/26-093](utc-l2-26-093.md) - UTC #187 meeting minutes。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
 - [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX #38 Revision 40 proposed update。
+- [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS #37 Revision 15 proposed update。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
+- [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
+- [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。
 - [L2/24-150](utc-l2-24-150.md) - missing three Kana-Ligatures。
 - [L2/24-279](utc-l2-24-279.md) - KATAKANA DIGRAPH YORI。
 - [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。

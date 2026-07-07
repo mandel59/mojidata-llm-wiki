@@ -5,7 +5,7 @@ description: Unicode Standard の技術的な検討と承認を担う Unicode Te
 slug: utc
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-07-159, utc-l2-08-284, irg-n1534, irg-n1535, irg-n2369r, irg-n2439, irg-n2935, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-25-199, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
-topics: [unicode-18-change-sources, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]
+topics: [unicode-18-change-sources, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]
 tags: [organization, standards-body, utc]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
@@ -25,7 +25,7 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 | `L2/26-092`, `L2/26-093` | UTC Meeting #187 agenda / minutes。 | [UTC Meeting #187](../meetings/utc/utc-meeting-187.md) |
 | `L2/26-102` | Unicode 18.0 timeline、beta review、ISO/IEC 10646 7th edition synchronization。 | [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md) |
 | `IRG N2369R`, `IRG N2439`, `L2/25-199`, `IRG N2961` / `L2/26-147` | U-source horizontal extension、U-source UNC proposal、UAX #45 Revision 31、40 CJK Unified Ideographs への `kIRG_USource` values と representative glyphs。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md), [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
-| `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-134`, `L2/26-148` | Unihan database、UAX #38、UTS #37、radical / stroke data の保守。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
+| `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-134`, `L2/26-148` | Unihan database、UAX #38、UTS #37、radical / stroke data の保守。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md) |
 | `L2/26-082`, `L2/26-086`, `L2/26-127` | UTS #39 confusables data の CJK review request と周辺 data listing。 | [CJK Security Confusables](../topics/cjk-security-confusables.md) |
 | `L2/26-133`, `L2/26-136` | ideographic punctuation の追加提案。 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) |
 | `IRG N2935` | UTC CJK & Unihan Working Group / UTC Meeting #187 を経た source data changes が Unicode Version 18.0 Beta review に反映された status を記録。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
@@ -65,6 +65,7 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
+- [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
 - [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [CJK Security Confusables](../topics/cjk-security-confusables.md)
 - [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md)

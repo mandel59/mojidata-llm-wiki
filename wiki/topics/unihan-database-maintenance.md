@@ -1,11 +1,11 @@
 ---
 type: Topic
 title: Unihan Database Maintenance
-description: "Unihan database、UAX #38、UTS #37、関連 k* properties の保守論点。"
+description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354]
-topics: [ucv-nucv-lists]
+topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -15,7 +15,9 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 ## 概要
 
-Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*` properties、Unihan database の説明文書である UAX #38、Ideographic Variation Database を扱う UTS #37、関連 data files の更新を追う topic である。代表字形や source reference の変更は、最終的に `kRSUnicode`、`kTotalStrokes`、`kIRG_*Source`、`kMandarin`、variant properties などの Unihan property 更新として反映される。
+Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*` properties、Unihan database の release updates、個別 property value の追加・変更・削除を追う umbrella topic である。代表字形や source reference の変更は、最終的に `kRSUnicode`、`kTotalStrokes`、`kIRG_*Source`、`kMandarin`、variant properties などの Unihan property 更新として反映される。
+
+Data file の field structure、property syntax、IVD file format、`RSIndex.txt` separator、`kTotalStrokes` と IRG review data の接続は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) に分割する。このページでは、property / release maintenance の入口と、関連文書の全体像を保つ。
 
 ## 経緯
 
@@ -23,17 +25,17 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 | --- | --- | --- | --- |
 | 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、Japanese readings を hiragana / katakana で記録する。 |
 | 2025-08-19 | UTC | `L2/25-213` | [L2/25-213](../documents/utc-l2-25-213.md) が `kJapanese` に含まれる Katakana 表記の kun'yomi を調査し、definition と values の修正を提案。 |
-| 2026-04-03 | UTC | `L2/26-105` | Proposed Update UAX #38 Revision 40。Unicode 18.0.0 向けに Unihan database の説明、property、history を更新する。 |
-| 2026-04-03 | UTC | `L2/26-112` | Proposed Update UTS #37 Revision 15。Ideographic Variation Database と IVS 登録手順を更新する。 |
+| 2026-04-03 | UTC | [L2/26-105](../documents/utc-l2-26-105.md) | Proposed Update UAX #38 Revision 40。Unicode 18.0.0 向けに Unihan database の説明、property、history を更新する。 |
+| 2026-04-03 | UTC | [L2/26-112](../documents/utc-l2-26-112.md) | Proposed Update UTS #37 Revision 15。Ideographic Variation Database と IVS 登録手順を更新する。 |
 | 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が UTC #187 向けに Unihan database additions / changes / removals、UAX #38、UTS #37 関連 action items をまとめた。 |
-| 2026-05-21 | UTC | `L2/26-134` | `RSIndex.txt` syntax enhancement。simplified radical の区切りを `|` / `||` / `|||` で表す案。 |
-| 2026-07-05 | UTC | `L2/26-148` | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
+| 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` syntax enhancement。simplified radical の区切りを `|` / `||` / `|||` で表す案。 |
+| 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
 
 ## 主な論点
 
 ### UAX #38 と実データ更新
 
-`L2/26-105` は UAX #38 の proposed update であり、`L2/26-099` は PRI #534 feedback と個別文書を UTC action item に変換する。`L2/26-099` では、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode`、`kTotalStrokes` などが対象になった。
+[L2/26-105](../documents/utc-l2-26-105.md) は UAX #38 の proposed update であり、`L2/26-099` は PRI #534 feedback と個別文書を UTC action item に変換する。`L2/26-099` では、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode`、`kTotalStrokes` などが対象になった。Format / syntax の詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) に寄せる。
 
 ### 新しい provisional properties
 
@@ -41,7 +43,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 
 ### readings と radical / stroke data
 
-`L2/26-084` は 2024 年の UTC action items に基づく 169 characters の `kMandarin` additions / changes を整理した。`L2/26-134` と `L2/26-148` は、radical / stroke count 系 data の機械可読性と IRG review data との整合を扱う。
+`L2/26-084` は 2024 年の UTC action items に基づく 169 characters の `kMandarin` additions / changes を整理した。[L2/26-134](../documents/utc-l2-26-134.md) と [L2/26-148](../documents/utc-l2-26-148.md) は、radical / stroke count 系 data の機械可読性と IRG review data との整合を扱うため、詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) から読む。
 
 [UCV and NUCV Lists](ucv-nucv-lists.md) は Unihan property そのものではないが、unification / disunification boundary の参照表として、representative glyph、source reference、radical / stroke data の判断に影響する。
 
@@ -58,14 +60,15 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 - [L2/26-099](../documents/utc-l2-26-099.md)
 - [L2/22-181](../documents/utc-l2-22-181.md)
 - [L2/25-213](../documents/utc-l2-25-213.md)
-- `L2/26-105` - Proposed Update UAX #38。
-- `L2/26-112` - Proposed Update UTS #37。
-- `L2/26-134` - RSIndex.txt syntax enhancement。
-- `L2/26-148` - `kTotalStrokes` changes。
+- [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX #38。
+- [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS #37。
+- [L2/26-134](../documents/utc-l2-26-134.md) - RSIndex.txt syntax enhancement。
+- [L2/26-148](../documents/utc-l2-26-148.md) - `kTotalStrokes` changes。
 
 ## 関連トピック
 
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
+- [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [IRG Indexing Rules](irg-indexing-rules.md)
 - [UCV and NUCV Lists](ucv-nucv-lists.md)

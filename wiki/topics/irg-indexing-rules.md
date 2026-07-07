@@ -4,8 +4,8 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: [irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952]
-topics: [ucv-nucv-lists]
+documents: [irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
+topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -41,6 +41,8 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [IRG N2951](../documents/irg-n2951.md) は、previous documents `IRG N954AR`、`IRG N1105`、`IRG N2171`、`IRG N2221` を置き換える consolidated FS & SC guidelines である。entry syntax は stroke count、first stroke value、ordering letter を組み合わせる形式で、FS は Annex K の values と dotted circle を使う。agenda は、この document が 2026-04-02 に posted され、IWDS Series 1 に追加されたと記録している。
 
+[L2/26-148](../documents/utc-l2-26-148.md) は、IRG N2951 の conventions と ORT metadata checking に合わせて 458 ideographs の `kTotalStrokes` values を変更する proposal である。IRG rule そのものではなく、IRG review data を Unihan property values へ接続する変更として [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) でも扱う。
+
 ### radical assignment rules
 
 [IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
@@ -53,12 +55,15 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - [IRG N2931](../documents/irg-n2931.md)
 - [IRG N2925](../documents/irg-n2925.md)
 - [IRG N2951](../documents/irg-n2951.md)
+- [L2/26-134](../documents/utc-l2-26-134.md)
+- [L2/26-148](../documents/utc-l2-26-148.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 
 ## 関連トピック
 
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
+- [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 - [UCV and NUCV Lists](ucv-nucv-lists.md)
 
 ## 関連人物・組織
@@ -75,3 +80,5 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
 - `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>（2026-07-08 取得時点で 404）
+- `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
+- `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>

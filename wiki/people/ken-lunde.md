@@ -5,7 +5,7 @@ description: UTC / CJK & Unihan Working Group で CJK / Unihan data maintenance 
 slug: ken-lunde
 bodies: [UTC, IRG]
 documents: [utc-l2-11-439, utc-l2-22-181, utc-l2-25-199, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148]
-topics: [unihan-database-maintenance, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]
+topics: [unihan-database-maintenance, unihan-data-format-and-property-syntax, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]
 tags: [person, utc, cjk, unihan, source-data]
 timestamp: 2026-07-07T00:00:00+09:00
 ---
@@ -24,16 +24,17 @@ Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan
 | `L2/22-181` | Moji Jōhō Kiban 由来の kana readings を Unihan `kJapanese` property として提案。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [Kana](../topics/kana.md) |
 | `L2/25-199` | UAX #45 Revision 31 proposed update の editor。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 | `L2/26-099` | CJK & Unihan Working Group Recommendations for UTC #187 の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `L2/26-105` | Proposed Update UAX #38, Unicode Han Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
-| `L2/26-112` | Proposed Update UTS #37, Unicode Ideographic Variation Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
+| `L2/26-105` | Proposed Update UAX #38, Unicode Han Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md) |
+| `L2/26-112` | Proposed Update UTS #37, Unicode Ideographic Variation Database の source。 | [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md) |
 | `L2/26-127` | CJK confusables second review request で、不明確な pair の review と追加提案に関与。 | [CJK Security Confusables](../topics/cjk-security-confusables.md) |
-| `L2/26-134` | `RSIndex.txt` syntax enhancement proposal の source。 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
+| `L2/26-134` | `RSIndex.txt` syntax enhancement proposal の source。 | [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md), [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
 | `L2/26-147` / `IRG N2961` | U-source horizontal extension proposal の source。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md), [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `L2/26-148` | 458 ideographs の `kTotalStrokes` property values 修正 proposal の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
+| `L2/26-148` | 458 ideographs の `kTotalStrokes` property values 修正 proposal の source。 | [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md), [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 
 ## 関連トピック
 
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
+- [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
 - [Kana](../topics/kana.md)
 - [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
