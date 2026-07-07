@@ -64,7 +64,7 @@ Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*`
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [IRG Indexing Rules](irg-indexing-rules.md)
-- [UAX #45 U-Source Ideographs](uax45-u-source-ideographs.md)
+- [UAX #45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 - [Kana](kana.md)
 - [CJK Hybrid Characters](cjk-hybrid-characters.md)

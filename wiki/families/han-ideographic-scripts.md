@@ -3,8 +3,8 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
-topics: [small-seal-script, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
+members: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
+topics: [small-seal-script, uax45-u-source-ideographs, irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [family, han, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -20,6 +20,7 @@ Han / ideographic 系の script、block、source data、variation database に�
 | Topic | 状態 | 一言 |
 | --- | --- | --- |
 | [Small Seal Script](../topics/small-seal-script.md) | in-ballot-pipeline | `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。 |
+| [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) | active | UTC の U-source database、FutureWS records、`kIRG_USource`、horizontal extension の保守論点。 |
 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) | active | IRG Meeting #67 の中心議題である WS2024 Version 5.0 review。 |
 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) | active | 既存 CJK Unified Ideographs に G / UK / U source data を追加する提案群。 |
 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) | active | member body source reference、representative glyph、Unihan property の修正論点。 |

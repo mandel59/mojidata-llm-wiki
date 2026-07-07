@@ -76,7 +76,7 @@ WG2 #73 の `WG2 N5354` は、Small Seal、CJK additions and changes、UAX #60 t
 
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [Small Seal Script](small-seal-script.md)
-- [UAX #45 U-Source Ideographs](uax45-u-source-ideographs.md)
+- [UAX #45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 

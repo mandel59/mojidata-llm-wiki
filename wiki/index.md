@@ -33,7 +33,7 @@ okf_version: "0.1"
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
 - [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
 - [J-source and JMJ Source Issues](topics/j-source.md) - J-source / JMJ-source horizontal extension、glyph、`kIRG_JSource` disposition。
-- [UAX #45 U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX #45 の U-source ideographs、USourceData.txt、FutureWS records の保守論点。
+- [UAX #45 / U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX #45 の U-source database、`kIRG_USource`、FutureWS、horizontal extension の保守論点。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - Unicode 18.0 の変更点を調べるための公式資料と関連文書。
 - [Unihan Database Maintenance](topics/unihan-database-maintenance.md) - Unihan database、UAX #38、UTS #37、関連 k* properties の保守論点。
 

@@ -4,6 +4,18 @@
 
 ## 一覧
 
+- [L2/07-159](utc-l2-07-159.md) - U-source database を public / versioned UTR にする提案。
+- [L2/07-160](utc-l2-07-160.md) - Extension C の U-source attribution correction。
+- [L2/08-284](utc-l2-08-284.md) - Draft UTR #45: U-Source Ideographs。
+- [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
+- [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
+- [L2/11-439](utc-l2-11-439.md) - `AJ1` source for `kIRG_USource`。
+- [IRG N2369R](irg-n2369r.md) - 2019 U-source horizontal extension。
+- [IRG N2439](irg-n2439.md) - two U-source ideographs の UNC proposal。
+- [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
+- [L2/22-185](utc-l2-22-185.md) - UAX #45 status value names。
+- [L2/25-199](utc-l2-25-199.md) - UAX #45 Revision 31 proposed update。
+- [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [IRG N2206](irg-n2206.md) - easily confused ideographs への annotation proposal。
 - [L2/19-282](utc-l2-19-282.md) - `kSpoofingVariant` field の初期 data proposal。
 - [L2/19-328](utc-l2-19-328.md) - `kSpoofingVariant` data と review process の問題提起。

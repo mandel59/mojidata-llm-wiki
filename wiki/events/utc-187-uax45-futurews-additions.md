@@ -38,7 +38,7 @@ UAX #45 additions は、未符号化 ideographs を UTC source records として
 
 - [L2/26-044](../documents/utc-l2-26-044.md)
 - [L2/26-099](../documents/utc-l2-26-099.md)
-- [UAX #45 U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
+- [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [Japanese Place-Name Ideographs](../topics/japanese-place-name-ideographs.md)
 - [UTC Meeting #187](../meetings/utc/utc-meeting-187.md)
 

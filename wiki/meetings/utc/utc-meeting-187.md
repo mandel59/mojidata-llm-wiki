@@ -25,7 +25,7 @@ UTC Meeting #187 は 2026-04-21/23 に hybrid online/in-person meeting として
 
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` の timeline、beta deliverables、ISO/IEC 10646 7th edition synchronization。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099`、`L2/26-105`、`L2/26-112` などの Unihan / UAX #38 / UTS #37 changes。
-- [UAX #45 U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX #45 additions。
+- [UAX #45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX #45 additions。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - `L2/26-082` / `L2/26-099` / `L2/26-127` の CJK confusables review。
 - Script Encoding WG、Properties & Algorithms WG、Editorial WG、Charts WG、Emoji Standard & Research WG、RMG reports。
 - ICU4X and TC39 liaison update `L2/26-126`。

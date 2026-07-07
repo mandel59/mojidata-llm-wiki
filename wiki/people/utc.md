@@ -4,10 +4,10 @@ title: UTC
 description: Unicode Standard の技術的な検討と承認を担う Unicode Technical Committee。
 slug: utc
 bodies: [UTC, IRG, WG2]
-documents: [irg-n2935, irg-n2961, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
+documents: [utc-l2-07-159, utc-l2-08-284, irg-n1534, irg-n1535, irg-n2369r, irg-n2439, irg-n2935, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-25-199, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
 topics: [unicode-18-change-sources, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]
 tags: [organization, standards-body, utc]
-timestamp: 2026-07-06T21:31:45+09:00
+timestamp: 2026-07-08T00:00:00+09:00
 ---
 
 # UTC
@@ -21,9 +21,10 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `L2/22-279`, `L2/25-049`, `L2/25-111` | Small Seal Script の source mapping、repertoire 整理、converging proposal。 | [Small Seal Script](../topics/small-seal-script.md) |
+| `L2/07-159`, `L2/08-284`, `IRG N1534`, `IRG N1535` | U-source database の public reference 化、Draft UTR #45、Extension D source evidence。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 | `L2/26-092`, `L2/26-093` | UTC Meeting #187 agenda / minutes。 | [UTC Meeting #187](../meetings/utc/utc-meeting-187.md) |
 | `L2/26-102` | Unicode 18.0 timeline、beta review、ISO/IEC 10646 7th edition synchronization。 | [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md) |
-| `IRG N2961` / `L2/26-147` | U-source horizontal extension として 40 CJK Unified Ideographs への `kIRG_USource` values と U-source representative glyphs を提案。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| `IRG N2369R`, `IRG N2439`, `L2/25-199`, `IRG N2961` / `L2/26-147` | U-source horizontal extension、U-source UNC proposal、UAX #45 Revision 31、40 CJK Unified Ideographs への `kIRG_USource` values と representative glyphs。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md), [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
 | `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-134`, `L2/26-148` | Unihan database、UAX #38、UTS #37、radical / stroke data の保守。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 | `L2/26-082`, `L2/26-086`, `L2/26-127` | UTS #39 confusables data の CJK review request と周辺 data listing。 | [CJK Security Confusables](../topics/cjk-security-confusables.md) |
 | `L2/26-133`, `L2/26-136` | ideographic punctuation の追加提案。 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) |
@@ -31,7 +32,13 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 
 ## 関連文書
 
-- `irg-n2961` - U-source horizontal extension
+- `utc-l2-07-159` - U-source database as versioned document
+- `utc-l2-08-284` - Draft UTR #45
+- `irg-n1534`, `irg-n1535` - UTC Extension D source descriptions / evidence
+- `irg-n2369r` - 2019 U-source horizontal extension
+- `irg-n2439` - two U-source UNC ideographs
+- `utc-l2-25-199` - UAX #45 Revision 31 proposed update
+- `utc-l2-26-147` - U-source horizontal extension
 - `utc-l2-26-092` - UTC #187 Agenda
 - `utc-l2-26-093` - UTC #187 meeting minutes
 - `utc-l2-26-082` - request for review of CJK confusables
@@ -58,14 +65,20 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
-- [UAX #45 U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
+- [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [CJK Security Confusables](../topics/cjk-security-confusables.md)
 - [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md)
 
 ## 出典
 
+- `utc-l2-07-159` - <https://www.unicode.org/L2/L2007/07159-u-source-db.pdf>
+- `utc-l2-08-284` - <https://www.unicode.org/L2/L2008/08284-utr45-1.pdf>
+- `irg-n1534` - <https://www.unicode.org/irg/docs/n1534-USourceDescriptionsExtensionD.pdf>
+- `irg-n1535` - <https://www.unicode.org/irg/docs/n1535-USourceEvidenceExtensionD.pdf>
+- `irg-n2369r` - <https://www.unicode.org/irg/docs/n2369r-UnicodeHorizontalExtension.pdf>
+- `irg-n2439` - <https://www.unicode.org/irg/docs/n2439-UNC-UTC.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
-- `irg-n2961` - <https://www.unicode.org/irg/docs/n2961-UnicodeHorizontalExtension.pdf>
+- `utc-l2-25-199` - <https://www.unicode.org/L2/L2025/25199-uax45-31-update-pri522.pdf>
 - `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
 - `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-082` - <https://www.unicode.org/L2/L2026/26082-review-cjk-confusables.pdf>
@@ -78,6 +91,7 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 - `utc-l2-26-133` - <https://www.unicode.org/L2/L2026/26133-dbl-ideo-fs.pdf>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-136` - <https://www.unicode.org/L2/L2026/26136-white-ideographic-comma.pdf>
+- `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
 - `utc-l2-22-279` - <https://www.unicode.org/L2/L2022/22279-ucs-seal-map.pdf>
 - `utc-l2-25-049` - <https://www.unicode.org/L2/L2025/25049r-considerations-small-seal.pdf>

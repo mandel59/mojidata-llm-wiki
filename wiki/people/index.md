@@ -21,6 +21,7 @@
 
 - [Michel Suignard](michel-suignard.md)
 - [Ken Lunde](ken-lunde.md)
+- [John H. Jenkins](john-h-jenkins.md)
 - [Richard Cook](richard-cook.md)
 - [Eiso Chan](eiso-chan.md)
 - [Henry Chan](henry-chan.md)

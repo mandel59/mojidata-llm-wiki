@@ -4,10 +4,11 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に G / UK / U source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, UTC]
-documents: [irg-n2909, irg-n2929, irg-n2935, irg-n2960, irg-n2961]
+documents: [irg-n2369r, irg-n2909, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
+topics: [uax45-u-source-ideographs, irg-source-data-and-representative-glyphs]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
-timestamp: 2026-07-06T21:31:45+09:00
+timestamp: 2026-07-08T00:00:00+09:00
 ---
 
 # CJK Horizontal Extensions
@@ -22,6 +23,7 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2019-05 | IRG / WG2 | `IRG N2369R` / `WG2 N5085` | UAX #45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
 | 2026-03 | IRG | `IRG N2929` | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
 | 2026-03 | IRG | `IRG N2909` | M66.09 が `IRG N2929` の review と revised document `IRG N2929R` の準備を action item 化。 |
 | 2026-06 | IRG | `IRG N2960` | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
@@ -42,7 +44,9 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 
 ### U-source horizontal extension
 
-`IRG N2961` は、UTC が URO、Extension A、Extension B、Extension F から J にまたがる 40 CJK Unified Ideographs へ `kIRG_USource` property values と U-source representative glyphs を追加する提案である。source-specific notes では UCV number や ad hoc unification への参照が示されており、horizontal extension と [IRG Indexing Rules](irg-indexing-rules.md) が接続している。
+`IRG N2961` / [L2/26-147](../documents/utc-l2-26-147.md) は、UTC が URO、Extension A、Extension B、Extension F から J にまたがる 40 CJK Unified Ideographs へ `kIRG_USource` property values と U-source representative glyphs を追加する提案である。source-specific notes では UCV number や ad hoc unification への参照が示されており、horizontal extension と [IRG Indexing Rules](irg-indexing-rules.md) が接続している。
+
+[IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` は、2019 年の U-source horizontal extension precedent である。UAX #45 にある encoded ideographs へ U-source identifiers を付ける点で、2026 年の `IRG N2961` と同じ type の作業として読める。
 
 ## 関連文書
 
@@ -50,10 +54,12 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 - [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
+- [UAX #45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 
 ## 関連トピック
 
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
+- [UAX #45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 
 ## 関連人物・組織
 
@@ -68,3 +74,5 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2960` - <https://www.unicode.org/irg/docs/n2960-UKHorizontalExtension.pdf>
 - `irg-n2961` - <https://www.unicode.org/irg/docs/n2961-UnicodeHorizontalExtension.pdf>
+- `irg-n2369r` - <https://www.unicode.org/irg/docs/n2369r-UnicodeHorizontalExtension.pdf>
+- `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
