@@ -35,8 +35,12 @@
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
+- [IRG N2909](irg-n2909.md) - IRG Meeting #66 recommendations and action items。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
+- [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
+- [WG2 N5304](wg2-n5304.md) - WG2 Meeting #72 recommendations。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
+- [WG2 N5354](wg2-n5354.md) - WG2 Meeting #73 recommendations。
 - [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。
 - [WG2 N5369](wg2-n5369.md) - ISO/IEC 10646 7th edition CD.4 disposition。

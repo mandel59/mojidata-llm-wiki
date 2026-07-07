@@ -24,7 +24,7 @@ IRG Meeting #67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid mee
 
 ## 主要議題
 
-- [IRG Working Set 2024](../../topics/irg-working-set-2024.md) - `IRG N2932` と、予定文書 `IRG N2933` の consolidated comments をもとに Version 5.0 を review する。
+- [IRG Working Set 2024](../../topics/irg-working-set-2024.md) - `IRG N2932` と `IRG N2933` の consolidated comments をもとに Version 5.0 を review する。
 - [CJK Horizontal Extensions](../../topics/cjk-horizontal-extensions.md) - China `G-source` 9156 characters、UK 2 characters、UTC 40 characters の horizontal extension を扱う。
 - [IRG Source Data and Representative Glyphs](../../topics/irg-source-data-and-representative-glyphs.md) - `G` / `T` / `K` / `UK` / `V` / `SAT` / `U` source の representative glyph、source reference、Unihan property の修正。
 - [kIRG_SGSource](../../topics/kirg-sgsource.md) - Singapore characters を `kIRG_GSource` から独立した normative `kIRG_SGSource` へ移す案件の follow-up。
@@ -38,9 +38,9 @@ IRG Meeting #67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid mee
 ## 後続確認
 
 - [IRG Meeting #66](irg-meeting-66.md) - #67 agenda の Section 4 は #66 recommendations / action items の follow-up。
-- `IRG N2933` - WS2024 Version 5.0 consolidated comments。`IRG N2935` では agenda に載るが、2026-07-06 の作業時点では文書実体を取得できなかった。
+- `IRG N2933` - WS2024 Version 5.0 consolidated comments。Meeting #67 review の入力文書。
 - `IRG N2929R` - China Horizontal Extension の revised document。`IRG N2909` の action item では 2026-09-25 までに提出予定。
-- `IRG N2952` - Rules for Assigning Radicals。agenda と catalog にはあるが、2026-07-06 の作業時点では文書実体を取得できなかった。
+- `IRG N2952` - Rules for Assigning Radicals。radical assignment follow-up の精読対象。
 - `IRG N2946` - Meeting #67 Recommendations and Action Items。会合後に決定事項の一次ソースとして読む。
 
 ## 出典

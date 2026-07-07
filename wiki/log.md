@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-08
+
+- **Review**: Added source document pages for `IRG N2909`, `IRG N2935`, `WG2 N5304`, and `WG2 N5354`, and replaced stale unconfirmed/tentative references for catalog-available IRG follow-up documents.
+
 ## 2026-07-07
 
 - **Refine**: Added `document_type` frontmatter for source documents, moved proposal pages from `## 決定・Action Item` to `## 提案内容`, and added [UTC #187 UAX #45 FutureWS additions](events/utc-187-uax45-futurews-additions.md) as the canonical event for the UAX #45 FutureWS decision.
