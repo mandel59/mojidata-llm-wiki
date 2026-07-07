@@ -28,6 +28,8 @@ okf_version: "0.1"
 - [UAX #60 Data for Large East Asian Scripts](topics/uax60-large-east-asian-scripts.md) - UAX #60 の title / data model と Small Seal data の保守。
 - [CJK Security Confusables](topics/cjk-security-confusables.md) - UTS #39 security data における CJK confusable pairs と CJK WG review。
 - [Kana](topics/kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan `kJapanese` readings。
+- [Japanese Place-Name Ideographs](topics/japanese-place-name-ideographs.md) - 日本の地名・登記資料に現れる未符号化漢字の UAX #45 / FutureWS proposals。
+- [Japanese Historical Ideographs](topics/japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
 
 ## Current Families

@@ -20,9 +20,13 @@
 - [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。
 - [L2/25-036](utc-l2-25-036.md) - KATAKANA LETTER SMALL ARCHAIC YE。
 - [L2/25-042](utc-l2-25-042.md) - KATAKANA LETTER SMALL NE。
+- [L2/25-053](utc-l2-25-053.md) - 兵庫県淡路市の地名 ideograph を UAX #45 に追加する提案。
 - [L2/25-060](utc-l2-25-060.md) - KATAKANA LETTER SMALL NE proposal addendum。
 - [L2/25-151R](utc-l2-25-151r.md) - KATAKANA LETTER ALTERNATE NE / WI。
 - [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
+- [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX #45 に追加する提案。
+- [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
+- [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX #45 に追加する提案。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG #65 recommendations; CJK Hybrid Characters policy。
