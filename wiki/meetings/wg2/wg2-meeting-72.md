@@ -4,6 +4,7 @@ title: "WG2 Meeting #72"
 description: "2025-06 WG2 Meeting #72 の Small Seal Script / J-source 関連 recommendations。"
 slug: wg2-meeting-72
 body: WG2
+bodies: [WG2]
 meeting: 72
 date: "2025-06-23/27"
 location: Niigata, Japan

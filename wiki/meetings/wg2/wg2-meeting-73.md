@@ -4,6 +4,7 @@ title: "WG2 Meeting #73"
 description: "2026-06 WG2 Meeting #73 の Small Seal Script と ISO/IEC 10646 7th edition DIS 進行。"
 slug: wg2-meeting-73
 body: WG2
+bodies: [WG2]
 meeting: 73
 date: "2026-06-22/26"
 location: Paris, France

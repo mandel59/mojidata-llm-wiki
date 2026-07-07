@@ -17,7 +17,6 @@ from wiki_store import (
     SCHEME_RE,
     load_concepts,
     read_page,
-    render_page,
     scalar,
     string_list,
 )
@@ -102,17 +101,17 @@ def is_relative_to(path: Path, parent: Path) -> bool:
     return True
 
 
-def check_no_local_links_outside_wiki(concepts: dict[str, Concept]) -> list[str]:
+def check_no_local_links_outside_wiki() -> list[str]:
     errors: list[str] = []
-    for concept in concepts.values():
-        for target in markdown_link_targets(concept.path, concept.body):
+    for path in sorted(WIKI.rglob("*.md")):
+        rel_path = path.relative_to(WIKI).as_posix()
+        page = read_page(path)
+        for target in markdown_link_targets(path, page.body):
             if target.startswith("//"):
                 continue
-            resolved = (concept.path.parent / target).resolve()
+            resolved = (path.parent / target).resolve()
             if not is_relative_to(resolved, WIKI.resolve()):
-                errors.append(
-                    f"{concept.rel_path}: local Markdown link points outside wiki bundle: {target}"
-                )
+                errors.append(f"{rel_path}: local Markdown link points outside wiki bundle: {target}")
     return errors
 
 
@@ -191,7 +190,7 @@ def fix_root_current_topics(missing: list[str]) -> None:
     if not match:
         return
     replacement = match.group(1).rstrip() + "\n" + "\n".join(lines) + "\n" + match.group(2)
-    root.write_text(text[: match.start()] + replacement + text[match.end() :], encoding="utf-8")
+    write_text_raw(root, text[: match.start()] + replacement + text[match.end() :])
 
 
 def check_meeting_bodies(concepts: dict[str, Concept], fix: bool) -> list[str]:
@@ -204,9 +203,7 @@ def check_meeting_bodies(concepts: dict[str, Concept], fix: bool) -> list[str]:
         if body and body not in bodies:
             errors.append(f"{concept.rel_path}: Meeting has body={body} but bodies does not include it")
             if fix:
-                data = dict(concept.frontmatter)
-                data["bodies"] = sorted(set(bodies + [body]))
-                concept.path.write_text(render_page(data, concept.body), encoding="utf-8")
+                insert_frontmatter_field_after(concept.path, "body", f"bodies: [{body}]")
     return errors
 
 
@@ -221,10 +218,30 @@ def check_synthesis_members(concepts: dict[str, Concept], fix: bool) -> list[str
         if missing:
             errors.append(f"{concept.rel_path}: Synthesis members missing from topics relation: {', '.join(missing)}")
             if fix:
-                data = dict(concept.frontmatter)
-                data["topics"] = topics + missing
-                concept.path.write_text(render_page(data, concept.body), encoding="utf-8")
+                value = ", ".join(topics + missing)
+                insert_frontmatter_field_after(concept.path, "members", f"topics: [{value}]")
     return errors
+
+
+def insert_frontmatter_field_after(path: Path, after_key: str, field_line: str) -> None:
+    text = path.read_text(encoding="utf-8")
+    newline = "\r\n" if "\r\n" in text else "\n"
+    match = re.match(r"\A---\r?\n(.*?)\r?\n---\r?\n", text, flags=re.DOTALL)
+    if not match:
+        return
+    header = match.group(1)
+    key = field_line.split(":", 1)[0]
+    if re.search(rf"^{re.escape(key)}:", header, flags=re.MULTILINE):
+        return
+    pattern = re.compile(rf"^({re.escape(after_key)}:.*)$", flags=re.MULTILINE)
+    if not pattern.search(header):
+        return
+    new_header = pattern.sub(rf"\1{newline}{field_line}", header, count=1)
+    write_text_raw(path, text[: match.start(1)] + new_header + text[match.end(1) :])
+
+
+def write_text_raw(path: Path, text: str) -> None:
+    path.write_text(text, encoding="utf-8", newline="")
 
 
 def catalog_names(entry: CatalogEntry) -> set[str]:
@@ -289,14 +306,21 @@ def run_checks(args: argparse.Namespace) -> list[str]:
     concepts = load_concepts()
 
     errors: list[str] = []
-    errors.extend(check_no_local_links_outside_wiki(concepts))
+    errors.extend(check_no_local_links_outside_wiki())
     errors.extend(check_directory_indexes())
-    errors.extend(check_root_current_topics(concepts, args.fix))
-    errors.extend(check_meeting_bodies(concepts, args.fix))
-    errors.extend(check_synthesis_members(concepts, args.fix))
+
+    fixable_errors: list[str] = []
+    fixable_errors.extend(check_root_current_topics(concepts, args.fix))
+    fixable_errors.extend(check_meeting_bodies(concepts, args.fix))
+    fixable_errors.extend(check_synthesis_members(concepts, args.fix))
 
     if args.fix:
         concepts = load_concepts()
+        errors.extend(check_root_current_topics(concepts, False))
+        errors.extend(check_meeting_bodies(concepts, False))
+        errors.extend(check_synthesis_members(concepts, False))
+    else:
+        errors.extend(fixable_errors)
 
     errors.extend(check_stale_unavailable_text(catalog))
     errors.extend(check_frequent_unresolved_documents(concepts, catalog, args.min_unresolved_doc_refs))

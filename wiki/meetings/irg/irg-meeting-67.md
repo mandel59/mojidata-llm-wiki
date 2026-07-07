@@ -4,6 +4,7 @@ title: "IRG Meeting #67"
 description: "2026-10 Tokyo hybrid IRG Meeting #67 の agenda と主要議題。"
 slug: irg-meeting-67
 body: IRG
+bodies: [IRG]
 meeting: 67
 date: "2026-10-12/16"
 location: Tokyo, Japan

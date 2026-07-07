@@ -31,6 +31,11 @@ okf_version: "0.1"
 - [Japanese Place-Name Ideographs](topics/japanese-place-name-ideographs.md) - 日本の地名・登記資料に現れる未符号化漢字の UAX #45 / FutureWS proposals。
 - [Japanese Historical Ideographs](topics/japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
+- [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
+- [J-source and JMJ Source Issues](topics/j-source.md) - J-source / JMJ-source horizontal extension、glyph、`kIRG_JSource` disposition。
+- [UAX #45 U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX #45 の U-source ideographs、USourceData.txt、FutureWS records の保守論点。
+- [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - Unicode 18.0 の変更点を調べるための公式資料と関連文書。
+- [Unihan Database Maintenance](topics/unihan-database-maintenance.md) - Unihan database、UAX #38、UTS #37、関連 k* properties の保守論点。
 
 ## Current Families
 
@@ -38,6 +43,6 @@ okf_version: "0.1"
 
 ## Source Entry Points
 
-- [UTC manifest](../catalog/registries/utc/) - UTC Document Registry 由来の目録
-- [WG2 manifest](../catalog/registries/wg2/) - WG2 Document Registry 由来の目録
-- [IRG manifest](../catalog/registries/irg/) - IRG Document Register 由来の目録
+- [UTC Document Register](https://www.unicode.org/L2/L-curdoc.htm) - UTC Document Registry の current documents
+- [WG2 Current Documents](https://www.unicode.org/wg2/WG2-curdoc.html) - WG2 Document Registry の current documents
+- [IRG Current Documents](https://www.unicode.org/irg/IRG-curdoc.html) - IRG Document Register の current documents
