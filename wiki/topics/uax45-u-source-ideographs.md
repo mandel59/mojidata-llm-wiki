@@ -26,19 +26,19 @@ UAX #45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSC
 
 ## 経緯
 
-| 日付 | Body | 文書 | できごと |
-| --- | --- | --- | --- |
-| 2007-05-10 | UTC | [L2/07-159](../documents/utc-l2-07-159.md), [L2/07-160](../documents/utc-l2-07-160.md) | U-source database を public / versioned UTR として公開し、Extension C の U-source attribution correction を追えるようにする提案が出た。 |
-| 2008-08-04 | UTC | [L2/08-284](../documents/utc-l2-08-284.md) | Draft UTR #45 が、U-source identifier、status field、source field、glyph / data files を定義した。 |
-| 2008-11-12 | IRG | [IRG N1534](../documents/irg-n1534.md), [IRG N1535](../documents/irg-n1535.md) | UTC Extension D proposal の source descriptions と sample evidence が IRG に提出された。 |
-| 2011-11-11 | UTC / IRG | [L2/11-439](../documents/utc-l2-11-439.md) / `IRG N1825R` | Adobe-Japan1-6 由来の 27 ideographs について、`kIRG_USource` の source reference を `UTC-...` から `AJ1-...` へ明確化する提案が出た。 |
-| 2019-05 | IRG / WG2 | [IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` | UAX #45 に存在するが U-source identifier を欠く約 150 encoded ideographs に horizontal extension で source identifiers を付ける提案が出た。 |
-| 2020-08/09 | UTC / IRG | [IRG N2439](../documents/irg-n2439.md) / `L2/20-204` | UTC-02993 と UTC-03009 を Urgently Needed Characters として提出し、Macao SAR / TCA / China 側の UNC proposal と重なる evidence を補強した。 |
-| 2021-08-24 | IRG | [IRG N2511](../documents/irg-n2511.md) | U+30759 / UTC-01250 の representative glyph が evidence と合わない可能性を指摘し、glyph update または別符号化を提案した。 |
-| 2022-08-15 | UTC | [L2/22-185](../documents/utc-l2-22-185.md) | `N`, `V`, `W`, `X` の一文字 status を `FutureWS`, `Variant`, `Rejected`, `NoAction` に置き換える提案が出た。 |
-| 2025-07-17 | UTC | [L2/25-199](../documents/utc-l2-25-199.md) | UAX #45 Revision 31 proposed update が、`ExtJ` と `WS-2024` status、first residual stroke value `6`、Unicode 17.0 additions を反映した。 |
-| 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | UTC #187 向けに 30 UAX #45 additions を `FutureWS` records として受け入れるよう勧告された。 |
-| 2026-07-05 | UTC / IRG | [L2/26-147](../documents/utc-l2-26-147.md) / `IRG N2961` | 40 encoded CJK Unified Ideographs へ `kIRG_USource` values と U-source representative glyphs を追加する U-source horizontal extension が提出された。 |
+| 日付         | Body      | 文書                                                                                     | できごと                                                                                                                                   |
+| ---------- | --------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 2007-05-10 | UTC       | [L2/07-159](../documents/utc-l2-07-159.md), [L2/07-160](../documents/utc-l2-07-160.md) | U-source database を public / versioned UTR として公開し、Extension C の U-source attribution correction を追えるようにする提案が出た。                        |
+| 2008-08-04 | UTC       | [L2/08-284](../documents/utc-l2-08-284.md)                                             | Draft UTR #45 が、U-source identifier、status field、source field、glyph / data files を定義した。                                                |
+| 2008-11-12 | IRG       | [IRG N1534](../documents/irg-n1534.md), [IRG N1535](../documents/irg-n1535.md)         | UTC Extension D proposal の source descriptions と sample evidence が IRG に提出された。                                                         |
+| 2011-11-11 | UTC / IRG | [L2/11-439](../documents/utc-l2-11-439.md) / `IRG N1825R`                              | Adobe-Japan1-6 由来の 27 ideographs について、`kIRG_USource` の source reference を `UTC-...` から `AJ1-...` へ明確化する提案が出た。                          |
+| 2019-05    | IRG / WG2 | [IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085`                                 | UAX #45 に存在するが U-source identifier を欠く約 150 encoded ideographs に horizontal extension で source identifiers を付ける提案が出た。                  |
+| 2020-08/09 | UTC / IRG | [IRG N2439](../documents/irg-n2439.md) / `L2/20-204`                                   | UTC-02993 と UTC-03009 を Urgently Needed Characters として提出し、Macao SAR / TCA / China 側の UNC proposal と重なる evidence を補強した。                 |
+| 2021-08-24 | IRG       | [IRG N2511](../documents/irg-n2511.md)                                                 | U+30759 / UTC-01250 の representative glyph が evidence と合わない可能性を指摘し、glyph update または別符号化を提案した。                                          |
+| 2022-08-15 | UTC       | [L2/22-185](../documents/utc-l2-22-185.md)                                             | `N`, `V`, `W`, `X` の一文字 status を `FutureWS`, `Variant`, `Rejected`, `NoAction` に置き換える提案が出た。                                            |
+| 2025-07-17 | UTC       | [L2/25-199](../documents/utc-l2-25-199.md)                                             | UAX #45 Revision 31 proposed update が、`ExtJ` と `WS-2024` status、first residual stroke value `6`、Unicode 17.0 additions を反映した。          |
+| 2026-04-11 | UTC       | [L2/26-099](../documents/utc-l2-26-099.md)                                             | UTC #187 向けに 30 UAX #45 additions を `FutureWS` records として受け入れるよう勧告された。                                                                |
+| 2026-07-05 | UTC / IRG | [L2/26-147](../documents/utc-l2-26-147.md) / `IRG N2961`                               | 40 encoded CJK Unified Ideographs へ `kIRG_USource` values と U-source representative glyphs を追加する U-source horizontal extension が提出された。 |
 
 ## 抽出したコンセプト
 
