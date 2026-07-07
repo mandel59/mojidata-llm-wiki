@@ -1,7 +1,7 @@
 ---
 type: Person
 title: John H. Jenkins
-description: UAX #38 / UAX #45、Unihan database、IRG liaison documents に関わった contributor。
+description: "UAX #38 / UAX #45、Unihan database、IRG liaison documents に関わった contributor。"
 slug: john-h-jenkins
 aliases: [John Jenkins, John H. Jenkins, 井作恆]
 bodies: [UTC, IRG, WG2]

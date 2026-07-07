@@ -2,10 +2,35 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.wiki_store import load_concepts
+from tools.wiki_store import load_concepts, parse_frontmatter_header
 
 
 class WikiStoreTests(unittest.TestCase):
+    def test_frontmatter_rejects_unquoted_hash_in_scalar(self):
+        data, errors = parse_frontmatter_header(
+            Path("page.md"),
+            "title: UTC #187 Meeting Minutes\nslug: utc-meeting-187",
+        )
+
+        self.assertEqual(data["title"], "UTC #187 Meeting Minutes")
+        self.assertEqual(errors, ["page.md:2: frontmatter value containing # must be quoted"])
+
+    def test_frontmatter_rejects_unquoted_hash_in_inline_list(self):
+        _data, errors = parse_frontmatter_header(
+            Path("page.md"),
+            "aliases: [UAX #38 Revision 40, PRI #534]",
+        )
+
+        self.assertEqual(errors, ["page.md:2: frontmatter value containing # must be quoted"])
+
+    def test_frontmatter_allows_quoted_hash(self):
+        _data, errors = parse_frontmatter_header(
+            Path("page.md"),
+            'aliases: ["UAX #38 Revision 40", "PRI #534"]',
+        )
+
+        self.assertEqual(errors, [])
+
     def test_frontmatter_relations_resolve_aliases(self):
         with tempfile.TemporaryDirectory() as tmp:
             bundle = Path(tmp)

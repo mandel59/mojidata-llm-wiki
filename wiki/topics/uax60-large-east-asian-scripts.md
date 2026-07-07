@@ -1,6 +1,6 @@
 ---
 type: Topic
-title: UAX #60 Data for Large East Asian Scripts
+title: "UAX #60 Data for Large East Asian Scripts"
 description: "UAX #60 の title / data model と Small Seal など large East Asian scripts 向け data の保守。"
 slug: uax60-large-east-asian-scripts
 bodies: [UTC]

@@ -84,6 +84,28 @@ def parse_value(value: str | None) -> object:
     return value
 
 
+def value_has_unquoted_comment_marker(value: str | None) -> bool:
+    if value is None:
+        return False
+    quote: str | None = None
+    escaped = False
+    for index, char in enumerate(value):
+        if quote is not None:
+            if quote == '"' and char == "\\" and not escaped:
+                escaped = True
+                continue
+            if char == quote and not escaped:
+                quote = None
+            escaped = False
+            continue
+        if char in {"'", '"'}:
+            quote = char
+            continue
+        if char == "#" and (index == 0 or value[index - 1].isspace()):
+            return True
+    return False
+
+
 def parse_frontmatter_header(path: Path, header: str) -> tuple[dict[str, object], list[str]]:
     data: dict[str, object] = {}
     errors: list[str] = []
@@ -99,6 +121,8 @@ def parse_frontmatter_header(path: Path, header: str) -> tuple[dict[str, object]
         key, value = match.groups()
         if key in data:
             errors.append(f"{path}:{offset}: duplicate frontmatter key: {key}")
+        if value_has_unquoted_comment_marker(value):
+            errors.append(f"{path}:{offset}: frontmatter value containing # must be quoted")
         data[key] = parse_value(value)
 
     return data, errors
