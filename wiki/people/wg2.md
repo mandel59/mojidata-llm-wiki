@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoire、code charts、edition / amendment progression を扱う。UTC / IRG から上がる proposal や IRG recommendation は、WG2 meeting と SC2 resolution を経て ISO/IEC 10646 の CD / DIS / IS text に接続する。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

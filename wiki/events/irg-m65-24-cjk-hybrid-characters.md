@@ -20,7 +20,11 @@ IRG Meeting #65 Recommendation M65.24 は、CJK hybrid characters の encoding p
 
 IRG は、well-attested Korean ideographs with Hangul-based phonetic components を例外とし、CJK hybrid characters は CJK Unified Ideographs extension blocks ではなく別 block に符号化すべきとした。encoding は WG2 に委ねるが、IRG が oversight を持ち、個別 character が CJKUI extension block に入るか CJK Hybrid Characters block に入るかを判断する。
 
-## 決定
+## 背景
+
+IRG #65 では、CJK Unified Ideographs に非 Han script components を持つ Han-like characters を入れるか、別 block として扱うかが問題になった。関連文書には、script-hybrid characters を独立 block に置く案や、GB 18030 側の扱いに関する feedback が含まれる。
+
+## 結果
 
 | 項目 | 内容 |
 | --- | --- |
@@ -30,14 +34,15 @@ IRG は、well-attested Korean ideographs with Hangul-based phonetic components 
 | 例外 | Hangul に基づく phonetic components を含む well-attested Korean ideographs。 |
 | 後続 | Unihan properties を付ける場合、source references、radical、stroke count、readings などの規則を IRG review で議論する。 |
 
-## 関連文書
+## 影響範囲
+
+この event は、[CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) の block policy を整理する中心的な decision point である。仮名を component に持つ Han-like characters については、通常の CJKUI extension ではなく hybrid block 側で検討する方向を示すため、[Kana](../topics/kana.md) と CJKUI boundary の議論にも関係する。
+
+## 関連ページ
 
 - [IRG N2826](../documents/irg-n2826.md)
 - [IRG N2866R2](../documents/irg-n2866r2.md)
 - [IRG N2893](../documents/irg-n2893.md)
-
-## 関連トピック
-
 - [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md)
 - [Kana](../topics/kana.md)
 

@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Richard Cook は、Small Seal Script の source mapping data を提出した contributor である。`L2/22-279` の UCS Seal Script Source Mapping Data は、後続の repertoire / database 整理の土台になっている。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

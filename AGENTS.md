@@ -157,6 +157,8 @@ tags: [document, recommendations]
 
 `document_type` は文書そのものの性質を表す producer-defined extension であり、`proposal`、`recommendation`、`minutes`、`action-items`、`feedback`、`report`、`data`、`registry`、`notice`、`other` のいずれかを使う。`type: Source Document` は wiki concept type なので、提案・議事録・recommendation の区別には使わない。
 
+`document_type: proposal` では `## 提案内容`、`feedback` では `## フィードバック内容`、`report` では `## 報告内容`、`data` では `## データ内容` を使う。`## 決定・Action Item` は recommendation / minutes / action-items のように、文書自体が会議決定や action item を記録している場合に限る。
+
 ### `wiki/events/<slug>.md`
 
 出来事を canonical summary として独立させる。topic / meeting / people / family / document ページで同じ出来事の概要を説明し直さず、event へのリンクとそのページ固有の読み取りだけを書く。
@@ -200,6 +202,10 @@ event は文書そのものではなく、文書・会合・勧告・action item
 3. `## 決定事項` - recommendation / consensus / action items。
 4. `## 後続確認` - 次回以降に追うべき文書番号。
 5. `## 出典`
+
+### `wiki/people/<slug>.md`
+
+人物・組織・member body のページでは、`## 概要` にその人物・組織の所属・立場・主な作業を書く。関与一覧の見出しは `## 標準化での役割` や `## 主な活動` とし、概念自体の説明として不自然な「この wiki での関与」は使わない。
 
 ## 操作
 

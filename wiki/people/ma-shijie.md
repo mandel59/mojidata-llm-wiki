@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Ma Shijie は、IRG 文書で G-source glyph revision と SAT-source glyph issues を扱う contributor である。`IRG N2958` では G-source glyphs、`IRG N2959` では SAT-source glyphs について、original evidence と current representative glyph の関係を検討している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

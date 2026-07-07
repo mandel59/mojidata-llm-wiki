@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 Henry Chan は、CJK Unified Ideographs Components への feedback、Primary / Secondary Radical assignment rules の更新提案、easily confused ideographs の annotation proposal に関わる contributor である。`IRG N2206` は意味を区別すべき似た ideographs への informative note と cross reference を提案し、`IRG N2917` は HCP source reference、component / variant の境界、radical data について `IRG N2878R2` へ feedback した。`IRG N2925` は、WS2017 / WS2021 で続いた radical assignment の議論を背景に、semantic radical、discoverability、secondary radical の扱いを整理している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

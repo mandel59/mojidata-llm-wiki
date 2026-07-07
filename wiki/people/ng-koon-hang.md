@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Ng Koon Hang は、IRG 文書で V-source representative glyph issues for U+268A1 / U+268A2 を提起した contributor である。提出文書は、Vietnam NB による evidence 確認と、追加 evidence が glyph change を正当化できるかという IRG の source / glyph review に関係している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

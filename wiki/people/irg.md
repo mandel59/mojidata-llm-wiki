@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 IRG は、CJK Unified Ideographs の review、IRG Working Set、source reference、representative glyph、UCV / NUCV、radical assignment などを扱う専門 body である。公開 Document Register では `IRG Nxxxx` の文書番号で、agenda、recommendations、activity reports、member body submissions、individual contributions が公開されている。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

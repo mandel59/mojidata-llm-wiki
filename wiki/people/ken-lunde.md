@@ -16,7 +16,7 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan data maintenance に継続して関わる contributor である。`L2/26-099` では CJK & Unihan Working Group recommendations の source に含まれ、UTC #187 に向けた Unihan database、source data、UAX #38、UTS #37、RSIndex.txt、U-source horizontal extension、`kTotalStrokes` 修正などの更新作業に関係している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

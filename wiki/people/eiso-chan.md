@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines、ideographic punctuation proposals など複数の CJK / ideographic 文書に関わる contributor である。`IRG N2799` では Jianzi Musical Notation などの追加 data source を提供する author として現れ、`IRG N2878R3` の final proposal author list にも含まれる。`IRG N2926` の表紙では Culture and Art Publishing House とともに記載されている。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

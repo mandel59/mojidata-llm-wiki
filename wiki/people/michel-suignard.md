@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Michel Suignard は、Small Seal Script encoding initiative で proposal / feedback 整理を継続的に担った contributor / project editor である。公開文書では、Small Seal の repertoire、code chart、database、WG2 feedback disposition をまとめる作業に関与している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

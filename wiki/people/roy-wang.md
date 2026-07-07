@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Roy Wang は、G-source representative glyph / source reference issues を提起した contributor である。`IRG N2954` と `IRG N2956` では、original evidence、current glyph、source reference の不一致を検討している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 Kushim Jiang は、CJKV Components proposal の author list と G-source issues feedback に名前が現れる contributor である。公開文書上では、`IRG N2733R`、`IRG N2799`、`IRG N2878R3` の CJKV Components proposal に継続して関与し、CJK components の repertoire / source data 整理に関わっている。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 |
 | --- | --- |

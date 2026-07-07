@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Consortium の標準化 body である。UTC 文書は `L2/yy-nnn` の番号で公開され、script / character proposals、UAX / UTS updates、UCD data changes、working group reports、meeting minutes を扱う。IRG や WG2 の文書と同じ proposal / feedback が UTC registry にも登録されることがある。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

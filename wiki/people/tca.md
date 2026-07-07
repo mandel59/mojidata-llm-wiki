@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 TCA は、IRG / WG2 に参加する member body / source で、T-source data と関連する glyph / source evidence の確認に関わる。Small Seal Script、CJKV Components、T-source representative glyph issues に関係している。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |

@@ -16,7 +16,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Vietnam は、IRG に参加する member body / source で、V-source の representative glyphs や source evidence に関する確認を担う。IRG Meeting #66 から #67 にかけて、U+268A1 / U+268A2 の V-source representative glyphs が議題になっている。
 
-## この wiki での関与
+## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
