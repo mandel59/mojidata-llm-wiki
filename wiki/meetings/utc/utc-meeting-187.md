@@ -8,7 +8,8 @@ meeting: 187
 date: "2026-04-21/23"
 location: Hybrid online/in-person
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-126]
-topics: [unicode-18-change-sources, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script]
+topics: [unicode-18-change-sources, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
+events: [utc-187-uax45-futurews-additions]
 tags: [meeting, utc, unicode-18, beta, cjk]
 timestamp: 2026-07-07T00:00:00+09:00
 ---
@@ -33,7 +34,7 @@ UTC Meeting #187 は 2026-04-21/23 に hybrid online/in-person meeting として
 | 区分 | 文書 | 要点 |
 | --- | --- | --- |
 | Unicode 18.0 beta review | `L2/26-102`, `L2/26-093` | UTC は Unicode 18.0 beta review の開始を authorize した。RMG / PAG / UTC に beta review landing page、PRI page、publication coordination の action items が置かれた。 |
-| CJK & Unihan | `L2/26-099` | UTC #187 向け CJK & Unihan WG recommendations。Unihan database、UAX #45、UAX #60、CJK Strokes variation sequences、CJK confusables、IRG #66 follow-up を処理する。 |
+| CJK & Unihan | `L2/26-099` | UTC #187 向け CJK & Unihan WG recommendations。Unihan database、[UAX #45 FutureWS additions](../../events/utc-187-uax45-futurews-additions.md)、UAX #60、CJK Strokes variation sequences、CJK confusables、IRG #66 follow-up を処理する。 |
 | Scripts | `L2/26-100` | Script Encoding WG が UTC #187 向け recommendations を提出。Unicode 18.0 と ISO/IEC 10646 7th edition の新規 script / character progression に関係する。 |
 | Charts / Editorial / PAG / ESR | `L2/26-096`-`L2/26-101` | Unicode 18.0 beta review に向け、properties、charts、editorial text、emoji の各 WG が report / recommendations を提出。 |
 

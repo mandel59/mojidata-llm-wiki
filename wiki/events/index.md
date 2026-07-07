@@ -14,6 +14,7 @@
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19) - IRG #66 Recommendation M66.16 が kIRG_SGSource の establishment と GS prefix の SG source への移行を勧告した出来事。
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19) - IRG #66 Recommendation M66.17 が IRG N2878R3 の CJK Unified Ideographs Components-A/B を WG2 へ forward するよう勧告した出来事。
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20) - IRG N2878R3 が CJK Unified Ideographs Components-A/B の final proposal として 494 characters を提示した出来事。
+- [UTC #187 UAX #45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11) - CJK & Unihan Working Group が UTC #187 向け recommendations で UAX #45 additions を FutureWS records として受け入れるよう勧告した出来事。
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26) - WG2 #73 が ISO/IEC 10646 7th edition CD4 disposition の一部として Small Seal の名称変更と property correction を記録した出来事。
 
 ## By Topic
@@ -40,6 +41,10 @@
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 
+### japanese-place-name-ideographs
+
+- [UTC #187 UAX #45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
 ### kana
 
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
@@ -52,3 +57,7 @@
 
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
+
+### uax45-u-source-ideographs
+
+- [UTC #187 UAX #45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)

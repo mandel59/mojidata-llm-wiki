@@ -58,6 +58,9 @@
     },
     "Source Document": {
       "required": ["entry_id", "doc_number", "registry", "date", "source"],
+      "enums": {
+        "document_type": ["proposal", "recommendation", "minutes", "action-items", "feedback", "report", "data", "registry", "notice", "other"]
+      },
       "relations": {
         "topics": "topic",
         "people": "people",

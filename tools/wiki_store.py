@@ -338,6 +338,13 @@ def validate_schema_definition(schema: dict[str, object], path: Path = DEFAULT_S
         relations = raw_type_schema.get("relations", {})
         if relations is not None and not isinstance(relations, dict):
             errors.append(f"{path}: type {type_name} relations must be an object")
+        enums = raw_type_schema.get("enums", {})
+        if enums is not None and not isinstance(enums, dict):
+            errors.append(f"{path}: type {type_name} enums must be an object")
+        if isinstance(enums, dict):
+            for field_name, allowed in enums.items():
+                if not isinstance(allowed, list) or not all(isinstance(item, str) for item in allowed):
+                    errors.append(f"{path}: type {type_name} enum {field_name} must be a list of strings")
     return errors
 
 
@@ -381,6 +388,15 @@ def validate_page_schema(path: Path, data: dict[str, object], schema: dict[str, 
     for key in string_list(type_schema, "non_empty_lists"):
         if not isinstance(data.get(key), list) or not string_list(data, key):
             errors.append(f"{path}: {key} must be a non-empty YAML list")
+    enums = type_schema.get("enums", {})
+    if isinstance(enums, dict):
+        for key, raw_allowed in enums.items():
+            if key not in data:
+                continue
+            allowed = raw_allowed if isinstance(raw_allowed, list) else []
+            value = data.get(key)
+            if not isinstance(value, str) or value not in allowed:
+                errors.append(f"{path}: {key} must be one of: {', '.join(str(item) for item in allowed)}")
     return errors
 
 

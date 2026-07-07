@@ -6,6 +6,7 @@ slug: japan
 bodies: [UTC, IRG, WG2]
 documents: [wg2-n5221, irg-n2721, wg2-n5284, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2934r]
 topics: [j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
+events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition]
 tags: [member-body, source, japan, j-source, uax45]
 timestamp: 2026-07-06T23:08:00+09:00
 ---

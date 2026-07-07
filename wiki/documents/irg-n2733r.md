@@ -5,6 +5,7 @@ description: China による CJK components preliminary proposal の要約。
 resource: https://www.unicode.org/irg/docs/n2733r-CJKComponents4IDS.pdf
 entry_id: irg-n2733r
 doc_number: IRG N2733R
+document_type: proposal
 registry: irg
 date: "2024-10-13"
 source: China

@@ -137,6 +137,7 @@ title: "IRG Meeting #66 Recommendations and Action Items"
 type: Source Document
 entry_id: irg-n2909
 doc_number: IRG N2909
+document_type: recommendation
 aliases: [IRG Meeting #66 Recommendations]
 registry: irg
 date: "2026-03-19"
@@ -149,9 +150,12 @@ tags: [document, recommendations]
 本文:
 
 1. `## 要約` - 3〜8 行。
-2. `## 決定・Action Item` - 決定事項、担当、期限があれば表にする。
-3. `## 論点` - 後続文書や他 body との関係。
-4. `## 出典` - `catalog` の `entry_id`、`document_url`、取得日ではなく registry 上の日付。
+2. `## 提案内容` / `## 決定・Action Item` / `## 報告内容` - `document_type` に応じて、文書そのものが述べる内容を書く。提案文書では決定事項をここに書かない。
+3. `## 後続決定` - 提案を取り上げた meeting / event がある場合、event / meeting へリンクし、このページでは決定概要を重複記述しない。未確認なら未確認と書く。
+4. `## 論点` - 後続文書や他 body との関係。
+5. `## 出典` - `catalog` の `entry_id`、`document_url`、取得日ではなく registry 上の日付。
+
+`document_type` は文書そのものの性質を表す producer-defined extension であり、`proposal`、`recommendation`、`minutes`、`action-items`、`feedback`、`report`、`data`、`registry`、`notice`、`other` のいずれかを使う。`type: Source Document` は wiki concept type なので、提案・議事録・recommendation の区別には使わない。
 
 ### `wiki/events/<slug>.md`
 
