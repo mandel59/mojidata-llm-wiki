@@ -21,7 +21,7 @@ timestamp: 2026-07-06T23:50:00+09:00
 
 ## 背景
 
-この proposal は、`IRG N2733R`、`IRG N2799`、`IRG N2878`、`IRG N2878R`、`IRG N2878R2` の revision lineage と、IRG #63 / #64 / #65 の recommendations、個別 feedback を取り込んだものとして位置づけられる。HKSAR、TCA、Vietnam、Jianzi Musical Notation などの source data も整理された。
+この proposal は、`IRG N2733R`、`IRG N2799`、`IRG N2878`、`IRG N2878R`、`IRG N2878R2` の revision lineage と、IRG \#63 / \#64 / \#65 の recommendations、個別 feedback を取り込んだものとして位置づけられる。HKSAR、TCA、Vietnam、Jianzi Musical Notation などの source data も整理された。
 
 ## 結果
 

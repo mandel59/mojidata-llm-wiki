@@ -33,7 +33,7 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2016-07-15 | UTC | [L2/16-188](../documents/utc-l2-16-188.md) | Japan NB が Hentaigana revised repertoire を提出。`HENTAIGANA LETTER E-1` withdrawal と U+1B001 name alias の流れに接続する。 |
 | 2016-11-04 | UTC | [L2/16-334](../documents/utc-l2-16-334.md) | CheonHyeong Sim が small WI / WE の Hiragana / Katakana 4 文字を提案。 |
 | 2016-11-06 | UTC | [L2/16-354](../documents/utc-l2-16-354.md) | Ryusei Yamaguchi が phonetic extension system として 12 文字の Kana small letters を提案。 |
-| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / [WG2 N4803](https://www.unicode.org/wg2/docs/n4803-small-kana-fdbk.pdf) | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC #149 で受理された 7 文字を示す。 |
+| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / [WG2 N4803](https://www.unicode.org/wg2/docs/n4803-small-kana-fdbk.pdf) | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC \#149 で受理された 7 文字を示す。 |
 | 2017-01-17 | UTC | [L2/17-014](../documents/utc-l2-17-014.md) | Japan NB / Tetsuji Orita が ARCHAIC HIRAGANA YE は HENTAIGANA「江」の用法の一つだと整理。 |
 | 2017-04-07 | UTC / WG2 | [L2/17-091](../documents/utc-l2-17-091.md) / [WG2 N4826](https://www.unicode.org/wg2/docs/n4826-JNB-SmallKanaCharacters.pdf) | Japan NB が Small Kana Characters に関する contribution を提出。PDAM 1.2 の 9 small kana だけを選ぶ根拠が不明で、より広い repertoire または modifier model を検討すべきと主張。 |
 | 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Abraham Gross が Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
@@ -71,7 +71,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 ### 小書き仮名の model
 
-[L2/16-334](../documents/utc-l2-16-334.md) と [L2/16-354](../documents/utc-l2-16-354.md) は、small WI / WE / WO / N などを含む additional small kana の個別 proposal である。[L2/16-358R](../documents/utc-l2-16-358r.md) は両 proposal の関係と証拠を確認し、UTC #149 で HIRAGANA LETTER SMALL WI / WE / WO、KATAKANA LETTER SMALL WI / WE / WO / N の 7 文字が受理されたことを示す。
+[L2/16-334](../documents/utc-l2-16-334.md) と [L2/16-354](../documents/utc-l2-16-354.md) は、small WI / WE / WO / N などを含む additional small kana の個別 proposal である。[L2/16-358R](../documents/utc-l2-16-358r.md) は両 proposal の関係と証拠を確認し、UTC \#149 で HIRAGANA LETTER SMALL WI / WE / WO、KATAKANA LETTER SMALL WI / WE / WO / N の 7 文字が受理されたことを示す。
 
 [L2/17-091](../documents/utc-l2-17-091.md) は Small Kana Characters に対する Japan NB の慎重な立場を示す。Japan NB は、近代日本語資料の調査で PDAM に含まれない多数の small kana usage が見つかること、9 文字だけを選ぶ根拠が不明であること、全 kana に対応する小書き字を符号化するのか modifier 的な方式を考えるのかを検討すべきことを述べた。
 
@@ -93,7 +93,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 [L2/23-118](../documents/utc-l2-23-118.md) は、Ryukyuan languages / Shimakutuba orthography 用の KATAKANA LETTER SUPERSCRIPT A / I / U / E / O / TU / HU / N を Small Kana Extension に置くことを提案した。これは「仮名を使う日本語以外の Japonic languages の表記」を扱う点で kana topic に入るが、既存 small kana とは baseline placement と typography が異なる。
 
-[L2/23-123](../documents/utc-l2-23-123.md) は、この proposal に対して usage stability、running text、vertical layout、UAX #50、地方政府公式 orthography と Japan NB / Okinawa Prefecture の提出主体などを確認すべきだと指摘した。この論点は、kana repertoire そのものだけでなく、地域言語表記政策を Unicode proposal としてどう担保するかに関わる。
+[L2/23-123](../documents/utc-l2-23-123.md) は、この proposal に対して usage stability、running text、vertical layout、UAX \#50、地方政府公式 orthography と Japan NB / Okinawa Prefecture の提出主体などを確認すべきだと指摘した。この論点は、kana repertoire そのものだけでなく、地域言語表記政策を Unicode proposal としてどう担保するかに関わる。
 
 ### Taiwanese Kana / Minnan tone marks
 
@@ -101,7 +101,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 この論点は、日本語の仮名追加ではなく、kana-derived annotation system の符号化である。Japanese colonial-period dictionaries、Mojikyo の legacy support、modern dictionary / Wikipedia usage が evidence として使われる一方、character names では `Taiwanese` / `Hokkien` ではなく `Minnan` が採用される。
 
-[L2/20-233](../documents/utc-l2-20-233.md) は、この proposal に対する feedback として、language name、U+0323 COMBINING DOT BELOW、U+0305 COMBINING OVERLINE、vertical layout、shakuhachi notation との衝突を指摘した。したがって Taiwanese Kana は、repertoire だけでなく UAX #50 / font layout / combining mark behavior も併せて追う必要がある。
+[L2/20-233](../documents/utc-l2-20-233.md) は、この proposal に対する feedback として、language name、U+0323 COMBINING DOT BELOW、U+0305 COMBINING OVERLINE、vertical layout、shakuhachi notation との衝突を指摘した。したがって Taiwanese Kana は、repertoire だけでなく UAX \#50 / font layout / combining mark behavior も併せて追う必要がある。
 
 ## 関連文書
 

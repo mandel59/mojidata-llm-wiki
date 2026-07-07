@@ -17,7 +17,7 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 CJK Hybrid Characters は、Han-like な字形や CJK text での使用を持つが、Latin、Hiragana、Katakana、Bopomofo、Hangul、記号などの非 Han / 非 CJKUI 的要素を部品に含む文字をどう符号化するかという論点である。
 
-中心問題は、これらを通常の CJK Unified Ideographs extension block に入れると、CJKUI の前提である radical / stroke、source reference、unification、IDS、Unihan property の規則をどこまで拡張する必要があるかである。IRG Meeting #65 の [IRG M65.24 CJK Hybrid Characters](../events/irg-m65-24-cjk-hybrid-characters.md) は、原則として CJKUI extension とは別 block に置く方向を示した。
+中心問題は、これらを通常の CJK Unified Ideographs extension block に入れると、CJKUI の前提である radical / stroke、source reference、unification、IDS、Unihan property の規則をどこまで拡張する必要があるかである。IRG Meeting \#65 の [IRG M65.24 CJK Hybrid Characters](../events/irg-m65-24-cjk-hybrid-characters.md) は、原則として CJKUI extension とは別 block に置く方向を示した。
 
 ## 経緯
 
@@ -69,7 +69,7 @@ M65.24 は、encoding work 自体は WG2 に委ねるが、IRG が oversight を
 
 - [IRG N2866R2](../documents/irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
 - [IRG N2893](../documents/irg-n2893.md) - China の CJK Hybrid Characters encoding policy。
-- [IRG N2826](../documents/irg-n2826.md) - IRG Meeting #65 recommendations; M65.24。
+- [IRG N2826](../documents/irg-n2826.md) - IRG Meeting \#65 recommendations; M65.24。
 - `IRG N2792` - KR position on script-hybrid Han ideographs。
 - `IRG N2828` - Editorial Report on Miscellaneous Issues; CJK Hybrid Characters item。
 - `IRG N2885R` - comments on `IRG N2866R`。

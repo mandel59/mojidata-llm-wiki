@@ -31,7 +31,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 ### 後続文書への接続
 
-IRG #63 Recommendation M63.17 は、この proposal を受けて CJK components block の符号化は useful かつ long overdue とし、TCA と HKSAR に追加 components data の検討・提供を促した。`IRG N2799` はこの方針を受け、multi-source の CJKV components proposal へ拡張している。
+IRG \#63 Recommendation M63.17 は、この proposal を受けて CJK components block の符号化は useful かつ long overdue とし、TCA と HKSAR に追加 components data の検討・提供を促した。`IRG N2799` はこの方針を受け、multi-source の CJKV components proposal へ拡張している。
 
 ## 出典
 

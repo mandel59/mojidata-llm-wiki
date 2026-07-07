@@ -34,12 +34,12 @@ CJK Strokes Variation Sequences は、CJK Strokes characters に standardized va
 
 ### CJK / Unihan Working Group recommendations との関係
 
-CJK Strokes は Unihan property そのものではないが、`L2/26-099` では UAX #38、UAX #45、UTS #39、IRG follow-up と同じ recommendation bundle に含まれる。Unicode 18.0 の CJK 関連変更点を追う場合、CJK Unified Ideographs 以外の CJK-adjacent data update として確認する必要がある。
+CJK Strokes は Unihan property そのものではないが、`L2/26-099` では UAX \#38、UAX \#45、UTS \#39、IRG follow-up と同じ recommendation bundle に含まれる。Unicode 18.0 の CJK 関連変更点を追う場合、CJK Unified Ideographs 以外の CJK-adjacent data update として確認する必要がある。
 
 ## 関連文書
 
 - [L2/26-073R](../documents/utc-l2-26-073r.md) - CJK Strokes standardized variation sequences proposal。
-- [L2/26-099](../documents/utc-l2-26-099.md) - UTC #187 向け CJK & Unihan Working Group recommendations。
+- [L2/26-099](../documents/utc-l2-26-099.md) - UTC \#187 向け CJK & Unihan Working Group recommendations。
 
 ## 関連トピック
 

@@ -21,11 +21,11 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 要約
 
-`IRG N2369R` / `WG2 N5085` は、ISO/IEC 10646 で既に encoded されている約 150 unified ideographs に対し、U-source identifiers を horizontal extension として追加する proposal である。対象 characters は UAX #45 に存在するが U-source identifiers を欠いており、UTC が tracking しやすくし、users の混乱を減らすために source identifiers を付けると説明する。
+`IRG N2369R` / `WG2 N5085` は、ISO/IEC 10646 で既に encoded されている約 150 unified ideographs に対し、U-source identifiers を horizontal extension として追加する proposal である。対象 characters は UAX \#45 に存在するが U-source identifiers を欠いており、UTC が tracking しやすくし、users の混乱を減らすために source identifiers を付けると説明する。
 
 ## 提案内容
 
-文書は、URO、Extensions A-F などの blocks にまたがる encoded ideographs について、block、IRG U-source、UAX #45 glyph、UCS glyph、code point の表を提示する。これは新規符号化 proposal ではなく、既存 code points に source data を追加する horizontal extension である。
+文書は、URO、Extensions A-F などの blocks にまたがる encoded ideographs について、block、IRG U-source、UAX \#45 glyph、UCS glyph、code point の表を提示する。これは新規符号化 proposal ではなく、既存 code points に source data を追加する horizontal extension である。
 
 ## 後続決定
 
@@ -35,7 +35,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 論点
 
-`IRG N2369R` は、UAX #45 と `kIRG_USource` の関係を明確にする文書である。UAX #45 に record がある candidate が、別 source や earlier process で encoded された場合、後から `kIRG_USource` / representative glyph を追加して UTC 側の tracking と ISO/IEC 10646 source requirements を整合させることがある。
+`IRG N2369R` は、UAX \#45 と `kIRG_USource` の関係を明確にする文書である。UAX \#45 に record がある candidate が、別 source や earlier process で encoded された場合、後から `kIRG_USource` / representative glyph を追加して UTC 側の tracking と ISO/IEC 10646 source requirements を整合させることがある。
 
 ## 出典
 

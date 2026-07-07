@@ -18,7 +18,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 UCV / NUCV lists は、CJK Unified Ideographs の review で、component variation を unifiable と見るか、source separation / disunification と見るかを判断するための IRG reference data である。FS / SC や radical assignment が検索・索引 data の運用に近いのに対し、UCV / NUCV は unification policy と candidate review の境界に直接関わる。
 
-[IRG Indexing Rules](irg-indexing-rules.md) は引き続き FS / SC guidelines と radical assignment rules の umbrella として残し、このページでは `IRG N2931` の UCV / NUCV data と Meeting #66 / #67 での review schedule を追う。
+[IRG Indexing Rules](irg-indexing-rules.md) は引き続き FS / SC guidelines と radical assignment rules の umbrella として残し、このページでは `IRG N2931` の UCV / NUCV data と Meeting \#66 / \#67 での review schedule を追う。
 
 ## 経緯
 
@@ -26,7 +26,7 @@ UCV / NUCV lists は、CJK Unified Ideographs の review で、component variati
 | --- | --- | --- | --- |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、editor に `IRG N2931` preparation を求めた。 |
 | 2026-03-31 | IRG | [IRG N2931](../documents/irg-n2931.md) | IWDS Editor が `UCS Ideograph Unifiable Component Variations Summary List (UCV)` と `Non-Unifiable Component Variations Summary List (NUCV)` をまとめた。 |
-| 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting #67 agenda が `IRG N2931` review を #66 follow-up に置き、comments due を 2026-07-24 とした。 |
+| 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が `IRG N2931` review を \#66 follow-up に置き、comments due を 2026-07-24 とした。 |
 
 ## 主な論点
 
@@ -53,8 +53,8 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 ## 関連文書
 
 - [IRG N2931](../documents/irg-n2931.md) - UCV & NUCV lists。
-- [IRG N2909](../documents/irg-n2909.md) - Meeting #66 M66.04。
-- [IRG N2935](../documents/irg-n2935.md) - Meeting #67 agenda follow-up。
+- [IRG N2909](../documents/irg-n2909.md) - Meeting \#66 M66.04。
+- [IRG N2935](../documents/irg-n2935.md) - Meeting \#67 agenda follow-up。
 
 ## 関連トピック
 

@@ -13,11 +13,11 @@ tags: [meeting, wg2, small-seal, cjk, unihan]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
 
-# WG2 Meeting #73
+# WG2 Meeting \#73
 
 ## 概要
 
-WG2 meeting #73 は 2026-06-22/26 に Paris で開催された。Small Seal は agenda 上で `N5344R2` と `N5348` が扱われ、recommendations では ISO/IEC 10646 7th edition CD.4 disposition `N5369` の significant changes に Small Seal の name、radical、modern CJK、glyph 修正が含まれた。
+WG2 meeting \#73 は 2026-06-22/26 に Paris で開催された。Small Seal は agenda 上で `N5344R2` と `N5348` が扱われ、recommendations では ISO/IEC 10646 7th edition CD.4 disposition `N5369` の significant changes に Small Seal の name、radical、modern CJK、glyph 修正が含まれた。
 
 ## 主要議題
 
@@ -27,7 +27,7 @@ WG2 meeting #73 は 2026-06-22/26 に Paris で開催された。Small Seal は 
 - First amendment project subdivision
 - IRG source / CJK additions
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099` は agenda 9.3.1 に載り、Recommendation M73.02 の CJK additions and changes に反映された。
-- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` が示す 18.0 / ISO/IEC 10646 7th edition synchronization risk の後続として、WG2 #73 recommendations が CD / DIS progression に接続する。
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - `L2/26-102` が示す 18.0 / ISO/IEC 10646 7th edition synchronization risk の後続として、WG2 \#73 recommendations が CD / DIS progression に接続する。
 
 ## 決定事項
 

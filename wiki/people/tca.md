@@ -23,7 +23,7 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 | `WG2 N5318` | China とともに Four-Column Small Seal Script proposal の source。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5355` | China とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2878R3` | China とともに CJK Unified Ideographs Components proposal の source。 | [CJKV Components](../topics/cjkv-components.md) |
-| `IRG N2927R` | T-source representative glyph change の clarification。Meeting #67 agenda では Unicode Version 18.0 Beta review 反映済みとして status が記録されている。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
+| `IRG N2927R` | T-source representative glyph change の clarification。Meeting \#67 agenda では Unicode Version 18.0 Beta review 反映済みとして status が記録されている。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
 
 ## 関連文書
 

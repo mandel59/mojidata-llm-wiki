@@ -17,7 +17,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 IRG source data は、CJK Unified Ideographs の code chart、Unihan properties、member body source references を結びつける基盤である。representative glyph の修正、source reference の変更、`kIRG_*Source` property の追加・移動は、既に encoded された文字の identity、検索、chart rendering に影響する。
 
-IRG Meeting #67 agenda では、IRG #66 の action items として持ち越された source reference / representative glyph 修正に加え、`IRG N2953` 以降の個別 issue documents が Section 9.1 "Representative Glyph & Source Reference Issues" として束ねられている。
+IRG Meeting \#67 agenda では、IRG \#66 の action items として持ち越された source reference / representative glyph 修正に加え、`IRG N2953` 以降の個別 issue documents が Section 9.1 "Representative Glyph & Source Reference Issues" として束ねられている。
 
 G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / feedback chain は、[G-source Glyph and Source Reference Issues](g-source-glyph-and-reference-issues.md) に分割して追う。
 
@@ -26,14 +26,14 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2026-03 | IRG | `IRG N2909` | M66.10 から M66.15 が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
-| 2026-04 | UTC | `L2/26-099` | CJK & Unihan Working Group が IRG #66 recommendations と PRI feedback を UTC #187 向け data / chart updates に変換した。 |
+| 2026-04 | UTC | `L2/26-099` | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
 | 2026-06 | WG2 | `WG2 N5354` | Recommendation M73.02 が `L2/26-099` の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
 | 2026-03 | IRG | `IRG N2953` | `IRG N2928` の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
 | 2026-04 | IRG | [IRG N2954](../documents/irg-n2954.md), [IRG N2955](../documents/irg-n2955.md) | U+2CCA3 の G-source representative glyph が original evidence と合わない問題について、修正提案と feedback が出た。 |
 | 2026-05 | IRG | [IRG N2956](../documents/irg-n2956.md), [IRG N2957](../documents/irg-n2957.md) | Extension C の GBK-source 5 characters について、glyph / source reference 修正案と feedback が出た。 |
 | 2026-06 | IRG | [IRG N2958](../documents/irg-n2958.md), [IRG N2959](../documents/irg-n2959.md) | G-source glyph revision と SAT-source glyph issue が提出された。 |
 | 2026-07 | IRG | [IRG N2962](../documents/irg-n2962.md) | 9 G-source glyphs の revision request が提出された。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting #67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
+| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
 
 ## 主な論点
 
@@ -55,14 +55,14 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 ### Unicode / ISO progression との接続
 
-`IRG N2935` は、G-source reference の一部、T-source representative glyph、K-source representative glyph と `kRSUnicode` property change が UTC CJK & Unihan Working Group と UTC Meeting #187 を経て Unicode Version 18.0 Beta review に反映された、と記録している。一方、Meeting #67 に残る G / UK / V / SAT の案件は、まだ IRG 側の検討・追加 evidence・member body response が必要である。
+`IRG N2935` は、G-source reference の一部、T-source representative glyph、K-source representative glyph と `kRSUnicode` property change が UTC CJK & Unihan Working Group と UTC Meeting \#187 を経て Unicode Version 18.0 Beta review に反映された、と記録している。一方、Meeting \#67 に残る G / UK / V / SAT の案件は、まだ IRG 側の検討・追加 evidence・member body response が必要である。
 
-[`L2/26-099`](../documents/utc-l2-26-099.md) は、この接続を具体的な action item に分解する文書である。`IRG N2909` の M66.10、M66.12、M66.13 などに基づき、K / T / G source の representative glyph changes、`kIRG_GSource` changes、`kRSUnicode` changes を Unihan database / code charts の更新として扱う。さらに WG2 #73 の `WG2 N5354` Recommendation M73.02 は、その一部を ISO/IEC 10646 CD の CJK additions and changes に含めるよう勧告した。
+[`L2/26-099`](../documents/utc-l2-26-099.md) は、この接続を具体的な action item に分解する文書である。`IRG N2909` の M66.10、M66.12、M66.13 などに基づき、K / T / G source の representative glyph changes、`kIRG_GSource` changes、`kRSUnicode` changes を Unihan database / code charts の更新として扱う。さらに WG2 \#73 の `WG2 N5354` Recommendation M73.02 は、その一部を ISO/IEC 10646 CD の CJK additions and changes に含めるよう勧告した。
 
 ## 関連文書
 
 - [J-source and JMJ Source Issues](j-source.md)
-- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)

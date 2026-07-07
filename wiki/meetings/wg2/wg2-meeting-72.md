@@ -13,11 +13,11 @@ tags: [meeting, wg2, small-seal, j-source, japan]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
 
-# WG2 Meeting #72
+# WG2 Meeting \#72
 
 ## 概要
 
-WG2 meeting #72 は 2025-06-23/27 に新潟で開催された。Small Seal については `N5306`、`N5317R3`、`N5318R`、`N5341` を参照し、将来版に向けた候補として扱う recommendation が採択された。Japan / J-source については、`WG2 N5296` の JMJ-source related glyph issues を受けて、J-source glyph changes の revert を勧告した。
+WG2 meeting \#72 は 2025-06-23/27 に新潟で開催された。Small Seal については `N5306`、`N5317R3`、`N5318R`、`N5341` を参照し、将来版に向けた候補として扱う recommendation が採択された。Japan / J-source については、`WG2 N5296` の JMJ-source related glyph issues を受けて、J-source glyph changes の revert を勧告した。
 
 ## 主要議題
 
@@ -33,7 +33,7 @@ Recommendation M72.13 は、[WG2 M72.13 Small Seal future edition candidate](../
 
 この時点ではまだ future edition candidate であり、最終 proposal ではない。後続の `WG2 N5344` では repertoire と range が更新され、11,328 characters、`3D000..3FC3F` へ整理される。
 
-Recommendation M72.07 は、[WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md) として整理する。この meeting ページでは、WG2 #72 の決定事項の一つとして扱う。
+Recommendation M72.07 は、[WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md) として整理する。この meeting ページでは、WG2 \#72 の決定事項の一つとして扱う。
 
 Appreciation M72.21 は、IPSJ/ITSCJ を JISC から accredited された Japanese National Body として host に感謝し、Masaru Takechi、Shuichi Tashiro、Toki Messe staff の support も記録している。
 
@@ -43,7 +43,7 @@ Appreciation M72.21 は、IPSJ/ITSCJ を JISC から accredited された Japane
 - `WG2 N5348` modern CJK value feedback
 - [WG2 M72.13 Small Seal future edition candidate](../../events/wg2-m72-13-small-seal-future-candidate.md)
 - [WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md)
-- [WG2 meeting #73](wg2-meeting-73.md)
+- [WG2 meeting \#73](wg2-meeting-73.md)
 
 ## 出典
 

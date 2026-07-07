@@ -24,7 +24,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 | --- | --- | --- | --- |
 | 2026-02 | IRG | [IRG N2926](../documents/irg-n2926.md) | Eiso Chan が new normative `kIRG_SGSource` property を提案。 |
 | 2026-03 | IRG | `IRG N2909` | [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)。 |
-| 2026-05 | IRG / WG2 | `IRG N2935` | agenda は、IRG Convenor が `IRG N2926` を WG2 #73 へ提出したと記録。 |
+| 2026-05 | IRG / WG2 | `IRG N2935` | agenda は、IRG Convenor が `IRG N2926` を WG2 \#73 へ提出したと記録。 |
 | 2026-06 | WG2 / SC2 | `IRG N2935` | agenda は、WG2 が追加を recommend し、SC2 が ISO/IEC 10646 Seventh Edition Amendment 1 として accept したと記録。 |
 | 2027 target | Unicode | `IRG N2935` | agenda は Unicode Version 19.0 target としている。 |
 
@@ -32,7 +32,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ### GS-source の扱い
 
-[IRG N2926](../documents/irg-n2926.md) は、既存 code charts / UAX #38 にある `GS Singapore Characters` を、G-source ではなく Singapore 専用 source として扱うべきだとする。これにより、`kIRG_GSource` の syntax / description から `GS` prefix を外し、current GS-prefixed references は `SG` prefix に移る。
+[IRG N2926](../documents/irg-n2926.md) は、既存 code charts / UAX \#38 にある `GS Singapore Characters` を、G-source ではなく Singapore 専用 source として扱うべきだとする。これにより、`kIRG_GSource` の syntax / description から `GS` prefix を外し、current GS-prefixed references は `SG` prefix に移る。
 
 ### U+48B4 の扱い
 
@@ -40,11 +40,11 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ### target version
 
-Meeting #67 agenda の current status では、WG2 と SC2 の acceptance を経て、`kIRG_SGSource` は Unicode Version 19.0 (2027) target とされている。IRG #66 での establishment は [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md) に集約する。
+Meeting \#67 agenda の current status では、WG2 と SC2 の acceptance を経て、`kIRG_SGSource` は Unicode Version 19.0 (2027) target とされている。IRG \#66 での establishment は [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md) に集約する。
 
 ## 関連文書
 
-- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2926](../documents/irg-n2926.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 

@@ -18,7 +18,7 @@ timestamp: 2026-07-06T23:50:00+09:00
 
 ## 概要
 
-IRG Meeting #66 Recommendation M66.16 は、new normative `kIRG_SGSource` property を establish し、既存の `GS` prefix を `SG` source へ移すことを勧告した出来事である。根拠文書は [IRG N2926](../documents/irg-n2926.md) である。
+IRG Meeting \#66 Recommendation M66.16 は、new normative `kIRG_SGSource` property を establish し、既存の `GS` prefix を `SG` source へ移すことを勧告した出来事である。根拠文書は [IRG N2926](../documents/irg-n2926.md) である。
 
 ## 背景
 
@@ -26,7 +26,7 @@ IRG Meeting #66 Recommendation M66.16 は、new normative `kIRG_SGSource` proper
 
 ## 結果
 
-M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source への移行を勧告し、IRG Convenor が WG2 #73 へ提出する follow-up につながった。Meeting #67 agenda `IRG N2935` は、WG2 と SC2 が受け入れ、Unicode Version 19.0 target としている current status を記録する。
+M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source への移行を勧告し、IRG Convenor が WG2 \#73 へ提出する follow-up につながった。Meeting \#67 agenda `IRG N2935` は、WG2 と SC2 が受け入れ、Unicode Version 19.0 target としている current status を記録する。
 
 ## 影響範囲
 
@@ -36,7 +36,7 @@ M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source へ
 
 - [kIRG_SGSource](../topics/kirg-sgsource.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
-- [IRG Meeting #66](../meetings/irg/irg-meeting-66.md)
+- [IRG Meeting \#66](../meetings/irg/irg-meeting-66.md)
 - [IRG](../people/irg.md)
 - [WG2](../people/wg2.md)
 - [Eiso Chan](../people/eiso-chan.md)

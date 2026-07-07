@@ -10,16 +10,16 @@
 - [L2/08-117](utc-l2-08-117.md) - two Kana characters concerning YE への UTC / L2 review request。
 - [L2/08-358](utc-l2-08-358.md) - Japan NB feedback on HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
 - [L2/09-062](utc-l2-09-062.md) - 仮名の E / YE 区別に関する背景資料。
-- [L2/08-284](utc-l2-08-284.md) - Draft UTR #45: U-Source Ideographs。
+- [L2/08-284](utc-l2-08-284.md) - Draft UTR \#45: U-Source Ideographs。
 - [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
 - [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
 - [L2/11-439](utc-l2-11-439.md) - `AJ1` source for `kIRG_USource`。
 - [IRG N2369R](irg-n2369r.md) - 2019 U-source horizontal extension。
 - [IRG N2439](irg-n2439.md) - two U-source ideographs の UNC proposal。
 - [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
-- [L2/22-185](utc-l2-22-185.md) - UAX #45 status value names。
+- [L2/22-185](utc-l2-22-185.md) - UAX \#45 status value names。
 - [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
-- [L2/25-199](utc-l2-25-199.md) - UAX #45 Revision 31 proposed update。
+- [L2/25-199](utc-l2-25-199.md) - UAX \#45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
@@ -47,10 +47,10 @@
 - [L2/25-031](utc-l2-25-031.md) - default identifiers 向け common-use Han subset。
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
-- [L2/26-093](utc-l2-26-093.md) - UTC #187 meeting minutes。
-- [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
-- [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX #38 Revision 40 proposed update。
-- [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS #37 Revision 15 proposed update。
+- [L2/26-093](utc-l2-26-093.md) - UTC \#187 meeting minutes。
+- [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC \#187 Meeting。
+- [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX \#38 Revision 40 proposed update。
+- [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-127](utc-l2-26-127.md) - CJK confusables の second review request。
@@ -61,16 +61,16 @@
 - [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。
 - [L2/25-036](utc-l2-25-036.md) - KATAKANA LETTER SMALL ARCHAIC YE。
 - [L2/25-042](utc-l2-25-042.md) - KATAKANA LETTER SMALL NE。
-- [L2/25-053](utc-l2-25-053.md) - 兵庫県淡路市の地名 ideograph を UAX #45 に追加する提案。
+- [L2/25-053](utc-l2-25-053.md) - 兵庫県淡路市の地名 ideograph を UAX \#45 に追加する提案。
 - [L2/25-060](utc-l2-25-060.md) - KATAKANA LETTER SMALL NE proposal addendum。
 - [L2/25-151R](utc-l2-25-151r.md) - KATAKANA LETTER ALTERNATE NE / WI。
 - [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
-- [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX #45 に追加する提案。
+- [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX \#45 に追加する提案。
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
-- [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX #45 に追加する提案。
+- [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
-- [IRG N2826](irg-n2826.md) - IRG #65 recommendations; CJK Hybrid Characters policy。
+- [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
@@ -78,14 +78,14 @@
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
-- [IRG N2909](irg-n2909.md) - IRG Meeting #66 recommendations and action items。
+- [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [IRG N2925](irg-n2925.md) - Primary / Secondary Radical assignment rules proposal。
 - [IRG N2926](irg-n2926.md) - `kIRG_SGSource` normative property proposal。
 - [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
 - [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
-- [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
+- [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
 - [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。
 - [IRG N2954](irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
 - [IRG N2955](irg-n2955.md) - `IRG N2954` への G-source glyph feedback。
@@ -95,10 +95,10 @@
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
-- [WG2 N5304](wg2-n5304.md) - WG2 Meeting #72 recommendations。
+- [WG2 N5304](wg2-n5304.md) - WG2 Meeting \#72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
-- [WG2 N5354](wg2-n5354.md) - WG2 Meeting #73 recommendations。
+- [WG2 N5354](wg2-n5354.md) - WG2 Meeting \#73 recommendations。
 - [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。
 - [WG2 N5369](wg2-n5369.md) - ISO/IEC 10646 7th edition CD.4 disposition。

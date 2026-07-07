@@ -17,7 +17,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 IRG Indexing Rules は、CJK ideograph review で使われる component variation、first stroke、stroke count、radical assignment などの rule / reference data を束ねる topic である。これらは直接 code point を追加する proposal ではないが、unification、sorting、review workload、Unihan property values に影響する。
 
-IRG Meeting #67 agenda では、Updated UCV and NUCV Lists、Consolidated FS & SC Guidelines、Rules for Assigning Radicals が IRG #66 action items の follow-up として扱われる。
+IRG Meeting \#67 agenda では、Updated UCV and NUCV Lists、Consolidated FS & SC Guidelines、Rules for Assigning Radicals が IRG \#66 action items の follow-up として扱われる。
 
 UCV / NUCV は unification / disunification boundary に近いため、詳細は [UCV and NUCV Lists](ucv-nucv-lists.md) に分割する。このページでは FS / SC guidelines と radical assignment rules を中心に、IRG review infrastructure の umbrella として扱う。
 
@@ -29,13 +29,13 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 | 2026-03 | IRG | `IRG N2909` | M66.18 が `IRG N2862R2` を previous FS / SC documents の replacement として accept し、final `IRG N2951` の準備を求めた。 |
 | 2026-03 | IRG | `IRG N2909` | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
 | 2026-04 | IRG | [IRG N2951](../documents/irg-n2951.md) | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting #67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
+| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
 
 ## 主な論点
 
 ### UCV / NUCV lists
 
-[IRG N2931](../documents/irg-n2931.md) は `UCS Ideograph Unifiable Component Variations Summary List (UCV)` と `Non-Unifiable Component Variations Summary List (NUCV)` をまとめる。Meeting #67 agenda では、IRG experts が `IRG N2931` を review し、comments を 2026-07-24 までに出すことになっている。詳細は [UCV and NUCV Lists](ucv-nucv-lists.md) に集約する。
+[IRG N2931](../documents/irg-n2931.md) は `UCS Ideograph Unifiable Component Variations Summary List (UCV)` と `Non-Unifiable Component Variations Summary List (NUCV)` をまとめる。Meeting \#67 agenda では、IRG experts が `IRG N2931` を review し、comments を 2026-07-24 までに出すことになっている。詳細は [UCV and NUCV Lists](ucv-nucv-lists.md) に集約する。
 
 ### FS / SC guidelines
 
@@ -47,11 +47,11 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
 
-[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG #66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting #67 agenda と catalog には `IRG N2952` が載っているが、2026-07-08 の取得時点で registry URL は 404 だったため、内容の精読は後続確認とする。
+[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting \#67 agenda と catalog には `IRG N2952` が載っているが、2026-07-08 の取得時点で registry URL は 404 だったため、内容の精読は後続確認とする。
 
 ## 関連文書
 
-- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2931](../documents/irg-n2931.md)
 - [IRG N2925](../documents/irg-n2925.md)
 - [IRG N2951](../documents/irg-n2951.md)

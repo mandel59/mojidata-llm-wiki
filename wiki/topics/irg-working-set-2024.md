@@ -14,25 +14,25 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs の現行 working set である。IRG Meeting #67 では Version 5.0 が中心議題になっており、`IRG N2935` の schedule では火曜と水曜の大部分がこの review に割り当てられている。
+IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs の現行 working set である。IRG Meeting \#67 では Version 5.0 が中心議題になっており、`IRG N2935` の schedule では火曜と水曜の大部分がこの review に割り当てられている。
 
-[IRG N2932](../documents/irg-n2932.md) は Version 5.0 の chart / list で、各候補の source、attributes、discussion record を含む。`IRG N2933` は Version 5.0 consolidated comments として current catalog に掲載されているが、2026-07-08 の取得時点で registry URL は 404 だった。`IRG N2909` の schedule では 2026-08-14 release 予定だったため、Meeting #67 前の comment consolidation として追う。
+[IRG N2932](../documents/irg-n2932.md) は Version 5.0 の chart / list で、各候補の source、attributes、discussion record を含む。`IRG N2933` は Version 5.0 consolidated comments として current catalog に掲載されているが、2026-07-08 の取得時点で registry URL は 404 だった。`IRG N2909` の schedule では 2026-08-14 release 予定だったため、Meeting \#67 前の comment consolidation として追う。
 
 ## 経緯
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-03 | IRG | `IRG N2909` | IRG #66 Recommendation M66.07 が WS2024 Version 5.0 の生成 schedule を定めた。 |
+| 2026-03 | IRG | `IRG N2909` | IRG \#66 Recommendation M66.07 が WS2024 Version 5.0 の生成 schedule を定めた。 |
 | 2026-05 | IRG | [IRG N2932](../documents/irg-n2932.md) | ORT Manager が WS2024 Version 5.0 を ORT と文書として release する schedule。catalog date は 2026-05-31。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting #67 agenda で Version 5.0 review が主要議題として設定された。 |
+| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda で Version 5.0 review が主要議題として設定された。 |
 | 2026-08 | IRG | `IRG N2933` | WS2024 Version 5.0 consolidated comments。 |
-| 2026-10 | IRG | Meeting #67 | submitter responses は 2026-10-09 までに ORT へ入力し、会合で review する予定。 |
+| 2026-10 | IRG | Meeting \#67 | submitter responses は 2026-10-09 までに ORT へ入力し、会合で review する予定。 |
 
 ## 主な論点
 
 ### Version 5.0 review schedule
 
-`IRG N2909` の M66.07 は、2026-05-01 に data fixing、2026-05-29 に Version 5.0 release、2026-07-17 に ORT comments、2026-08-14 に consolidated comments、2026-10-09 に submitter responses という schedule を置いた。Meeting #67 は、この cycle の会合 review にあたる。
+`IRG N2909` の M66.07 は、2026-05-01 に data fixing、2026-05-29 に Version 5.0 release、2026-07-17 に ORT comments、2026-08-14 に consolidated comments、2026-10-09 に submitter responses という schedule を置いた。Meeting \#67 は、この cycle の会合 review にあたる。
 
 ### agenda が明示する要注意項目
 
@@ -44,11 +44,11 @@ Version 5.0 では、ORT の discussion record に基づき、G-source、K-sourc
 
 ### CJKV Components との重複
 
-Meeting #67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ideographs が WS2024 にも含まれており、WS2024 から withdraw すべきだとしている。この点は [CJKV Components](cjkv-components.md) と直接接続する。
+Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ideographs が WS2024 にも含まれており、WS2024 から withdraw すべきだとしている。この点は [CJKV Components](cjkv-components.md) と直接接続する。
 
 ## 関連文書
 
-- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2932](../documents/irg-n2932.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)

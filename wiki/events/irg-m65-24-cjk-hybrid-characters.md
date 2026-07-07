@@ -16,13 +16,13 @@ timestamp: 2026-07-07T00:00:00+09:00
 
 ## 概要
 
-IRG Meeting #65 Recommendation M65.24 は、CJK hybrid characters の encoding policy を整理した recommendation である。対象は、Latin、Hiragana、Katakana、Bopomofo などを部品として含む Han-like characters を含む。
+IRG Meeting \#65 Recommendation M65.24 は、CJK hybrid characters の encoding policy を整理した recommendation である。対象は、Latin、Hiragana、Katakana、Bopomofo などを部品として含む Han-like characters を含む。
 
 IRG は、well-attested Korean ideographs with Hangul-based phonetic components を例外とし、CJK hybrid characters は CJK Unified Ideographs extension blocks ではなく別 block に符号化すべきとした。encoding は WG2 に委ねるが、IRG が oversight を持ち、個別 character が CJKUI extension block に入るか CJK Hybrid Characters block に入るかを判断する。
 
 ## 背景
 
-IRG #65 では、CJK Unified Ideographs に非 Han script components を持つ Han-like characters を入れるか、別 block として扱うかが問題になった。関連文書には、script-hybrid characters を独立 block に置く案や、GB 18030 側の扱いに関する feedback が含まれる。
+IRG \#65 では、CJK Unified Ideographs に非 Han script components を持つ Han-like characters を入れるか、別 block として扱うかが問題になった。関連文書には、script-hybrid characters を独立 block に置く案や、GB 18030 側の扱いに関する feedback が含まれる。
 
 ## 結果
 

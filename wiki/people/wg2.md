@@ -20,14 +20,14 @@ WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoir
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
-| `WG2 N5344`, `WG2 N5354` | Small Seal Script の proposal と WG2 #73 recommendations。 | [Small Seal Script](../topics/small-seal-script.md) |
-| `IRG N2935` | `kIRG_SGSource` と `CJKV Components` が WG2 #73 に提出され、SC2 acceptance へ進んだ current status を記録。 | [kIRG_SGSource](../topics/kirg-sgsource.md), [CJKV Components](../topics/cjkv-components.md) |
+| `WG2 N5344`, `WG2 N5354` | Small Seal Script の proposal と WG2 \#73 recommendations。 | [Small Seal Script](../topics/small-seal-script.md) |
+| `IRG N2935` | `kIRG_SGSource` と `CJKV Components` が WG2 \#73 に提出され、SC2 acceptance へ進んだ current status を記録。 | [kIRG_SGSource](../topics/kirg-sgsource.md), [CJKV Components](../topics/cjkv-components.md) |
 
 ## 関連文書
 
 - `wg2-n5344` - Small Seal proposal
-- `wg2-n5354` - WG2 Meeting #73 recommendations
-- `irg-n2935` - IRG Meeting #67 agenda
+- `wg2-n5354` - WG2 Meeting \#73 recommendations
+- `irg-n2935` - IRG Meeting \#67 agenda
 
 ## 関連トピック
 

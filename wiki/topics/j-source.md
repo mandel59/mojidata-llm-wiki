@@ -16,7 +16,7 @@ timestamp: 2026-07-06T23:26:00+09:00
 
 J-source は、ISO/IEC 10646 / Unicode の CJK Unified Ideographs における Japan source reference 群である。最近の議論では、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に基づく JMJ references を J-column へ大量に horizontal extension すること、JMJ-source の representative glyph / code point 対応をどう扱うか、`kIRG_JSource` property value と関連 Unihan properties を変更するか、既に published encoded characters を disunify してよいかが問題になっている。
 
-直近の流れは、Japan NB の `WG2 N5221` から始まり、`IRG N2722` と `WG2 N5296` で issue が顕在化し、WG2 #72 の `M72.07` と IRG Convenor の `IRG N2859`、Japan NB の `IRG N2870` へ続く。
+直近の流れは、Japan NB の `WG2 N5221` から始まり、`IRG N2722` と `WG2 N5296` で issue が顕在化し、WG2 \#72 の `M72.07` と IRG Convenor の `IRG N2859`、Japan NB の `IRG N2870` へ続く。
 
 ## 経緯
 
@@ -48,7 +48,7 @@ J-source は、ISO/IEC 10646 / Unicode の CJK Unified Ideographs における J
 
 `WG2 N5296` は、code chart generation における font selection の変更が J-source representative glyph の見え方を変えた問題を扱う。CJK Extension C の JK-source characters と compatibility block の J-source characters で、HeiseiMincho / MS Mincho から IPAmjMincho へ変わった例があり、文書は Japan NB の明確な position を求めている。
 
-WG2 #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。この topic では、JMJ horizontal extension と IRG 側の disposition とは別の chart glyph stability issue として位置づける。
+WG2 \#72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](../events/wg2-m72-07-j-source-glyph-revert.md) に集約する。この topic では、JMJ horizontal extension と IRG 側の disposition とは別の chart glyph stability issue として位置づける。
 
 ### disunification と published encoded characters
 
@@ -63,7 +63,7 @@ WG2 #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](
 - `WG2 N5221` - Japan NB の JMJ-source horizontal extension request。
 - `IRG N2722` - JMJ horizontal extension issue report。
 - `WG2 N5296` - JMJ-source related glyph issues。
-- [WG2 Meeting #72](../meetings/wg2/wg2-meeting-72.md) - M72.07 J-source glyph correction。
+- [WG2 Meeting \#72](../meetings/wg2/wg2-meeting-72.md) - M72.07 J-source glyph correction。
 - [IRG N2859](../documents/irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2870](../documents/irg-n2870.md) - Japan NB comment on `IRG N2859`。
 

@@ -15,21 +15,21 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 概要
 
-John H. Jenkins は、UTC / IRG / WG2 の公開文書で CJK / Unihan data maintenance と U-source data model に継続して関わった contributor である。U-source database を public / versioned UTR にする提案、Draft UTR #45、Extension D source evidence、2019 U-source horizontal extension、UAX #45 status value proposal などの source / editor として現れる。
+John H. Jenkins は、UTC / IRG / WG2 の公開文書で CJK / Unihan data maintenance と U-source data model に継続して関わった contributor である。U-source database を public / versioned UTR にする提案、Draft UTR \#45、Extension D source evidence、2019 U-source horizontal extension、UAX \#45 status value proposal などの source / editor として現れる。
 
 ## 標準化での役割
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
-| `L2/07-159`, `L2/07-160` | U-source database の public reference 化と Extension C source correction を提案。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `L2/08-284` | Draft UTR #45 の author として U-source identifiers、status field、source field を整理。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `IRG N1534`, `IRG N1535` | UTC Extension D proposal の source descriptions と evidence samples を IRG に提出。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `IRG N2369R` / `WG2 N5085` | UAX #45 にある encoded ideographs へ U-source identifiers を付ける horizontal extension を提案。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
-| `L2/22-185` | UAX #45 status values を `FutureWS` / `Variant` / `Rejected` / `NoAction` へ変更する提案。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
+| `L2/07-159`, `L2/07-160` | U-source database の public reference 化と Extension C source correction を提案。 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
+| `L2/08-284` | Draft UTR \#45 の author として U-source identifiers、status field、source field を整理。 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
+| `IRG N1534`, `IRG N1535` | UTC Extension D proposal の source descriptions と evidence samples を IRG に提出。 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
+| `IRG N2369R` / `WG2 N5085` | UAX \#45 にある encoded ideographs へ U-source identifiers を付ける horizontal extension を提案。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| `L2/22-185` | UAX \#45 status values を `FutureWS` / `Variant` / `Rejected` / `NoAction` へ変更する提案。 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 
 ## 関連トピック
 
-- [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
+- [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [CJK Security Confusables](../topics/cjk-security-confusables.md)

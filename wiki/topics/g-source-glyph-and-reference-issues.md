@@ -18,7 +18,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 G-source glyph / source reference issues は、すでに encoded された CJK Unified Ideographs について、current representative glyph と source evidence、または current source reference と original evidence が合っているかを見直す IRG の論点である。
 
-親トピックの [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) は G / T / K / UK / V / SAT source と Unihan property 全体を扱う。このページでは、IRG Meeting #67 agenda の Section 9.1 に接続する `IRG N2954` から `IRG N2962` までの G-source 中心の proposal / feedback chain を分離して追う。
+親トピックの [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) は G / T / K / UK / V / SAT source と Unihan property 全体を扱う。このページでは、IRG Meeting \#67 agenda の Section 9.1 に接続する `IRG N2954` から `IRG N2962` までの G-source 中心の proposal / feedback chain を分離して追う。
 
 ## 経緯
 
@@ -54,7 +54,7 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 ### SAT-source issue との境界
 
-[IRG N2959](../documents/irg-n2959.md) は SAT-source glyphs を扱うため、G-source topic の中核ではない。ただし、current representative glyph と source evidence の整合、radical / stroke data の修正、Meeting #67 Section 9.1 の review queue という点では同じ作業単位に属する。G-source 固有の責任主体と SAT-source 固有の責任主体を混同しないよう、ここでは隣接案件として扱う。
+[IRG N2959](../documents/irg-n2959.md) は SAT-source glyphs を扱うため、G-source topic の中核ではない。ただし、current representative glyph と source evidence の整合、radical / stroke data の修正、Meeting \#67 Section 9.1 の review queue という点では同じ作業単位に属する。G-source 固有の責任主体と SAT-source 固有の責任主体を混同しないよう、ここでは隣接案件として扱う。
 
 ## 関連文書
 
@@ -71,7 +71,7 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
-- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 
 ## 出典
 

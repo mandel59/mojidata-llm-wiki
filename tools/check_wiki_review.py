@@ -26,6 +26,9 @@ from unicode_registry import parse_doc_number
 
 CATALOG = ROOT / "catalog" / "registries"
 ROOT_TOPIC_HEADING = "## Current Topics"
+FRONTMATTER_RE = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
+FENCE_MARKER_RE = re.compile(r"^\s*(```|~~~)")
+OBSIDIAN_TAG_RE = re.compile(r"(?<![\\\w./-])#[^\s#`<>()\[\]{}.,;:!?。、，．「」『』]+")
 UNAVAILABLE_PATTERNS = [
     "文書実体未確認",
     "文書実体は未確認",
@@ -64,7 +67,7 @@ class CatalogEntry:
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Review higher-level wiki consistency rules.")
-    parser.add_argument("--fix", action="store_true", help="Apply safe frontmatter and root topic index fixes.")
+    parser.add_argument("--fix", action="store_true", help="Apply safe frontmatter, topic index, and body text fixes.")
     parser.add_argument(
         "--min-unresolved-doc-refs",
         type=int,
@@ -278,6 +281,95 @@ def write_text_raw(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="")
 
 
+def span_contains(spans: list[tuple[int, int]], index: int) -> bool:
+    return any(start <= index < end for start, end in spans)
+
+
+def inline_code_spans(line: str) -> list[tuple[int, int]]:
+    spans: list[tuple[int, int]] = []
+    index = 0
+    while True:
+        start = line.find("`", index)
+        if start == -1:
+            break
+        end = line.find("`", start + 1)
+        if end == -1:
+            break
+        spans.append((start, end + 1))
+        index = end + 1
+    return spans
+
+
+def markdown_link_target_spans(line: str) -> list[tuple[int, int]]:
+    return [(match.start(1), match.end(1)) for match in LINK_RE.finditer(line)]
+
+
+def escape_obsidian_tags_in_line(line: str) -> tuple[str, list[str]]:
+    protected_spans = inline_code_spans(line) + markdown_link_target_spans(line)
+    tags: list[str] = []
+    pieces: list[str] = []
+    last = 0
+    for match in OBSIDIAN_TAG_RE.finditer(line):
+        if span_contains(protected_spans, match.start()):
+            continue
+        tags.append(match.group(0))
+        pieces.append(line[last : match.start()])
+        pieces.append("\\")
+        pieces.append(match.group(0))
+        last = match.end()
+    if not tags:
+        return line, tags
+    pieces.append(line[last:])
+    return "".join(pieces), tags
+
+
+def escape_obsidian_tags_in_markdown(markdown: str) -> tuple[str, list[tuple[int, str]]]:
+    findings: list[tuple[int, str]] = []
+    fixed_lines: list[str] = []
+    in_fence = False
+
+    for line_number, raw_line in enumerate(markdown.splitlines(keepends=True), 1):
+        line = raw_line.rstrip("\r\n")
+        newline = raw_line[len(line) :]
+        if FENCE_MARKER_RE.match(line):
+            in_fence = not in_fence
+            fixed_lines.append(raw_line)
+            continue
+        if in_fence:
+            fixed_lines.append(raw_line)
+            continue
+        fixed_line, tags = escape_obsidian_tags_in_line(line)
+        findings.extend((line_number, tag) for tag in tags)
+        fixed_lines.append(fixed_line + newline)
+
+    return "".join(fixed_lines), findings
+
+
+def markdown_body_start(text: str) -> int:
+    match = FRONTMATTER_RE.match(text)
+    if match:
+        return match.end()
+    return 0
+
+
+def check_body_obsidian_tags(fix: bool = False) -> list[str]:
+    errors: list[str] = []
+    for path in sorted(WIKI.rglob("*.md")):
+        rel_path = path.relative_to(ROOT).as_posix()
+        text = path.read_text(encoding="utf-8")
+        body_start = markdown_body_start(text)
+        body = text[body_start:]
+        fixed_body, findings = escape_obsidian_tags_in_markdown(body)
+        for line_number, tag in findings:
+            errors.append(
+                f"{rel_path}:{line_number}: Markdown body contains unescaped Obsidian tag-like token "
+                f"{tag!r}; escape it as \\{tag}"
+            )
+        if fix and findings:
+            write_text_raw(path, text[:body_start] + fixed_body)
+    return errors
+
+
 def catalog_names(entry: CatalogEntry) -> set[str]:
     names = {entry.entry_id}
     if entry.doc_number:
@@ -452,12 +544,14 @@ def run_checks(args: argparse.Namespace) -> list[str]:
     fixable_errors.extend(check_root_current_topics(concepts, args.fix))
     fixable_errors.extend(check_meeting_bodies(concepts, args.fix))
     fixable_errors.extend(check_synthesis_members(concepts, args.fix))
+    fixable_errors.extend(check_body_obsidian_tags(args.fix))
 
     if args.fix:
         concepts = load_concepts()
         errors.extend(check_root_current_topics(concepts, False))
         errors.extend(check_meeting_bodies(concepts, False))
         errors.extend(check_synthesis_members(concepts, False))
+        errors.extend(check_body_obsidian_tags(False))
     else:
         errors.extend(fixable_errors)
 

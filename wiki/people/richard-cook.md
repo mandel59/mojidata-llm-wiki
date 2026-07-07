@@ -26,7 +26,7 @@ Richard Cook は、Small Seal Script の source mapping data と、初期 U-sour
 ## 関連トピック
 
 - [Small Seal Script](../topics/small-seal-script.md)
-- [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
+- [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 
 ## 出典
 

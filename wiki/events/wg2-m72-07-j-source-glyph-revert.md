@@ -18,7 +18,7 @@ timestamp: 2026-07-06T23:30:00+09:00
 
 ## 概要
 
-WG2 Meeting #72 は、`WG2 N5296` の JMJ-source related glyph issues を errata / modification として扱い、Recommendation M72.07 で Project Editor に J-source glyph changes の revert を勧告した。対象は Japan NB の JMJ-source horizontal extension そのものではなく、Code Charts 生成時の font selection 変更によって既存 J-source / JK-source representative glyphs の見え方が変わった部分である。
+WG2 Meeting \#72 は、`WG2 N5296` の JMJ-source related glyph issues を errata / modification として扱い、Recommendation M72.07 で Project Editor に J-source glyph changes の revert を勧告した。対象は Japan NB の JMJ-source horizontal extension そのものではなく、Code Charts 生成時の font selection 変更によって既存 J-source / JK-source representative glyphs の見え方が変わった部分である。
 
 ## 背景
 
@@ -36,7 +36,7 @@ WG2 Meeting #72 は、`WG2 N5296` の JMJ-source related glyph issues を errata
 
 - [J-source and JMJ Source Issues](../topics/j-source.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
-- [WG2 Meeting #72](../meetings/wg2/wg2-meeting-72.md)
+- [WG2 Meeting \#72](../meetings/wg2/wg2-meeting-72.md)
 - [Japan](../people/japan.md)
 
 ## 出典
