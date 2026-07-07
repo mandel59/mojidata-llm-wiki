@@ -3,157 +3,68 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from collections import deque
-from pathlib import Path
 from typing import Iterable
 
-from check_events import WIKI, parse_frontmatter, string_list
+from wiki_store import Concept, load_concepts, scalar, string_list
 
 
-LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
-SCHEME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*:")
-RELATION_KEYS = ["documents", "topics", "people", "meetings", "events"]
+def public_concept(concept: Concept) -> dict[str, object]:
+    return {
+        "id": concept.id,
+        "path": concept.rel_path,
+        "type": concept.type,
+        "title": concept.title,
+        "description": scalar(concept.frontmatter, "description"),
+        "date": scalar(concept.frontmatter, "date"),
+        "status": scalar(concept.frontmatter, "status"),
+        "tags": concept.relations.get("tags", string_list(concept.frontmatter, "tags")),
+        "bodies": string_list(concept.frontmatter, "bodies"),
+        "documents": concept.relations["documents"],
+        "topics": concept.relations["topics"],
+        "people": concept.relations["people"],
+        "meetings": concept.relations["meetings"],
+        "events": concept.relations["events"],
+        "links": concept.links,
+        "backlinks": concept.backlinks,
+    }
 
 
-def split_frontmatter_body(path: Path) -> tuple[dict[str, object], str]:
-    text = path.read_text(encoding="utf-8")
-    data, errors = parse_frontmatter(path)
-    if errors:
-        raise SystemExit("\n".join(errors))
-    if not text.startswith("---"):
-        return data, text
-    lines = text.splitlines()
-    for index, line in enumerate(lines[1:], start=1):
-        if line.strip() == "---":
-            return data, "\n".join(lines[index + 1 :])
-    return data, text
-
-
-def concept_id(path: Path, data: dict[str, object]) -> str:
-    for key in ["slug", "entry_id"]:
-        value = data.get(key)
-        if isinstance(value, str) and value:
-            return value
-    return path.stem
-
-
-def concept_type(path: Path, data: dict[str, object]) -> str:
-    value = data.get("type")
-    if isinstance(value, str) and value:
-        return value
-    if path.parent.name == "events":
-        return "Event"
-    return "Concept"
-
-
-def scalar(data: dict[str, object], key: str) -> str:
-    value = data.get(key)
-    return value if isinstance(value, str) else ""
-
-
-def iter_concept_files(bundle: Path = WIKI) -> Iterable[Path]:
-    for path in sorted(bundle.rglob("*.md")):
-        if path.name in {"index.md", "log.md"}:
-            continue
-        yield path
-
-
-def load_concepts() -> dict[str, dict[str, object]]:
-    concepts: dict[str, dict[str, object]] = {}
-    path_to_id: dict[Path, str] = {}
-
-    for path in iter_concept_files():
-        data, body = split_frontmatter_body(path)
-        cid = concept_id(path, data)
-        rel_path = path.relative_to(WIKI).as_posix()
-        concept = {
-            "id": cid,
-            "path": rel_path,
-            "type": concept_type(path, data),
-            "title": scalar(data, "title") or cid,
-            "description": scalar(data, "description"),
-            "date": scalar(data, "date"),
-            "status": scalar(data, "status"),
-            "tags": string_list(data, "tags"),
-            "bodies": string_list(data, "bodies"),
-            "documents": string_list(data, "documents"),
-            "topics": string_list(data, "topics"),
-            "people": string_list(data, "people"),
-            "meetings": string_list(data, "meetings"),
-            "events": string_list(data, "events"),
-            "_body": body,
-            "_fs_path": path,
-        }
-        concepts[cid] = concept
-        path_to_id[path.resolve()] = cid
-
-    for concept in concepts.values():
-        path = concept["_fs_path"]
-        links = sorted(
-            target
-            for target in resolve_markdown_links(path, str(concept["_body"]), path_to_id)
-            if target in concepts and target != concept["id"]
-        )
-        frontmatter_links = []
-        for key in RELATION_KEYS:
-            frontmatter_links.extend(item for item in concept[key] if item in concepts)
-        concept["links"] = sorted(set(links + frontmatter_links))
-
-    for concept in concepts.values():
-        concept["backlinks"] = sorted(source["id"] for source in concepts.values() if concept["id"] in source["links"])
-
-    return concepts
-
-
-def resolve_markdown_links(path: Path, body: str, path_to_id: dict[Path, str]) -> set[str]:
-    targets: set[str] = set()
-    for match in LINK_RE.finditer(body):
-        target = match.group(1).strip()
-        if target.startswith("<") and target.endswith(">"):
-            target = target[1:-1]
-        if not target or target.startswith("#") or SCHEME_RE.match(target):
-            continue
-        target_path = target.split("#", 1)[0].split("?", 1)[0]
-        if not target_path.endswith(".md"):
-            continue
-        resolved = (path.parent / target_path).resolve()
-        cid = path_to_id.get(resolved)
-        if cid:
-            targets.add(cid)
-    return targets
-
-
-def public_concept(concept: dict[str, object]) -> dict[str, object]:
-    return {key: value for key, value in concept.items() if not key.startswith("_")}
-
-
-def filter_concepts(concepts: Iterable[dict[str, object]], args: argparse.Namespace) -> list[dict[str, object]]:
+def filter_concepts(concepts: Iterable[Concept], args: argparse.Namespace) -> list[Concept]:
     result = []
     for concept in concepts:
-        if args.type and concept["type"] != args.type:
+        if args.type and concept.type != args.type:
             continue
-        if args.status and concept["status"] != args.status:
+        if args.status and scalar(concept.frontmatter, "status") != args.status:
             continue
-        if args.topic and args.topic not in concept["topics"]:
+        if args.topic and args.topic not in concept.relations["topics"]:
             continue
-        if args.people and args.people not in concept["people"]:
+        if args.people and args.people not in concept.relations["people"]:
             continue
-        if args.document and args.document not in concept["documents"]:
+        if args.document and args.document not in concept.relations["documents"]:
             continue
-        if args.body and args.body not in concept["bodies"]:
+        if args.body and args.body not in string_list(concept.frontmatter, "bodies"):
             continue
-        if args.tag and args.tag not in concept["tags"]:
+        if args.tag and args.tag not in string_list(concept.frontmatter, "tags"):
             continue
         result.append(concept)
     return result
 
 
-def sort_concepts(concepts: list[dict[str, object]], sort_key: str, reverse: bool) -> list[dict[str, object]]:
-    def key(concept: dict[str, object]) -> tuple[str, str]:
-        primary = concept.get(sort_key)
-        return (primary if isinstance(primary, str) else "", str(concept["id"]))
+def sort_concepts(concepts: list[Concept], sort_key: str, reverse: bool) -> list[Concept]:
+    def key(concept: Concept) -> tuple[str, str]:
+        if sort_key == "id":
+            primary = concept.id
+        elif sort_key == "path":
+            primary = concept.rel_path
+        elif sort_key == "type":
+            primary = concept.type
+        elif sort_key == "title":
+            primary = concept.title
+        else:
+            primary = scalar(concept.frontmatter, sort_key)
+        return (primary, concept.id)
 
     return sorted(concepts, key=key, reverse=reverse)
 
@@ -171,11 +82,15 @@ def render_json(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, indent=2)
 
 
-def find_start(concepts: dict[str, dict[str, object]], name: str) -> str:
+def find_start(concepts: dict[str, Concept], name: str) -> str:
     if name in concepts:
         return name
     normalized = name.replace("\\", "/")
-    matches = [cid for cid, concept in concepts.items() if concept["path"] == normalized or concept["path"].endswith(f"/{normalized}")]
+    matches = [
+        cid
+        for cid, concept in concepts.items()
+        if concept.rel_path == normalized or concept.rel_path.endswith(f"/{normalized}")
+    ]
     if len(matches) == 1:
         return matches[0]
     if not matches:
@@ -183,7 +98,7 @@ def find_start(concepts: dict[str, dict[str, object]], name: str) -> str:
     raise SystemExit(f"ambiguous concept: {name}: {', '.join(matches)}")
 
 
-def walk_related(concepts: dict[str, dict[str, object]], start: str, depth: int, direction: str) -> list[dict[str, object]]:
+def walk_related(concepts: dict[str, Concept], start: str, depth: int, direction: str) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     seen = {start}
     queue: deque[tuple[str, int, str]] = deque([(start, 0, "")])
@@ -197,9 +112,9 @@ def walk_related(concepts: dict[str, dict[str, object]], start: str, depth: int,
 
         neighbors: set[str] = set()
         if direction in {"out", "both"}:
-            neighbors.update(str(item) for item in concept["links"])
+            neighbors.update(concept.links)
         if direction in {"in", "both"}:
-            neighbors.update(str(item) for item in concept["backlinks"])
+            neighbors.update(concept.backlinks)
 
         for neighbor in sorted(neighbors):
             if neighbor in seen:
@@ -255,7 +170,10 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
-    concepts = load_concepts()
+    try:
+        concepts = load_concepts()
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
 
     if args.command in {"list", "events"}:
         rows = filter_concepts(concepts.values(), args)

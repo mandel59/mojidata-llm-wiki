@@ -3,70 +3,26 @@ from __future__ import annotations
 
 import argparse
 import re
-import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
 
+from wiki_store import (
+    DEFAULT_SCHEMA,
+    LINK_RE,
+    SCHEME_RE,
+    WIKI,
+    iter_markdown_files,
+    load_schema,
+    parse_frontmatter_header,
+    split_frontmatter,
+    validate_page_schema,
+    validate_schema_definition,
+)
 
-ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_BUNDLE = ROOT / "wiki"
-RESERVED_FILENAMES = {"index.md", "log.md"}
 
-KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):(?:\s*(.*))?$")
-LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
-SCHEME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*:")
+DEFAULT_BUNDLE = WIKI
 DATE_HEADING_RE = re.compile(r"^##\s+(\d{4}-\d{2}-\d{2})\s*$")
-
-
-def split_frontmatter(path: Path, text: str) -> tuple[str | None, str, list[str]]:
-    lines = text.splitlines()
-    if not lines or lines[0].strip() != "---":
-        return None, text, []
-
-    for index, line in enumerate(lines[1:], start=1):
-        if line.strip() == "---":
-            header = "\n".join(lines[1:index])
-            body = "\n".join(lines[index + 1 :])
-            return header, body, []
-
-    return None, text, [f"{path}: frontmatter is not closed"]
-
-
-def parse_value(value: str | None) -> object:
-    if value is None:
-        return ""
-    value = value.strip()
-    if value == "":
-        return ""
-    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
-        return value[1:-1]
-    if value.startswith("[") and value.endswith("]"):
-        inner = value[1:-1].strip()
-        if not inner:
-            return []
-        return [parse_value(item) for item in inner.split(",")]
-    return value
-
-
-def parse_frontmatter(path: Path, header: str) -> tuple[dict[str, object], list[str]]:
-    data: dict[str, object] = {}
-    errors: list[str] = []
-
-    for offset, line in enumerate(header.splitlines(), start=2):
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            continue
-        match = KEY_RE.match(line)
-        if not match:
-            errors.append(f"{path}:{offset}: cannot parse frontmatter line")
-            continue
-        key, value = match.groups()
-        if key in data:
-            errors.append(f"{path}:{offset}: duplicate frontmatter key: {key}")
-        data[key] = parse_value(value)
-
-    return data, errors
 
 
 def validate_timestamp(path: Path, value: object) -> list[str]:
@@ -84,40 +40,28 @@ def validate_timestamp(path: Path, value: object) -> list[str]:
     return []
 
 
-def validate_concept(path: Path, text: str) -> list[str]:
-    header, _body, errors = split_frontmatter(path, text)
-    if header is None:
-        return errors + [f"{path}: concept document is missing YAML frontmatter"]
+def validate_concept(path: Path, text: str, schema: dict[str, object]) -> list[str]:
+    document = split_frontmatter(path, text)
+    if document.header is None:
+        return document.errors + [f"{path}: concept document is missing YAML frontmatter"]
 
-    data, frontmatter_errors = parse_frontmatter(path, header)
-    errors.extend(frontmatter_errors)
-
-    concept_type = data.get("type")
-    if not isinstance(concept_type, str) or not concept_type.strip():
-        errors.append(f"{path}: concept document is missing non-empty type")
-    if "kind" in data:
-        errors.append(f"{path}: frontmatter key kind is deprecated; use type")
-    for identity_key in ["slug", "entry_id"]:
-        identity_value = data.get(identity_key)
-        if isinstance(identity_value, str) and identity_value and identity_value != path.stem:
-            errors.append(f"{path}: filename stem must match {identity_key}: {identity_value}")
-
-    tags = data.get("tags")
-    if tags is not None and not isinstance(tags, list):
-        errors.append(f"{path}: tags must be a YAML list")
-
+    data, frontmatter_errors = parse_frontmatter_header(path, document.header)
+    errors = document.errors + frontmatter_errors
+    errors.extend(validate_page_schema(path, data, schema))
     errors.extend(validate_timestamp(path, data.get("timestamp")))
     return errors
 
 
 def validate_index(path: Path, bundle: Path, text: str) -> list[str]:
     rel = path.relative_to(bundle).as_posix()
-    header, body, errors = split_frontmatter(path, text)
+    document = split_frontmatter(path, text)
+    body = document.body
+    errors = list(document.errors)
 
-    if header is not None:
+    if document.header is not None:
         if rel != "index.md":
             errors.append(f"{path}: only the bundle-root index.md may declare frontmatter")
-        data, frontmatter_errors = parse_frontmatter(path, header)
+        data, frontmatter_errors = parse_frontmatter_header(path, document.header)
         errors.extend(frontmatter_errors)
         extra_keys = sorted(set(data) - {"okf_version"})
         if extra_keys:
@@ -132,8 +76,10 @@ def validate_index(path: Path, bundle: Path, text: str) -> list[str]:
 
 
 def validate_log(path: Path, text: str) -> list[str]:
-    header, body, errors = split_frontmatter(path, text)
-    if header is not None:
+    document = split_frontmatter(path, text)
+    body = document.body
+    errors = list(document.errors)
+    if document.header is not None:
         errors.append(f"{path}: log.md must not contain frontmatter")
 
     if not body.lstrip().startswith("#"):
@@ -182,36 +128,9 @@ def validate_links(path: Path, bundle: Path, text: str) -> list[str]:
     return errors
 
 
-def iter_markdown_files(bundle: Path) -> list[Path]:
-    try:
-        result = subprocess.run(
-            [
-                "git",
-                "ls-files",
-                "--cached",
-                "--others",
-                "--exclude-standard",
-                "--",
-                str(bundle.relative_to(ROOT)),
-            ],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-    except (OSError, subprocess.CalledProcessError, ValueError):
-        return sorted(bundle.rglob("*.md"))
-
-    files: list[Path] = []
-    for line in result.stdout.splitlines():
-        path = ROOT / line
-        if path.suffix == ".md" and path.is_file():
-            files.append(path)
-    return sorted(files)
-
-
-def validate_bundle(bundle: Path) -> list[str]:
-    errors: list[str] = []
+def validate_bundle(bundle: Path, schema_path: Path) -> list[str]:
+    schema = load_schema(schema_path)
+    errors = validate_schema_definition(schema, schema_path)
     for path in iter_markdown_files(bundle):
         text = path.read_text(encoding="utf-8")
         if path.name == "index.md":
@@ -219,7 +138,7 @@ def validate_bundle(bundle: Path) -> list[str]:
         elif path.name == "log.md":
             errors.extend(validate_log(path, text))
         else:
-            errors.extend(validate_concept(path, text))
+            errors.extend(validate_concept(path, text, schema))
         errors.extend(validate_links(path, bundle, text))
     return errors
 
@@ -227,18 +146,18 @@ def validate_bundle(bundle: Path) -> list[str]:
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Validate the wiki as an OKF v0.1 bundle.")
     parser.add_argument("--bundle", type=Path, default=DEFAULT_BUNDLE)
+    parser.add_argument("--schema", type=Path, default=DEFAULT_SCHEMA)
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
-    bundle = args.bundle
-    errors = validate_bundle(bundle)
+    errors = validate_bundle(args.bundle, args.schema)
     if errors:
         for error in errors:
             print(error, file=sys.stderr)
         return 1
-    print(f"OKF bundle OK: {bundle}")
+    print(f"OKF bundle OK: {args.bundle}")
     return 0
 
 

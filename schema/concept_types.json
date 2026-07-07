@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "common": {
+    "required": ["type", "title"],
+    "deprecated": ["kind"],
+    "identity_fields": ["slug", "entry_id"],
+    "filename_stem_must_match_identity": true,
+    "list_fields": ["tags", "bodies", "documents", "topics", "people", "meetings", "events"]
+  },
+  "types": {
+    "Event": {
+      "required": ["slug", "description", "date", "status"],
+      "non_empty_lists": ["documents", "topics", "tags"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "people": "people",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Meeting": {
+      "required": ["slug", "date"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "people": "people",
+        "events": "event"
+      }
+    },
+    "Member Body": {
+      "required": ["slug"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Organization": {
+      "required": ["slug"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Person": {
+      "required": ["slug"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Source Document": {
+      "required": ["entry_id", "doc_number", "registry", "date", "source"],
+      "relations": {
+        "topics": "topic",
+        "people": "people",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Synthesis": {
+      "required": ["slug"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "people": "people",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Topic": {
+      "required": ["slug", "status"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "people": "people",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    }
+  }
+}

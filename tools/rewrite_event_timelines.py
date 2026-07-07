@@ -2,17 +2,14 @@
 from __future__ import annotations
 
 import argparse
-import os
-import re
 import sys
 from pathlib import Path
 
-from check_events import EVENTS, WIKI, parse_frontmatter, string_list
+from wiki_store import EVENTS, find_concept_path, parse_frontmatter, relative_link, replace_marker_block, string_list
 
 
 START = "<!-- events:start -->"
 END = "<!-- events:end -->"
-MARKER_RE = re.compile(rf"{re.escape(START)}.*?{re.escape(END)}", re.DOTALL)
 
 
 def load_events() -> list[tuple[Path, dict[str, object]]]:
@@ -25,22 +22,6 @@ def load_events() -> list[tuple[Path, dict[str, object]]]:
             raise SystemExit("\n".join(errors))
         events.append((path, data))
     return events
-
-
-def find_concept(group: str, slug: str) -> Path:
-    roots = {
-        "topic": WIKI / "topics",
-        "people": WIKI / "people",
-        "meeting": WIKI / "meetings",
-    }
-    root = roots[group]
-    for path in root.rglob("*.md"):
-        if path.name == "index.md":
-            continue
-        data, _errors = parse_frontmatter(path)
-        if data.get("slug") == slug or path.stem == slug:
-            return path
-    raise SystemExit(f"cannot find {group}: {slug}")
 
 
 def select_events(
@@ -61,11 +42,6 @@ def select_events(
             continue
         selected.append(item)
     return sorted(selected, key=lambda item: (str(item[1].get("date", "")), str(item[1].get("title", ""))))
-
-
-def relative_link(from_path: Path, to_path: Path, title: object) -> str:
-    rel = os.path.relpath(to_path, start=from_path.parent).replace(os.sep, "/")
-    return f"[{title}]({rel})"
 
 
 def render_table(target: Path, events: list[tuple[Path, dict[str, object]]]) -> str:
@@ -97,11 +73,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     if args.topic:
-        target = find_concept("topic", args.topic)
+        target = find_concept_path("topic", args.topic)
     elif args.people:
-        target = find_concept("people", args.people)
+        target = find_concept_path("people", args.people)
     else:
-        target = find_concept("meeting", args.meeting)
+        target = find_concept_path("meeting", args.meeting)
 
     events = select_events(load_events(), topic=args.topic, people=args.people, meeting=args.meeting)
     table = render_table(target, events)
@@ -111,12 +87,13 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     text = target.read_text(encoding="utf-8")
-    if not MARKER_RE.search(text):
+    new_text, replaced = replace_marker_block(text, START, END, table)
+    if not replaced:
         print(f"{target}: marker block not found; dry-run output follows", file=sys.stderr)
         print(table)
         return 1
 
-    target.write_text(MARKER_RE.sub(table, text), encoding="utf-8")
+    target.write_text(new_text, encoding="utf-8")
     print(f"Updated {target}")
     return 0
 

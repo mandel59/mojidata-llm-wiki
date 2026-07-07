@@ -5,6 +5,7 @@ raw/
 downloads/
 
 # Local editor/app state
+.serena/
 .obsidian/
 **/.obsidian/
 .trash/

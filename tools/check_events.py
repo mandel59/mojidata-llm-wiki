@@ -2,70 +2,12 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 
+from wiki_store import EVENTS, WIKI, parse_frontmatter, string_list
 
 ROOT = Path(__file__).resolve().parents[1]
-WIKI = ROOT / "wiki"
-EVENTS = WIKI / "events"
-
-KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):(?:\s*(.*))?$")
-
-
-def split_frontmatter(path: Path, text: str) -> tuple[str | None, list[str]]:
-    lines = text.splitlines()
-    if not lines or lines[0].strip() != "---":
-        return None, []
-    for index, line in enumerate(lines[1:], start=1):
-        if line.strip() == "---":
-            return "\n".join(lines[1:index]), []
-    return None, [f"{path}: frontmatter is not closed"]
-
-
-def parse_value(value: str | None) -> object:
-    if value is None:
-        return ""
-    value = value.strip()
-    if value == "":
-        return ""
-    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
-        return value[1:-1]
-    if value.startswith("[") and value.endswith("]"):
-        inner = value[1:-1].strip()
-        if not inner:
-            return []
-        return [parse_value(item) for item in inner.split(",")]
-    return value
-
-
-def parse_frontmatter(path: Path) -> tuple[dict[str, object], list[str]]:
-    header, errors = split_frontmatter(path, path.read_text(encoding="utf-8"))
-    if header is None:
-        return {}, errors + [f"{path}: event is missing YAML frontmatter"]
-
-    data: dict[str, object] = {}
-    for offset, line in enumerate(header.splitlines(), start=2):
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            continue
-        match = KEY_RE.match(line)
-        if not match:
-            errors.append(f"{path}:{offset}: cannot parse frontmatter line")
-            continue
-        key, value = match.groups()
-        if key in data:
-            errors.append(f"{path}:{offset}: duplicate frontmatter key: {key}")
-        data[key] = parse_value(value)
-    return data, errors
-
-
-def string_list(data: dict[str, object], key: str) -> list[str]:
-    value = data.get(key)
-    if isinstance(value, list):
-        return [item for item in value if isinstance(item, str)]
-    return []
 
 
 def load_document_ids() -> set[str]:
