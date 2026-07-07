@@ -44,6 +44,7 @@ tools/
   generate_event_indexes.py       event metadata から index を生成
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
   query_wiki.py                   wiki concept graph を機械的にクエリ
+  document_sections.py            Markdown concept page の目次表示と section 抽出
   check_okf.py                    wiki の OKF v0.1 互換検査
   wiki_store.py                   wiki frontmatter、concept graph、schema validation の共通処理
   unicode_registry.py             Registry parser と共通処理
@@ -252,10 +253,11 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 1. `uv run python tools/query_wiki.py events` で event を日付順に確認する。
 2. `uv run python tools/query_wiki.py list --type Topic` や `--topic <slug>` / `--people <slug>` / `--document <entry_id>` / `--alias <name>` で concept metadata を絞り込む。
 3. `uv run python tools/query_wiki.py related <slug-or-alias> --depth 1` で frontmatter と Markdown 内部リンクから関連 concept を辿る。
-4. 必要なら `--format json` で機械処理用に出力する。
-5. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
-6. 回答は出典付きで書く。
-7. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
+4. `uv run python tools/document_sections.py toc <slug-or-alias>` で Markdown page の見出し一覧を出し、`uv run python tools/document_sections.py section <slug-or-alias> <heading>` で特定 section だけを読む。
+5. 必要なら `--format json` で機械処理用に出力する。
+6. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
+7. 回答は出典付きで書く。
+8. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
 
 ### Lint
 
