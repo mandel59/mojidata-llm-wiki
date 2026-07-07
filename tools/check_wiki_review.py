@@ -31,6 +31,9 @@ UNAVAILABLE_PATTERNS = [
     "文書実体を取得できなかった",
     "未確認",
 ]
+TENTATIVE_PATTERNS = [
+    "予定文書",
+]
 
 
 @dataclass(frozen=True)
@@ -112,6 +115,22 @@ def check_no_local_links_outside_wiki() -> list[str]:
             resolved = (path.parent / target).resolve()
             if not is_relative_to(resolved, WIKI.resolve()):
                 errors.append(f"{rel_path}: local Markdown link points outside wiki bundle: {target}")
+    return errors
+
+
+def check_local_markdown_links_exist() -> list[str]:
+    errors: list[str] = []
+    for path in sorted(WIKI.rglob("*.md")):
+        rel_path = path.relative_to(WIKI).as_posix()
+        page = read_page(path)
+        for target in markdown_link_targets(path, page.body):
+            if target.startswith("//") or not target.endswith(".md"):
+                continue
+            resolved = (path.parent / target).resolve()
+            if not is_relative_to(resolved, WIKI.resolve()):
+                continue
+            if not resolved.is_file():
+                errors.append(f"{rel_path}: local Markdown link target does not exist: {target}")
     return errors
 
 
@@ -252,6 +271,7 @@ def catalog_names(entry: CatalogEntry) -> set[str]:
 
 
 def line_describes_document_as_unavailable(line: str, entry: CatalogEntry) -> bool:
+    has_unavailable_claim = any(pattern in line for pattern in UNAVAILABLE_PATTERNS)
     for sentence in re.split(r"(?<=。)", line):
         if not any(pattern in sentence for pattern in UNAVAILABLE_PATTERNS):
             continue
@@ -259,6 +279,13 @@ def line_describes_document_as_unavailable(line: str, entry: CatalogEntry) -> bo
             escaped = re.escape(name)
             if re.search(rf"`?{escaped}`?(?:\s*(?:は|が)|\s+-)", sentence):
                 return True
+
+    for name in catalog_names(entry):
+        escaped = re.escape(name)
+        if has_unavailable_claim and re.search(rf"^\s*[-*]\s+`?{escaped}`?\s+-", line):
+            return True
+        if any(pattern in line for pattern in TENTATIVE_PATTERNS) and re.search(rf"予定文書\s+`?{escaped}`?", line):
+            return True
     return False
 
 
@@ -273,7 +300,7 @@ def check_stale_unavailable_text(catalog: dict[str, CatalogEntry]) -> list[str]:
             for entry in available:
                 if line_describes_document_as_unavailable(line, entry):
                     errors.append(
-                        f"{rel_path}:{line_number}: describes available catalog document as unconfirmed: {entry.entry_id}"
+                        f"{rel_path}:{line_number}: describes available catalog document as unconfirmed or tentative: {entry.entry_id}"
                     )
     return errors
 
@@ -307,6 +334,7 @@ def run_checks(args: argparse.Namespace) -> list[str]:
 
     errors: list[str] = []
     errors.extend(check_no_local_links_outside_wiki())
+    errors.extend(check_local_markdown_links_exist())
     errors.extend(check_directory_indexes())
 
     fixable_errors: list[str] = []
