@@ -37,6 +37,7 @@
 - [L2/25-031](utc-l2-25-031.md) - default identifiers 向け common-use Han subset。
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
+- [L2/26-093](utc-l2-26-093.md) - UTC #187 meeting minutes。
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC #187 Meeting。
 - [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX #38 Revision 40 proposed update。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。

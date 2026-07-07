@@ -33,7 +33,7 @@ UAX #45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSC
 | 2008-11-12 | IRG       | [IRG N1534](../documents/irg-n1534.md), [IRG N1535](../documents/irg-n1535.md)         | UTC Extension D proposal の source descriptions と sample evidence が IRG に提出された。                                                         |
 | 2011-11-11 | UTC / IRG | [L2/11-439](../documents/utc-l2-11-439.md) / `IRG N1825R`                              | Adobe-Japan1-6 由来の 27 ideographs について、`kIRG_USource` の source reference を `UTC-...` から `AJ1-...` へ明確化する提案が出た。                          |
 | 2019-05    | IRG / WG2 | [IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085`                                 | UAX #45 に存在するが U-source identifier を欠く約 150 encoded ideographs に horizontal extension で source identifiers を付ける提案が出た。                  |
-| 2020-08/09 | UTC / IRG | [IRG N2439](../documents/irg-n2439.md) / `L2/20-204`                                   | UTC-02993 と UTC-03009 を Urgently Needed Characters として提出し、Macao SAR / TCA / China 側の UNC proposal と重なる evidence を補強した。                 |
+| 2020-08/09 | UTC / IRG | [IRG N2439](../documents/irg-n2439.md) / `L2/20-204`                                   | UTC-02993 と UTC-03009 を Urgently Needed Characters として提出し、現行 UAX #45 data ではそれぞれ U+9FFF / U+9FFE の encoded records として追跡できる。                 |
 | 2021-08-24 | IRG       | [IRG N2511](../documents/irg-n2511.md)                                                 | U+30759 / UTC-01250 の representative glyph が evidence と合わない可能性を指摘し、glyph update または別符号化を提案した。                                          |
 | 2022-08-15 | UTC       | [L2/22-185](../documents/utc-l2-22-185.md)                                             | `N`, `V`, `W`, `X` の一文字 status を `FutureWS`, `Variant`, `Rejected`, `NoAction` に置き換える提案が出た。                                            |
 | 2025-07-17 | UTC       | [L2/25-199](../documents/utc-l2-25-199.md)                                             | UAX #45 Revision 31 proposed update が、`ExtJ` と `WS-2024` status、first residual stroke value `6`、Unicode 17.0 additions を反映した。          |
@@ -72,6 +72,8 @@ UAX #45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSC
 
 [L2/11-439](../documents/utc-l2-11-439.md) / `IRG N1825R` は、Adobe-Japan1-6 由来の 27 encoded ideographs が `kIRG_USource` に `UTC-...` として入っている状態を、より正確な `AJ1-...` source reference に置き換える提案である。ここでは representative glyph は変えず、source reference を明確化することが主眼になっている。
 
+現行 UAX #45 data では Adobe-Japan1 values が source field に残る一方、UAX #38 の `kIRG_USource` は引き続き UAX #45 の `UTC-00000` 型 index を参照する property として説明される。そのため `L2/11-439` は、AJ1 evidence の反映と `kIRG_USource` prefix 変更を分けて読む必要がある。
+
 2019 年の [IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` と、2026 年の [L2/26-147](../documents/utc-l2-26-147.md) / `IRG N2961` は、encoded ideographs に U-source reference を後付けする horizontal extension である。これは UAX #45 additions とは逆向きで、未符号化候補を増やすのではなく、既に符号化された文字に `kIRG_USource` values と U-source representative glyphs を追加する。
 
 ### FutureWS records と intake capacity
@@ -87,6 +89,8 @@ UAX #45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSC
 ### 日本の地名 ideographs
 
 [Japanese Place-Name Ideographs](japanese-place-name-ideographs.md) は、UAX #45 additions のうち日本の地名・登記資料に基づく提案を束ねる topic である。`L2/25-053`、`L2/25-221`、`L2/26-044` は、Hanyo-Denshi project で網羅されなかった登記・小字名・橋名の文字を、IDS、`kJapanese` reading、radical / stroke data とともに `FutureWS` record として扱う。
+
+UTC #187 では `L2/26-044` が受理されたが、現行 catalog / cache の範囲では `L2/25-053` と `L2/25-221` の採択 decision は確認できない。UAX #45 topic では、同じ地名 evidence 系の proposal でも、decision set に入ったものと pending のものを分けて扱う。
 
 ## 関連文書
 
@@ -132,3 +136,4 @@ UAX #45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSC
 - `utc-l2-25-199` - <https://www.unicode.org/L2/L2025/25199-uax45-31-update-pri522.pdf>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
+- `USourceData.txt` - <https://www.unicode.org/Public/UCD/latest/ucd/USourceData.txt>

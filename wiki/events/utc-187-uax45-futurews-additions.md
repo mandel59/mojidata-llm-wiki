@@ -5,7 +5,7 @@ description: "CJK & Unihan Working Group が UTC #187 向け recommendations で
 slug: utc-187-uax45-futurews-additions
 date: "2026-04-11"
 bodies: [UTC]
-documents: [utc-l2-26-044, utc-l2-26-099]
+documents: [utc-l2-26-044, utc-l2-26-093, utc-l2-26-099]
 topics: [uax45-u-source-ideographs, japanese-place-name-ideographs]
 people: [japan]
 meetings: [utc-meeting-187]
@@ -45,4 +45,5 @@ UAX #45 additions は、未符号化 ideographs を UTC source records として
 ## 出典
 
 - `utc-l2-26-044` - <https://www.unicode.org/L2/L2026/26044-uax45-japanese-place-names.pdf>
+- `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
