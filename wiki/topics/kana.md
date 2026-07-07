@@ -22,35 +22,35 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 1999-07-15 | UTC | `L2/99-238` | JCS Committee が JIS X 0213 系の非漢字追加として、linguistic signs、dentist signs、enclosed numbers、publishing signs、Katakana などを UTC に提出。 |
-| 1999-09-13 | WG2 | `WG2 N2092` | Japan NB が kana / punctuation を含む 48 characters の追加を WG2 に提出。 |
-| 2008-01-14 | UTC / WG2 | [L2/07-421](../documents/utc-l2-07-421.md) / `WG2 N3388` | Nozomu Kato が YE に関する 2 kana characters の符号化を提案。 |
-| 2008-02-28 | UTC / WG2 | [L2/08-117](../documents/utc-l2-08-117.md) / `WG2 N3394` | UTC / L2 が Japan NB に review を求め、個別符号化か obsolete kana / hentaigana の大きな枠組みで扱うかを論点化。 |
-| 2008-10-14 | UTC / WG2 | [L2/08-358](../documents/utc-l2-08-358.md) / `WG2 N3528` | Japan NB が HIRAGANA LETTER YE は支持し、KATAKANA LETTER ORIGINAL E は時点では反対と回答。YE と hentaigana を混同しないことを求めた。 |
+| 1999-07-15 | UTC | [L2/99-238](https://www.unicode.org/L2/L1999/99238-non-kanji2.pdf) | JCS Committee が JIS X 0213 系の非漢字追加として、linguistic signs、dentist signs、enclosed numbers、publishing signs、Katakana などを UTC に提出。 |
+| 1999-09-13 | WG2 | [WG2 N2092](https://www.unicode.org/wg2/docs/n2092.pdf) | Japan NB が kana / punctuation を含む 48 characters の追加を WG2 に提出。 |
+| 2008-01-14 | UTC / WG2 | [L2/07-421](../documents/utc-l2-07-421.md) / [WG2 N3388](https://www.unicode.org/wg2/docs/n3388.pdf) | Nozomu Kato が YE に関する 2 kana characters の符号化を提案。 |
+| 2008-02-28 | UTC / WG2 | [L2/08-117](../documents/utc-l2-08-117.md) / [WG2 N3394](https://www.unicode.org/wg2/docs/n3394.pdf) | UTC / L2 が Japan NB に review を求め、個別符号化か obsolete kana / hentaigana の大きな枠組みで扱うかを論点化。 |
+| 2008-10-14 | UTC / WG2 | [L2/08-358](../documents/utc-l2-08-358.md) / [WG2 N3528](https://www.unicode.org/wg2/docs/n3528.pdf) | Japan NB が HIRAGANA LETTER YE は支持し、KATAKANA LETTER ORIGINAL E は時点では反対と回答。YE と hentaigana を混同しないことを求めた。 |
 | 2009-01-28 | UTC | [L2/09-062](../documents/utc-l2-09-062.md) | Nozomu Kato が、あ行 E とヤ行 YE の歴史的区別、カタカナ エと江の関係を日本語史背景として整理。 |
-| 2015-10-09 | UTC / WG2 | [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` | Japan NB が 299 文字の Japanese HENTAIGANA 初期 proposal を提出。 |
+| 2015-10-09 | UTC / WG2 | [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](https://www.unicode.org/wg2/docs/n4674-Japan_Hentaigana_Proposal-a.zip) | Japan NB が 299 文字の Japanese HENTAIGANA 初期 proposal を提出。 |
 | 2015-12-15 | UTC | [L2/15-343](../documents/utc-l2-15-343.md) | Japan NB が Hentaigana revised proposal を提出。phonetic value と mother ideograph に基づく命名・統合の整理を示す。 |
 | 2016-07-15 | UTC | [L2/16-188](../documents/utc-l2-16-188.md) | Japan NB が Hentaigana revised repertoire を提出。`HENTAIGANA LETTER E-1` withdrawal と U+1B001 name alias の流れに接続する。 |
 | 2016-11-04 | UTC | [L2/16-334](../documents/utc-l2-16-334.md) | CheonHyeong Sim が small WI / WE の Hiragana / Katakana 4 文字を提案。 |
 | 2016-11-06 | UTC | [L2/16-354](../documents/utc-l2-16-354.md) | Ryusei Yamaguchi が phonetic extension system として 12 文字の Kana small letters を提案。 |
-| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / `WG2 N4803` | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC #149 で受理された 7 文字を示す。 |
+| 2016-11-07 | UTC / WG2 | [L2/16-358R](../documents/utc-l2-16-358r.md) / [WG2 N4803](https://www.unicode.org/wg2/docs/n4803-small-kana-fdbk.pdf) | Ken Lunde が 2 件の small kana proposal への feedback を出し、UTC #149 で受理された 7 文字を示す。 |
 | 2017-01-17 | UTC | [L2/17-014](../documents/utc-l2-17-014.md) | Japan NB / Tetsuji Orita が ARCHAIC HIRAGANA YE は HENTAIGANA「江」の用法の一つだと整理。 |
-| 2017-04-07 | UTC / WG2 | [L2/17-091](../documents/utc-l2-17-091.md) / `WG2 N4826` | Japan NB が Small Kana Characters に関する contribution を提出。PDAM 1.2 の 9 small kana だけを選ぶ根拠が不明で、より広い repertoire または modifier model を検討すべきと主張。 |
-| 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
-| 2019-11-22 | UTC | [L2/19-382](../documents/utc-l2-19-382.md) | Late Middle Japanese の final -t を転写する HENTAIGANA LETTER SMALL TU-2 を提案。 |
+| 2017-04-07 | UTC / WG2 | [L2/17-091](../documents/utc-l2-17-091.md) / [WG2 N4826](https://www.unicode.org/wg2/docs/n4826-JNB-SmallKanaCharacters.pdf) | Japan NB が Small Kana Characters に関する contribution を提出。PDAM 1.2 の 9 small kana だけを選ぶ根拠が不明で、より広い repertoire または modifier model を検討すべきと主張。 |
+| 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Abraham Gross が Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
+| 2019-11-22 | UTC | [L2/19-382](../documents/utc-l2-19-382.md) | Alexander Zapryagaev が Late Middle Japanese の final -t を転写する HENTAIGANA LETTER SMALL TU-2 を提案。 |
 | 2020-06-25 | UTC | [L2/20-152](../documents/utc-l2-20-152.md) | Abraham Gross が HIRAGANA LETTER ARCHAIC WU の origin character を U+6C59 汙とする annotation を推奨。 |
 | 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、readings を hiragana / katakana で表す property とする。 |
 | 2023-04-25 | UTC | [L2/23-112](../documents/utc-l2-23-112.md) | Gen Kojitani が missing kana ligatures を広く提案。合略仮名を複数 kana の単なる連綿と区別する criteria を提示。 |
 | 2023-05-08 | UTC | [L2/23-118](../documents/utc-l2-23-118.md) | Gen Kojitani が Ryukyuan languages 用 superscript katakana letters 8 characters を提案。 |
 | 2023-05-25 | UTC | [L2/23-123](../documents/utc-l2-23-123.md) | Eiso Chan が `L2/23-118` へ feedback を出し、usage stability、vertical layout、提出主体などの確認を求めた。 |
 | 2023-05-31 | UTC | [L2/23-127](../documents/utc-l2-23-127.md) | Eiso Chan が明治期資料に現れる alternate Katakana NE / WI を紹介。 |
-| 2024-06-21 | UTC | `L2/24-150` | [L2/24-150](../documents/utc-l2-24-150.md) が `L2/23-112` を reduced set として改訂し、3 kana ligatures を提案。 |
-| 2024-12-31 | UTC | `L2/24-279` | [L2/24-279](../documents/utc-l2-24-279.md) が KATAKANA DIGRAPH YORI を追加提案。 |
-| 2025-01-13 | UTC | `L2/25-035` | [L2/25-035](../documents/utc-l2-25-035.md) が small kana と Bopomofo small letters の Vertical Orientation value 変更を要請。 |
-| 2025-01-15 | UTC | `L2/25-036` | [L2/25-036](../documents/utc-l2-25-036.md) が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |
-| 2025-01-16 / 2025-02-24 | UTC | `L2/25-042`, `L2/25-060` | [L2/25-042](../documents/utc-l2-25-042.md) と [L2/25-060](../documents/utc-l2-25-060.md) が KATAKANA LETTER SMALL NE を提案し、広告・看板・表紙資料の attestations を追加。 |
-| 2025-05-23 | UTC | `L2/25-151R` | [L2/25-151R](../documents/utc-l2-25-151r.md) が KATAKANA LETTER ALTERNATE NE / WI を提案。明治期活字・教科書資料を根拠とし、current Katakana / Hentaigana との統合不可を主張。 |
-| 2025-08-19 | UTC | `L2/25-213` | [L2/25-213](../documents/utc-l2-25-213.md) が Unihan `kJapanese` に含まれる Katakana kun'yomi を調査し、property value / definition の修正を提案。 |
+| 2024-06-21 | UTC | [L2/24-150](../documents/utc-l2-24-150.md) | Gen Kojitani が `L2/23-112` を reduced set として改訂し、3 kana ligatures を提案。 |
+| 2024-12-31 | UTC | [L2/24-279](../documents/utc-l2-24-279.md) | CheonHyeong Sim が KATAKANA DIGRAPH YORI を追加提案。 |
+| 2025-01-13 | UTC | [L2/25-035](../documents/utc-l2-25-035.md) | CheonHyeong Sim が small kana と Bopomofo small letters の Vertical Orientation value 変更を要請。 |
+| 2025-01-15 | UTC | [L2/25-036](../documents/utc-l2-25-036.md) | CheonHyeong Sim が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |
+| 2025-01-16 / 2025-02-24 | UTC | [L2/25-042](../documents/utc-l2-25-042.md), [L2/25-060](../documents/utc-l2-25-060.md) | Kentaro Bimbatti が KATAKANA LETTER SMALL NE を提案し、広告・看板・表紙資料の attestations を追加。 |
+| 2025-05-23 | UTC | [L2/25-151R](../documents/utc-l2-25-151r.md) | Eiso Chan が KATAKANA LETTER ALTERNATE NE / WI を提案。明治期活字・教科書資料を根拠とし、current Katakana / Hentaigana との統合不可を主張。 |
+| 2025-08-19 | UTC | [L2/25-213](../documents/utc-l2-25-213.md) | HarJIT が Unihan `kJapanese` に含まれる Katakana kun'yomi を調査し、property value / definition の修正を提案。 |
 
 ## 主な論点
 
