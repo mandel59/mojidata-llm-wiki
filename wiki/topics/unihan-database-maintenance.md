@@ -4,8 +4,8 @@ title: Unihan Database Maintenance
 description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354]
-topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists]
+documents: [utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -75,6 +75,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 - [CJK Hybrid Characters](cjk-hybrid-characters.md)
+- [CJK Multi-Syllabic and Abbreviation Characters](cjk-multi-syllabic-and-abbreviation-characters.md)
 
 ## 出典
 

@@ -4,8 +4,8 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: [irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
-topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists]
+documents: [irg-n2826, irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
+topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -65,6 +65,8 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 - [UCV and NUCV Lists](ucv-nucv-lists.md)
+- [CJK Hybrid Characters](cjk-hybrid-characters.md)
+- [CJK Multi-Syllabic and Abbreviation Characters](cjk-multi-syllabic-and-abbreviation-characters.md)
 
 ## 関連人物・組織
 

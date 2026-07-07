@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Ingest**: Implemented topic split issue \#10 by adding [CJK Multi-Syllabic and Abbreviation Characters](topics/cjk-multi-syllabic-and-abbreviation-characters.md), digesting `IRG N2792`, `IRG N2828`, `IRG N2867R`, and `IRG N2885R`, and keeping [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) focused on script-hybrid block policy.
 - **Ingest**: Implemented topic split issue \#9 by adding [JMJ Horizontal Extension Review Path](topics/jmj-horizontal-extension-review-path.md), digesting `WG2 N5221`, `IRG N2721` / `WG2 N5284`, `IRG N2722`, and `WG2 N5301`, and narrowing [J-source and JMJ Source Issues](topics/j-source.md) to post-extension correction / disposition.
 - **Ingest**: Added Taiwanese Kana coverage to [Kana](topics/kana.md), digesting `L2/20-233`, `L2/20-280`, and `L2/20-209R` and linking Kana Extended-B / Minnan tone mark status to the Unicode code chart.
 - **Refine**: Moved `L2/25-213` and the broader Unihan `kJapanese` reading discussion out of [Kana](topics/kana.md) and kept it under [Unihan Database Maintenance](topics/unihan-database-maintenance.md).

@@ -34,6 +34,7 @@ okf_version: "0.1"
 - [Japanese Place-Name Ideographs](topics/japanese-place-name-ideographs.md) - 日本の地名・登記資料に現れる未符号化漢字の UAX \#45 / FutureWS proposals。
 - [Japanese Historical Ideographs](topics/japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
+- [CJK Multi-Syllabic and Abbreviation Characters](topics/cjk-multi-syllabic-and-abbreviation-characters.md) - Han-only abbreviation characters と script-hybrid characters の分類境界。
 - [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
 - [J-source and JMJ Source Issues](topics/j-source.md) - JMJ-source expansion 後の glyph、source reference、`kIRG_JSource` disposition。
 - [UAX \#45 / U-Source Ideographs](topics/uax45-u-source-ideographs.md) - UAX \#45 の U-source database、`kIRG_USource`、FutureWS、horizontal extension の保守論点。

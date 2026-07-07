@@ -3,8 +3,8 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, uax45-u-source-ideographs, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
-topics: [small-seal-script, uax45-u-source-ideographs, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
+members: [small-seal-script, uax45-u-source-ideographs, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
+topics: [small-seal-script, uax45-u-source-ideographs, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
 tags: [family, han, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -25,6 +25,8 @@ Han / ideographic 系の script、block、source data、variation database に�
 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) | active | IRG Meeting \#67 の中心議題である WS2024 Version 5.0 review。 |
 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) | active | 既存 CJK Unified Ideographs に JMJ / G / UK / U source data を追加する提案群。 |
 | [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md) | active | JMJ references の J-column horizontal extension と IRG review path。 |
+| [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) | active | 非 Han script components を含む Han-like characters の CJKUI / 別 block policy。 |
+| [CJK Multi-Syllabic and Abbreviation Characters](../topics/cjk-multi-syllabic-and-abbreviation-characters.md) | active | Han-only abbreviation characters と script-hybrid characters の分類境界。 |
 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) | active | member body source reference、representative glyph、Unihan property の修正論点。 |
 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) | active | G-source representative glyph と source reference correction の個別論点。 |
 | [kIRG_SGSource](../topics/kirg-sgsource.md) | accepted-for-future-version | Singapore characters を `kIRG_GSource` から分離する normative source property。 |

@@ -72,13 +72,17 @@
 - [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
 - [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
+- [IRG N2792](irg-n2792.md) - KR position on script-hybrid Han ideographs。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
+- [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
+- [IRG N2867R](irg-n2867r.md) - Multi-Syllabic Characters and Abbreviation Characters。
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
+- [IRG N2885R](irg-n2885r.md) - `IRG N2866R` への CJK Hybrid Characters feedback。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
