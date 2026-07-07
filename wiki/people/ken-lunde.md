@@ -3,7 +3,6 @@ type: Person
 title: Ken Lunde
 description: UTC / CJK & Unihan Working Group で CJK / Unihan data maintenance に関わる contributor。
 slug: ken-lunde
-kind: person
 bodies: [UTC, IRG]
 documents: [utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148]
 topics: [unihan-database-maintenance, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]

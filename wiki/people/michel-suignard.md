@@ -3,7 +3,6 @@ type: Person
 title: Michel Suignard
 description: Small Seal Script proposal と WG2 project editor 関連文書に関わる contributor。
 slug: michel-suignard
-kind: person
 bodies: [UTC, WG2]
 documents: [wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344, wg2-n5348, wg2-n5369, utc-l2-25-049, utc-l2-25-111]
 topics: [small-seal-script]

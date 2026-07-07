@@ -3,7 +3,6 @@ type: Member Body
 title: China
 description: G-source、Small Seal Script、CJKV Components に関係する China member body。
 slug: china
-kind: member-body
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2929, irg-n2935, wg2-n5318, wg2-n5355, wg2-n5369]
 topics: [cjk-horizontal-extensions, cjkv-components, small-seal-script, irg-source-data-and-representative-glyphs]

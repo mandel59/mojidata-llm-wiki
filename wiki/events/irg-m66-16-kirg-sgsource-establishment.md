@@ -3,7 +3,6 @@ type: Event
 title: IRG M66.16 kIRG_SGSource establishment
 description: "IRG #66 Recommendation M66.16 が kIRG_SGSource の establishment と GS prefix の SG source への移行を勧告した出来事。"
 slug: irg-m66-16-kirg-sgsource-establishment
-kind: event
 date: "2026-03-19"
 bodies: [IRG]
 documents: [irg-n2909, irg-n2926]

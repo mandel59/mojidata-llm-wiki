@@ -3,7 +3,6 @@ type: Topic
 title: CJK Security Confusables
 description: "UTS #39 security data、Unihan kSpoofingVariant / kZVariant、Han identifier policy における CJK confusables。"
 slug: cjk-security-confusables
-kind: topic
 bodies: [UTC, IRG]
 documents: [irg-n2206, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127]
 status: active

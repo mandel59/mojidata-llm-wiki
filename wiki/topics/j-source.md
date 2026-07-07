@@ -3,7 +3,6 @@ type: Topic
 title: J-source and JMJ Source Issues
 description: J-source / JMJ-source horizontal extension、representative glyph、kIRG_JSource disposition の最近の議論。
 slug: j-source
-kind: topic
 bodies: [WG2, IRG, UTC]
 documents: [wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870]
 status: active

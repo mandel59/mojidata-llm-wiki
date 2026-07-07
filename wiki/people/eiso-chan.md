@@ -3,7 +3,6 @@ type: Person
 title: Eiso Chan
 description: CJKV Components、kIRG_SGSource、IRG indexing rules に関係する contributor。
 slug: eiso-chan
-kind: person
 bodies: [IRG]
 documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2951]
 topics: [cjkv-components, kirg-sgsource, irg-indexing-rules]

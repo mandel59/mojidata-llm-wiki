@@ -3,7 +3,6 @@ type: Member Body
 title: Japan
 description: Japan NB / J-source / WG2 関連 activity に関わる IRG / WG2 member body。
 slug: japan
-kind: member-body
 bodies: [IRG, WG2]
 documents: [wg2-n5221, irg-n2721, wg2-n5284, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, irg-n2859, irg-n2870, irg-n2934r]
 topics: [j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]

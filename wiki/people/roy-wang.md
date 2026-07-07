@@ -3,7 +3,6 @@ type: Person
 title: Roy Wang
 description: G-source representative glyph と source reference 修正に関係する contributor。
 slug: roy-wang
-kind: person
 bodies: [IRG]
 documents: [irg-n2954, irg-n2956]
 topics: [irg-source-data-and-representative-glyphs]

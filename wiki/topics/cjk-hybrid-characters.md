@@ -3,7 +3,6 @@ type: Topic
 title: CJK Hybrid Characters
 description: "仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters を CJKUI に入れるか、別 block とするかの議論。"
 slug: cjk-hybrid-characters
-kind: topic
 bodies: [IRG, WG2, UTC]
 documents: [irg-n2792, irg-n2826, irg-n2828, irg-n2866r2, irg-n2867r, irg-n2885r, irg-n2893]
 events: [irg-m65-24-cjk-hybrid-characters]

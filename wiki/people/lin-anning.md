@@ -3,7 +3,6 @@ type: Person
 title: Lin Anning
 description: G-source representative glyph 修正に関係する contributor。
 slug: lin-anning
-kind: person
 bodies: [IRG]
 documents: [irg-n2962]
 topics: [irg-source-data-and-representative-glyphs]

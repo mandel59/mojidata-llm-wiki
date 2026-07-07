@@ -3,7 +3,6 @@ type: Meeting
 title: "UTC Meeting #188"
 description: "2026-07-30 予定の UTC Meeting #188。Unicode 18.0 content finalize の追跡ページ。"
 slug: utc-meeting-188
-kind: meeting
 body: UTC
 meeting: 188
 date: "2026-07-30"

@@ -3,7 +3,6 @@ type: Event
 title: IRG N2859 J-source disposition request
 description: IRG Convenor が J-source representative glyph / source reference issues の disposition をまとめ、Japan NB に feedback を求めた出来事。
 slug: irg-n2859-j-source-disposition-request
-kind: event
 date: "2025-08-13"
 bodies: [IRG]
 documents: [irg-n2859]

@@ -3,7 +3,6 @@ type: Topic
 title: Kana
 description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan kJapanese readings を追跡する topic。"
 slug: kana
-kind: topic
 bodies: [UTC, WG2]
 documents: [utc-l2-08-358, utc-l2-17-091, utc-l2-22-181, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r, utc-l2-25-213]
 status: active

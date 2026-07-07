@@ -3,7 +3,6 @@ type: Person
 title: Ma Shijie
 description: G-source、SAT-source、representative glyph 修正に関係する contributor。
 slug: ma-shijie
-kind: person
 bodies: [IRG]
 documents: [irg-n2958, irg-n2959]
 topics: [irg-source-data-and-representative-glyphs]

@@ -3,7 +3,6 @@ type: Event
 title: WG2 M72.07 J-source glyph revert recommendation
 description: "WG2 #72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。"
 slug: wg2-m72-07-j-source-glyph-revert
-kind: event
 date: "2025-06-27"
 bodies: [WG2]
 documents: [wg2-n5296, wg2-n5301, wg2-n5304]

@@ -3,7 +3,6 @@ type: Event
 title: IRG N2878R3 CJKV Components final proposal
 description: IRG N2878R3 が CJK Unified Ideographs Components-A/B の final proposal として 494 characters を提示した出来事。
 slug: irg-n2878r3-cjkv-components-final-proposal
-kind: event
 date: "2026-03-20"
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, wg2-n5358]

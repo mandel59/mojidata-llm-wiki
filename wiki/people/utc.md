@@ -3,7 +3,6 @@ type: Organization
 title: UTC
 description: Unicode Standard の技術的な検討と承認を担う Unicode Technical Committee。
 slug: utc
-kind: organization
 bodies: [UTC, IRG, WG2]
 documents: [irg-n2935, irg-n2961, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
 topics: [unicode-18-change-sources, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]

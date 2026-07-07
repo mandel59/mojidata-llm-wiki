@@ -3,7 +3,6 @@ type: Event
 title: WG2 M72.13 Small Seal future edition candidate
 description: "WG2 #72 が 11,339 Small Seal characters を将来版候補として検討するよう勧告した出来事。"
 slug: wg2-m72-13-small-seal-future-candidate
-kind: event
 date: "2025-06-27"
 bodies: [WG2]
 documents: [wg2-n5304, wg2-n5306, wg2-n5317r3, wg2-n5318r]

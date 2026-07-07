@@ -3,7 +3,6 @@ type: Meeting
 title: "IRG Meeting #66"
 description: "2026-03-16/20 の IRG Meeting #66 recommendations と Meeting #67 へ引き継がれた action items。"
 slug: irg-meeting-66
-kind: meeting
 body: IRG
 meeting: 66
 date: "2026-03-16/20"

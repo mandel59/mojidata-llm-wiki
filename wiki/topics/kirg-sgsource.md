@@ -3,7 +3,6 @@ type: Topic
 title: kIRG_SGSource
 description: Singapore characters を kIRG_GSource から分離する normative IRG source property 提案。
 slug: kirg-sgsource
-kind: topic
 bodies: [IRG, WG2, UTC]
 documents: [irg-n2909, irg-n2926, irg-n2935]
 status: accepted-for-future-version

@@ -112,7 +112,7 @@ def load_concept_slugs() -> dict[str, set[str]]:
 
 def validate_event(path: Path, document_ids: set[str], concept_slugs: dict[str, set[str]]) -> list[str]:
     data, errors = parse_frontmatter(path)
-    required_strings = ["type", "title", "description", "slug", "kind", "date", "status"]
+    required_strings = ["type", "title", "description", "slug", "date", "status"]
     for key in required_strings:
         value = data.get(key)
         if not isinstance(value, str) or not value.strip():
@@ -120,8 +120,6 @@ def validate_event(path: Path, document_ids: set[str], concept_slugs: dict[str, 
 
     if data.get("type") != "Event":
         errors.append(f"{path}: type must be Event")
-    if data.get("kind") != "event":
-        errors.append(f"{path}: kind must be event")
     if data.get("slug") != path.stem:
         errors.append(f"{path}: slug must match filename stem")
 

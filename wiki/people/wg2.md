@@ -3,7 +3,6 @@ type: Organization
 title: WG2
 description: ISO/IEC 10646 の repertoire と edition / amendment progression を扱う WG2。
 slug: wg2
-kind: organization
 bodies: [WG2, IRG, UTC]
 documents: [wg2-n5344, wg2-n5354, irg-n2935]
 topics: [small-seal-script, kirg-sgsource, cjkv-components]

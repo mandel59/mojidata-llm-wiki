@@ -3,7 +3,6 @@ type: Member Body
 title: Vietnam
 description: V-source と Nom glyph data に関係する Vietnam member body。
 slug: vietnam
-kind: member-body
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
 topics: [irg-source-data-and-representative-glyphs]

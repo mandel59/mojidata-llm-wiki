@@ -3,7 +3,6 @@ type: Topic
 title: "UAX #45 U-Source Ideographs"
 description: "UAX #45 の U-source ideographs、USourceData.txt、FutureWS records の保守論点。"
 slug: uax45-u-source-ideographs
-kind: topic
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-071, utc-l2-26-072, utc-l2-26-080, utc-l2-26-083, utc-l2-26-085, utc-l2-26-099, utc-l2-26-147]
 status: active

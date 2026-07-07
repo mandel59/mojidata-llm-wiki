@@ -3,7 +3,6 @@ type: Event
 title: IRG N2870 Japan feedback on J-source disposition
 description: Japan NB が IRG N2859 へ回答し、published encoded characters の current status 維持を求めた出来事。
 slug: irg-n2870-japan-feedback-on-j-source-disposition
-kind: event
 date: "2025-09-25"
 bodies: [IRG]
 documents: [irg-n2870]

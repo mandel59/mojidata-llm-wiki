@@ -3,7 +3,6 @@ type: Member Body
 title: UK
 description: UK-source horizontal extension と glyph change に関係する UK member body。
 slug: uk
-kind: member-body
 bodies: [IRG]
 documents: [irg-n2918, irg-n2960]
 topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs]

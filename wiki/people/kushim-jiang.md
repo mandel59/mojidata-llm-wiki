@@ -3,7 +3,6 @@ type: Person
 title: Kushim Jiang
 description: CJKV Components proposal と G-source data feedback に関係する contributor。
 slug: kushim-jiang
-kind: person
 bodies: [IRG]
 documents: [irg-n2733r, irg-n2799, irg-n2878r3, irg-n2957]
 topics: [cjkv-components, irg-source-data-and-representative-glyphs]

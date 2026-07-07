@@ -3,7 +3,6 @@ type: Event
 title: "IRG M65.24 CJK Hybrid Characters"
 description: "IRG #65 Recommendation M65.24 が CJK hybrid characters を WG2 に委ねつつ IRG oversight で CJKUI / 別 block を判断する方針を記録した出来事。"
 slug: irg-m65-24-cjk-hybrid-characters
-kind: event
 date: "2025-10-16"
 bodies: [IRG, WG2]
 documents: [irg-n2792, irg-n2826, irg-n2828, irg-n2866r2, irg-n2867r, irg-n2885r, irg-n2893]

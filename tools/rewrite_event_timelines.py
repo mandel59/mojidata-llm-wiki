@@ -27,20 +27,20 @@ def load_events() -> list[tuple[Path, dict[str, object]]]:
     return events
 
 
-def find_concept(kind: str, slug: str) -> Path:
+def find_concept(group: str, slug: str) -> Path:
     roots = {
         "topic": WIKI / "topics",
         "people": WIKI / "people",
         "meeting": WIKI / "meetings",
     }
-    root = roots[kind]
+    root = roots[group]
     for path in root.rglob("*.md"):
         if path.name == "index.md":
             continue
         data, _errors = parse_frontmatter(path)
         if data.get("slug") == slug or path.stem == slug:
             return path
-    raise SystemExit(f"cannot find {kind}: {slug}")
+    raise SystemExit(f"cannot find {group}: {slug}")
 
 
 def select_events(

@@ -3,7 +3,6 @@ type: Organization
 title: SAT
 description: SAT-source と IRG source data に関係する organization。
 slug: sat
-kind: organization
 bodies: [IRG]
 documents: [irg-n2935, irg-n2959]
 topics: [irg-source-data-and-representative-glyphs, irg-working-set-2024]

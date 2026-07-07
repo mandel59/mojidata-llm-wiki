@@ -3,7 +3,6 @@ type: Topic
 title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
-kind: topic
 bodies: [IRG]
 documents: [irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952]
 status: active

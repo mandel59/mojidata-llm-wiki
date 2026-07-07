@@ -3,7 +3,6 @@ type: Person
 title: Henry Chan
 description: IRG radical assignment、indexing rules、CJKV Components feedback、easily confused ideographs に関係する contributor。
 slug: henry-chan
-kind: person
 bodies: [IRG]
 documents: [irg-n2206, irg-n2917, irg-n2925]
 topics: [cjkv-components, irg-indexing-rules, cjk-security-confusables]

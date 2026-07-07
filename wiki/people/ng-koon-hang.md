@@ -3,7 +3,6 @@ type: Person
 title: Ng Koon Hang
 description: V-source representative glyph と Nom glyph data に関係する contributor。
 slug: ng-koon-hang
-kind: person
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
 topics: [irg-source-data-and-representative-glyphs]

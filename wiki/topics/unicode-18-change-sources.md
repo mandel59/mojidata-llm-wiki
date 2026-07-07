@@ -3,7 +3,6 @@ type: Topic
 title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
-kind: topic
 bodies: [UTC, WG2, IRG]
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, wg2-n5354, irg-n2935]
 status: draft-release

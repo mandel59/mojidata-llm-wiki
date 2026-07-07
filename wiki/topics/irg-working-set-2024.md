@@ -3,7 +3,6 @@ type: Topic
 title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
-kind: topic
 bodies: [IRG]
 documents: [irg-n2909, irg-n2932, irg-n2933, irg-n2935]
 status: active

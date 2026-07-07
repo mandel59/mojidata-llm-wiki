@@ -3,7 +3,6 @@ type: Event
 title: WG2 M73.01 Small Seal CD4 disposition
 description: "WG2 #73 が ISO/IEC 10646 7th edition CD4 disposition の一部として Small Seal の名称変更と property correction を記録した出来事。"
 slug: wg2-m73-01-small-seal-cd4-disposition
-kind: event
 date: "2026-06-26"
 bodies: [WG2, SC2]
 documents: [wg2-n5354, wg2-n5355, wg2-n5369]

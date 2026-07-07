@@ -61,7 +61,7 @@ tools/
 - `index.md` は directory listing とし、root の `wiki/index.md` だけ `okf_version: "0.1"` frontmatter を持ってよい。
 - `log.md` は `## YYYY-MM-DD` の date heading と flat list の entries を新しい日付順に置く。
 - `index.md` と `log.md` 以外の `.md` は concept document とし、YAML frontmatter に非空の `type` を必ず持つ。
-- 既存の `kind`、`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
+- 種別は `type` に統一し、`kind` は使わない。`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
 - `tags` は YAML list とする。外部根拠は本文末尾の `## 出典` に公開 URL と `entry_id` を残す。
 - wiki 内リンクからローカル `.cache/`、`raw/`、`downloads/` へリンクしない。
 
@@ -95,7 +95,7 @@ tools/
 ---
 title: Small Seal Script
 slug: small-seal-script
-kind: topic
+type: Topic
 bodies: [UTC, WG2, IRG]
 documents: [wg2-n5348, utc-l2-26-147]
 status: active
@@ -117,6 +117,7 @@ tags: [script, cjk]
 ```yaml
 ---
 title: "IRG Meeting #66 Recommendations and Action Items"
+type: Source Document
 entry_id: irg-n2909
 doc_number: IRG N2909
 registry: irg
@@ -144,7 +145,6 @@ type: Event
 title: WG2 M72.07 J-source glyph revert recommendation
 description: "WG2 #72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。"
 slug: wg2-m72-07-j-source-glyph-revert
-kind: event
 date: "2025-06-27"
 bodies: [WG2]
 documents: [wg2-n5296, wg2-n5301, wg2-n5304]

@@ -3,7 +3,6 @@ type: Person
 title: Richard Cook
 description: Small Seal Script source mapping data に関係する contributor。
 slug: richard-cook
-kind: person
 bodies: [UTC]
 documents: [utc-l2-22-279]
 topics: [small-seal-script]

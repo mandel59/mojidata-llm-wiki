@@ -3,7 +3,6 @@ type: Meeting
 title: "UTC Meeting #187"
 description: "2026-04 UTC Meeting #187 の agenda、minutes、working group reports、Unicode 18.0 beta review authorization。"
 slug: utc-meeting-187
-kind: meeting
 body: UTC
 meeting: 187
 date: "2026-04-21/23"

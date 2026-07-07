@@ -3,7 +3,6 @@ type: Member Body
 title: TCA
 description: T-source、Small Seal Script、CJKV Components に関係する TCA member body。
 slug: tca
-kind: member-body
 bodies: [IRG, WG2]
 documents: [irg-n2878r3, irg-n2927r, wg2-n5318, wg2-n5355]
 topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script]

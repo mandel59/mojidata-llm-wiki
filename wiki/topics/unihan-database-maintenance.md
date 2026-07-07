@@ -3,7 +3,6 @@ type: Topic
 title: Unihan Database Maintenance
 description: "Unihan database、UAX #38、UTS #37、関連 k* properties の保守論点。"
 slug: unihan-database-maintenance
-kind: topic
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354]
 status: active

@@ -3,7 +3,6 @@ type: Topic
 title: Ideographic Punctuation Proposals
 description: Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
 slug: ideographic-punctuation-proposals
-kind: topic
 bodies: [UTC, WG2]
 documents: [utc-l2-26-133, utc-l2-26-136]
 status: active

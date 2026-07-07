@@ -72,7 +72,6 @@ def load_concepts() -> dict[str, dict[str, object]]:
             "id": cid,
             "path": rel_path,
             "type": concept_type(path, data),
-            "kind": scalar(data, "kind"),
             "title": scalar(data, "title") or cid,
             "description": scalar(data, "description"),
             "date": scalar(data, "date"),
@@ -134,8 +133,6 @@ def filter_concepts(concepts: Iterable[dict[str, object]], args: argparse.Namesp
     result = []
     for concept in concepts:
         if args.type and concept["type"] != args.type:
-            continue
-        if args.kind and concept["kind"] != args.kind:
             continue
         if args.status and concept["status"] != args.status:
             continue
@@ -223,7 +220,6 @@ def render_related_table(rows: list[dict[str, object]]) -> str:
 
 def add_common_filters(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--type", help="Filter by frontmatter type, e.g. Event or Topic.")
-    parser.add_argument("--kind", help="Filter by frontmatter kind.")
     parser.add_argument("--status")
     parser.add_argument("--topic")
     parser.add_argument("--people")

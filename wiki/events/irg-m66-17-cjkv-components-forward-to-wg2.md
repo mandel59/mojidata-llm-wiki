@@ -3,7 +3,6 @@ type: Event
 title: IRG M66.17 CJKV Components forward to WG2
 description: "IRG #66 Recommendation M66.17 が IRG N2878R3 の CJK Unified Ideographs Components-A/B を WG2 へ forward するよう勧告した出来事。"
 slug: irg-m66-17-cjkv-components-forward-to-wg2
-kind: event
 date: "2026-03-19"
 bodies: [IRG]
 documents: [irg-n2909, irg-n2878r3]

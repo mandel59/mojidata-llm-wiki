@@ -3,7 +3,6 @@ type: Organization
 title: IRG
 description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group。
 slug: irg
-kind: organization
 bodies: [IRG, WG2]
 documents: [irg-n2909, irg-n2935]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
