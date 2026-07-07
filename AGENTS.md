@@ -66,6 +66,7 @@ tools/
 - `index.md` と `log.md` 以外の `.md` は concept document とし、YAML frontmatter に非空の `type` を必ず持つ。
 - 種別は `type` に統一し、`kind` は使わない。`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
 - `slug` または `entry_id` を持つ concept document は、ファイル名 stem をその値に一致させる。
+- `aliases` は YAML list とし、文書番号の別表記、複数 registry で同一文書に付いた番号、人物・組織・topic の別名、略称、旧称を入れる。primary identity は `slug` / `entry_id` のまま維持し、重複ページを避けたい場合は alias で同一 concept に寄せる。
 - type ごとの required fields、list fields、relation fields は `schema/concept_types.json` で管理する。checker や query tool に type schema を重複して埋め込まない。
 - 本文中の Markdown link は実在する wiki page または外部 URL に限る。まだページ化されていないが関連として残したい概念・文書・会合・人物・出来事は、本文リンクではなく frontmatter の `documents`、`topics`、`people`、`meetings`、`events` に slug / entry_id として記録する。
 - frontmatter relation は未ページ化 target を許容する。`tools/query_wiki.py` の JSON 出力では、既存 concept へ解決できた relation は `links` に入り、未解決 relation は `unresolved_relations` に残る。
@@ -75,6 +76,8 @@ tools/
 ## Wiki Data API
 
 `tools/wiki_store.py` は wiki の programmatic access layer とする。Markdown frontmatter の split / parse、concept identity、concept graph、Markdown link resolution、schema validation、marker block 置換など、複数 tool で再利用する処理はここへ置く。
+
+concept lookup は `id`、ファイル path、`title`、`doc_number`、frontmatter の `aliases` を対象にする。たとえば同じ Source Document が UTC `L2/...` と WG2 `N...` の両方で参照される場合は、canonical な `entry_id` のページを 1 つ作り、もう一方の文書番号を `aliases` に入れる。
 
 `check_okf.py` は OKF bundle と `schema/concept_types.json` に基づく repository schema の検査に集中する。`check_events.py` は Event 固有の意味検査、たとえば event documents が catalog / derived documents に存在することの確認に集中する。topic / people / meeting / event relation は、未ページ化 target を残せるよう存在確認で失敗させない。`query_wiki.py`、`generate_event_indexes.py`、`rewrite_event_timelines.py` は `wiki_store.py` の API を使い、validation tool を共通 library として import しない。
 
@@ -133,6 +136,7 @@ title: "IRG Meeting #66 Recommendations and Action Items"
 type: Source Document
 entry_id: irg-n2909
 doc_number: IRG N2909
+aliases: [IRG Meeting #66 Recommendations]
 registry: irg
 date: "2026-03-19"
 source: IRG Convenor
@@ -246,8 +250,8 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 ### Query
 
 1. `uv run python tools/query_wiki.py events` で event を日付順に確認する。
-2. `uv run python tools/query_wiki.py list --type Topic` や `--topic <slug>` / `--people <slug>` / `--document <entry_id>` で concept metadata を絞り込む。
-3. `uv run python tools/query_wiki.py related <slug> --depth 1` で frontmatter と Markdown 内部リンクから関連 concept を辿る。
+2. `uv run python tools/query_wiki.py list --type Topic` や `--topic <slug>` / `--people <slug>` / `--document <entry_id>` / `--alias <name>` で concept metadata を絞り込む。
+3. `uv run python tools/query_wiki.py related <slug-or-alias> --depth 1` で frontmatter と Markdown 内部リンクから関連 concept を辿る。
 4. 必要なら `--format json` で機械処理用に出力する。
 5. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
 6. 回答は出典付きで書く。

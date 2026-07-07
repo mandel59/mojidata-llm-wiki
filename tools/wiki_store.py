@@ -41,6 +41,7 @@ class WikiPage:
 @dataclass(frozen=True)
 class Concept:
     id: str
+    aliases: list[str]
     type: str
     title: str
     path: Path
@@ -211,6 +212,7 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         relations = {key: string_list(page.frontmatter, key) for key in RELATION_KEYS}
         rows[cid] = {
             "id": cid,
+            "aliases": concept_aliases(path, page.frontmatter),
             "type": concept_type(page.frontmatter),
             "title": scalar(page.frontmatter, "title") or cid,
             "path": path,
@@ -250,6 +252,7 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
     return {
         cid: Concept(
             id=cid,
+            aliases=row["aliases"],  # type: ignore[arg-type]
             type=str(row["type"]),
             title=str(row["title"]),
             path=row["path"],  # type: ignore[arg-type]
@@ -267,6 +270,29 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
 
 def concepts_by_type(concepts: Iterable[Concept], type_name: str) -> list[Concept]:
     return [concept for concept in concepts if concept.type == type_name]
+
+
+def concept_aliases(path: Path, data: dict[str, object]) -> list[str]:
+    aliases = [path.stem]
+    for key in ["slug", "entry_id", "doc_number", "title"]:
+        value = data.get(key)
+        if isinstance(value, str) and value:
+            aliases.append(value)
+    aliases.extend(string_list(data, "aliases"))
+    return sorted(set(aliases), key=lambda item: item.lower())
+
+
+def normalize_lookup_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+
+
+def concept_matches_lookup(concept: Concept, name: str) -> bool:
+    normalized = normalize_lookup_key(name)
+    if concept.id == name or normalize_lookup_key(concept.id) == normalized:
+        return True
+    if concept.rel_path == name.replace("\\", "/") or concept.rel_path.endswith(f"/{name.replace('\\', '/')}"):
+        return True
+    return any(alias == name or normalize_lookup_key(alias) == normalized for alias in concept.aliases)
 
 
 def find_concept_path(group: str, slug: str, bundle: Path = WIKI) -> Path:

@@ -7,12 +7,13 @@ import sys
 from collections import deque
 from typing import Iterable
 
-from wiki_store import Concept, load_concepts, scalar, string_list
+from wiki_store import Concept, concept_matches_lookup, load_concepts, scalar, string_list
 
 
 def public_concept(concept: Concept) -> dict[str, object]:
     return {
         "id": concept.id,
+        "aliases": concept.aliases,
         "path": concept.rel_path,
         "type": concept.type,
         "title": concept.title,
@@ -48,6 +49,8 @@ def filter_concepts(concepts: Iterable[Concept], args: argparse.Namespace) -> li
         if args.body and args.body not in string_list(concept.frontmatter, "bodies"):
             continue
         if args.tag and args.tag not in string_list(concept.frontmatter, "tags"):
+            continue
+        if args.alias and not any(args.alias.lower() in alias.lower() for alias in concept.aliases):
             continue
         result.append(concept)
     return result
@@ -87,11 +90,7 @@ def find_start(concepts: dict[str, Concept], name: str) -> str:
     if name in concepts:
         return name
     normalized = name.replace("\\", "/")
-    matches = [
-        cid
-        for cid, concept in concepts.items()
-        if concept.rel_path == normalized or concept.rel_path.endswith(f"/{normalized}")
-    ]
+    matches = [cid for cid, concept in concepts.items() if concept_matches_lookup(concept, normalized)]
     if len(matches) == 1:
         return matches[0]
     if not matches:
@@ -142,6 +141,7 @@ def add_common_filters(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--document")
     parser.add_argument("--body")
     parser.add_argument("--tag")
+    parser.add_argument("--alias", help="Filter by alias substring.")
     parser.add_argument("--sort", choices=["date", "title", "id", "path", "type", "status"], default="title")
     parser.add_argument("--reverse", action="store_true")
     parser.add_argument("--format", choices=["table", "json"], default="table")

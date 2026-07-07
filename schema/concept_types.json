@@ -6,7 +6,7 @@
     "identity_fields": ["slug", "entry_id"],
     "filename_stem_must_match_identity": true,
     "relation_targets_may_be_unresolved": true,
-    "list_fields": ["tags", "bodies", "documents", "topics", "people", "meetings", "events"]
+    "list_fields": ["aliases", "tags", "bodies", "documents", "topics", "people", "meetings", "events"]
   },
   "types": {
     "Event": {
