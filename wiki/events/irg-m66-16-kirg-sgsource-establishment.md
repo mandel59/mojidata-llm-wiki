@@ -18,11 +18,11 @@ timestamp: 2026-07-06T23:50:00+09:00
 
 ## 概要
 
-IRG Meeting #66 Recommendation M66.16 は、new normative `kIRG_SGSource` property を establish し、既存の `GS` prefix を `SG` source へ移すことを勧告した出来事である。根拠文書は `IRG N2926` である。
+IRG Meeting #66 Recommendation M66.16 は、new normative `kIRG_SGSource` property を establish し、既存の `GS` prefix を `SG` source へ移すことを勧告した出来事である。根拠文書は [IRG N2926](../documents/irg-n2926.md) である。
 
 ## 背景
 
-`IRG N2926` は、Singapore characters が `kIRG_GSource` の中に `GS` prefix として置かれていることを問題にした。Singapore が IRG encoding work に参加していない状態で、GS-source glyph issues を誰が処理するかが曖昧になるため、Singapore 専用 source property として `kIRG_SGSource` を設ける案が出された。
+[IRG N2926](../documents/irg-n2926.md) は、Singapore characters が `kIRG_GSource` の中に `GS` prefix として置かれていることを問題にした。Singapore が IRG encoding work に参加していない状態で、GS-source glyph issues を誰が処理するかが曖昧になるため、Singapore 専用 source property として `kIRG_SGSource` を設ける案が出された。
 
 ## 結果
 

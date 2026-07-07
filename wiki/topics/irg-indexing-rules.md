@@ -24,8 +24,8 @@ IRG Meeting #67 agenda では、Updated UCV and NUCV Lists、Consolidated FS & S
 | --- | --- | --- | --- |
 | 2026-03 | IRG | `IRG N2909` | M66.04 が updated UCV / NUCV examples を provisionally accept し、`IRG N2931` の準備と review schedule を置いた。 |
 | 2026-03 | IRG | `IRG N2909` | M66.18 が `IRG N2862R2` を previous FS / SC documents の replacement として accept し、final `IRG N2951` の準備を求めた。 |
-| 2026-03 | IRG | `IRG N2909` | M66.19 が `IRG N2925` をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
-| 2026-04 | IRG | `IRG N2951` | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
+| 2026-03 | IRG | `IRG N2909` | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
+| 2026-04 | IRG | [IRG N2951](../documents/irg-n2951.md) | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
 | 2026-07 | IRG | `IRG N2935` | Meeting #67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
 
 ## 主な論点
@@ -36,17 +36,19 @@ IRG Meeting #67 agenda では、Updated UCV and NUCV Lists、Consolidated FS & S
 
 ### FS / SC guidelines
 
-`IRG N2951` は、previous documents `IRG N954AR`、`IRG N1105`、`IRG N2171`、`IRG N2221` を置き換える consolidated FS & SC guidelines である。entry syntax は stroke count、first stroke value、ordering letter を組み合わせる形式で、FS は Annex K の values と dotted circle を使う。agenda は、この document が 2026-04-02 に posted され、IWDS Series 1 に追加されたと記録している。
+[IRG N2951](../documents/irg-n2951.md) は、previous documents `IRG N954AR`、`IRG N1105`、`IRG N2171`、`IRG N2221` を置き換える consolidated FS & SC guidelines である。entry syntax は stroke count、first stroke value、ordering letter を組み合わせる形式で、FS は Annex K の values と dotted circle を使う。agenda は、この document が 2026-04-02 に posted され、IWDS Series 1 に追加されたと記録している。
 
 ### radical assignment rules
 
-`IRG N2925` は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
+[IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
 
-`IRG N2925` は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG #66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting #67 agenda と catalog には `IRG N2952` が載っているため、内容の精読は後続確認とする。
+[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG #66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting #67 agenda と catalog には `IRG N2952` が載っているが、2026-07-08 の取得時点で registry URL は 404 だったため、内容の精読は後続確認とする。
 
 ## 関連文書
 
 - [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG N2925](../documents/irg-n2925.md)
+- [IRG N2951](../documents/irg-n2951.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 
@@ -67,4 +69,4 @@ IRG Meeting #67 agenda では、Updated UCV and NUCV Lists、Consolidated FS & S
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
-- `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>
+- `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>（2026-07-08 取得時点で 404）

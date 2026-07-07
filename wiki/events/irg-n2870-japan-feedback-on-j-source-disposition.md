@@ -17,11 +17,11 @@ timestamp: 2026-07-06T23:30:00+09:00
 
 ## 概要
 
-`IRG N2870` は、Japan NB が `IRG N2859` の J-source disposition recommendations に回答した出来事である。Japan NB は、published encoded characters には disunification を適用しないという原則を再確認し、複数の code point について current status を維持すべきと述べた。
+[IRG N2870](../documents/irg-n2870.md) は、Japan NB が [IRG N2859](../documents/irg-n2859.md) の J-source disposition recommendations に回答した出来事である。Japan NB は、published encoded characters には disunification を適用しないという原則を再確認し、複数の code point について current status を維持すべきと述べた。
 
 ## 背景
 
-`IRG N2859` は、J-source representative glyph と source reference の整合性を改善するため、`kIRG_JSource` value や関連 Unihan properties の変更案を示していた。これに対し、Japan NB は符号化済み文字の安定性を優先する立場から回答した。
+[IRG N2859](../documents/irg-n2859.md) は、J-source representative glyph と source reference の整合性を改善するため、`kIRG_JSource` value や関連 Unihan properties の変更案を示していた。これに対し、Japan NB は符号化済み文字の安定性を優先する立場から回答した。
 
 ## 結果
 

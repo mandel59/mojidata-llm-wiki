@@ -16,13 +16,13 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 `kIRG_SGSource` は、Singapore characters を `kIRG_GSource` から分離して扱うために提案された新しい normative IRG source property である。現在の `GS` source prefix は G-source の中に置かれているが、Singapore が IRG encoding work に参加していない状態で、GS-source glyph issues を誰が処理するかが問題になっていた。
 
-`IRG N2926` は、`SG-[0-9A-F]{4}` という syntax を持つ `kIRG_SGSource` を設け、既存の `GS` prefix を `SG` prefix に移すことを提案した。
+[IRG N2926](../documents/irg-n2926.md) は、`SG-[0-9A-F]{4}` という syntax を持つ `kIRG_SGSource` を設け、既存の `GS` prefix を `SG` prefix に移すことを提案した。
 
 ## 経緯
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-02 | IRG | `IRG N2926` | Eiso Chan が new normative `kIRG_SGSource` property を提案。 |
+| 2026-02 | IRG | [IRG N2926](../documents/irg-n2926.md) | Eiso Chan が new normative `kIRG_SGSource` property を提案。 |
 | 2026-03 | IRG | `IRG N2909` | [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)。 |
 | 2026-05 | IRG / WG2 | `IRG N2935` | agenda は、IRG Convenor が `IRG N2926` を WG2 #73 へ提出したと記録。 |
 | 2026-06 | WG2 / SC2 | `IRG N2935` | agenda は、WG2 が追加を recommend し、SC2 が ISO/IEC 10646 Seventh Edition Amendment 1 として accept したと記録。 |
@@ -32,11 +32,11 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ### GS-source の扱い
 
-`IRG N2926` は、既存 code charts / UAX #38 にある `GS Singapore Characters` を、G-source ではなく Singapore 専用 source として扱うべきだとする。これにより、`kIRG_GSource` の syntax / description から `GS` prefix を外し、current GS-prefixed references は `SG` prefix に移る。
+[IRG N2926](../documents/irg-n2926.md) は、既存 code charts / UAX #38 にある `GS Singapore Characters` を、G-source ではなく Singapore 専用 source として扱うべきだとする。これにより、`kIRG_GSource` の syntax / description から `GS` prefix を外し、current GS-prefixed references は `SG` prefix に移る。
 
 ### U+48B4 の扱い
 
-`IRG N2926` は、U+48B4 の GS-2151 glyph issue を例に、GS-source glyph をそのまま維持すべきか、別の G-source reference へ変更すべきかを挙げている。提案では、original GS-2151 glyph を new SG-2151 glyph として U+9097 へ移し、U+48B4 の G-source reference は China が同意すれば `GKX-1268.18` に変える案が示されている。
+[IRG N2926](../documents/irg-n2926.md) は、U+48B4 の GS-2151 glyph issue を例に、GS-source glyph をそのまま維持すべきか、別の G-source reference へ変更すべきかを挙げている。提案では、original GS-2151 glyph を new SG-2151 glyph として U+9097 へ移し、U+48B4 の G-source reference は China が同意すれば `GKX-1268.18` に変える案が示されている。
 
 ### target version
 
@@ -45,6 +45,7 @@ Meeting #67 agenda の current status では、WG2 と SC2 の acceptance を経
 ## 関連文書
 
 - [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG N2926](../documents/irg-n2926.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 
 ## 関連出来事

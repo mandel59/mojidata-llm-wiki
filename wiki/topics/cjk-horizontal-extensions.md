@@ -24,7 +24,7 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2019-05 | IRG / WG2 | `IRG N2369R` / `WG2 N5085` | UAX #45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
-| 2026-03 | IRG | `IRG N2929` | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
+| 2026-03 | IRG | [IRG N2929](../documents/irg-n2929.md) | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
 | 2026-03 | IRG | `IRG N2909` | M66.09 が `IRG N2929` の review と revised document `IRG N2929R` の準備を action item 化。 |
 | 2026-06 | IRG | `IRG N2960` | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
 | 2026-07 | IRG / UTC | `IRG N2961` / `L2/26-147` | UTC が 40 CJK Unified Ideographs への `kIRG_USource` value と U-source representative glyph 追加を提案。 |
@@ -34,9 +34,9 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 
 ### G-source 9156 characters
 
-`IRG N2929` は、中国の official geographical names、personal names、philological monographs、dictionaries、periodicals、local gazetteers などを根拠に、G-source reference を持たない 9156 encoded characters へ `GCW-Source` を追加する提案である。内訳は URO 18、Extension A 162、Extension B 3069、Extension C 421、Extension D 27、Extension E 378、Extension F 2796、Extension G 1543、Extension H 359、Extension J 383 とされる。
+[IRG N2929](../documents/irg-n2929.md) は、中国の official geographical names、personal names、philological monographs、dictionaries、periodicals、local gazetteers などを根拠に、G-source reference を持たない 9156 encoded characters へ `GCW-Source` を追加する提案である。内訳は URO 18、Extension A 162、Extension B 3069、Extension C 421、Extension D 27、Extension E 378、Extension F 2796、Extension G 1543、Extension H 359、Extension J 383 とされる。
 
-`IRG N2909` の M66.09 は、IRG experts が 2026-08-28 までに China へ feedback を送り、China が 2026-09-25 までに `IRG N2929R` を提出する schedule を置いた。Meeting #67 では revised version の受理が期待されている。
+[IRG N2909](../documents/irg-n2909.md) の M66.09 は、IRG experts が 2026-08-28 までに China へ feedback を送り、China が 2026-09-25 までに `IRG N2929R` を提出する schedule を置いた。Meeting #67 では revised version の受理が期待されている。
 
 ### UK horizontal extension
 
@@ -52,6 +52,7 @@ IRG Meeting #67 agenda では、China の `G-source` 9156 characters、UK の 2 
 
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
+- [IRG N2929](../documents/irg-n2929.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [UAX #45 / U-Source Ideographs](uax45-u-source-ideographs.md)

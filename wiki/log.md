@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Added IRG source document pages for J-source disposition, `kIRG_SGSource`, G-source horizontal extension, WS2024 v5, radical assignment rules, and FS / SC guidelines; noted registry 404s for `IRG N2933` and `IRG N2952`.
 - **Tooling**: Added `tools/find_digest_candidates.py` to rank available catalog documents referenced from wiki frontmatter or body text but missing Source Document pages, with topic filters, topic exclusion, source-type filters, and JSON output.
 - **Digest**: Continued Kana source coverage with early Hentaigana, Small Kana, YE / HENTAIGANA「江」, and ARCHAIC WU documents, and updated wiki relation resolution to follow document-number aliases.
 - **Review**: Investigated proposal pages with weak downstream discussion links, adding `L2/26-093` minutes as a decision source, recording confirmed U-source outcomes for `L2/07-159`, `L2/11-439`, and `IRG N2439`, and marking 2025 Japanese ideograph proposals as pending where current catalog/cache show no UTC decision.

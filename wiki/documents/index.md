@@ -66,13 +66,20 @@
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG #65 recommendations; CJK Hybrid Characters policy。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
+- [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
+- [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2909](irg-n2909.md) - IRG Meeting #66 recommendations and action items。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
+- [IRG N2925](irg-n2925.md) - Primary / Secondary Radical assignment rules proposal。
+- [IRG N2926](irg-n2926.md) - `kIRG_SGSource` normative property proposal。
+- [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
+- [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
 - [IRG N2935](irg-n2935.md) - IRG Meeting #67 schedule and agenda。
+- [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting #72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
