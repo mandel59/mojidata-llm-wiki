@@ -97,6 +97,10 @@ def validate_concept(path: Path, text: str) -> list[str]:
         errors.append(f"{path}: concept document is missing non-empty type")
     if "kind" in data:
         errors.append(f"{path}: frontmatter key kind is deprecated; use type")
+    for identity_key in ["slug", "entry_id"]:
+        identity_value = data.get(identity_key)
+        if isinstance(identity_value, str) and identity_value and identity_value != path.stem:
+            errors.append(f"{path}: filename stem must match {identity_key}: {identity_value}")
 
     tags = data.get("tags")
     if tags is not None and not isinstance(tags, list):

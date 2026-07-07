@@ -48,7 +48,7 @@ Meeting #67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ideo
 
 ## 関連文書
 
-- [IRG Meeting #67](../meetings/irg/meeting-67.md)
+- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [CJKV Components](cjkv-components.md)

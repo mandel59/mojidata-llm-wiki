@@ -36,7 +36,7 @@ WG2 Meeting #72 は、`WG2 N5296` の JMJ-source related glyph issues を errata
 
 - [J-source and JMJ Source Issues](../topics/j-source.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
-- [WG2 Meeting #72](../meetings/wg2/meeting-72.md)
+- [WG2 Meeting #72](../meetings/wg2/wg2-meeting-72.md)
 - [Japan](../people/japan.md)
 
 ## 出典

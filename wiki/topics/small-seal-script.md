@@ -73,8 +73,8 @@ Unicode 18.0 draft release page と beta review page では、Seal が Unicode 1
 - [WG2 N5348](../documents/wg2-n5348.md) - modern CJK / `zhèngzì`（正字）feedback summary
 - [WG2 N5355](../documents/wg2-n5355.md) - `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification
 - [WG2 N5369](../documents/wg2-n5369.md) - CD.4 disposition of comments
-- [WG2 meeting #72](../meetings/wg2/meeting-72.md)
-- [WG2 meeting #73](../meetings/wg2/meeting-73.md)
+- [WG2 meeting #72](../meetings/wg2/wg2-meeting-72.md)
+- [WG2 meeting #73](../meetings/wg2/wg2-meeting-73.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 

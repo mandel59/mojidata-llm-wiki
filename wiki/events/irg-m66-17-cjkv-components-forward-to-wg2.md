@@ -35,8 +35,8 @@ M66.17 により、CJK Unified Ideographs Components-A / B は IRG から WG2 �
 ## 関連ページ
 
 - [CJKV Components](../topics/cjkv-components.md)
-- [IRG Meeting #66](../meetings/irg/meeting-66.md)
-- [IRG Meeting #67](../meetings/irg/meeting-67.md)
+- [IRG Meeting #66](../meetings/irg/irg-meeting-66.md)
+- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG](../people/irg.md)
 - [WG2](../people/wg2.md)
 

@@ -105,8 +105,8 @@ IRG #66 Recommendation M66.17 による WG2 forwarding は [IRG M66.17 CJKV Comp
 - [IRG N2890](../documents/irg-n2890.md) - individual feedback to add components
 - `IRG N2895` - feedback on `IRG N2878R`
 - [IRG N2917](../documents/irg-n2917.md) - feedback on IRG N2878R2
-- [IRG Meeting #66](../meetings/irg/meeting-66.md)
-- [IRG Meeting #67](../meetings/irg/meeting-67.md)
+- [IRG Meeting #66](../meetings/irg/irg-meeting-66.md)
+- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 
 ## 関連出来事

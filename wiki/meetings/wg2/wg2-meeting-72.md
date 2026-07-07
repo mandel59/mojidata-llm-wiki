@@ -42,7 +42,7 @@ Appreciation M72.21 は、IPSJ/ITSCJ を JISC から accredited された Japane
 - `WG2 N5348` modern CJK value feedback
 - [WG2 M72.13 Small Seal future edition candidate](../../events/wg2-m72-13-small-seal-future-candidate.md)
 - [WG2 M72.07 J-source glyph revert recommendation](../../events/wg2-m72-07-j-source-glyph-revert.md)
-- [WG2 meeting #73](meeting-73.md)
+- [WG2 meeting #73](wg2-meeting-73.md)
 
 ## 出典
 

@@ -36,7 +36,7 @@ M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source へ
 
 - [kIRG_SGSource](../topics/kirg-sgsource.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
-- [IRG Meeting #66](../meetings/irg/meeting-66.md)
+- [IRG Meeting #66](../meetings/irg/irg-meeting-66.md)
 - [IRG](../people/irg.md)
 - [WG2](../people/wg2.md)
 - [Eiso Chan](../people/eiso-chan.md)

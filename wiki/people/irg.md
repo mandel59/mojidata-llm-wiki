@@ -21,7 +21,7 @@ IRG は、CJK Unified Ideographs の review、IRG Working Set、source reference
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `IRG N2909` | IRG Meeting #66 Recommendations and Action Items。Meeting #67 の follow-up 項目の一次ソース。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md), [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
-| `IRG N2935` | IRG Meeting #67 Schedule & Agenda。次回会合の議題入口。 | [IRG Meeting #67](../meetings/irg/meeting-67.md) |
+| `IRG N2935` | IRG Meeting #67 Schedule & Agenda。次回会合の議題入口。 | [IRG Meeting #67](../meetings/irg/irg-meeting-67.md) |
 
 ## 関連文書
 

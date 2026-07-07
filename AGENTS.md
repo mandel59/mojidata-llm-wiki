@@ -62,6 +62,7 @@ tools/
 - `log.md` は `## YYYY-MM-DD` の date heading と flat list の entries を新しい日付順に置く。
 - `index.md` と `log.md` 以外の `.md` は concept document とし、YAML frontmatter に非空の `type` を必ず持つ。
 - 種別は `type` に統一し、`kind` は使わない。`entry_id`、`documents`、`topics`、`bodies` などは producer-defined extension として保持してよい。
+- `slug` または `entry_id` を持つ concept document は、ファイル名 stem をその値に一致させる。
 - `tags` は YAML list とする。外部根拠は本文末尾の `## 出典` に公開 URL と `entry_id` を残す。
 - wiki 内リンクからローカル `.cache/`、`raw/`、`downloads/` へリンクしない。
 

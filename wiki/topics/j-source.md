@@ -63,7 +63,7 @@ WG2 #72 での処理結果は [WG2 M72.07 J-source glyph revert recommendation](
 - `WG2 N5221` - Japan NB の JMJ-source horizontal extension request。
 - `IRG N2722` - JMJ horizontal extension issue report。
 - `WG2 N5296` - JMJ-source related glyph issues。
-- [WG2 Meeting #72](../meetings/wg2/meeting-72.md) - M72.07 J-source glyph correction。
+- [WG2 Meeting #72](../meetings/wg2/wg2-meeting-72.md) - M72.07 J-source glyph correction。
 - `IRG N2859` - J-source disposition recommendations。
 - `IRG N2870` - Japan NB comment on `IRG N2859`。
 

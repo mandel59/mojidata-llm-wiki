@@ -44,7 +44,7 @@ Meeting #67 agenda の current status では、WG2 と SC2 の acceptance を経
 
 ## 関連文書
 
-- [IRG Meeting #67](../meetings/irg/meeting-67.md)
+- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 
 ## 関連出来事

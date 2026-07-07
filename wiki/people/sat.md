@@ -20,7 +20,7 @@ SAT は、大蔵経テキストデータベースに関わる organization / sou
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
-| `IRG N2935` | Meeting #67 host として SAT Daizōkyō Text Database Committee を記録。WS2024 Version 5.0 の SAT-source items も agenda に含まれる。 | [IRG Meeting #67](../meetings/irg/meeting-67.md) |
+| `IRG N2935` | Meeting #67 host として SAT Daizōkyō Text Database Committee を記録。WS2024 Version 5.0 の SAT-source items も agenda に含まれる。 | [IRG Meeting #67](../meetings/irg/irg-meeting-67.md) |
 | `IRG N2959` | SAT-source glyphs に関する issue document。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
 
 ## 関連文書
@@ -30,7 +30,7 @@ SAT は、大蔵経テキストデータベースに関わる organization / sou
 
 ## 関連トピック
 
-- [IRG Meeting #67](../meetings/irg/meeting-67.md)
+- [IRG Meeting #67](../meetings/irg/irg-meeting-67.md)
 - [IRG Working Set 2024](../topics/irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 

@@ -21,7 +21,7 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `L2/22-279`, `L2/25-049`, `L2/25-111` | Small Seal Script の source mapping、repertoire 整理、converging proposal。 | [Small Seal Script](../topics/small-seal-script.md) |
-| `L2/26-092`, `L2/26-093` | UTC Meeting #187 agenda / minutes。 | [UTC Meeting #187](../meetings/utc/meeting-187.md) |
+| `L2/26-092`, `L2/26-093` | UTC Meeting #187 agenda / minutes。 | [UTC Meeting #187](../meetings/utc/utc-meeting-187.md) |
 | `L2/26-102` | Unicode 18.0 timeline、beta review、ISO/IEC 10646 7th edition synchronization。 | [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md) |
 | `IRG N2961` / `L2/26-147` | U-source horizontal extension として 40 CJK Unified Ideographs への `kIRG_USource` values と U-source representative glyphs を提案。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
 | `L2/26-099`, `L2/26-105`, `L2/26-112`, `L2/26-134`, `L2/26-148` | Unihan database、UAX #38、UTS #37、radical / stroke data の保守。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
@@ -53,8 +53,8 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 
 - [Small Seal Script](../topics/small-seal-script.md)
 - [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md)
-- [UTC Meeting #187](../meetings/utc/meeting-187.md)
-- [UTC Meeting #188](../meetings/utc/meeting-188.md)
+- [UTC Meeting #187](../meetings/utc/utc-meeting-187.md)
+- [UTC Meeting #188](../meetings/utc/utc-meeting-188.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
