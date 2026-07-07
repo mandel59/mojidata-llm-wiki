@@ -1,12 +1,12 @@
 ---
 type: Topic
 title: Kana
-description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名、Unihan kJapanese readings を追跡する topic。"
+description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名を追跡する topic。"
 slug: kana
 bodies: [UTC, WG2]
-documents: [utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-22-181, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r, utc-l2-25-213]
+documents: [utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
 status: active
-tags: [kana, hiragana, katakana, hentaigana, unihan]
+tags: [kana, hiragana, katakana, hentaigana]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
 
@@ -14,7 +14,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 概要
 
-Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extended-A などに関わる仮名の標準化議論を束ねる topic である。近年の論点は、歴史的資料を写すための合略仮名（合字的な kana ligatures）、小書き仮名、明治期の alternate Katakana、Unihan `kJapanese` readings の仮名表記に分かれる。
+Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extended-A などに関わる仮名の標準化議論を束ねる topic である。近年の論点は、歴史的資料を写すための合略仮名（合字的な kana ligatures）、小書き仮名、明治期の alternate Katakana などに分かれる。
 
 この topic では、仮名文字・仮名由来文字・仮名を使う表記体系に関わる Unicode / ISO/IEC 10646 上の論点を扱う。日本語史資料に限らず、Ryukyuan languages の superscript Katakana や Taiwanese Kana なども kana usage として関連するが、個別の大きな proposal は別 topic に分ける余地がある。
 
@@ -39,7 +39,6 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2019-11-21 | UTC | [L2/19-381](../documents/utc-l2-19-381.md) | Abraham Gross が Missing Japanese Kana として YI / WU / YE 系 kana と KATAKANA LETTER SMALL WU を提案。 |
 | 2019-11-22 | UTC | [L2/19-382](../documents/utc-l2-19-382.md) | Alexander Zapryagaev が Late Middle Japanese の final -t を転写する HENTAIGANA LETTER SMALL TU-2 を提案。 |
 | 2020-06-25 | UTC | [L2/20-152](../documents/utc-l2-20-152.md) | Abraham Gross が HIRAGANA LETTER ARCHAIC WU の origin character を U+6C59 汙とする annotation を推奨。 |
-| 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、readings を hiragana / katakana で表す property とする。 |
 | 2023-04-25 | UTC | [L2/23-112](../documents/utc-l2-23-112.md) | Gen Kojitani が missing kana ligatures を広く提案。合略仮名を複数 kana の単なる連綿と区別する criteria を提示。 |
 | 2023-05-08 | UTC | [L2/23-118](../documents/utc-l2-23-118.md) | Gen Kojitani が Ryukyuan languages 用 superscript katakana letters 8 characters を提案。 |
 | 2023-05-25 | UTC | [L2/23-123](../documents/utc-l2-23-123.md) | Eiso Chan が `L2/23-118` へ feedback を出し、usage stability、vertical layout、提出主体などの確認を求めた。 |
@@ -50,7 +49,6 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2025-01-15 | UTC | [L2/25-036](../documents/utc-l2-25-036.md) | CheonHyeong Sim が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |
 | 2025-01-16 / 2025-02-24 | UTC | [L2/25-042](../documents/utc-l2-25-042.md), [L2/25-060](../documents/utc-l2-25-060.md) | Kentaro Bimbatti が KATAKANA LETTER SMALL NE を提案し、広告・看板・表紙資料の attestations を追加。 |
 | 2025-05-23 | UTC | [L2/25-151R](../documents/utc-l2-25-151r.md) | Eiso Chan が KATAKANA LETTER ALTERNATE NE / WI を提案。明治期活字・教科書資料を根拠とし、current Katakana / Hentaigana との統合不可を主張。 |
-| 2025-08-19 | UTC | [L2/25-213](../documents/utc-l2-25-213.md) | HarJIT が Unihan `kJapanese` に含まれる Katakana kun'yomi を調査し、property value / definition の修正を提案。 |
 
 ## 主な論点
 
@@ -94,12 +92,6 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 
 [L2/23-123](../documents/utc-l2-23-123.md) は、この proposal に対して usage stability、running text、vertical layout、UAX #50、地方政府公式 orthography と Japan NB / Okinawa Prefecture の提出主体などを確認すべきだと指摘した。この論点は、kana repertoire そのものだけでなく、地域言語表記政策を Unicode proposal としてどう担保するかに関わる。
 
-### Unihan kJapanese と kana readings
-
-[L2/22-181](../documents/utc-l2-22-181.md) は `kJapanese` を Moji Jōhō Kiban 由来の Japanese readings property として提案し、hiragana は概ね kun'yomi（訓読み）、katakana は概ね on'yomi（音読み）と説明した。`L2/25-213` は、この説明には例外があり、Katakana で表記された kun'yomi が存在すると指摘する。
-
-この論点は kana character encoding ではなく Unihan data maintenance だが、仮名表記を機械可読データに落とす際の基準に関わる。[Unihan Database Maintenance](unihan-database-maintenance.md) と併せて追跡する。
-
 ## 関連文書
 
 - [L2/07-421](../documents/utc-l2-07-421.md) - HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
@@ -107,7 +99,6 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - [L2/15-239](../documents/utc-l2-15-239.md) / [L2/15-343](../documents/utc-l2-15-343.md) / [L2/16-188](../documents/utc-l2-16-188.md) - Hentaigana proposal と revised repertoire。
 - [L2/16-334](../documents/utc-l2-16-334.md) / [L2/16-354](../documents/utc-l2-16-354.md) / [L2/16-358R](../documents/utc-l2-16-358r.md) / [L2/17-091](../documents/utc-l2-17-091.md) - Small Kana Characters の proposal、feedback、Japan NB contribution。
 - [L2/19-381](../documents/utc-l2-19-381.md) / [L2/19-382](../documents/utc-l2-19-382.md) / [L2/20-152](../documents/utc-l2-20-152.md) - missing kana、Late Middle Japanese transcription 用 kana、ARCHAIC WU の origin character annotation。
-- [L2/22-181](../documents/utc-l2-22-181.md) - Unihan `kJapanese` property。
 - [L2/23-112](../documents/utc-l2-23-112.md) - missing Kana-Ligatures の広い proposal。
 - [L2/23-118](../documents/utc-l2-23-118.md) / [L2/23-123](../documents/utc-l2-23-123.md) - Ryukyuan superscript Katakana proposal と feedback。
 - [L2/23-127](../documents/utc-l2-23-127.md) - alternate Katakana NE / WI の introduction。
@@ -117,12 +108,10 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - [L2/25-036](../documents/utc-l2-25-036.md) - KATAKANA LETTER SMALL ARCHAIC YE。
 - [L2/25-042](../documents/utc-l2-25-042.md) / [L2/25-060](../documents/utc-l2-25-060.md) - KATAKANA LETTER SMALL NE。
 - [L2/25-151R](../documents/utc-l2-25-151r.md) - KATAKANA LETTER ALTERNATE NE / WI。
-- [L2/25-213](../documents/utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
 
 ## 関連トピック
 
 - [CJK Hybrid Characters](cjk-hybrid-characters.md)
-- [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 
 ## 出典
@@ -142,7 +131,6 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - `utc-l2-19-381` - <https://www.unicode.org/L2/L2019/19381-missing-kana.pdf>
 - `utc-l2-19-382` - <https://www.unicode.org/L2/L2019/19382-mid-japanese-kana.pdf>
 - `utc-l2-20-152` - <https://www.unicode.org/L2/L2020/20152-archaic-wu-origin.pdf>
-- `utc-l2-22-181` - <https://www.unicode.org/L2/L2022/22181-unihan-kjapanese.pdf>
 - `utc-l2-23-112` - <https://www.unicode.org/L2/L2023/23112-missing-kana-ligatures.pdf>
 - `utc-l2-23-118` - <https://www.unicode.org/L2/L2023/23118-ryukyu-kana.pdf>
 - `utc-l2-23-123` - <https://www.unicode.org/L2/L2023/23123-ryukyu-kana-feedback.pdf>
@@ -154,4 +142,3 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / `WG2 N4674` は、Japa
 - `utc-l2-25-042` - <https://www.unicode.org/L2/L2025/25042-katakana-letter-small-ne.pdf>
 - `utc-l2-25-060` - <https://www.unicode.org/L2/L2025/25060-katakana-letter-small-ne.pdf>
 - `utc-l2-25-151r` - <https://www.unicode.org/L2/L2025/25151r-katakana-ne-wi.pdf>
-- `utc-l2-25-213` - <https://www.unicode.org/L2/L2025/25213-katakana_kun-yomi.pdf>

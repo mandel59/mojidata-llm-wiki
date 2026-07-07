@@ -21,7 +21,7 @@ Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `L2/11-439` / `IRG N1825R` | Adobe-Japan1-6 由来 ideographs の `AJ1` source reference を `kIRG_USource` に立てる提案。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
-| `L2/22-181` | Moji Jōhō Kiban 由来の kana readings を Unihan `kJapanese` property として提案。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [Kana](../topics/kana.md) |
+| `L2/22-181` | Moji Jōhō Kiban 由来の kana readings を Unihan `kJapanese` property として提案。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 | `L2/25-199` | UAX #45 Revision 31 proposed update の editor。 | [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 | `L2/26-099` | CJK & Unihan Working Group Recommendations for UTC #187 の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [UAX #45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 | `L2/26-105` | Proposed Update UAX #38, Unicode Han Database の source。 | [Unihan Database Maintenance](../topics/unihan-database-maintenance.md), [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md) |

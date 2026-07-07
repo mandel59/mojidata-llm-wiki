@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Refine**: Moved `L2/25-213` and the broader Unihan `kJapanese` reading discussion out of [Kana](topics/kana.md) and kept it under [Unihan Database Maintenance](topics/unihan-database-maintenance.md).
 - **Refine**: Normalized the chronology table in [Kana](topics/kana.md) so document cells use links and event descriptions are led by the document submitter.
 - **Ingest**: Implemented topic split issue #8 by adding [Unihan Data Format and Property Syntax](topics/unihan-data-format-and-property-syntax.md), digesting `L2/26-112`, `L2/26-134`, and `L2/26-148`, and linking UAX #38 / UTS #37 / RSIndex.txt / `kTotalStrokes` data-format updates from Unihan, Unicode 18.0, IRG indexing, and UTC pages.
 - **Ingest**: Implemented topic split issue #7 by adding [UCV and NUCV Lists](topics/ucv-nucv-lists.md), digesting `IRG N2931`, and linking the unification-policy angle from IRG indexing, CJKV Components, Unihan maintenance, and Meeting #67 pages.
