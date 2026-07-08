@@ -9,7 +9,7 @@ meeting: 187
 date: "2026-04-21/23"
 location: Hybrid online/in-person
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-126]
-topics: [unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
+topics: [unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
 events: [utc-187-uax45-futurews-additions]
 tags: [meeting, utc, unicode-18, beta, cjk]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -28,6 +28,7 @@ UTC Meeting \#187 は 2026-04-21/23 に hybrid online/in-person meeting とし�
 - [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [L2/26-096](../../documents/utc-l2-26-096.md) の PAG recommendations、UCD properties、line breaking、segmentation、collation、security data。
 - [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-100](../../documents/utc-l2-26-100.md) の SEW recommendations、provisional assignments、保留中の script model issues。
 - [Emoji Interoperability and Intake](../../topics/emoji-interoperability-and-intake.md) - [L2/26-098](../../documents/utc-l2-26-098.md) の ESR report、monarch butterfly feedback、CLDR keyword intake。
+- [Emoji Repertoire Proposals](../../topics/emoji-repertoire-proposals.md) - Unicode 18.0 final emoji candidates と U+1FAEB CRACKING FACE name change。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099`、`L2/26-105`、`L2/26-112` などの Unihan / UAX \#38 / UTS \#37 changes。
 - [Unihan Data Format and Property Syntax](../../topics/unihan-data-format-and-property-syntax.md) - UAX \#38 / UTS \#37 の data format / property syntax 更新。
 - [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX \#45 additions。

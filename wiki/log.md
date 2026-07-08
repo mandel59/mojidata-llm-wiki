@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Added the [Emoji](families/emoji.md) family and [Emoji Repertoire Proposals](topics/emoji-repertoire-proposals.md), digesting `L2/25-230R`, `L2/25-252` through `L2/25-259`, `L2/26-008R`, and `L2/26-048` to connect Unicode 18.0 emoji candidates, CRACKING FACE replacement, UTS \#51, CLDR keyword intake, and ESR interoperability review.
 - **Digest**: Added Source Document pages for `L2/24-109`, `L2/26-040R2`, `L2/26-089`, `L2/26-117`, `L2/26-118`, `L2/26-119`, and `L2/26-120`, opened [Shaaldaa Script](topics/shaaldaa-script.md), and linked SEW / WG2 Amendment 1 follow-up for Shaaldaa, Belarusian Ruble sign, Latin phonetic additions, and U+06C4 glyph correction.
 - **Digest**: Added Source Document pages for `L2/25-131`, `L2/26-062`, `L2/26-065`, `L2/26-070R`, `L2/26-079`, `L2/26-104`, and `L2/26-110`, linking SEW, PAG, ESR, Indic rendering, and Leibnizian / historic symbols topics; `IRG N2952`, `IRG N2933`, and `L2/26-109` remain blocked by unavailable or unusable source extraction.
 - **Digest**: Added Source Document pages for `L2/25-100`, `L2/26-068`, and `L2/26-111`, and opened [East Asian Spacing](topics/east-asian-spacing.md) and [Unicode Set Notation](topics/unicode-set-notation.md) as newly extracted topic candidates from unresolved recent document references.

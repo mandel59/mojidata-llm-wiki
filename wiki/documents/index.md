@@ -104,8 +104,19 @@
 - [L2/25-151R](utc-l2-25-151r.md) - KATAKANA LETTER ALTERNATE NE / WI。
 - [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
 - [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX \#45 に追加する提案。
+- [L2/25-230R](utc-l2-25-230r.md) - UTC \#185 ESR report and Unicode 18.0 emoji short list。
+- [L2/25-252](utc-l2-25-252.md) - LEFTWARDS / RIGHTWARDS THUMB SIGN emoji proposal。
+- [L2/25-253](utc-l2-25-253.md) - PICKLE emoji proposal。
+- [L2/25-254](utc-l2-25-254.md) - MONARCH BUTTERFLY emoji proposal。
+- [L2/25-255](utc-l2-25-255.md) - ERASER emoji proposal。
+- [L2/25-256](utc-l2-25-256.md) - LIGHTHOUSE emoji proposal。
+- [L2/25-257](utc-l2-25-257.md) - METEOR emoji proposal。
+- [L2/25-258](utc-l2-25-258.md) - NET WITH HANDLE emoji proposal。
+- [L2/25-259](utc-l2-25-259.md) - Squinting Face emoji proposal replaced by CRACKING FACE。
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
 - [L2/26-062](utc-l2-26-062.md) - Indian languages の rendering / input / search / processing report。
+- [L2/26-008R](utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
+- [L2/26-048](utc-l2-26-048.md) - CRACKING FACE emoji proposal。
 - [L2/26-065](utc-l2-26-065.md) - Initial Teaching Alphabet 用 LATIN SMALL LETTER ZH proposal。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。

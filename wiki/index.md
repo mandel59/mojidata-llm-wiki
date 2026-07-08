@@ -44,6 +44,7 @@ okf_version: "0.1"
 - [Unihan Data Format and Property Syntax](topics/unihan-data-format-and-property-syntax.md) - UAX \#38 / UTS \#37 / RSIndex.txt / kTotalStrokes など Unihan 周辺 data format と property syntax の更新論点。
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts、Amendment 1 project。
 - [Emoji Interoperability and Intake](topics/emoji-interoperability-and-intake.md) - UTC \#187 ESR report を入口にした emoji interoperability、CLDR keyword、intake process。
+- [Emoji Repertoire Proposals](topics/emoji-repertoire-proposals.md) - Emoji 18.0 / 19.0 に向けた個別 emoji proposal、ESR short list、final candidate name の整理。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#187 SEW report を入口にした script proposal の progression、保留、安定性論点。
 - [Shaaldaa Script](topics/shaaldaa-script.md) - Oromo 用 Shaaldaa script の UCS 符号化提案と ISO/IEC 10646 Amendment 1 candidate としての扱い。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
@@ -60,6 +61,7 @@ okf_version: "0.1"
 ## Current Families
 
 - [Han Ideographic Scripts](families/han-ideographic-scripts.md) - Han / ideographic 系の script、source data、component、indexing rules を束ねる synthesis。
+- [Emoji](families/emoji.md) - Emoji repertoire、UTS \#51、ESR intake、CLDR keyword / RGI data、interoperability を束ねる synthesis。
 
 ## Source Entry Points
 
