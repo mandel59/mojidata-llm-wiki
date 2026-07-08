@@ -60,4 +60,6 @@ Han / ideographic 系の script、block、source data、variation database、関
 
 ## 関連 family
 
-現時点では未作成。
+- [Script and Notation Proposals](script-and-notation-proposals.md) - Han / ideographic 以外の script proposal と notation proposal を扱う。
+- [Text Model and Core Specification](text-model-and-core-specification.md) - East Asian text model、core spec guidance、publication flow を扱う。
+- [Emoji](emoji.md) - review discipline や release synchronization は共有するが、対象 repertoire と intake process は別。

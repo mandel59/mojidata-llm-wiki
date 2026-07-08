@@ -44,6 +44,8 @@ Emoji family は、emoji character / sequence の追加、UTS \#51 specification
 ## 関連 family
 
 - [Han Ideographic Scripts](han-ideographic-scripts.md) - large data / source evidence / release synchronization の discipline は共有するが、対象 repertoire と review process は別。
+- [Script and Notation Proposals](script-and-notation-proposals.md) - script proposal pipeline は SEW / WG2 を中心に進み、emoji の ESR / UTS \#51 pipeline と分けて読む。
+- [Text Model and Core Specification](text-model-and-core-specification.md) - emoji sequence や variation data と接するが、主題は text model、algorithm、publication artifact である。
 
 ## 出典
 
@@ -51,4 +53,3 @@ Emoji family は、emoji character / sequence の追加、UTS \#51 specification
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-098` - <https://www.unicode.org/L2/L2026/26098-esr-report-utc187.pdf>
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
-
