@@ -24,7 +24,7 @@ V-source representative glyph issues は、Vietnam / Nom evidence に基づく C
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-02-10 | UTC | `L2/26-068` | U+2B8A0 の V-source glyph、`kRSUnicode`、`kTotalStrokes` の変更提案が提出された。 |
+| 2026-02-10 | UTC | [L2/26-068](../documents/utc-l2-26-068.md) | Vietnam が U+2B8A0 の V-source glyph、`kRSUnicode`、`kTotalStrokes` の変更提案を提出した。 |
 | 2026-03-10 | IRG | [IRG N2928](../documents/irg-n2928.md) | Ng Koon Hang が U+268A1 / U+268A2 の現行 component が意図されたものか、U+810A 脊 に戻すべきかを照会した。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.15 が、Vietnam は現行 glyph を意図通りと確認したが、追加 evidence があれば将来 glyph change を提案できると整理した。 |
 | 2026-03-25 | IRG | [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up として、現行形を支持する evidence と、脊 component への normalized form を示す evidence が追加された。 |
@@ -51,7 +51,7 @@ IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 
 
 ## 関連文書
 
-- `L2/26-068` - U+2B8A0 の V-source glyph / property change proposal。
+- [L2/26-068](../documents/utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
 - [L2/26-099](../documents/utc-l2-26-099.md) - UTC \#187 CJK & Unihan Working Group recommendations。
 - [IRG N2928](../documents/irg-n2928.md) - U+268A1 / U+268A2 glyph enquiry。
 - [IRG N2953](../documents/irg-n2953.md) - `IRG N2928` follow-up evidence。

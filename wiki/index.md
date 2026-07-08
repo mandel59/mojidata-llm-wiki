@@ -46,6 +46,8 @@ okf_version: "0.1"
 - [Emoji Interoperability and Intake](topics/emoji-interoperability-and-intake.md) - UTC \#187 ESR report を入口にした emoji interoperability、CLDR keyword、intake process。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#187 SEW report を入口にした script proposal の progression、保留、安定性論点。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
+- [East Asian Spacing](topics/east-asian-spacing.md) - UTR \#59 draft の East Asian visible spacing algorithm と property data。
+- [Unicode Set Notation](topics/unicode-set-notation.md) - UTS \#61 draft の machine-readable Unicode set notation。
 - [Unicode Release Coordination and Publication](topics/unicode-release-coordination-and-publication.md) - Unicode 18.0 beta review に向けた release、charts、editorial、liaison coordination。
 - [East Asian Quotation Marks](topics/east-asian-quotation-marks.md) - East Asian text における quotation marks の core spec guidance、縦横組、地域差。
 - [Chinese Folk Music Notation](topics/chinese-folk-music-notation.md) - Chinese folk music / Xiqu / Quyi notation の musical symbols と format controls。

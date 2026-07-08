@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Added Source Document pages for `L2/25-100`, `L2/26-068`, and `L2/26-111`, and opened [East Asian Spacing](topics/east-asian-spacing.md) and [Unicode Set Notation](topics/unicode-set-notation.md) as newly extracted topic candidates from unresolved recent document references.
 - **Refine**: Split [V-source Representative Glyph Issues](topics/v-source-representative-glyph-issues.md) from the broader IRG source-data topic, linking U+268A1 / U+268A2 evidence review and U+2B8A0 UTC data updates from related documents, meetings, people, and the Han family.
 - **Digest**: Added `IRG N2928` and `IRG N2953` Source Document pages for the U+268A1 / U+268A2 V-source glyph issue, and linked the follow-up chain from IRG Meeting \#66/\#67, source-data, Ng Koon Hang, and Vietnam pages.
 - **Digest**: Continued recent IRG digest work by adding [IRG N2960](documents/irg-n2960.md) for UK-source horizontal extensions and linking it from IRG Meeting \#67, CJK Horizontal Extensions, and UK.
