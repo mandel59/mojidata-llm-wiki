@@ -17,7 +17,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 IRG source data は、CJK Unified Ideographs の code chart、Unihan properties、member body source references を結びつける基盤である。representative glyph の修正、source reference の変更、`kIRG_*Source` property の追加・移動は、既に encoded された文字の identity、検索、chart rendering に影響する。
 
-IRG Meeting \#67 agenda では、IRG \#66 の action items として持ち越された source reference / representative glyph 修正に加え、`IRG N2953` 以降の個別 issue documents が Section 9.1 "Representative Glyph & Source Reference Issues" として束ねられている。
+IRG Meeting \#67 agenda では、IRG \#66 の action items として持ち越された source reference / representative glyph 修正に加え、[IRG N2928](../documents/irg-n2928.md) / [IRG N2953](../documents/irg-n2953.md) 以降の個別 issue documents が Section 9.1 "Representative Glyph & Source Reference Issues" として束ねられている。
 
 G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / feedback chain は、[G-source Glyph and Source Reference Issues](g-source-glyph-and-reference-issues.md) に分割して追う。
 
@@ -25,13 +25,14 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2026-03 | IRG | [IRG N2928](../documents/irg-n2928.md) | U+268A1 / U+268A2 の V-source glyph について、現行 component が意図されたものか、U+810A 脊 に戻すべきかが照会された。 |
 | 2026-03 | IRG | `IRG N2909` | M66.10 から M66.15 が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
+| 2026-03 | IRG | [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
 | 2026-04 | UTC | `L2/26-099` | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
-| 2026-06 | WG2 | `WG2 N5354` | Recommendation M73.02 が `L2/26-099` の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
-| 2026-03 | IRG | `IRG N2953` | `IRG N2928` の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
 | 2026-04 | IRG | [IRG N2954](../documents/irg-n2954.md), [IRG N2955](../documents/irg-n2955.md) | U+2CCA3 の G-source representative glyph が original evidence と合わない問題について、修正提案と feedback が出た。 |
 | 2026-05 | IRG | [IRG N2956](../documents/irg-n2956.md), [IRG N2957](../documents/irg-n2957.md) | Extension C の GBK-source 5 characters について、glyph / source reference 修正案と feedback が出た。 |
 | 2026-06 | IRG | [IRG N2958](../documents/irg-n2958.md), [IRG N2959](../documents/irg-n2959.md) | G-source glyph revision と SAT-source glyph issue が提出された。 |
+| 2026-06 | WG2 | `WG2 N5354` | Recommendation M73.02 が `L2/26-099` の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
 | 2026-07 | IRG | [IRG N2962](../documents/irg-n2962.md) | 9 G-source glyphs の revision request が提出された。 |
 | 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
 
@@ -47,7 +48,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 ### evidence の強さ
 
-`IRG N2953` は、U+268A1 / U+268A2 について、従来 glyph を支持する evidence がある一方で、別資料に normalized form が見つかったことを示し、Vietnam NB が glyph 変更を再検討する根拠としている。`IRG N2909` の M66.15 は、Vietnam の確認では current representative glyph が意図通りであるものの、additional supporting evidence があれば将来変更提案があり得る、と整理している。
+[IRG N2928](../documents/irg-n2928.md) は、U+268A1 / U+268A2 の現行 V-source glyph component が意図されたものか、U+810A 脊 に戻すべきかを Vietnam NB と IRG に照会した。[IRG N2953](../documents/irg-n2953.md) は、従来 glyph を支持する evidence がある一方で、別資料に normalized form が見つかったことを示し、Vietnam NB が glyph 変更を再検討する根拠としている。`IRG N2909` の M66.15 は、Vietnam の確認では current representative glyph が意図通りであるものの、additional supporting evidence があれば将来変更提案があり得る、と整理している。
 
 ### chart glyph convention と source convention
 
@@ -63,6 +64,8 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
+- [IRG N2928](../documents/irg-n2928.md) - U+268A1 / U+268A2 V-source glyph enquiry。
+- [IRG N2953](../documents/irg-n2953.md) - `IRG N2928` follow-up evidence。
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)

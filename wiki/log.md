@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Added `IRG N2928` and `IRG N2953` Source Document pages for the U+268A1 / U+268A2 V-source glyph issue, and linked the follow-up chain from IRG Meeting \#66/\#67, source-data, Ng Koon Hang, and Vietnam pages.
 - **Digest**: Continued recent IRG digest work by adding [IRG N2960](documents/irg-n2960.md) for UK-source horizontal extensions and linking it from IRG Meeting \#67, CJK Horizontal Extensions, and UK.
 - **Digest**: Expanded WG2 Meeting \#72 and \#73 coverage, adding Source Document pages for the agendas, code chart / disposition / amendment documents, SEI liaison and Dai Xaau materials, and opening [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md).
 - **Digest**: Prepared UTC \#188 candidate coverage from post-\#187 documents, adding Source Document pages for `L2/26-128` through `L2/26-149` candidates and opening topics for East Asian quotation marks, Chinese folk music notation, Indic script notation/rendering, Leibnizian historic math symbols, Maya hieroglyph encoding, and plain-text composition / overstriking.

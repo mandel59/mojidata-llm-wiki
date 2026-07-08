@@ -18,15 +18,15 @@ Vietnam は、IRG に参加する member body / source で、V-source の repres
 
 ## 標準化での役割
 
-| 文書 | 役割 | 関連 topic |
-| --- | --- | --- |
-| `IRG N2928` | U+268A1 / U+268A2 の glyphs に関する enquiry。 |
-| `IRG N2953` | `IRG N2928` の follow-up。追加 evidence に基づき、Vietnam NB が glyph change を再検討する材料を提示。 |
+| 文書 | 役割 |
+| --- | --- |
+| [IRG N2928](../documents/irg-n2928.md) | U+268A1 / U+268A2 の glyphs に関する enquiry。 |
+| [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up。追加 evidence に基づき、Vietnam NB が glyph change を再検討する材料を提示。 |
 
 ## 関連文書
 
-- `irg-n2928` - Enquiry on U+268A1 and U+268A2
-- `irg-n2953` - Follow-up on U+268A1 and U+268A2
+- [IRG N2928](../documents/irg-n2928.md) - Enquiry on U+268A1 and U+268A2
+- [IRG N2953](../documents/irg-n2953.md) - Follow-up on U+268A1 and U+268A2
 
 ## 関連トピック
 

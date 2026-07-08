@@ -115,11 +115,13 @@
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [IRG N2925](irg-n2925.md) - Primary / Secondary Radical assignment rules proposal。
 - [IRG N2926](irg-n2926.md) - `kIRG_SGSource` normative property proposal。
+- [IRG N2928](irg-n2928.md) - U+268A1 / U+268A2 の V-source representative glyph enquiry。
 - [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
 - [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
 - [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。
+- [IRG N2953](irg-n2953.md) - `IRG N2928` への U+268A1 / U+268A2 glyph follow-up。
 - [IRG N2954](irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
 - [IRG N2955](irg-n2955.md) - `IRG N2954` への G-source glyph feedback。
 - [IRG N2956](irg-n2956.md) - Extension C の G-source glyph / source reference issues。

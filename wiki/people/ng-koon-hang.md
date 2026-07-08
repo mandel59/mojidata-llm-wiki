@@ -20,8 +20,8 @@ Ng Koon Hang は、IRG 文書で V-source representative glyph issues for U+268A
 
 | 文書 | 役割 |
 | --- | --- |
-| `IRG N2928` | U+268A1 / U+268A2 の glyphs に関する enquiry。 |
-| `IRG N2953` | `IRG N2928` の follow-up として追加 evidence を提示。 |
+| [IRG N2928](../documents/irg-n2928.md) | U+268A1 / U+268A2 の glyphs に関する enquiry。 |
+| [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up として追加 evidence を提示。 |
 
 ## 関連トピック
 
