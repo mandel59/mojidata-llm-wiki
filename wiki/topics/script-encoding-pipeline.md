@@ -3,10 +3,10 @@ type: Topic
 title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
-bodies: [UTC]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-089, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131]
-topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding]
-meetings: [utc-meeting-187, utc-meeting-188]
+bodies: [UTC, WG2]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-089, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, iso-10646-edition-and-code-charts]
+meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -18,7 +18,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 Script Encoding Pipeline は、script / character proposals が UTC で provisional assignment、保留、再提案、property / glyph correction に分かれて進む過程を追う topic である。UTC \#187 では [L2/26-100](../documents/utc-l2-26-100.md) Script Encoding WG report が主要文書で、Unicode 18.0 に向けた Latin、Arabic、currency / alchemical symbols、Shaaldaa、Cossic などの処理を束ねる。
 
-この topic は特定 script の解説ではなく、SEW report を decision hub として、どの proposal がどの条件で先へ進むかを読むための入口である。
+この topic は特定 script の解説ではなく、SEW report と WG2 recommendations を decision hub として、どの proposal がどの条件で先へ進むかを読むための入口である。
 
 ## 経緯
 
@@ -32,6 +32,7 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が SEW report を Unicode 18.0 beta review の処理対象にした。 |
 | 2026-05-14 | UTC | [L2/26-129](../documents/utc-l2-26-129.md), [L2/26-131](../documents/utc-l2-26-131.md), [L2/26-132](../documents/utc-l2-26-132.md) | UTC \#188 候補として Leke、Kannada Samavedic svara markers、KORE SEBELI が登録された。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md) | LTR joining scripts に対する Joining_Type property の解釈問題が提出された。 |
+| 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が Amendment 1 project、first amendment additions、Sirmauri / Leke / Proto-Cuneiform / Mwangwego / Shaaldaa などの script additions、Maya review request を勧告した。 |
 
 ## 主な論点
 
@@ -55,6 +56,10 @@ Mongolian standardized variants の扱いは、既存 standardized variation seq
 
 UTC \#187 後には、[L2/26-129](../documents/utc-l2-26-129.md) Leke、[L2/26-132](../documents/utc-l2-26-132.md) KORE SEBELI、[L2/26-131](../documents/utc-l2-26-131.md) Kannada Samavedic svara markers が登録された。これらは次回 UTC meeting の agenda が未公開なため決定済みではないが、script / notation pipeline の候補として追跡する。
 
+### WG2 \#73 と Amendment 1
+
+[WG2 N5354](../documents/wg2-n5354.md) は、[WG2 N5362](../documents/wg2-n5362.md) / [WG2 N5361R](../documents/wg2-n5361r.md) をもとに ISO/IEC 10646 7th edition Amendment 1 project を始めるよう勧告した。SEI liaison report [WG2 N5365](../documents/wg2-n5365.md) は、WG2 submissions と Unicode SEW submissions の pipeline を俯瞰する入口である。
+
 ### Joining_Type for LTR scripts
 
 [L2/26-137](../documents/utc-l2-26-137.md) は、N'ti や Ndiko Jonam のような joining left-to-right scripts を前提に、Joining_Type `L` / `R` の semantics を整理する必要を示す。これは個別 script proposal ではなく、future script encoding の property model を先に決める論点である。
@@ -76,6 +81,11 @@ UTC \#187 後には、[L2/26-129](../documents/utc-l2-26-129.md) Leke、[L2/26-1
 - [L2/26-132](../documents/utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-137](../documents/utc-l2-26-137.md) - Joining_Type for left-to-right scripts。
 - `L2/25-131` - historic alchemical symbols proposal。
+- [WG2 N5354](../documents/wg2-n5354.md) - WG2 \#73 recommendations。
+- [WG2 N5361R](../documents/wg2-n5361r.md) - provisionally assigned future repertoire。
+- [WG2 N5362](../documents/wg2-n5362.md) - ISO/IEC 10646 7th edition Amendment 1 project proposal。
+- [WG2 N5365](../documents/wg2-n5365.md) - SEI liaison contribution。
+- [WG2 N5368](../documents/wg2-n5368.md) - Dai Xaau supplementary materials。
 
 ## 関連トピック
 
@@ -84,6 +94,7 @@ UTC \#187 後には、[L2/26-129](../documents/utc-l2-26-129.md) Leke、[L2/26-1
 - [Unicode Properties and Algorithms](unicode-properties-and-algorithms.md)
 - [Indic Script Notation and Rendering](indic-script-notation-and-rendering.md)
 - [Maya Hieroglyph Encoding](maya-hieroglyph-encoding.md)
+- [ISO/IEC 10646 Edition and Code Charts](iso-10646-edition-and-code-charts.md)
 
 ## 出典
 
@@ -101,3 +112,8 @@ UTC \#187 後には、[L2/26-129](../documents/utc-l2-26-129.md) Leke、[L2/26-1
 - `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>
 - `utc-l2-26-137` - <https://www.unicode.org/L2/L2026/26137-left-right.pdf>
 - `utc-l2-25-131` - <https://www.unicode.org/L2/L2025/25131-alchemical-symbols.pdf>
+- `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `wg2-n5361r` - <https://www.unicode.org/wg2/docs/n5361R-ProvisionnallyAssigned.pdf>
+- `wg2-n5362` - <https://www.unicode.org/wg2/docs/n5362-proposal_to_start_new_amendment_of_10646.pdf>
+- `wg2-n5365` - <https://www.unicode.org/wg2/docs/n5365-SEILiaisonReport-June2026_WG2.pdf>
+- `wg2-n5368` - <https://www.unicode.org/wg2/docs/n5368-SupplementaryMaterialsDaiXaauScript.pdf>

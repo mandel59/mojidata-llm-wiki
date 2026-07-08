@@ -4,7 +4,7 @@ title: Leibnizian and Historic Mathematical Symbols
 description: "Leibnizian ambiguous signs と historic mathematical sources 用 symbols / combining marks / letterlike symbols。"
 slug: leibnizian-and-historic-mathematical-symbols
 bodies: [UTC, WG2]
-documents: [utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354]
+documents: [utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354, wg2-n5361r, wg2-n5364]
 topics: [unicode-18-change-sources]
 status: proposed
 tags: [math, leibniz, symbols, variation-sequences, unicode-18]
@@ -25,6 +25,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 | 2026-05-26 | UTC / WG2 | [L2/26-141](../documents/utc-l2-26-141.md) | Slashed digits 用 combining overlays 2 文字が提案された。 |
 | 2026-05-26 | UTC / WG2 | [L2/26-142](../documents/utc-l2-26-142.md) | Historic sources 用 letterlike symbols 6 文字が提案された。 |
 | 2026-05-26 | UTC / WG2 | [L2/26-143](../documents/utc-l2-26-143.md) | Leibnizian ambiguous signs 59 signs / 5 VS の 4th revision が提出された。 |
+| 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.06 が combining overlays、letterlike / Leibnizian symbols を first amendment additions として扱った。 |
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian VS names と Unicode 18.0 delta charts への corrections / recommendations が提出された。 |
 
 ## 主な論点
@@ -48,6 +49,8 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 - [L2/26-142](../documents/utc-l2-26-142.md) - letterlike symbols。
 - [L2/26-143](../documents/utc-l2-26-143.md) - Leibnizian ambiguous signs。
 - [L2/26-149](../documents/utc-l2-26-149.md) - Leibniz Unicode Characters Project feedback。
+- [WG2 N5354](../documents/wg2-n5354.md) - WG2 \#73 recommendations。
+- [WG2 N5361R](../documents/wg2-n5361r.md) - provisionally assigned future repertoire。
 
 ## 関連トピック
 
@@ -60,4 +63,4 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 - `utc-l2-26-142` - <https://www.unicode.org/L2/L2026/26142-letterlike-symbols.pdf>
 - `utc-l2-26-143` - <https://www.unicode.org/L2/L2026/26143-leibnizian-ambiguous-signs.pdf>
 - `utc-l2-26-149` - <https://www.unicode.org/L2/L2026/26149-leibniz.pdf>
-
+- `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>

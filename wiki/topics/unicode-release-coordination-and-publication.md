@@ -5,7 +5,7 @@ description: "UTC #187 で扱われた Unicode 18.0 の release、charts、edito
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-126]
-topics: [unicode-18-change-sources]
+topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
 tags: [unicode-18, release, charts, editorial, publication, liaison]
@@ -61,6 +61,7 @@ Unicode release coordination は、文字や property の採択だけでなく�
 ## 関連トピック
 
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
+- [ISO/IEC 10646 Edition and Code Charts](iso-10646-edition-and-code-charts.md)
 - [Unicode Properties and Algorithms](unicode-properties-and-algorithms.md)
 - [Script Encoding Pipeline](script-encoding-pipeline.md)
 - [Emoji Interoperability and Intake](emoji-interoperability-and-intake.md)
@@ -73,4 +74,3 @@ Unicode release coordination は、文字や property の採択だけでなく�
 - `utc-l2-26-101` - <https://www.unicode.org/L2/L2026/26101-charts-wg-rept-utc187.pdf>
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
 - `utc-l2-26-126` - <https://www.unicode.org/L2/L2026/26126-icu4x-and-tc39-liason-report.pdf>
-

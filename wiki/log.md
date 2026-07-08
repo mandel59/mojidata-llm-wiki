@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Digest**: Expanded WG2 Meeting \#72 and \#73 coverage, adding Source Document pages for the agendas, code chart / disposition / amendment documents, SEI liaison and Dai Xaau materials, and opening [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md).
 - **Digest**: Prepared UTC \#188 candidate coverage from post-\#187 documents, adding Source Document pages for `L2/26-128` through `L2/26-149` candidates and opening topics for East Asian quotation marks, Chinese folk music notation, Indic script notation/rendering, Leibnizian historic math symbols, Maya hieroglyph encoding, and plain-text composition / overstriking.
 - **Digest**: Digested the latest public UTC \#187 working group reports, adding Source Document pages for `L2/26-092`, `096`, `097`, `098`, `100`, `101`, and `126`, and created topic entries for release coordination, properties / algorithms, script pipeline, and emoji interoperability.
 - **Refine**: Unified [Kana](topics/kana.md) chronology document cells on Source Document links, added `L2/99-238` and `WG2 N2092` digests, and documented / checked the derived document catalog overlay used for exceptional non-registry entries.

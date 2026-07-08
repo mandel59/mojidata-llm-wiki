@@ -128,11 +128,23 @@
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
+- [WG2 N5300R9](wg2-n5300r9.md) - WG2 Meeting \#72 agenda。
 - [WG2 N5301](wg2-n5301.md) - WG2 Meeting \#72 minutes and action items。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting \#72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
+- [WG2 N5315](wg2-n5315.md) - ISO/IEC 10646 code charts consideration。
+- [WG2 N5317R3](wg2-n5317r3.md) - Small Seal feedback disposition。
+- [WG2 N5318R](wg2-n5318r.md) - Four-Column Small Seal Script proposal。
+- [WG2 N5339](wg2-n5339.md) - ISO/IEC 10646 7th edition CD.2 disposition。
+- [WG2 N5341](wg2-n5341.md) - Small Seal code charts and data set。
 - [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
+- [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5354](wg2-n5354.md) - WG2 Meeting \#73 recommendations。
 - [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。
+- [WG2 N5361R](wg2-n5361r.md) - Unicode 18.0 後の provisionally assigned future repertoire。
+- [WG2 N5362](wg2-n5362.md) - ISO/IEC 10646 7th edition Amendment 1 project proposal。
+- [WG2 N5363R](wg2-n5363r.md) - external code charts normative reference proposal。
+- [WG2 N5365](wg2-n5365.md) - SEI liaison contribution to WG2 \#73。
+- [WG2 N5368](wg2-n5368.md) - Dai Xaau Script supplementary materials。
 - [WG2 N5369](wg2-n5369.md) - ISO/IEC 10646 7th edition CD.4 disposition。
