@@ -23,6 +23,7 @@ okf_version: "0.1"
 - [JMJ Horizontal Extension Review Path](topics/jmj-horizontal-extension-review-path.md) - JMJ references の J-column horizontal extension と IRG review path。
 - [IRG Source Data and Representative Glyphs](topics/irg-source-data-and-representative-glyphs.md) - IRG source reference、representative glyph、Unihan property 修正の論点。
 - [G-source Glyph and Source Reference Issues](topics/g-source-glyph-and-reference-issues.md) - G-source representative glyph と source reference correction の個別論点。
+- [V-source Representative Glyph Issues](topics/v-source-representative-glyph-issues.md) - V-source / Nom evidence に基づく representative glyph と Unihan property update。
 - [kIRG_SGSource](topics/kirg-sgsource.md) - Singapore characters を独立した normative IRG source property として扱う提案。
 - [CJKV Components](topics/cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。

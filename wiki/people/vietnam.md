@@ -5,7 +5,7 @@ description: V-source と Nom glyph data に関係する Vietnam member body。
 slug: vietnam
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
-topics: [irg-source-data-and-representative-glyphs]
+topics: [v-source-representative-glyph-issues, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, vietnam, v-source, nom]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -31,6 +31,7 @@ Vietnam は、IRG に参加する member body / source で、V-source の repres
 ## 関連トピック
 
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
+- [V-source Representative Glyph Issues](../topics/v-source-representative-glyph-issues.md)
 
 ## 出典
 

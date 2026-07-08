@@ -9,7 +9,7 @@ meeting: 66
 date: "2026-03-16/20"
 location: Virtual
 documents: [irg-n2899, irg-n2909, irg-n2910, irg-n2911]
-topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, kirg-sgsource, cjkv-components, irg-indexing-rules]
+topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
 tags: [meeting, irg, recommendations, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -26,7 +26,7 @@ IRG Meeting \#66 は 2026-03-16/20 に virtual meeting として開催された�
 
 - [IRG Working Set 2024](../../topics/irg-working-set-2024.md) - Version 4.0 の comments / responses を review し、Version 5.0 の schedule を決めた。
 - [CJK Horizontal Extensions](../../topics/cjk-horizontal-extensions.md) - China の 9156-character G-source horizontal extension と、既存 proposal からの追加 horizontal extension 候補を扱った。
-- [IRG Source Data and Representative Glyphs](../../topics/irg-source-data-and-representative-glyphs.md) - G / T / K / UK / V source の source references と representative glyph corrections を整理した。
+- [IRG Source Data and Representative Glyphs](../../topics/irg-source-data-and-representative-glyphs.md) - G / T / K / UK / V source の source references と representative glyph corrections を整理した。V-source U+268A1 / U+268A2 は [V-source Representative Glyph Issues](../../topics/v-source-representative-glyph-issues.md) に分けて追う。
 - [kIRG_SGSource](../../topics/kirg-sgsource.md) - Singapore characters を `kIRG_GSource` から分離する new normative property を IRG として勧告した。
 - [CJKV Components](../../topics/cjkv-components.md) - Components-A / Components-B proposal を WG2 へ forward することを勧告した。
 - [IRG Indexing Rules](../../topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC guidelines、radical assignment rules を整理した。

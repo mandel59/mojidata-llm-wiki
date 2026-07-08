@@ -5,7 +5,7 @@ description: "IRG Section 9.1 に集まった G-source representative glyph と 
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
 documents: [irg-n891, irg-n1519, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
-topics: [irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
+topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
 tags: [irg, g-source, source-reference, representative-glyphs]
@@ -69,6 +69,7 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 ## 関連トピック
 
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
+- [V-source Representative Glyph Issues](v-source-representative-glyph-issues.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)

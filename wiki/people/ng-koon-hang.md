@@ -5,7 +5,7 @@ description: V-source representative glyph と Nom glyph data に関係する co
 slug: ng-koon-hang
 bodies: [IRG]
 documents: [irg-n2928, irg-n2953]
-topics: [irg-source-data-and-representative-glyphs]
+topics: [v-source-representative-glyph-issues, irg-source-data-and-representative-glyphs]
 tags: [person, v-source, representative-glyphs, nom]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -26,6 +26,7 @@ Ng Koon Hang は、IRG 文書で V-source representative glyph issues for U+268A
 ## 関連トピック
 
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
+- [V-source Representative Glyph Issues](../topics/v-source-representative-glyph-issues.md)
 - [Vietnam](vietnam.md)
 
 ## 出典
