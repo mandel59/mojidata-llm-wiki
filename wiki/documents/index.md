@@ -118,12 +118,17 @@
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
 - [L2/26-062](utc-l2-26-062.md) - Indian languages の rendering / input / search / processing report。
 - [L2/26-008R](utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
+- [L2/26-015R](utc-l2-26-015r.md) - N'ko Phonetic Extensions for Bambara revised proposal。
 - [L2/26-048](utc-l2-26-048.md) - CRACKING FACE emoji proposal。
 - [L2/26-065](utc-l2-26-065.md) - Initial Teaching Alphabet 用 LATIN SMALL LETTER ZH proposal。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
 - [L2/26-074](utc-l2-26-074.md) - Japanese new / old variants 用 provisional Unihan properties。
 - [L2/26-084](utc-l2-26-084.md) - 169 characters の `kMandarin` additions / changes への CLDR / L&RE feedback。
+- [L2/26-087](utc-l2-26-087.md) - N'ti script proposal。
+- [L2/26-088](utc-l2-26-088.md) - Khmer Candrabindu proposal。
+- [L2/26-090](utc-l2-26-090.md) - Hebrew elongated geresh proposal。
+- [L2/26-091](utc-l2-26-091.md) - Mongolian standardized variants deprecation proposal。
 - [L2/26-070R](utc-l2-26-070r.md) - multiple variation selectors conformance proposal。
 - [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。

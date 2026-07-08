@@ -4,7 +4,7 @@ title: Unicode Properties and Algorithms
 description: "UTC #187 PAG report を中心にした Unicode properties、algorithm text、security data の更新論点。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-109, utc-l2-26-110, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-109, utc-l2-26-110, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, east-asian-spacing, unicode-set-notation, indic-script-notation-and-rendering, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
@@ -27,6 +27,7 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2025-04-04 | UTC | [L2/25-100](../documents/utc-l2-25-100.md) | UTR \#59 East Asian Spacing の draft public review document が登録された。 |
 | 2026-03-27 | UTC | [L2/26-070R](../documents/utc-l2-26-070r.md) | Multiple variation selectors を non-conformant とする revised document が提出された。 |
 | 2026-04-03 | UTC | [L2/26-110](../documents/utc-l2-26-110.md), [L2/26-111](../documents/utc-l2-26-111.md) | UAX \#31 / UAX \#44、UTS \#61 の proposed updates が登録された。 |
+| 2026-04-13 | UTC | [L2/26-091](../documents/utc-l2-26-091.md) | Kushim Jiang が Mongolian standardized variants in UCD の deprecation を提案した。 |
 | 2026-04-14 | UTC | `L2/26-109` | UTS \#10 Unicode Collation Algorithm の proposed update が登録された。 |
 | 2026-04-16 | UTC | [L2/26-096](../documents/utc-l2-26-096.md) | PAG が UTC \#187 に properties feedback と recommendations を提出した。 |
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が Unicode 18.0 beta review の action items として PAG report を扱った。 |
@@ -56,6 +57,8 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 [L2/26-070R](../documents/utc-l2-26-070r.md) は、Variation Selector の formal definitions と misplaced default ignorable code points の security guidance を提案したが、UTC \#187 では action せず後続改訂扱いになった。[L2/26-110](../documents/utc-l2-26-110.md) は UAX \#31 Revision 44 として、Unicode 18 の新規 scripts を Excluded Scripts に追加し、identifier syntax / script classification の更新入口になる。
 
+[L2/26-091](../documents/utc-l2-26-091.md) は、Mongolian standardized variants を `StandardizedVariants.txt` から deprecate する提案である。これは code point 追加ではなく UCD data model、variation selector semantics、Core Specification guidance の整理問題として扱う。
+
 ### East Asian Spacing と UTS \#61
 
 [East Asian Spacing](east-asian-spacing.md) は `East_Asian_Spacing` property と algorithm を提案し、East Asian scripts と Latin / digits などの間の visible spacing を layout / UCD data の問題として扱う。
@@ -73,6 +76,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [L2/26-093](../documents/utc-l2-26-093.md) - UTC \#187 Meeting Minutes。
 - [L2/25-100](../documents/utc-l2-25-100.md) - UTR \#59 East Asian Spacing。
 - [L2/26-070R](../documents/utc-l2-26-070r.md) - multiple variation selectors conformance。
+- [L2/26-091](../documents/utc-l2-26-091.md) - Mongolian standardized variants deprecation proposal。
 - `L2/26-109` - UTS \#10 Unicode Collation Algorithm proposed update。
 - [L2/26-110](../documents/utc-l2-26-110.md) - UAX \#31 / UAX \#44 proposed update。
 - [L2/26-111](../documents/utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
@@ -98,6 +102,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
 - `utc-l2-25-100` - <https://www.unicode.org/L2/L2025/25100-utr59-1-draft-pri510.pdf>
 - `utc-l2-26-070r` - <https://www.unicode.org/L2/L2026/26070r-multiple-variation-selectors-non-conformant.pdf>
+- `utc-l2-26-091` - <https://www.unicode.org/L2/L2026/26091-mongolian-std-variants.pdf>
 - `utc-l2-26-109` - <https://www.unicode.org/L2/L2026/26109-uts10-54-update-pri542.pdf>
 - `utc-l2-26-110` - <https://www.unicode.org/L2/L2026/26110-uax31-44-update-pri535.pdf>
 - `utc-l2-26-111` - <https://www.unicode.org/L2/L2026/26111-uts61-1-draft-pri523.pdf>

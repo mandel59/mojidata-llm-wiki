@@ -4,7 +4,7 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-089, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
@@ -27,10 +27,12 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2025-04-14 | UTC | [L2/25-131](../documents/utc-l2-25-131.md) | Historic alchemical symbols proposal が提出された。 |
 | 2026-02-09 | UTC | [L2/26-065](../documents/utc-l2-26-065.md) | LATIN SMALL LETTER ZH proposal が提出された。 |
 | 2026-03-09 | UTC | [L2/26-079](../documents/utc-l2-26-079.md) | Romance dialectological atlas additions proposal が提出された。 |
+| 2026-04-13 | UTC | [L2/26-087](../documents/utc-l2-26-087.md), [L2/26-088](../documents/utc-l2-26-088.md), [L2/26-090](../documents/utc-l2-26-090.md), [L2/26-091](../documents/utc-l2-26-091.md) | N'ti script、Khmer Candrabindu、Hebrew elongated geresh、Mongolian standardized variants deprecation proposals が登録された。 |
 | 2026-04-13 | UTC | [L2/26-113](../documents/utc-l2-26-113.md), [L2/26-114](../documents/utc-l2-26-114.md) | Biswajit Mandal が Kannada / Devanagari の language-specific marks を提案した。 |
 | 2026-04-13 | UTC | [L2/26-040R2](../documents/utc-l2-26-040r2.md) | Oreen Yousuf / Daniel Yacob が Shaaldaa revised proposal を提出した。 |
 | 2026-04-13 | UTC | [L2/26-089](../documents/utc-l2-26-089.md), [L2/26-117](../documents/utc-l2-26-117.md), [L2/26-118](../documents/utc-l2-26-118.md), [L2/26-119](../documents/utc-l2-26-119.md) | Belarusian Ruble sign、Catholic Albanian edhe、modifier capital Y、Arabic Waw with Ring proposal が登録された。 |
 | 2026-04-17 | UTC | [L2/26-100](../documents/utc-l2-26-100.md) | SEW が UTC \#187 に script proposal recommendations を提出した。 |
+| 2026-04-17 | UTC | [L2/26-015R](../documents/utc-l2-26-015r.md) | Boubacar Diakite / Neil Patel が N'ko Phonetic Extensions for Bambara revised proposal を提出した。 |
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が SEW report を Unicode 18.0 beta review の処理対象にした。 |
 | 2026-05-14 | UTC | [L2/26-129](../documents/utc-l2-26-129.md), [L2/26-131](../documents/utc-l2-26-131.md), [L2/26-132](../documents/utc-l2-26-132.md) | UTC \#188 候補として Leke、Kannada Samavedic svara markers、KORE SEBELI が登録された。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md) | LTR joining scripts に対する Joining_Type property の解釈問題が提出された。 |
@@ -48,11 +50,11 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 
 ### Encoding model が未決の script
 
-Ndiko Jonam / Luo Lakeside、N'ti、N'Ko Bambara、Brahmi virama minimization などは、joining model、positional forms、productive mechanism、stability の未解決点がある。SEW は、文字集合の必要性だけでなく text model が既存 Unicode behavior と整合するかを見ている。
+Ndiko Jonam / Luo Lakeside、[N'ti](../documents/utc-l2-26-087.md)、[N'ko Bambara](../documents/utc-l2-26-015r.md)、Brahmi virama minimization などは、joining model、positional forms、productive mechanism、stability の未解決点がある。SEW は、文字集合の必要性だけでなく text model が既存 Unicode behavior と整合するかを見ている。
 
 ### Stability と backwards compatibility
 
-Mongolian standardized variants の扱いは、既存 standardized variation sequences を削除せず、後方互換性を保つ revised proposal を求める方向である。Script pipeline では、新規 encoding と同じくらい既存 encoded text の安定性が重視される。
+[Mongolian standardized variants](../documents/utc-l2-26-091.md) の扱いは、既存 standardized variation sequences を削除せず、後方互換性を保つ revised proposal を求める方向である。Script pipeline では、新規 encoding と同じくらい既存 encoded text の安定性が重視される。
 
 ### UTC \#188 候補の新規 script / notation proposals
 
@@ -74,7 +76,12 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [L2/26-040R2](../documents/utc-l2-26-040r2.md) - Shaaldaa revised proposal。
 - [L2/26-065](../documents/utc-l2-26-065.md) - LATIN SMALL LETTER ZH proposal。
 - [L2/26-079](../documents/utc-l2-26-079.md) - Romance dialectological atlas additions。
+- [L2/26-015R](../documents/utc-l2-26-015r.md) - N'ko Phonetic Extensions for Bambara。
+- [L2/26-087](../documents/utc-l2-26-087.md) - N'ti script proposal。
+- [L2/26-088](../documents/utc-l2-26-088.md) - Khmer Candrabindu proposal。
 - [L2/26-089](../documents/utc-l2-26-089.md) - Belarusian Ruble sign proposal。
+- [L2/26-090](../documents/utc-l2-26-090.md) - Hebrew elongated geresh proposal。
+- [L2/26-091](../documents/utc-l2-26-091.md) - Mongolian standardized variants deprecation proposal。
 - [L2/26-113](../documents/utc-l2-26-113.md) - Four Diacritic Marks of Kannada。
 - [L2/26-114](../documents/utc-l2-26-114.md) - Devanagari Vowel Length Mark。
 - [L2/26-117](../documents/utc-l2-26-117.md) - Catholic Albanian letter edhe proposal。
@@ -107,7 +114,12 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - `utc-l2-26-040r2` - <https://www.unicode.org/L2/L2026/26040r2-shaaldaa-proposal.pdf>
 - `utc-l2-26-065` - <https://www.unicode.org/L2/L2026/26065-zh-ligature.pdf>
 - `utc-l2-26-079` - <https://www.unicode.org/L2/L2026/26079-dialectological-atlas-additions.pdf>
+- `utc-l2-26-015r` - <https://www.unicode.org/L2/L2026/26015r-nko-phonetic-extensions.pdf>
+- `utc-l2-26-087` - <https://www.unicode.org/L2/L2026/26087-nti-proposal.pdf>
+- `utc-l2-26-088` - <https://www.unicode.org/L2/L2026/26088-khmer-candrabindu.pdf>
 - `utc-l2-26-089` - <https://www.unicode.org/L2/L2026/26089-belarusian-ruble-sign.pdf>
+- `utc-l2-26-090` - <https://www.unicode.org/L2/L2026/26090-elongated-geresh.pdf>
+- `utc-l2-26-091` - <https://www.unicode.org/L2/L2026/26091-mongolian-std-variants.pdf>
 - `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
 - `utc-l2-26-114` - <https://www.unicode.org/L2/L2026/26114-devanagari-vowel-length-mark.pdf>
 - `utc-l2-26-117` - <https://www.unicode.org/L2/L2026/26117-catholic-albanian-edhe.pdf>
