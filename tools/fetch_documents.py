@@ -8,6 +8,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
@@ -26,6 +27,10 @@ from tools.unicode_registry import read_jsonl
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_CACHE = ROOT / ".cache" / "unicode-docs"
 USER_AGENT = "mojidata-llm-wiki/0.1 (+https://github.com/mandel59/mojidata-llm-wiki)"
+
+
+class FetchDocumentError(Exception):
+    pass
 
 
 def safe_name(value: str) -> str:
@@ -60,8 +65,13 @@ def select_entries(entries: list[dict], docs: list[str], grep: str | None, all_e
 
 def fetch_binary(url: str) -> bytes:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=120) as response:
-        return response.read()
+    try:
+        with urlopen(request, timeout=120) as response:
+            return response.read()
+    except HTTPError as exc:
+        raise FetchDocumentError(f"HTTP {exc.code} {exc.reason}") from exc
+    except URLError as exc:
+        raise FetchDocumentError(str(exc.reason)) from exc
 
 
 def filename_for(entry: dict) -> str:
@@ -128,15 +138,23 @@ def main(argv: list[str] | None = None) -> int:
 
     args.cache_dir.mkdir(parents=True, exist_ok=True)
     index_path = args.cache_dir / "cache-index.jsonl"
+    success_count = 0
+    failure_count = 0
     with index_path.open("a", encoding="utf-8") as index:
         for entry in selected:
-            record = materialize(entry, args.cache_dir, refresh=args.refresh)
+            try:
+                record = materialize(entry, args.cache_dir, refresh=args.refresh)
+            except (FetchDocumentError, OSError, ValueError) as exc:
+                failure_count += 1
+                print(f"failed: {entry.get('entry_id', '<unknown>')} -> {entry.get('document_url', '')} ({exc})", file=sys.stderr)
+                continue
             index.write(json.dumps(record, ensure_ascii=False, sort_keys=True))
             index.write("\n")
             print(f"{record['state']}: {record['entry_id']} -> {record['path']}")
+            success_count += 1
 
-    print(f"{len(selected)} document(s)")
-    return 0
+    print(f"{success_count} document(s), {failure_count} failed, {len(selected)} selected")
+    return 1 if failure_count else 0
 
 
 if __name__ == "__main__":

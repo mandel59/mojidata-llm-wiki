@@ -26,6 +26,8 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 | 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、Japanese readings を hiragana / katakana で記録する。 |
 | 2025-08-19 | UTC | [L2/25-213](../documents/utc-l2-25-213.md) | HarJIT が `kJapanese` に含まれる Katakana 表記の kun'yomi を調査し、definition と values の修正を提案。 |
 | 2026-02-10 | UTC | [L2/26-068](../documents/utc-l2-26-068.md) | Vietnam が U+2B8A0 の V-source representative glyph と `kRSUnicode` / `kTotalStrokes` の変更を提案した。 |
+| 2026-03-05 | UTC | [L2/26-074](../documents/utc-l2-26-074.md) | Ken Lunde が Japanese new / old variants 用 provisional Unihan properties `kJapaneseNewVariant` と `kJapaneseOldVariant` を提案した。 |
+| 2026-03-26 | UTC | [L2/26-084](../documents/utc-l2-26-084.md) | CLDR TC と Apple Localization and Release Engineering が、169 characters の `kMandarin` additions / changes へ feedback した。 |
 | 2026-04-03 | UTC | [L2/26-105](../documents/utc-l2-26-105.md) | Proposed Update UAX \#38 Revision 40。Unicode 18.0.0 向けに Unihan database の説明、property、history を更新する。 |
 | 2026-04-03 | UTC | [L2/26-112](../documents/utc-l2-26-112.md) | Proposed Update UTS \#37 Revision 15。Ideographic Variation Database と IVS 登録手順を更新する。 |
 | 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が UTC \#187 向けに Unihan database additions / changes / removals、UAX \#38、UTS \#37 関連 action items をまとめた。 |
@@ -40,11 +42,11 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 
 ### 新しい provisional properties
 
-`L2/26-074` と `L2/26-099` Section 21 は、`kJapaneseNewVariant` と `kJapaneseOldVariant` を provisional Unihan database properties として追加する流れを示す。初期 data は 400 ideographs 以上を対象とし、将来の追加には慎重な vetting が必要とされた。
+[L2/26-074](../documents/utc-l2-26-074.md) と `L2/26-099` Section 21 は、`kJapaneseNewVariant` と `kJapaneseOldVariant` を provisional Unihan database properties として追加する流れを示す。初期 data は 400 ideographs 以上を対象とし、将来の追加には慎重な vetting が必要とされた。
 
 ### readings と radical / stroke data
 
-`L2/26-084` は 2024 年の UTC action items に基づく 169 characters の `kMandarin` additions / changes を整理した。[L2/26-068](../documents/utc-l2-26-068.md) は U+2B8A0 の V-source representative glyph change に合わせて `kRSUnicode` と `kTotalStrokes` を変更する proposal で、詳細は [V-source Representative Glyph Issues](v-source-representative-glyph-issues.md) に分ける。[L2/26-134](../documents/utc-l2-26-134.md) と [L2/26-148](../documents/utc-l2-26-148.md) は、radical / stroke count 系 data の機械可読性と IRG review data との整合を扱うため、詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) から読む。
+[L2/26-084](../documents/utc-l2-26-084.md) は 2024 年の UTC action items に基づく 169 characters の `kMandarin` additions / changes を整理した。[L2/26-068](../documents/utc-l2-26-068.md) は U+2B8A0 の V-source representative glyph change に合わせて `kRSUnicode` と `kTotalStrokes` を変更する proposal で、詳細は [V-source Representative Glyph Issues](v-source-representative-glyph-issues.md) に分ける。[L2/26-134](../documents/utc-l2-26-134.md) と [L2/26-148](../documents/utc-l2-26-148.md) は、radical / stroke count 系 data の機械可読性と IRG review data との整合を扱うため、詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) から読む。
 
 [UCV and NUCV Lists](ucv-nucv-lists.md) は Unihan property そのものではないが、unification / disunification boundary の参照表として、representative glyph、source reference、radical / stroke data の判断に影響する。
 
@@ -62,6 +64,8 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - [L2/22-181](../documents/utc-l2-22-181.md)
 - [L2/25-213](../documents/utc-l2-25-213.md)
 - [L2/26-068](../documents/utc-l2-26-068.md) - U+2B8A0 の V-source representative glyph / property change。
+- [L2/26-074](../documents/utc-l2-26-074.md) - `kJapaneseNewVariant` / `kJapaneseOldVariant` proposal。
+- [L2/26-084](../documents/utc-l2-26-084.md) - 169 characters の `kMandarin` feedback。
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
 - [L2/26-134](../documents/utc-l2-26-134.md) - RSIndex.txt syntax enhancement。

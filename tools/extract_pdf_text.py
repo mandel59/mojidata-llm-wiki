@@ -12,16 +12,27 @@ except ModuleNotFoundError:
 from pypdf import PdfReader
 
 
-def extract_pdf(pdf_path: Path, output_path: Path) -> None:
+def looks_unusable(text: str) -> bool:
+    if len(text) < 500:
+        return False
+    slash_digit_runs = text.count("/i255") + sum(text.count(f"/{digit}") for digit in range(10))
+    letters = sum(1 for char in text if char.isalpha())
+    return slash_digit_runs > 200 and letters < len(text) * 0.08
+
+
+def extract_pdf(pdf_path: Path, output_path: Path) -> str:
     reader = PdfReader(str(pdf_path))
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    extracted: list[str] = []
     with output_path.open("w", encoding="utf-8") as fh:
         for page_index, page in enumerate(reader.pages, start=1):
             text = page.extract_text() or ""
+            extracted.append(text)
             fh.write(f"\n\n--- page {page_index} ---\n\n")
             fh.write(text)
             if not text.endswith("\n"):
                 fh.write("\n")
+    return "\n".join(extracted)
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,8 +47,10 @@ def main() -> int:
     args = parse_args()
     for pdf_path in args.pdfs:
         output_path = args.output_dir / pdf_path.parent.name / f"{pdf_path.stem}.txt"
-        extract_pdf(pdf_path, output_path)
+        text = extract_pdf(pdf_path, output_path)
         print(f"{pdf_path} -> {output_path}")
+        if looks_unusable(text):
+            print(f"warning: extracted text may be unusable for digest: {output_path}")
     return 0
 
 

@@ -120,6 +120,8 @@
 - [L2/26-065](utc-l2-26-065.md) - Initial Teaching Alphabet 用 LATIN SMALL LETTER ZH proposal。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
+- [L2/26-074](utc-l2-26-074.md) - Japanese new / old variants 用 provisional Unihan properties。
+- [L2/26-084](utc-l2-26-084.md) - 169 characters の `kMandarin` additions / changes への CLDR / L&RE feedback。
 - [L2/26-070R](utc-l2-26-070r.md) - multiple variation selectors conformance proposal。
 - [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
@@ -140,11 +142,18 @@
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
+- [IRG N2911](irg-n2911.md) - IRG Meeting \#66 miscellaneous editorial report。
+- [IRG N2916](irg-n2916.md) - K-source KC-05216 / U+2DB7C glyph correction proposal。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
+- [IRG N2918](irg-n2918.md) - U+3062B / U+30C68 の UK-source glyph update proposal。
+- [IRG N2919R](irg-n2919r.md) - 3 G-source glyphs and 10 source references proposal。
+- [IRG N2923R](irg-n2923r.md) - 329 G-source reference updates and 9 horizontal extension candidates。
 - [IRG N2925](irg-n2925.md) - Primary / Secondary Radical assignment rules proposal。
 - [IRG N2926](irg-n2926.md) - `kIRG_SGSource` normative property proposal。
+- [IRG N2927R](irg-n2927r.md) - T-source U+2976E / U+20885 pending glyph clarification。
 - [IRG N2928](irg-n2928.md) - U+268A1 / U+268A2 の V-source representative glyph enquiry。
 - [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
+- [IRG N2930](irg-n2930.md) - 3 GU-source references を GHC-source references へ移す提案。
 - [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2932](irg-n2932.md) - IRG Working Set 2024 Version 5.0。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。

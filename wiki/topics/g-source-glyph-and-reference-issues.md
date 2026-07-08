@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n891, irg-n1519, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
+documents: [irg-n891, irg-n1519, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
@@ -18,12 +18,15 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 G-source glyph / source reference issues は、すでに encoded された CJK Unified Ideographs について、current representative glyph と source evidence、または current source reference と original evidence が合っているかを見直す IRG の論点である。
 
-親トピックの [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) は G / T / K / UK / V / SAT source と Unihan property 全体を扱う。このページでは、IRG Meeting \#67 agenda の Section 9.1 に接続する `IRG N2954` から `IRG N2962` までの G-source 中心の proposal / feedback chain を分離して追う。
+親トピックの [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) は G / T / K / UK / V / SAT source と Unihan property 全体を扱う。このページでは、IRG Meeting \#66 で一部 accepted / 一部 pending になった [IRG N2919R](../documents/irg-n2919r.md)、[IRG N2923R](../documents/irg-n2923r.md)、[IRG N2930](../documents/irg-n2930.md) と、IRG Meeting \#67 agenda の Section 9.1 に接続する `IRG N2954` から `IRG N2962` までの G-source 中心の proposal / feedback chain を分離して追う。
 
 ## 経緯
 
 | 年月日 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2026-03-09 | IRG | [IRG N2919R](../documents/irg-n2919r.md) | Wang Xieyang が 3 G-source glyph changes と 10 source reference changes を提案した。Meeting \#66 では U+250A9 / U+25805 glyph revisions は in principle accepted、U+26C25 と reference changes は継続確認になった。 |
+| 2026-03-10 | IRG | [IRG N2923R](../documents/irg-n2923r.md) | Dong Wenjie が 329 G-source reference updates と 9 horizontal extension candidates を提案した。Meeting \#66 では further discussion / China response 待ちになった。 |
+| 2026-03-14 | IRG | [IRG N2930](../documents/irg-n2930.md) | Boris Zhang / Wang Xieyang が U+236AC、U+24A1E、U+24E82 の `GU` references を `GHC` references へ変更する提案を出した。Meeting \#66 で accepted になった。 |
 | 2026-04-03 | IRG | [IRG N2954](../documents/irg-n2954.md) | Roy Wang が U+2CCA3 / `GZFY-00932` の current glyph と source evidence の不一致を指摘し、glyph normalization または `GU` reference への変更を提案した。 |
 | 2026-04-04 | IRG | [IRG N2955](../documents/irg-n2955.md) | Dong Wenjie が `IRG N2954` に feedback し、original evidence に合わせて glyph を直し、source reference は維持する方向を支持した。 |
 | 2026-05-04 | IRG | [IRG N2956](../documents/irg-n2956.md) | Roy Wang が Extension C の GBK-source 5 characters について、glyph update と source reference update の混在した修正案を出した。 |
@@ -33,6 +36,16 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 | 2026-07-04 | IRG | [IRG N2962](../documents/irg-n2962.md) | Lin Anning が 9 G-source glyphs の revision request を提出し、G-source convention と original evidence に基づく修正を求めた。 |
 
 ## 主な論点
+
+### Meeting \#66 での分岐
+
+[IRG N2919R](../documents/irg-n2919r.md) は glyph changes と source reference changes を混在して提案した。IRG Meeting \#66 editorial report [IRG N2911](../documents/irg-n2911.md) では、U+250A9 / U+25805 の glyph revisions は in principle accepted になったが、U+26C25 は further investigation、10 source reference changes は [IRG N2923R](../documents/irg-n2923r.md) 側の bulk changes と合わせて further discussion になった。
+
+[IRG N2923R](../documents/irg-n2923r.md) は 329 reference updates と 9 horizontal extension candidates を扱うため、単発の glyph correction より review cost が高い。Meeting \#66 では China response 待ちとなり、Appendix B の horizontal extension candidates は別 proposal か revised `IRG N2929R` への merge が検討対象になった。
+
+### `GU` references から `GHC` references への correction
+
+[IRG N2930](../documents/irg-n2930.md) は、3 characters の `GU` references を `Hanyu Da Cidian` に対応する `GHC` references へ移す提案であり、IRG Meeting \#66 で accepted になった。これは representative glyph correction ではなく source reference correction なので、Unicode data では `kIRG_GSource` の value update として現れる。
 
 ### U+2CCA3 / GZFY-00932
 
@@ -58,6 +71,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 ## 関連文書
 
+- [IRG N2919R](../documents/irg-n2919r.md) - 3 G-source glyphs と 10 references の proposal。
+- [IRG N2923R](../documents/irg-n2923r.md) - 329 G-source reference updates と 9 horizontal extension candidates。
+- [IRG N2930](../documents/irg-n2930.md) - 3 `GU` references を `GHC` references へ移す proposal。
 - [IRG N2954](../documents/irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
 - [IRG N2955](../documents/irg-n2955.md) - `IRG N2954` への feedback。
 - [IRG N2956](../documents/irg-n2956.md) - Extension C の GBK-source glyph / reference issues。
@@ -78,6 +94,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 - `irg-n2954` - <https://www.unicode.org/irg/docs/n2954-GSourceIssue.pdf>
 - `irg-n2955` - <https://www.unicode.org/irg/docs/n2955-IRGN2954Feedback.pdf>
+- `irg-n2919r` - <https://www.unicode.org/irg/docs/n2919r-GSourceChanges.pdf>
+- `irg-n2923r` - <https://www.unicode.org/irg/docs/n2923r-GSourceChanges.pdf>
+- `irg-n2930` - <https://www.unicode.org/irg/docs/n2930-GSourceChanges.pdf>
 - `irg-n891` - <https://www.unicode.org/irg/docs/n0891-China-ExtensionC1-sub.pdf>
 - `irg-n1519` - <https://www.unicode.org/irg/docs/n1519-GSourceEvidenceExtensionD.pdf>
 - `irg-n2956` - <https://www.unicode.org/irg/docs/n2956-GSourceIssues.pdf>

@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n2909, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
+documents: [irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
 topics: [g-source-glyph-and-reference-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -25,8 +25,13 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2025-12 | IRG | [IRG N2918](../documents/irg-n2918.md) | Huáng Jùnliàng が U+3062B / U+30C68 の UK-source glyph を archival evidence に基づいて更新する提案を出した。 |
+| 2026-02 | IRG | [IRG N2916](../documents/irg-n2916.md) | K-source KC-05216 / U+2DB7C について、glyph を三つの 兔 を含む形に直し、`kRSUnicode` を 77.24 へ変更する proposal が出た。 |
+| 2026-03 | IRG | [IRG N2919R](../documents/irg-n2919r.md), [IRG N2923R](../documents/irg-n2923r.md) | G-source glyph / reference changes と horizontal extension candidates の大規模 proposal が出たが、Meeting \#66 では further discussion / China response 待ちになった。 |
+| 2026-03 | IRG | [IRG N2927R](../documents/irg-n2927r.md) | TCA が U+2976E は glyph を 已 から 巳 に戻し、U+20885 は current glyph を維持すると整理した。 |
+| 2026-03 | IRG | [IRG N2930](../documents/irg-n2930.md) | U+236AC、U+24A1E、U+24E82 の `GU` source references を `GHC` source references へ変更する提案が出た。 |
 | 2026-03 | IRG | [IRG N2928](../documents/irg-n2928.md) | U+268A1 / U+268A2 の V-source glyph について、現行 component が意図されたものか、U+810A 脊 に戻すべきかが照会された。 |
-| 2026-03 | IRG | `IRG N2909` | M66.10 から M66.15 が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
+| 2026-03 | IRG | [IRG N2911](../documents/irg-n2911.md), [IRG N2909](../documents/irg-n2909.md) | Meeting \#66 editorial report と recommendations が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
 | 2026-03 | IRG | [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
 | 2026-04 | UTC | `L2/26-099` | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
 | 2026-04 | IRG | [IRG N2954](../documents/irg-n2954.md), [IRG N2955](../documents/irg-n2955.md) | U+2CCA3 の G-source representative glyph が original evidence と合わない問題について、修正提案と feedback が出た。 |
@@ -60,13 +65,20 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 
 `IRG N2935` は、G-source reference の一部、T-source representative glyph、K-source representative glyph と `kRSUnicode` property change が UTC CJK & Unihan Working Group と UTC Meeting \#187 を経て Unicode Version 18.0 Beta review に反映された、と記録している。一方、Meeting \#67 に残る G / UK / V / SAT の案件は、まだ IRG 側の検討・追加 evidence・member body response が必要である。
 
-[`L2/26-099`](../documents/utc-l2-26-099.md) は、この接続を具体的な action item に分解する文書である。`IRG N2909` の M66.10、M66.12、M66.13 などに基づき、K / T / G source の representative glyph changes、`kIRG_GSource` changes、`kRSUnicode` changes を Unihan database / code charts の更新として扱う。さらに WG2 \#73 の `WG2 N5354` Recommendation M73.02 は、その一部を ISO/IEC 10646 CD の CJK additions and changes に含めるよう勧告した。
+[`L2/26-099`](../documents/utc-l2-26-099.md) は、この接続を具体的な action item に分解する文書である。[IRG N2911](../documents/irg-n2911.md) / [IRG N2909](../documents/irg-n2909.md) の M66.10、M66.12、M66.13 などに基づき、[IRG N2916](../documents/irg-n2916.md)、[IRG N2927R](../documents/irg-n2927r.md)、[IRG N2930](../documents/irg-n2930.md) 由来の K / T / G source representative glyph changes、`kIRG_GSource` changes、`kRSUnicode` changes を Unihan database / code charts の更新として扱う。さらに WG2 \#73 の `WG2 N5354` Recommendation M73.02 は、その一部を ISO/IEC 10646 CD の CJK additions and changes に含めるよう勧告した。
 
 ## 関連文書
 
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
+- [IRG N2911](../documents/irg-n2911.md) - Meeting \#66 miscellaneous editorial report。
+- [IRG N2916](../documents/irg-n2916.md) - K-source U+2DB7C glyph correction。
+- [IRG N2918](../documents/irg-n2918.md) - UK-source U+3062B / U+30C68 glyph issue。
+- [IRG N2919R](../documents/irg-n2919r.md) - G-source glyph and source reference changes。
+- [IRG N2923R](../documents/irg-n2923r.md) - G-source reference redesign and horizontal extension candidates。
+- [IRG N2927R](../documents/irg-n2927r.md) - T-source U+2976E / U+20885 clarification。
 - [IRG N2928](../documents/irg-n2928.md) - U+268A1 / U+268A2 V-source glyph enquiry。
+- [IRG N2930](../documents/irg-n2930.md) - 3 G-source reference changes。
 - [IRG N2953](../documents/irg-n2953.md) - `IRG N2928` follow-up evidence。
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
@@ -96,6 +108,7 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ## 出典
 
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
+- `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>
 - `irg-n2916` - <https://www.unicode.org/irg/docs/n2916-KSourceChange.pdf>
 - `irg-n2918` - <https://www.unicode.org/irg/docs/n2918-UKSourceGlyphIssues.pdf>
 - `irg-n2919r` - <https://www.unicode.org/irg/docs/n2919r-GSourceChanges.pdf>
