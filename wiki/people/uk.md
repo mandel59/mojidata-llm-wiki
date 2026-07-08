@@ -21,12 +21,12 @@ UK は、IRG に参加する member body / source で、UK-source representative
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `IRG N2918` | UK-source representative glyphs for U+3062B / U+30C68 の update proposal。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
-| `IRG N2960` | WS2024 review で既存 CJK Unified Ideographs に unified された 2 UK-source characters の horizontal extension proposal。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| [IRG N2960](../documents/irg-n2960.md) | WS2024 review で既存 CJK Unified Ideographs に unified された 2 UK-source characters の horizontal extension proposal。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
 
 ## 関連文書
 
 - `irg-n2918` - UK-source representative glyph issues
-- `irg-n2960` - UK Horizontal Extensions
+- [IRG N2960](../documents/irg-n2960.md) - UK Horizontal Extensions
 
 ## 関連トピック
 

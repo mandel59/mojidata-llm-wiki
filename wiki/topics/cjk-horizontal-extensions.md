@@ -29,7 +29,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 | 2024-09 | IRG | [IRG N2722](../documents/irg-n2722.md) | JMJ horizontal extension 後の source reference / glyph correspondence issue を指摘。 |
 | 2026-03 | IRG | [IRG N2929](../documents/irg-n2929.md) | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
 | 2026-03 | IRG | `IRG N2909` | M66.09 が `IRG N2929` の review と revised document `IRG N2929R` の準備を action item 化。 |
-| 2026-06 | IRG | `IRG N2960` | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
+| 2026-06 | IRG | [IRG N2960](../documents/irg-n2960.md) | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
 | 2026-07 | IRG / UTC | `IRG N2961` / `L2/26-147` | UTC が 40 CJK Unified Ideographs への `kIRG_USource` value と U-source representative glyph 追加を提案。 |
 | 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 8 に G-source、UK、U-source horizontal extension が載った。 |
 
@@ -49,7 +49,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 
 ### UK horizontal extension
 
-`IRG N2960` は、WS2024 review の過程で既存 ideograph に unified された UK source characters 2件を horizontal extension する提案である。対象は Extension F の U+2D0E7 と U+2D3EB。特に U+2D3EB は UK glyph と UCS glyph の radical / total stroke count が異なるため、code chart と Unihan database のどちらに差異を反映するかが論点として残る。
+[IRG N2960](../documents/irg-n2960.md) は、WS2024 review の過程で既存 ideograph に unified された UK source characters 2件を horizontal extension する提案である。対象は Extension F の U+2D0E7 と U+2D3EB。特に U+2D3EB は UK glyph と UCS glyph の radical / total stroke count が異なるため、code chart と Unihan database のどちらに差異を反映するかが論点として残る。
 
 ### U-source horizontal extension
 
@@ -66,6 +66,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - [IRG N2722](../documents/irg-n2722.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2929](../documents/irg-n2929.md)
+- [IRG N2960](../documents/irg-n2960.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)

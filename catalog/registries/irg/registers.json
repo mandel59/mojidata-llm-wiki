@@ -1,6 +1,8 @@
 {
   "derived_document_count": 3,
   "document_count": 2984,
+  "last_sync_latest_only": true,
+  "last_sync_register_document_count": 220,
   "latest_only": false,
   "name": "IRG Document Register",
   "registers": [
