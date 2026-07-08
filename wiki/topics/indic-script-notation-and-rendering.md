@@ -21,7 +21,7 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-01-29 | UTC | `L2/26-062` | Indian languages の text rendering / input / search / processing に関する background discussion が登録された。 |
+| 2026-01-29 | UTC | [L2/26-062](../documents/utc-l2-26-062.md) | Karan Miśra が Indian languages の text rendering / input / search / processing に関する report を提出した。 |
 | 2026-05-14 | UTC | [L2/26-131](../documents/utc-l2-26-131.md) | Kannada script 用 Samavedic svara markers 12 文字が提案された。 |
 | 2026-06-09 | UTC | [L2/26-138](../documents/utc-l2-26-138.md) | Consecutive anusvaras が valid Sanskrit forms に現れることと rendering support の問題が報告された。 |
 
@@ -35,11 +35,13 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 
 [L2/26-138](../documents/utc-l2-26-138.md) は、two consecutive anusvaras が generic invalid sequence ではなく、Sanskrit grammar に基づく valid forms に現れる場合があるとする。encoding action よりも、Core Specification guidance、font shaping、dotted circle behavior の論点である。
 
+[L2/26-062](../documents/utc-l2-26-062.md) は、atomic vowel letters を分解 sequence と同じ glyph にしないこと、invalid repeated / out-of-order dependent marks を dotted circle で見せること、language-specific orthography validation を input / search / NLP preprocessing に使うことを整理する。Indic topic では、encoding proposal だけでなく shaping and validation guidance として読む。
+
 ## 関連文書
 
 - [L2/26-131](../documents/utc-l2-26-131.md) - Samavedic svara markers in Kannada。
 - [L2/26-138](../documents/utc-l2-26-138.md) - consecutive anusvaras in Indic scripts。
-- `L2/26-062` - Text Rendering, Input, Search and Processing in Indian Languages。
+- [L2/26-062](../documents/utc-l2-26-062.md) - Text Rendering, Input, Search and Processing in Indian Languages。
 
 ## 関連トピック
 

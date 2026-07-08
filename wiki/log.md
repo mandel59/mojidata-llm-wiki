@@ -4,6 +4,8 @@
 
 ## 2026-07-08
 
+- **Digest**: Added Source Document pages for `L2/24-109`, `L2/26-040R2`, `L2/26-089`, `L2/26-117`, `L2/26-118`, `L2/26-119`, and `L2/26-120`, opened [Shaaldaa Script](topics/shaaldaa-script.md), and linked SEW / WG2 Amendment 1 follow-up for Shaaldaa, Belarusian Ruble sign, Latin phonetic additions, and U+06C4 glyph correction.
+- **Digest**: Added Source Document pages for `L2/25-131`, `L2/26-062`, `L2/26-065`, `L2/26-070R`, `L2/26-079`, `L2/26-104`, and `L2/26-110`, linking SEW, PAG, ESR, Indic rendering, and Leibnizian / historic symbols topics; `IRG N2952`, `IRG N2933`, and `L2/26-109` remain blocked by unavailable or unusable source extraction.
 - **Digest**: Added Source Document pages for `L2/25-100`, `L2/26-068`, and `L2/26-111`, and opened [East Asian Spacing](topics/east-asian-spacing.md) and [Unicode Set Notation](topics/unicode-set-notation.md) as newly extracted topic candidates from unresolved recent document references.
 - **Refine**: Split [V-source Representative Glyph Issues](topics/v-source-representative-glyph-issues.md) from the broader IRG source-data topic, linking U+268A1 / U+268A2 evidence review and U+2B8A0 UTC data updates from related documents, meetings, people, and the Han family.
 - **Digest**: Added `IRG N2928` and `IRG N2953` Source Document pages for the U+268A1 / U+268A2 V-source glyph issue, and linked the follow-up chain from IRG Meeting \#66/\#67, source-data, Ng Koon Hang, and Vietnam pages.

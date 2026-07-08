@@ -48,6 +48,8 @@
 - [L2/22-133](utc-l2-22-133.md) - `kSpoofingVariant` / `kZVariant` の追加候補。
 - [L2/25-031](utc-l2-25-031.md) - default identifiers 向け common-use Han subset。
 - [L2/25-100](utc-l2-25-100.md) - UTR \#59 East Asian Spacing draft。
+- [L2/24-109](utc-l2-24-109.md) - Sheek Bakrii Saphaloo script initial proposal。
+- [L2/25-131](utc-l2-25-131.md) - historic alchemical symbols proposal。
 - [L2/26-082](utc-l2-26-082.md) - CJK confusables の最初の review request。
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
 - [L2/26-092](utc-l2-26-092.md) - UTC \#187 agenda。
@@ -58,9 +60,17 @@
 - [L2/26-099](utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC \#187 Meeting。
 - [L2/26-100](utc-l2-26-100.md) - UTC \#187 Script Encoding WG recommendations。
 - [L2/26-101](utc-l2-26-101.md) - UTC \#187 Charts WG report。
+- [L2/26-040R2](utc-l2-26-040r2.md) - Shaaldaa script revised proposal。
+- [L2/26-089](utc-l2-26-089.md) - Belarusian Ruble sign proposal。
+- [L2/26-104](utc-l2-26-104.md) - UTS \#51 Unicode Emoji Revision 30 proposed update。
 - [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX \#38 Revision 40 proposed update。
+- [L2/26-110](utc-l2-26-110.md) - UAX \#31 Unicode Identifiers and Syntax Revision 44 proposed update。
 - [L2/26-111](utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
+- [L2/26-117](utc-l2-26-117.md) - Catholic Albanian letter edhe proposal。
+- [L2/26-118](utc-l2-26-118.md) - modifier capital Y proposal。
+- [L2/26-119](utc-l2-26-119.md) - U+06C4 ARABIC LETTER WAW WITH RING WITHIN glyph correction proposal。
+- [L2/26-120](utc-l2-26-120.md) - U+06C4 glyph correction response。
 - [L2/26-102](utc-l2-26-102.md) - Unicode 18.0 timeline と beta review を扱う RMG report。
 - [L2/26-073R](utc-l2-26-073r.md) - CJK Strokes standardized variation sequences。
 - [L2/26-126](utc-l2-26-126.md) - ICU4X / TC39 liaison update to UTC \#187。
@@ -95,8 +105,12 @@
 - [L2/25-213](utc-l2-25-213.md) - Katakana kun'yomi in Unihan `kJapanese`。
 - [L2/25-221](utc-l2-25-221.md) - 日本の地名・橋名 ideographs 3 字を UAX \#45 に追加する提案。
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
+- [L2/26-062](utc-l2-26-062.md) - Indian languages の rendering / input / search / processing report。
+- [L2/26-065](utc-l2-26-065.md) - Initial Teaching Alphabet 用 LATIN SMALL LETTER ZH proposal。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
+- [L2/26-070R](utc-l2-26-070r.md) - multiple variation selectors conformance proposal。
+- [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
 - [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
 - [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。

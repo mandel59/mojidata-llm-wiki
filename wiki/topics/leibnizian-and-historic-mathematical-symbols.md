@@ -4,8 +4,8 @@ title: Leibnizian and Historic Mathematical Symbols
 description: "Leibnizian ambiguous signs と historic mathematical sources 用 symbols / combining marks / letterlike symbols。"
 slug: leibnizian-and-historic-mathematical-symbols
 bodies: [UTC, WG2]
-documents: [utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354, wg2-n5361r, wg2-n5364]
-topics: [unicode-18-change-sources]
+documents: [utc-l2-25-131, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354, wg2-n5361r, wg2-n5364]
+topics: [unicode-18-change-sources, script-encoding-pipeline]
 status: proposed
 tags: [math, leibniz, symbols, variation-sequences, unicode-18]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -21,6 +21,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2025-04-14 | UTC | [L2/25-131](../documents/utc-l2-25-131.md) | Historic scientific characters proposal の分割として、7 historic alchemical symbols が提案された。 |
 | 2026-05-26 | UTC / WG2 | [L2/26-140](../documents/utc-l2-26-140.md) | Historic mathematical sources 用 miscellaneous symbols 10 文字の 4th revision が提出された。 |
 | 2026-05-26 | UTC / WG2 | [L2/26-141](../documents/utc-l2-26-141.md) | Slashed digits 用 combining overlays 2 文字が提案された。 |
 | 2026-05-26 | UTC / WG2 | [L2/26-142](../documents/utc-l2-26-142.md) | Historic sources 用 letterlike symbols 6 文字が提案された。 |
@@ -32,7 +33,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 
 ### proposal split
 
-この文書群は一つの巨大 proposal ではなく、miscellaneous symbols、combining marks、letterlike symbols、Leibnizian ambiguous signs、delta review feedback に分割されている。個々の characters の eligibility と、Leibnizian system 全体の block / naming / VS model を分けて読む必要がある。
+この文書群は一つの巨大 proposal ではなく、alchemical symbols、miscellaneous symbols、combining marks、letterlike symbols、Leibnizian ambiguous signs、delta review feedback に分割されている。個々の characters の eligibility と、Leibnizian / historic scientific symbols 全体の block / naming / VS model を分けて読む必要がある。
 
 ### variation sequences と descriptive names
 
@@ -45,6 +46,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 ## 関連文書
 
 - [L2/26-140](../documents/utc-l2-26-140.md) - miscellaneous mathematical symbols。
+- [L2/25-131](../documents/utc-l2-25-131.md) - historic alchemical symbols。
 - [L2/26-141](../documents/utc-l2-26-141.md) - two combining marks。
 - [L2/26-142](../documents/utc-l2-26-142.md) - letterlike symbols。
 - [L2/26-143](../documents/utc-l2-26-143.md) - Leibnizian ambiguous signs。
@@ -55,9 +57,11 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 ## 関連トピック
 
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
+- [Script Encoding Pipeline](script-encoding-pipeline.md)
 
 ## 出典
 
+- `utc-l2-25-131` - <https://www.unicode.org/L2/L2025/25131-alchemical-symbols.pdf>
 - `utc-l2-26-140` - <https://www.unicode.org/L2/L2026/26140-miscellaneous-symbols.pdf>
 - `utc-l2-26-141` - <https://www.unicode.org/L2/L2026/26141-two-combining-marks.pdf>
 - `utc-l2-26-142` - <https://www.unicode.org/L2/L2026/26142-letterlike-symbols.pdf>

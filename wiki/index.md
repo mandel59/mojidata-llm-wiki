@@ -45,6 +45,7 @@ okf_version: "0.1"
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts、Amendment 1 project。
 - [Emoji Interoperability and Intake](topics/emoji-interoperability-and-intake.md) - UTC \#187 ESR report を入口にした emoji interoperability、CLDR keyword、intake process。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#187 SEW report を入口にした script proposal の progression、保留、安定性論点。
+- [Shaaldaa Script](topics/shaaldaa-script.md) - Oromo 用 Shaaldaa script の UCS 符号化提案と ISO/IEC 10646 Amendment 1 candidate としての扱い。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
 - [East Asian Spacing](topics/east-asian-spacing.md) - UTR \#59 draft の East Asian visible spacing algorithm と property data。
 - [Unicode Set Notation](topics/unicode-set-notation.md) - UTS \#61 draft の machine-readable Unicode set notation。
