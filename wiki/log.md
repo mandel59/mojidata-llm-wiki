@@ -4,6 +4,7 @@
 
 ## 2026-07-08
 
+- **Tooling**: Added `tools/wiki_stats.py` to summarize concept counts, Source Document coverage by registry / document type, digest candidates, recent unpaged available catalog entries, unresolved relations, and Synthesis membership gaps for deciding next wiki work.
 - **Digest**: Added Source Document pages for `IRG N2911`, `IRG N2916`, `IRG N2918`, `IRG N2919R`, `IRG N2923R`, `IRG N2927R`, `IRG N2930`, `L2/26-074`, and `L2/26-084`, connecting IRG Meeting \#66 source-data decisions and UTC \#187 Unihan property / `kMandarin` updates to existing IRG source-data, G-source, V-source, horizontal extension, Unihan, and Unicode 18.0 topics; updated fetch / PDF extraction tools to report 404s and unusable text extraction without traceback.
 - **Digest**: Added the [Emoji](families/emoji.md) family and [Emoji Repertoire Proposals](topics/emoji-repertoire-proposals.md), digesting `L2/25-230R`, `L2/25-252` through `L2/25-259`, `L2/26-008R`, and `L2/26-048` to connect Unicode 18.0 emoji candidates, CRACKING FACE replacement, UTS \#51, CLDR keyword intake, and ESR interoperability review.
 - **Digest**: Added Source Document pages for `L2/24-109`, `L2/26-040R2`, `L2/26-089`, `L2/26-117`, `L2/26-118`, `L2/26-119`, and `L2/26-120`, opened [Shaaldaa Script](topics/shaaldaa-script.md), and linked SEW / WG2 Amendment 1 follow-up for Shaaldaa, Belarusian Ruble sign, Latin phonetic additions, and U+06C4 glyph correction.
