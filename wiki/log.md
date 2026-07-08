@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-09
+
+- **Digest**: Added Source Document pages for `L2/26-113` and `L2/26-114`, linking Kodava Kannada diacritics and Sunuwar / Wambule Devanagari vowel length mark proposals to Indic notation/rendering, script pipeline, and UTC \#188 tracking; added WG2 aliases for corresponding Leibnizian / historic mathematical symbol proposals already digested under UTC document numbers.
+
 ## 2026-07-08
 
 - **Refine**: Added [Script and Notation Proposals](families/script-and-notation-proposals.md) and [Text Model and Core Specification](families/text-model-and-core-specification.md) as Synthesis pages, grouping the remaining non-Han / non-emoji script, notation, text-model, and ISO publication topics that were unassigned in `tools/wiki_stats.py`.
