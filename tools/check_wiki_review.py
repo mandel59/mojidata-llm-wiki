@@ -497,15 +497,42 @@ def line_describes_document_as_unavailable(line: str, entry: CatalogEntry) -> bo
     return False
 
 
+def available_catalog_name_index(catalog: dict[str, CatalogEntry]) -> dict[str, list[CatalogEntry]]:
+    index: dict[str, list[CatalogEntry]] = defaultdict(list)
+    for entry in catalog.values():
+        if not entry.available:
+            continue
+        for name in catalog_names(entry):
+            if name:
+                index[name].append(entry)
+    return dict(index)
+
+
+def catalog_entries_mentioned_in_line(
+    line: str, name_index: dict[str, list[CatalogEntry]]
+) -> list[CatalogEntry]:
+    candidates: list[CatalogEntry] = []
+    seen: set[str] = set()
+    for name, entries in name_index.items():
+        if name not in line:
+            continue
+        for entry in entries:
+            if entry.entry_id in seen:
+                continue
+            seen.add(entry.entry_id)
+            candidates.append(entry)
+    return candidates
+
+
 def check_stale_unavailable_text(catalog: dict[str, CatalogEntry]) -> list[str]:
-    available = [entry for entry in catalog.values() if entry.available]
+    name_index = available_catalog_name_index(catalog)
     errors: list[str] = []
     for path in sorted(WIKI.rglob("*.md")):
         rel_path = path.relative_to(WIKI).as_posix()
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
             if not any(pattern in line for pattern in UNAVAILABLE_PATTERNS):
                 continue
-            for entry in available:
+            for entry in catalog_entries_mentioned_in_line(line, name_index):
                 if line_describes_document_as_unavailable(line, entry):
                     errors.append(
                         f"{rel_path}:{line_number}: describes available catalog document as unconfirmed or tentative: {entry.entry_id}"
