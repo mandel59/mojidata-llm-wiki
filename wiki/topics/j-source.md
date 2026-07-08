@@ -71,6 +71,7 @@ J-source は、ISO/IEC 10646 / Unicode の CJK Unified Ideographs における J
 
 ## 関連トピック
 
+- [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)

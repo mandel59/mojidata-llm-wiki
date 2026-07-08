@@ -41,6 +41,7 @@ UAX \#60 は Small Seal Script そのものの encoding proposal ではないが
 
 ## 関連トピック
 
+- [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [Small Seal Script](small-seal-script.md)
 

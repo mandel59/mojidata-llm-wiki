@@ -67,6 +67,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 
 ## 関連トピック
 
+- [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)

@@ -74,6 +74,7 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 
 ## 関連トピック
 
+- [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [Kana](kana.md)

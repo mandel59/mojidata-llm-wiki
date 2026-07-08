@@ -43,6 +43,7 @@ CJK Strokes は Unihan property そのものではないが、`L2/26-099` では
 
 ## 関連トピック
 
+- [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 
 ## 出典
