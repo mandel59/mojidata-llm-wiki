@@ -224,7 +224,7 @@ event は文書そのものではなく、文書・会合・勧告・action item
 
 ## 操作
 
-Python tools は repository root で `uv run python ...` として実行する。`uv init` / `uv venv` 済みの project-local `.venv` と `pyproject.toml` / `uv.lock` を前提にし、`python` / `python3` を直接呼ばない。恒久的に必要な package は `uv add <package>` で project dependencies に追加し、一時的な `uv run --with ...` へ逃がさない。
+Python tools は repository root で `uv run python ...` として実行する。`uv init` / `uv venv` 済みの project-local `.venv` と `pyproject.toml` / `uv.lock` を前提にし、`python` / `python3` を直接呼ばない。恒久的に必要な package は `uv add <package>` で project dependencies に追加し、一時的な `uv run --with ...` へ逃がさない。CLI tool は `tools.cli_support.configure_utf8_stdio()` を `main()` 冒頭で呼び、Windows の locale に依存せず標準入出力を UTF-8 として扱う。
 
 ### Update Catalog
 

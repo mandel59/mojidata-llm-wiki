@@ -8,6 +8,11 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import Concept, concept_matches_lookup, load_concepts, read_page
 
 
@@ -115,6 +120,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     _cid, _path, markdown = load_markdown_target(args.page)
 

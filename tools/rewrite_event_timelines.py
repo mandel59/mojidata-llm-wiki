@@ -5,6 +5,11 @@ import argparse
 import sys
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import EVENTS, find_concept_path, parse_frontmatter, relative_link, replace_marker_block, string_list
 
 
@@ -71,6 +76,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     if args.topic:
         target = find_concept_path("topic", args.topic)

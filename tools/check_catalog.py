@@ -6,6 +6,11 @@ import json
 import sys
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
@@ -134,6 +139,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     total = 0
     all_errors: list[str] = []

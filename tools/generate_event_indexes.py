@@ -4,6 +4,11 @@ from __future__ import annotations
 from collections import defaultdict
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import EVENTS, parse_frontmatter, string_list
 
 
@@ -18,6 +23,7 @@ def event_sort_key(item: tuple[Path, dict[str, object]]) -> tuple[str, str]:
 
 
 def main() -> int:
+    configure_utf8_stdio()
     events: list[tuple[Path, dict[str, object]]] = []
     for path in sorted(EVENTS.glob("*.md")):
         if path.name == "index.md":

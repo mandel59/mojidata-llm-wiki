@@ -7,6 +7,11 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import (
     DEFAULT_SCHEMA,
     LINK_RE,
@@ -151,6 +156,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     errors = validate_bundle(args.bundle, args.schema)
     if errors:

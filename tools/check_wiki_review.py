@@ -9,6 +9,11 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import (
     ROOT,
     WIKI,
@@ -562,6 +567,7 @@ def run_checks(args: argparse.Namespace) -> list[str]:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     errors = run_checks(args)
     if errors:

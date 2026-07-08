@@ -7,6 +7,11 @@ import sys
 from collections import deque
 from typing import Iterable
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import Concept, concept_matches_lookup, load_concepts, scalar, string_list
 
 
@@ -170,6 +175,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     try:
         concepts = load_concepts()

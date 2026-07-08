@@ -4,6 +4,11 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from pypdf import PdfReader
 
 
@@ -27,6 +32,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    configure_utf8_stdio()
     args = parse_args()
     for pdf_path in args.pdfs:
         output_path = args.output_dir / pdf_path.parent.name / f"{pdf_path.stem}.txt"
@@ -37,4 +43,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

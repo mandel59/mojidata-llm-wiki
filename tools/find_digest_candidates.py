@@ -10,9 +10,11 @@ from pathlib import Path
 from typing import Iterable
 
 try:
+    from .cli_support import configure_utf8_stdio
     from .unicode_registry import parse_doc_number
     from .wiki_store import Concept, ROOT, WIKI, concept_matches_lookup, load_concepts, normalize_lookup_key, scalar
 except ImportError:
+    from cli_support import configure_utf8_stdio
     from unicode_registry import parse_doc_number
     from wiki_store import Concept, ROOT, WIKI, concept_matches_lookup, load_concepts, normalize_lookup_key, scalar
 
@@ -363,6 +365,7 @@ def render_table(candidates: list[DigestCandidate]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
     concepts = load_concepts(WIKI)
     catalog = load_catalog(CATALOG)

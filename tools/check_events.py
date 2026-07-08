@@ -5,6 +5,11 @@ import json
 import sys
 from pathlib import Path
 
+try:
+    from cli_support import configure_utf8_stdio
+except ModuleNotFoundError:
+    from tools.cli_support import configure_utf8_stdio
+
 from wiki_store import EVENTS, parse_frontmatter, string_list
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +62,7 @@ def validate_event(path: Path, document_ids: set[str]) -> list[str]:
 
 
 def main() -> int:
+    configure_utf8_stdio()
     document_ids = load_document_ids()
     errors: list[str] = []
 
