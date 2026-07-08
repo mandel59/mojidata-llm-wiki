@@ -224,7 +224,7 @@ event は文書そのものではなく、文書・会合・勧告・action item
 
 ## 操作
 
-Python tools は `uv run python` で実行する。`python` / `python3` が PATH に無い環境があるため、直接呼び出しを前提にしない。`uv` の既定 cache や managed Python へのアクセスに失敗する場合は、`UV_CACHE_DIR=.tmp/uv-cache` と利用可能な Python への `UV_PYTHON` を指定してから実行する。
+Python tools は repository root で `uv run python ...` として実行する。`uv init` / `uv venv` 済みの project-local `.venv` と `pyproject.toml` / `uv.lock` を前提にし、`python` / `python3` を直接呼ばない。恒久的に必要な package は `uv add <package>` で project dependencies に追加し、一時的な `uv run --with ...` へ逃がさない。
 
 ### Update Catalog
 
