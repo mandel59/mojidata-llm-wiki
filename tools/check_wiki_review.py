@@ -351,6 +351,48 @@ def escape_obsidian_tags_in_markdown(markdown: str) -> tuple[str, list[tuple[int
     return "".join(fixed_lines), findings
 
 
+def unescape_hashes_in_inline_code_line(line: str) -> tuple[str, list[str]]:
+    findings: list[str] = []
+    pieces: list[str] = []
+    last = 0
+
+    for start, end in inline_code_spans(line):
+        span = line[start:end]
+        if "\\#" not in span:
+            continue
+        findings.append(span)
+        pieces.append(line[last:start])
+        pieces.append(span.replace("\\#", "#"))
+        last = end
+
+    if not findings:
+        return line, findings
+    pieces.append(line[last:])
+    return "".join(pieces), findings
+
+
+def unescape_hashes_in_inline_code_markdown(markdown: str) -> tuple[str, list[tuple[int, str]]]:
+    findings: list[tuple[int, str]] = []
+    fixed_lines: list[str] = []
+    in_fence = False
+
+    for line_number, raw_line in enumerate(markdown.splitlines(keepends=True), 1):
+        line = raw_line.rstrip("\r\n")
+        newline = raw_line[len(line) :]
+        if FENCE_MARKER_RE.match(line):
+            in_fence = not in_fence
+            fixed_lines.append(raw_line)
+            continue
+        if in_fence:
+            fixed_lines.append(raw_line)
+            continue
+        fixed_line, spans = unescape_hashes_in_inline_code_line(line)
+        findings.extend((line_number, span) for span in spans)
+        fixed_lines.append(fixed_line + newline)
+
+    return "".join(fixed_lines), findings
+
+
 def markdown_body_start(text: str) -> int:
     match = FRONTMATTER_RE.match(text)
     if match:
@@ -370,6 +412,25 @@ def check_body_obsidian_tags(fix: bool = False) -> list[str]:
             errors.append(
                 f"{rel_path}:{line_number}: Markdown body contains unescaped Obsidian tag-like token "
                 f"{tag!r}; escape it as \\{tag}"
+            )
+        if fix and findings:
+            write_text_raw(path, text[:body_start] + fixed_body)
+    return errors
+
+
+def check_overescaped_hashes_in_inline_code(fix: bool = False) -> list[str]:
+    errors: list[str] = []
+    for path in sorted(WIKI.rglob("*.md")):
+        rel_path = path.relative_to(ROOT).as_posix()
+        text = path.read_text(encoding="utf-8")
+        body_start = markdown_body_start(text)
+        body = text[body_start:]
+        fixed_body, findings = unescape_hashes_in_inline_code_markdown(body)
+        for line_number, span in findings:
+            replacement = span.replace("\\#", "#")
+            errors.append(
+                f"{rel_path}:{line_number}: inline code span contains over-escaped hash "
+                f"{span!r}; use {replacement!r}"
             )
         if fix and findings:
             write_text_raw(path, text[:body_start] + fixed_body)
@@ -580,6 +641,7 @@ def run_checks(args: argparse.Namespace) -> list[str]:
     fixable_errors.extend(check_meeting_bodies(concepts, args.fix))
     fixable_errors.extend(check_synthesis_members(concepts, args.fix))
     fixable_errors.extend(check_body_obsidian_tags(args.fix))
+    fixable_errors.extend(check_overescaped_hashes_in_inline_code(args.fix))
 
     if args.fix:
         concepts = load_concepts()
@@ -587,6 +649,7 @@ def run_checks(args: argparse.Namespace) -> list[str]:
         errors.extend(check_meeting_bodies(concepts, False))
         errors.extend(check_synthesis_members(concepts, False))
         errors.extend(check_body_obsidian_tags(False))
+        errors.extend(check_overescaped_hashes_in_inline_code(False))
     else:
         errors.extend(fixable_errors)
 

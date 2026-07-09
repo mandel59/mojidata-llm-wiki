@@ -9,6 +9,7 @@ from tools.check_wiki_review import (
     catalog_entries_mentioned_in_line,
     escape_obsidian_tags_in_markdown,
     line_describes_document_as_unavailable,
+    unescape_hashes_in_inline_code_markdown,
 )
 
 
@@ -47,6 +48,25 @@ class CheckWikiReviewTests(unittest.TestCase):
 
         self.assertEqual(fixed, "UTC \\#187 は処理済み。\n")
         self.assertEqual(findings, [])
+
+    def test_unescapes_overescaped_hashes_only_in_inline_code(self):
+        fixed, findings = unescape_hashes_in_inline_code_markdown(
+            "`PRI \\#546` と `UAX \\#38` は過剰。\n"
+            "本文の PRI \\#546 は対象外。\n"
+            "```text\n"
+            "`PRI \\#546`\n"
+            "```\n"
+        )
+
+        self.assertEqual(
+            fixed,
+            "`PRI #546` と `UAX #38` は過剰。\n"
+            "本文の PRI \\#546 は対象外。\n"
+            "```text\n"
+            "`PRI \\#546`\n"
+            "```\n",
+        )
+        self.assertEqual(findings, [(1, "`PRI \\#546`"), (1, "`UAX \\#38`")])
 
     def test_stale_unavailable_candidate_index_only_returns_available_mentions(self):
         available = CatalogEntry(
