@@ -136,7 +136,15 @@
 - [L2/26-015R](utc-l2-26-015r.md) - N'ko Phonetic Extensions for Bambara revised proposal。
 - [L2/26-048](utc-l2-26-048.md) - CRACKING FACE emoji proposal。
 - [L2/26-065](utc-l2-26-065.md) - Initial Teaching Alphabet 用 LATIN SMALL LETTER ZH proposal。
+- [L2/26-043](utc-l2-26-043.md) - 家 variant 系の 1 ideograph を UAX \#45 に追加する提案。
 - [L2/26-044](utc-l2-26-044.md) - 山形県東根市の地名 ideograph を UAX \#45 に追加する提案。
+- [L2/26-057](utc-l2-26-057.md) - 日本資料を含む多様な 8 ideographs を UAX \#45 に追加する提案。
+- [L2/26-064](utc-l2-26-064.md) - 译 / 訳 / 譯 variant 系の簡化字形を UAX \#45 に追加する提案。
+- [L2/26-071](utc-l2-26-071.md) - common simplified forms 3 ideographs を UAX \#45 に追加する提案。
+- [L2/26-072](utc-l2-26-072.md) - 鳳そう魚と Samuhara characters を UAX \#45 に追加する提案。
+- [L2/26-080](utc-l2-26-080.md) - 癸 related character の 1 ideograph を UAX \#45 に追加する提案。
+- [L2/26-083](utc-l2-26-083.md) - simplified / abbreviated forms 5 ideographs を UAX \#45 に追加する提案。
+- [L2/26-085](utc-l2-26-085.md) - abbreviated ideographs 5 字を UAX \#45 に追加する提案。
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
 - [L2/26-074](utc-l2-26-074.md) - Japanese new / old variants 用 provisional Unihan properties。
 - [L2/26-084](utc-l2-26-084.md) - 169 characters の `kMandarin` additions / changes への CLDR / L&RE feedback。

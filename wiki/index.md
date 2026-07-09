@@ -35,6 +35,7 @@ okf_version: "0.1"
 - [Kana](topics/kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名。
 - [Japanese Place-Name Ideographs](topics/japanese-place-name-ideographs.md) - 日本の地名・登記資料に現れる未符号化漢字の UAX \#45 / FutureWS proposals。
 - [Japanese Historical Ideographs](topics/japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
+- [CJK Abbreviated and Simplified Ideographs](topics/cjk-abbreviated-and-simplified-ideographs.md) - 略字・俗簡字・簡化字由来の未符号化 CJK ideographs を UAX \#45 additions として扱う topic。
 - [CJK Hybrid Characters](topics/cjk-hybrid-characters.md) - 仮名・Bopomofo・Latin・Hangul などを部品に含む Han-like characters の CJKUI / 別 block policy。
 - [CJK Multi-Syllabic and Abbreviation Characters](topics/cjk-multi-syllabic-and-abbreviation-characters.md) - Han-only abbreviation characters と script-hybrid characters の分類境界。
 - [Ideographic Punctuation Proposals](topics/ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
