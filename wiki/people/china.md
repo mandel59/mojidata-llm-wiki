@@ -4,7 +4,7 @@ title: China
 description: G-source、Small Seal Script、CJKV Components、CJK Hybrid Characters に関係する China member body。
 slug: china
 bodies: [IRG, WG2]
-documents: [irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2935, wg2-n4634, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369]
+documents: [irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2935, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369]
 topics: [cjk-horizontal-extensions, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, cjkv-components, g-source-glyph-and-reference-issues, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -25,6 +25,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | `IRG N2867R` | Han-only multi-syllabic abbreviation characters の source prioritization と GB 18030 mapping 方針を論じる。 | [CJK Multi-Syllabic and Abbreviation Characters](../topics/cjk-multi-syllabic-and-abbreviation-characters.md) |
 | `IRG N2878R3` | TCA とともに CJK Unified Ideographs Components-A/B の final proposal source。 | [CJKV Components](../topics/cjkv-components.md) |
 | [WG2 N4634](../documents/wg2-n4634.md) | TCA とともに Small Seal Script 初期 proposal を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
+| [WG2 N4688](../documents/wg2-n4688.md) | TCA とともに 14-volume appendix 付きの Small Seal Script complete proposal を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | [WG2 N5105](../documents/wg2-n5105.md) | TCA とともに Small Seal Script proposal appendix update を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5318` | TCA とともに Four-Column Small Seal Script proposal を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5355` | TCA とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
@@ -38,6 +39,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 - `irg-n2867r` - Multi-Syllabic Characters and Abbreviation Characters
 - `irg-n2878r3` - CJK Unified Ideographs Components
 - [WG2 N4634](../documents/wg2-n4634.md) - Small Seal Script initial proposal
+- [WG2 N4688](../documents/wg2-n4688.md) - Small Seal Script complete proposal
 - [WG2 N5105](../documents/wg2-n5105.md) - Small Seal proposal appendix update
 - `wg2-n5318` - Four-Column Small Seal Script proposal
 - `wg2-n5355` - Small Seal normalized form clarification
@@ -68,6 +70,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 - `irg-n2929` - <https://www.unicode.org/irg/docs/n2929-ChinaHorizontalExtension.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `wg2-n4634` - <http://www.unicode.org/wg2/docs/n4634.pdf>
+- `wg2-n4688` - <http://www.unicode.org/wg2/docs/n4688%20Small%20Seal%20Script.zip>
 - `wg2-n5105` - <https://unicode.org/wg2/docs/n5105_smallseal%20Appendix%20update_V2%20.pdf>
 - `wg2-n5318` - <https://www.unicode.org/wg2/docs/n5318R-Proposal%20to%20encode%20Four-Column%20Small%20Seal%20Script%20in%20UCS.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>

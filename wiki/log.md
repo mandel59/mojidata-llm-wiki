@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [WG2 N4688](documents/wg2-n4688.md) for the 2015 Small Seal complete proposal, linking its 11,108-character Tenghuaxie appendix, `L2/15-281` alias, and N5105 reduction to the Small Seal topic, N4634, N5105, N5344R2, TCA, and China pages.
 - **Digest**: Added Source Document pages for [WG2 N4634](documents/wg2-n4634.md), [WG2 N5105](documents/wg2-n5105.md), [WG2 N5108](documents/wg2-n5108.md), and [WG2 N5209](documents/wg2-n5209.md), connecting the initial Small Seal proposal, revised appendix, WG2 \#68 discussion report, and source-mapping/database considerations to Small Seal, UAX \#60, N5344R2, TCA, China, and Michel Suignard pages.
 - **Refine**: Canonicalized the Small Seal revised proposal page from `wg2-n5344` to catalog entry `wg2-n5344r2`, expanded its digest from the fetched `WG2 N5344R2` PDF, and updated Small Seal, UAX \#60, WG2 meeting, event, and people links to the canonical document concept.
 - **Digest**: Added [WG2 N5307R](documents/wg2-n5307r.md) for Small Seal glyph mapping principles, connecting THX / CCZ / QJZ / DYC unification and disunification criteria to the revised Small Seal proposal and code chart data.

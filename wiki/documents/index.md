@@ -22,6 +22,7 @@
 - [L2/22-185](utc-l2-22-185.md) - UAX \#45 status value names。
 - [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
 - [WG2 N4634](wg2-n4634.md) - Small Seal Script の初期 proposal。
+- [WG2 N4688](wg2-n4688.md) - Small Seal Script の 2015 年 complete proposal。
 - [WG2 N5105](wg2-n5105.md) - Small Seal Script proposal appendix update。
 - [WG2 N5108](wg2-n5108.md) - WG2 \#68 Seal Script discussion report。
 - [WG2 N5209](wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
