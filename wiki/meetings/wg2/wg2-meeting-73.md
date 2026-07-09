@@ -8,8 +8,8 @@ bodies: [WG2]
 meeting: 73
 date: "2026-06-22/26"
 location: Paris, France
-documents: [wg2-n5350r8, wg2-n5351, wg2-n5354, wg2-n5355, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5365, wg2-n5366, wg2-n5367, wg2-n5368, wg2-n5369, utc-l2-26-099, utc-l2-26-102]
-topics: [iso-10646-edition-and-code-charts, small-seal-script, unihan-database-maintenance, unicode-18-change-sources, script-encoding-pipeline, dai-xaau-script, maya-hieroglyph-encoding, leibnizian-and-historic-mathematical-symbols, cjkv-components, kirg-sgsource]
+documents: [wg2-n5350r8, wg2-n5351, wg2-n5354, wg2-n5355, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5365, wg2-n5366, wg2-n5367, wg2-n5368, wg2-n5369, utc-l2-26-099, utc-l2-26-102, utc-l2-26-129]
+topics: [iso-10646-edition-and-code-charts, small-seal-script, unihan-database-maintenance, unicode-18-change-sources, script-encoding-pipeline, dai-xaau-script, leke-script, maya-hieroglyph-encoding, leibnizian-and-historic-mathematical-symbols, cjkv-components, kirg-sgsource]
 tags: [meeting, wg2, iso-10646, dis, amendment, small-seal, cjk, unihan]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
@@ -41,7 +41,7 @@ WG2 Meeting \#73 は 2026-06-22/26 に Paris, France で開催された。中心
 | M73.03 | WG2 | [WG2 N5363R](../../documents/wg2-n5363r.md) に基づき、UCS code charts を core text から linked content へ移す変更を 7th edition DIS に入れるよう勧告した。 | [ISO/IEC 10646 Edition and Code Charts](../../topics/iso-10646-edition-and-code-charts.md) |
 | M73.04 | WG2 | M73.01-M73.03 と final disposition [WG2 N5369](../../documents/wg2-n5369.md) を含む 7th edition DIS text を SC2 secretariat へ送るよう勧告した。target は DIS 2026-10-01、IS 2027-06-01。 | [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) |
 | M73.05 | WG2 | [WG2 N5362](../../documents/wg2-n5362.md) と [WG2 N5361R](../../documents/wg2-n5361r.md) をもとに、7th edition Amendment 1 project subdivision を始めるよう勧告した。 | [ISO/IEC 10646 Edition and Code Charts](../../topics/iso-10646-edition-and-code-charts.md) |
-| M73.06-M73.13 | WG2 | Belarusian Ruble sign、combining overlays、Leibnizian / letterlike symbols、Sirmauri、Leke、Proto-Cuneiform、Mwangwego、Shaaldaa などを first amendment / possible additions として扱った。 | [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md), [Leibnizian and Historic Mathematical Symbols](../../topics/leibnizian-and-historic-mathematical-symbols.md) |
+| M73.06-M73.13 | WG2 | Belarusian Ruble sign、combining overlays、Leibnizian / letterlike symbols、Sirmauri、[Leke](../../topics/leke-script.md)、Proto-Cuneiform、Mwangwego、Shaaldaa などを first amendment / possible additions として扱った。 | [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md), [Leibnizian and Historic Mathematical Symbols](../../topics/leibnizian-and-historic-mathematical-symbols.md) |
 | M73.14 | WG2 | `WG2 N5366` Codical Maya Hieroglyphs と `WG2 N5367` Maya Hieroglyphs Extended-A を WG2 \#74 までに review するよう求めた。 | [Maya Hieroglyph Encoding](../../topics/maya-hieroglyph-encoding.md) |
 | M73.15 | WG2 | `WG2 N5359` に基づき、new normative IRG source for Singapore `kIRG_SGSource` を Amendment 1 target として追加するよう勧告した。 | [IRG M66.16 kIRG_SGSource establishment](../../events/irg-m66-16-kirg-sgsource-establishment.md) |
 | M73.16 | WG2 | Dr. Ken Lunde の IRG Convenor 再任を SC2 に勧告した。 | [IRG](../../people/irg.md) |

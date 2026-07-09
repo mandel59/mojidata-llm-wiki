@@ -33,6 +33,7 @@
 - [WG2 N5209](wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
 - [L2/25-199](utc-l2-25-199.md) - UAX \#45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
+- [L2/13-116](utc-l2-13-116.md) - Leke script の 2013 年 revised proposal。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
 - [L2/16-188](utc-l2-16-188.md) - Hentaigana revised repertoire。
