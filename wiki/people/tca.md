@@ -4,8 +4,8 @@ title: TCA
 description: T-source、Small Seal Script、CJKV Components に関係する TCA member body。
 slug: tca
 bodies: [IRG, WG2]
-documents: [irg-n2878r3, irg-n2927r, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355]
-topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script]
+documents: [irg-n2861, irg-n2878r3, irg-n2927r, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355]
+topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script, t-source-representative-glyph-issues]
 tags: [member-body, source, tca, t-source]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -26,7 +26,7 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 | `WG2 N5318` | China とともに Four-Column Small Seal Script proposal の source。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5355` | China とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2878R3` | China とともに CJK Unified Ideographs Components proposal の source。 | [CJKV Components](../topics/cjkv-components.md) |
-| `IRG N2927R` | T-source representative glyph change の clarification。Meeting \#67 agenda では Unicode Version 18.0 Beta review 反映済みとして status が記録されている。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
+| [IRG N2861](../documents/irg-n2861.md), [IRG N2927R](../documents/irg-n2927r.md) | `IRG N2860` の T-source glyph revision request に response し、pending だった U+2976E / U+20885 の扱いを整理。 | [T-source Representative Glyph Issues](../topics/t-source-representative-glyph-issues.md) |
 
 ## 関連文書
 
@@ -36,13 +36,15 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 - `wg2-n5318` - Four-Column Small Seal Script proposal
 - `wg2-n5355` - Small Seal normalized form clarification
 - `irg-n2878r3` - CJK Unified Ideographs Components
-- `irg-n2927r` - T-source glyph changes
+- [IRG N2861](../documents/irg-n2861.md) - T-source glyph issues response
+- [IRG N2927R](../documents/irg-n2927r.md) - T-source pending glyph clarification
 
 ## 関連トピック
 
 - [Small Seal Script](../topics/small-seal-script.md)
 - [CJKV Components](../topics/cjkv-components.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
+- [T-source Representative Glyph Issues](../topics/t-source-representative-glyph-issues.md)
 
 ## 関連出来事
 
@@ -58,4 +60,5 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 - `wg2-n5105` - <https://unicode.org/wg2/docs/n5105_smallseal%20Appendix%20update_V2%20.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
+- `irg-n2861` - <https://www.unicode.org/irg/docs/n2861-IRGN2860Feedback.pdf>
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>

@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [IRG N2860](documents/irg-n2860.md) and [IRG N2861](documents/irg-n2861.md), opened [T-source Representative Glyph Issues](topics/t-source-representative-glyph-issues.md), and linked the N2860 -> N2861 -> N2927R chain to TCA, Ma Shijie, IRG Meeting \#66, UTC \#187, and Unicode 18.0 source-data tracking.
 - **Digest**: Added [IRG N891](documents/irg-n891.md) and [IRG N1519](documents/irg-n1519.md) for the China Extension C1 / CJK_D G-source evidence history, linking them to U+2CCA3 / `GZFY-00932`, G-source representative glyph issues, China, and the `IRG N2955` Ext D wording correction.
 - **Digest**: Added predecessor FS / SC guideline pages for [IRG N1105](documents/irg-n1105.md), [IRG N2171](documents/irg-n2171.md), and [IRG N2221](documents/irg-n2221.md), connecting N954AR amendments and stroke counting guideline consolidation to N2862R2, N2951, and [IRG Indexing Rules](topics/irg-indexing-rules.md).
 - **Digest**: Added [IRG N2862R2](documents/irg-n2862r2.md) and [IRG N2915](documents/irg-n2915.md) for the SC / FS guideline feedback chain, created [Kim Kyongsok](people/kim-kyongsok.md), and linked the accepted N2862R2 -> N2951 path from IRG indexing rules, Meeting \#66 recommendations, and Eiso Chan.

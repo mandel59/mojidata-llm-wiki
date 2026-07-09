@@ -156,6 +156,8 @@
 - [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
+- [IRG N2860](irg-n2860.md) - 25 T-source glyphs の revision request。
+- [IRG N2861](irg-n2861.md) - `IRG N2860` への TCA response。
 - [IRG N2862R2](irg-n2862r2.md) - IWDS 用 SC / FS guideline R2。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
 - [IRG N2867R](irg-n2867r.md) - Multi-Syllabic Characters and Abbreviation Characters。

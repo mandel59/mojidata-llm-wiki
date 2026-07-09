@@ -10,7 +10,7 @@ registry: irg
 date: "2026-03-16"
 source: TCA
 documents: [irg-n2860, irg-n2861, irg-n2909, irg-n2911, utc-l2-26-099, wg2-n5354]
-topics: [irg-source-data-and-representative-glyphs, unihan-database-maintenance, unicode-18-change-sources]
+topics: [t-source-representative-glyph-issues, irg-source-data-and-representative-glyphs, unihan-database-maintenance, unicode-18-change-sources]
 people: [tca, irg]
 meetings: [irg-meeting-66, utc-meeting-187, wg2-meeting-73]
 tags: [document, irg, t-source, representative-glyphs, feedback]
@@ -21,7 +21,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 要約
 
-`IRG N2927R` は、TCA が `IRG N2861` で pending とした二つの T-source characters に follow-up した文書である。結論は、U+2976E は glyph を変更し、U+20885 は変更しない、という二分である。
+`IRG N2927R` は、TCA が [IRG N2861](irg-n2861.md) で pending とした二つの T-source characters に follow-up した文書である。結論は、U+2976E は glyph を変更し、U+20885 は変更しない、という二分である。
 
 U+2976E については、MOE が right part を 已 から 巳 に戻すことに同意した。U+20885 については、Variants Dictionary に 夂、文、攵 の三 component forms があるが、文 が standard form であるため current glyph を維持するとした。
 
@@ -50,11 +50,16 @@ U+20885 では複数 component forms があることを認めつつ、standard f
 
 ## 関連文書
 
+- [IRG N2860](irg-n2860.md) - 25 T-source glyphs の revision request。
+- [IRG N2861](irg-n2861.md) - `IRG N2860` への TCA response。
 - [IRG N2911](irg-n2911.md) - Meeting \#66 editorial report。
 - [IRG N2909](irg-n2909.md) - Meeting \#66 recommendations。
 - [L2/26-099](utc-l2-26-099.md) - UTC \#187 CJK & Unihan recommendations。
 - [WG2 N5354](wg2-n5354.md) - WG2 \#73 recommendations。
+- [T-source Representative Glyph Issues](../topics/t-source-representative-glyph-issues.md)
 
 ## 出典
 
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>
+- `irg-n2860` - <https://www.unicode.org/irg/docs/n2860-TSourceGlyphIssues.pdf>
+- `irg-n2861` - <https://www.unicode.org/irg/docs/n2861-IRGN2860Feedback.pdf>
