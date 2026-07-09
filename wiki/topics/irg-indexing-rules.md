@@ -4,7 +4,7 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: [irg-n2826, irg-n2909, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
+documents: [irg-n1105, irg-n2171, irg-n2221, irg-n2826, irg-n2862r2, irg-n2909, irg-n2915, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
@@ -25,8 +25,13 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2005-01 | IRG | [IRG N1105](../documents/irg-n1105.md) | `IRG N954AR` の first stroke / stroke count amendments を示し、後続 stroke counting guideline の predecessor になった。 |
+| 2017-06 | IRG | [IRG N2171](../documents/irg-n2171.md) | Chen Zhuang が UCS 内の stroke counting differences を整理し、Henry Chan / KR feedback を含む draft guideline として共有した。 |
+| 2017-07 | IRG | [IRG N2221](../documents/irg-n2221.md) | `IRG N954AR`、N1105、N2171 の SC entries を consolidate し、future IRG Working Set で使う guideline とした。 |
+| 2025-11 | IRG | [IRG N2915](../documents/irg-n2915.md) | Kim Kyongsok が `IRG N2862` の FS values について、radical 情報と FS value 選択原理の明示を求めた。 |
+| 2026-01 | IRG | [IRG N2862R2](../documents/irg-n2862r2.md) | Eiso Chan が N2862 への feedback を受けて SC / FS guideline R2 を提出し、N2915 への response も記録した。 |
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、[IRG N2931](../documents/irg-n2931.md) の準備と review schedule を置いた。 |
-| 2026-03 | IRG | `IRG N2909` | M66.18 が `IRG N2862R2` を previous FS / SC documents の replacement として accept し、final `IRG N2951` の準備を求めた。 |
+| 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.18 が [IRG N2862R2](../documents/irg-n2862r2.md) を previous FS / SC documents の replacement として accept し、final [IRG N2951](../documents/irg-n2951.md) の準備を求めた。 |
 | 2026-03 | IRG | `IRG N2909` | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
 | 2026-04 | IRG | [IRG N2951](../documents/irg-n2951.md) | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
 | 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
@@ -39,7 +44,11 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 ### FS / SC guidelines
 
-[IRG N2951](../documents/irg-n2951.md) は、previous documents `IRG N954AR`、`IRG N1105`、`IRG N2171`、`IRG N2221` を置き換える consolidated FS & SC guidelines である。entry syntax は stroke count、first stroke value、ordering letter を組み合わせる形式で、FS は Annex K の values と dotted circle を使う。agenda は、この document が 2026-04-02 に posted され、IWDS Series 1 に追加されたと記録している。
+[IRG N1105](../documents/irg-n1105.md) は `IRG N954AR` への amendments、[IRG N2171](../documents/irg-n2171.md) は UCS 内の stroke counting differences と expert feedback、[IRG N2221](../documents/irg-n2221.md) はそれらの consolidated SC entries である。N2221 は existing UCS code charts と異なる stroke count を future IRG Working Set で使う場合があることを明示しており、後続 guideline の predecessor になる。
+
+[IRG N2862R2](../documents/irg-n2862r2.md) は、N2862 への feedback を反映した SC / FS guideline revision であり、entry syntax、Shape / Variants columns、dotted circle を含む不確定 values を整理した。[IRG N2915](../documents/irg-n2915.md) は、FS values の根拠を理解するには radical 情報と選択原理の明示が必要だとする KR feedback である。N2862R2 は N2915 に基づく変更は入れていないが、response として radical / non-radical distinction を不要とする理由を記録した。
+
+[IRG N2951](../documents/irg-n2951.md) は、previous documents `IRG N954AR`、`IRG N1105`、`IRG N2171`、`IRG N2221`、[IRG N2862R2](../documents/irg-n2862r2.md) を置き換える consolidated FS & SC guidelines である。entry syntax は stroke count、first stroke value、ordering letter を組み合わせる形式で、FS は Annex K の values と dotted circle を使う。agenda は、この document が 2026-04-02 に posted され、IWDS Series 1 に追加されたと記録している。
 
 [L2/26-148](../documents/utc-l2-26-148.md) は、IRG N2951 の conventions と ORT metadata checking に合わせて 458 ideographs の `kTotalStrokes` values を変更する proposal である。IRG rule そのものではなく、IRG review data を Unihan property values へ接続する変更として [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) でも扱う。
 
@@ -52,6 +61,11 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 ## 関連文書
 
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
+- [IRG N1105](../documents/irg-n1105.md)
+- [IRG N2171](../documents/irg-n2171.md)
+- [IRG N2221](../documents/irg-n2221.md)
+- [IRG N2862R2](../documents/irg-n2862r2.md)
+- [IRG N2915](../documents/irg-n2915.md)
 - [IRG N2931](../documents/irg-n2931.md)
 - [IRG N2925](../documents/irg-n2925.md)
 - [IRG N2951](../documents/irg-n2951.md)
@@ -71,11 +85,17 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 ## 関連人物・組織
 
 - [Eiso Chan](../people/eiso-chan.md)
+- [Kim Kyongsok](../people/kim-kyongsok.md)
 - [Henry Chan](../people/henry-chan.md)
 - [IRG](../people/irg.md)
 
 ## 出典
 
+- `irg-n2862r2` - <https://www.unicode.org/irg/docs/n2862r2-SCFS.pdf>
+- `irg-n1105` - <https://www.unicode.org/irg/docs/n1105-IRGN954AR-Amendment.pdf>
+- `irg-n2171` - <https://www.unicode.org/irg/docs/n2171-StrokeCountingGuidelines.pdf>
+- `irg-n2221` - <https://www.unicode.org/irg/docs/n2221-StrokeCountingGuidelines.pdf>
+- `irg-n2915` - <https://www.unicode.org/irg/docs/n2915-IRGN2862Feedback.pdf>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2925` - <https://www.unicode.org/irg/docs/n2925-RadicalAssignments.pdf>
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>

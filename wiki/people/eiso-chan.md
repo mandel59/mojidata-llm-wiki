@@ -4,7 +4,7 @@ title: Eiso Chan
 description: CJKV Components、kIRG_SGSource、IRG indexing rules、Kana proposals / feedback に関係する contributor。
 slug: eiso-chan
 bodies: [UTC, IRG]
-documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r]
+documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r]
 topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables]
 tags: [person, components, unihan, source-data, indexing]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -23,6 +23,7 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 | `IRG N2799` | CJKV components proposal の author。Jianzi Musical Notation 由来 data などに関係。 | [CJKV Components](../topics/cjkv-components.md) |
 | `IRG N2878R3` | CJK Unified Ideographs Components final proposal の author list に含まれる。 | [CJKV Components](../topics/cjkv-components.md) |
 | `IRG N2926` | new normative `kIRG_SGSource` property の proposal。 | [kIRG_SGSource](../topics/kirg-sgsource.md) |
+| [IRG N2862R2](../documents/irg-n2862r2.md) | IWDS 用 SC / FS guideline R2 を提出し、N2915 feedback への response を記録。 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
 | `IRG N2951` | Consolidated FS & SC Guidelines の source。 | [IRG Indexing Rules](../topics/irg-indexing-rules.md) |
 | `L2/20-233` | Taiwanese Kana proposal への feedback。Min Nan naming、combining marks、vertical layout、shakuhachi notation を指摘。 | [Kana](../topics/kana.md) |
 | `L2/23-123` | Ryukyuan superscript Katakana proposal への feedback。 | [Kana](../topics/kana.md) |
@@ -47,6 +48,8 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 - `irg-n2799` - <https://www.unicode.org/irg/docs/n2799-CJKComponents4IDS.pdf>
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
 - `irg-n2926` - <https://www.unicode.org/irg/docs/n2926-SGSource.pdf>
+- `irg-n2862r2` - <https://www.unicode.org/irg/docs/n2862r2-SCFS.pdf>
+- `irg-n2915` - <https://www.unicode.org/irg/docs/n2915-IRGN2862Feedback.pdf>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
 - `utc-l2-20-233` - <https://www.unicode.org/L2/L2020/20233-kana-fdbk-shakuhachi.pdf>
 - `utc-l2-23-123` - <https://www.unicode.org/L2/L2023/23123-ryukyu-kana-feedback.pdf>

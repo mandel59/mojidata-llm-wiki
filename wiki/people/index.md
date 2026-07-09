@@ -25,6 +25,7 @@
 - [Richard Cook](richard-cook.md)
 - [Eiso Chan](eiso-chan.md)
 - [Henry Chan](henry-chan.md)
+- [Kim Kyongsok](kim-kyongsok.md)
 - [Ng Koon Hang](ng-koon-hang.md)
 - [Roy Wang](roy-wang.md)
 - [Kushim Jiang](kushim-jiang.md)

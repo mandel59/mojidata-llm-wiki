@@ -15,6 +15,9 @@
 - [L2/08-284](utc-l2-08-284.md) - Draft UTR \#45: U-Source Ideographs。
 - [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
 - [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
+- [IRG N1105](irg-n1105.md) - IRG N954AR の first stroke / stroke count amendments。
+- [IRG N2171](irg-n2171.md) - stroke counting differences の draft guideline と feedback。
+- [IRG N2221](irg-n2221.md) - IRG Working Set 用 stroke counting guideline。
 - [L2/11-439](utc-l2-11-439.md) - `AJ1` source for `kIRG_USource`。
 - [IRG N2369R](irg-n2369r.md) - 2019 U-source horizontal extension。
 - [IRG N2439](irg-n2439.md) - two U-source ideographs の UNC proposal。
@@ -151,6 +154,7 @@
 - [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
+- [IRG N2862R2](irg-n2862r2.md) - IWDS 用 SC / FS guideline R2。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
 - [IRG N2867R](irg-n2867r.md) - Multi-Syllabic Characters and Abbreviation Characters。
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
@@ -160,6 +164,7 @@
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
 - [IRG N2911](irg-n2911.md) - IRG Meeting \#66 miscellaneous editorial report。
+- [IRG N2915](irg-n2915.md) - IRG N2862 の FS values への KR feedback。
 - [IRG N2916](irg-n2916.md) - K-source KC-05216 / U+2DB7C glyph correction proposal。
 - [IRG N2917](irg-n2917.md) - IRG N2878R2 への HCP / radical feedback。
 - [IRG N2918](irg-n2918.md) - U+3062B / U+30C68 の UK-source glyph update proposal。

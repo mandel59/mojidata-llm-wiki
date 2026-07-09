@@ -4,7 +4,7 @@ title: Henry Chan
 description: IRG radical assignment、indexing rules、CJKV Components feedback、easily confused ideographs に関係する contributor。
 slug: henry-chan
 bodies: [IRG]
-documents: [irg-n2206, irg-n2917, irg-n2925]
+documents: [irg-n2171, irg-n2862r2, irg-n2206, irg-n2917, irg-n2925]
 topics: [cjkv-components, irg-indexing-rules, cjk-security-confusables]
 tags: [person, components, radicals, indexing]
 timestamp: 2026-07-06T21:58:00+09:00
@@ -20,6 +20,8 @@ Henry Chan は、CJK Unified Ideographs Components への feedback、Primary / S
 
 | 文書 | 役割 |
 | --- | --- |
+| [IRG N2171](../documents/irg-n2171.md) | Stroke Counting Guidelines への feedback。unified / disunified shapes と `kRSUnicode` first value の扱いを論じた。 |
+| [IRG N2862R2](../documents/irg-n2862r2.md) | N2862 への feedback contributor として言及される。 |
 | `IRG N2206` | easily confused ideographs へ informative note / cross reference を付ける proposal。 |
 | `IRG N2917` | CJK Unified Ideographs Components proposal への feedback。HCP-source、variant / component 境界、radical data を指摘。 |
 | `IRG N2925` | Primary / Secondary Radical assignment rules の更新提案。 |
@@ -33,5 +35,7 @@ Henry Chan は、CJK Unified Ideographs Components への feedback、Primary / S
 ## 出典
 
 - `irg-n2206` - <https://www.unicode.org/irg/docs/n2206-EasilyConfusedIdeographs.pdf>
+- `irg-n2171` - <https://www.unicode.org/irg/docs/n2171-StrokeCountingGuidelines.pdf>
+- `irg-n2862r2` - <https://www.unicode.org/irg/docs/n2862r2-SCFS.pdf>
 - `irg-n2917` - <https://www.unicode.org/irg/docs/n2917-IRGN2878R2Feedback.pdf>
 - `irg-n2925` - <https://www.unicode.org/irg/docs/n2925-RadicalAssignments.pdf>

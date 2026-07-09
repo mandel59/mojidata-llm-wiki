@@ -4,6 +4,8 @@
 
 ## 2026-07-09
 
+- **Digest**: Added predecessor FS / SC guideline pages for [IRG N1105](documents/irg-n1105.md), [IRG N2171](documents/irg-n2171.md), and [IRG N2221](documents/irg-n2221.md), connecting N954AR amendments and stroke counting guideline consolidation to N2862R2, N2951, and [IRG Indexing Rules](topics/irg-indexing-rules.md).
+- **Digest**: Added [IRG N2862R2](documents/irg-n2862r2.md) and [IRG N2915](documents/irg-n2915.md) for the SC / FS guideline feedback chain, created [Kim Kyongsok](people/kim-kyongsok.md), and linked the accepted N2862R2 -> N2951 path from IRG indexing rules, Meeting \#66 recommendations, and Eiso Chan.
 - **Digest**: Added [WG2 N4688](documents/wg2-n4688.md) for the 2015 Small Seal complete proposal, linking its 11,108-character Tenghuaxie appendix, `L2/15-281` alias, and N5105 reduction to the Small Seal topic, N4634, N5105, N5344R2, TCA, and China pages.
 - **Digest**: Added Source Document pages for [WG2 N4634](documents/wg2-n4634.md), [WG2 N5105](documents/wg2-n5105.md), [WG2 N5108](documents/wg2-n5108.md), and [WG2 N5209](documents/wg2-n5209.md), connecting the initial Small Seal proposal, revised appendix, WG2 \#68 discussion report, and source-mapping/database considerations to Small Seal, UAX \#60, N5344R2, TCA, China, and Michel Suignard pages.
 - **Refine**: Canonicalized the Small Seal revised proposal page from `wg2-n5344` to catalog entry `wg2-n5344r2`, expanded its digest from the fetched `WG2 N5344R2` PDF, and updated Small Seal, UAX \#60, WG2 meeting, event, and people links to the canonical document concept.
