@@ -4,8 +4,8 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
-topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, iso-10646-edition-and-code-charts]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
@@ -25,6 +25,9 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2025-04-14 | UTC | [L2/25-131](../documents/utc-l2-25-131.md) | Historic alchemical symbols proposal が提出された。 |
+| 2025-06-16 | WG2 | [WG2 N5310R](../documents/wg2-n5310r.md) | China NB が Tai Xaau / Dai Xaau script 76 characters の revised proposal を提出した。 |
+| 2025-06-26 | WG2 | [WG2 N5340](../documents/wg2-n5340.md) | Dao Jie / Qi Ziyuan が WG2 \#72 で Tai Xaau proposal presentation を提出した。 |
+| 2025-06-27 | WG2 | [WG2 N5304](../documents/wg2-n5304.md) | WG2 \#72 M72.15 が Dai Xaau proposal の progress を note し、authors に継続作業を促した。 |
 | 2026-02-09 | UTC | [L2/26-065](../documents/utc-l2-26-065.md) | LATIN SMALL LETTER ZH proposal が提出された。 |
 | 2026-03-09 | UTC | [L2/26-079](../documents/utc-l2-26-079.md) | Romance dialectological atlas additions proposal が提出された。 |
 | 2026-04-13 | UTC | [L2/26-087](../documents/utc-l2-26-087.md), [L2/26-088](../documents/utc-l2-26-088.md), [L2/26-090](../documents/utc-l2-26-090.md), [L2/26-091](../documents/utc-l2-26-091.md) | N'ti script、Khmer Candrabindu、Hebrew elongated geresh、Mongolian standardized variants deprecation proposals が登録された。 |
@@ -51,6 +54,8 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 ### Encoding model が未決の script
 
 Ndiko Jonam / Luo Lakeside、[N'ti](../documents/utc-l2-26-087.md)、[N'ko Bambara](../documents/utc-l2-26-015r.md)、Brahmi virama minimization などは、joining model、positional forms、productive mechanism、stability の未解決点がある。SEW は、文字集合の必要性だけでなく text model が既存 Unicode behavior と整合するかを見ている。
+
+[Dai Xaau Script](dai-xaau-script.md) は WG2 側の proposal chain で、Tai Viet からの disunification と visual-order encoding model が中心論点である。WG2 \#72 M72.15 は progress note に留まり、後続の `WG2 N5368` が supplementary materials を提出しているため、採択済み repertoire としては扱わない。
 
 ### Stability と backwards compatibility
 
@@ -92,6 +97,8 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [L2/26-132](../documents/utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-137](../documents/utc-l2-26-137.md) - Joining_Type for left-to-right scripts。
 - [L2/25-131](../documents/utc-l2-25-131.md) - historic alchemical symbols proposal。
+- [WG2 N5310R](../documents/wg2-n5310r.md) - Tai Xaau / Dai Xaau script revised proposal。
+- [WG2 N5340](../documents/wg2-n5340.md) - Tai Xaau proposal presentation。
 - [WG2 N5354](../documents/wg2-n5354.md) - WG2 \#73 recommendations。
 - [WG2 N5361R](../documents/wg2-n5361r.md) - provisionally assigned future repertoire。
 - [WG2 N5362](../documents/wg2-n5362.md) - ISO/IEC 10646 7th edition Amendment 1 project proposal。
@@ -106,6 +113,7 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [Indic Script Notation and Rendering](indic-script-notation-and-rendering.md)
 - [Maya Hieroglyph Encoding](maya-hieroglyph-encoding.md)
 - [Shaaldaa Script](shaaldaa-script.md)
+- [Dai Xaau Script](dai-xaau-script.md)
 - [ISO/IEC 10646 Edition and Code Charts](iso-10646-edition-and-code-charts.md)
 
 ## 出典
@@ -131,6 +139,8 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>
 - `utc-l2-26-137` - <https://www.unicode.org/L2/L2026/26137-left-right.pdf>
 - `utc-l2-25-131` - <https://www.unicode.org/L2/L2025/25131-alchemical-symbols.pdf>
+- `wg2-n5310r` - <https://www.unicode.org/wg2/docs/n5310R-ProposaltoEncodeTaiXaauScript.pdf>
+- `wg2-n5340` - <https://www.unicode.org/wg2/docs/n5340-Presentation-ProposalTaiXaauScript.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `wg2-n5361r` - <https://www.unicode.org/wg2/docs/n5361R-ProvisionnallyAssigned.pdf>
 - `wg2-n5362` - <https://www.unicode.org/wg2/docs/n5362-proposal_to_start_new_amendment_of_10646.pdf>

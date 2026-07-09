@@ -9,7 +9,7 @@ meeting: 73
 date: "2026-06-22/26"
 location: Paris, France
 documents: [wg2-n5350r8, wg2-n5351, wg2-n5354, wg2-n5355, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5365, wg2-n5366, wg2-n5367, wg2-n5368, wg2-n5369, utc-l2-26-099, utc-l2-26-102]
-topics: [iso-10646-edition-and-code-charts, small-seal-script, unihan-database-maintenance, unicode-18-change-sources, script-encoding-pipeline, maya-hieroglyph-encoding, leibnizian-and-historic-mathematical-symbols, cjkv-components, kirg-sgsource]
+topics: [iso-10646-edition-and-code-charts, small-seal-script, unihan-database-maintenance, unicode-18-change-sources, script-encoding-pipeline, dai-xaau-script, maya-hieroglyph-encoding, leibnizian-and-historic-mathematical-symbols, cjkv-components, kirg-sgsource]
 tags: [meeting, wg2, iso-10646, dis, amendment, small-seal, cjk, unihan]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
@@ -28,7 +28,7 @@ WG2 Meeting \#73 は 2026-06-22/26 に Paris, France で開催された。中心
 - [Small Seal Script](../../topics/small-seal-script.md) - [WG2 N5369](../../documents/wg2-n5369.md) の name / property / glyph correction と DIS text への反映。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099` に基づく representative glyph changes、property value changes、CJK Strokes SVS。
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - Unicode 18.0 / ISO/IEC 10646 7th edition synchronization。
-- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - Amendment 1 starting repertoire、SEI liaison report、Dai Xaau、Maya review。
+- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) / [Dai Xaau Script](../../topics/dai-xaau-script.md) - Amendment 1 starting repertoire、SEI liaison report、Dai Xaau、Maya review。
 - [Maya Hieroglyph Encoding](../../topics/maya-hieroglyph-encoding.md) - Codical Maya / Maya Hieroglyphs Extended-A の WG2 \#74 までの review request。
 - [CJKV Components](../../topics/cjkv-components.md) / [kIRG_SGSource](../../topics/kirg-sgsource.md) - Amendment 1 target と Unicode 19.0 target。
 
