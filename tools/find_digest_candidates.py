@@ -20,6 +20,9 @@ except ImportError:
 
 
 CATALOG = ROOT / "catalog" / "registries"
+DEFAULT_FETCH_CACHE = ROOT / ".cache" / "unicode-docs"
+FETCH_SUCCESS_INDEX = "cache-index.jsonl"
+FETCH_FAILURE_INDEX = "fetch-failures.jsonl"
 MENTIONED_DOC_RE = re.compile(
     r"(?:"
     r"\b(?:"
@@ -93,6 +96,17 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--min-refs", type=int, default=1, help="Minimum reference count for a candidate.")
     parser.add_argument("--limit", type=int, help="Maximum number of candidates to print.")
     parser.add_argument("--no-body-mentions", action="store_true", help="Only use frontmatter documents relations.")
+    parser.add_argument(
+        "--include-fetch-failures",
+        action="store_true",
+        help="Include documents whose latest local fetch attempt failed.",
+    )
+    parser.add_argument(
+        "--fetch-cache-dir",
+        type=Path,
+        default=DEFAULT_FETCH_CACHE,
+        help="Directory containing cache-index.jsonl and fetch-failures.jsonl.",
+    )
     parser.add_argument("--format", choices=["table", "json"], default="table")
     return parser.parse_args(argv)
 
@@ -121,6 +135,42 @@ def load_catalog(catalog_root: Path = CATALOG) -> dict[str, CatalogEntry]:
                 document_url=data.get("document_url") if isinstance(data.get("document_url"), str) else None,
             )
     return entries
+
+
+def _read_jsonl(path: Path) -> Iterable[dict[str, object]]:
+    if not path.exists():
+        return []
+    records: list[dict[str, object]] = []
+    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        if not line.strip():
+            continue
+        try:
+            data = json.loads(line)
+        except json.JSONDecodeError as error:
+            raise SystemExit(f"{path}:{line_number}: invalid JSON: {error}") from error
+        if isinstance(data, dict):
+            records.append(data)
+    return records
+
+
+def load_latest_fetch_failures(cache_dir: Path = DEFAULT_FETCH_CACHE) -> set[str]:
+    latest: dict[str, tuple[str, str]] = {}
+    success_path = cache_dir / FETCH_SUCCESS_INDEX
+    failure_path = cache_dir / FETCH_FAILURE_INDEX
+
+    for record in _read_jsonl(success_path):
+        entry_id = record.get("entry_id")
+        timestamp = record.get("fetched_at")
+        if isinstance(entry_id, str) and entry_id and isinstance(timestamp, str):
+            latest[entry_id] = max(latest.get(entry_id, ("", "")), (timestamp, "success"))
+
+    for record in _read_jsonl(failure_path):
+        entry_id = record.get("entry_id")
+        timestamp = record.get("failed_at")
+        if isinstance(entry_id, str) and entry_id and isinstance(timestamp, str):
+            latest[entry_id] = max(latest.get(entry_id, ("", "")), (timestamp, "failure"))
+
+    return {entry_id for entry_id, (_timestamp, state) in latest.items() if state == "failure"}
 
 
 def catalog_by_doc_number(catalog: dict[str, CatalogEntry]) -> dict[str, CatalogEntry]:
@@ -204,6 +254,7 @@ def entry_from_reference(
     concepts: dict[str, Concept],
     aliases: dict[str, str],
     status: str,
+    exclude_entry_ids: set[str],
 ) -> CatalogEntry | None:
     if normalize_lookup_key(value) in aliases:
         return None
@@ -213,6 +264,8 @@ def entry_from_reference(
     if entry is None:
         return None
     if not candidate_status_matches(entry, status):
+        return None
+    if entry.entry_id in exclude_entry_ids:
         return None
     if has_existing_document_page(entry, concepts, aliases):
         return None
@@ -258,17 +311,19 @@ def collect_candidates(
     source_types: Iterable[str] = (),
     status: str = "available",
     include_body_mentions: bool = True,
+    exclude_entry_ids: Iterable[str] = (),
 ) -> list[DigestCandidate]:
     aliases = concept_alias_map(concepts)
     by_doc_number = catalog_by_doc_number(catalog)
     include_topics = {resolve_topic(name, concepts) for name in topic_names}
     exclude_topics = {resolve_topic(name, concepts) for name in exclude_topic_names}
     source_type_set = set(source_types)
+    excluded = set(exclude_entry_ids)
 
     references_by_entry: dict[str, list[Reference]] = {}
     for concept in source_concepts(concepts, include_topics, exclude_topics, source_type_set):
         for value in concept.relations.get("documents", []):
-            entry = entry_from_reference(value, catalog, by_doc_number, concepts, aliases, status)
+            entry = entry_from_reference(value, catalog, by_doc_number, concepts, aliases, status, excluded)
             if entry is None:
                 continue
             references_by_entry.setdefault(entry.entry_id, []).append(
@@ -287,6 +342,8 @@ def collect_candidates(
                 if entry is None:
                     continue
                 if not candidate_status_matches(entry, status):
+                    continue
+                if entry.entry_id in excluded:
                     continue
                 if has_existing_document_page(entry, concepts, aliases):
                     continue
@@ -377,6 +434,7 @@ def main(argv: list[str] | None = None) -> int:
         source_types=args.source_type,
         status=args.status,
         include_body_mentions=not args.no_body_mentions,
+        exclude_entry_ids=() if args.include_fetch_failures else load_latest_fetch_failures(args.fetch_cache_dir),
     )
     candidates = [candidate for candidate in candidates if candidate.reference_count >= args.min_refs]
     if args.limit is not None:

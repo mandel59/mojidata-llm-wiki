@@ -26,6 +26,7 @@ from tools.unicode_registry import read_jsonl
 
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_CACHE = ROOT / ".cache" / "unicode-docs"
+DEFAULT_FAILURE_INDEX = "fetch-failures.jsonl"
 USER_AGENT = "mojidata-llm-wiki/0.1 (+https://github.com/mandel59/mojidata-llm-wiki)"
 
 
@@ -111,6 +112,17 @@ def materialize(entry: dict, cache_dir: Path, refresh: bool = False) -> dict:
     }
 
 
+def failure_record(entry: dict, exc: Exception) -> dict:
+    return {
+        "entry_id": entry.get("entry_id", ""),
+        "registry": entry.get("registry", ""),
+        "doc_number": entry.get("doc_number", ""),
+        "url": entry.get("document_url", ""),
+        "error": str(exc),
+        "failed_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch selected documents from catalog manifests into ignored local cache.")
     parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg"], default="all")
@@ -121,6 +133,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--refresh", action="store_true", help="Refetch even when the file already exists.")
     parser.add_argument("--catalog-dir", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--cache-dir", type=Path, default=DEFAULT_CACHE)
+    parser.add_argument(
+        "--failure-index",
+        type=Path,
+        help="JSONL file for failed fetch attempts. Defaults to <cache-dir>/fetch-failures.jsonl.",
+    )
     return parser.parse_args(argv)
 
 
@@ -138,14 +155,17 @@ def main(argv: list[str] | None = None) -> int:
 
     args.cache_dir.mkdir(parents=True, exist_ok=True)
     index_path = args.cache_dir / "cache-index.jsonl"
+    failure_index_path = args.failure_index or (args.cache_dir / DEFAULT_FAILURE_INDEX)
     success_count = 0
     failure_count = 0
-    with index_path.open("a", encoding="utf-8") as index:
+    with index_path.open("a", encoding="utf-8") as index, failure_index_path.open("a", encoding="utf-8") as failure_index:
         for entry in selected:
             try:
                 record = materialize(entry, args.cache_dir, refresh=args.refresh)
             except (FetchDocumentError, OSError, ValueError) as exc:
                 failure_count += 1
+                failure_index.write(json.dumps(failure_record(entry, exc), ensure_ascii=False, sort_keys=True))
+                failure_index.write("\n")
                 print(f"failed: {entry.get('entry_id', '<unknown>')} -> {entry.get('document_url', '')} ({exc})", file=sys.stderr)
                 continue
             index.write(json.dumps(record, ensure_ascii=False, sort_keys=True))

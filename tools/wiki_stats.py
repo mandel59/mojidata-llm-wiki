@@ -18,6 +18,7 @@ try:
         concept_alias_map,
         has_existing_document_page,
         load_catalog,
+        load_latest_fetch_failures,
     )
     from .wiki_store import Concept, ROOT, WIKI, load_concepts
 except ImportError:
@@ -29,6 +30,7 @@ except ImportError:
         concept_alias_map,
         has_existing_document_page,
         load_catalog,
+        load_latest_fetch_failures,
     )
     from wiki_store import Concept, ROOT, WIKI, load_concepts
 
@@ -43,6 +45,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--catalog-root", type=Path, default=CATALOG)
     parser.add_argument("--top", type=int, default=15, help="Rows to show in ranked sections.")
     parser.add_argument("--recent-since", default="2026-01-01", help="YYYY-MM-DD lower bound for recent catalog gaps.")
+    parser.add_argument(
+        "--include-fetch-failures",
+        action="store_true",
+        help="Include documents whose latest local fetch attempt failed in digest candidate counts.",
+    )
     parser.add_argument("--format", choices=["markdown", "json"], default="markdown")
     return parser.parse_args(argv)
 
@@ -196,7 +203,8 @@ def digest_candidate_rows(candidates: list[DigestCandidate], top: int) -> list[d
 def build_stats(args: argparse.Namespace) -> dict[str, object]:
     concepts = load_concepts(args.wiki)
     catalog = load_catalog(args.catalog_root)
-    candidates = collect_candidates(concepts, catalog, status="available")
+    failed_fetch_entry_ids = set() if args.include_fetch_failures else load_latest_fetch_failures()
+    candidates = collect_candidates(concepts, catalog, status="available", exclude_entry_ids=failed_fetch_entry_ids)
 
     return {
         "concepts": {
@@ -212,6 +220,7 @@ def build_stats(args: argparse.Namespace) -> dict[str, object]:
         "synthesis_coverage": synthesis_coverage(concepts),
         "digest_candidates": {
             "total": len(candidates),
+            "excluded_fetch_failures": len(failed_fetch_entry_ids),
             "by_registry": count_by(candidate.entry.registry for candidate in candidates),
             "top": digest_candidate_rows(candidates, args.top),
         },
@@ -229,6 +238,8 @@ def render_markdown(stats: dict[str, object]) -> str:
     parts: list[str] = ["# Wiki Stats", ""]
     parts.append(f"- Concepts: {concepts['total']}")  # type: ignore[index]
     parts.append(f"- Digest candidates: {candidates['total']}")  # type: ignore[index]
+    if candidates.get("excluded_fetch_failures"):  # type: ignore[union-attr]
+        parts.append(f"- Excluded fetch failures: {candidates['excluded_fetch_failures']}")  # type: ignore[index]
     parts.append(f"- Unresolved relation values: {unresolved['total']}")  # type: ignore[index]
 
     parts.extend(["", "## Concepts by Type", ""])

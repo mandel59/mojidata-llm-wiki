@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.find_digest_candidates import CatalogEntry, collect_candidates
+from tools.find_digest_candidates import CatalogEntry, collect_candidates, load_latest_fetch_failures
 from tools.wiki_store import load_concepts
 
 
@@ -139,6 +139,67 @@ documents: [utc-l2-26-004]
 
         candidates = collect_candidates(concepts, catalog, exclude_topic_names=["kana"])
         self.assertEqual([candidate.entry.entry_id for candidate in candidates], ["utc-l2-26-004"])
+
+    def test_excludes_explicit_entry_ids(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            bundle = Path(tmp)
+            (bundle / "topics").mkdir()
+
+            (bundle / "topics" / "topic.md").write_text(
+                """---
+type: Topic
+title: Topic
+slug: topic
+documents: [utc-l2-26-005, utc-l2-26-006]
+---
+
+# Topic
+""",
+                encoding="utf-8",
+            )
+
+            concepts = load_concepts(bundle)
+
+        catalog = {
+            "utc-l2-26-005": CatalogEntry(
+                "utc",
+                "utc-l2-26-005",
+                "L2/26-005",
+                "2026-01-05",
+                "Known failed document",
+                "UTC",
+                "available",
+                "https://www.unicode.org/L2/L2026/26005.pdf",
+            ),
+            "utc-l2-26-006": CatalogEntry(
+                "utc",
+                "utc-l2-26-006",
+                "L2/26-006",
+                "2026-01-06",
+                "Candidate document",
+                "UTC",
+                "available",
+                "https://www.unicode.org/L2/L2026/26006.pdf",
+            ),
+        }
+
+        candidates = collect_candidates(concepts, catalog, exclude_entry_ids={"utc-l2-26-005"})
+        self.assertEqual([candidate.entry.entry_id for candidate in candidates], ["utc-l2-26-006"])
+
+    def test_latest_fetch_failure_ignores_older_failure_after_success(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_dir = Path(tmp)
+            (cache_dir / "fetch-failures.jsonl").write_text(
+                '{"entry_id":"utc-l2-26-007","failed_at":"2026-01-01T00:00:00+00:00"}\n'
+                '{"entry_id":"utc-l2-26-008","failed_at":"2026-01-02T00:00:00+00:00"}\n',
+                encoding="utf-8",
+            )
+            (cache_dir / "cache-index.jsonl").write_text(
+                '{"entry_id":"utc-l2-26-007","fetched_at":"2026-01-03T00:00:00+00:00"}\n',
+                encoding="utf-8",
+            )
+
+            self.assertEqual(load_latest_fetch_failures(cache_dir), {"utc-l2-26-008"})
 
 
 if __name__ == "__main__":
