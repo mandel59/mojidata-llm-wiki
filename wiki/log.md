@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [PRI \#548](documents/pri-548.md) for the Unicode 18.0.0 Beta public review close, connecting the RMG schedule, beta review package, and UTC \#188 content-finalization tracking.
 - **Digest**: Added [PRI \#546](documents/pri-546.md) for the open Moji_Joho IVD additional-sequences review, connecting WG2 N5221 / JMJ horizontal extension follow-up to UTS \#37, Unihan data format, and Japan activity pages.
 - **Tooling**: Added Unicode Public Review Issues (PRI) as a catalog source, including current open issues and resolved issue pages 1-554, with `PRI #...` document-number parsing, fetch support, digest-candidate mention handling, and parser tests.
 - **Digest**: Added [WG2 N5211](documents/wg2-n5211.md) and [Suzuki Toshiya](people/suzuki-toshiya.md), connecting the 14-column Small Seal source comparison chart and source caveats into the N5209 / N5230 / N5273 / N5294R3 discussion path.

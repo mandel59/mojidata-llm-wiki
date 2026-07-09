@@ -97,6 +97,7 @@
 - [L2/26-111](utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
 - [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
+- [PRI \#548](pri-548.md) - Unicode 18.0.0 Beta public review。
 - [L2/26-113](utc-l2-26-113.md) - Kodava 用 Kannada diacritics proposal。
 - [L2/26-114](utc-l2-26-114.md) - Devanagari vowel length mark proposal。
 - [L2/26-117](utc-l2-26-117.md) - Catholic Albanian letter edhe proposal。

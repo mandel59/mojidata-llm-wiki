@@ -8,7 +8,7 @@ bodies: [UTC]
 meeting: 188
 date: "2026-07-30"
 location: TBD
-documents: [utc-l2-26-102, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
+documents: [utc-l2-26-102, pri-548, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
 topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
 status: tracking
 tags: [meeting, utc, unicode-18, tracking]
@@ -21,11 +21,11 @@ timestamp: 2026-07-09T00:00:00+09:00
 
 UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-07-08 時点で、UTC Document Register for 2026 は 2026-07-06 更新であり、`UTC #188 Agenda`、minutes、working group reports はまだ catalog に掲載されていない。
 
-このページは、正式な agenda / minutes が出た時点で更新する tracking page である。現時点で断定できるのは、Unicode 18.0 beta public review close が 2026-07-07、UTC \#188 が 2026-07-30 content finalize の予定として `L2/26-102` に記録されていること、そして `L2/26-127` 以降に UTC \#187 後の候補文書が複数登録されていることである。
+このページは、正式な agenda / minutes が出た時点で更新する tracking page である。現時点で断定できるのは、[PRI \#548](../../documents/pri-548.md) として Unicode 18.0 beta public review が 2026-07-07 に closed になったこと、UTC \#188 が 2026-07-30 content finalize の予定として `L2/26-102` に記録されていること、そして `L2/26-127` 以降に UTC \#187 後の候補文書が複数登録されていることである。
 
 ## 主要議題
 
-- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - beta feedback snapshot 後の content finalize。
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - [PRI \#548](../../documents/pri-548.md) の beta feedback snapshot 後の content finalize。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - [L2/26-127](../../documents/utc-l2-26-127.md) の second review request。
 - [East Asian Quotation Marks](../../topics/east-asian-quotation-marks.md) - [L2/26-128](../../documents/utc-l2-26-128.md) の core spec text update。
 - [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-113](../../documents/utc-l2-26-113.md)、[L2/26-114](../../documents/utc-l2-26-114.md)、[L2/26-129](../../documents/utc-l2-26-129.md) / [Leke Script](../../topics/leke-script.md)、[L2/26-131](../../documents/utc-l2-26-131.md)、[L2/26-132](../../documents/utc-l2-26-132.md) / [KORE SEBELI Script](../../topics/kore-sebeli-script.md) などの script / mark proposals。
@@ -45,12 +45,14 @@ UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 
 
 - UTC register に `UTC #188 Agenda` が掲載されるか。
 - UTC \#188 minutes が掲載された後、Unicode 18.0 content finalize の consensus / action items を確認する。
+- [PRI \#548](../../documents/pri-548.md) で集まった substantive feedback が UTC \#188 minutes / action items でどう処理されたか。
 - Unicode 18.0 beta page の planned release date 2026-09-16 と、`L2/26-102` の 2026-09-15 release schedule の差分が最終 release page でどう整理されるか。
 - `L2/26-145` / `L2/26-146` は in-progress draft として提出されているため、正式な SEW / UTC disposition を確認する。
 
 ## 出典
 
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
+- `pri-548` - <https://www.unicode.org/review/pri548/>
 - `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
 - `utc-l2-26-114` - <https://www.unicode.org/L2/L2026/26114-devanagari-vowel-length-mark.pdf>
 - `utc-l2-26-127` - <https://www.unicode.org/L2/L2026/26127-2nd-cjk-confusables.pdf>
