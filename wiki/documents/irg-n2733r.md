@@ -9,7 +9,7 @@ document_type: proposal
 registry: irg
 date: "2024-10-13"
 source: China
-documents: [irg-n2799]
+documents: [irg-n2702, irg-n2799]
 topics: [cjkv-components]
 tags: [document, proposal, components, cjk]
 timestamp: 2026-07-06T21:58:00+09:00
@@ -31,9 +31,10 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 ### 後続文書への接続
 
-IRG \#63 Recommendation M63.17 は、この proposal を受けて CJK components block の符号化は useful かつ long overdue とし、TCA と HKSAR に追加 components data の検討・提供を促した。`IRG N2799` はこの方針を受け、multi-source の CJKV components proposal へ拡張している。
+IRG \#63 Recommendation M63.17 は、この proposal を受けて CJK components block の符号化は useful かつ long overdue とし、TCA と HKSAR に追加 components data の検討・提供を促した。[IRG N2799](irg-n2799.md) はこの方針を受け、multi-source の CJKV components proposal へ拡張している。
 
 ## 出典
 
 - `irg-n2733r` - <https://www.unicode.org/irg/docs/n2733r-CJKComponents4IDS.pdf>
+- `irg-n2702` - <https://www.unicode.org/irg/docs/n2702-Recommendations.pdf>
 - topic: [CJKV Components](../topics/cjkv-components.md)

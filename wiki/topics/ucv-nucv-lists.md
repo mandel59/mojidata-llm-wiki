@@ -4,7 +4,7 @@ title: UCV and NUCV Lists
 description: "IRG の UCV / NUCV lists による component variation と unification / disunification 境界の整理。"
 slug: ucv-nucv-lists
 bodies: [IRG]
-documents: [irg-n2909, irg-n2931, irg-n2935]
+documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2931, irg-n2935]
 topics: [irg-indexing-rules, cjkv-components, unihan-database-maintenance]
 people: [irg]
 status: active
@@ -24,6 +24,8 @@ UCV / NUCV lists は、CJK Unified Ideographs の review で、component variati
 
 | 年月日 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2024-10-24 | IRG | [IRG N2702](../documents/irg-n2702.md) | M63.03 / M63.04 が UCV / NUCV examples を確認・更新し、次版 list の review schedule を置いた。 |
+| 2025-03-21 | IRG | [IRG N2765](../documents/irg-n2765.md) | M64.02 / M64.03 が UCV / NUCV examples を確認・更新し、Meeting \#65 に向けた review schedule を置いた。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、editor に `IRG N2931` preparation を求めた。 |
 | 2026-03-31 | IRG | [IRG N2931](../documents/irg-n2931.md) | IWDS Editor が `UCS Ideograph Unifiable Component Variations Summary List (UCV)` と `Non-Unifiable Component Variations Summary List (NUCV)` をまとめた。 |
 | 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が `IRG N2931` review を \#66 follow-up に置き、comments due を 2026-07-24 とした。 |
@@ -53,6 +55,8 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 ## 関連文書
 
 - [IRG N2931](../documents/irg-n2931.md) - UCV & NUCV lists。
+- [IRG N2702](../documents/irg-n2702.md) - Meeting \#63 M63.03 / M63.04。
+- [IRG N2765](../documents/irg-n2765.md) - Meeting \#64 M64.02 / M64.03。
 - [IRG N2909](../documents/irg-n2909.md) - Meeting \#66 M66.04。
 - [IRG N2935](../documents/irg-n2935.md) - Meeting \#67 agenda follow-up。
 
@@ -65,6 +69,8 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 
 ## 出典
 
+- `irg-n2702` - <https://www.unicode.org/irg/docs/n2702-Recommendations.pdf>
+- `irg-n2765` - <https://www.unicode.org/irg/docs/n2765-Recommendations.pdf>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>

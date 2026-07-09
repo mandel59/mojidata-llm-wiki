@@ -169,9 +169,11 @@
 - [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
 - [WG2 N5253](wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
+- [IRG N2702](irg-n2702.md) - IRG \#63 recommendations; CJK components encoding の開始判断。
 - [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
 - [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
+- [IRG N2765](irg-n2765.md) - IRG \#64 recommendations; CJKV Components 継続開発と review tool。
 - [IRG N2792](irg-n2792.md) - KR position on script-hybrid Han ideographs。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
