@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added Source Document pages for [WG2 N4634](documents/wg2-n4634.md), [WG2 N5105](documents/wg2-n5105.md), [WG2 N5108](documents/wg2-n5108.md), and [WG2 N5209](documents/wg2-n5209.md), connecting the initial Small Seal proposal, revised appendix, WG2 \#68 discussion report, and source-mapping/database considerations to Small Seal, UAX \#60, N5344R2, TCA, China, and Michel Suignard pages.
 - **Refine**: Canonicalized the Small Seal revised proposal page from `wg2-n5344` to catalog entry `wg2-n5344r2`, expanded its digest from the fetched `WG2 N5344R2` PDF, and updated Small Seal, UAX \#60, WG2 meeting, event, and people links to the canonical document concept.
 - **Digest**: Added [WG2 N5307R](documents/wg2-n5307r.md) for Small Seal glyph mapping principles, connecting THX / CCZ / QJZ / DYC unification and disunification criteria to the revised Small Seal proposal and code chart data.
 - **Digest**: Added Source Document pages for `L2/26-095`, `L2/26-106`, `L2/26-107`, `L2/26-108`, and `L2/26-109`, opening topics for [Arabic Mark Rendering](topics/arabic-mark-rendering.md) and [Egyptian Hieroglyph Data and Unikemet](topics/egyptian-hieroglyph-data-and-unikemet.md), and linking UAX \#53 / \#57 / \#60 / UTS \#10 proposed updates into Unicode 18.0, UTC \#187, properties, release, and text-model entry points.

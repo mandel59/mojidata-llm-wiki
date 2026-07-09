@@ -4,7 +4,7 @@ title: Michel Suignard
 description: Small Seal Script proposal と WG2 project editor 関連文書に関わる contributor。
 slug: michel-suignard
 bodies: [UTC, WG2]
-documents: [wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344r2, wg2-n5348, wg2-n5369, utc-l2-25-049, utc-l2-25-111]
+documents: [wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344r2, wg2-n5348, wg2-n5369, utc-l2-25-049, utc-l2-25-111]
 topics: [small-seal-script]
 tags: [person, project-editor, small-seal]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -20,6 +20,7 @@ Michel Suignard は、Small Seal Script encoding initiative で proposal / feedb
 
 | 文書 | 役割 |
 | --- | --- |
+| [WG2 N5209](../documents/wg2-n5209.md) | TCA / China proposal と Cook source mapping data を比較し、Small Seal database 整理の進め方を提示。 |
 | `WG2 N5294` / `L2/25-049` | Small Seal encoding initiative の considerations と mature repertoire 整理。 |
 | `WG2 N5306` / `L2/25-111` | final proposal に向けた unification / disunification issue の整理。 |
 | `WG2 N5317` | feedback disposition。 |
@@ -34,6 +35,7 @@ Michel Suignard は、Small Seal Script encoding initiative で proposal / feedb
 ## 出典
 
 - `wg2-n5294` - <https://www.unicode.org/wg2/docs/n5294R3-ConsiderationsSmallSeal.pdf>
+- `wg2-n5209` - <https://www.unicode.org/wg2/docs/n5209-ConsiderationsSmallSeal.pdf>
 - `wg2-n5306` - <https://www.unicode.org/wg2/docs/n5306-ConvergingSmallSeal.pdf>
 - `wg2-n5317` - <https://www.unicode.org/wg2/docs/n5317R3-SmallSealFeedback.pdf>
 - `wg2-n5344r2` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>

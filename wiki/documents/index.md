@@ -21,6 +21,10 @@
 - [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
 - [L2/22-185](utc-l2-22-185.md) - UAX \#45 status value names。
 - [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
+- [WG2 N4634](wg2-n4634.md) - Small Seal Script の初期 proposal。
+- [WG2 N5105](wg2-n5105.md) - Small Seal Script proposal appendix update。
+- [WG2 N5108](wg2-n5108.md) - WG2 \#68 Seal Script discussion report。
+- [WG2 N5209](wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
 - [L2/25-199](utc-l2-25-199.md) - UAX \#45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
