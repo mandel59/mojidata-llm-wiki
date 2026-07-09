@@ -168,6 +168,7 @@
 - [L2/26-070R](utc-l2-26-070r.md) - multiple variation selectors conformance proposal。
 - [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
+- [WG2 N5253](wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
 - [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
 - [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。

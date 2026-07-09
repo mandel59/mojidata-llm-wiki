@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [WG2 N5253](documents/wg2-n5253.md) for ISO/IEC 10646 7th edition stabilization considerations, linking Unicode data / annex normative references to the later code chart externalization path in [WG2 N5315](documents/wg2-n5315.md), [WG2 N5363R](documents/wg2-n5363r.md), and the ISO/IEC 10646 topic.
 - **Tooling**: Recorded document fetch failures in a local ignored fetch-failure index and made `find_digest_candidates.py` / `wiki_stats.py` exclude latest failed fetches by default, so currently 404 IRG follow-up documents no longer dominate next-work rankings.
 - **Refine**: Canonicalized [WG2 N5348R](documents/wg2-n5348r.md) from the non-catalog `wg2-n5348` page id to catalog entry `wg2-n5348r`, preserving `WG2 N5348` as an alias and updating Small Seal, Michel Suignard, N5355, and CD.4 disposition links.
 - **Digest**: Added [L2/22-073](documents/utc-l2-22-073.md), [L2/23-203](documents/utc-l2-23-203.md), and [L2/26-028R](documents/utc-l2-26-028r.md), opened [N'ti Script](topics/nti-script.md), and connected the African scripts status reports through the January / April 2026 N'ti proposal revisions to SEW, `Joining_Type`, KORE SEBELI, and the script proposal family.
