@@ -182,7 +182,7 @@ def sync_one(
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Sync unicode.org document registries into commit-safe manifests.")
-    parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg"], default="all")
+    parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg", "pri"], default="all")
     parser.add_argument("--latest-only", action="store_true", help="Only sync each registry's current register page.")
     parser.add_argument("--offline", action="store_true", help="Use cached registry HTML only.")
     parser.add_argument("--refresh", action="store_true", help="Refetch registry HTML even when cached.")

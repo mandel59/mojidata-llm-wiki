@@ -30,6 +30,7 @@ MENTIONED_DOC_RE = re.compile(
     r"|WG2\s*N\d{3,4}(?:R\d*)?"
     r"|IRG\s+N\d{3,4}(?:R\d*)?"
     r")\b"
+    r"|(?<![A-Za-z0-9_./-])PRI\s*#?\s*\d{1,4}(?![A-Za-z0-9_./-])"
     r"|(?<![A-Za-z0-9_-])(?-i:N\d{3,4}(?:R\d*)?)\b"
     r")",
     re.IGNORECASE,
@@ -281,6 +282,8 @@ def mentioned_catalog_entry(
         candidates = [("wg2", mention)]
     elif re.match(r"^IRG\s+N", mention, re.IGNORECASE):
         candidates = [("irg", mention)]
+    elif re.match(r"^PRI\s*#?\s*\d+", mention, re.IGNORECASE):
+        candidates = [("pri", mention)]
     elif re.match(r"^N\d{3,4}(?:R\d*)?$", mention):
         if context_registry == "wg2":
             candidates = [("wg2", mention)]

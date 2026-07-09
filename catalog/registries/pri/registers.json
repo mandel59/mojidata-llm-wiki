@@ -1,0 +1,27 @@
+{
+  "derived_document_count": 0,
+  "document_count": 554,
+  "last_sync_latest_only": false,
+  "last_sync_register_document_count": 554,
+  "latest_only": false,
+  "name": "Unicode Public Review Issues",
+  "registers": [
+    {
+      "document_count": 4,
+      "url": "https://www.unicode.org/review/"
+    },
+    {
+      "document_count": 77,
+      "url": "https://www.unicode.org/review/resolved-pri-100.html"
+    },
+    {
+      "document_count": 99,
+      "url": "https://www.unicode.org/review/resolved-pri.html"
+    },
+    {
+      "document_count": 374,
+      "url": "https://www.unicode.org/review/resolved.html"
+    }
+  ],
+  "registry": "pri"
+}

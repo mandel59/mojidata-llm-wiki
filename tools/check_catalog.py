@@ -20,7 +20,7 @@ from tools.unicode_registry import read_jsonl
 
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
 DEFAULT_DERIVED_DOCUMENTS = ROOT / "config" / "derived_documents.json"
-REGISTRIES = ("utc", "wg2", "irg")
+REGISTRIES = ("utc", "wg2", "irg", "pri")
 REQUIRED_FIELDS = {
     "entry_id",
     "registry",

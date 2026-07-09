@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Tooling**: Added Unicode Public Review Issues (PRI) as a catalog source, including current open issues and resolved issue pages 1-554, with `PRI #...` document-number parsing, fetch support, digest-candidate mention handling, and parser tests.
 - **Digest**: Added [WG2 N5211](documents/wg2-n5211.md) and [Suzuki Toshiya](people/suzuki-toshiya.md), connecting the 14-column Small Seal source comparison chart and source caveats into the N5209 / N5230 / N5273 / N5294R3 discussion path.
 - **Digest**: Added [WG2 N5230](documents/wg2-n5230.md), connecting TCA's N5209 feedback on THX-uncollected Small Seal entries and 2,883 modern CJK correspondence corrections to the later N5273 / N5294R3 repertoire path.
 - **Digest**: Added [WG2 N5273](documents/wg2-n5273.md), connecting the N5209 55-entry review to the later N5294R3 Small Seal repertoire and N5306 review convergence.

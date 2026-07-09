@@ -97,6 +97,35 @@ IRG_SAMPLE = """
 """
 
 
+PRI_TABLE_SAMPLE = """
+<html><body>
+<table>
+<tr><th>No.</th><th>Title</th><th>Closing Date</th><th>Originator</th></tr>
+<tr>
+  <td>546</td>
+  <td><a href="/ivd/pri/pri546/">Registration of additional sequences in the Moji_Joho collection</a></td>
+  <td>2026.07.31</td>
+  <td>IVD Registrar</td>
+</tr>
+</table>
+</body></html>
+"""
+
+
+PRI_LEGACY_SAMPLE = """
+<html><body>
+<table>
+<tr>
+  <td width="10%"><a name="pri99"><b>99</b></a></td>
+  <td width="75%"><b><a href="../reports/tr33/tr33-2.html">Proposed Draft UTR #33, Unicode Conformance Model</a></b></td>
+  <td align="right" width="15%"><b>2007.01.30</b></td>
+</tr>
+<tr><td colspan="3">Resolution: Closed 2007-02-15. The draft will be updated with feedback and published.</td></tr>
+</table>
+</body></html>
+"""
+
+
 ROOT_SAMPLE = """
 <html><body>
 <a href="L-curdoc.htm">Latest Register</a>
@@ -159,6 +188,28 @@ class RegistryParserTest(unittest.TestCase):
         self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/irg/n2909.pdf")
         self.assertEqual(entries[1]["status"], "unused")
 
+    def test_parse_pri_table_document(self) -> None:
+        entries = parse_register_documents("pri", PRI_TABLE_SAMPLE, "https://www.unicode.org/review/")
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["entry_id"], "pri-546")
+        self.assertEqual(entries[0]["doc_number"], "PRI #546")
+        self.assertEqual(entries[0]["date"], "2026-07-31")
+        self.assertEqual(entries[0]["source"], "IVD Registrar")
+        self.assertEqual(entries[0]["review_status"], "open")
+        self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/ivd/pri/pri546/")
+
+    def test_parse_legacy_pri_resolved_document(self) -> None:
+        entries = parse_register_documents(
+            "pri",
+            PRI_LEGACY_SAMPLE,
+            "https://www.unicode.org/review/resolved-pri.html",
+        )
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["entry_id"], "pri-99")
+        self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/review/resolved-pri.html#pri-99")
+        self.assertEqual(entries[0]["related_links"][0]["url"], "https://www.unicode.org/reports/tr33/tr33-2.html")
+        self.assertEqual(entries[0]["review_status"], "resolved")
+
     def test_discover_utc_register_urls(self) -> None:
         config = {
             "root_url": "https://www.unicode.org/L2/",
@@ -171,6 +222,24 @@ class RegistryParserTest(unittest.TestCase):
             [
                 "https://www.unicode.org/L2/L-curdoc.htm",
                 "https://www.unicode.org/L2/L2026/Register-2026.html",
+            ],
+        )
+
+    def test_discover_explicit_register_urls(self) -> None:
+        config = {
+            "root_url": "https://www.unicode.org/review/",
+            "latest_url": "https://www.unicode.org/review/",
+            "register_urls": [
+                "http://www.unicode.org/review/resolved.html",
+                "https://www.unicode.org/review/",
+            ],
+        }
+        urls = discover_register_urls(config, "<html></html>")
+        self.assertEqual(
+            urls,
+            [
+                "https://www.unicode.org/review/",
+                "https://www.unicode.org/review/resolved.html",
             ],
         )
 

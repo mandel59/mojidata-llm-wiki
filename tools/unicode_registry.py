@@ -23,6 +23,14 @@ class Cell:
     links: tuple[Link, ...]
 
 
+@dataclass(frozen=True)
+class LinkSpan:
+    text: str
+    url: str
+    start: int
+    end: int
+
+
 def clean_text(value: str) -> str:
     return " ".join(html.unescape(value).split())
 
@@ -78,15 +86,99 @@ class RegistryHTMLParser(HTMLParser):
             self._row_cells = None
 
 
+class TextPositionHTMLParser(HTMLParser):
+    BLOCK_TAGS = {
+        "address",
+        "blockquote",
+        "br",
+        "div",
+        "dl",
+        "dt",
+        "dd",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "hr",
+        "li",
+        "ol",
+        "p",
+        "pre",
+        "table",
+        "tbody",
+        "td",
+        "tfoot",
+        "th",
+        "thead",
+        "tr",
+        "ul",
+    }
+
+    def __init__(self, base_url: str) -> None:
+        super().__init__(convert_charrefs=True)
+        self.base_url = base_url
+        self.links: list[LinkSpan] = []
+        self._parts: list[str] = []
+        self._anchor_href: str | None = None
+        self._anchor_text_start: int | None = None
+
+    @property
+    def text(self) -> str:
+        return "".join(self._parts)
+
+    @property
+    def position(self) -> int:
+        return sum(len(part) for part in self._parts)
+
+    def append(self, value: str) -> None:
+        if value:
+            self._parts.append(value)
+
+    def append_break(self) -> None:
+        if not self._parts or self._parts[-1].endswith("\n"):
+            return
+        self._parts.append("\n")
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in self.BLOCK_TAGS:
+            self.append_break()
+        if tag == "a":
+            href = dict(attrs).get("href")
+            if href:
+                self._anchor_href = urljoin(self.base_url, href)
+                self._anchor_text_start = self.position
+
+    def handle_data(self, data: str) -> None:
+        self.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "a" and self._anchor_href and self._anchor_text_start is not None:
+            end = self.position
+            text = clean_text(self.text[self._anchor_text_start : end])
+            self.links.append(LinkSpan(text, self._anchor_href, self._anchor_text_start, end))
+            self._anchor_href = None
+            self._anchor_text_start = None
+        if tag in self.BLOCK_TAGS:
+            self.append_break()
+
+
 UTC_REVISION_SUFFIX_RE = r"R[0-9A-Z]*"
 NUMBERED_REVISION_SUFFIX_RE = r"R\d*"
 UTC_DOC_RE = re.compile(rf"^L2/(\d{{2}})-(\d{{3}})({UTC_REVISION_SUFFIX_RE})?$", re.IGNORECASE)
 WG2_DOC_RE = re.compile(rf"^(?:WG2\s*)?N?(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?$", re.IGNORECASE)
 IRG_DOC_RE = re.compile(rf"^IRG\s+N(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?:\s+\(unused\))?$", re.IGNORECASE)
+PRI_DOC_RE = re.compile(r"^(?:PRI\s*)?#?\s*(\d{1,4})$", re.IGNORECASE)
 UTC_URL_DOC_RE = re.compile(rf"(?<!\d)(\d{{2}})-?(\d{{3}})({UTC_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
 WG2_URL_DOC_RE = re.compile(rf"(?:^|[/_-])n0*(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
 IRG_URL_DOC_RE = re.compile(rf"(?:^|[/_-])n0*(\d{{3,4}})({NUMBERED_REVISION_SUFFIX_RE})?(?=[._-]|$)", re.IGNORECASE)
+PRI_URL_DOC_RE = re.compile(r"(?:^|[/_-])pri[-_]?0*(\d{1,4})(?=[._-]|$)", re.IGNORECASE)
 DATE_RE = re.compile(r"\b(19|20)\d{2}-\d{2}-\d{2}\b")
+PRI_DATE_RE = re.compile(r"\b((?:19|20)\d{2})[.-](\d{2})[.-](\d{2})\b")
+PRI_LEGACY_HEADER_RE = re.compile(
+    r"(?m)^\s*(\d{1,4})\s+(.+?)\s+((?:19|20)\d{2}[.-]\d{2}[.-]\d{2})\b"
+)
 VERSION_LINK_RE = re.compile(r"\b(original|previous|revision|revised|draft|proposed)\b", re.IGNORECASE)
 
 
@@ -114,6 +206,9 @@ def discover_register_urls(config: dict, root_html: str, latest_only: bool = Fal
     if latest_only:
         return [normalize_registry_url(config["latest_url"])]
 
+    if config.get("register_urls"):
+        return sorted({normalize_registry_url(url) for url in config["register_urls"]})
+
     root_url = config["root_url"]
     parser = parse_html(root_html, root_url)
     patterns = [re.compile(pattern, re.IGNORECASE) for pattern in config.get("register_href_patterns", [])]
@@ -136,6 +231,9 @@ def normalize_registry_url(url: str) -> str:
 
 
 def parse_register_documents(registry: str, html_text: str, register_url: str) -> list[dict]:
+    if registry == "pri":
+        return parse_pri_register_documents(html_text, register_url)
+
     parser = parse_html(html_text, register_url)
     entries: list[dict] = []
 
@@ -153,6 +251,8 @@ def parse_row(registry: str, row: tuple[Cell, ...], register_url: str) -> dict |
 def parse_row_entries(registry: str, row: tuple[Cell, ...], register_url: str) -> list[dict]:
     if not row:
         return []
+    if registry == "pri":
+        return parse_pri_row_entries(row, register_url)
 
     first = row[0].text
     full_row_text = clean_text(" ".join(cell.text for cell in row))
@@ -207,6 +307,179 @@ def parse_row_entries(registry: str, row: tuple[Cell, ...], register_url: str) -
             seen.add(key)
 
     return entries
+
+
+def parse_pri_register_documents(html_text: str, register_url: str) -> list[dict]:
+    if is_pri_legacy_register(register_url):
+        return parse_pri_legacy_entries(html_text, register_url)
+
+    table_entries: list[dict] = []
+    parser = parse_html(html_text, register_url)
+    for row in parser.rows:
+        table_entries.extend(parse_pri_row_entries(row, register_url))
+    if table_entries:
+        return table_entries
+    return parse_pri_legacy_entries(html_text, register_url)
+
+
+def parse_pri_row_entries(row: tuple[Cell, ...], register_url: str) -> list[dict]:
+    if len(row) < 3:
+        return []
+    parsed_number = parse_doc_number("pri", row[0].text)
+    if parsed_number is None:
+        return []
+
+    date = normalize_pri_date(row[2].text)
+    if not date:
+        return []
+
+    all_links = [link for cell in row for link in cell.links]
+    title_links = list(row[1].links)
+    document_url = title_links[0].url if title_links else pri_fragment_url(register_url, parsed_number[1])
+    related_links = [
+        {"text": link.text, "url": link.url}
+        for link in all_links
+        if link.url != document_url
+    ]
+
+    return [
+        make_pri_catalog_entry(
+            parsed_number=parsed_number,
+            subject=row[1].text,
+            source=row[3].text if len(row) > 3 else "",
+            date=date,
+            document_url=document_url,
+            related_links=related_links,
+            register_url=register_url,
+            review_status=pri_review_status(register_url),
+        )
+    ]
+
+
+def parse_pri_legacy_row_entries(row: tuple[Cell, ...], register_url: str) -> list[dict]:
+    if len(row) < 3:
+        return []
+    parsed_number = parse_doc_number("pri", row[0].text)
+    if parsed_number is None:
+        return []
+
+    date = normalize_pri_date(row[2].text)
+    if not date:
+        return []
+
+    all_links = [link for cell in row for link in cell.links]
+    return [
+        make_pri_catalog_entry(
+            parsed_number=parsed_number,
+            subject=row[1].text,
+            source="",
+            date=date,
+            document_url=pri_fragment_url(register_url, parsed_number[1]),
+            related_links=[
+                {"text": link.text, "url": link.url}
+                for link in all_links
+            ],
+            register_url=register_url,
+            review_status="resolved",
+        )
+    ]
+
+
+def parse_pri_legacy_entries(html_text: str, register_url: str) -> list[dict]:
+    table_entries: list[dict] = []
+    table_parser = parse_html(html_text, register_url)
+    for row in table_parser.rows:
+        table_entries.extend(parse_pri_legacy_row_entries(row, register_url))
+    if table_entries:
+        return table_entries
+
+    parser = TextPositionHTMLParser(register_url)
+    parser.feed(html_text)
+    parser.close()
+    text = parser.text.replace("\xa0", " ")
+    matches = list(PRI_LEGACY_HEADER_RE.finditer(text))
+    entries: list[dict] = []
+
+    for index, match in enumerate(matches):
+        parsed_number = parse_doc_number("pri", match.group(1))
+        if parsed_number is None:
+            continue
+        block_start = match.start()
+        block_end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        links = [link for link in parser.links if block_start <= link.start < block_end]
+        entries.append(
+            make_pri_catalog_entry(
+                parsed_number=parsed_number,
+                subject=clean_text(match.group(2)),
+                source="",
+                date=normalize_pri_date(match.group(3)),
+                document_url=pri_fragment_url(register_url, parsed_number[1]),
+                related_links=[
+                    {"text": link.text, "url": link.url}
+                    for link in links
+                ],
+                register_url=register_url,
+                review_status="resolved",
+            )
+        )
+
+    return entries
+
+
+def make_pri_catalog_entry(
+    *,
+    parsed_number: tuple[str, str, str],
+    subject: str,
+    source: str,
+    date: str,
+    document_url: str,
+    related_links: list[dict],
+    register_url: str,
+    review_status: str,
+) -> dict:
+    display_number, canonical_number, entry_id = parsed_number
+    return {
+        "entry_id": entry_id,
+        "registry": "pri",
+        "doc_number": canonical_number,
+        "display_number": display_number,
+        "subject": subject,
+        "source": source,
+        "date": date,
+        "status": "available",
+        "review_status": review_status,
+        "document_url": document_url,
+        "related_links": related_links,
+        "register_url": register_url,
+    }
+
+
+def normalize_pri_date(value: str) -> str:
+    match = PRI_DATE_RE.search(value)
+    if not match:
+        return clean_text(value)
+    year, month, day = match.groups()
+    return f"{year}-{month}-{day}"
+
+
+def is_pri_legacy_register(register_url: str) -> bool:
+    basename = Path(urlparse(register_url).path).name
+    return basename in {"resolved-pri.html", "resolved-pri-100.html"}
+
+
+def pri_fragment_url(register_url: str, doc_number: str) -> str:
+    parsed = parse_doc_number("pri", doc_number)
+    number = parsed[1].removeprefix("PRI #") if parsed else doc_number
+    parsed_url = urlparse(register_url)
+    return urlunparse(parsed_url._replace(fragment=f"pri-{number}"))
+
+
+def pri_review_status(register_url: str) -> str:
+    parsed = urlparse(register_url)
+    path = parsed.path.rstrip("/")
+    if path.endswith("/review") or path.endswith("/review/index.html"):
+        return "open"
+    return "resolved"
 
 
 def choose_primary_doc_number(
@@ -297,6 +570,12 @@ def parse_doc_number_from_url(registry: str, url: str) -> tuple[str, str, str] |
         number, revision = match.groups()
         return parse_doc_number("irg", f"IRG N{int(number)}{revision or ''}")
 
+    if registry == "pri":
+        match = PRI_URL_DOC_RE.search(basename)
+        if not match:
+            return None
+        return parse_doc_number("pri", f"PRI #{int(match.group(1))}")
+
     raise ValueError(f"unknown registry: {registry}")
 
 
@@ -313,6 +592,10 @@ def doc_base_key(registry: str, doc_number: str) -> tuple[str, ...] | None:
         match = IRG_DOC_RE.search(doc_number)
         return (str(int(match.group(1))),) if match else None
 
+    if registry == "pri":
+        match = PRI_DOC_RE.search(doc_number)
+        return (str(int(match.group(1))),) if match else None
+
     raise ValueError(f"unknown registry: {registry}")
 
 
@@ -323,11 +606,14 @@ def doc_revision(registry: str, doc_number: str) -> str:
         match = WG2_DOC_RE.search(doc_number)
     elif registry == "irg":
         match = IRG_DOC_RE.search(doc_number)
+    elif registry == "pri":
+        match = PRI_DOC_RE.search(doc_number)
     else:
         raise ValueError(f"unknown registry: {registry}")
     if not match:
         return ""
-    return (match.groups()[-1] or "").upper()
+    groups = match.groups()
+    return ((groups[-1] if len(groups) > 1 else "") or "").upper()
 
 
 def is_version_link(registry: str, link: Link) -> bool:
@@ -370,6 +656,16 @@ def parse_doc_number(registry: str, text: str) -> tuple[str, str, str] | None:
         entry_id = f"irg-n{number}{revision.lower()}"
         return display, canonical, entry_id
 
+    if registry == "pri":
+        match = PRI_DOC_RE.search(text)
+        if not match:
+            return None
+        number = str(int(match.group(1)))
+        display = f"PRI #{number}"
+        canonical = display
+        entry_id = f"pri-{number}"
+        return display, canonical, entry_id
+
     raise ValueError(f"unknown registry: {registry}")
 
 
@@ -403,6 +699,9 @@ def sort_key(entry: dict) -> tuple[str, int, str]:
     if number_match:
         return (entry.get("registry", ""), int(number_match.group(1)) * 1000 + int(number_match.group(2)), doc_number)
     number_match = re.search(r"N(\d{3,4})", doc_number, re.IGNORECASE)
+    if number_match:
+        return (entry.get("registry", ""), int(number_match.group(1)), doc_number)
+    number_match = re.search(r"PRI\s*#(\d{1,4})", doc_number, re.IGNORECASE)
     if number_match:
         return (entry.get("registry", ""), int(number_match.group(1)), doc_number)
     return (entry.get("registry", ""), 0, doc_number)

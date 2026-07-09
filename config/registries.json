@@ -29,6 +29,18 @@
         "IRG-curdoc\\.html$",
         "Register-\\d{4}\\.html$"
       ]
+    },
+    "pri": {
+      "kind": "pri",
+      "name": "Unicode Public Review Issues",
+      "root_url": "https://www.unicode.org/review/",
+      "latest_url": "https://www.unicode.org/review/",
+      "register_urls": [
+        "https://www.unicode.org/review/",
+        "https://www.unicode.org/review/resolved.html",
+        "https://www.unicode.org/review/resolved-pri-100.html",
+        "https://www.unicode.org/review/resolved-pri.html"
+      ]
     }
   }
 }

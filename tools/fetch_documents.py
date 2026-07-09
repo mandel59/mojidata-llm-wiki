@@ -39,7 +39,7 @@ def safe_name(value: str) -> str:
 
 
 def load_entries(catalog_dir: Path, registry: str) -> list[dict]:
-    registries = ["utc", "wg2", "irg"] if registry == "all" else [registry]
+    registries = ["utc", "wg2", "irg", "pri"] if registry == "all" else [registry]
     entries: list[dict] = []
     for key in registries:
         entries.extend(read_jsonl(catalog_dir / key / "documents.jsonl"))
@@ -125,7 +125,7 @@ def failure_record(entry: dict, exc: Exception) -> dict:
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch selected documents from catalog manifests into ignored local cache.")
-    parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg"], default="all")
+    parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg", "pri"], default="all")
     parser.add_argument("--doc", action="append", default=[], help="Document number or entry_id. Can be repeated.")
     parser.add_argument("--grep", help="Case-insensitive regex matched against document metadata.")
     parser.add_argument("--all", action="store_true", help="Fetch every document with a URL. Use carefully.")
