@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [IRG N891](documents/irg-n891.md) and [IRG N1519](documents/irg-n1519.md) for the China Extension C1 / CJK_D G-source evidence history, linking them to U+2CCA3 / `GZFY-00932`, G-source representative glyph issues, China, and the `IRG N2955` Ext D wording correction.
 - **Digest**: Added predecessor FS / SC guideline pages for [IRG N1105](documents/irg-n1105.md), [IRG N2171](documents/irg-n2171.md), and [IRG N2221](documents/irg-n2221.md), connecting N954AR amendments and stroke counting guideline consolidation to N2862R2, N2951, and [IRG Indexing Rules](topics/irg-indexing-rules.md).
 - **Digest**: Added [IRG N2862R2](documents/irg-n2862r2.md) and [IRG N2915](documents/irg-n2915.md) for the SC / FS guideline feedback chain, created [Kim Kyongsok](people/kim-kyongsok.md), and linked the accepted N2862R2 -> N2951 path from IRG indexing rules, Meeting \#66 recommendations, and Eiso Chan.
 - **Digest**: Added [WG2 N4688](documents/wg2-n4688.md) for the 2015 Small Seal complete proposal, linking its 11,108-character Tenghuaxie appendix, `L2/15-281` alias, and N5105 reduction to the Small Seal topic, N4634, N5105, N5344R2, TCA, and China pages.

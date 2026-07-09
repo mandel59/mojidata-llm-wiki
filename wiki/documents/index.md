@@ -13,6 +13,8 @@
 - [L2/08-358](utc-l2-08-358.md) - Japan NB feedback on HIRAGANA LETTER YE / KATAKANA LETTER ORIGINAL E。
 - [L2/09-062](utc-l2-09-062.md) - 仮名の E / YE 区別に関する背景資料。
 - [L2/08-284](utc-l2-08-284.md) - Draft UTR \#45: U-Source Ideographs。
+- [IRG N891](irg-n891.md) - China Extension C1 submission。
+- [IRG N1519](irg-n1519.md) - China CJK_D candidate evidence package。
 - [IRG N1534](irg-n1534.md) - UTC Extension D source descriptions。
 - [IRG N1535](irg-n1535.md) - UTC Extension D source evidence samples。
 - [IRG N1105](irg-n1105.md) - IRG N954AR の first stroke / stroke count amendments。

@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
+documents: [irg-n891, irg-n1519, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
 topics: [g-source-glyph-and-reference-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -25,6 +25,8 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2002-04 | IRG | [IRG N891](../documents/irg-n891.md) | China が Extension C1 candidate list を提出し、後続の G-source evidence history の参照点になった。 |
+| 2008-11 | IRG | [IRG N1519](../documents/irg-n1519.md) | China が CJK_D candidates の source evidence package を提出した。 |
 | 2025-12 | IRG | [IRG N2918](../documents/irg-n2918.md) | Huáng Jùnliàng が U+3062B / U+30C68 の UK-source glyph を archival evidence に基づいて更新する提案を出した。 |
 | 2026-02 | IRG | [IRG N2916](../documents/irg-n2916.md) | K-source KC-05216 / U+2DB7C について、glyph を三つの 兔 を含む形に直し、`kRSUnicode` を 77.24 へ変更する proposal が出た。 |
 | 2026-03 | IRG | [IRG N2919R](../documents/irg-n2919r.md), [IRG N2923R](../documents/irg-n2923r.md) | G-source glyph / reference changes と horizontal extension candidates の大規模 proposal が出たが、Meeting \#66 では further discussion / China response 待ちになった。 |
@@ -71,6 +73,8 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
+- [IRG N891](../documents/irg-n891.md) - China Extension C1 submission。
+- [IRG N1519](../documents/irg-n1519.md) - China CJK_D candidate evidence package。
 - [IRG N2911](../documents/irg-n2911.md) - Meeting \#66 miscellaneous editorial report。
 - [IRG N2916](../documents/irg-n2916.md) - K-source U+2DB7C glyph correction。
 - [IRG N2918](../documents/irg-n2918.md) - UK-source U+3062B / U+30C68 glyph issue。
@@ -108,6 +112,8 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ## 出典
 
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
+- `irg-n891` - <https://www.unicode.org/irg/docs/n0891-China-ExtensionC1-sub.pdf>
+- `irg-n1519` - <https://www.unicode.org/irg/docs/n1519-GSourceEvidenceExtensionD.pdf>
 - `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>
 - `irg-n2916` - <https://www.unicode.org/irg/docs/n2916-KSourceChange.pdf>
 - `irg-n2918` - <https://www.unicode.org/irg/docs/n2918-UKSourceGlyphIssues.pdf>

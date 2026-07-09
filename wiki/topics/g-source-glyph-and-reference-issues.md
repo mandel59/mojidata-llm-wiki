@@ -24,6 +24,8 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 | 年月日 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2002-04-18 | IRG | [IRG N891](../documents/irg-n891.md) | China が Extension C1 candidate list を提出し、後続の `GZFY-00932` source history に関わる `zjw00932` などの entries を含めた。 |
+| 2008-11-06 | IRG | [IRG N1519](../documents/irg-n1519.md) | China が CJK_D candidates の evidence package を提出し、`Hanyu Fangyan Da Cidian` などの source evidence と candidate review 情報を示した。 |
 | 2026-03-09 | IRG | [IRG N2919R](../documents/irg-n2919r.md) | Wang Xieyang が 3 G-source glyph changes と 10 source reference changes を提案した。Meeting \#66 では U+250A9 / U+25805 glyph revisions は in principle accepted、U+26C25 と reference changes は継続確認になった。 |
 | 2026-03-10 | IRG | [IRG N2923R](../documents/irg-n2923r.md) | Dong Wenjie が 329 G-source reference updates と 9 horizontal extension candidates を提案した。Meeting \#66 では further discussion / China response 待ちになった。 |
 | 2026-03-14 | IRG | [IRG N2930](../documents/irg-n2930.md) | Boris Zhang / Wang Xieyang が U+236AC、U+24A1E、U+24E82 の `GU` references を `GHC` references へ変更する提案を出した。Meeting \#66 で accepted になった。 |
@@ -51,7 +53,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 [IRG N2954](../documents/irg-n2954.md) は、U+2CCA3 の current G-source representative glyph が `Hanyu Fangyan Dacidian` の evidence と合わないとする。提案は、glyph を evidence 側に寄せる案と、current glyph を維持したまま source reference を `GU-2CCA3` のような補助的 reference に変える案を並べる。
 
-[IRG N2955](../documents/irg-n2955.md) は、Ext C 提案時の `IRG N891` と Ext E encoding 時の `IRG N1519` の経緯を引き、誤った evidence が紛れたことを説明する。そのうえで、source reference は `GZFY-00932` のまま、representative glyph を original evidence に合わせる方向を支持する。
+[IRG N891](../documents/irg-n891.md) は China の Extension C1 submission、[IRG N1519](../documents/irg-n1519.md) は China の CJK_D evidence package であり、どちらも後続の U+2CCA3 / `GZFY-00932` feedback で source history をたどる根拠になる。
+
+[IRG N2955](../documents/irg-n2955.md) は、Extension C phase の `IRG N891` と CJK_D evidence review の `IRG N1519` の経緯を引き、誤った evidence が紛れたことを説明する。そのうえで、source reference は `GZFY-00932` のまま、representative glyph を original evidence に合わせる方向を支持する。
 
 ### Extension C の GBK-source evidence
 
@@ -72,6 +76,8 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 ## 関連文書
 
 - [IRG N2919R](../documents/irg-n2919r.md) - 3 G-source glyphs と 10 references の proposal。
+- [IRG N891](../documents/irg-n891.md) - China Extension C1 submission。
+- [IRG N1519](../documents/irg-n1519.md) - China CJK_D candidate evidence package。
 - [IRG N2923R](../documents/irg-n2923r.md) - 329 G-source reference updates と 9 horizontal extension candidates。
 - [IRG N2930](../documents/irg-n2930.md) - 3 `GU` references を `GHC` references へ移す proposal。
 - [IRG N2954](../documents/irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
