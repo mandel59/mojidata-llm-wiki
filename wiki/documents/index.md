@@ -228,7 +228,7 @@
 - [WG2 N5340](wg2-n5340.md) - Tai Xaau script proposal presentation for WG2 \#72。
 - [WG2 N5341](wg2-n5341.md) - Small Seal code charts and data set。
 - [WG2 N5344R2](wg2-n5344r2.md) - Small Seal Script の revised proposal。
-- [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
+- [WG2 N5348R](wg2-n5348r.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
 - [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5354](wg2-n5354.md) - WG2 Meeting \#73 recommendations。
 - [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。

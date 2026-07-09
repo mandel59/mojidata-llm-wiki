@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Refine**: Canonicalized [WG2 N5348R](documents/wg2-n5348r.md) from the non-catalog `wg2-n5348` page id to catalog entry `wg2-n5348r`, preserving `WG2 N5348` as an alias and updating Small Seal, Michel Suignard, N5355, and CD.4 disposition links.
 - **Digest**: Added [L2/22-073](documents/utc-l2-22-073.md), [L2/23-203](documents/utc-l2-23-203.md), and [L2/26-028R](documents/utc-l2-26-028r.md), opened [N'ti Script](topics/nti-script.md), and connected the African scripts status reports through the January / April 2026 N'ti proposal revisions to SEW, `Joining_Type`, KORE SEBELI, and the script proposal family.
 - **Digest**: Added [L2/20-180](documents/utc-l2-20-180.md), [L2/21-209](documents/utc-l2-21-209.md), [L2/22-222](documents/utc-l2-22-222.md), [L2/24-246](documents/utc-l2-24-246.md), and [L2/26-050R](documents/utc-l2-26-050r.md), opened [KORE SEBELI Script](topics/kore-sebeli-script.md), and connected the 106 -> 95 -> 93 / 91 repertoire changes to [L2/26-132](documents/utc-l2-26-132.md), UTC \#188 tracking, and the script proposal family.
 - **Digest**: Added [L2/24-012](documents/utc-l2-24-012.md), [L2/24-067](documents/utc-l2-24-067.md), and [L2/24-165](documents/utc-l2-24-165.md) for UTC \#178-\#180 CJK & Unihan recommendations, linking the 2024 `kMandarin` action chain, UAX \#45 FutureWS intake, and U-source horizontal extension precedents to later [L2/26-084](documents/utc-l2-26-084.md) / [L2/26-099](documents/utc-l2-26-099.md) coverage.

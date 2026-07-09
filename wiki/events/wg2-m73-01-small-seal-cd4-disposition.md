@@ -24,7 +24,7 @@ WG2 Meeting \#73 は Recommendation M73.01 で、ISO/IEC 10646 7th edition CD.4 
 
 [WG2 N5344R2](../documents/wg2-n5344r2.md) では script property と character names に `Seal` を使う案だった。WG2 \#73 の recommendations は、CD.4 disposition を通じて character names を `Small Seal` に寄せ、ISO/IEC 10646 7th edition DIS へ進める変更として記録した。
 
-`WG2 N5355` は、`WG2 N5348` で不明確とされた `zhèngzì`（正字）/ normalized form の意味を補足し、Small Seal の modern CJK 対応値は `zhèngzhuàn`（正篆）と `chóngwén`（重文）の関係で理解すべきだと整理した。`WG2 N5369` の `kSEAL_MCJK` correction は、この modern CJK correspondence principle を CD.4 disposition に反映したものとして読める。
+`WG2 N5355` は、`WG2 N5348R` で不明確とされた `zhèngzì`（正字）/ normalized form の意味を補足し、Small Seal の modern CJK 対応値は `zhèngzhuàn`（正篆）と `chóngwén`（重文）の関係で理解すべきだと整理した。`WG2 N5369` の `kSEAL_MCJK` correction は、この modern CJK correspondence principle を CD.4 disposition に反映したものとして読める。
 
 ## 結果
 
