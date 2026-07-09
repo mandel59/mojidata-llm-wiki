@@ -4,7 +4,7 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, pri-547, pri-548, pri-553, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, pri-547, pri-548, pri-552, pri-553, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 status: draft-release
 tags: [unicode-18, release, beta, ucd, migration]
@@ -35,6 +35,7 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian variation sequences と Unicode 18.0 delta charts への corrections / recommendations が提出された。 |
 | 2026-07-07 | UTC | [PRI \#547](../documents/pri-547.md) | UAX \#44 Revision 37 public review が close し、UCD directory structure と release data file documentation の確認点が UTC \#188 へ接続した。 |
 | 2026-07-07 | UTC | [PRI \#548](../documents/pri-548.md) | Unicode 18.0.0 Beta public review が close し、UTC \#188 content finalize に向けた feedback snapshot になった。 |
+| 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UAX \#29 Revision 48 public review が close し、Unicode 18.0 の text segmentation / GB9c 更新に接続した。 |
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、Unicode 18.0 の security mechanisms / confusables data finalization に接続した。 |
 | 2026-07-30 | UTC | `L2/26-102` | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) で 18.0 content finalize 予定。2026-07-07 時点で agenda / minutes は未掲載。 |
 | 2026-09-16 | UTC | Unicode 18.0 beta page | 公式 beta page 上の planned release date。 |
@@ -73,7 +74,7 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 
 実装影響は UCD と synchronized UTS の data files に現れる。draft release page は UCD 18.0.0 directory、Unihan.zip、USourceData.txt / USourceGlyphs.pdf / USourceRSChart.pdf、JurchenSources.txt、SealSources.txt、NushuSources.txt、TangutSources.txt、StandardizedVariants.txt、security data、emoji data などを list of components として示している。
 
-UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut data files は、character names だけでは追えない script-specific identity data を UCD component として扱う。UAX \#53 の AMTRA、UTS \#10 の DUCET changes、[PRI \#553](../documents/pri-553.md) の UTS \#39 security mechanisms update は、data file だけでなく algorithm / guidance text の更新として確認する必要がある。
+UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut data files は、character names だけでは追えない script-specific identity data を UCD component として扱う。UAX \#53 の AMTRA、[PRI \#552](../documents/pri-552.md) の UAX \#29 GB9c update、UTS \#10 の DUCET changes、[PRI \#553](../documents/pri-553.md) の UTS \#39 security mechanisms update は、data file だけでなく algorithm / guidance text の更新として確認する必要がある。
 
 ### Delta charts feedback
 
@@ -87,6 +88,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group Report to UTC \#187。
 - [PRI \#547](../documents/pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
 - [PRI \#548](../documents/pri-548.md) - Unicode 18.0.0 Beta public review。
+- [PRI \#552](../documents/pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。
 - [PRI \#553](../documents/pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
 - [L2/26-095](../documents/utc-l2-26-095.md) - Public Review Issues 一覧。
 - [L2/26-096](../documents/utc-l2-26-096.md) - Properties & Algorithms Group recommendations。
@@ -142,6 +144,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - Unicode 18.0.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
 - `pri-547` - <https://www.unicode.org/review/pri547/>
 - `pri-548` - <https://www.unicode.org/review/pri548/>
+- `pri-552` - <https://www.unicode.org/review/pri552/>
 - `pri-553` - <https://www.unicode.org/review/pri553/>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-074` - <https://www.unicode.org/L2/L2026/26074-two-new-unihan-properties.pdf>

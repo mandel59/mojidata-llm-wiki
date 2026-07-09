@@ -4,7 +4,7 @@ title: Indic Script Notation and Rendering
 description: "Indic scripts における Vedic notation、combining marks、rendering guidance。"
 slug: indic-script-notation-and-rendering
 bodies: [UTC]
-documents: [utc-l2-26-062, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138]
+documents: [utc-l2-26-062, pri-552, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138]
 topics: [script-encoding-pipeline, unicode-properties-and-algorithms]
 status: active
 tags: [indic, vedic, kannada, rendering, combining-marks]
@@ -17,6 +17,8 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 Indic Script Notation and Rendering は、Indic scripts における Vedic / Sanskrit notation、combining marks、valid sequences、font / shaping behavior を扱う topic である。UTC \#188 候補文書では、[L2/26-113](../documents/utc-l2-26-113.md) と [L2/26-114](../documents/utc-l2-26-114.md) が language-specific vowel marks を提案し、[L2/26-131](../documents/utc-l2-26-131.md) が Kannada 用 Samavedic svara markers の追加を提案し、[L2/26-138](../documents/utc-l2-26-138.md) が consecutive anusvaras の rendering issue を FYI として報告する。
 
+[PRI \#552](../documents/pri-552.md) は Indic conjunct 周辺の UAX \#29 GB9c を Unicode 18.0 向けに更新する public review issue であり、encoding proposal ではなく grapheme cluster boundary / `Indic_Conjunct_Break` data の論点として読む。
+
 ## 経緯
 
 | 日付 | Body | 文書 | できごと |
@@ -26,6 +28,7 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 | 2026-04-13 | UTC | [L2/26-114](../documents/utc-l2-26-114.md) | Biswajit Mandal が Sunuwar / Wambule 用 Devanagari vowel length mark を提案した。 |
 | 2026-05-14 | UTC | [L2/26-131](../documents/utc-l2-26-131.md) | Kannada script 用 Samavedic svara markers 12 文字が提案された。 |
 | 2026-06-09 | UTC | [L2/26-138](../documents/utc-l2-26-138.md) | Consecutive anusvaras が valid Sanskrit forms に現れることと rendering support の問題が報告された。 |
+| 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UTC が UAX \#29 Revision 48 public review を close し、GB9c の `InCB=Linker` / `InCB=Extend` / `InCB=Consonant` rule update を Unicode 18.0 finalization へ接続した。 |
 
 ## 主な論点
 
@@ -43,8 +46,11 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 
 [L2/26-062](../documents/utc-l2-26-062.md) は、atomic vowel letters を分解 sequence と同じ glyph にしないこと、invalid repeated / out-of-order dependent marks を dotted circle で見せること、language-specific orthography validation を input / search / NLP preprocessing に使うことを整理する。Indic topic では、encoding proposal だけでなく shaping and validation guidance として読む。
 
+[PRI \#552](../documents/pri-552.md) の GB9c update は、valid Indic conjunct sequences を editing / selection / regex などの text segmentation layer でどう扱うかに関わる。これは glyph shaping の成否を直接決めるものではないが、rendering guidance と同じく Indic text の user-perceived character boundary に影響する。
+
 ## 関連文書
 
+- [PRI \#552](../documents/pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。
 - [L2/26-131](../documents/utc-l2-26-131.md) - Samavedic svara markers in Kannada。
 - [L2/26-138](../documents/utc-l2-26-138.md) - consecutive anusvaras in Indic scripts。
 - [L2/26-062](../documents/utc-l2-26-062.md) - Text Rendering, Input, Search and Processing in Indian Languages。
@@ -59,6 +65,7 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 ## 出典
 
 - `utc-l2-26-131` - <https://www.unicode.org/L2/L2026/26131-samavedic-svara-markers.pdf>
+- `pri-552` - <https://www.unicode.org/review/pri552/>
 - `utc-l2-26-138` - <https://www.unicode.org/L2/L2026/26138-consecutive-anusvaras.pdf>
 - `utc-l2-26-062` - <https://www.unicode.org/L2/L2026/26062-indian-language-feedback.pdf>
 - `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
