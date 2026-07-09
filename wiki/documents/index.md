@@ -184,12 +184,13 @@
 - [WG2 N5301](wg2-n5301.md) - WG2 Meeting \#72 minutes and action items。
 - [WG2 N5304](wg2-n5304.md) - WG2 Meeting \#72 recommendations。
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
+- [WG2 N5307R](wg2-n5307r.md) - Small Seal glyph mapping principles。
 - [WG2 N5315](wg2-n5315.md) - ISO/IEC 10646 code charts consideration。
 - [WG2 N5317R3](wg2-n5317r3.md) - Small Seal feedback disposition。
 - [WG2 N5318R](wg2-n5318r.md) - Four-Column Small Seal Script proposal。
 - [WG2 N5339](wg2-n5339.md) - ISO/IEC 10646 7th edition CD.2 disposition。
 - [WG2 N5341](wg2-n5341.md) - Small Seal code charts and data set。
-- [WG2 N5344](wg2-n5344.md) - Small Seal Script の revised proposal。
+- [WG2 N5344R2](wg2-n5344r2.md) - Small Seal Script の revised proposal。
 - [WG2 N5348](wg2-n5348.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
 - [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5354](wg2-n5354.md) - WG2 Meeting \#73 recommendations。

@@ -4,7 +4,7 @@ title: WG2
 description: ISO/IEC 10646 の repertoire と edition / amendment progression を扱う WG2。
 slug: wg2
 bodies: [WG2, IRG, UTC]
-documents: [wg2-n5221, wg2-n5301, wg2-n5304, wg2-n5344, wg2-n5354, irg-n2935]
+documents: [wg2-n5221, wg2-n5301, wg2-n5304, wg2-n5344r2, wg2-n5354, irg-n2935]
 topics: [jmj-horizontal-extension-review-path, j-source, small-seal-script, kirg-sgsource, cjkv-components]
 tags: [organization, standards-body, wg2]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -21,7 +21,7 @@ WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoir
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | `WG2 N5221`, `WG2 N5301`, `WG2 N5304` | Japan NB の JMJ horizontal extension request、WG2 \#72 minutes / recommendations。 | [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md), [J-source and JMJ Source Issues](../topics/j-source.md) |
-| `WG2 N5344`, `WG2 N5354` | Small Seal Script の proposal と WG2 \#73 recommendations。 | [Small Seal Script](../topics/small-seal-script.md) |
+| `WG2 N5344R2`, `WG2 N5354` | Small Seal Script の proposal と WG2 \#73 recommendations。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2935` | `kIRG_SGSource` と `CJKV Components` が WG2 \#73 に提出され、SC2 acceptance へ進んだ current status を記録。 | [kIRG_SGSource](../topics/kirg-sgsource.md), [CJKV Components](../topics/cjkv-components.md) |
 
 ## 関連文書
@@ -29,7 +29,7 @@ WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoir
 - `wg2-n5221` - JMJ horizontal extension request
 - `wg2-n5301` - WG2 Meeting \#72 minutes
 - `wg2-n5304` - WG2 Meeting \#72 recommendations
-- `wg2-n5344` - Small Seal proposal
+- `wg2-n5344r2` - Small Seal proposal
 - `wg2-n5354` - WG2 Meeting \#73 recommendations
 - `irg-n2935` - IRG Meeting \#67 agenda
 
@@ -54,6 +54,6 @@ WG2 は、ISO/IEC JTC 1/SC 2 の working group で、ISO/IEC 10646 の repertoir
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>
 - `wg2-n5301` - <https://www.unicode.org/wg2/docs/n5301-M72minutes-JP-2025-rev5.pdf>
 - `wg2-n5304` - <https://www.unicode.org/wg2/docs/n5304-Mtg72-Niigata-Recs-rev5-final.pdf>
-- `wg2-n5344` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>
+- `wg2-n5344r2` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
