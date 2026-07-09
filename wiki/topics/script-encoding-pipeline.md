@@ -4,12 +4,12 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
-topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, iso-10646-edition-and-code-charts]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-222, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-07-09T00:00:00+09:00
 ---
 
 # Script Encoding Pipeline
@@ -25,6 +25,8 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2013-05-07 | UTC / WG2 | [L2/13-116](../documents/utc-l2-13-116.md) | Erich Fickle / Martin Hosken が Eastern Pwo Karen 用 Leke script の revised proposal を提出した。 |
+| 2020-07-20 | UTC | [L2/20-180](../documents/utc-l2-20-180.md) | Mohamed Bentoura Bangoura が KORE SEBELI / Wakara script の initial proposal を 106 characters で提出した。 |
+| 2024-10-28 | UTC | [L2/24-246](../documents/utc-l2-24-246.md) | Mohamed Bentoura Bangoura が KORE SEBELI proposal を 95 characters model に再編した。 |
 | 2025-04-14 | UTC | [L2/25-131](../documents/utc-l2-25-131.md) | Historic alchemical symbols proposal が提出された。 |
 | 2025-06-16 | WG2 | [WG2 N5310R](../documents/wg2-n5310r.md) | China NB が Tai Xaau / Dai Xaau script 76 characters の revised proposal を提出した。 |
 | 2025-06-26 | WG2 | [WG2 N5340](../documents/wg2-n5340.md) | Dao Jie / Qi Ziyuan が WG2 \#72 で Tai Xaau proposal presentation を提出した。 |
@@ -35,10 +37,11 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2026-04-13 | UTC | [L2/26-113](../documents/utc-l2-26-113.md), [L2/26-114](../documents/utc-l2-26-114.md) | Biswajit Mandal が Kannada / Devanagari の language-specific marks を提案した。 |
 | 2026-04-13 | UTC | [L2/26-040R2](../documents/utc-l2-26-040r2.md) | Oreen Yousuf / Daniel Yacob が Shaaldaa revised proposal を提出した。 |
 | 2026-04-13 | UTC | [L2/26-089](../documents/utc-l2-26-089.md), [L2/26-117](../documents/utc-l2-26-117.md), [L2/26-118](../documents/utc-l2-26-118.md), [L2/26-119](../documents/utc-l2-26-119.md) | Belarusian Ruble sign、Catholic Albanian edhe、modifier capital Y、Arabic Waw with Ring proposal が登録された。 |
+| 2026-04-13 | UTC | [L2/26-050R](../documents/utc-l2-26-050r.md) | Mohamed Bentoura Bangoura が KORE SEBELI version 12 を 93 / 91 count の revised proposal として提出した。 |
 | 2026-04-17 | UTC | [L2/26-100](../documents/utc-l2-26-100.md) | SEW が UTC \#187 に script proposal recommendations を提出した。 |
 | 2026-04-17 | UTC | [L2/26-015R](../documents/utc-l2-26-015r.md) | Boubacar Diakite / Neil Patel が N'ko Phonetic Extensions for Bambara revised proposal を提出した。 |
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が SEW report を Unicode 18.0 beta review の処理対象にした。 |
-| 2026-05-14 | UTC | [L2/26-129](../documents/utc-l2-26-129.md), [L2/26-131](../documents/utc-l2-26-131.md), [L2/26-132](../documents/utc-l2-26-132.md) | UTC \#188 候補として Leke、Kannada Samavedic svara markers、KORE SEBELI が登録された。 |
+| 2026-05-14 | UTC | [L2/26-129](../documents/utc-l2-26-129.md), [L2/26-131](../documents/utc-l2-26-131.md), [L2/26-132](../documents/utc-l2-26-132.md) | UTC \#188 候補として Leke、Kannada Samavedic svara markers、[KORE SEBELI Script](kore-sebeli-script.md) が登録された。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md) | LTR joining scripts に対する Joining_Type property の解釈問題が提出された。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が Amendment 1 project、first amendment additions、Sirmauri / Leke / Proto-Cuneiform / Mwangwego / Shaaldaa などの script additions、Maya review request を勧告した。 |
 
@@ -64,7 +67,9 @@ Ndiko Jonam / Luo Lakeside、[N'ti](../documents/utc-l2-26-087.md)、[N'ko Bamba
 
 ### UTC \#188 候補の新規 script / notation proposals
 
-UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacritics、[L2/26-114](../documents/utc-l2-26-114.md) Devanagari vowel length mark、[L2/26-129](../documents/utc-l2-26-129.md) [Leke](leke-script.md)、[L2/26-132](../documents/utc-l2-26-132.md) KORE SEBELI、[L2/26-131](../documents/utc-l2-26-131.md) Kannada Samavedic svara markers が登録された。これらは次回 UTC meeting の agenda が未公開なため決定済みではないが、script / notation pipeline の候補として追跡する。
+UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacritics、[L2/26-114](../documents/utc-l2-26-114.md) Devanagari vowel length mark、[L2/26-129](../documents/utc-l2-26-129.md) [Leke](leke-script.md)、[L2/26-132](../documents/utc-l2-26-132.md) [KORE SEBELI](kore-sebeli-script.md)、[L2/26-131](../documents/utc-l2-26-131.md) Kannada Samavedic svara markers が登録された。これらは次回 UTC meeting の agenda が未公開なため決定済みではないが、script / notation pipeline の候補として追跡する。
+
+[KORE SEBELI Script](kore-sebeli-script.md) は 2020 年から続く proposal chain であり、106 characters から 95 characters、さらに 2026 年 version 12 の 93 / 91 count へ repertoire が変化している。単発の UTC \#188 候補ではなく、repertoire count と atomic dotted-letter model の安定化を確認する必要がある。
 
 ### WG2 \#73 と Amendment 1
 
@@ -94,6 +99,9 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [L2/26-118](../documents/utc-l2-26-118.md) - modifier capital Y proposal。
 - [L2/26-119](../documents/utc-l2-26-119.md), [L2/26-120](../documents/utc-l2-26-120.md) - Arabic Waw with Ring glyph correction。
 - [L2/13-116](../documents/utc-l2-13-116.md) - Leke script の 2013 年 revised proposal。
+- [L2/20-180](../documents/utc-l2-20-180.md), [L2/21-209](../documents/utc-l2-21-209.md), [L2/22-222](../documents/utc-l2-22-222.md) - KORE SEBELI / Wakara script の 106-character proposal chain。
+- [L2/24-246](../documents/utc-l2-24-246.md) - KORE SEBELI proposal の 95-character 版。
+- [L2/26-050R](../documents/utc-l2-26-050r.md) - KORE SEBELI version 12 revised proposal。
 - [L2/26-129](../documents/utc-l2-26-129.md) - Leke script proposal。
 - [L2/26-131](../documents/utc-l2-26-131.md) - Samavedic svara markers in Kannada。
 - [L2/26-132](../documents/utc-l2-26-132.md) - KORE SEBELI script proposal。
@@ -117,6 +125,7 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [Shaaldaa Script](shaaldaa-script.md)
 - [Dai Xaau Script](dai-xaau-script.md)
 - [Leke Script](leke-script.md)
+- [KORE SEBELI Script](kore-sebeli-script.md)
 - [ISO/IEC 10646 Edition and Code Charts](iso-10646-edition-and-code-charts.md)
 
 ## 出典
@@ -138,6 +147,11 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - `utc-l2-26-119` - <https://www.unicode.org/L2/L2026/26119-arabic-letter-waw-with-ring-within.pdf>
 - `utc-l2-26-120` - <https://www.unicode.org/L2/L2026/26120-waw-ring-glyph-change.pdf>
 - `utc-l2-13-116` - <https://www.unicode.org/L2/L2013/13116-leke-revised.pdf>
+- `utc-l2-20-180` - <https://www.unicode.org/L2/L2020/20180-kore.pdf>
+- `utc-l2-21-209` - <https://www.unicode.org/L2/L2021/21209-kore-sebeli.pdf>
+- `utc-l2-22-222` - <https://www.unicode.org/L2/L2022/22222-kore-sebeli.pdf>
+- `utc-l2-24-246` - <https://www.unicode.org/L2/L2024/24246-kore-sebeli.pdf>
+- `utc-l2-26-050r` - <https://www.unicode.org/L2/L2026/26050r-kore-sebeli-proposal.pdf>
 - `utc-l2-26-129` - <https://www.unicode.org/L2/L2026/26129-leke-proposal.pdf>
 - `utc-l2-26-131` - <https://www.unicode.org/L2/L2026/26131-samavedic-svara-markers.pdf>
 - `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>

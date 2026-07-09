@@ -51,6 +51,7 @@ okf_version: "0.1"
 - [Shaaldaa Script](topics/shaaldaa-script.md) - Oromo 用 Shaaldaa script の UCS 符号化提案と ISO/IEC 10646 Amendment 1 candidate としての扱い。
 - [Dai Xaau Script](topics/dai-xaau-script.md) - Tai Xaau / Dai Xaau script の UCS encoding proposal と Tai Viet からの disunification 論点。
 - [Leke Script](topics/leke-script.md) - Eastern Pwo Karen 用 Leke / Chicken Scratch script の Unicode encoding proposal chain。
+- [KORE SEBELI Script](topics/kore-sebeli-script.md) - Soso language 用 KORE SEBELI / Wakara script の Unicode encoding proposal chain。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
 - [East Asian Spacing](topics/east-asian-spacing.md) - UTR \#59 draft の East Asian visible spacing algorithm と property data。
 - [Unicode Set Notation](topics/unicode-set-notation.md) - UTS \#61 draft の machine-readable Unicode set notation。

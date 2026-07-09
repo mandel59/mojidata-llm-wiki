@@ -37,6 +37,10 @@
 - [L2/25-199](utc-l2-25-199.md) - UAX \#45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/13-116](utc-l2-13-116.md) - Leke script の 2013 年 revised proposal。
+- [L2/20-180](utc-l2-20-180.md) - KORE SEBELI / Wakara script の 2020 年 initial proposal。
+- [L2/21-209](utc-l2-21-209.md) - KORE SEBELI / Wakara script の 2021 年 proposal。
+- [L2/22-222](utc-l2-22-222.md) - KORE SEBELI / Wakara script の 2022 年 proposal。
+- [L2/24-246](utc-l2-24-246.md) - KORE SEBELI / Wakara script の 2024 年 95-character proposal。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
 - [L2/16-188](utc-l2-16-188.md) - Hentaigana revised repertoire。
@@ -101,6 +105,7 @@
 - [L2/26-129](utc-l2-26-129.md) - Leke script proposal。
 - [L2/26-130](utc-l2-26-130.md) - Chinese folk music notation の musical symbol / format controls proposal。
 - [L2/26-131](utc-l2-26-131.md) - Kannada 用 Samavedic svara markers proposal。
+- [L2/26-050R](utc-l2-26-050r.md) - KORE SEBELI / Wakara script の 2026 年 revised proposal。
 - [L2/26-132](utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-133](utc-l2-26-133.md) - DOUBLE IDEOGRAPHIC FULL STOP proposal。
 - [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。

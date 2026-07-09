@@ -9,10 +9,10 @@ meeting: 188
 date: "2026-07-30"
 location: TBD
 documents: [utc-l2-26-102, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
-topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
+topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
 status: tracking
 tags: [meeting, utc, unicode-18, tracking]
-timestamp: 2026-07-07T00:00:00+09:00
+timestamp: 2026-07-09T00:00:00+09:00
 ---
 
 # UTC Meeting \#188
@@ -28,7 +28,7 @@ UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - beta feedback snapshot 後の content finalize。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - [L2/26-127](../../documents/utc-l2-26-127.md) の second review request。
 - [East Asian Quotation Marks](../../topics/east-asian-quotation-marks.md) - [L2/26-128](../../documents/utc-l2-26-128.md) の core spec text update。
-- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-113](../../documents/utc-l2-26-113.md)、[L2/26-114](../../documents/utc-l2-26-114.md)、[L2/26-129](../../documents/utc-l2-26-129.md) / [Leke Script](../../topics/leke-script.md)、[L2/26-131](../../documents/utc-l2-26-131.md)、[L2/26-132](../../documents/utc-l2-26-132.md) などの script / mark proposals。
+- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-113](../../documents/utc-l2-26-113.md)、[L2/26-114](../../documents/utc-l2-26-114.md)、[L2/26-129](../../documents/utc-l2-26-129.md) / [Leke Script](../../topics/leke-script.md)、[L2/26-131](../../documents/utc-l2-26-131.md)、[L2/26-132](../../documents/utc-l2-26-132.md) / [KORE SEBELI Script](../../topics/kore-sebeli-script.md) などの script / mark proposals。
 - [Chinese Folk Music Notation](../../topics/chinese-folk-music-notation.md) - [L2/26-130](../../documents/utc-l2-26-130.md) の musical symbol / format controls。
 - [Ideographic Punctuation Proposals](../../topics/ideographic-punctuation-proposals.md) - [L2/26-133](../../documents/utc-l2-26-133.md) と [L2/26-136](../../documents/utc-l2-26-136.md)。
 - [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [L2/26-137](../../documents/utc-l2-26-137.md)、[L2/26-138](../../documents/utc-l2-26-138.md)、[L2/26-139](../../documents/utc-l2-26-139.md) の joining / rendering / compose issues。

@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [L2/20-180](documents/utc-l2-20-180.md), [L2/21-209](documents/utc-l2-21-209.md), [L2/22-222](documents/utc-l2-22-222.md), [L2/24-246](documents/utc-l2-24-246.md), and [L2/26-050R](documents/utc-l2-26-050r.md), opened [KORE SEBELI Script](topics/kore-sebeli-script.md), and connected the 106 -> 95 -> 93 / 91 repertoire changes to [L2/26-132](documents/utc-l2-26-132.md), UTC \#188 tracking, and the script proposal family.
 - **Digest**: Added [L2/24-012](documents/utc-l2-24-012.md), [L2/24-067](documents/utc-l2-24-067.md), and [L2/24-165](documents/utc-l2-24-165.md) for UTC \#178-\#180 CJK & Unihan recommendations, linking the 2024 `kMandarin` action chain, UAX \#45 FutureWS intake, and U-source horizontal extension precedents to later [L2/26-084](documents/utc-l2-26-084.md) / [L2/26-099](documents/utc-l2-26-099.md) coverage.
 - **Digest**: Added [L2/13-116](documents/utc-l2-13-116.md) and opened [Leke Script](topics/leke-script.md), connecting the 2013 revised proposal to [L2/26-129](documents/utc-l2-26-129.md), WG2 \#73 Amendment 1 starting repertoire documents, and the script proposal family.
 - **Digest**: Added [WG2 N5310R](documents/wg2-n5310r.md) and [WG2 N5340](documents/wg2-n5340.md), opened [Dai Xaau Script](topics/dai-xaau-script.md), and connected the Tai Xaau / Dai Xaau proposal chain from WG2 \#72 M72.15 through [WG2 N5368](documents/wg2-n5368.md) to the script proposal family.
