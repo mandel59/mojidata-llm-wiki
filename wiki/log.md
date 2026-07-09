@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [IRG N1081](documents/irg-n1081.md) and [IRG N1133](documents/irg-n1133.md) as 2004-2005 CJKV Components precursors, connecting China component encoding data and TCA/CNS 11643 decomposition rules to the later CJKV Components topic.
 - **Digest**: Added [IRG N2367](documents/irg-n2367.md) for Japan Activity Report (May 2019), connecting Japan NB's IRG Working Set review resource constraint to the later [IRG N2721](documents/irg-n2721.md) active participation request and JMJ horizontal extension review path.
 - **Digest**: Added [IRG N2895](documents/irg-n2895.md) for CJKV Components feedback on source coverage, use-case criteria, disunification comments, and the component / CJK ideograph boundary, linking it to [IRG N2878R3](documents/irg-n2878r3.md).
 - **Digest**: Added [IRG N2702](documents/irg-n2702.md) and [IRG N2765](documents/irg-n2765.md) for IRG Meeting \#63/\#64 recommendations, connecting early CJKV Components decisions, CMEX review tooling, UCV / NUCV updates, and WS2024 schedule history.

@@ -167,6 +167,8 @@
 - [L2/26-091](utc-l2-26-091.md) - Mongolian standardized variants deprecation proposal。
 - [L2/26-070R](utc-l2-26-070r.md) - multiple variation selectors conformance proposal。
 - [L2/26-079](utc-l2-26-079.md) - Romance dialectological atlas symbols proposal。
+- [IRG N1081](irg-n1081.md) - China source の 146 ideographic components proposal。
+- [IRG N1133](irg-n1133.md) - TCA / CNS 11643 の basic components data。
 - [IRG N2367](irg-n2367.md) - Japan Activity Report; IRG Working Set review 不参加方針。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
 - [WG2 N5253](wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
