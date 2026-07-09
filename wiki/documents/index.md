@@ -222,6 +222,7 @@
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
+- [WG2 N5294R3](wg2-n5294r3.md) - Small Seal 11,140 code point repertoire and database model。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5300R9](wg2-n5300r9.md) - WG2 Meeting \#72 agenda。
 - [WG2 N5301](wg2-n5301.md) - WG2 Meeting \#72 minutes and action items。
@@ -229,13 +230,18 @@
 - [WG2 N5306](wg2-n5306.md) - Small Seal Script 最終 proposal 前の unification / disunification issue 整理。
 - [WG2 N5307R](wg2-n5307r.md) - Small Seal glyph mapping principles。
 - [WG2 N5310R](wg2-n5310r.md) - Tai Xaau / Dai Xaau script revised proposal。
+- [WG2 N5312](wg2-n5312.md) - N5294R2 / N5294R3 への Small Seal feedback。
+- [WG2 N5313R](wg2-n5313r.md) - N5306 への revised Small Seal feedback。
 - [WG2 N5315](wg2-n5315.md) - ISO/IEC 10646 code charts consideration。
 - [WG2 N5317R3](wg2-n5317r3.md) - Small Seal feedback disposition。
 - [WG2 N5318R](wg2-n5318r.md) - Four-Column Small Seal Script proposal。
+- [WG2 N5327](wg2-n5327.md) - N5313R への Small Seal comment。
+- [WG2 N5337](wg2-n5337.md) - N5327 への TCA response。
 - [WG2 N5339](wg2-n5339.md) - ISO/IEC 10646 7th edition CD.2 disposition。
 - [WG2 N5340](wg2-n5340.md) - Tai Xaau script proposal presentation for WG2 \#72。
 - [WG2 N5341](wg2-n5341.md) - Small Seal code charts and data set。
 - [WG2 N5344R2](wg2-n5344r2.md) - Small Seal Script の revised proposal。
+- [WG2 N5346](wg2-n5346.md) - N5341 Small Seal code chart feedback。
 - [WG2 N5348R](wg2-n5348r.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
 - [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5354](wg2-n5354.md) - WG2 Meeting \#73 recommendations。
