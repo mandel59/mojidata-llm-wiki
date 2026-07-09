@@ -4,7 +4,7 @@ title: Unicode Properties and Algorithms
 description: "UTC #187 PAG report を中心にした Unicode properties、algorithm text、security data の更新論点。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-547, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-547, pri-553, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
@@ -35,6 +35,7 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が Unicode 18.0 beta review の action items として PAG report を扱った。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md), [L2/26-138](../documents/utc-l2-26-138.md), [L2/26-139](../documents/utc-l2-26-139.md) | UTC \#188 候補として Joining_Type for LTR scripts、consecutive anusvaras、COMPOSE proposal が登録された。 |
 | 2026-07-07 | UTC | [PRI \#547](../documents/pri-547.md) | UAX \#44 Revision 37 public review が close し、UCD data files、derived properties、UAX \#60 data file documentation、directory structure の確認点が UTC \#188 に接続した。 |
+| 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、security mechanisms / confusables data の Unicode 18.0 finalization が UTC \#188 に接続した。 |
 
 ## 主な論点
 
@@ -67,6 +68,8 @@ MCM set、CGJ override、dotted circle insertion、Arabic marks の Diacritic pr
 ### Security / confusables
 
 UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables data、Cyrillic Extended-D などが扱われる。CJK-specific な confusables は [CJK Security Confusables](cjk-security-confusables.md) に分けるが、PAG report は broader security data の hub である。
+
+[PRI \#553](../documents/pri-553.md) は、この UTS \#39 Revision 33 proposed update を Unicode 18.0 public review に出した entry point である。draft は `nonspacing mark` を `gc=Mn` / `gc=Me` と明確化し、古い confusable detection text を整理するため、security data files と optional detection text の両方を確認対象にする。
 
 [L2/26-119](../documents/utc-l2-26-119.md) / [L2/26-120](../documents/utc-l2-26-120.md) の U+06C4 glyph correction は、representative glyph correction だけでなく U+06C4 / U+1EE85 confusables と cross-reference update に接続するため、script proposal と security data の境界にある。
 
@@ -103,6 +106,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [L2/26-109](../documents/utc-l2-26-109.md) - UTS \#10 Unicode Collation Algorithm proposed update。
 - [L2/26-110](../documents/utc-l2-26-110.md) - UAX \#31 proposed update。
 - [PRI \#547](../documents/pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
+- [PRI \#553](../documents/pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
 - [L2/26-111](../documents/utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-119](../documents/utc-l2-26-119.md) - U+06C4 glyph correction proposal。
 - [L2/26-120](../documents/utc-l2-26-120.md) - U+06C4 glyph correction response。
@@ -138,6 +142,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - `utc-l2-26-109` - <https://www.unicode.org/L2/L2026/26109-uts10-54-update-pri542.pdf>
 - `utc-l2-26-110` - <https://www.unicode.org/L2/L2026/26110-uax31-44-update-pri535.pdf>
 - `pri-547` - <https://www.unicode.org/review/pri547/>
+- `pri-553` - <https://www.unicode.org/review/pri553/>
 - `utc-l2-26-111` - <https://www.unicode.org/L2/L2026/26111-uts61-1-draft-pri523.pdf>
 - `utc-l2-26-119` - <https://www.unicode.org/L2/L2026/26119-arabic-letter-waw-with-ring-within.pdf>
 - `utc-l2-26-120` - <https://www.unicode.org/L2/L2026/26120-waw-ring-glyph-change.pdf>
