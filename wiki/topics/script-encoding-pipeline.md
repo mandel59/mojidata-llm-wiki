@@ -4,8 +4,8 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-222, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
-topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, iso-10646-edition-and-code-charts]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
@@ -26,11 +26,14 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | --- | --- | --- | --- |
 | 2013-05-07 | UTC / WG2 | [L2/13-116](../documents/utc-l2-13-116.md) | Erich Fickle / Martin Hosken が Eastern Pwo Karen 用 Leke script の revised proposal を提出した。 |
 | 2020-07-20 | UTC | [L2/20-180](../documents/utc-l2-20-180.md) | Mohamed Bentoura Bangoura が KORE SEBELI / Wakara script の initial proposal を 106 characters で提出した。 |
+| 2022-03-18 | UTC | [L2/22-073](../documents/utc-l2-22-073.md) | Charles L. Riley が African scripts implementation status report で encoded / unencoded scripts の support と proposal evidence needs を整理した。 |
+| 2023-09-21 | UTC | [L2/23-203](../documents/utc-l2-23-203.md) | Oreen Yousuf らが African scripts status report で N'ti や KORE SEBELI などの unencoded scripts の usage / implementation status を整理した。 |
 | 2024-10-28 | UTC | [L2/24-246](../documents/utc-l2-24-246.md) | Mohamed Bentoura Bangoura が KORE SEBELI proposal を 95 characters model に再編した。 |
 | 2025-04-14 | UTC | [L2/25-131](../documents/utc-l2-25-131.md) | Historic alchemical symbols proposal が提出された。 |
 | 2025-06-16 | WG2 | [WG2 N5310R](../documents/wg2-n5310r.md) | China NB が Tai Xaau / Dai Xaau script 76 characters の revised proposal を提出した。 |
 | 2025-06-26 | WG2 | [WG2 N5340](../documents/wg2-n5340.md) | Dao Jie / Qi Ziyuan が WG2 \#72 で Tai Xaau proposal presentation を提出した。 |
 | 2025-06-27 | WG2 | [WG2 N5304](../documents/wg2-n5304.md) | WG2 \#72 M72.15 が Dai Xaau proposal の progress を note し、authors に継続作業を促した。 |
+| 2026-01-15 | UTC | [L2/26-028R](../documents/utc-l2-26-028r.md) | Oreen Yousuf / Ibrahima Ceesay が N'ti preliminary proposal を提出した。 |
 | 2026-02-09 | UTC | [L2/26-065](../documents/utc-l2-26-065.md) | LATIN SMALL LETTER ZH proposal が提出された。 |
 | 2026-03-09 | UTC | [L2/26-079](../documents/utc-l2-26-079.md) | Romance dialectological atlas additions proposal が提出された。 |
 | 2026-04-13 | UTC | [L2/26-087](../documents/utc-l2-26-087.md), [L2/26-088](../documents/utc-l2-26-088.md), [L2/26-090](../documents/utc-l2-26-090.md), [L2/26-091](../documents/utc-l2-26-091.md) | N'ti script、Khmer Candrabindu、Hebrew elongated geresh、Mongolian standardized variants deprecation proposals が登録された。 |
@@ -57,7 +60,7 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 
 ### Encoding model が未決の script
 
-Ndiko Jonam / Luo Lakeside、[N'ti](../documents/utc-l2-26-087.md)、[N'ko Bambara](../documents/utc-l2-26-015r.md)、Brahmi virama minimization などは、joining model、positional forms、productive mechanism、stability の未解決点がある。SEW は、文字集合の必要性だけでなく text model が既存 Unicode behavior と整合するかを見ている。
+Ndiko Jonam / Luo Lakeside、[N'ti Script](nti-script.md)、[N'ko Bambara](../documents/utc-l2-26-015r.md)、Brahmi virama minimization などは、joining model、positional forms、productive mechanism、stability の未解決点がある。SEW は、文字集合の必要性だけでなく text model が既存 Unicode behavior と整合するかを見ている。
 
 [Dai Xaau Script](dai-xaau-script.md) は WG2 側の proposal chain で、Tai Viet からの disunification と visual-order encoding model が中心論点である。WG2 \#72 M72.15 は progress note に留まり、後続の `WG2 N5368` が supplementary materials を提出しているため、採択済み repertoire としては扱わない。
 
@@ -77,7 +80,7 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 
 ### Joining_Type for LTR scripts
 
-[L2/26-137](../documents/utc-l2-26-137.md) は、N'ti や Ndiko Jonam のような joining left-to-right scripts を前提に、Joining_Type `L` / `R` の semantics を整理する必要を示す。これは個別 script proposal ではなく、future script encoding の property model を先に決める論点である。
+[L2/26-137](../documents/utc-l2-26-137.md) は、[N'ti Script](nti-script.md) や Ndiko Jonam のような joining left-to-right scripts を前提に、Joining_Type `L` / `R` の semantics を整理する必要を示す。これは個別 script proposal ではなく、future script encoding の property model を先に決める論点である。
 
 ## 関連文書
 
@@ -100,8 +103,11 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [L2/26-119](../documents/utc-l2-26-119.md), [L2/26-120](../documents/utc-l2-26-120.md) - Arabic Waw with Ring glyph correction。
 - [L2/13-116](../documents/utc-l2-13-116.md) - Leke script の 2013 年 revised proposal。
 - [L2/20-180](../documents/utc-l2-20-180.md), [L2/21-209](../documents/utc-l2-21-209.md), [L2/22-222](../documents/utc-l2-22-222.md) - KORE SEBELI / Wakara script の 106-character proposal chain。
+- [L2/22-073](../documents/utc-l2-22-073.md) - African scripts implementation status report。
+- [L2/23-203](../documents/utc-l2-23-203.md) - African scripts usage / implementation status report。
 - [L2/24-246](../documents/utc-l2-24-246.md) - KORE SEBELI proposal の 95-character 版。
 - [L2/26-050R](../documents/utc-l2-26-050r.md) - KORE SEBELI version 12 revised proposal。
+- [L2/26-028R](../documents/utc-l2-26-028r.md) - N'ti preliminary proposal。
 - [L2/26-129](../documents/utc-l2-26-129.md) - Leke script proposal。
 - [L2/26-131](../documents/utc-l2-26-131.md) - Samavedic svara markers in Kannada。
 - [L2/26-132](../documents/utc-l2-26-132.md) - KORE SEBELI script proposal。
@@ -126,11 +132,15 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [Dai Xaau Script](dai-xaau-script.md)
 - [Leke Script](leke-script.md)
 - [KORE SEBELI Script](kore-sebeli-script.md)
+- [N'ti Script](nti-script.md)
 - [ISO/IEC 10646 Edition and Code Charts](iso-10646-edition-and-code-charts.md)
 
 ## 出典
 
 - `utc-l2-26-100` - <https://www.unicode.org/L2/L2026/26100-sew-report-utc187.pdf>
+- `utc-l2-22-073` - <https://www.unicode.org/L2/L2022/22073-african-script-status.pdf>
+- `utc-l2-23-203` - <https://www.unicode.org/L2/L2023/23203-update-african-scripts.pdf>
+- `utc-l2-26-028r` - <https://www.unicode.org/L2/L2026/26028r-nti-proposal.pdf>
 - `utc-l2-26-040r2` - <https://www.unicode.org/L2/L2026/26040r2-shaaldaa-proposal.pdf>
 - `utc-l2-26-065` - <https://www.unicode.org/L2/L2026/26065-zh-ligature.pdf>
 - `utc-l2-26-079` - <https://www.unicode.org/L2/L2026/26079-dialectological-atlas-additions.pdf>

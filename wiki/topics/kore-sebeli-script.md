@@ -5,7 +5,7 @@ description: "Soso language 用 KORE SEBELI / Wakara script の Unicode encoding
 slug: kore-sebeli-script
 aliases: ["Koré Sébèli", Wakara]
 bodies: [UTC]
-documents: [utc-l2-20-180, utc-l2-21-209, utc-l2-22-222, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-132]
+documents: [utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-132]
 topics: [script-encoding-pipeline]
 meetings: [utc-meeting-188]
 status: proposed
@@ -27,7 +27,9 @@ KORE SEBELI / Koré Sébèli / Wakara は、Mohamed Bentoura Bangoura が Soso l
 | --- | --- | --- | --- |
 | 2020-07-20 | UTC | [L2/20-180](../documents/utc-l2-20-180.md) | Mohamed Bentoura Bangoura が initial stage version 03 として KORE SEBELI / Wakara を 106 characters で提案した。 |
 | 2021-09-27 | UTC | [L2/21-209](../documents/utc-l2-21-209.md) | Mohamed Bentoura Bangoura が 106 characters model を維持した 2021 年版 proposal を提出した。 |
+| 2022-03-18 | UTC | [L2/22-073](../documents/utc-l2-22-073.md) | Charles L. Riley が African scripts status report で、KORE SEBELI proposal は提出済みだが widespread usage evidence と script details がさらに必要と記録した。 |
 | 2022-10-03 | UTC | [L2/22-222](../documents/utc-l2-22-222.md) | Mohamed Bentoura Bangoura が initial stage version 05 として 106 characters model、community samples、vertical samples を更新した。 |
+| 2023-09-21 | UTC | [L2/23-203](../documents/utc-l2-23-203.md) | Oreen Yousuf らが African scripts status report で、KORE SEBELI は 2009 年作成で継続的に教えられ、students が hundreds に達すると記録した。 |
 | 2024-10-28 | UTC | [L2/24-246](../documents/utc-l2-24-246.md) | Mohamed Bentoura Bangoura が version 08 として 95 characters model に再編したが、proposal summary form には 106 characters と残る箇所がある。 |
 | 2026-04-13 | UTC | [L2/26-050R](../documents/utc-l2-26-050r.md) | Mohamed Bentoura Bangoura が version 12 の revised proposal を提出し、表紙・目次では 93 characters、本文 section では 91 characters とした。 |
 | 2026-05-14 | UTC | [L2/26-132](../documents/utc-l2-26-132.md) | Mohamed Bentoura Bangoura の KORE SEBELI proposal が UTC \#188 候補文書として登録された。抽出テキスト上は April 2026 version 12 と同内容である。 |
@@ -58,7 +60,9 @@ proposal は Soso language community、teachers / students、syllabary、handwri
 
 - [L2/20-180](../documents/utc-l2-20-180.md) - 2020 年 initial proposal、106 characters。
 - [L2/21-209](../documents/utc-l2-21-209.md) - 2021 年版 proposal、106 characters。
+- [L2/22-073](../documents/utc-l2-22-073.md) - African scripts implementation status report。
 - [L2/22-222](../documents/utc-l2-22-222.md) - 2022 年 version 05、106 characters。
+- [L2/23-203](../documents/utc-l2-23-203.md) - African scripts usage / implementation status report。
 - [L2/24-246](../documents/utc-l2-24-246.md) - 2024 年 version 08、95 characters。
 - [L2/26-050R](../documents/utc-l2-26-050r.md) - 2026 年 version 12 revised proposal、93 / 91 count。
 - [L2/26-132](../documents/utc-l2-26-132.md) - UTC \#188 候補として登録された 2026 年 proposal。
@@ -72,7 +76,9 @@ proposal は Soso language community、teachers / students、syllabary、handwri
 
 - `utc-l2-20-180` - <https://www.unicode.org/L2/L2020/20180-kore.pdf>
 - `utc-l2-21-209` - <https://www.unicode.org/L2/L2021/21209-kore-sebeli.pdf>
+- `utc-l2-22-073` - <https://www.unicode.org/L2/L2022/22073-african-script-status.pdf>
 - `utc-l2-22-222` - <https://www.unicode.org/L2/L2022/22222-kore-sebeli.pdf>
+- `utc-l2-23-203` - <https://www.unicode.org/L2/L2023/23203-update-african-scripts.pdf>
 - `utc-l2-24-246` - <https://www.unicode.org/L2/L2024/24246-kore-sebeli.pdf>
 - `utc-l2-26-050r` - <https://www.unicode.org/L2/L2026/26050r-kore-sebeli-proposal.pdf>
 - `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>

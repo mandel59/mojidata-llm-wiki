@@ -52,6 +52,7 @@ okf_version: "0.1"
 - [Dai Xaau Script](topics/dai-xaau-script.md) - Tai Xaau / Dai Xaau script の UCS encoding proposal と Tai Viet からの disunification 論点。
 - [Leke Script](topics/leke-script.md) - Eastern Pwo Karen 用 Leke / Chicken Scratch script の Unicode encoding proposal chain。
 - [KORE SEBELI Script](topics/kore-sebeli-script.md) - Soso language 用 KORE SEBELI / Wakara script の Unicode encoding proposal chain。
+- [N'ti Script](topics/nti-script.md) - Soninke 用 N'ti / Nti script の Unicode encoding proposal chain と LTR joining model。
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
 - [East Asian Spacing](topics/east-asian-spacing.md) - UTR \#59 draft の East Asian visible spacing algorithm と property data。
 - [Unicode Set Notation](topics/unicode-set-notation.md) - UTS \#61 draft の machine-readable Unicode set notation。

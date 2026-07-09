@@ -5,7 +5,7 @@ description: "UTC #187 PAG report を中心にした Unicode properties、algori
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
 documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
-topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, plain-text-composition-and-overstriking]
+topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
 tags: [properties, algorithms, ucd, uax14, uax29, uax31, uax44, uts10, uts39, uts61, security]
@@ -83,7 +83,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 ### UTC \#188 候補の text model issues
 
-[L2/26-137](../documents/utc-l2-26-137.md) は LTR joining scripts に対する Joining_Type property の意味を問い、[L2/26-138](../documents/utc-l2-26-138.md) は Indic scripts の valid consecutive anusvaras と rendering behavior を扱う。[L2/26-139](../documents/utc-l2-26-139.md) は COMPOSE character による overstriking を plain text として扱う proposal であり、grapheme cluster、security、normalization、font shaping に影響し得る。
+[L2/26-137](../documents/utc-l2-26-137.md) は [N'ti Script](nti-script.md) などの LTR joining scripts に対する Joining_Type property の意味を問い、[L2/26-138](../documents/utc-l2-26-138.md) は Indic scripts の valid consecutive anusvaras と rendering behavior を扱う。[L2/26-139](../documents/utc-l2-26-139.md) は COMPOSE character による overstriking を plain text として扱う proposal であり、grapheme cluster、security、normalization、font shaping に影響し得る。
 
 ## 関連文書
 
@@ -112,6 +112,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [Unicode Release Coordination and Publication](unicode-release-coordination-and-publication.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
 - [Script Encoding Pipeline](script-encoding-pipeline.md)
+- [N'ti Script](nti-script.md)
 - [East Asian Spacing](east-asian-spacing.md)
 - [Unicode Set Notation](unicode-set-notation.md)
 - [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)

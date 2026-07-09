@@ -3,8 +3,8 @@ type: Synthesis
 title: Script and Notation Proposals
 description: "Han / emoji 以外の script proposal、historic / technical symbols、notation characters、proposal pipeline を束ねる synthesis。"
 slug: script-and-notation-proposals
-members: [script-encoding-pipeline, kana, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, maya-hieroglyph-encoding, chinese-folk-music-notation, indic-script-notation-and-rendering, leibnizian-and-historic-mathematical-symbols]
-topics: [script-encoding-pipeline, kana, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, maya-hieroglyph-encoding, chinese-folk-music-notation, indic-script-notation-and-rendering, leibnizian-and-historic-mathematical-symbols]
+members: [script-encoding-pipeline, kana, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, maya-hieroglyph-encoding, chinese-folk-music-notation, indic-script-notation-and-rendering, leibnizian-and-historic-mathematical-symbols]
+topics: [script-encoding-pipeline, kana, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, maya-hieroglyph-encoding, chinese-folk-music-notation, indic-script-notation-and-rendering, leibnizian-and-historic-mathematical-symbols]
 tags: [family, script, notation, symbols]
 timestamp: 2026-07-09T00:00:00+09:00
 ---
@@ -27,6 +27,7 @@ Script and Notation Proposals は、Han / ideographic 系と emoji 以外の scr
 | [Dai Xaau Script](../topics/dai-xaau-script.md) | proposed | Tai Xaau / Dai Xaau script の UCS encoding proposal と Tai Viet からの disunification。 |
 | [Leke Script](../topics/leke-script.md) | proposed | Eastern Pwo Karen 用 Leke / Chicken Scratch script の Unicode encoding proposal chain。 |
 | [KORE SEBELI Script](../topics/kore-sebeli-script.md) | proposed | Soso language 用 KORE SEBELI / Wakara script の Unicode encoding proposal chain。 |
+| [N'ti Script](../topics/nti-script.md) | proposed | Soninke 用 N'ti / Nti script の Unicode encoding proposal chain と LTR joining model。 |
 | [Maya Hieroglyph Encoding](../topics/maya-hieroglyph-encoding.md) | proposed | Codical Maya と Classic Maya Hieroglyphs Extended-A の staged / unified encoding。 |
 | [Chinese Folk Music Notation](../topics/chinese-folk-music-notation.md) | proposed | Chinese folk music / Xiqu / Quyi notation の musical symbols と format controls。 |
 | [Indic Script Notation and Rendering](../topics/indic-script-notation-and-rendering.md) | active | Indic scripts における Vedic notation、combining marks、rendering guidance。 |
@@ -48,6 +49,7 @@ Script and Notation Proposals は、Han / ideographic 系と emoji 以外の scr
 ## 出典
 
 - `utc-l2-26-100` - UTC \#187 Script Encoding Working Group Report。
+- `utc-l2-26-028r` / `utc-l2-26-087` - N'ti script proposal chain。
 - `wg2-n5362` - ISO/IEC 10646 Amendment 1 working draft。
 - `utc-l2-26-130` - Chinese folk music notation と COMPOSE / format control の重なりを示す proposal。
 - `utc-l2-26-145` / `utc-l2-26-146` - Maya hieroglyph encoding proposals。

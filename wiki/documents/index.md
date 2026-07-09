@@ -39,7 +39,9 @@
 - [L2/13-116](utc-l2-13-116.md) - Leke script の 2013 年 revised proposal。
 - [L2/20-180](utc-l2-20-180.md) - KORE SEBELI / Wakara script の 2020 年 initial proposal。
 - [L2/21-209](utc-l2-21-209.md) - KORE SEBELI / Wakara script の 2021 年 proposal。
+- [L2/22-073](utc-l2-22-073.md) - African scripts implementation status report。
 - [L2/22-222](utc-l2-22-222.md) - KORE SEBELI / Wakara script の 2022 年 proposal。
+- [L2/23-203](utc-l2-23-203.md) - African scripts usage / implementation status report。
 - [L2/24-246](utc-l2-24-246.md) - KORE SEBELI / Wakara script の 2024 年 95-character proposal。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
@@ -158,6 +160,7 @@
 - [L2/26-068](utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
 - [L2/26-074](utc-l2-26-074.md) - Japanese new / old variants 用 provisional Unihan properties。
 - [L2/26-084](utc-l2-26-084.md) - 169 characters の `kMandarin` additions / changes への CLDR / L&RE feedback。
+- [L2/26-028R](utc-l2-26-028r.md) - N'ti script preliminary proposal。
 - [L2/26-087](utc-l2-26-087.md) - N'ti script proposal。
 - [L2/26-088](utc-l2-26-088.md) - Khmer Candrabindu proposal。
 - [L2/26-090](utc-l2-26-090.md) - Hebrew elongated geresh proposal。
