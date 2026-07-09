@@ -23,6 +23,7 @@
 - [Ken Lunde](ken-lunde.md)
 - [John H. Jenkins](john-h-jenkins.md)
 - [Richard Cook](richard-cook.md)
+- [Suzuki Toshiya](suzuki-toshiya.md)
 - [Eiso Chan](eiso-chan.md)
 - [Henry Chan](henry-chan.md)
 - [Kim Kyongsok](kim-kyongsok.md)

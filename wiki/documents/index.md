@@ -35,6 +35,7 @@
 - [WG2 N5105](wg2-n5105.md) - Small Seal Script proposal appendix update。
 - [WG2 N5108](wg2-n5108.md) - WG2 \#68 Seal Script discussion report。
 - [WG2 N5209](wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
+- [WG2 N5211](wg2-n5211.md) - 14-column Small Seal glyph comparison chart documentation。
 - [WG2 N5230](wg2-n5230.md) - N5209 への Small Seal feedback と modern CJK correction data。
 - [L2/25-199](utc-l2-25-199.md) - UAX \#45 Revision 31 proposed update。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
