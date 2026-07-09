@@ -8,7 +8,7 @@ bodies: [UTC]
 meeting: 188
 date: "2026-07-30"
 location: TBD
-documents: [utc-l2-26-102, pri-548, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
+documents: [utc-l2-26-102, pri-547, pri-548, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
 topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
 status: tracking
 tags: [meeting, utc, unicode-18, tracking]
@@ -31,7 +31,7 @@ UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 
 - [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-113](../../documents/utc-l2-26-113.md)、[L2/26-114](../../documents/utc-l2-26-114.md)、[L2/26-129](../../documents/utc-l2-26-129.md) / [Leke Script](../../topics/leke-script.md)、[L2/26-131](../../documents/utc-l2-26-131.md)、[L2/26-132](../../documents/utc-l2-26-132.md) / [KORE SEBELI Script](../../topics/kore-sebeli-script.md) などの script / mark proposals。
 - [Chinese Folk Music Notation](../../topics/chinese-folk-music-notation.md) - [L2/26-130](../../documents/utc-l2-26-130.md) の musical symbol / format controls。
 - [Ideographic Punctuation Proposals](../../topics/ideographic-punctuation-proposals.md) - [L2/26-133](../../documents/utc-l2-26-133.md) と [L2/26-136](../../documents/utc-l2-26-136.md)。
-- [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [L2/26-137](../../documents/utc-l2-26-137.md)、[L2/26-138](../../documents/utc-l2-26-138.md)、[L2/26-139](../../documents/utc-l2-26-139.md) の joining / rendering / compose issues。
+- [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [PRI \#547](../../documents/pri-547.md) の UAX \#44 / UCD directory review と、[L2/26-137](../../documents/utc-l2-26-137.md)、[L2/26-138](../../documents/utc-l2-26-138.md)、[L2/26-139](../../documents/utc-l2-26-139.md) の joining / rendering / compose issues。
 - [Leibnizian and Historic Mathematical Symbols](../../topics/leibnizian-and-historic-mathematical-symbols.md) - [L2/26-140](../../documents/utc-l2-26-140.md) から [L2/26-143](../../documents/utc-l2-26-143.md)、[L2/26-149](../../documents/utc-l2-26-149.md)。
 - [Maya Hieroglyph Encoding](../../topics/maya-hieroglyph-encoding.md) - [L2/26-145](../../documents/utc-l2-26-145.md) と [L2/26-146](../../documents/utc-l2-26-146.md)。
 - [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - [L2/26-147](../../documents/utc-l2-26-147.md) の U-source horizontal extension。
@@ -52,6 +52,7 @@ UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 
 ## 出典
 
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
+- `pri-547` - <https://www.unicode.org/review/pri547/>
 - `pri-548` - <https://www.unicode.org/review/pri548/>
 - `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
 - `utc-l2-26-114` - <https://www.unicode.org/L2/L2026/26114-devanagari-vowel-length-mark.pdf>

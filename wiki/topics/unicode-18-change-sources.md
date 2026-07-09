@@ -4,7 +4,7 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, pri-548, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, pri-547, pri-548, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 status: draft-release
 tags: [unicode-18, release, beta, ucd, migration]
@@ -33,6 +33,7 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 2026-04-23 | UTC | `L2/26-102` | UTC \#187 で beta content を finalize する予定。 |
 | 2026-05-26 | UTC | Unicode 18.0 beta review page | Beta review 開始。beta UCD、delta charts、annex proposed updates、notable issues を公開。 |
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian variation sequences と Unicode 18.0 delta charts への corrections / recommendations が提出された。 |
+| 2026-07-07 | UTC | [PRI \#547](../documents/pri-547.md) | UAX \#44 Revision 37 public review が close し、UCD directory structure と release data file documentation の確認点が UTC \#188 へ接続した。 |
 | 2026-07-07 | UTC | [PRI \#548](../documents/pri-548.md) | Unicode 18.0.0 Beta public review が close し、UTC \#188 content finalize に向けた feedback snapshot になった。 |
 | 2026-07-30 | UTC | `L2/26-102` | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) で 18.0 content finalize 予定。2026-07-07 時点で agenda / minutes は未掲載。 |
 | 2026-09-16 | UTC | Unicode 18.0 beta page | 公式 beta page 上の planned release date。 |
@@ -83,6 +84,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - [L2/26-074](../documents/utc-l2-26-074.md) - `kJapaneseNewVariant` / `kJapaneseOldVariant` proposal。
 - [L2/26-084](../documents/utc-l2-26-084.md) - `kMandarin` additions / changes feedback。
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group Report to UTC \#187。
+- [PRI \#547](../documents/pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
 - [PRI \#548](../documents/pri-548.md) - Unicode 18.0.0 Beta public review。
 - [L2/26-095](../documents/utc-l2-26-095.md) - Public Review Issues 一覧。
 - [L2/26-096](../documents/utc-l2-26-096.md) - Properties & Algorithms Group recommendations。
@@ -136,6 +138,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 
 - Unicode 18.0.0 draft release page - <https://www.unicode.org/versions/Unicode18.0.0/>
 - Unicode 18.0.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
+- `pri-547` - <https://www.unicode.org/review/pri547/>
 - `pri-548` - <https://www.unicode.org/review/pri548/>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-074` - <https://www.unicode.org/L2/L2026/26074-two-new-unihan-properties.pdf>
