@@ -4,7 +4,7 @@ title: Japan
 description: Japan NB / J-source / 日本関係 ideograph proposals / WG2 関連 activity に関わる IRG / WG2 member body。
 slug: japan
 bodies: [UTC, IRG, WG2]
-documents: [wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2934r]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2934r]
 topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
 events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition]
 tags: [member-body, source, japan, j-source, uax45]
@@ -23,6 +23,7 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 
 | 日付 | 文書 | できごと | 読み取り |
 | --- | --- | --- | --- |
+| 2019-05-10 | [IRG N2367](../documents/irg-n2367.md) | Japan NB が IRG Meeting \#52 activity report で、human resource 不足により future IRG Working Set review には参加せず、SC2 balloting phase で CJK Unified Ideograph extension proposals を review し続けると報告した。 | 後続の IRG active participation 復帰要請の前提。Japan は source owner として重要な role を持つ一方、IRG Working Set review workload が課題になっていた。 |
 | 2023-04-24 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に関係する 36,422 characters について、ISO/IEC 10646 の J-column へ JMJ references を追加する horizontal extension を WG2 に提出。 | 近年の WG2 における Japan NB の最大の直接提出。後続文書では、IRG Convenor がこの規模の horizontal extension は IRG で review する方が適切だったと指摘する。 |
 | 2024-09-17 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が Japan に IRG active member body への復帰を要請。2019 年に Japan が human resource 不足を理由に IRG Working Set review へ参加しない方針を示した経緯を引用しつつ、balloting phase での comment や large horizontal extension の提出実績を踏まえ、IRG 内で早期に review へ参加する意義を述べる。 | Japan NB の近年の位置づけを示す入口文書。Japan は inactive とされていたが、IRG からは Han ideograph 標準化の expertise を持つ member body として復帰を求められている。 |
 | 2024-09-18 | [IRG N2722](../documents/irg-n2722.md) | Yi Bai と Eiso Chan が、Unicode 16.0 で追加された JMJ horizontal extensions について source reference / glyph correspondence issues を指摘。 | Japan NB の提出ではないが、JMJ source owner として後続 disposition で回答が必要になる入口文書。 |
@@ -54,7 +55,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ### IRG active participation
 
-[IRG N2721](../documents/irg-n2721.md) は、Japan が 2019 年以降 IRG Working Set review から距離を置いていたことを前提に、IRG への active member body としての復帰を求める。理由として、Extension G / H への ballot comments、WG2 へ提出された大規模 horizontal extension、Han ideograph 標準化における Japan の専門性、post-COVID の virtual / hybrid meeting による参加障壁の低下が挙げられている。
+[IRG N2367](../documents/irg-n2367.md) は、Japan が 2019 年時点で human resource 不足により future IRG Working Set review には参加しない一方、SC2 balloting phase では CJK Unified Ideograph extension proposals の review を続けると報告した文書である。[IRG N2721](../documents/irg-n2721.md) は、この経緯を前提に、IRG への active member body としての復帰を求める。理由として、Extension G / H への ballot comments、WG2 へ提出された大規模 horizontal extension、Han ideograph 標準化における Japan の専門性、post-COVID の virtual / hybrid meeting による参加障壁の低下が挙げられている。
 
 ### UTC における日本関係 ideograph proposals
 
@@ -73,6 +74,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 ## 関連文書
 
 - `WG2 N5221` - Japan NB による JMJ-source 36,422 characters の J-column horizontal extension request。
+- [IRG N2367](../documents/irg-n2367.md) - 2019 年時点の Japan Activity Report。
 - `IRG N2721` / `WG2 N5284` - Japan に IRG active member body への復帰を求める文書。
 - `IRG N2722` - JMJ horizontal extension issue report。
 - `WG2 N5296` - JMJ-source related glyph issues; Japan NB / WG2 への検討依頼。
@@ -103,6 +105,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ## 出典
 
+- `irg-n2367` - <https://www.unicode.org/irg/docs/n2367-JapanActivityReport.pdf>
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>
 - `irg-n2721` - <https://www.unicode.org/irg/docs/n2721-JapanIRGParticipation.pdf>
 - `irg-n2722` - <https://www.unicode.org/irg/docs/n2722-JSourceIssues.pdf>

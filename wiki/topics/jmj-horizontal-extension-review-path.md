@@ -4,7 +4,7 @@ title: JMJ Horizontal Extension Review Path
 description: MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column に追加する large horizontal extension と、その review body を WG2 から IRG へ接続する議論。
 slug: jmj-horizontal-extension-review-path
 bodies: [WG2, IRG]
-documents: [wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870]
 topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs]
 people: [japan, wg2, irg, ken-lunde]
 status: active
@@ -24,6 +24,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2019-05-10 | IRG | [IRG N2367](../documents/irg-n2367.md) | Japan NB が human resource 不足により future IRG Working Set review には参加しないが、SC2 balloting phase では CJK extension proposals の review を継続すると報告した。 |
 | 2023-04-24 | WG2 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column へ追加する horizontal extension request を提出した。registry subject は 36,422 horizontal extensions とする。 |
 | 2024-09-17 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が、`WG2 N5221` 規模の horizontal extension は WG2 より IRG review に向くとして、Japan に IRG active member body への復帰を求めた。 |
 | 2024-09-18 | IRG | [IRG N2722](../documents/irg-n2722.md) | Yi Bai と Eiso Chan が、Unicode 16.0 で追加された JMJ horizontal extension について、IDS / glyph shape から code point 対応の issue を指摘した。 |
@@ -42,7 +43,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 ### WG2 から IRG review への接続
 
-[IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` は、Japan が WG2 に `WG2 N5221` を提出したことを、Japan が Han ideograph review の能力と必要性を持つ根拠として扱う。IRG Convenor は、IRG の方が WG2 より頻繁に会合し、CJK experts が horizontal extension を review しやすいと説明した。
+[IRG N2367](../documents/irg-n2367.md) は、Japan が IRG Working Set review から離れ、SC2 balloting phase で review を続けるという 2019 年時点の分担を示した。[IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` は、Japan が WG2 に `WG2 N5221` を提出したことを、Japan が Han ideograph review の能力と必要性を持つ根拠として扱う。IRG Convenor は、IRG の方が WG2 より頻繁に会合し、CJK experts が horizontal extension を review しやすいと説明した。
 
 [WG2 N5301](../documents/wg2-n5301.md) の Section 8.2 はこの request を WG2 Meeting \#72 で議論した記録である。Japan representative は復帰を検討できるが human resources / workload が課題だと述べ、他の experts は Maintenance Agency model や IRG review の効率化を踏まえて active participation を促している。
 
@@ -67,6 +68,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 ## 関連文書
 
 - [WG2 N5221](../documents/wg2-n5221.md) - Japan NB の JMJ horizontal extension request。
+- [IRG N2367](../documents/irg-n2367.md) - Japan Activity Report; IRG Working Set review からの離脱方針。
 - [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` - Japan の IRG active participation request。
 - [IRG N2722](../documents/irg-n2722.md) - JMJ horizontal extension issue report。
 - [WG2 N5301](../documents/wg2-n5301.md) - WG2 Meeting \#72 minutes; Section 8.2 と Section 11。
@@ -89,6 +91,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 ## 出典
 
+- `irg-n2367` - <https://www.unicode.org/irg/docs/n2367-JapanActivityReport.pdf>
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>
 - `irg-n2721` - <https://www.unicode.org/irg/docs/n2721-JapanIRGParticipation.pdf>
 - `wg2-n5284` - <https://www.unicode.org/wg2/docs/n5284-JPN-IRG-request.pdf>
