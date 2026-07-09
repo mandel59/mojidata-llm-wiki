@@ -4,7 +4,7 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に JMJ / G / UK / U source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
-documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, irg-n2909, irg-n2923r, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
+documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
 topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
@@ -25,6 +25,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 | --- | --- | --- | --- |
 | 2019-05 | IRG / WG2 | `IRG N2369R` / `WG2 N5085` | UAX \#45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
 | 2023-04 | WG2 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column へ追加する large horizontal extension request を提出。 |
+| 2024-01 | UTC | [L2/24-012](../documents/utc-l2-24-012.md) | CJK & Unihan Group が U+3150D へ UTC-00420 を `kIRG_USource` として追加する U-source horizontal extension を勧告した。 |
 | 2024-09 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が、`WG2 N5221` 規模の horizontal extension は IRG review に向くとして Japan の IRG active participation を求めた。 |
 | 2024-09 | IRG | [IRG N2722](../documents/irg-n2722.md) | JMJ horizontal extension 後の source reference / glyph correspondence issue を指摘。 |
 | 2026-03 | IRG | [IRG N2929](../documents/irg-n2929.md) | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
@@ -58,7 +59,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 
 `IRG N2961` / [L2/26-147](../documents/utc-l2-26-147.md) は、UTC が URO、Extension A、Extension B、Extension F から J にまたがる 40 CJK Unified Ideographs へ `kIRG_USource` property values と U-source representative glyphs を追加する提案である。source-specific notes では UCV number や ad hoc unification への参照が示されており、horizontal extension と [IRG Indexing Rules](irg-indexing-rules.md) が接続している。
 
-[IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` は、2019 年の U-source horizontal extension precedent である。UAX \#45 にある encoded ideographs へ U-source identifiers を付ける点で、2026 年の `IRG N2961` と同じ type の作業として読める。
+[IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` は、2019 年の U-source horizontal extension precedent である。[L2/24-012](../documents/utc-l2-24-012.md) の U+3150D / UTC-00420 追加は小規模な同型作業で、UAX \#45 にある encoded ideographs へ U-source identifiers を付ける点で、2026 年の `IRG N2961` と同じ type の作業として読める。
 
 ## 関連文書
 
@@ -67,6 +68,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - [WG2 N5221](../documents/wg2-n5221.md)
 - [IRG N2721](../documents/irg-n2721.md)
 - [IRG N2722](../documents/irg-n2722.md)
+- [L2/24-012](../documents/utc-l2-24-012.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2929](../documents/irg-n2929.md)
 - [IRG N2923R](../documents/irg-n2923r.md)
@@ -93,6 +95,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>
 - `irg-n2721` - <https://www.unicode.org/irg/docs/n2721-JapanIRGParticipation.pdf>
 - `irg-n2722` - <https://www.unicode.org/irg/docs/n2722-JSourceIssues.pdf>
+- `utc-l2-24-012` - <https://www.unicode.org/L2/L2024/24012-cjk-unihan-group-utc178.pdf>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2929` - <https://www.unicode.org/irg/docs/n2929-ChinaHorizontalExtension.pdf>
 - `irg-n2923r` - <https://www.unicode.org/irg/docs/n2923r-GSourceChanges.pdf>

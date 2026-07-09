@@ -25,6 +25,9 @@
 - [IRG N2439](irg-n2439.md) - two U-source ideographs の UNC proposal。
 - [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
 - [L2/22-185](utc-l2-22-185.md) - UAX \#45 status value names。
+- [L2/24-012](utc-l2-24-012.md) - UTC \#178 CJK & Unihan Group recommendations。
+- [L2/24-067](utc-l2-24-067.md) - UTC \#179 CJK & Unihan Working Group recommendations。
+- [L2/24-165](utc-l2-24-165.md) - UTC \#180 CJK & Unihan Working Group recommendations。
 - [L2/22-279](utc-l2-22-279.md) - Small Seal Script source mapping data。
 - [WG2 N4634](wg2-n4634.md) - Small Seal Script の初期 proposal。
 - [WG2 N4688](wg2-n4688.md) - Small Seal Script の 2015 年 complete proposal。
