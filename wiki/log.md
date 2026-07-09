@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [IRG N2895](documents/irg-n2895.md) for CJKV Components feedback on source coverage, use-case criteria, disunification comments, and the component / CJK ideograph boundary, linking it to [IRG N2878R3](documents/irg-n2878r3.md).
 - **Digest**: Added [IRG N2702](documents/irg-n2702.md) and [IRG N2765](documents/irg-n2765.md) for IRG Meeting \#63/\#64 recommendations, connecting early CJKV Components decisions, CMEX review tooling, UCV / NUCV updates, and WS2024 schedule history.
 - **Digest**: Added [WG2 N5253](documents/wg2-n5253.md) for ISO/IEC 10646 7th edition stabilization considerations, linking Unicode data / annex normative references to the later code chart externalization path in [WG2 N5315](documents/wg2-n5315.md), [WG2 N5363R](documents/wg2-n5363r.md), and the ISO/IEC 10646 topic.
 - **Tooling**: Recorded document fetch failures in a local ignored fetch-failure index and made `find_digest_candidates.py` / `wiki_stats.py` exclude latest failed fetches by default, so currently 404 IRG follow-up documents no longer dominate next-work rankings.
