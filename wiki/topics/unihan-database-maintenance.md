@@ -4,7 +4,7 @@ title: Unihan Database Maintenance
 description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
@@ -23,6 +23,9 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2019-07-18 | UTC | [L2/19-281](../documents/utc-l2-19-281.md) | John H. Jenkins が `kZVariant` field の 93-pair data set を提案し、既存 field content の置き換えを求めた。 |
+| 2019-07-18 | UTC | [L2/19-282](../documents/utc-l2-19-282.md) | John H. Jenkins が `kSpoofingVariant` field の 48-pair initial data set を提案した。 |
+| 2019-10-03 | UTC | [L2/19-328](../documents/utc-l2-19-328.md) | William T. Nelson が `kSpoofingVariant` data の review discipline と text data availability を問題にし、note で `kZVariant` data にも同じ issue があると述べた。 |
 | 2022-08-23 | UTC | [L2/22-181](../documents/utc-l2-22-181.md) | Ken Lunde が provisional Unihan property `kJapanese` を提案。Moji Jōhō Kiban に基づき、Japanese readings を hiragana / katakana で記録する。 |
 | 2025-08-19 | UTC | [L2/25-213](../documents/utc-l2-25-213.md) | HarJIT が `kJapanese` に含まれる Katakana 表記の kun'yomi を調査し、definition と values の修正を提案。 |
 | 2026-02-10 | UTC | [L2/26-068](../documents/utc-l2-26-068.md) | Vietnam が U+2B8A0 の V-source representative glyph と `kRSUnicode` / `kTotalStrokes` の変更を提案した。 |
@@ -44,6 +47,12 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 
 [L2/26-074](../documents/utc-l2-26-074.md) と `L2/26-099` Section 21 は、`kJapaneseNewVariant` と `kJapaneseOldVariant` を provisional Unihan database properties として追加する流れを示す。初期 data は 400 ideographs 以上を対象とし、将来の追加には慎重な vetting が必要とされた。
 
+### variant property data と review discipline
+
+[L2/19-281](../documents/utc-l2-19-281.md) と [L2/19-282](../documents/utc-l2-19-282.md) は、それぞれ `kZVariant` と `kSpoofingVariant` の data set を Unihan database に入れる提案である。[L2/19-328](../documents/utc-l2-19-328.md) は、CJK variant / security-related data では author 以外の expert review、public review の時間、text-based data availability が必要だと指摘した。
+
+[CJK Security Confusables](cjk-security-confusables.md) では、この variant property maintenance が UTS \#39 `confusables.txt` の候補生成とどう接続するかを扱う。
+
 ### readings と radical / stroke data
 
 [L2/26-084](../documents/utc-l2-26-084.md) は 2024 年の UTC action items に基づく 169 characters の `kMandarin` additions / changes を整理した。[L2/26-068](../documents/utc-l2-26-068.md) は U+2B8A0 の V-source representative glyph change に合わせて `kRSUnicode` と `kTotalStrokes` を変更する proposal で、詳細は [V-source Representative Glyph Issues](v-source-representative-glyph-issues.md) に分ける。[L2/26-134](../documents/utc-l2-26-134.md) と [L2/26-148](../documents/utc-l2-26-148.md) は、radical / stroke count 系 data の機械可読性と IRG review data との整合を扱うため、詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) から読む。
@@ -61,6 +70,10 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 ## 関連文書
 
 - [L2/26-099](../documents/utc-l2-26-099.md)
+- [L2/19-281](../documents/utc-l2-19-281.md) - `kZVariant` field data proposal。
+- [L2/19-282](../documents/utc-l2-19-282.md) - `kSpoofingVariant` field data proposal。
+- [L2/19-328](../documents/utc-l2-19-328.md) - `kSpoofingVariant` / `kZVariant` data review issue。
+- [L2/22-133](../documents/utc-l2-22-133.md) - `kSpoofingVariant` / `kZVariant` の追加候補。
 - [L2/22-181](../documents/utc-l2-22-181.md)
 - [L2/25-213](../documents/utc-l2-25-213.md)
 - [L2/26-068](../documents/utc-l2-26-068.md) - U+2B8A0 の V-source representative glyph / property change。
@@ -88,6 +101,10 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 ## 出典
 
 - `utc-l2-22-181` - <https://www.unicode.org/L2/L2022/22181-unihan-kjapanese.pdf>
+- `utc-l2-19-281` - <https://www.unicode.org/L2/L2019/19281-prop-kzvariant.pdf>
+- `utc-l2-19-282` - <https://www.unicode.org/L2/L2019/19282-prop-kspoofing-var.pdf>
+- `utc-l2-19-328` - <https://www.unicode.org/L2/L2019/19328-nelson-spoofing.pdf>
+- `utc-l2-22-133` - <https://www.unicode.org/L2/L2022/22133-kspoofing-kzvariant-cand.pdf>
 - `utc-l2-25-213` - <https://www.unicode.org/L2/L2025/25213-katakana_kun-yomi.pdf>
 - `utc-l2-26-068` - <https://www.unicode.org/L2/L2026/26068-v-source-character-u2b8a0.pdf>
 - `utc-l2-26-074` - <https://www.unicode.org/L2/L2026/26074-two-new-unihan-properties.pdf>

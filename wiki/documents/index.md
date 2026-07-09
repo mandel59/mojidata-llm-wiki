@@ -53,6 +53,7 @@
 - [L2/23-123](utc-l2-23-123.md) - Ryukyuan superscript Katakana proposal feedback。
 - [L2/23-127](utc-l2-23-127.md) - alternate Katakana NE / WI introduction。
 - [IRG N2206](irg-n2206.md) - easily confused ideographs への annotation proposal。
+- [L2/19-281](utc-l2-19-281.md) - `kZVariant` field の 93-pair data proposal。
 - [L2/19-282](utc-l2-19-282.md) - `kSpoofingVariant` field の初期 data proposal。
 - [L2/19-328](utc-l2-19-328.md) - `kSpoofingVariant` data と review process の問題提起。
 - [L2/22-133](utc-l2-22-133.md) - `kSpoofingVariant` / `kZVariant` の追加候補。

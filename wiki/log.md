@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [L2/19-281](documents/utc-l2-19-281.md) for the `kZVariant` 93-pair data proposal, resolving the missing counterpart to `L2/19-282` and linking it into [CJK Security Confusables](topics/cjk-security-confusables.md), [Unihan Database Maintenance](topics/unihan-database-maintenance.md), and the later `L2/19-328` / `L2/22-133` / `L2/26-127` chain.
 - **Digest**: Added Source Document pages for `L2/26-043`, `057`, `064`, `071`, `072`, `080`, `083`, and `085`, expanded [UTC \#187 UAX \#45 FutureWS additions](events/utc-187-uax45-futurews-additions.md), and opened [CJK Abbreviated and Simplified Ideographs](topics/cjk-abbreviated-and-simplified-ideographs.md) for the abbreviated / simplified-form subset of the 2026 UAX \#45 additions.
 - **Digest**: Added [IRG N2860](documents/irg-n2860.md) and [IRG N2861](documents/irg-n2861.md), opened [T-source Representative Glyph Issues](topics/t-source-representative-glyph-issues.md), and linked the N2860 -> N2861 -> N2927R chain to TCA, Ma Shijie, IRG Meeting \#66, UTC \#187, and Unicode 18.0 source-data tracking.
 - **Digest**: Added [IRG N891](documents/irg-n891.md) and [IRG N1519](documents/irg-n1519.md) for the China Extension C1 / CJK_D G-source evidence history, linking them to U+2CCA3 / `GZFY-00932`, G-source representative glyph issues, China, and the `IRG N2955` Ext D wording correction.
