@@ -4,7 +4,7 @@ title: Unihan Database Maintenance
 description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, pri-546, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
@@ -39,6 +39,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 | 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が UTC \#187 向けに Unihan database additions / changes / removals、UAX \#38、UTS \#37 関連 action items をまとめた。 |
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` syntax enhancement。simplified radical の区切りを `|` / `||` / `|||` で表す案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
+| 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、Moji_Joho collection に 8 IVS を追加し、9 既登録 sequences を deprecated とする review を開いた。 |
 
 ## 主な論点
 
@@ -68,6 +69,10 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 
 [L2/22-181](../documents/utc-l2-22-181.md) は、Moji Jōhō Kiban 由来の Japanese readings を hiragana / katakana で記録する `kJapanese` property を提案した。[L2/25-213](../documents/utc-l2-25-213.md) は、Katakana 表記が常に on'yomi とは限らず、taxonomic terms や non-Sino-Japanese loanwords などで Katakana 表記の kun'yomi が現れることを指摘する。これは kana character encoding ではなく、Unihan property definition と value corrections の保守問題として扱う。
 
+### Moji_Joho IVD collection
+
+[PRI \#546](../documents/pri-546.md) は、Moji Jōhō Kiban database の code point 対応更新に伴い、Moji_Joho IVD collection へ 8 sequences を追加登録する review である。背景には [WG2 N5221](../documents/wg2-n5221.md) の JMJ horizontal extension があり、source reference addition が IVD sequence registration と既登録 sequence deprecation にも波及することを示している。
+
 ### CJK Hybrid Characters の property 設計
 
 `IRG N2826` M65.24 は、CJK Hybrid Characters に Unihan database properties を付与する場合、IRG review process で IRG source references、Kangxi radical、stroke count、readings などの規則を議論できると整理した。CJKUI と別 block に置く場合でも、CJK text で使われる文字として検索・分類 data をどう持つかは [CJK Hybrid Characters](cjk-hybrid-characters.md) 側の未決点である。
@@ -89,6 +94,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - [L2/26-084](../documents/utc-l2-26-084.md) - 169 characters の `kMandarin` feedback。
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
+- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
 - [L2/26-134](../documents/utc-l2-26-134.md) - RSIndex.txt syntax enhancement。
 - [L2/26-148](../documents/utc-l2-26-148.md) - `kTotalStrokes` changes。
 
@@ -123,5 +129,6 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
+- `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>

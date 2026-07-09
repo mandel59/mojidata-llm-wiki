@@ -4,8 +4,8 @@ title: Japan
 description: Japan NB / J-source / 日本関係 ideograph proposals / WG2 関連 activity に関わる IRG / WG2 member body。
 slug: japan
 bodies: [UTC, IRG, WG2]
-documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2934r]
-topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2934r, pri-546]
+topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
 events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition]
 tags: [member-body, source, japan, j-source, uax45]
 timestamp: 2026-07-06T23:08:00+09:00
@@ -34,6 +34,7 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 | 2025-08-13 | `IRG N2859` | [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)。 | J-source の具体的な保守・変更判断が Japan NB の確認事項として扱われている。 |
 | 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | Japan NB の最新の明示的 position。既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
 | 2026-04-02 | `IRG N2934R` | IRG Meeting \#67 の First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
+| 2026-07-31 closing | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。registrant は ITSCJ / IPSJ、representative は Shuichi Tashiro。 | `WG2 N5221` 後の Moji Jōhō Kiban code point 対応更新が IVD collection maintenance へ波及した例。 |
 
 ## 主な論点
 
@@ -42,6 +43,8 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 [WG2 N5221](../documents/wg2-n5221.md) は、Japan NB が WG2 に提出した J-column horizontal extension request である。対象は MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に関係する JMJ references で、registry subject は 36,422 horizontal extensions としている。本文では、ISO/IEC 10646 の J-source column に出ていない JMJ references を空欄の J-Source column へ追加することを求めている。
 
 この提出は後続の [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` で重要な根拠として引用された。IRG Convenor は、Japan が WG2 に大規模 horizontal extension を提出したことを挙げ、こうした案件はより頻繁に会合し CJK review に適した IRG へ提出する方がよいと述べ、Japan の IRG active participation を促した。review path の詳細は [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md) に分ける。
+
+[PRI \#546](../documents/pri-546.md) は、この horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の code point 対応更新を理由として Moji_Joho IVD collection の追加登録 review が必要になったことを示す。
 
 ### WG2 \#72 と J-source glyph corrections
 
@@ -83,6 +86,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 - `IRG N2859` - J-source disposition recommendations; Japan NB feedback request。
 - `IRG N2870` - National Body of Japan による `IRG N2859` への comment。
 - `IRG N2934R` - IRG Meeting \#67 First Call, Tōkyō, Japan。
+- `PRI #546` - Moji_Joho collection への IVS 追加登録 review。
 - `L2/25-053`, `L2/25-221`, `L2/26-044` - 日本地名 ideographs の UAX \#45 additions。
 - `L2/25-274` - 日本古典籍由来 ideograph の追加提案。
 
@@ -98,6 +102,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 - [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
+- [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
 - [Japanese Place-Name Ideographs](../topics/japanese-place-name-ideographs.md)
 - [Japanese Historical Ideographs](../topics/japanese-historical-ideographs.md)
 - [Kana](../topics/kana.md)
@@ -117,6 +122,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 - `irg-n2859` - <https://www.unicode.org/irg/docs/n2859-JapanRecommendations.pdf>
 - `irg-n2870` - <https://www.unicode.org/irg/docs/n2870-IRGN2859Feedback.pdf>
 - `irg-n2934r` - <https://www.unicode.org/irg/docs/n2934r-FirstCallIRG67.pdf>
+- `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `utc-l2-25-053` - <https://www.unicode.org/L2/L2025/25053-uax45-japanese-place-name.pdf>
 - `utc-l2-25-221` - <https://www.unicode.org/L2/L2025/25221-3ideographs-for-Japanese-place-names.pdf>
 - `utc-l2-25-274` - <https://www.unicode.org/L2/L2025/25274-japanese-ideograph-addition.pdf>

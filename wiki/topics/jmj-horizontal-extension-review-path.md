@@ -4,8 +4,8 @@ title: JMJ Horizontal Extension Review Path
 description: MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column に追加する large horizontal extension と、その review body を WG2 から IRG へ接続する議論。
 slug: jmj-horizontal-extension-review-path
 bodies: [WG2, IRG]
-documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870]
-topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870, pri-546]
+topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax]
 people: [japan, wg2, irg, ken-lunde]
 status: active
 tags: [cjk, horizontal-extension, jmj, j-source, source-data]
@@ -32,6 +32,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 | 2025-06-23/27 | WG2 | [WG2 N5301](../documents/wg2-n5301.md), [WG2 N5304](../documents/wg2-n5304.md) | WG2 は `WG2 N5296` に基づく chart glyph revert を M72.07 として勧告した。これは horizontal extension review path ではなく、追加後の chart glyph stability issue として接続する。 |
 | 2025-08-13 | IRG | [IRG N2859](../documents/irg-n2859.md) | IRG Convenor が `IRG N2722` などを受け、J-source source reference / representative glyph disposition 案を Japan NB に照会した。 |
 | 2025-09-25 | IRG | [IRG N2870](../documents/irg-n2870.md) | Japan NB が `IRG N2859` に対し、符号化済み文字の current status 維持を求めた。 |
+| 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を背景に、Moji_Joho collection への 8 IVS 追加を review に出した。 |
 
 ## 主な論点
 
@@ -52,6 +53,10 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 [IRG N2722](../documents/irg-n2722.md) は、Unicode 16.0 で追加された JMJ horizontal extensions を IDS で確認し、複数の source reference / glyph correspondence issues を挙げた。主な例は、JMJ-016916 / 016917 と U+72CA / U+3094D、JMJ-046312 / 046313 と U+26B20 / U+26B07、JMJ-043941 と U+25CBB / U+7BF9、JMJ-055359 / 055360 である。
 
 これらの issue は、horizontal extension が単なる property addition ではなく、IVD、representative glyph、既存 code point との同形性、source owner の correction policy に接続することを示す。
+
+### IVD collection への波及
+
+[PRI \#546](../documents/pri-546.md) は、`WG2 N5221` 由来の horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の対応 code points が更新され、その結果として Moji_Joho IVD collection の sequence registration も更新対象になったことを示す。8 sequences の追加登録に加え、9 既登録 sequences を deprecated とする点が重要である。
 
 ### 後続の correction topics との境界
 
@@ -75,12 +80,14 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 - [WG2 N5304](../documents/wg2-n5304.md) - WG2 Meeting \#72 recommendations; M72.07。
 - [IRG N2859](../documents/irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2870](../documents/irg-n2870.md) - Japan NB feedback on `IRG N2859`。
+- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
 
 ## 関連トピック
 
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
+- [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 
 ## 関連人物・組織
 
@@ -100,3 +107,4 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 - `wg2-n5304` - <https://www.unicode.org/wg2/docs/n5304-Mtg72-Niigata-Recs-rev5-final.pdf>
 - `irg-n2859` - <https://www.unicode.org/irg/docs/n2859-JapanRecommendations.pdf>
 - `irg-n2870` - <https://www.unicode.org/irg/docs/n2870-IRGN2859Feedback.pdf>
+- `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>

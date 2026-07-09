@@ -4,8 +4,8 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に JMJ / G / UK / U source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
-documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147]
-topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs]
+documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2935, irg-n2960, utc-l2-26-147, pri-546]
+topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -34,6 +34,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 | 2026-06 | IRG | [IRG N2960](../documents/irg-n2960.md) | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
 | 2026-07 | IRG / UTC | `IRG N2961` / `L2/26-147` | UTC が 40 CJK Unified Ideographs への `kIRG_USource` value と U-source representative glyph 追加を提案。 |
 | 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 8 に G-source、UK、U-source horizontal extension が載った。 |
+| 2026-07 | PRI | [PRI \#546](../documents/pri-546.md) | JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を受け、Moji_Joho IVD collection への 8 IVS 追加登録が review に出た。 |
 
 ## 主な論点
 
@@ -42,6 +43,8 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 [WG2 N5221](../documents/wg2-n5221.md) は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に関係する JMJ references を ISO/IEC 10646 の J-source column へ追加する proposal である。registry subject は 36,422 horizontal extensions とし、関連 chart PDF が別リンクで提供された。
 
 [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` は、同規模の horizontal extension は WG2 より IRG に提出し、CJK experts が早い段階で review するべきだったと位置づける。詳細な review path は [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md) に分ける。
+
+[PRI \#546](../documents/pri-546.md) は、JMJ horizontal extension の取り込み後に Moji Jōhō Kiban database 側の code point 対応が更新され、Moji_Joho IVD collection の sequence registration が follow-up になった例である。horizontal extension の影響は J-source column だけでなく、IVD collection の追加・deprecated sequence にも及ぶ。
 
 ### G-source 9156 characters
 
@@ -73,6 +76,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - [IRG N2929](../documents/irg-n2929.md)
 - [IRG N2923R](../documents/irg-n2923r.md)
 - [IRG N2960](../documents/irg-n2960.md)
+- [PRI \#546](../documents/pri-546.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
@@ -82,6 +86,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
+- [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 
 ## 関連人物・組織
 
@@ -104,3 +109,4 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 - `irg-n2961` - <https://www.unicode.org/irg/docs/n2961-UnicodeHorizontalExtension.pdf>
 - `irg-n2369r` - <https://www.unicode.org/irg/docs/n2369r-UnicodeHorizontalExtension.pdf>
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
+- `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>

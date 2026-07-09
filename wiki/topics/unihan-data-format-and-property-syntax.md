@@ -4,8 +4,8 @@ title: Unihan Data Format and Property Syntax
 description: "Unicode 18.0 cycle の UAX #38 / UTS #37 / RSIndex.txt / kTotalStrokes など、Unihan 周辺 data format と property syntax の更新論点。"
 slug: unihan-data-format-and-property-syntax
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
-topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists]
+documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, pri-546, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
+topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path]
 people: [ken-lunde, utc, irg, wg2]
 status: active
 tags: [unihan, data-format, property-syntax, uax38, uts37, unicode-18]
@@ -30,6 +30,7 @@ Unicode 18.0 cycle では、UAX \#38 Revision 40、UTS \#37 Revision 15、`RSInd
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` に simplified radical group を示す `|` / `||` / `|||` separator を導入する syntax enhancement を提案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG FS & SC conventions と ORT metadata checking に合わせる変更を提案。 |
 | 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が `L2/26-099` 由来の CJK additions and changes を ISO/IEC 10646 CD progression に接続した。 |
+| 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。 |
 
 ## 主な論点
 
@@ -44,6 +45,8 @@ UAX \#38 は各 property の意味だけでなく、value delimiter、source ref
 [L2/26-112](../documents/utc-l2-26-112.md) は UTS \#37 Revision 15 の proposed update である。IVD は `IVD_Collections.txt` と `IVD_Sequences.txt` を中心に、UTF-8 text、semicolon separated fields、comment lines、`# EOF` marker、collection identifier / sequence identifier の syntax を定義する。
 
 Revision 15 の変更点は、collection URL を registrant ではなく registrar が確立・維持する扱いへ整理すること、U+82A6 の glyph examples を web fonts に置き換えること、editor / references を更新することにある。IVS の登録論点は encoded character の boundary と重なるため、[UCV and NUCV Lists](ucv-nucv-lists.md) の unification / disunification 境界とも接続する。
+
+[PRI \#546](../documents/pri-546.md) は、UTS \#37 の registration process が Moji_Joho collection の具体的な update に適用される recent example である。Japan の JMJ horizontal extension 後に Moji Jōhō Kiban database の code point 対応が更新され、5 base characters に対する 8 IVS を `sequences.txt` と representative glyph chart で review する形になっている。
 
 ### RSIndex.txt の group separator
 
@@ -65,6 +68,7 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
+- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
 - [L2/26-099](../documents/utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC \#187。
 - [L2/26-134](../documents/utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
 - [L2/26-148](../documents/utc-l2-26-148.md) - `kTotalStrokes` changes。
@@ -78,12 +82,14 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 - [IRG Indexing Rules](irg-indexing-rules.md)
 - [UCV and NUCV Lists](ucv-nucv-lists.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
+- [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 
 ## 出典
 
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
+- `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
