@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added [WG2 N5273](documents/wg2-n5273.md), connecting the N5209 55-entry review to the later N5294R3 Small Seal repertoire and N5306 review convergence.
 - **Digest**: Added [WG2 N5294R3](documents/wg2-n5294r3.md), [WG2 N5312](documents/wg2-n5312.md), [WG2 N5313R](documents/wg2-n5313r.md), [WG2 N5327](documents/wg2-n5327.md), [WG2 N5337](documents/wg2-n5337.md), and [WG2 N5346](documents/wg2-n5346.md), connecting the Small Seal feedback chain from N5294 / N5306 review through N5341 code chart corrections and N5344R2.
 - **Digest**: Added [L2/10-198](documents/utc-l2-10-198.md) for UTR \#45 Revision 3, connecting status-field changes, DYC caveats, and the UTC source / IRG evidence distinction to the UAX \#45 topic.
 - **Digest**: Added [IRG N1081](documents/irg-n1081.md) and [IRG N1133](documents/irg-n1133.md) as 2004-2005 CJKV Components precursors, connecting China component encoding data and TCA/CNS 11643 decomposition rules to the later CJKV Components topic.

@@ -222,6 +222,7 @@
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
+- [WG2 N5273](wg2-n5273.md) - N5209 への Small Seal response。
 - [WG2 N5294R3](wg2-n5294r3.md) - Small Seal 11,140 code point repertoire and database model。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5300R9](wg2-n5300r9.md) - WG2 Meeting \#72 agenda。
