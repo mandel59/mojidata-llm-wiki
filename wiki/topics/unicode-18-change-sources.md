@@ -4,8 +4,8 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-104, utc-l2-26-105, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
-topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
+topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 status: draft-release
 tags: [unicode-18, release, beta, ucd, migration]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -22,7 +22,9 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 日付 | Body | 文書・資料 | できごと |
 | --- | --- | --- | --- |
 | 2026-03-31 | UTC | `L2/26-102` | Unicode 18.0 alpha feedback snapshot。 |
+| 2026-04-03 | UTC | [L2/26-095](../documents/utc-l2-26-095.md), [L2/26-106](../documents/utc-l2-26-106.md), [L2/26-107](../documents/utc-l2-26-107.md), [L2/26-108](../documents/utc-l2-26-108.md) | Public Review Issues 一覧と、UAX \#53 Arabic Mark Rendering、UAX \#57 Unikemet、Draft UAX \#60 の proposed updates が登録された。 |
 | 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が Unicode 18.0 target の Unihan / UAX \#45 / UAX \#60 / UTS \#39 / chart updates を勧告。 |
+| 2026-04-14 | UTC | [L2/26-109](../documents/utc-l2-26-109.md) | UTS \#10 Unicode Collation Algorithm Revision 54 proposed update が登録された。 |
 | 2026-04-15 | UTC | `L2/26-102` | RMG が UTC \#187 に Unicode 18.0 timeline、beta deliverables、ISO/IEC 10646 7th edition との同期上の変更を報告。 |
 | 2026-04-16 | UTC | `L2/26-096` | PAG が properties、algorithms、security、confusables、UTS \#61 の Unicode 18.0 向け recommendations を提出。 |
 | 2025-10-29/2026-01-21 | UTC | [L2/25-230R](../documents/utc-l2-25-230r.md), [L2/26-008R](../documents/utc-l2-26-008r.md) | ESR が Unicode 18.0 emoji additions と final candidate names を整理した。 |
@@ -61,11 +63,15 @@ WG2 \#73 の `WG2 N5354` は、Small Seal、CJK additions and changes、UAX \#60
 
 ### UTC \#187 WG reports
 
-UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない。[L2/26-096](../documents/utc-l2-26-096.md) は UCD properties、line breaking、segmentation、collation、security data を扱い、[L2/26-100](../documents/utc-l2-26-100.md) は script proposal progression と stability issues を扱う。[L2/26-097](../documents/utc-l2-26-097.md) と [L2/26-101](../documents/utc-l2-26-101.md) は core spec text、charts、NamesList、publication artifacts を扱う。[L2/25-230R](../documents/utc-l2-25-230r.md) / [L2/26-008R](../documents/utc-l2-26-008r.md) は Emoji 18.0 candidate list、[L2/26-098](../documents/utc-l2-26-098.md) は Emoji 18.0 / 19.0 の interoperability と intake を扱い、[L2/26-126](../documents/utc-l2-26-126.md) は ICU4X / TC39 実装側の接続を示す。
+UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない。[L2/26-095](../documents/utc-l2-26-095.md) は 2026-03-31 時点の PRI / feedback entry point、[L2/26-096](../documents/utc-l2-26-096.md) は UCD properties、line breaking、segmentation、collation、security data を扱う。[L2/26-106](../documents/utc-l2-26-106.md)、[L2/26-107](../documents/utc-l2-26-107.md)、[L2/26-108](../documents/utc-l2-26-108.md)、[L2/26-109](../documents/utc-l2-26-109.md) は UAX \#53、UAX \#57、UAX \#60、UTS \#10 の proposed updates として、PAG report だけでは見えにくい specification text / data file の詳細を示す。
+
+[L2/26-100](../documents/utc-l2-26-100.md) は script proposal progression と stability issues を扱う。[L2/26-097](../documents/utc-l2-26-097.md) と [L2/26-101](../documents/utc-l2-26-101.md) は core spec text、charts、NamesList、publication artifacts を扱う。[L2/25-230R](../documents/utc-l2-25-230r.md) / [L2/26-008R](../documents/utc-l2-26-008r.md) は Emoji 18.0 candidate list、[L2/26-098](../documents/utc-l2-26-098.md) は Emoji 18.0 / 19.0 の interoperability と intake を扱い、[L2/26-126](../documents/utc-l2-26-126.md) は ICU4X / TC39 実装側の接続を示す。
 
 ### 実装者が見るべき data
 
 実装影響は UCD と synchronized UTS の data files に現れる。draft release page は UCD 18.0.0 directory、Unihan.zip、USourceData.txt / USourceGlyphs.pdf / USourceRSChart.pdf、JurchenSources.txt、SealSources.txt、NushuSources.txt、TangutSources.txt、StandardizedVariants.txt、security data、emoji data などを list of components として示している。
+
+UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut data files は、character names だけでは追えない script-specific identity data を UCD component として扱う。UAX \#53 の AMTRA と UTS \#10 の DUCET changes は、data file だけでなく algorithm text の更新として確認する必要がある。
 
 ### Delta charts feedback
 
@@ -77,12 +83,17 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 - [L2/26-074](../documents/utc-l2-26-074.md) - `kJapaneseNewVariant` / `kJapaneseOldVariant` proposal。
 - [L2/26-084](../documents/utc-l2-26-084.md) - `kMandarin` additions / changes feedback。
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group Report to UTC \#187。
+- [L2/26-095](../documents/utc-l2-26-095.md) - Public Review Issues 一覧。
 - [L2/26-096](../documents/utc-l2-26-096.md) - Properties & Algorithms Group recommendations。
 - [L2/26-097](../documents/utc-l2-26-097.md) - Editorial WG report。
 - [L2/26-098](../documents/utc-l2-26-098.md) - Emoji Standard & Research WG report。
 - [L2/25-230R](../documents/utc-l2-25-230r.md) - UTC \#185 ESR report and Unicode 18.0 emoji short list。
 - [L2/26-008R](../documents/utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
 - [L2/26-104](../documents/utc-l2-26-104.md) - UTS \#51 Revision 30 proposed update。
+- [L2/26-106](../documents/utc-l2-26-106.md) - UAX \#53 Arabic Mark Rendering proposed update。
+- [L2/26-107](../documents/utc-l2-26-107.md) - UAX \#57 Unikemet proposed update。
+- [L2/26-108](../documents/utc-l2-26-108.md) - Draft UAX \#60 Revision 2。
+- [L2/26-109](../documents/utc-l2-26-109.md) - UTS \#10 Unicode Collation Algorithm proposed update。
 - [L2/26-100](../documents/utc-l2-26-100.md) - Script Encoding WG recommendations。
 - [L2/26-101](../documents/utc-l2-26-101.md) - Charts WG report。
 - [L2/26-126](../documents/utc-l2-26-126.md) - ICU4X / TC39 liaison update。
@@ -115,6 +126,9 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
+- [Arabic Mark Rendering](arabic-mark-rendering.md)
+- [Egyptian Hieroglyph Data and Unikemet](egyptian-hieroglyph-data-and-unikemet.md)
+- [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)
 
 ## 出典
 
@@ -124,6 +138,7 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 - `utc-l2-26-074` - <https://www.unicode.org/L2/L2026/26074-two-new-unihan-properties.pdf>
 - `utc-l2-26-084` - <https://www.unicode.org/L2/L2026/26084-kMan-feedback.pdf>
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
+- `utc-l2-26-095` - <https://www.unicode.org/L2/L2026/26095-public-review-issues.html>
 - `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
 - `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
@@ -132,6 +147,10 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 - `utc-l2-25-230r` - <https://www.unicode.org/L2/L2025/25230r-esr-report-utc185.pdf>
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
+- `utc-l2-26-106` - <https://www.unicode.org/L2/L2026/26106-uax53-12-update-pri539.pdf>
+- `utc-l2-26-107` - <https://www.unicode.org/L2/L2026/26107-uax57-6-update-pri538.pdf>
+- `utc-l2-26-108` - <https://www.unicode.org/L2/L2026/26108-uax60-2-draft-pri520.pdf>
+- `utc-l2-26-109` - <https://www.unicode.org/L2/L2026/26109-uts10-54-update-pri542.pdf>
 - `utc-l2-26-100` - <https://www.unicode.org/L2/L2026/26100-sew-report-utc187.pdf>
 - `utc-l2-26-101` - <https://www.unicode.org/L2/L2026/26101-charts-wg-rept-utc187.pdf>
 - `utc-l2-26-126` - <https://www.unicode.org/L2/L2026/26126-icu4x-and-tc39-liason-report.pdf>

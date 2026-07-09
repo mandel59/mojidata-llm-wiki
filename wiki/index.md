@@ -50,6 +50,8 @@ okf_version: "0.1"
 - [Unicode Properties and Algorithms](topics/unicode-properties-and-algorithms.md) - UTC \#187 PAG report を中心にした properties、algorithms、security data の更新論点。
 - [East Asian Spacing](topics/east-asian-spacing.md) - UTR \#59 draft の East Asian visible spacing algorithm と property data。
 - [Unicode Set Notation](topics/unicode-set-notation.md) - UTS \#61 draft の machine-readable Unicode set notation。
+- [Arabic Mark Rendering](topics/arabic-mark-rendering.md) - UAX \#53 / AMTRA による Arabic combining marks の rendering order と property data。
+- [Egyptian Hieroglyph Data and Unikemet](topics/egyptian-hieroglyph-data-and-unikemet.md) - UAX \#57 / Unikemet.txt による Egyptian hieroglyphs の catalog、source、function、Core data。
 - [Unicode Release Coordination and Publication](topics/unicode-release-coordination-and-publication.md) - Unicode 18.0 beta review に向けた release、charts、editorial、liaison coordination。
 - [East Asian Quotation Marks](topics/east-asian-quotation-marks.md) - East Asian text における quotation marks の core spec guidance、縦横組、地域差。
 - [Chinese Folk Music Notation](topics/chinese-folk-music-notation.md) - Chinese folk music / Xiqu / Quyi notation の musical symbols と format controls。

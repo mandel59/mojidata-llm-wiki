@@ -4,6 +4,7 @@
 
 ## 2026-07-09
 
+- **Digest**: Added Source Document pages for `L2/26-095`, `L2/26-106`, `L2/26-107`, `L2/26-108`, and `L2/26-109`, opening topics for [Arabic Mark Rendering](topics/arabic-mark-rendering.md) and [Egyptian Hieroglyph Data and Unikemet](topics/egyptian-hieroglyph-data-and-unikemet.md), and linking UAX \#53 / \#57 / \#60 / UTS \#10 proposed updates into Unicode 18.0, UTC \#187, properties, release, and text-model entry points.
 - **Digest**: Added Source Document pages for `L2/26-015R`, `L2/26-087`, `L2/26-088`, `L2/26-090`, and `L2/26-091`, connecting N'ko Bambara, N'ti, Khmer Candrabindu, Hebrew elongated geresh, and Mongolian standardized variants proposals to script pipeline and properties topics.
 - **Digest**: Added Source Document pages for `L2/26-113` and `L2/26-114`, linking Kodava Kannada diacritics and Sunuwar / Wambule Devanagari vowel length mark proposals to Indic notation/rendering, script pipeline, and UTC \#188 tracking; added WG2 aliases for corresponding Leibnizian / historic mathematical symbol proposals already digested under UTC document numbers.
 

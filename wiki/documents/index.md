@@ -54,6 +54,7 @@
 - [L2/26-086](utc-l2-26-086.md) - mid-priority confusables data の source / data listing。
 - [L2/26-092](utc-l2-26-092.md) - UTC \#187 agenda。
 - [L2/26-093](utc-l2-26-093.md) - UTC \#187 meeting minutes。
+- [L2/26-095](utc-l2-26-095.md) - 2025-12-30 から 2026-03-31 まで開いていた Public Review Issues 一覧。
 - [L2/26-096](utc-l2-26-096.md) - UTC \#187 Properties & Algorithms Group report。
 - [L2/26-097](utc-l2-26-097.md) - UTC \#187 Editorial WG report。
 - [L2/26-098](utc-l2-26-098.md) - UTC \#187 Emoji Standard & Research WG report。
@@ -64,6 +65,10 @@
 - [L2/26-089](utc-l2-26-089.md) - Belarusian Ruble sign proposal。
 - [L2/26-104](utc-l2-26-104.md) - UTS \#51 Unicode Emoji Revision 30 proposed update。
 - [L2/26-105](utc-l2-26-105.md) - Unicode 18.0.0 向け UAX \#38 Revision 40 proposed update。
+- [L2/26-106](utc-l2-26-106.md) - UAX \#53 Arabic Mark Rendering Revision 12 proposed update。
+- [L2/26-107](utc-l2-26-107.md) - UAX \#57 Unikemet Revision 6 proposed update。
+- [L2/26-108](utc-l2-26-108.md) - Draft UAX \#60 Data for Non Han Ideographic Scripts Revision 2。
+- [L2/26-109](utc-l2-26-109.md) - UTS \#10 Unicode Collation Algorithm Revision 54 proposed update。
 - [L2/26-110](utc-l2-26-110.md) - UAX \#31 Unicode Identifiers and Syntax Revision 44 proposed update。
 - [L2/26-111](utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
