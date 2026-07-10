@@ -4,7 +4,7 @@ title: UCV and NUCV Lists
 description: "IRG の UCV / NUCV lists による component variation と unification / disunification 境界の整理。"
 slug: ucv-nucv-lists
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2931, irg-n2935]
+documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935]
 topics: [irg-indexing-rules, cjkv-components, unihan-database-maintenance]
 people: [irg]
 status: active

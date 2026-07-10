@@ -213,6 +213,7 @@
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2895](irg-n2895.md) - IRG N2878R への source coverage / disunification feedback。
 - [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
+- [IRG N2910](irg-n2910.md) - IRG Meeting \#66 CJK Editorial Group report。
 - [IRG N2911](irg-n2911.md) - IRG Meeting \#66 miscellaneous editorial report。
 - [IRG N2915](irg-n2915.md) - IRG N2862 の FS values への KR feedback。
 - [IRG N2916](irg-n2916.md) - K-source KC-05216 / U+2DB7C glyph correction proposal。
@@ -240,6 +241,8 @@
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5273](wg2-n5273.md) - N5209 への Small Seal response。
+- [WG2 N4716](wg2-n4716.md) - Small Seal source-based variation selector proposal。
+- [WG2 N5089](wg2-n5089.md) - 2019 Shuowen Seal informal meeting report。
 - [WG2 N5294R3](wg2-n5294r3.md) - Small Seal 11,140 code point repertoire and database model。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
 - [WG2 N5300R9](wg2-n5300r9.md) - WG2 Meeting \#72 agenda。

@@ -69,5 +69,5 @@ IRG Meeting \#66 は 2026-03-16/20 に virtual meeting として開催された�
 
 - `irg-n2899` - <https://www.unicode.org/irg/docs/n2899-ScheduleAgenda.html>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
-- `irg-n2910` - <https://www.unicode.org/irg/docs/n2910-EditorialReport.pdf>
+- [IRG N2910](../../documents/irg-n2910.md) - CJK Editorial Group report。
 - `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>

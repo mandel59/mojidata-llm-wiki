@@ -4,6 +4,7 @@
 
 ## 2026-07-10
 
+- **Digest**: Added [WG2 N4716](documents/wg2-n4716.md), [WG2 N5089](documents/wg2-n5089.md), and [IRG N2910](documents/irg-n2910.md), connecting the early Small Seal source-variation model and informal review history with the IRG \#66 WS2024 editorial conclusions.
 - **Digest**: Added [L2/21-134](documents/utc-l2-21-134.md), [L2/24-273](documents/utc-l2-24-273.md), and [L2/25-220](documents/utc-l2-25-220.md), covering IDS component collection data, the Initial Teaching Alphabet proposal, and the UTC \#185 public-feedback intake.
 - **Digest**: Added [PRI \#533](documents/pri-533.md) and [L2/25-267](documents/utc-l2-25-267.md) for UTR \#25 Unicode Support for Mathematics Revision 16 and opened [Mathematical Text Support](topics/mathematical-text-support.md), separating broad math text / `Math` property / `MathClass` data guidance from the Leibnizian and historic mathematical symbols proposal chain.
 
