@@ -251,6 +251,9 @@
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [WG2 N5273](wg2-n5273.md) - N5209 への Small Seal response。
 - [WG2 N4716](wg2-n4716.md) - Small Seal source-based variation selector proposal。
+- [WG2 N4755](wg2-n4755.md) - N4716 Small Seal variation-selector proposalへのfeedback。
+- [WG2 N4853](wg2-n4853.md) - 2017 Shuowen Seal ad hoc meeting resolutions。
+- [WG2 N4973](wg2-n4973.md) - Small Seal duplicates / taboo deformation comments。
 - [WG2 N5089](wg2-n5089.md) - 2019 Shuowen Seal informal meeting report。
 - [WG2 N5294R3](wg2-n5294r3.md) - Small Seal 11,140 code point repertoire and database model。
 - [WG2 N5296](wg2-n5296.md) - JMJ-source related glyph issues。
