@@ -189,6 +189,7 @@
 - [IRG N1133](irg-n1133.md) - TCA / CNS 11643 の basic components data。
 - [IRG N743](irg-n743.md) - Extension C member body submissions の初期集計。
 - [IRG N1528](irg-n1528.md) - 143 Extension D candidates の Zhuang dictionary evidence。
+- [IRG N1531](irg-n1531.md) - 3,215 G-source Extension D candidates の withdrawal request。
 - [IRG N1532R](irg-n1532r.md) - urgently needed G-source characters の evidence data。
 - [IRG N2367](irg-n2367.md) - Japan Activity Report; IRG Working Set review 不参加方針。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
@@ -203,6 +204,8 @@
 - [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
 - [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。
 - [IRG N2837](irg-n2837.md) - 82 GXC-source characters の source reference update proposal。
+- [IRG N2835R](irg-n2835r.md) - 1,417 G-source characters の source reference update proposal。
+- [IRG N2838](irg-n2838.md) - IRG N2835へのG-source reference feedback。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2860](irg-n2860.md) - 25 T-source glyphs の revision request。

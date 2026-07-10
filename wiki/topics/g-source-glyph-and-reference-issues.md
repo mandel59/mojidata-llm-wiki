@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active

@@ -4,6 +4,7 @@
 
 ## 2026-07-10
 
+- **Digest**: Added [IRG N1531](documents/irg-n1531.md), [IRG N2835R](documents/irg-n2835r.md), and [IRG N2838](documents/irg-n2838.md), completing the Extension D withdrawal/evidence pair and the GCH/GCY bulk-reference proposal/feedback pair.
 - **Digest**: Added [IRG N743](documents/irg-n743.md), [IRG N1528](documents/irg-n1528.md), and [IRG N1532R](documents/irg-n1532r.md), linking Extension C / D submission evidence to the modern G-source reference review chain.
 - **Digest**: Added [IRG N2837](documents/irg-n2837.md), [IRG N2868](documents/irg-n2868.md), and [IRG N2864R](documents/irg-n2864r.md), tracing the GXC edition dispute and the 1,538-character G-source reference update into the later IRG N2923R review chain.
 - **Digest**: Added [WG2 N4716](documents/wg2-n4716.md), [WG2 N5089](documents/wg2-n5089.md), and [IRG N2910](documents/irg-n2910.md), connecting the early Small Seal source-variation model and informal review history with the IRG \#66 WS2024 editorial conclusions.
