@@ -23,13 +23,15 @@ UTC、WG2、IRG の公開 Document Registry と Unicode Public Review Issues (PR
 
 ## セットアップ
 
-Python 実行環境は `uv` の project-local `.venv` を使います。clone 後は `uv sync` で `pyproject.toml` / `uv.lock` に固定された依存を同期してください。新しいツール依存が必要になった場合は `uv add <package>` で project dependencies に追加します。
+Python 実行環境は `uv` の project-local `.venv` を使います。clone 後は `uv sync --locked` で `pyproject.toml` / `uv.lock` に固定された依存を同期してください。新しいツール依存が必要になった場合は `uv add <package>` で project dependencies に追加します。
 
 ```sh
-uv sync
-uv run python -m unittest discover
+uv sync --locked
+uv run python -m unittest discover -v
 uv run python tools/check_catalog.py
 uv run python tools/check_okf.py
+uv run python tools/check_wiki_review.py
+uv run python tools/check_events.py
 ```
 
 ## 目録の更新

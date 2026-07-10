@@ -1,0 +1,31 @@
+name: Quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.13
+      - name: Sync dependencies
+        run: uv sync --locked
+      - name: Run unit tests
+        run: uv run python -m unittest discover -v
+      - name: Check catalog
+        run: uv run python tools/check_catalog.py
+      - name: Check OKF bundle
+        run: uv run python tools/check_okf.py
+      - name: Check wiki review rules
+        run: uv run python tools/check_wiki_review.py
+      - name: Check events
+        run: uv run python tools/check_events.py
