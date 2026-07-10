@@ -4,6 +4,7 @@
 
 ## 2026-07-10
 
+- **Digest**: Added [IRG N2689](documents/irg-n2689.md), [IRG N2840](documents/irg-n2840.md), and [IRG N2863](documents/irg-n2863.md), covering the remaining bulk-reference, glyph, and G3/G5 inputs consolidated by IRG N2864R.
 - **Digest**: Added [WG2 N4755](documents/wg2-n4755.md), [WG2 N4853](documents/wg2-n4853.md), and [WG2 N4973](documents/wg2-n4973.md), filling the Small Seal feedback and ad hoc consensus path from N4716 to N5089.
 - **Digest**: Added [IRG N1531](documents/irg-n1531.md), [IRG N2835R](documents/irg-n2835r.md), and [IRG N2838](documents/irg-n2838.md), completing the Extension D withdrawal/evidence pair and the GCH/GCY bulk-reference proposal/feedback pair.
 - **Digest**: Added [IRG N743](documents/irg-n743.md), [IRG N1528](documents/irg-n1528.md), and [IRG N1532R](documents/irg-n1532r.md), linking Extension C / D submission evidence to the modern G-source reference review chain.

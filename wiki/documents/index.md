@@ -195,6 +195,9 @@
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
 - [WG2 N5253](wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
 - [IRG N2702](irg-n2702.md) - IRG \#63 recommendations; CJK components encoding の開始判断。
+- [IRG N2689](irg-n2689.md) - 1,685 G-source reference values の更新提案。
+- [IRG N2840](irg-n2840.md) - 4組のG-source representative glyph revision request。
+- [IRG N2863](irg-n2863.md) - long-standing G3 / G5 source reference issues。
 - [IRG N2721](irg-n2721.md) - Japan に IRG active member body への復帰を求める文書。
 - [IRG N2722](irg-n2722.md) - JMJ horizontal extension issue report。
 - [IRG N2733R](irg-n2733r.md) - CJK components の preliminary proposal。
