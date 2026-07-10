@@ -114,14 +114,28 @@ def source_documents_by_document_type(concepts: dict[str, Concept]) -> dict[str,
     return dict(sorted(counts.items()))
 
 
-def unresolved_relation_summary(concepts: dict[str, Concept], top: int) -> dict[str, object]:
+def unresolved_relation_summary(
+    concepts: dict[str, Concept], catalog: dict[str, CatalogEntry], top: int
+) -> dict[str, object]:
     by_key: Counter[str] = Counter()
+    by_status: Counter[str] = Counter()
     pages: list[dict[str, object]] = []
     for concept in concepts.values():
         total = 0
         for key, values in concept.unresolved_relations.items():
             by_key[key] += len(values)
             total += len(values)
+            for value in values:
+                if key != "documents":
+                    by_status["unmaterialized_concept"] += 1
+                    continue
+                entry = catalog.get(value)
+                if entry is None:
+                    by_status["unknown_document"] += 1
+                elif entry.available:
+                    by_status["available_document"] += 1
+                else:
+                    by_status["unavailable_document"] += 1
         if total:
             pages.append(
                 {
@@ -133,7 +147,12 @@ def unresolved_relation_summary(concepts: dict[str, Concept], top: int) -> dict[
                 }
             )
     pages.sort(key=lambda row: (-int(row["unresolved"]), str(row["path"])))
-    return {"by_key": dict(sorted(by_key.items())), "top_pages": pages[:top], "total": sum(by_key.values())}
+    return {
+        "by_key": dict(sorted(by_key.items())),
+        "by_status": dict(sorted(by_status.items())),
+        "top_pages": pages[:top],
+        "total": sum(by_key.values()),
+    }
 
 
 def synthesis_coverage(concepts: dict[str, Concept]) -> dict[str, object]:
@@ -216,7 +235,7 @@ def build_stats(args: argparse.Namespace) -> dict[str, object]:
             "by_document_type": source_documents_by_document_type(concepts),
         },
         "catalog_coverage": source_document_coverage(concepts, catalog),
-        "unresolved_relations": unresolved_relation_summary(concepts, args.top),
+        "unresolved_relations": unresolved_relation_summary(concepts, catalog, args.top),
         "synthesis_coverage": synthesis_coverage(concepts),
         "digest_candidates": {
             "total": len(candidates),
@@ -304,6 +323,9 @@ def render_markdown(stats: dict[str, object]) -> str:
 
     parts.extend(["", "## Unresolved Relations", ""])
     parts.append(table(["relation", "count"], sorted(unresolved["by_key"].items())))  # type: ignore[index,union-attr]
+
+    parts.extend(["", "## Unresolved Relations by Status", ""])
+    parts.append(table(["status", "count"], sorted(unresolved["by_status"].items())))  # type: ignore[index,union-attr]
 
     parts.extend(["", "## Top Unresolved Relation Pages", ""])
     parts.append(
