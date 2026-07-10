@@ -4,6 +4,7 @@
 
 ## 2026-07-10
 
+- **Digest**: Added [L2/21-134](documents/utc-l2-21-134.md), [L2/24-273](documents/utc-l2-24-273.md), and [L2/25-220](documents/utc-l2-25-220.md), covering IDS component collection data, the Initial Teaching Alphabet proposal, and the UTC \#185 public-feedback intake.
 - **Digest**: Added [PRI \#533](documents/pri-533.md) and [L2/25-267](documents/utc-l2-25-267.md) for UTR \#25 Unicode Support for Mathematics Revision 16 and opened [Mathematical Text Support](topics/mathematical-text-support.md), separating broad math text / `Math` property / `MathClass` data guidance from the Leibnizian and historic mathematical symbols proposal chain.
 
 ## 2026-07-09

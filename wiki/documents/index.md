@@ -137,6 +137,9 @@
 - [L2/26-146](utc-l2-26-146.md) - Maya Hieroglyphs Extended-A draft proposal。
 - [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。
 - [L2/26-149](utc-l2-26-149.md) - Leibniz Unicode Characters Project feedback。
+- [L2/21-134](utc-l2-21-134.md) - IDS 用の未符号化 ideograph components collection data。
+- [L2/24-273](utc-l2-24-273.md) - Initial Teaching Alphabet 専用小文字13字の proposal。
+- [L2/25-220](utc-l2-25-220.md) - UTC \#185 前後の PRI / public feedback 集成。
 - [L2/24-150](utc-l2-24-150.md) - missing three Kana-Ligatures。
 - [L2/24-279](utc-l2-24-279.md) - KATAKANA DIGRAPH YORI。
 - [L2/25-035](utc-l2-25-035.md) - small kana / Bopomofo small letters の Vertical Orientation。
