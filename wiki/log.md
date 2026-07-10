@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-11
+
+- **Maintenance**: Made concept alias collisions a validation error and separated broad specification names, concrete L2 revisions, and PRI review-record identities for UTR \#25, UTR \#59, and UTS \#61.
+
 ## 2026-07-10
 
 - **Digest**: Added [IRG N2442](documents/irg-n2442.md), [IRG N2656](documents/irg-n2656.md), and [IRG N2874R](documents/irg-n2874r.md), connecting GBK corrections and source-reference uniqueness rules with the later G-source bulk update and glyph-feedback chain.

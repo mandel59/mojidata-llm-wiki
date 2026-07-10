@@ -248,11 +248,26 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
         path_to_id[path.resolve()] = cid
 
     alias_to_id: dict[str, str] = {}
+    alias_sources: dict[str, set[str]] = {}
     for cid, row in rows.items():
-        alias_to_id.setdefault(normalize_lookup_key(cid), cid)
-        for alias in row["aliases"]:  # type: ignore[union-attr]
+        frontmatter = row["frontmatter"]
+        assert isinstance(frontmatter, dict)
+        relation_aliases = [cid]
+        for key in ["slug", "entry_id", "doc_number"]:
+            value = frontmatter.get(key)
+            if isinstance(value, str) and value:
+                relation_aliases.append(value)
+        relation_aliases.extend(string_list(frontmatter, "aliases"))
+        for alias in relation_aliases:
             if isinstance(alias, str):
-                alias_to_id.setdefault(normalize_lookup_key(alias), cid)
+                key = normalize_lookup_key(alias)
+                alias_sources.setdefault(key, set()).add(cid)
+                alias_to_id.setdefault(key, cid)
+
+    collisions = {key: ids for key, ids in alias_sources.items() if len(ids) > 1}
+    if collisions:
+        details = [f"{key}: {', '.join(sorted(ids))}" for key, ids in sorted(collisions.items())]
+        raise ValueError("ambiguous concept aliases:\n" + "\n".join(details))
 
     link_map: dict[str, list[str]] = {}
     unresolved_relation_map: dict[str, dict[str, list[str]]] = {}

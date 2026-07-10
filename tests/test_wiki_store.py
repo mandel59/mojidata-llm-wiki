@@ -73,6 +73,21 @@ documents: [wg2-n4674]
         self.assertIn("utc-l2-15-239", kana.links)
         self.assertIn("kana", concepts["utc-l2-15-239"].backlinks)
 
+    def test_load_concepts_rejects_ambiguous_aliases(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            bundle = Path(tmp)
+            topics = bundle / "topics"
+            topics.mkdir()
+            for slug in ["first", "second"]:
+                (topics / f"{slug}.md").write_text(
+                    f"---\ntype: Topic\ntitle: {slug.title()}\nslug: {slug}\naliases: [Shared Name]\n---\n\n# {slug}\n",
+                    encoding="utf-8",
+                )
+
+            with self.assertRaisesRegex(ValueError, "ambiguous concept aliases") as raised:
+                load_concepts(bundle)
+            self.assertIn("shared-name: first, second", str(raised.exception))
+
 
 if __name__ == "__main__":
     unittest.main()
