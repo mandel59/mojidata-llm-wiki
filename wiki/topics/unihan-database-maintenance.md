@@ -36,7 +36,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 | 2026-03-26 | UTC | [L2/26-084](../documents/utc-l2-26-084.md) | CLDR TC と Apple Localization and Release Engineering が、169 characters の `kMandarin` additions / changes へ feedback した。 |
 | 2026-04-03 | UTC | [L2/26-105](../documents/utc-l2-26-105.md) | Proposed Update UAX \#38 Revision 40。Unicode 18.0.0 向けに Unihan database の説明、property、history を更新する。 |
 | 2026-04-03 | UTC | [L2/26-112](../documents/utc-l2-26-112.md) | Proposed Update UTS \#37 Revision 15。Ideographic Variation Database と IVS 登録手順を更新する。 |
-| 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が UTC \#187 向けに Unihan database additions / changes / removals、UAX \#38、UTS \#37 関連 action items をまとめた。 |
+| 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が UTC \#187 向けに Unihan database additions / changes / removals、UAX \#38、UTS \#37 関連 action items をまとめた。 |
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` syntax enhancement。simplified radical の区切りを `|` / `||` / `|||` で表す案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、Moji_Joho collection に 8 IVS を追加し、9 既登録 sequences を deprecated とする review を開いた。 |

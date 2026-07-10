@@ -26,12 +26,12 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 | --- | --- | --- | --- |
 | 2019-05-10 | IRG | [IRG N2367](../documents/irg-n2367.md) | Japan NB が human resource 不足により future IRG Working Set review には参加しないが、SC2 balloting phase では CJK extension proposals の review を継続すると報告した。 |
 | 2023-04-24 | WG2 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column へ追加する horizontal extension request を提出した。registry subject は 36,422 horizontal extensions とする。 |
-| 2024-09-17 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が、`WG2 N5221` 規模の horizontal extension は WG2 より IRG review に向くとして、Japan に IRG active member body への復帰を求めた。 |
+| 2024-09-17 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / [WG2 N5284](../documents/irg-n2721.md) | IRG Convenor が、[WG2 N5221](../documents/wg2-n5221.md) 規模の horizontal extension は WG2 より IRG review に向くとして、Japan に IRG active member body への復帰を求めた。 |
 | 2024-09-18 | IRG | [IRG N2722](../documents/irg-n2722.md) | Yi Bai と Eiso Chan が、Unicode 16.0 で追加された JMJ horizontal extension について、IDS / glyph shape から code point 対応の issue を指摘した。 |
-| 2025-06-23/27 | WG2 | [WG2 N5301](../documents/wg2-n5301.md) | WG2 Meeting \#72 minutes が `WG2 N5284` を扱い、Japan は復帰を検討できるが human resources / workload が課題だと記録した。 |
-| 2025-06-23/27 | WG2 | [WG2 N5301](../documents/wg2-n5301.md), [WG2 N5304](../documents/wg2-n5304.md) | WG2 は `WG2 N5296` に基づく chart glyph revert を M72.07 として勧告した。これは horizontal extension review path ではなく、追加後の chart glyph stability issue として接続する。 |
-| 2025-08-13 | IRG | [IRG N2859](../documents/irg-n2859.md) | IRG Convenor が `IRG N2722` などを受け、J-source source reference / representative glyph disposition 案を Japan NB に照会した。 |
-| 2025-09-25 | IRG | [IRG N2870](../documents/irg-n2870.md) | Japan NB が `IRG N2859` に対し、符号化済み文字の current status 維持を求めた。 |
+| 2025-06-23/27 | WG2 | [WG2 N5301](../documents/wg2-n5301.md) | WG2 Meeting \#72 minutes が [WG2 N5284](../documents/irg-n2721.md) を扱い、Japan は復帰を検討できるが human resources / workload が課題だと記録した。 |
+| 2025-06-23/27 | WG2 | [WG2 N5301](../documents/wg2-n5301.md), [WG2 N5304](../documents/wg2-n5304.md) | WG2 は [WG2 N5296](../documents/wg2-n5296.md) に基づく chart glyph revert を M72.07 として勧告した。これは horizontal extension review path ではなく、追加後の chart glyph stability issue として接続する。 |
+| 2025-08-13 | IRG | [IRG N2859](../documents/irg-n2859.md) | IRG Convenor が [IRG N2722](../documents/irg-n2722.md) などを受け、J-source source reference / representative glyph disposition 案を Japan NB に照会した。 |
+| 2025-09-25 | IRG | [IRG N2870](../documents/irg-n2870.md) | Japan NB が [IRG N2859](../documents/irg-n2859.md) に対し、符号化済み文字の current status 維持を求めた。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を背景に、Moji_Joho collection への 8 IVS 追加を review に出した。 |
 
 ## 主な論点

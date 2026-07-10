@@ -25,7 +25,7 @@ Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classi
 | --- | --- | --- | --- |
 | 2026-06-22 | UTC / WG2 | [L2/26-145](../documents/utc-l2-26-145.md) | Postclassic codices を対象に Codical Maya Hieroglyphs を base set として提案した。 |
 | 2026-06-22 | UTC / WG2 | [L2/26-146](../documents/utc-l2-26-146.md) | Classic Maya corpus の first extension tranche として Maya Hieroglyphs Extended-A を提案した。 |
-| 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.14 が `WG2 N5366` / `WG2 N5367` を WG2 \#74 までに review するよう National Bodies / liaison organizations に求めた。 |
+| 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.14 が [WG2 N5366](../documents/utc-l2-26-145.md) / [WG2 N5367](../documents/utc-l2-26-146.md) を WG2 \#74 までに review するよう National Bodies / liaison organizations に求めた。 |
 | 2026-07-30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | UTC \#188 の agenda / minutes は未掲載だが、UTC \#187 後の候補文書として追跡する。 |
 
 ## 主な論点

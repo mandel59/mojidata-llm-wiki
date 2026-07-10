@@ -24,9 +24,9 @@ IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs �
 | --- | --- | --- | --- |
 | 2024-10 | IRG | [IRG N2702](../documents/irg-n2702.md) | IRG \#63 Recommendation M63.06 が WS2024 Version 2.0 の生成 schedule を定めた。 |
 | 2025-03 | IRG | [IRG N2765](../documents/irg-n2765.md) | IRG \#64 Recommendation M64.04 が WS2024 Version 3.0 の生成 schedule を定めた。 |
-| 2026-03 | IRG | `IRG N2909` | IRG \#66 Recommendation M66.07 が WS2024 Version 5.0 の生成 schedule を定めた。 |
+| 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | IRG \#66 Recommendation M66.07 が WS2024 Version 5.0 の生成 schedule を定めた。 |
 | 2026-05 | IRG | [IRG N2932](../documents/irg-n2932.md) | ORT Manager が WS2024 Version 5.0 を ORT と文書として release する schedule。catalog date は 2026-05-31。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda で Version 5.0 review が主要議題として設定された。 |
+| 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda で Version 5.0 review が主要議題として設定された。 |
 | 2026-08 | IRG | `IRG N2933` | WS2024 Version 5.0 consolidated comments。 |
 | 2026-10 | IRG | Meeting \#67 | submitter responses は 2026-10-09 までに ORT へ入力し、会合で review する予定。 |
 

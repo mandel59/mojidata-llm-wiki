@@ -49,6 +49,7 @@ tools/
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
   query_wiki.py                   wiki concept graph を機械的にクエリ
   document_sections.py            Markdown concept page の目次表示と section 抽出
+  link_timeline_documents.py      経緯表の既存文書番号を wiki page へリンク
   check_okf.py                    wiki の OKF v0.1 互換検査
   wiki_store.py                   wiki frontmatter、concept graph、schema validation の共通処理
   unicode_registry.py             Registry parser と共通処理
@@ -287,6 +288,13 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 7. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。
 8. 回答は出典付きで書く。
 9. 再利用価値がある整理なら、ユーザ確認後に wiki ページとして file back する。
+
+経緯表に backtick 表記で残った文書番号を、既存の Source Document page へ一括リンクする場合は、まず dry-run し、未ページ化文書がそのまま残ることを確認してから書き込む。
+
+```sh
+uv run python tools/link_timeline_documents.py
+uv run python tools/link_timeline_documents.py --write
+```
 
 ### Lint
 

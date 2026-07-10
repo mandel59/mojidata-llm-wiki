@@ -35,9 +35,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 | 2026-03-10 | IRG | [IRG N2923R](../documents/irg-n2923r.md) | Dong Wenjie が 329 G-source reference updates と 9 horizontal extension candidates を提案した。Meeting \#66 では further discussion / China response 待ちになった。 |
 | 2026-03-14 | IRG | [IRG N2930](../documents/irg-n2930.md) | Boris Zhang / Wang Xieyang が U+236AC、U+24A1E、U+24E82 の `GU` references を `GHC` references へ変更する提案を出した。Meeting \#66 で accepted になった。 |
 | 2026-04-03 | IRG | [IRG N2954](../documents/irg-n2954.md) | Roy Wang が U+2CCA3 / `GZFY-00932` の current glyph と source evidence の不一致を指摘し、glyph normalization または `GU` reference への変更を提案した。 |
-| 2026-04-04 | IRG | [IRG N2955](../documents/irg-n2955.md) | Dong Wenjie が `IRG N2954` に feedback し、original evidence に合わせて glyph を直し、source reference は維持する方向を支持した。 |
+| 2026-04-04 | IRG | [IRG N2955](../documents/irg-n2955.md) | Dong Wenjie が [IRG N2954](../documents/irg-n2954.md) に feedback し、original evidence に合わせて glyph を直し、source reference は維持する方向を支持した。 |
 | 2026-05-04 | IRG | [IRG N2956](../documents/irg-n2956.md) | Roy Wang が Extension C の GBK-source 5 characters について、glyph update と source reference update の混在した修正案を出した。 |
-| 2026-05-05 | IRG | [IRG N2957](../documents/irg-n2957.md) | Kushim Jiang が `IRG N2956` に feedback し、character ごとに glyph change と source reference change を分けて扱うべきだと述べた。 |
+| 2026-05-05 | IRG | [IRG N2957](../documents/irg-n2957.md) | Kushim Jiang が [IRG N2956](../documents/irg-n2956.md) に feedback し、character ごとに glyph change と source reference change を分けて扱うべきだと述べた。 |
 | 2026-06-10 | IRG | [IRG N2958](../documents/irg-n2958.md) | Ma Shijie が多数の G-source glyph revisions を提案し、normal form、taboo form、source evidence、glyph convention の関係を問題にした。 |
 | 2026-06-10 | IRG | [IRG N2959](../documents/irg-n2959.md) | Ma Shijie が SAT-source glyph issues を提出した。G-source ではないが、representative glyph correction queue として同じ Section 9.1 に接続する。 |
 | 2026-07-04 | IRG | [IRG N2962](../documents/irg-n2962.md) | Lin Anning が 9 G-source glyphs の revision request を提出し、G-source convention と original evidence に基づく修正を求めた。 |

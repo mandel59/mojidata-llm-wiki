@@ -21,16 +21,16 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 
 | 日付 | Body | 文書・資料 | できごと |
 | --- | --- | --- | --- |
-| 2026-03-31 | UTC | `L2/26-102` | Unicode 18.0 alpha feedback snapshot。 |
+| 2026-03-31 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | Unicode 18.0 alpha feedback snapshot。 |
 | 2026-04-03 | UTC | [L2/26-095](../documents/utc-l2-26-095.md), [L2/26-106](../documents/utc-l2-26-106.md), [L2/26-107](../documents/utc-l2-26-107.md), [L2/26-108](../documents/utc-l2-26-108.md) | Public Review Issues 一覧と、UAX \#53 Arabic Mark Rendering、UAX \#57 Unikemet、Draft UAX \#60 の proposed updates が登録された。 |
-| 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が Unicode 18.0 target の Unihan / UAX \#45 / UAX \#60 / UTS \#39 / chart updates を勧告。 |
+| 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が Unicode 18.0 target の Unihan / UAX \#45 / UAX \#60 / UTS \#39 / chart updates を勧告。 |
 | 2026-04-14 | UTC | [L2/26-109](../documents/utc-l2-26-109.md) | UTS \#10 Unicode Collation Algorithm Revision 54 proposed update が登録された。 |
-| 2026-04-15 | UTC | `L2/26-102` | RMG が UTC \#187 に Unicode 18.0 timeline、beta deliverables、ISO/IEC 10646 7th edition との同期上の変更を報告。 |
-| 2026-04-16 | UTC | `L2/26-096` | PAG が properties、algorithms、security、confusables、UTS \#61 の Unicode 18.0 向け recommendations を提出。 |
+| 2026-04-15 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | RMG が UTC \#187 に Unicode 18.0 timeline、beta deliverables、ISO/IEC 10646 7th edition との同期上の変更を報告。 |
+| 2026-04-16 | UTC | [L2/26-096](../documents/utc-l2-26-096.md) | PAG が properties、algorithms、security、confusables、UTS \#61 の Unicode 18.0 向け recommendations を提出。 |
 | 2025-10-29/2026-01-21 | UTC | [L2/25-230R](../documents/utc-l2-25-230r.md), [L2/26-008R](../documents/utc-l2-26-008r.md) | ESR が Unicode 18.0 emoji additions と final candidate names を整理した。 |
-| 2026-04-17/22 | UTC | `L2/26-097`, `098`, `100`, `101`, `126` | Editorial、Emoji、Script Encoding、Charts、ICU4X / TC39 liaison の reports が UTC \#187 の Unicode 18.0 beta review 準備に接続。 |
-| 2026-04-21/23 | UTC | `L2/26-092`, `L2/26-093` | [UTC Meeting \#187](../meetings/utc/utc-meeting-187.md)。Agenda / minutes が Unicode 18.0 beta review authorization と WG reports を束ねる。 |
-| 2026-04-23 | UTC | `L2/26-102` | UTC \#187 で beta content を finalize する予定。 |
+| 2026-04-17/22 | UTC | [L2/26-097](../documents/utc-l2-26-097.md), `098`, `100`, `101`, `126` | Editorial、Emoji、Script Encoding、Charts、ICU4X / TC39 liaison の reports が UTC \#187 の Unicode 18.0 beta review 準備に接続。 |
+| 2026-04-21/23 | UTC | [L2/26-092](../documents/utc-l2-26-092.md), [L2/26-093](../documents/utc-l2-26-093.md) | [UTC Meeting \#187](../meetings/utc/utc-meeting-187.md)。Agenda / minutes が Unicode 18.0 beta review authorization と WG reports を束ねる。 |
+| 2026-04-23 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | UTC \#187 で beta content を finalize する予定。 |
 | 2026-05-26 | UTC | Unicode 18.0 beta review page | Beta review 開始。beta UCD、delta charts、annex proposed updates、notable issues を公開。 |
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian variation sequences と Unicode 18.0 delta charts への corrections / recommendations が提出された。 |
 | 2026-07-07 | UTC | [PRI \#545](../documents/pri-545.md) | UAX \#11 Revision 45 public review が close し、East_Asian_Width の unassigned ranges を Unicode 18.0 finalization の確認対象にした。 |
@@ -42,7 +42,7 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UAX \#29 Revision 48 public review が close し、Unicode 18.0 の text segmentation / GB9c 更新に接続した。 |
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、Unicode 18.0 の security mechanisms / confusables data finalization に接続した。 |
 | 2026-07-07 | UTC | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、Script property と ISO 15924 mixed-script script codes の documentation update を確認対象にした。 |
-| 2026-07-30 | UTC | `L2/26-102` | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) で 18.0 content finalize 予定。2026-07-07 時点で agenda / minutes は未掲載。 |
+| 2026-07-30 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) で 18.0 content finalize 予定。2026-07-07 時点で agenda / minutes は未掲載。 |
 | 2026-09-16 | UTC | Unicode 18.0 beta page | 公式 beta page 上の planned release date。 |
 
 ## 主な論点

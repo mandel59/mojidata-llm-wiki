@@ -44,9 +44,9 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2021-01-04 | UTC | [L2/20-209R](../documents/utc-l2-20-209r.md) | Fredrick R. Brennan が revised final proposal を提出し、Minnan tone / nasalized tone marks 13 文字と U+0323 / U+0305 の利用を整理。 |
 | 2023-04-25 | UTC | [L2/23-112](../documents/utc-l2-23-112.md) | Gen Kojitani が missing kana ligatures を広く提案。合略仮名を複数 kana の単なる連綿と区別する criteria を提示。 |
 | 2023-05-08 | UTC | [L2/23-118](../documents/utc-l2-23-118.md) | Gen Kojitani が Ryukyuan languages 用 superscript katakana letters 8 characters を提案。 |
-| 2023-05-25 | UTC | [L2/23-123](../documents/utc-l2-23-123.md) | Eiso Chan が `L2/23-118` へ feedback を出し、usage stability、vertical layout、提出主体などの確認を求めた。 |
+| 2023-05-25 | UTC | [L2/23-123](../documents/utc-l2-23-123.md) | Eiso Chan が [L2/23-118](../documents/utc-l2-23-118.md) へ feedback を出し、usage stability、vertical layout、提出主体などの確認を求めた。 |
 | 2023-05-31 | UTC | [L2/23-127](../documents/utc-l2-23-127.md) | Eiso Chan が明治期資料に現れる alternate Katakana NE / WI を紹介。 |
-| 2024-06-21 | UTC | [L2/24-150](../documents/utc-l2-24-150.md) | Gen Kojitani が `L2/23-112` を reduced set として改訂し、3 kana ligatures を提案。 |
+| 2024-06-21 | UTC | [L2/24-150](../documents/utc-l2-24-150.md) | Gen Kojitani が [L2/23-112](../documents/utc-l2-23-112.md) を reduced set として改訂し、3 kana ligatures を提案。 |
 | 2024-12-31 | UTC | [L2/24-279](../documents/utc-l2-24-279.md) | CheonHyeong Sim が KATAKANA DIGRAPH YORI を追加提案。 |
 | 2025-01-13 | UTC | [L2/25-035](../documents/utc-l2-25-035.md) | CheonHyeong Sim が small kana と Bopomofo small letters の Vertical Orientation value 変更を要請。 |
 | 2025-01-15 | UTC | [L2/25-036](../documents/utc-l2-25-036.md) | CheonHyeong Sim が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |

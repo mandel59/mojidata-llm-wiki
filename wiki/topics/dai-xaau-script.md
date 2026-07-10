@@ -29,7 +29,7 @@ Dai Xaau / Tai Xaau Script は、Yunnan Province の Jinping Dai community が J
 | 2025-06-16 | WG2 | [WG2 N5310R](../documents/wg2-n5310r.md) | China NB が、76 Tai Xaau characters を UCS に追加する revised proposal を提出し、Tai Viet からの disunification を主張した。 |
 | 2025-06-26 | WG2 | [WG2 N5340](../documents/wg2-n5340.md) | Dao Jie / Qi Ziyuan が、WG2 \#72 で Tai Xaau proposal の背景、community recognition、教育・使用例を presentation として示した。 |
 | 2025-06-27 | WG2 | [WG2 N5304](../documents/wg2-n5304.md) | WG2 \#72 M72.15 が Dai Xaau proposal の progress を note し、proposal authors に継続作業を促した。 |
-| 2026-06-18 | WG2 | [WG2 N5368](../documents/wg2-n5368.md) | China が `WG2 N5310R` の補足として、Dai Xaau / White Dai と Dai Viet / Black Tai の差異、追加文字、numerical abbreviations を説明した。 |
+| 2026-06-18 | WG2 | [WG2 N5368](../documents/wg2-n5368.md) | China が [WG2 N5310R](../documents/wg2-n5310r.md) の補足として、Dai Xaau / White Dai と Dai Viet / Black Tai の差異、追加文字、numerical abbreviations を説明した。 |
 
 ## 主な論点
 

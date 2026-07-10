@@ -28,7 +28,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2002-04 | IRG | [IRG N891](../documents/irg-n891.md) | China が Extension C1 candidate list を提出し、後続の G-source evidence history の参照点になった。 |
 | 2008-11 | IRG | [IRG N1519](../documents/irg-n1519.md) | China が CJK_D candidates の source evidence package を提出した。 |
 | 2025-08 | IRG | [IRG N2860](../documents/irg-n2860.md) | Ma Shijie が 25 T-source glyphs の revision request を提出した。 |
-| 2025-10 | IRG | [IRG N2861](../documents/irg-n2861.md) | TCA が `IRG N2860` に response し、no change / mapping change / modification / pending に分類した。 |
+| 2025-10 | IRG | [IRG N2861](../documents/irg-n2861.md) | TCA が [IRG N2860](../documents/irg-n2860.md) に response し、no change / mapping change / modification / pending に分類した。 |
 | 2025-12 | IRG | [IRG N2918](../documents/irg-n2918.md) | Huáng Jùnliàng が U+3062B / U+30C68 の UK-source glyph を archival evidence に基づいて更新する提案を出した。 |
 | 2026-02 | IRG | [IRG N2916](../documents/irg-n2916.md) | K-source KC-05216 / U+2DB7C について、glyph を三つの 兔 を含む形に直し、`kRSUnicode` を 77.24 へ変更する proposal が出た。 |
 | 2026-03 | IRG | [IRG N2919R](../documents/irg-n2919r.md), [IRG N2923R](../documents/irg-n2923r.md) | G-source glyph / reference changes と horizontal extension candidates の大規模 proposal が出たが、Meeting \#66 では further discussion / China response 待ちになった。 |
@@ -36,14 +36,14 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2026-03 | IRG | [IRG N2930](../documents/irg-n2930.md) | U+236AC、U+24A1E、U+24E82 の `GU` source references を `GHC` source references へ変更する提案が出た。 |
 | 2026-03 | IRG | [IRG N2928](../documents/irg-n2928.md) | U+268A1 / U+268A2 の V-source glyph について、現行 component が意図されたものか、U+810A 脊 に戻すべきかが照会された。 |
 | 2026-03 | IRG | [IRG N2911](../documents/irg-n2911.md), [IRG N2909](../documents/irg-n2909.md) | Meeting \#66 editorial report と recommendations が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
-| 2026-03 | IRG | [IRG N2953](../documents/irg-n2953.md) | `IRG N2928` の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
-| 2026-04 | UTC | `L2/26-099` | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
+| 2026-03 | IRG | [IRG N2953](../documents/irg-n2953.md) | [IRG N2928](../documents/irg-n2928.md) の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
+| 2026-04 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
 | 2026-04 | IRG | [IRG N2954](../documents/irg-n2954.md), [IRG N2955](../documents/irg-n2955.md) | U+2CCA3 の G-source representative glyph が original evidence と合わない問題について、修正提案と feedback が出た。 |
 | 2026-05 | IRG | [IRG N2956](../documents/irg-n2956.md), [IRG N2957](../documents/irg-n2957.md) | Extension C の GBK-source 5 characters について、glyph / source reference 修正案と feedback が出た。 |
 | 2026-06 | IRG | [IRG N2958](../documents/irg-n2958.md), [IRG N2959](../documents/irg-n2959.md) | G-source glyph revision と SAT-source glyph issue が提出された。 |
-| 2026-06 | WG2 | `WG2 N5354` | Recommendation M73.02 が `L2/26-099` の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
+| 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | Recommendation M73.02 が [L2/26-099](../documents/utc-l2-26-099.md) の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
 | 2026-07 | IRG | [IRG N2962](../documents/irg-n2962.md) | 9 G-source glyphs の revision request が提出された。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
+| 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
 
 ## 主な論点
 

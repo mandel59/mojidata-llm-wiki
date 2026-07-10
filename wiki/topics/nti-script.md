@@ -26,7 +26,7 @@ N'ti / Nti は Soninke 用の left-to-right joining alphabet を Unicode に追�
 | --- | --- | --- | --- |
 | 2023-09-21 | UTC | [L2/23-203](../documents/utc-l2-23-203.md) | Oreen Yousuf らが African scripts status report で N'ti を unencoded script として扱い、font、books、online videos、user community contact を usage evidence として記録した。 |
 | 2026-01-15 | UTC | [L2/26-028R](../documents/utc-l2-26-028r.md) | Oreen Yousuf / Ibrahima Ceesay が preliminary proposal を提出し、Soninke 用 N'ti script、27 letters、8 combining diacritics、punctuation、digits、LTR joining behavior を示した。 |
-| 2026-04-13 | UTC | [L2/26-087](../documents/utc-l2-26-087.md) | Oreen Yousuf / Ibrahima Ceesay が revised proposal を提出し、`L2/26-028R` を supersede して GIILONDE letter extender と joining behavior の説明を追加した。 |
+| 2026-04-13 | UTC | [L2/26-087](../documents/utc-l2-26-087.md) | Oreen Yousuf / Ibrahima Ceesay が revised proposal を提出し、[L2/26-028R](../documents/utc-l2-26-028r.md) を supersede して GIILONDE letter extender と joining behavior の説明を追加した。 |
 | 2026-04-17 | UTC | [L2/26-100](../documents/utc-l2-26-100.md) | SEW が N'ti を joining behavior / encoding model に追加検討が必要な script proposal として扱った。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md) | Roozbeh Pournader が N'ti や Ndiko Jonam のような LTR joining scripts を背景に `Joining_Type` の `L` / `R` semantics を検討した。 |
 

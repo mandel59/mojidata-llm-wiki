@@ -26,9 +26,9 @@ UCV / NUCV lists は、CJK Unified Ideographs の review で、component variati
 | --- | --- | --- | --- |
 | 2024-10-24 | IRG | [IRG N2702](../documents/irg-n2702.md) | M63.03 / M63.04 が UCV / NUCV examples を確認・更新し、次版 list の review schedule を置いた。 |
 | 2025-03-21 | IRG | [IRG N2765](../documents/irg-n2765.md) | M64.02 / M64.03 が UCV / NUCV examples を確認・更新し、Meeting \#65 に向けた review schedule を置いた。 |
-| 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、editor に `IRG N2931` preparation を求めた。 |
+| 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、editor に [IRG N2931](../documents/irg-n2931.md) preparation を求めた。 |
 | 2026-03-31 | IRG | [IRG N2931](../documents/irg-n2931.md) | IWDS Editor が `UCS Ideograph Unifiable Component Variations Summary List (UCV)` と `Non-Unifiable Component Variations Summary List (NUCV)` をまとめた。 |
-| 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が `IRG N2931` review を \#66 follow-up に置き、comments due を 2026-07-24 とした。 |
+| 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が [IRG N2931](../documents/irg-n2931.md) review を \#66 follow-up に置き、comments due を 2026-07-24 とした。 |
 
 ## 主な論点
 

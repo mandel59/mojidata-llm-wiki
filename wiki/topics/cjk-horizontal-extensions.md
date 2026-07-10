@@ -23,17 +23,17 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 
 | 年月 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2019-05 | IRG / WG2 | `IRG N2369R` / `WG2 N5085` | UAX \#45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
+| 2019-05 | IRG / WG2 | [IRG N2369R](../documents/irg-n2369r.md) / [WG2 N5085](../documents/irg-n2369r.md) | UAX \#45 にあるが U-source identifiers を欠く encoded ideographs へ U-source references を付ける precedent。 |
 | 2023-04 | WG2 | [WG2 N5221](../documents/wg2-n5221.md) | Japan NB が MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column へ追加する large horizontal extension request を提出。 |
 | 2024-01 | UTC | [L2/24-012](../documents/utc-l2-24-012.md) | CJK & Unihan Group が U+3150D へ UTC-00420 を `kIRG_USource` として追加する U-source horizontal extension を勧告した。 |
-| 2024-09 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` | IRG Convenor が、`WG2 N5221` 規模の horizontal extension は IRG review に向くとして Japan の IRG active participation を求めた。 |
+| 2024-09 | IRG / WG2 | [IRG N2721](../documents/irg-n2721.md) / [WG2 N5284](../documents/irg-n2721.md) | IRG Convenor が、[WG2 N5221](../documents/wg2-n5221.md) 規模の horizontal extension は IRG review に向くとして Japan の IRG active participation を求めた。 |
 | 2024-09 | IRG | [IRG N2722](../documents/irg-n2722.md) | JMJ horizontal extension 後の source reference / glyph correspondence issue を指摘。 |
 | 2026-03 | IRG | [IRG N2929](../documents/irg-n2929.md) | China が 9156 characters の `G-source` horizontal extension を提出。source は `GCW-Source`。 |
 | 2026-03 | IRG | [IRG N2923R](../documents/irg-n2923r.md) | Dong Wenjie が GGH-source 6 characters と GXC-source 3 characters の horizontal extension candidates を Appendix B に示した。 |
-| 2026-03 | IRG | `IRG N2909` | M66.09 が `IRG N2929` の review と revised document `IRG N2929R` の準備を action item 化。 |
+| 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.09 が [IRG N2929](../documents/irg-n2929.md) の review と revised document `IRG N2929R` の準備を action item 化。 |
 | 2026-06 | IRG | [IRG N2960](../documents/irg-n2960.md) | UK が WS2024 review で既存 CJK Unified Ideographs に unified された 2 characters の horizontal extension を提案。 |
-| 2026-07 | IRG / UTC | `IRG N2961` / `L2/26-147` | UTC が 40 CJK Unified Ideographs への `kIRG_USource` value と U-source representative glyph 追加を提案。 |
-| 2026-07 | IRG | `IRG N2935` | Meeting \#67 agenda Section 8 に G-source、UK、U-source horizontal extension が載った。 |
+| 2026-07 | IRG / UTC | [IRG N2961](../documents/utc-l2-26-147.md) / [L2/26-147](../documents/utc-l2-26-147.md) | UTC が 40 CJK Unified Ideographs への `kIRG_USource` value と U-source representative glyph 追加を提案。 |
+| 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 8 に G-source、UK、U-source horizontal extension が載った。 |
 | 2026-07 | PRI | [PRI \#546](../documents/pri-546.md) | JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を受け、Moji_Joho IVD collection への 8 IVS 追加登録が review に出た。 |
 
 ## 主な論点

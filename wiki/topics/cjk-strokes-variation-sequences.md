@@ -23,8 +23,8 @@ CJK Strokes Variation Sequences は、CJK Strokes characters に standardized va
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-03-04 | UTC | `L2/26-073R` | Night Koo が CJK Strokes characters 向け standardized variation sequences の revised proposal を提出した。 |
-| 2026-04-11 | UTC | `L2/26-099` | CJK & Unihan Working Group が 17 standardized variation sequences を Unicode Version 18.0 target で受け入れ、Pipeline、`StandardizedVariants.txt`、code charts、Core Specification Appendix F を更新する action item を置いた。 |
+| 2026-03-04 | UTC | [L2/26-073R](../documents/utc-l2-26-073r.md) | Night Koo が CJK Strokes characters 向け standardized variation sequences の revised proposal を提出した。 |
+| 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が 17 standardized variation sequences を Unicode Version 18.0 target で受け入れ、Pipeline、`StandardizedVariants.txt`、code charts、Core Specification Appendix F を更新する action item を置いた。 |
 
 ## 主な論点
 

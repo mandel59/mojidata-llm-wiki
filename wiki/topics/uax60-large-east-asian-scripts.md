@@ -27,7 +27,7 @@ UAX \#60 Data for Large East Asian Scripts は、Unicode の large East Asian sc
 | 2026-04-03 | UTC | [L2/26-095](../documents/utc-l2-26-095.md) | Michelle Perham が PRI \#520 / Draft UAX \#60 を public review issue 一覧に含めた。 |
 | 2026-04-03 | UTC | [L2/26-108](../documents/utc-l2-26-108.md) | Michel Suignard が Draft UAX \#60 Revision 2 を提出し、Jurchen、Nüshu、Seal、Tangut data files と property categories を説明した。 |
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group recommendations が PRI \#520 / Draft UAX \#60 feedback として、`kSEAL_Rad` delimiter、`kSEAL_THXSrc` syntax、description 文字列の修正を action item 化した。 |
-| 2026-04-15 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | RMG report が Unicode 18.0 beta に入れる調整として、UAX \#60 title を `Data for Non Han Ideographic Scripts` から `Data for Large East Asian Scripts` に変える action を記録した。 |
+| 2026-04-15 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | RMG report が Unicode 18.0 beta に入れる調整として、UAX \#60 title を [Data for Non Han Ideographic Scripts](../documents/utc-l2-26-108.md) から `Data for Large East Asian Scripts` に変える action を記録した。 |
 | 2026-07-07 | PRI | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Seal / Jurchen / Tangut data attributes が UCD XML representation に反映された。 |
 
 ## 主な論点

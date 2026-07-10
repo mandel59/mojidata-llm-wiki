@@ -30,7 +30,7 @@ Unicode 18.0 cycle では、UAX \#38 Revision 40、UTS \#37 Revision 15、`RSInd
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` に simplified radical group を示す `|` / `||` / `|||` separator を導入する syntax enhancement を提案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG FS & SC conventions と ORT metadata checking に合わせる変更を提案。 |
 | 2026-07-07 | PRI | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、UCD XML schema に `kJapaneseNewVariant` / `kJapaneseOldVariant` 追加と `kIRGDaeJaweon` / `kIRGKangXi` 削除が反映された。 |
-| 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が `L2/26-099` 由来の CJK additions and changes を ISO/IEC 10646 CD progression に接続した。 |
+| 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が [L2/26-099](../documents/utc-l2-26-099.md) 由来の CJK additions and changes を ISO/IEC 10646 CD progression に接続した。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。 |
 
 ## 主な論点
