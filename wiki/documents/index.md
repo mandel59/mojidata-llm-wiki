@@ -192,6 +192,8 @@
 - [IRG N1531](irg-n1531.md) - 3,215 G-source Extension D candidates の withdrawal request。
 - [IRG N1532R](irg-n1532r.md) - urgently needed G-source characters の evidence data。
 - [IRG N2367](irg-n2367.md) - Japan Activity Report; IRG Working Set review 不参加方針。
+- [IRG N2442](irg-n2442.md) - 175 GBK references、2 glyphs、2 horizontal extensionsの更新提案。
+- [IRG N2656](irg-n2656.md) - IRG source reference一意性の提案。
 - [WG2 N5221](wg2-n5221.md) - JMJ references の J-column horizontal extension request。
 - [WG2 N5253](wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
 - [IRG N2702](irg-n2702.md) - IRG \#63 recommendations; CJK components encoding の開始判断。
@@ -219,6 +221,7 @@
 - [IRG N2867R](irg-n2867r.md) - Multi-Syllabic Characters and Abbreviation Characters。
 - [IRG N2868](irg-n2868.md) - GCH / GXC / GCY source reference proposals への feedback。
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
+- [IRG N2874R](irg-n2874r.md) - `IRG N2840` の4 G-source glyph issuesへのfeedback。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2885R](irg-n2885r.md) - `IRG N2866R` への CJK Hybrid Characters feedback。
 - [IRG N2887](irg-n2887.md) - IRG Working Set 2024 Version 4.0 snapshot。
