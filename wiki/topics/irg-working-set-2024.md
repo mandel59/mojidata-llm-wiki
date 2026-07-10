@@ -4,7 +4,7 @@ title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935]
+documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935]
 status: active
 tags: [irg, working-set, cjk, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00

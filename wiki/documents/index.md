@@ -221,6 +221,9 @@
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2885R](irg-n2885r.md) - `IRG N2866R` への CJK Hybrid Characters feedback。
+- [IRG N2887](irg-n2887.md) - IRG Working Set 2024 Version 4.0 snapshot。
+- [IRG N2888](irg-n2888.md) - WS2024 Version 4.0 consolidated comments。
+- [IRG N2899](irg-n2899.md) - IRG Meeting \#66 schedule and agenda。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2893](irg-n2893.md) - China advice on CJK Hybrid Characters。
 - [IRG N2895](irg-n2895.md) - IRG N2878R への source coverage / disunification feedback。
