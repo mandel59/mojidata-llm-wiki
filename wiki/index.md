@@ -62,6 +62,7 @@ okf_version: "0.1"
 - [East Asian Quotation Marks](topics/east-asian-quotation-marks.md) - East Asian text における quotation marks の core spec guidance、縦横組、地域差。
 - [Chinese Folk Music Notation](topics/chinese-folk-music-notation.md) - Chinese folk music / Xiqu / Quyi notation の musical symbols と format controls。
 - [Indic Script Notation and Rendering](topics/indic-script-notation-and-rendering.md) - Indic scripts における Vedic notation、combining marks、rendering guidance。
+- [Mathematical Text Support](topics/mathematical-text-support.md) - UTR \#25 を入口にした数学文字、Math property、math data files、plain-text math と markup の境界。
 - [Leibnizian and Historic Mathematical Symbols](topics/leibnizian-and-historic-mathematical-symbols.md) - Leibnizian ambiguous signs と historic mathematical sources 用 symbols。
 - [Maya Hieroglyph Encoding](topics/maya-hieroglyph-encoding.md) - Codical Maya と Classic Maya Hieroglyphs Extended-A の staged / unified encoding。
 - [Plain-Text Composition and Overstriking](topics/plain-text-composition-and-overstriking.md) - COMPOSE character、overstriking、format controls と Unicode text model の境界。

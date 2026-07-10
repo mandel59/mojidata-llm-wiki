@@ -44,7 +44,7 @@ Script and Notation Proposals は、Han / ideographic 系と emoji 以外の scr
 
 - [Han Ideographic Scripts](han-ideographic-scripts.md) - Han / ideographic 系は source data、IRG review、Unihan property と強く結びつくため別 family に置く。
 - [Emoji](emoji.md) - emoji repertoire は proposal intake という点では近いが、ESR / UTS \#51 / CLDR の pipeline が中心であるため別 family に置く。
-- [Text Model and Core Specification](text-model-and-core-specification.md) - COMPOSE / overstriking、spacing algorithm、set notation など text model 側に寄る論点は別 family で扱う。
+- [Text Model and Core Specification](text-model-and-core-specification.md) - COMPOSE / overstriking、spacing algorithm、set notation、mathematical text support など text model 側に寄る論点は別 family で扱う。
 
 ## 出典
 

@@ -4,11 +4,11 @@ title: Unicode Properties and Algorithms
 description: "UTC #187 PAG report を中心にした Unicode properties、algorithm text、security data の更新論点。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-547, pri-552, pri-553, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
-topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, plain-text-composition-and-overstriking]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
+topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
-tags: [properties, algorithms, ucd, uax14, uax29, uax31, uax44, uts10, uts39, uts61, security]
+tags: [properties, algorithms, ucd, math, uax11, uax14, uax24, uax29, uax31, uax42, uax44, uts10, uts39, uts61, security]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
 
@@ -34,9 +34,15 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-04-16 | UTC | [L2/26-096](../documents/utc-l2-26-096.md) | PAG が UTC \#187 に properties feedback と recommendations を提出した。 |
 | 2026-04-21/23 | UTC | [L2/26-093](../documents/utc-l2-26-093.md) | UTC \#187 minutes が Unicode 18.0 beta review の action items として PAG report を扱った。 |
 | 2026-06-09 | UTC | [L2/26-137](../documents/utc-l2-26-137.md), [L2/26-138](../documents/utc-l2-26-138.md), [L2/26-139](../documents/utc-l2-26-139.md) | UTC \#188 候補として Joining_Type for LTR scripts、consecutive anusvaras、COMPOSE proposal が登録された。 |
+| 2026-07-07 | PRI | [PRI \#533](../documents/pri-533.md) | UTR \#25 Revision 16 public review の closing date。Math property / math classification data / security guidance を扱う mathematical text support の更新入口になった。 |
+| 2026-07-07 | UTC | [PRI \#545](../documents/pri-545.md) | UAX \#11 Revision 45 public review が close し、Unicode 18.0 の East_Asian_Width unassigned range handling が UTC \#188 に接続した。 |
 | 2026-07-07 | UTC | [PRI \#547](../documents/pri-547.md) | UAX \#44 Revision 37 public review が close し、UCD data files、derived properties、UAX \#60 data file documentation、directory structure の確認点が UTC \#188 に接続した。 |
+| 2026-07-07 | UTC | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Unicode 18.0 の UCD XML schema、Seal / Jurchen / Unihan attributes が UTC \#188 に接続した。 |
+| 2026-07-07 | UTC | [PRI \#550](../documents/pri-550.md) | UAX \#41 Revision 37 public review が close し、Unicode 18.0 の common references / versioned data URLs の確認点が UTC \#188 に接続した。 |
+| 2026-07-07 | UTC | [PRI \#551](../documents/pri-551.md) | UAX \#14 Revision 56 public review が close し、Line_Break assignments と LB12a の EN DASH / NBSP behavior が UTC \#188 に接続した。 |
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UAX \#29 Revision 48 public review が close し、GB9c / Indic_Conjunct_Break による grapheme cluster boundary の更新が UTC \#188 に接続した。 |
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、security mechanisms / confusables data の Unicode 18.0 finalization が UTC \#188 に接続した。 |
+| 2026-07-07 | UTC | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、ISO 15924 mixed-script script codes の explanation が UTC \#188 に接続した。 |
 
 ## 主な論点
 
@@ -45,6 +51,8 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 PAG report は、Arabic marks の Diacritic property、U+FE51 / U+2012 / U+2013 / U+00AD の Line_Break 値、LB12a text を Unicode 18.0 に合わせて調整する。実装者は release note だけでなく beta UCD と UAX \#14 text を確認する必要がある。
 
 [PRI \#547](../documents/pri-547.md) の UAX \#44 Revision 37 は、Unicode 18.0 の UCD directory structure、property definitions、derived properties、UCD change history を読む入口である。特に `InCB=Linker` derivation、`JurchenSources.txt` / `SealSources.txt`、UAX \#60 data file documentation は、PAG report や beta data と合わせて確認する。
+
+[PRI \#545](../documents/pri-545.md) の UAX \#11 Revision 45 は、East_Asian_Width の Section 6.1 unassigned range handling を Unicode 18.0 向けに調整する review issue である。[PRI \#551](../documents/pri-551.md) の UAX \#14 Revision 56 は、U+2012 / U+2013 / U+00AD の `Line_Break` assignments と LB12a を同時に扱うため、data file と algorithm rule の両方を確認する。
 
 ### Segmentation と derived properties
 
@@ -82,6 +90,18 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 [L2/26-091](../documents/utc-l2-26-091.md) は、Mongolian standardized variants を `StandardizedVariants.txt` から deprecate する提案である。これは code point 追加ではなく UCD data model、variation selector semantics、Core Specification guidance の整理問題として扱う。
 
+### Script property、UCD XML、references
+
+[PRI \#554](../documents/pri-554.md) の UAX \#24 Revision 40 は、`Script` / `Script_Extensions` property model と ISO 15924 mixed-script script codes の関係を説明する documentation update である。新規 script proposal の採否ではなく、encoded script が property value、alias、regex、identifier handling に現れる層として読む。
+
+[PRI \#549](../documents/pri-549.md) の UAX \#42 Revision 39 は、Unicode 18.0 の UCD XML representation に new blocks / scripts、Jurchen / Seal / Tangut attributes、Unihan property changes を反映する。plain text UCD files だけでなく XML schema を使う tool では、attribute addition / removal を確認する必要がある。
+
+[PRI \#550](../documents/pri-550.md) の UAX \#41 Revision 37 は common references の update であり、algorithm change そのものではない。ただし Unicode 18.0 の versioned data URLs と UAX / UTS references をそろえる release artifact として、implementation review の参照先確認に関わる。
+
+### Mathematical character properties
+
+[Mathematical Text Support](mathematical-text-support.md) は UTR \#25 を入口に、UCD の `Math` property と UTR \#25 側の informative `MathClass` data を扱う。[PRI \#533](../documents/pri-533.md) の Revision 16 draft は HTML migration が中心だが、math data files を W3C HTML-MathML Entity definitions に合わせ、Unicode General Category を listed data に追加する更新を含む。
+
 ### East Asian Spacing と UTS \#61
 
 [East Asian Spacing](east-asian-spacing.md) は `East_Asian_Spacing` property と algorithm を提案し、East Asian scripts と Latin / digits などの間の visible spacing を layout / UCD data の問題として扱う。
@@ -108,9 +128,15 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [L2/26-108](../documents/utc-l2-26-108.md) - Draft UAX \#60 Data for Non Han Ideographic Scripts。
 - [L2/26-109](../documents/utc-l2-26-109.md) - UTS \#10 Unicode Collation Algorithm proposed update。
 - [L2/26-110](../documents/utc-l2-26-110.md) - UAX \#31 proposed update。
+- [PRI \#533](../documents/pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。
+- [PRI \#545](../documents/pri-545.md) - UAX \#11 East Asian Width Revision 45 public review。
 - [PRI \#547](../documents/pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
+- [PRI \#549](../documents/pri-549.md) - UAX \#42 Unicode Character Database in XML Revision 39 public review。
+- [PRI \#550](../documents/pri-550.md) - UAX \#41 Common References for Unicode Standard Annexes Revision 37 public review。
+- [PRI \#551](../documents/pri-551.md) - UAX \#14 Unicode Line Breaking Algorithm Revision 56 public review。
 - [PRI \#552](../documents/pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。
 - [PRI \#553](../documents/pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
+- [PRI \#554](../documents/pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [L2/26-111](../documents/utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-119](../documents/utc-l2-26-119.md) - U+06C4 glyph correction proposal。
 - [L2/26-120](../documents/utc-l2-26-120.md) - U+06C4 glyph correction response。
@@ -131,6 +157,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [Arabic Mark Rendering](arabic-mark-rendering.md)
 - [Egyptian Hieroglyph Data and Unikemet](egyptian-hieroglyph-data-and-unikemet.md)
 - [Indic Script Notation and Rendering](indic-script-notation-and-rendering.md)
+- [Mathematical Text Support](mathematical-text-support.md)
 - [Plain-Text Composition and Overstriking](plain-text-composition-and-overstriking.md)
 
 ## 出典
@@ -145,9 +172,15 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - `utc-l2-26-108` - <https://www.unicode.org/L2/L2026/26108-uax60-2-draft-pri520.pdf>
 - `utc-l2-26-109` - <https://www.unicode.org/L2/L2026/26109-uts10-54-update-pri542.pdf>
 - `utc-l2-26-110` - <https://www.unicode.org/L2/L2026/26110-uax31-44-update-pri535.pdf>
+- `pri-533` - <https://www.unicode.org/review/pri533/>
+- `pri-545` - <https://www.unicode.org/review/pri545/>
 - `pri-547` - <https://www.unicode.org/review/pri547/>
+- `pri-549` - <https://www.unicode.org/review/pri549/>
+- `pri-550` - <https://www.unicode.org/review/pri550/>
+- `pri-551` - <https://www.unicode.org/review/pri551/>
 - `pri-552` - <https://www.unicode.org/review/pri552/>
 - `pri-553` - <https://www.unicode.org/review/pri553/>
+- `pri-554` - <https://www.unicode.org/review/pri554/>
 - `utc-l2-26-111` - <https://www.unicode.org/L2/L2026/26111-uts61-1-draft-pri523.pdf>
 - `utc-l2-26-119` - <https://www.unicode.org/L2/L2026/26119-arabic-letter-waw-with-ring-within.pdf>
 - `utc-l2-26-120` - <https://www.unicode.org/L2/L2026/26120-waw-ring-glyph-change.pdf>

@@ -2,8 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-10
+
+- **Digest**: Added [PRI \#533](documents/pri-533.md) and [L2/25-267](documents/utc-l2-25-267.md) for UTR \#25 Unicode Support for Mathematics Revision 16 and opened [Mathematical Text Support](topics/mathematical-text-support.md), separating broad math text / `Math` property / `MathClass` data guidance from the Leibnizian and historic mathematical symbols proposal chain.
+
 ## 2026-07-09
 
+- **Digest**: Added [PRI \#545](documents/pri-545.md), [PRI \#549](documents/pri-549.md), [PRI \#550](documents/pri-550.md), [PRI \#551](documents/pri-551.md), and [PRI \#554](documents/pri-554.md) for Unicode 18.0 UAX \#11 / \#42 / \#41 / \#14 / \#24 public reviews, connecting East_Asian_Width, UCD XML, common references, line breaking, and Script property updates to the Unicode 18.0 beta review bundle.
 - **Digest**: Added [PRI \#552](documents/pri-552.md) for UAX \#29 Unicode Text Segmentation Revision 48, connecting GB9c / `Indic_Conjunct_Break` changes to Unicode 18.0 beta review, UAX \#44 derived data, Indic text behavior, and UTC \#188 tracking.
 - **Digest**: Added [PRI \#553](documents/pri-553.md) for UTS \#39 Unicode Security Mechanisms Revision 33, connecting Unicode 18.0 security / confusables review to the beta package, PAG report, CJK Security Confusables, and UTC \#188 tracking.
 - **Digest**: Added [PRI \#547](documents/pri-547.md) for UAX \#44 Revision 37, connecting Unicode 18.0 UCD directory structure, UAX \#60 data-file documentation, and beta release data review to properties / release topics.

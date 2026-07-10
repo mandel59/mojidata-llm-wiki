@@ -96,11 +96,17 @@
 - [L2/26-110](utc-l2-26-110.md) - UAX \#31 Unicode Identifiers and Syntax Revision 44 proposed update。
 - [L2/26-111](utc-l2-26-111.md) - UTS \#61 Unicode Set Notation draft。
 - [L2/26-112](utc-l2-26-112.md) - Unicode 18.0.0 向け UTS \#37 Revision 15 proposed update。
+- [PRI \#533](pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。
+- [PRI \#545](pri-545.md) - UAX \#11 East Asian Width Revision 45 public review。
 - [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
 - [PRI \#547](pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
 - [PRI \#548](pri-548.md) - Unicode 18.0.0 Beta public review。
+- [PRI \#549](pri-549.md) - UAX \#42 Unicode Character Database in XML Revision 39 public review。
+- [PRI \#550](pri-550.md) - UAX \#41 Common References for Unicode Standard Annexes Revision 37 public review。
+- [PRI \#551](pri-551.md) - UAX \#14 Unicode Line Breaking Algorithm Revision 56 public review。
 - [PRI \#552](pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。
 - [PRI \#553](pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
+- [PRI \#554](pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [L2/26-113](utc-l2-26-113.md) - Kodava 用 Kannada diacritics proposal。
 - [L2/26-114](utc-l2-26-114.md) - Devanagari vowel length mark proposal。
 - [L2/26-117](utc-l2-26-117.md) - Catholic Albanian letter edhe proposal。
@@ -150,6 +156,7 @@
 - [L2/25-257](utc-l2-25-257.md) - METEOR emoji proposal。
 - [L2/25-258](utc-l2-25-258.md) - NET WITH HANDLE emoji proposal。
 - [L2/25-259](utc-l2-25-259.md) - Squinting Face emoji proposal replaced by CRACKING FACE。
+- [L2/25-267](utc-l2-25-267.md) - UTR \#25 Unicode Support for Mathematics Revision 16 draft。
 - [L2/25-274](utc-l2-25-274.md) - 日本古典籍に現れる ideograph の追加提案。
 - [L2/26-062](utc-l2-26-062.md) - Indian languages の rendering / input / search / processing report。
 - [L2/26-008R](utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
