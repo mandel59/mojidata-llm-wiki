@@ -209,16 +209,24 @@ def topic_index_entries() -> dict[str, str]:
 def root_current_topic_links() -> set[str]:
     root = WIKI / "index.md"
     page = read_page(root)
-    return {Path(target).stem for target in markdown_link_targets(root, page.body) if target.startswith("topics/")}
+    return {
+        Path(target).stem
+        for target in markdown_link_targets(root, page.body)
+        if target.startswith("topics/") and target.endswith(".md") and Path(target).name != "index.md"
+    }
 
 
 def check_root_current_topics(concepts: dict[str, Concept], fix: bool) -> list[str]:
-    topic_ids = {concept.id for concept in concepts.values() if concept.type == "Topic"}
     present = root_current_topic_links()
-    missing = sorted(topic_ids - present)
-    if fix and missing:
-        fix_root_current_topics(missing)
-    return [f"index.md: Current Topics is missing topics/{slug}.md" for slug in missing]
+    root_text = (WIKI / "index.md").read_text(encoding="utf-8")
+    errors: list[str] = []
+    if "(topics/)" not in root_text and "(topics/index.md)" not in root_text:
+        errors.append("index.md: root navigation must link to the complete Topics index")
+    if not present:
+        errors.append("index.md: root navigation must include at least one curated topic")
+    if len(present) > 12:
+        errors.append(f"index.md: root navigation lists {len(present)} topics; keep the curated entry point at 12 or fewer")
+    return errors
 
 
 def fix_root_current_topics(missing: list[str]) -> None:
