@@ -4,6 +4,7 @@
 
 ## 2026-07-11
 
+- **Review**: Clarified future-meeting state: IRG N2946 is a reserved Meeting \#67 register row whose PDF still returns HTTP 404, and UTC \#188 post-\#187 documents are tracking candidates rather than confirmed agenda items.
 - **Maintenance**: Made concept alias collisions a validation error and separated broad specification names, concrete L2 revisions, and PRI review-record identities for UTR \#25, UTR \#59, and UTS \#61.
 
 ## 2026-07-10

@@ -1,7 +1,7 @@
 ---
 type: Meeting
 title: "UTC Meeting #188"
-description: "2026-07-30 予定の UTC Meeting #188。Unicode 18.0 content finalize と UTC #187 後の候補文書の追跡ページ。"
+description: "2026-07-30 予定の UTC Meeting #188。Unicode 18.0 content finalize と UTC #187 後に登録された候補文書の追跡ページ。"
 slug: utc-meeting-188
 body: UTC
 bodies: [UTC]
@@ -19,11 +19,13 @@ timestamp: 2026-07-09T00:00:00+09:00
 
 ## 概要
 
-UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-07-08 時点で、UTC Document Register for 2026 は 2026-07-06 更新であり、`UTC #188 Agenda`、minutes、working group reports はまだ catalog に掲載されていない。
+UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-07-11 時点で、`UTC #188 Agenda`、minutes、working group reports は catalog に掲載されていない。
 
 このページは、正式な agenda / minutes が出た時点で更新する tracking page である。現時点で断定できるのは、[PRI \#548](../../documents/pri-548.md) として Unicode 18.0 beta public review が 2026-07-07 に closed になったこと、[PRI \#552](../../documents/pri-552.md) として UAX \#29 Revision 48 public review、[PRI \#553](../../documents/pri-553.md) として UTS \#39 Revision 33 public review も同日に closed になったこと、UTC \#188 が 2026-07-30 content finalize の予定として `L2/26-102` に記録されていること、そして `L2/26-127` 以降に UTC \#187 後の候補文書が複数登録されていることである。
 
-## 主要議題
+## 追跡候補
+
+以下は UTC \#187 後に registerへ追加された文書と Unicode 18.0 finalize に関係するreview文書を整理した候補一覧であり、UTC \#188 の正式agenda itemとして確認されたものではない。agenda公開後、実際に掲載された案件だけを `## 主要議題` として再整理する。
 
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - [PRI \#548](../../documents/pri-548.md) の beta feedback snapshot 後の content finalize。
 - [CJK Security Confusables](../../topics/cjk-security-confusables.md) - [L2/26-127](../../documents/utc-l2-26-127.md) の second review request。
@@ -39,7 +41,7 @@ UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 
 
 ## 決定事項
 
-2026-07-08 時点では未確認。Agenda / minutes / RMG report が UTC register に掲載された後に更新する。
+2026-07-11 時点では、会合前であり決定事項は発生していない。Agenda / minutes / RMG report が UTC register に掲載された後に更新する。
 
 ## 後続確認
 
