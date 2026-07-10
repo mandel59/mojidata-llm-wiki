@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n891, irg-n1519, irg-n2860, irg-n2861, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
+documents: [irg-n891, irg-n1519, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]

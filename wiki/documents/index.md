@@ -199,13 +199,16 @@
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2826](irg-n2826.md) - IRG \#65 recommendations; CJK Hybrid Characters policy。
 - [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。
+- [IRG N2837](irg-n2837.md) - 82 GXC-source characters の source reference update proposal。
 - [IRG N2852](irg-n2852.md) - traditional printing orthography に基づく components feedback。
 - [IRG N2859](irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2860](irg-n2860.md) - 25 T-source glyphs の revision request。
 - [IRG N2861](irg-n2861.md) - `IRG N2860` への TCA response。
 - [IRG N2862R2](irg-n2862r2.md) - IWDS 用 SC / FS guideline R2。
+- [IRG N2864R](irg-n2864r.md) - 1,538 G-source references の bulk update proposal。
 - [IRG N2866R2](irg-n2866r2.md) - Script-Hybrid Characters and GB 18030。
 - [IRG N2867R](irg-n2867r.md) - Multi-Syllabic Characters and Abbreviation Characters。
+- [IRG N2868](irg-n2868.md) - GCH / GXC / GCY source reference proposals への feedback。
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2885R](irg-n2885r.md) - `IRG N2866R` への CJK Hybrid Characters feedback。

@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n891, irg-n1519, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
+documents: [irg-n891, irg-n1519, irg-n2837, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
@@ -26,6 +26,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 | --- | --- | --- | --- |
 | 2002-04-18 | IRG | [IRG N891](../documents/irg-n891.md) | China が Extension C1 candidate list を提出し、後続の `GZFY-00932` source history に関わる `zjw00932` などの entries を含めた。 |
 | 2008-11-06 | IRG | [IRG N1519](../documents/irg-n1519.md) | China が CJK_D candidates の evidence package を提出し、`Hanyu Fangyan Da Cidian` などの source evidence と candidate review 情報を示した。 |
+| 2025-04-03 | IRG | [IRG N2837](../documents/irg-n2837.md) | Judith Chen が82 GXC-source charactersを辞書のpage / position形式へ更新するよう提案した。 |
+| 2025-09-16 | IRG | [IRG N2868](../documents/irg-n2868.md) | Dong Wenjie がGCH / GXC / GCYについてoriginal submission時のeditionとprintingに基づく再検討を求めた。 |
+| 2025-09-28 | IRG | [IRG N2864R](../documents/irg-n2864r.md) | China が9種類・1,538 charactersのG-source referencesとsource description / syntaxの更新を提案した。 |
 | 2026-03-09 | IRG | [IRG N2919R](../documents/irg-n2919r.md) | Wang Xieyang が 3 G-source glyph changes と 10 source reference changes を提案した。Meeting \#66 では U+250A9 / U+25805 glyph revisions は in principle accepted、U+26C25 と reference changes は継続確認になった。 |
 | 2026-03-10 | IRG | [IRG N2923R](../documents/irg-n2923r.md) | Dong Wenjie が 329 G-source reference updates と 9 horizontal extension candidates を提案した。Meeting \#66 では further discussion / China response 待ちになった。 |
 | 2026-03-14 | IRG | [IRG N2930](../documents/irg-n2930.md) | Boris Zhang / Wang Xieyang が U+236AC、U+24A1E、U+24E82 の `GU` references を `GHC` references へ変更する提案を出した。Meeting \#66 で accepted になった。 |
