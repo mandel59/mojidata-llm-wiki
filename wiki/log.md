@@ -4,6 +4,7 @@
 
 ## 2026-07-10
 
+- **Synthesis**: Expanded [CJKV Components](topics/cjkv-components.md) with a variant-handling decision summary, separating ordinary UCV-range variation, representative glyph changes, component use cases, and NUCV / source-separation grounds for disunification.
 - **Digest**: Added [IRG N2887](documents/irg-n2887.md), [IRG N2888](documents/irg-n2888.md), and [IRG N2899](documents/irg-n2899.md), connecting the WS2024 Version 4.0 snapshot and consolidated comments to the IRG Meeting \#66 agenda and outcomes.
 - **Digest**: Added [IRG N2689](documents/irg-n2689.md), [IRG N2840](documents/irg-n2840.md), and [IRG N2863](documents/irg-n2863.md), covering the remaining bulk-reference, glyph, and G3/G5 inputs consolidated by IRG N2864R.
 - **Digest**: Added [WG2 N4755](documents/wg2-n4755.md), [WG2 N4853](documents/wg2-n4853.md), and [WG2 N4973](documents/wg2-n4973.md), filling the Small Seal feedback and ad hoc consensus path from N4716 to N5089.

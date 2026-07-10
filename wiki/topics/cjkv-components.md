@@ -93,6 +93,25 @@ IRG \#66 Recommendation M66.17 による WG2 forwarding は [IRG M66.17 CJKV Com
 
 [UCV and NUCV Lists](ucv-nucv-lists.md) は、component variation を unifiable と見るか、source separation / disunification と見るかを示す IRG reference data である。CJKV Components は components を encoded characters として扱うため、component shape の差が ordinary ideograph unification の範囲内か、component repertoire として別に持つべきかを判断する際に UCV / NUCV と接続する。
 
+### Variant の判断基準
+
+CJKV Components では、形が異なることや既存 ideograph の variant に見えることだけで、別 character としての符号化可否を決めない。まず通常の Han unification で扱える component variation かを UCV / NUCV examples と source evidence から確認し、そのうえで component として独立した利用実態、non-cognate distinction、source separation の必要性を検討する。
+
+| 差の性質 | review 上の扱い |
+| --- | --- |
+| stroke、dot、接触、交差、突出など通常の UCV 範囲 | 原則として同一 character に unify する。 |
+| representative glyph の style 差 | character separation ではなく、source / glyph data の修正として扱う。 |
+| component として独立した利用実態がある形 | 通常の CJKUI behavior を持つ component character として符号化を検討する。 |
+| non-cognate distinction、NUCV、既存 source separation に相当する差 | disunification または別 character を検討する。 |
+| source の異なる形 | source が違うだけでは自動的に分離せず、evidence と use case を個別に review する。 |
+| rationale や use case が不足する候補 | first batch には入れず、second or subsequent batch への再提出対象とする。 |
+
+[IRG N2917](../documents/irg-n2917.md) は U+2FAEF を `屯` の variant とみなし、component block ではなく normal CJK Unified Ideograph として扱うよう求めた。最終 proposal [IRG N2878R3](../documents/irg-n2878r3.md) は、対象 characters が CJKUI behavior と整合し、component collection の目的で必要だという過去会合の consensus を維持した一方、HCP-00033 / HCP-00400 の removal や source reference / radical data の修正は採用した。これは「variant か component か」を一律に決めるのではなく、repertoire inclusion と metadata / glyph correction を分けて判断した例である。
+
+[IRG N2890](../documents/irg-n2890.md) の Jianzi Musical Notation feedback は、音楽記譜向け style と一般の CJKUI representative glyph convention の差を問題にした。この場合も論点は別 character の追加ではなく、同一 component の representative glyph をどの利用範囲に合わせるかである。
+
+初期 proposal [IRG N2799](../documents/irg-n2799.md) が future work とした conditional variants の SVS 等による表現は、final first batch で一般的な解決方式として確定していない。現行整理では、source reference、representative glyph、UCV / NUCV、individual use cases を review し、first batch で根拠が不足する disunification や lost component の指摘は future batch に残している。
+
 ## 現状
 
 2026-07-05 更新の `IRG N2935` 時点では、CJK Unified Ideographs Components-A / B は WG2 \#73 で受け入れが勧告され、SC2 が 2026-06-26 に ISO/IEC 10646 Seventh Edition Amendment 1 として accept した。Unicode 側の target は Unicode Version 19.0 (2027)。
