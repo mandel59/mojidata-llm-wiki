@@ -50,6 +50,7 @@ tools/
   query_wiki.py                   wiki concept graph を機械的にクエリ
   document_sections.py            Markdown concept page の目次表示と section 抽出
   link_timeline_documents.py      経緯表の既存文書番号を wiki page へリンク
+  generate_document_index.py      文書indexをregistry・年別に生成
   check_okf.py                    wiki の OKF v0.1 互換検査
   wiki_store.py                   wiki frontmatter、concept graph、schema validation の共通処理
   unicode_registry.py             Registry parser と共通処理
@@ -294,6 +295,13 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 ```sh
 uv run python tools/link_timeline_documents.py
 uv run python tools/link_timeline_documents.py --write
+```
+
+文書indexは手作業で並べ替えず、既存の短い説明を保持する generator で更新する。
+
+```sh
+uv run python tools/generate_document_index.py
+uv run python tools/generate_document_index.py --check
 ```
 
 ### Lint
