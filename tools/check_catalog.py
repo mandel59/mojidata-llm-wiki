@@ -49,14 +49,16 @@ def validate_entry(entry: dict, location: str, expected_registry: str | None = N
     return errors
 
 
-def check_registry(catalog_dir: Path, registry: str) -> tuple[int, list[str]]:
+def check_registry(catalog_dir: Path, registry: str) -> tuple[int, list[str], list[str]]:
     path = catalog_dir / registry / "documents.jsonl"
     if not path.exists():
-        return 0, []
+        return 0, [], []
 
     errors: list[str] = []
+    warnings: list[str] = []
     entries = read_jsonl(path)
     seen: set[tuple[str, str | None]] = set()
+    entry_id_locations: dict[str, tuple[str, str | None]] = {}
     for index, entry in enumerate(entries, start=1):
         location = f"{path}:{index}"
         errors.extend(validate_entry(entry, location, expected_registry=registry))
@@ -64,7 +66,17 @@ def check_registry(catalog_dir: Path, registry: str) -> tuple[int, list[str]]:
         if key in seen:
             errors.append(f"{location}: duplicate entry_id/url: {key}")
         seen.add(key)
-    return len(entries), errors
+        entry_id = entry.get("entry_id")
+        if isinstance(entry_id, str) and entry_id:
+            previous = entry_id_locations.get(entry_id)
+            if previous is not None and previous[1] != entry.get("document_url"):
+                warnings.append(
+                    f"{location}: duplicate entry_id with different document_url: "
+                    f"{entry_id!r} (first at {previous[0]})"
+                )
+            else:
+                entry_id_locations[entry_id] = (location, entry.get("document_url"))
+    return len(entries), errors, warnings
 
 
 def load_catalog_entries(catalog_dir: Path) -> dict[tuple[str, str], dict]:
@@ -143,14 +155,19 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     total = 0
     all_errors: list[str] = []
+    all_warnings: list[str] = []
     for registry in REGISTRIES:
-        count, errors = check_registry(args.catalog_dir, registry)
+        count, errors, warnings = check_registry(args.catalog_dir, registry)
         total += count
         all_errors.extend(errors)
+        all_warnings.extend(warnings)
         print(f"{registry}: {count} document(s)")
     derived_count, derived_errors = check_derived_documents(args.derived_documents, args.catalog_dir)
     all_errors.extend(derived_errors)
     print(f"derived overlay: {derived_count} document(s)")
+
+    for warning in all_warnings:
+        print(f"warning: {warning}", file=sys.stderr)
 
     if all_errors:
         for error in all_errors:

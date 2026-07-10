@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from tools.check_catalog import check_derived_documents
+from tools.check_catalog import check_derived_documents, check_registry
 
 
 def catalog_entry(catalog_source: str | None = "derived") -> dict:
@@ -35,6 +35,49 @@ def catalog_entry(catalog_source: str | None = "derived") -> dict:
 
 
 class CheckCatalogTest(unittest.TestCase):
+    def test_registry_warns_when_entry_id_has_different_urls(self) -> None:
+        with TemporaryDirectory() as tmp:
+            catalog_dir = Path(tmp)
+            registry_dir = catalog_dir / "wg2"
+            registry_dir.mkdir()
+            first = catalog_entry(catalog_source=None) | {
+                "entry_id": "wg2-n4563",
+                "registry": "wg2",
+                "doc_number": "WG2 N4563",
+                "display_number": "WG2 N4563",
+                "document_url": "https://www.unicode.org/wg2/docs/n4563.pdf",
+            }
+            second = first | {
+                "document_url": "https://www.unicode.org/wg2/docs/n4653.pdf",
+            }
+            (registry_dir / "documents.jsonl").write_text(
+                "\n".join(json.dumps(entry) for entry in (first, second)) + "\n",
+                encoding="utf-8",
+            )
+
+            count, errors, warnings = check_registry(catalog_dir, "wg2")
+
+        self.assertEqual(count, 2)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("duplicate entry_id with different document_url", warnings[0])
+
+    def test_registry_rejects_exact_duplicate(self) -> None:
+        with TemporaryDirectory() as tmp:
+            catalog_dir = Path(tmp)
+            registry_dir = catalog_dir / "irg"
+            registry_dir.mkdir()
+            entry = catalog_entry(catalog_source=None)
+            (registry_dir / "documents.jsonl").write_text(
+                "\n".join(json.dumps(entry) for _ in range(2)) + "\n",
+                encoding="utf-8",
+            )
+
+            _count, errors, warnings = check_registry(catalog_dir, "irg")
+
+        self.assertTrue(any("duplicate entry_id/url" in error for error in errors))
+        self.assertEqual(warnings, [])
+
     def test_derived_overlay_entry_must_be_merged_as_derived(self) -> None:
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
