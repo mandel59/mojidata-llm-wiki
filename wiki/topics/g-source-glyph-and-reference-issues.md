@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n891, irg-n1519, irg-n2837, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
@@ -24,8 +24,10 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 | 年月日 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
+| 2000-06-21 | IRG | [IRG N743](../documents/irg-n743.md) | Extension C のmember body submissionsを集約し、後年GXC referenceのoriginal submission historyを確認する入口になった。 |
 | 2002-04-18 | IRG | [IRG N891](../documents/irg-n891.md) | China が Extension C1 candidate list を提出し、後続の `GZFY-00932` source history に関わる `zjw00932` などの entries を含めた。 |
 | 2008-11-06 | IRG | [IRG N1519](../documents/irg-n1519.md) | China が CJK_D candidates の evidence package を提出し、`Hanyu Fangyan Da Cidian` などの source evidence と candidate review 情報を示した。 |
+| 2008-11-18 / 12-31 | IRG | [IRG N1528](../documents/irg-n1528.md), [IRG N1532R](../documents/irg-n1532r.md) | Extension D / urgently needed charactersの辞書・実用evidenceを提出し、後年のsource-reference再検証に使われる資料を残した。 |
 | 2025-04-03 | IRG | [IRG N2837](../documents/irg-n2837.md) | Judith Chen が82 GXC-source charactersを辞書のpage / position形式へ更新するよう提案した。 |
 | 2025-09-16 | IRG | [IRG N2868](../documents/irg-n2868.md) | Dong Wenjie がGCH / GXC / GCYについてoriginal submission時のeditionとprintingに基づく再検討を求めた。 |
 | 2025-09-28 | IRG | [IRG N2864R](../documents/irg-n2864r.md) | China が9種類・1,538 charactersのG-source referencesとsource description / syntaxの更新を提案した。 |
