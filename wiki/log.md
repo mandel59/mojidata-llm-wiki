@@ -4,6 +4,7 @@
 
 ## 2026-07-11
 
+- **Navigation**: Improved the generated event index with linked topic titles, a body-based view, and a `--check` mode for reproducible navigation updates.
 - **Navigation**: Replaced the root's duplicate 49-topic listing with a curated current-focus entry point, recent canonical milestones, family navigation, and links to the complete topic and document indexes; updated review checks to require a compact curated root plus the complete Topics index.
 - **Navigation**: Reorganized the Source Document index by registry and descending year, with a repeatable generator that preserves existing digest descriptions.
 - **Review**: Clarified future-meeting state: IRG N2946 is a reserved Meeting \#67 register row whose PDF still returns HTTP 404, and UTC \#188 post-\#187 documents are tracking candidates rather than confirmed agenda items.

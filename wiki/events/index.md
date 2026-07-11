@@ -19,45 +19,89 @@
 
 ## By Topic
 
-### cjk-hybrid-characters
+### [CJK Abbreviated and Simplified Ideographs](../topics/cjk-abbreviated-and-simplified-ideographs.md)
+
+- [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
+### [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md)
 
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
 
-### cjkv-components
+### [CJK Multi-Syllabic and Abbreviation Characters](../topics/cjk-multi-syllabic-and-abbreviation-characters.md)
+
+- [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
+
+### [CJKV Components](../topics/cjkv-components.md)
 
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
 
-### irg-source-data-and-representative-glyphs
+### [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27)
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 
-### j-source
+### [J-source and JMJ Source Issues](../topics/j-source.md)
 
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27)
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 
-### japanese-place-name-ideographs
+### [Japanese Historical Ideographs](../topics/japanese-historical-ideographs.md)
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 
-### kana
+### [Japanese Place-Name Ideographs](../topics/japanese-place-name-ideographs.md)
+
+- [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
+### [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
+
+- [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
+- [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
+
+### [Kana](../topics/kana.md)
 
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
 
-### kirg-sgsource
+### [kIRG_SGSource](../topics/kirg-sgsource.md)
 
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 
-### small-seal-script
+### [Small Seal Script](../topics/small-seal-script.md)
 
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
 
-### uax45-u-source-ideographs
+### [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
+## By Body
+
+### IRG
+
+- [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
+- [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
+- [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
+- [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
+- [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
+- [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
+
+### SC2
+
+- [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
+
+### UTC
+
+- [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
+### WG2
+
+- [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27)
+- [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
+- [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
+- [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
+- [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)

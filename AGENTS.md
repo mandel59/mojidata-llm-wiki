@@ -278,6 +278,8 @@ uv run python tools/fetch_documents.py --registry irg --doc "IRG N2909"
 5. timeline を機械更新する場合は `uv run python tools/rewrite_event_timelines.py --topic <slug>` で dry-run し、`<!-- events:start -->` / `<!-- events:end -->` の marker block があるページだけ `--write` で更新する。
 6. `uv run python tools/check_events.py` と `uv run python tools/check_okf.py` を実行する。
 
+event index の生成差分は `uv run python tools/generate_event_indexes.py --check` で確認できる。
+
 ### Query
 
 1. `uv run python tools/query_wiki.py events` で event を日付順に確認する。
