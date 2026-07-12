@@ -1,0 +1,55 @@
+---
+type: Character Delta
+title: "Unicode 18.0 glyph delta: U+43DE 䏞"
+description: "U+43DE 䏞のUnicode 18.0における字形更新、その根拠と審議経緯を整理する。"
+slug: u-43de
+codepoint: "U+43DE"
+character: "䏞"
+unicode_version: "18.0"
+change_type: "T-source mapping exchange"
+documents: [irg-n2860, irg-n2861, utc-l2-26-099]
+topics: [unicode-18-change-sources, irg-source-data-and-representative-glyphs, unihan-database-maintenance]
+tags: [unicode-18, glyph-delta, cjk-ideograph]
+timestamp: 2026-07-12T00:00:00+09:00
+---
+
+# U+43DE 䏞
+
+## 要約
+
+Unicode 18.0 delta chartではExtension AのU+43DEが**T-source mapping exchange**の対象になっている。T-sourceを`T5-2B33`から`TF-2D2D`へ移し、U+2669Cとの割当てを交換する。右側の`未`/`末`の差をsource evidenceに合わせる。
+
+## 変更内容
+
+T-sourceを`T5-2B33`から`TF-2D2D`へ移し、U+2669Cとの割当てを交換する。右側の`未`/`末`の差をsource evidenceに合わせる。
+
+## Unihan dataの差分
+
+| Property | Unicode 17.0 | Unicode 18.0 beta |
+| --- | --- | --- |
+| `kIRG_TSource` | `T5-2B33` | `TF-2D2D` |
+
+表はmojidataが固定しているUnicode 17.0 UnihanとUnicode 18.0 beta Unihanの比較である。値が不変でもchart fontの字形変更は別途存在しうる。
+
+## 経緯
+
+IRG N2860の問題提起に対しIRG N2861がmapping changeと回答し、UTC \#187が受理した。
+
+## 影響
+
+- plain textのcode pointはU+43DEのままであり、文字列の置換を要求する変更ではない。
+- source property、IDS、地域別glyphを単一の「標準字形」と混同しない。
+- 実装ではUnicode 18.0 chartとUnihan beta dataを同じ版として更新する。
+
+## 関連文書
+
+- [IRG-N2860](../../documents/irg-n2860.md)
+- [IRG-N2861](../../documents/irg-n2861.md)
+- [UTC-L2-26-099](../../documents/utc-l2-26-099.md)
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md)
+
+## 出典
+
+- Unicode 18.0 Delta Charts Index - <https://www.unicode.org/charts/PDF/Unicode-18.0/>
+- Unicode 18.0 beta code charts - <https://www.unicode.org/Public/18.0.0/charts/>
+- Unicode 18.0 beta Unihan data - <https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip>

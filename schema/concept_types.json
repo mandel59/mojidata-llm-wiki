@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "common": {
     "required": ["type", "title"],
     "deprecated": ["kind"],
@@ -71,6 +71,16 @@
     },
     "Synthesis": {
       "required": ["slug"],
+      "relations": {
+        "documents": "document",
+        "topics": "topic",
+        "people": "people",
+        "meetings": "meeting",
+        "events": "event"
+      }
+    },
+    "Character Delta": {
+      "required": ["slug", "description", "codepoint", "unicode_version", "change_type"],
       "relations": {
         "documents": "document",
         "topics": "topic",

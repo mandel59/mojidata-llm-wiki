@@ -2,6 +2,11 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-12
+
+- **Ingest**: Added the [Unicode 18.0 CJK glyph delta](delta/unicode-18.0/) index and 41 Character Delta pages covering every unified and compatibility ideograph listed by the draft delta charts, with Unicode 17.0/18.0 Unihan comparisons and IRG/UTC history.
+- **Schema**: Added the Character Delta concept type for per-code-point Unicode version deltas instead of classifying these pages as Synthesis.
+
 ## 2026-07-11
 
 - **Navigation**: Improved the generated event index with linked topic titles, a body-based view, and a `--check` mode for reproducible navigation updates.
