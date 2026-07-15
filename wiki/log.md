@@ -4,6 +4,7 @@
 
 ## 2026-07-15
 
+- **Digest**: Added [IRG N2865](documents/irg-n2865.md), completing TCA's T6-6430 source-migration feedback chain from IRG N2834 through M65.05 and the U+2EA07 / U+2F9FF Character Delta pages.
 - **Digest**: Added [IRG N2834](documents/irg-n2834.md), linking its six-edition Guangyun evidence and preferred U+2EA07 solution to M65.05 and the U+2EA07 / U+FACB / U+2F9FF Unicode 18.0 Character Delta pages.
 - **Digest**: Added [IRG N2892](documents/irg-n2892.md), turning the Meeting \#45-\#65 disunification table into a dated source page and linking its source migrations to the canonical IRG Disunified Ideographs topic.
 - **Digest**: Added [PRI \#544](documents/pri-544.md), summarizing the 17 CJK, script, properties, editorial, and chart reports routed to UTC \#188 while separating submitted feedback from later UTC dispositions.

@@ -344,6 +344,7 @@
 - [IRG N2885R](irg-n2885r.md) - `IRG N2866R` への CJK Hybrid Characters feedback。
 - [IRG N2890](irg-n2890.md) - IRG N2878 への components / glyph feedback。
 - [IRG N2864R](irg-n2864r.md) - 1,538 G-source references の bulk update proposal。
+- [IRG N2865](irg-n2865.md) - TCA が T6-6430 を U+2F9FF から U+2EA07 へ移す IRG N2834 の方針に同意し、T-source update を具体化した feedback。
 - [IRG N2870](irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2868](irg-n2868.md) - GCH / GXC / GCY source reference proposals への feedback。
 - [IRG N2835R](irg-n2835r.md) - 1,417 G-source characters の source reference update proposal。
