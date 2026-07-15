@@ -354,6 +354,7 @@
 - [IRG N2838](irg-n2838.md) - IRG N2835へのG-source reference feedback。
 - [IRG N2840](irg-n2840.md) - 4組のG-source representative glyph revision request。
 - [IRG N2837](irg-n2837.md) - 82 GXC-source characters の source reference update proposal。
+- [IRG N2834](irg-n2834.md) - U+980B・U+FACB・U+2F9FF の disunification に伴う reading properties を《廣韻》6版で検証し、U+2EA07 への統合を提案した feedback。
 - [IRG N2765](irg-n2765.md) - IRG \#64 recommendations; CJKV Components 継続開発と review tool。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2792](irg-n2792.md) - KR position on script-hybrid Han ideographs。

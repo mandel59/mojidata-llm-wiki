@@ -33,7 +33,7 @@ Unicode 18.0 delta chartではCompatibility Ideographs SupplementのU+2F9FFが**
 
 ## 経緯
 
-IRG N2834の版比較とTCA feedbackを経てU+2EA07へ統合する案がIRG M65.05で採択された。
+[IRG N2834](../../documents/irg-n2834.md)の版比較とTCA feedbackを経てU+2EA07へ統合する案がIRG M65.05で採択された。
 
 ## 影響
 
@@ -44,7 +44,7 @@ IRG N2834の版比較とTCA feedbackを経てU+2EA07へ統合する案がIRG M65
 ## 関連文書
 
 - [IRG-N2765](../../documents/irg-n2765.md)
-- `IRG-N2834`
+- [IRG N2834](../../documents/irg-n2834.md)
 - [IRG-N2826](../../documents/irg-n2826.md)
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md)
 
