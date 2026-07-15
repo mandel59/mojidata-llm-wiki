@@ -2,8 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-15
+
+- **Digest**: Added [PRI \#544](documents/pri-544.md), summarizing the 17 CJK, script, properties, editorial, and chart reports routed to UTC \#188 while separating submitted feedback from later UTC dispositions.
+
 ## 2026-07-12
 
+- **Topic**: Added [IRG Disunified Ideographs](topics/irg-disunified-ideographs.md) as the entry point for the official pending/implemented disunification tables and their UTC, WG2, and IRG decision trail.
 - **Ingest**: Added the [Unicode 18.0 CJK glyph delta](delta/unicode-18.0/) index and 41 Character Delta pages covering every unified and compatibility ideograph listed by the draft delta charts, with Unicode 17.0/18.0 Unihan comparisons and IRG/UTC history.
 - **Schema**: Added the Character Delta concept type for per-code-point Unicode version deltas instead of classifying these pages as Synthesis.
 

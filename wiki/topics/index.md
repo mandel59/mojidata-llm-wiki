@@ -53,3 +53,4 @@ Script、block、property、proposal、横断論点などの精読ページを�
 - [CJKV Components](cjkv-components.md) - CJK Unified Ideographs Components-A/B の標準化提案。
 - [IRG Indexing Rules](irg-indexing-rules.md) - UCV / NUCV、FS / SC、radical assignment の運用 rule。
 - [UCV and NUCV Lists](ucv-nucv-lists.md) - component variation の unification / disunification 境界を整理する IRG reference lists。
+- [IRG Disunified Ideographs](irg-disunified-ideographs.md) - IRG Meeting \#45 以降の CJK ideograph disunification と decision trail。

@@ -9,7 +9,7 @@ meeting: 66
 date: "2026-03-16/20"
 location: Virtual
 documents: [irg-n2899, irg-n2909, irg-n2910, irg-n2911]
-topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules]
+topics: [irg-working-set-2024, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, irg-disunified-ideographs]
 tags: [meeting, irg, recommendations, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -30,6 +30,7 @@ IRG Meeting \#66 は 2026-03-16/20 に virtual meeting として開催された�
 - [kIRG_SGSource](../../topics/kirg-sgsource.md) - Singapore characters を `kIRG_GSource` から分離する new normative property を IRG として勧告した。
 - [CJKV Components](../../topics/cjkv-components.md) - Components-A / Components-B proposal を WG2 へ forward することを勧告した。
 - [IRG Indexing Rules](../../topics/irg-indexing-rules.md) - UCV / NUCV、FS / SC guidelines、radical assignment rules を整理した。
+- [IRG Disunified Ideographs](../../topics/irg-disunified-ideographs.md) - Meeting \#45 以降の disunification と decision trail をまとめる web page の採択を扱った。
 
 ## 決定事項
 

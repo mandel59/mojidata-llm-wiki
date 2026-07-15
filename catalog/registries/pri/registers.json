@@ -1,8 +1,8 @@
 {
   "derived_document_count": 0,
   "document_count": 554,
-  "last_sync_latest_only": false,
-  "last_sync_register_document_count": 554,
+  "last_sync_latest_only": true,
+  "last_sync_register_document_count": 4,
   "latest_only": false,
   "name": "Unicode Public Review Issues",
   "registers": [

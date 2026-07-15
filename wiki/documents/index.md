@@ -429,4 +429,5 @@
 - [PRI \#548](pri-548.md) - Unicode 18.0.0 Beta public review。
 - [PRI \#547](pri-547.md) - UAX \#44 Unicode Character Database Revision 37 public review。
 - [PRI \#545](pri-545.md) - UAX \#11 East Asian Width Revision 45 public review。
+- [PRI \#544](pri-544.md) - 個別 PRI や特定 review topic に属さない UTC \#188 向け public feedback 17 件を working group 別に集成した review record。
 - [PRI \#533](pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。

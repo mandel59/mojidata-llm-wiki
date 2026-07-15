@@ -5,7 +5,7 @@ description: "IRG の UCV / NUCV lists による component variation と unifica
 slug: ucv-nucv-lists
 bodies: [IRG]
 documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935]
-topics: [irg-indexing-rules, cjkv-components, unihan-database-maintenance]
+topics: [irg-indexing-rules, irg-disunified-ideographs, cjkv-components, unihan-database-maintenance]
 people: [irg]
 status: active
 tags: [irg, ucv, nucv, unification, components]
@@ -63,6 +63,7 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 ## 関連トピック
 
 - [IRG Indexing Rules](irg-indexing-rules.md)
+- [IRG Disunified Ideographs](irg-disunified-ideographs.md)
 - [CJKV Components](cjkv-components.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
