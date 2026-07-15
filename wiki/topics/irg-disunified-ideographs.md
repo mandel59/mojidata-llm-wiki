@@ -26,7 +26,7 @@ IRG Meeting \#66 は、この web page を旧 `IWDS Series 4` の replacement �
 | 年月日 | Body | 文書・資料 | できごと |
 | --- | --- | --- | --- |
 | 2021-10-08 | IRG | `IRG N2491R` | Meeting \#45 から \#56 までの disunified ideographs を文書として整理した。 |
-| 2025-11-17 | IRG | `IRG N2892` | 対象範囲を Meeting \#65 まで更新した。 |
+| 2025-11-17 | IRG | [IRG N2892](../documents/irg-n2892.md) | 対象範囲を Meeting \#65 まで更新した。 |
 | 2026-02-16 | IRG | [IRG Disunified Ideographs](https://www.unicode.org/irg/disunified.html) | web page の表示上の最終更新日。pending と implemented の表から decision trail を参照できる。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.05 が web page を `IWDS Series 4` の replacement として accept した。 |
 
@@ -48,7 +48,7 @@ disunification は IRG recommendation だけで完結せず、WG2 recommendation
 
 - [IRG N2909](../documents/irg-n2909.md) - Meeting \#66 recommendations。
 - [IRG N2911](../documents/irg-n2911.md) - Meeting \#66 CJK editorial group report。
-- `IRG N2892` - Meeting \#45 から \#65 までの IRG Disunified Ideographs。
+- [IRG N2892](../documents/irg-n2892.md) - Meeting \#45 から \#65 までの IRG Disunified Ideographs。
 
 ## 関連トピック
 

@@ -333,6 +333,7 @@
 
 - [IRG N2918](irg-n2918.md) - U+3062B / U+30C68 の UK-source glyph update proposal。
 - [IRG N2915](irg-n2915.md) - IRG N2862 の FS values への KR feedback。
+- [IRG N2892](irg-n2892.md) - IRG Meetings 45-65 の ideograph disunification cases を source reference、旧・新 code point、status、根拠文書で集約した一覧。
 - [IRG N2895](irg-n2895.md) - IRG N2878R への source coverage / disunification feedback。
 - [IRG N2861](irg-n2861.md) - `IRG N2860` への TCA response。
 - [IRG N2828](irg-n2828.md) - IRG \#65 CJK Editorial Group report。

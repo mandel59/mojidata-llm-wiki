@@ -4,6 +4,7 @@
 
 ## 2026-07-15
 
+- **Digest**: Added [IRG N2892](documents/irg-n2892.md), turning the Meeting \#45-\#65 disunification table into a dated source page and linking its source migrations to the canonical IRG Disunified Ideographs topic.
 - **Digest**: Added [PRI \#544](documents/pri-544.md), summarizing the 17 CJK, script, properties, editorial, and chart reports routed to UTC \#188 while separating submitted feedback from later UTC dispositions.
 
 ## 2026-07-12
