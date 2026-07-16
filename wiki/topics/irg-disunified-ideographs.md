@@ -4,7 +4,7 @@ title: IRG Disunified Ideographs
 description: "IRG Meeting #45 以降の CJK ideograph disunification と、その決定経路をまとめる IRG reference page。"
 slug: irg-disunified-ideographs
 bodies: [UTC, WG2, IRG]
-documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911]
+documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2767, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911]
 topics: [ucv-nucv-lists, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
 meetings: [irg-meeting-66]
 people: [irg]
@@ -27,6 +27,7 @@ IRG Meeting \#66 は、この web page を旧 `IWDS Series 4` の replacement �
 | --- | --- | --- | --- |
 | 2021-10-08 | IRG | [IRG N2491R](../documents/irg-n2491r.md) | Meeting \#45 から \#56 までの disunified ideographs を文書として整理した。 |
 | 2025-01-17 | IRG | [IRG N2786](../documents/irg-n2786.md) | U+980B と U+FACB / U+2F9FF に混在した字形・reading・source references の分離を提案した。 |
+| 2025-03-21 | IRG | [IRG N2767](../documents/irg-n2767.md) | Meeting \#64 が16件の T-source migration と U+6138、U+FACB / U+2F9FF の初期 disposition を受け入れた。 |
 | 2025-11-17 | IRG | [IRG N2892](../documents/irg-n2892.md) | 対象範囲を Meeting \#65 まで更新した。 |
 | 2026-02-16 | IRG | [IRG Disunified Ideographs](https://www.unicode.org/irg/disunified.html) | web page の表示上の最終更新日。pending と implemented の表から decision trail を参照できる。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.05 が web page を `IWDS Series 4` の replacement として accept した。 |
@@ -48,6 +49,7 @@ disunification は IRG recommendation だけで完結せず、WG2 recommendation
 ## 関連文書
 
 - [IRG N2491R](../documents/irg-n2491r.md) - Meeting \#45 から \#56 までの初期 source-remapping list。
+- [IRG N2767](../documents/irg-n2767.md) - Meeting \#64 の disunification と source migration の editorial record。
 - [IRG N2786](../documents/irg-n2786.md) - U+FACB / U+2F9FF disunification の原提案。
 - [IRG N2909](../documents/irg-n2909.md) - Meeting \#66 recommendations。
 - [IRG N2911](../documents/irg-n2911.md) - Meeting \#66 CJK editorial group report。
