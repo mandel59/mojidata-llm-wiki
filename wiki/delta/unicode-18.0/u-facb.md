@@ -7,7 +7,7 @@ codepoint: "U+FACB"
 character: "頋"
 unicode_version: "18.0"
 change_type: "Disunification and source migration"
-documents: [irg-n2765, irg-n2834, irg-n2826]
+documents: [irg-n2765, irg-n2786, irg-n2834, irg-n2826]
 topics: [unicode-18-change-sources, irg-source-data-and-representative-glyphs, unihan-database-maintenance]
 tags: [unicode-18, glyph-delta, cjk-ideograph]
 timestamp: 2026-07-12T00:00:00+09:00
@@ -33,7 +33,7 @@ Unicode 18.0 delta chartではCompatibility IdeographsのU+FACBが**Disunificati
 
 ## 経緯
 
-[IRG N2834](../../documents/irg-n2834.md)の《廣韻》版比較とIRGのdisunification reviewで、KP glyphはU+980B系ではなくU+2EA07の歴史的字形に属すると判断された。
+[IRG N2786](../../documents/irg-n2786.md)が字形・字音上の分離根拠を提示し、[IRG N2834](../../documents/irg-n2834.md)の《廣韻》版比較とIRGのdisunification reviewで、KP glyphはU+980B系ではなくU+2EA07の歴史的字形に属すると判断された。
 
 ## 影響
 
@@ -44,6 +44,7 @@ Unicode 18.0 delta chartではCompatibility IdeographsのU+FACBが**Disunificati
 ## 関連文書
 
 - [IRG-N2765](../../documents/irg-n2765.md)
+- [IRG N2786](../../documents/irg-n2786.md)
 - [IRG N2834](../../documents/irg-n2834.md)
 - [IRG-N2826](../../documents/irg-n2826.md)
 - [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md)

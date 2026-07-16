@@ -7,7 +7,7 @@ codepoint: "U+2F9FF"
 character: "頋"
 unicode_version: "18.0"
 change_type: "Disunification and source migration"
-documents: [irg-n2765, irg-n2834, irg-n2865, irg-n2826]
+documents: [irg-n2765, irg-n2786, irg-n2834, irg-n2865, irg-n2826]
 topics: [unicode-18-change-sources, irg-source-data-and-representative-glyphs, unihan-database-maintenance]
 tags: [unicode-18, glyph-delta, cjk-ideograph]
 timestamp: 2026-07-12T00:00:00+09:00
@@ -33,7 +33,7 @@ Unicode 18.0 delta chartではCompatibility Ideographs SupplementのU+2F9FFが**
 
 ## 経緯
 
-[IRG N2834](../../documents/irg-n2834.md)の版比較とTCA feedbackを経てU+2EA07へ統合する案がIRG M65.05で採択された。
+[IRG N2786](../../documents/irg-n2786.md)が字形・字音上の分離根拠を提示し、[IRG N2834](../../documents/irg-n2834.md)の版比較とTCA feedbackを経てU+2EA07へ統合する案がIRG M65.05で採択された。
 
 ## 影響
 
@@ -44,6 +44,7 @@ Unicode 18.0 delta chartではCompatibility Ideographs SupplementのU+2F9FFが**
 ## 関連文書
 
 - [IRG-N2765](../../documents/irg-n2765.md)
+- [IRG N2786](../../documents/irg-n2786.md)
 - [IRG N2834](../../documents/irg-n2834.md)
 - [IRG N2865](../../documents/irg-n2865.md)
 - [IRG-N2826](../../documents/irg-n2826.md)

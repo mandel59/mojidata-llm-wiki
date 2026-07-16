@@ -4,6 +4,7 @@
 
 ## 2026-07-16
 
+- **Digest**: Added [IRG N2786](documents/irg-n2786.md), connecting the original U+FACB / U+2F9FF disunification evidence and proposed source split to IRG N2834, IRG N2865, and M65.05.
 - **Digest**: Added [IRG N2491R](documents/irg-n2491r.md), linking the Meeting \#45-\#56 source-remapping snapshot to IRG N2892 and the canonical IRG Disunified Ideographs history.
 
 ## 2026-07-15

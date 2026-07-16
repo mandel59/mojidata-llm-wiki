@@ -359,6 +359,7 @@
 - [IRG N2765](irg-n2765.md) - IRG \#64 recommendations; CJKV Components 継続開発と review tool。
 - [IRG N2799](irg-n2799.md) - multi-source CJKV components proposal。
 - [IRG N2792](irg-n2792.md) - KR position on script-hybrid Han ideographs。
+- [IRG N2786](irg-n2786.md) - U+980B と compatibility ideographs U+FACB・U+2F9FF に混在する字形・reading・source references を分離する原提案。
 
 ### 2024
 
