@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-16
+
+- **Digest**: Added [IRG N2491R](documents/irg-n2491r.md), linking the Meeting \#45-\#56 source-remapping snapshot to IRG N2892 and the canonical IRG Disunified Ideographs history.
+
 ## 2026-07-15
 
 - **Digest**: Added [IRG N2865](documents/irg-n2865.md), completing TCA's T6-6430 source-migration feedback chain from IRG N2834 through M65.05 and the U+2EA07 / U+2F9FF Character Delta pages.

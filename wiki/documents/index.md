@@ -374,6 +374,7 @@
 
 ### 2021
 
+- [IRG N2491R](irg-n2491r.md) - IRG Meetings 45-56 の source remapping / disunification cases を旧 code point、decision、status、根拠文書で集約した初期一覧。
 - [IRG N2511](irg-n2511.md) - U+30759 / UTC-01250 glyph issue。
 
 ### 2020
