@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-17
+
+- **Digest**: Added [L2/26-144](documents/utc-l2-26-144.md), documenting the proposed Medievalist / Tlahuica I with oblique stroke pair and historical Khakas I with descender pair while tracking UTC \#188 disposition separately.
+
 ## 2026-07-16
 
 - **Digest**: Added [IRG N2767](documents/irg-n2767.md), separating the Meeting \#64 editorial dispositions on disunification, source and glyph updates, PnP, UNC, script-hybrid characters, and components from later plenary outcomes.

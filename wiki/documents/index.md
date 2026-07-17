@@ -13,6 +13,7 @@
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/26-146](utc-l2-26-146.md) - Maya Hieroglyphs Extended-A draft proposal。
 - [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
+- [L2/26-144](utc-l2-26-144.md) - Medievalist・Tlahuica 用 I with oblique stroke と historical Khakas 用 I with descender の4文字を Latin Extended-D に追加する提案。
 - [L2/26-143](utc-l2-26-143.md) - Leibnizian ambiguous signs proposal。
 - [L2/26-142](utc-l2-26-142.md) - historic letterlike symbols proposal。
 - [L2/26-141](utc-l2-26-141.md) - slashed digits 用 combining marks proposal。
