@@ -5,7 +5,7 @@ description: "WG2 #73 が ISO/IEC 10646 7th edition CD4 disposition の一部と
 slug: wg2-m73-01-small-seal-cd4-disposition
 date: "2026-06-26"
 bodies: [WG2, SC2]
-documents: [wg2-n5344r2, wg2-n5354, wg2-n5355, wg2-n5369]
+documents: [wg2-n5344r2, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
 topics: [small-seal-script]
 people: [wg2]
 meetings: [wg2-meeting-73]
@@ -23,6 +23,8 @@ WG2 Meeting \#73 は Recommendation M73.01 で、ISO/IEC 10646 7th edition CD.4 
 ## 背景
 
 [WG2 N5344R2](../documents/wg2-n5344r2.md) では script property と character names に `Seal` を使う案だった。WG2 \#73 の recommendations は、CD.4 disposition を通じて character names を `Small Seal` に寄せ、ISO/IEC 10646 7th edition DIS へ進める変更として記録した。
+
+[WG2 N5360R](../documents/wg2-n5360r.md) の revised draft disposition は `SMALL SEAL CHARACTER-` への name change を proposed nonacceptance としていたが、WG2 discussion 後の `WG2 N5369` は変更を採用した。M73.01 はこの final disposition を対象とする。
 
 `WG2 N5355` は、`WG2 N5348R` で不明確とされた `zhèngzì`（正字）/ normalized form の意味を補足し、Small Seal の modern CJK 対応値は `zhèngzhuàn`（正篆）と `chóngwén`（重文）の関係で理解すべきだと整理した。`WG2 N5369` の `kSEAL_MCJK` correction は、この modern CJK correspondence principle を CD.4 disposition に反映したものとして読める。
 

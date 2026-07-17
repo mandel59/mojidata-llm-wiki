@@ -4,7 +4,7 @@ title: ISO/IEC 10646 Edition and Code Charts
 description: "WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。"
 slug: iso-10646-edition-and-code-charts
 bodies: [WG2, SC2, UTC]
-documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102]
+documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5360r, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102]
 topics: [unicode-release-coordination-and-publication, unicode-18-change-sources, script-encoding-pipeline, shaaldaa-script, unihan-database-maintenance]
 meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187]
 status: active
@@ -30,6 +30,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 | 2025-06-25 | WG2 | [WG2 N5339](../documents/wg2-n5339.md) | ISO/IEC 10646 7th edition CD.2 comments の disposition がまとめられた。 |
 | 2025-06-27 | WG2 | [WG2 N5304](../documents/wg2-n5304.md) | WG2 \#72 recommendations が CD.2 disposition、code charts 検討、CD.3 progression を採択した。 |
 | 2026-06-21 | WG2 | [WG2 N5350R8](../documents/wg2-n5350r8.md) | WG2 \#73 agenda が CD.4 disposition、external code charts、Amendment 1 project subdivision を adoption item にした。 |
+| 2026-06-21 | WG2 | [WG2 N5360R](../documents/wg2-n5360r.md) | CD.4 comments の revised draft disposition が、acceptance 案と WG2 discussion 待ちの項目を整理した。 |
 | 2026-06-24 | WG2 | [WG2 N5369](../documents/wg2-n5369.md) | ISO/IEC 10646 7th edition CD.4 comments の disposition がまとめられた。 |
 | 2026-06-25 | WG2 | [WG2 N5363R](../documents/wg2-n5363r.md) | 10646 code charts を Unicode Consortium が生成する外部 chart resource として normative reference する案が具体化された。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 recommendations が DIS progression、external code charts、Amendment 1 project subdivision、first amendment additions を採択した。 |
@@ -69,6 +70,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 - [WG2 N5361R](../documents/wg2-n5361r.md) - provisionally assigned code points after Unicode 18.0。
 - [WG2 N5362](../documents/wg2-n5362.md) - Amendment 1 project proposal。
 - [WG2 N5363R](../documents/wg2-n5363r.md) - external code charts proposal。
+- [WG2 N5360R](../documents/wg2-n5360r.md) - CD.4 revised draft disposition。
 - [WG2 N5369](../documents/wg2-n5369.md) - CD.4 disposition。
 
 ## 関連トピック

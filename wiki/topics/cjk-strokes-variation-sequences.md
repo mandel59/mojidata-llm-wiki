@@ -4,7 +4,7 @@ title: CJK Strokes Variation Sequences
 description: "CJK Strokes characters に standardized variation sequences を追加し、StandardizedVariants.txt と code charts に反映する議論。"
 slug: cjk-strokes-variation-sequences
 bodies: [UTC]
-documents: [utc-l2-26-073r, utc-l2-26-099]
+documents: [utc-l2-26-073r, utc-l2-26-099, wg2-n5360r, wg2-n5369]
 topics: [unicode-18-change-sources]
 status: accepted-for-unicode-18
 tags: [cjk, strokes, variation-sequences, standardizedvariants, unicode-18]
@@ -25,6 +25,7 @@ CJK Strokes Variation Sequences は、CJK Strokes characters に standardized va
 | --- | --- | --- | --- |
 | 2026-03-04 | UTC | [L2/26-073R](../documents/utc-l2-26-073r.md) | Night Koo が CJK Strokes characters 向け standardized variation sequences の revised proposal を提出した。 |
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が 17 standardized variation sequences を Unicode Version 18.0 target で受け入れ、Pipeline、`StandardizedVariants.txt`、code charts、Core Specification Appendix F を更新する action item を置いた。 |
+| 2026-06-21/24 | WG2 | [WG2 N5360R](../documents/wg2-n5360r.md) / [WG2 N5369](../documents/wg2-n5369.md) | ISO/IEC 10646 7th edition CD.4 の draft / final disposition が17 sequences を受け入れ、DIS progression に接続した。 |
 
 ## 主な論点
 
@@ -40,6 +41,7 @@ CJK Strokes は Unihan property そのものではないが、`L2/26-099` では
 
 - [L2/26-073R](../documents/utc-l2-26-073r.md) - CJK Strokes standardized variation sequences proposal。
 - [L2/26-099](../documents/utc-l2-26-099.md) - UTC \#187 向け CJK & Unihan Working Group recommendations。
+- [WG2 N5360R](../documents/wg2-n5360r.md) / [WG2 N5369](../documents/wg2-n5369.md) - ISO/IEC 10646 CD.4 の draft / final disposition。
 
 ## 関連トピック
 

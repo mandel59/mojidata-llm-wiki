@@ -4,7 +4,7 @@ title: Small Seal Script
 description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 bodies: [UTC, WG2]
-documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5369]
+documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
 status: in-ballot-pipeline
 tags: [script, seal, cjk, ideographic]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -41,7 +41,7 @@ Small Seal Script は、`Shuowen Jiezi` に基づく小篆を UCS / Unicode に�
 | 2025-10 | WG2 | [WG2 N5346](../documents/wg2-n5346.md) | TCA and China が N5341 code chart に 43 code point issues と 3,121 modern CJK equivalent corrections を返した。 |
 | 2026-01 | WG2 | [WG2 N5344R2](../documents/wg2-n5344r2.md) | Small Seal WG が revised proposal を提出。11,328 characters を `3D000..3FC3F` の `Small Seal` block に置く案へ更新。 |
 | 2026-03 | WG2 | [WG2 N5348R](../documents/wg2-n5348r.md), [WG2 N5355](../documents/wg2-n5355.md) | modern CJK 対応値、`liding`（隷定）、`zhèngzhuàn`（正篆）/ `chóngwén`（重文）に関する feedback と clarification。 |
-| 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md), [WG2 N5369](../documents/wg2-n5369.md) | [WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md)。M73.04 は 7th edition DIS への進行を勧告。 |
+| 2026-06 | WG2 | [WG2 N5360R](../documents/wg2-n5360r.md), [WG2 N5354](../documents/wg2-n5354.md), [WG2 N5369](../documents/wg2-n5369.md) | draft で proposed nonacceptance だった name change を WG2 discussion で採用し、[WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md) として確定。M73.04 は 7th edition DIS への進行を勧告。 |
 
 ## 主な論点
 
@@ -108,6 +108,7 @@ Unicode 18.0 draft release page と beta review page では、Seal が Unicode 1
 - [WG2 N5346](../documents/wg2-n5346.md) - N5341 code chart feedback and modern CJK corrections
 - [WG2 N5348R](../documents/wg2-n5348r.md) - modern CJK / `zhèngzì`（正字）feedback summary
 - [WG2 N5355](../documents/wg2-n5355.md) - `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification
+- [WG2 N5360R](../documents/wg2-n5360r.md) - CD.4 revised draft disposition
 - [WG2 N5369](../documents/wg2-n5369.md) - CD.4 disposition of comments
 - [WG2 meeting \#72](../meetings/wg2/wg2-meeting-72.md)
 - [WG2 meeting \#73](../meetings/wg2/wg2-meeting-73.md)

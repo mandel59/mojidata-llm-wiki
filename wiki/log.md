@@ -4,6 +4,7 @@
 
 ## 2026-07-17
 
+- **Digest**: Added [WG2 N5360R](documents/wg2-n5360r.md), distinguishing the revised CD.4 draft dispositions from WG2 N5369 final decisions on Chisoi removal, Small Seal names, CJK Strokes sequences, and ballot progression.
 - **Digest**: Added [L2/26-144](documents/utc-l2-26-144.md), documenting the proposed Medievalist / Tlahuica I with oblique stroke pair and historical Khakas I with descender pair while tracking UTC \#188 disposition separately.
 
 ## 2026-07-16

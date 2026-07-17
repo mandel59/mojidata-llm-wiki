@@ -221,6 +221,7 @@
 - [WG2 N5363R](wg2-n5363r.md) - external code charts normative reference proposal。
 - [WG2 N5369](wg2-n5369.md) - ISO/IEC 10646 7th edition CD.4 disposition。
 - [WG2 N5365](wg2-n5365.md) - SEI liaison contribution to WG2 \#73。
+- [WG2 N5360R](wg2-n5360r.md) - ISO/IEC 10646 7th edition CD.4 comments の revised draft disposition。WG2 discussion 前の proposed acceptance と unresolved items を記録する。
 - [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5362](wg2-n5362.md) - ISO/IEC 10646 7th edition Amendment 1 project proposal。
 - [WG2 N5368](wg2-n5368.md) - Dai Xaau Script supplementary materials。
