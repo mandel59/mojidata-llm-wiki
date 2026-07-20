@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5354]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5353, wg2-n5354]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -38,6 +38,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2026-03 | IRG | [IRG N2911](../documents/irg-n2911.md), [IRG N2909](../documents/irg-n2909.md) | Meeting \#66 editorial report と recommendations が G / T / K / UK / V source の reference と representative glyph 修正を扱った。 |
 | 2026-03 | IRG | [IRG N2953](../documents/irg-n2953.md) | [IRG N2928](../documents/irg-n2928.md) の follow-up として、U+268A1 / U+268A2 の V-source glyph 変更を検討する追加 evidence が提示された。 |
 | 2026-04 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が IRG \#66 recommendations と PRI feedback を UTC \#187 向け data / chart updates に変換した。 |
+| 2026-04 | IRG / WG2 | [WG2 N5353](../documents/wg2-n5353.md) | Meetings \#65 / \#66 の glyph / source / `kRSUnicode` changes を集約し、M65 の対象件数 omission を訂正した。 |
 | 2026-04 | IRG | [IRG N2954](../documents/irg-n2954.md), [IRG N2955](../documents/irg-n2955.md) | U+2CCA3 の G-source representative glyph が original evidence と合わない問題について、修正提案と feedback が出た。 |
 | 2026-05 | IRG | [IRG N2956](../documents/irg-n2956.md), [IRG N2957](../documents/irg-n2957.md) | Extension C の GBK-source 5 characters について、glyph / source reference 修正案と feedback が出た。 |
 | 2026-06 | IRG | [IRG N2958](../documents/irg-n2958.md), [IRG N2959](../documents/irg-n2959.md) | G-source glyph revision と SAT-source glyph issue が提出された。 |

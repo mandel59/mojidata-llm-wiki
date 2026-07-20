@@ -4,7 +4,7 @@ title: IRG Disunified Ideographs
 description: "IRG Meeting #45 以降の CJK ideograph disunification と、その決定経路をまとめる IRG reference page。"
 slug: irg-disunified-ideographs
 bodies: [UTC, WG2, IRG]
-documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2767, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911]
+documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2767, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911, wg2-n5353]
 topics: [ucv-nucv-lists, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
 meetings: [irg-meeting-66]
 people: [irg]
@@ -31,6 +31,7 @@ IRG Meeting \#66 は、この web page を旧 `IWDS Series 4` の replacement �
 | 2025-11-17 | IRG | [IRG N2892](../documents/irg-n2892.md) | 対象範囲を Meeting \#65 まで更新した。 |
 | 2026-02-16 | IRG | [IRG Disunified Ideographs](https://www.unicode.org/irg/disunified.html) | web page の表示上の最終更新日。pending と implemented の表から decision trail を参照できる。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.05 が web page を `IWDS Series 4` の replacement として accept した。 |
+| 2026-04-30 | IRG / WG2 | [WG2 N5353](../documents/wg2-n5353.md) | Meetings \#65 / \#66 の disunifications と web page への移行を WG2 に報告した。 |
 
 ## 主な論点
 

@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-20
+
+- **Digest**: Added [WG2 N5353](documents/wg2-n5353.md), connecting IRG Meetings \#65 / \#66 recommendations to WG2 actions while recording document migration, WS2024, disunification, source/glyph corrections, Singapore source, CJKV Components, CJK Hybrid Characters, and UTS \#37 status.
+
 ## 2026-07-17
 
 - **Digest**: Added [WG2 N5360R](documents/wg2-n5360r.md), distinguishing the revised CD.4 draft dispositions from WG2 N5369 final decisions on Chisoi removal, Small Seal names, CJK Strokes sequences, and ballot progression.

@@ -8,7 +8,7 @@ bodies: [WG2]
 meeting: 73
 date: "2026-06-22/26"
 location: Paris, France
-documents: [wg2-n5350r8, wg2-n5351, wg2-n5354, wg2-n5355, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5365, wg2-n5366, wg2-n5367, wg2-n5368, wg2-n5369, utc-l2-26-099, utc-l2-26-102, utc-l2-26-129]
+documents: [wg2-n5350r8, wg2-n5351, wg2-n5353, wg2-n5354, wg2-n5355, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5365, wg2-n5366, wg2-n5367, wg2-n5368, wg2-n5369, utc-l2-26-099, utc-l2-26-102, utc-l2-26-129]
 topics: [iso-10646-edition-and-code-charts, small-seal-script, unihan-database-maintenance, unicode-18-change-sources, script-encoding-pipeline, dai-xaau-script, leke-script, maya-hieroglyph-encoding, leibnizian-and-historic-mathematical-symbols, cjkv-components, kirg-sgsource]
 tags: [meeting, wg2, iso-10646, dis, amendment, small-seal, cjk, unihan]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -20,7 +20,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 WG2 Meeting \#73 は 2026-06-22/26 に Paris, France で開催された。中心は ISO/IEC 10646 7th edition CD.4 disposition の受け入れ、DIS progression、UCS code charts の external linked content 化、7th edition Amendment 1 project subdivision、Small Seal / CJK / Unihan changes、Maya review、`kIRG_SGSource` である。
 
-この meeting の一次入口は revised agenda [WG2 N5350R8](../../documents/wg2-n5350r8.md) と recommendations [WG2 N5354](../../documents/wg2-n5354.md) である。`WG2 N5351` は minutes / action items として catalog にあるが、2026-07-08 時点では document URL が未掲載なので、決定事項は [WG2 N5354](../../documents/wg2-n5354.md) を一次ソースにする。
+この meeting の一次入口は revised agenda [WG2 N5350R8](../../documents/wg2-n5350r8.md) と recommendations [WG2 N5354](../../documents/wg2-n5354.md) である。[WG2 N5353](../../documents/wg2-n5353.md) は IRG Meetings \#65 / \#66 から送られた action requests の入口になる。`WG2 N5351` は minutes / action items として catalog にあるが、2026-07-08 時点では document URL が未掲載なので、決定事項は [WG2 N5354](../../documents/wg2-n5354.md) を一次ソースにする。
 
 ## 主要議題
 

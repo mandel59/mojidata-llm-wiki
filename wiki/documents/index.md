@@ -225,6 +225,7 @@
 - [WG2 N5350R8](wg2-n5350r8.md) - WG2 Meeting \#73 agenda。
 - [WG2 N5362](wg2-n5362.md) - ISO/IEC 10646 7th edition Amendment 1 project proposal。
 - [WG2 N5368](wg2-n5368.md) - Dai Xaau Script supplementary materials。
+- [WG2 N5353](wg2-n5353.md) - IRG Meetings 65・66 の recommendations を17項目に整理し、WG2 / SC2 に information・approval・action を求めた横断報告。
 - [WG2 N5348R](wg2-n5348r.md) - Small Seal Script の modern CJK / `zhèngzì`（正字）feedback summary。
 - [WG2 N5355](wg2-n5355.md) - Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification。
 - [WG2 N5344R2](wg2-n5344r2.md) - Small Seal Script の revised proposal。

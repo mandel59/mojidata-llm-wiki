@@ -4,7 +4,7 @@ title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935]
+documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935, wg2-n5353]
 status: active
 tags: [irg, working-set, cjk, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -25,6 +25,7 @@ IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs �
 | 2024-10 | IRG | [IRG N2702](../documents/irg-n2702.md) | IRG \#63 Recommendation M63.06 が WS2024 Version 2.0 の生成 schedule を定めた。 |
 | 2025-03 | IRG | [IRG N2765](../documents/irg-n2765.md) | IRG \#64 Recommendation M64.04 が WS2024 Version 3.0 の生成 schedule を定めた。 |
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | IRG \#66 Recommendation M66.07 が WS2024 Version 5.0 の生成 schedule を定めた。 |
+| 2026-04 | IRG / WG2 | [WG2 N5353](../documents/wg2-n5353.md) | WS2024 4,674 ideographs、Version 5.0 review、次期 working set 約10,000 ideographs の見通しを WG2 に報告した。 |
 | 2026-05 | IRG | [IRG N2932](../documents/irg-n2932.md) | ORT Manager が WS2024 Version 5.0 を ORT と文書として release する schedule。catalog date は 2026-05-31。 |
 | 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda で Version 5.0 review が主要議題として設定された。 |
 | 2026-08 | IRG | `IRG N2933` | WS2024 Version 5.0 consolidated comments。 |
