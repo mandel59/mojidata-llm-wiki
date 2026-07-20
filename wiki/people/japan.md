@@ -33,7 +33,7 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 | 2025-12-19 | `L2/25-274` | Lin Anning が、日本古典籍 `古学二千文` などに現れる IDS `⿰犭華` の 1 ideograph 追加を提案。 | 日本古典籍由来の未符号化 ideograph を扱う UTC document。地名文字とは異なる historical evidence の系統として追う必要がある。 |
 | 2025-08-13 | `IRG N2859` | [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)。 | J-source の具体的な保守・変更判断が Japan NB の確認事項として扱われている。 |
 | 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | Japan NB の最新の明示的 position。既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
-| 2026-04-02 | `IRG N2934R` | IRG Meeting \#67 の First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
+| 2026-04-02 | [IRG N2934R](../documents/irg-n2934r.md) | IRG Meeting \#67 の First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
 | 2026-07-31 closing | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。registrant は ITSCJ / IPSJ、representative は Shuichi Tashiro。 | `WG2 N5221` 後の Moji Jōhō Kiban code point 対応更新が IVD collection maintenance へ波及した例。 |
 
 ## 主な論点
@@ -72,7 +72,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ### 東京開催の IRG \#67
 
-`IRG N2934R` は、IRG Meeting \#67 が 2026-10-12/16 に東京で開催されることを告知する。host は SAT Daizōkyō Text Database Committee であり、Japan NB の position paper ではない。ただし、日本国内での IRG 会合開催は、Japan / Japanese experts / SAT の IRG activity を追跡するうえで関連するイベントである。
+[IRG N2934R](../documents/irg-n2934r.md) は、IRG Meeting \#67 が 2026-10-12/16 に東京で開催されることを告知する。host は SAT Daizōkyō Text Database Committee であり、Japan NB の position paper ではない。ただし、日本国内での IRG 会合開催は、Japan / Japanese experts / SAT の IRG activity を追跡するうえで関連するイベントである。
 
 ## 関連文書
 
@@ -85,7 +85,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 - `WG2 N5311` - WG2 \#72 social event information, Niigata, Japan。
 - `IRG N2859` - J-source disposition recommendations; Japan NB feedback request。
 - `IRG N2870` - National Body of Japan による `IRG N2859` への comment。
-- `IRG N2934R` - IRG Meeting \#67 First Call, Tōkyō, Japan。
+- [IRG N2934R](../documents/irg-n2934r.md) - IRG Meeting \#67 First Call, Tōkyō, Japan。
 - `PRI #546` - Moji_Joho collection への IVS 追加登録 review。
 - `L2/25-053`, `L2/25-221`, `L2/26-044` - 日本地名 ideographs の UAX \#45 additions。
 - `L2/25-274` - 日本古典籍由来 ideograph の追加提案。

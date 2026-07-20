@@ -4,7 +4,7 @@ title: Ken Lunde
 description: UTC / CJK & Unihan Working Group で CJK / Unihan data maintenance に関わる contributor。
 slug: ken-lunde
 bodies: [UTC, IRG]
-documents: [utc-l2-11-439, utc-l2-22-181, utc-l2-25-199, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148, wg2-n5353]
+documents: [utc-l2-11-439, utc-l2-22-181, utc-l2-25-199, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148, irg-n2934r, wg2-n5353]
 topics: [unihan-database-maintenance, unihan-data-format-and-property-syntax, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]
 tags: [person, utc, cjk, unihan, source-data]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -31,6 +31,7 @@ Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan
 | `L2/26-147` / `IRG N2961` | U-source horizontal extension proposal の source。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md), [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) |
 | `L2/26-148` | 458 ideographs の `kTotalStrokes` property values 修正 proposal の source。 | [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md), [Unihan Database Maintenance](../topics/unihan-database-maintenance.md) |
 | `WG2 N5353` | IRG Convenor として Meetings \#65 / \#66 recommendations を WG2 / SC2 向けに集約。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md), [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
+| `IRG N2934R` | IRG Convenor として Meeting \#67 の Tokyo hybrid 開催、登録・提出締切を First Call で告知。 | [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) |
 
 ## 関連トピック
 
@@ -56,3 +57,4 @@ Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
 - `wg2-n5353` - <https://www.unicode.org/wg2/docs/n5353-IRGSummary.pdf>
+- `irg-n2934r` - <https://www.unicode.org/irg/docs/n2934r-FirstCallIRG67.pdf>

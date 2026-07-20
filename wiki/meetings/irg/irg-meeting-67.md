@@ -8,7 +8,7 @@ bodies: [IRG]
 meeting: 67
 date: "2026-10-12/16"
 location: Tokyo, Japan
-documents: [irg-n2928, irg-n2935, irg-n2946, irg-n2953, irg-n2960, utc-l2-26-147]
+documents: [irg-n2914r, irg-n2928, irg-n2934r, irg-n2935, irg-n2946, irg-n2953, irg-n2960, utc-l2-26-147]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
 tags: [meeting, irg, agenda, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -18,7 +18,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-IRG Meeting \#67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid meeting である。公開 agenda `IRG N2935` の last update は 2026-07-05。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
+IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call により 2026-10-12/16 に Tokyo, Japan で hybrid 開催すると告知された。公開 agenda [IRG N2935](../../documents/irg-n2935.md) の last update は 2026-07-05。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
 
 会合の中心は [IRG Working Set 2024](../../topics/irg-working-set-2024.md) Version 5.0 の review で、火曜と水曜の大部分が割り当てられている。月曜には IRG Meeting \#66 の recommendations / action items の follow-up、Horizontal Extension、Representative Glyph / Source Reference Issues が置かれている。
 
@@ -38,7 +38,7 @@ IRG Meeting \#67 は 2026-10-12/16 に Tokyo, Japan で開催予定の hybrid me
 
 このページは agenda ingest であり、Meeting \#67 は未来の会合なので決定事項はまだ発生していない。`IRG N2935` 時点で、Section 6 "Urgently Needed Ideograph Proposals" と Section 7 "Disunification Proposals & Documents" は `NONE` とされている。
 
-IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendations and Action Items" row と URL が先に登録されている。ただし 2026-07-11 に同URLを確認した時点では HTTP 404 であり、recommendations 本文が公開済みであることを意味しない。会合後に実体が公開された時点で、この節を `IRG N2946` に基づく決定事項へ更新する。
+IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendations and Action Items" row と URL が先に登録されている。ただし 2026-07-20 に同URLを再確認した時点でも HTTP 404 であり、recommendations 本文が公開済みであることを意味しない。会合後に実体が公開された時点で、この節を `IRG N2946` に基づく決定事項へ更新する。
 
 ## 後続確認
 
@@ -48,13 +48,14 @@ IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendati
 - [L2/26-147](../../documents/utc-l2-26-147.md) / `IRG N2961` - U-source horizontal extension。
 - [IRG N2928](../../documents/irg-n2928.md) / [IRG N2953](../../documents/irg-n2953.md) - U+268A1 / U+268A2 の V-source representative glyph issue。
 - `IRG N2929R` - China Horizontal Extension の revised document。`IRG N2909` の action item では 2026-09-25 までに提出予定。
-- `IRG N2952` - Rules for Assigning Radicals。radical assignment follow-up の精読対象。
+- `IRG N2952` - Rules for Assigning Radicals。register は available とするが、2026-07-20 の取得では PDF URL が HTTP 404 を返した。
 - `IRG N2946` - Meeting \#67 Recommendations and Action Items 用に予約された register row。会合後に文書実体が公開された時点で決定事項の一次ソースとして読む。
 
 ## 出典
 
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
-- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（2026-07-11 時点では HTTP 404）
+- `irg-n2934r` - <https://www.unicode.org/irg/docs/n2934r-FirstCallIRG67.pdf>
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（2026-07-20 時点でも HTTP 404）
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2960` - <https://www.unicode.org/irg/docs/n2960-UKHorizontalExtension.pdf>
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>

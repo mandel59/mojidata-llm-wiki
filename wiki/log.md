@@ -4,6 +4,7 @@
 
 ## 2026-07-20
 
+- **Digest**: Added [IRG N2934R](documents/irg-n2934r.md), documenting the Meeting \#67 First Call, Tokyo hybrid venue, registration and submission deadlines, and the later N2935 schedule change while keeping unpublished recommendations separate.
 - **Digest**: Added [WG2 N5353](documents/wg2-n5353.md), connecting IRG Meetings \#65 / \#66 recommendations to WG2 actions while recording document migration, WS2024, disunification, source/glyph corrections, Singapore source, CJKV Components, CJK Hybrid Characters, and UTS \#37 status.
 
 ## 2026-07-17

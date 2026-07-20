@@ -311,6 +311,7 @@
 - [IRG N2955](irg-n2955.md) - `IRG N2954` への G-source glyph feedback。
 - [IRG N2954](irg-n2954.md) - U+2CCA3 の G-source representative glyph issue。
 - [IRG N2951](irg-n2951.md) - Consolidated FS & SC Guidelines。
+- [IRG N2934R](irg-n2934r.md) - 2026年10月の IRG Meeting 67 について、Tokyo hybrid 開催、会場、参加登録・文書提出締切を告知した First Call。
 - [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2953](irg-n2953.md) - `IRG N2928` への U+268A1 / U+268A2 glyph follow-up。
 - [IRG N2874R](irg-n2874r.md) - `IRG N2840` の4 G-source glyph issuesへのfeedback。
