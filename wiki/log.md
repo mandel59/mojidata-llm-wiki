@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-07-25
+
+- **Digest**: Added [IRG N2914R](documents/irg-n2914r.md), separating Meeting \#67 venue, registration, visa, transportation, and accommodation logistics from the First Call, current agenda, and future recommendations.
+
 ## 2026-07-20
 
 - **Digest**: Added [IRG N2934R](documents/irg-n2934r.md), documenting the Meeting \#67 First Call, Tokyo hybrid venue, registration and submission deadlines, and the later N2935 schedule change while keeping unpublished recommendations separate.

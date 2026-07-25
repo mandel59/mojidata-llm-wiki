@@ -18,7 +18,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call により 2026-10-12/16 に Tokyo, Japan で hybrid 開催すると告知された。公開 agenda [IRG N2935](../../documents/irg-n2935.md) の last update は 2026-07-05。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
+IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call により 2026-10-12/16 に Tokyo, Japan で hybrid 開催すると告知された。[IRG N2914R](../../documents/irg-n2914r.md) は、National Center of Sciences Building 内の会場、2026-09-18 の参加登録期限、visa・交通・宿泊などの logistics を補う。公開 agenda [IRG N2935](../../documents/irg-n2935.md) の last update は 2026-07-05。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
 
 会合の中心は [IRG Working Set 2024](../../topics/irg-working-set-2024.md) Version 5.0 の review で、火曜と水曜の大部分が割り当てられている。月曜には IRG Meeting \#66 の recommendations / action items の follow-up、Horizontal Extension、Representative Glyph / Source Reference Issues が置かれている。
 
@@ -53,6 +53,7 @@ IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendati
 
 ## 出典
 
+- `irg-n2914r` - <https://www.unicode.org/irg/docs/n2914r-LogisticsIRG67.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2934r` - <https://www.unicode.org/irg/docs/n2934r-FirstCallIRG67.pdf>
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（2026-07-20 時点でも HTTP 404）

@@ -23,7 +23,7 @@ timestamp: 2026-07-20T00:00:00+09:00
 
 `IRG N2934R` は、IRG Meeting \#67 を Tokyo, Japan で hybrid 開催する First Call である。文書上の会期は 2026-10-12/16、host は SAT Daizōkyō Text Database Committee、in-person 会場は National Center of Sciences Building 1階の Hitotsubashi Hall とする。
 
-参加登録は in-person / remote とも 2026-09-18、会合文書提出は 2026-09-25 が締切。remote attendees は Zoom を利用し、詳細 logistics は `IRG N2914R`、更新される schedule / agenda は [IRG N2935](irg-n2935.md) を参照する。
+参加登録は in-person / remote とも 2026-09-18、会合文書提出は 2026-09-25 が締切。remote attendees は Zoom を利用し、詳細 logistics は [IRG N2914R](irg-n2914r.md)、更新される schedule / agenda は [IRG N2935](irg-n2935.md) を参照する。
 
 ## 通知内容
 
@@ -36,7 +36,7 @@ timestamp: 2026-07-20T00:00:00+09:00
 | remote | Zoom。latest desktop app の導入を推奨。 |
 | registration deadline | 2026-09-18 |
 | document submission deadline | 2026-09-25 |
-| logistics | `IRG N2914R` の contact、registration、visa、hotel、transportation information を参照。 |
+| logistics | [IRG N2914R](irg-n2914r.md) の contact、registration、visa、hotel、transportation information を参照。 |
 | agenda | [IRG N2935](irg-n2935.md) を会合前・会合中に継続更新。 |
 
 ## 後続決定
@@ -58,7 +58,7 @@ Tokyo 開催と SAT hosting は Japan における IRG activity だが、本書�
 ## 関連文書
 
 - [IRG N2935](irg-n2935.md) - current schedule and agenda。
-- `IRG N2914R` - registration、visa、hotel、transportation を含む logistics arrangement。
+- [IRG N2914R](irg-n2914r.md) - registration、visa、hotel、transportation を含む logistics arrangement。
 
 ## 関連ページ
 
