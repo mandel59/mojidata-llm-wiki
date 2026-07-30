@@ -4,7 +4,7 @@ title: Unihan Database Maintenance
 description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, pri-546, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
@@ -39,13 +39,14 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が UTC \#187 向けに Unihan database additions / changes / removals、UAX \#38、UTS \#37 関連 action items をまとめた。 |
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` syntax enhancement。simplified radical の区切りを `|` / `||` / `|||` で表す案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
+| 2026-07-07 | PRI | [PRI \#534](../documents/pri-534.md) | UAX \#38 Revision 40 と Unihan data corrections の public review が close。feedback の一部は UTC \#186 / \#187 で review 済みで、後続分は UTC \#188 / final data で追う。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、Moji_Joho collection に 8 IVS を追加し、9 既登録 sequences を deprecated とする review を開いた。 |
 
 ## 主な論点
 
 ### UAX \#38 と実データ更新
 
-[L2/26-105](../documents/utc-l2-26-105.md) は UAX \#38 の proposed update であり、`L2/26-099` は PRI \#534 feedback と個別文書を UTC action item に変換する。`L2/26-099` では、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode`、`kTotalStrokes` などが対象になった。Format / syntax の詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) に寄せる。
+[L2/26-105](../documents/utc-l2-26-105.md) は UAX \#38 の proposed update であり、`L2/26-099` は [PRI \#534](../documents/pri-534.md) feedback と個別文書を UTC action item に変換する。`L2/26-099` では、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode`、`kTotalStrokes` などが対象になった。Format / syntax の詳細は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) に寄せる。
 
 ### 新しい provisional properties
 
@@ -93,6 +94,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - [L2/26-074](../documents/utc-l2-26-074.md) - `kJapaneseNewVariant` / `kJapaneseOldVariant` proposal。
 - [L2/26-084](../documents/utc-l2-26-084.md) - 169 characters の `kMandarin` feedback。
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
+- [PRI \#534](../documents/pri-534.md) - UAX \#38 Revision 40 と Unihan data corrections の public review record。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
 - [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
 - [L2/26-134](../documents/utc-l2-26-134.md) - RSIndex.txt syntax enhancement。
@@ -128,6 +130,7 @@ Data file の field structure、property syntax、IVD file format、`RSIndex.txt
 - `utc-l2-26-084` - <https://www.unicode.org/L2/L2026/26084-kMan-feedback.pdf>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
+- `pri-534` - <https://www.unicode.org/review/pri534/>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
 - `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>

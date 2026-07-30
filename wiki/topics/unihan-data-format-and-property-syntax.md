@@ -4,7 +4,7 @@ title: Unihan Data Format and Property Syntax
 description: "Unicode 18.0 cycle の UAX #38 / UTS #37 / RSIndex.txt / kTotalStrokes など、Unihan 周辺 data format と property syntax の更新論点。"
 slug: unihan-data-format-and-property-syntax
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
+documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
 topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path]
 people: [ken-lunde, utc, irg, wg2]
 status: active
@@ -29,6 +29,7 @@ Unicode 18.0 cycle では、UAX \#38 Revision 40、UTS \#37 Revision 15、`RSInd
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が UTC \#187 向けに UAX \#38 / UTS \#37 / Unihan data changes を recommendations に束ねた。 |
 | 2026-05-21 | UTC | [L2/26-134](../documents/utc-l2-26-134.md) | `RSIndex.txt` に simplified radical group を示す `|` / `||` / `|||` separator を導入する syntax enhancement を提案。 |
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG FS & SC conventions と ORT metadata checking に合わせる変更を提案。 |
+| 2026-07-07 | PRI | [PRI \#534](../documents/pri-534.md) | UAX \#38 Revision 40 と individual Unihan / UAX \#45 data corrections の public review が close。 |
 | 2026-07-07 | PRI | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、UCD XML schema に `kJapaneseNewVariant` / `kJapaneseOldVariant` 追加と `kIRGDaeJaweon` / `kIRGKangXi` 削除が反映された。 |
 | 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が [L2/26-099](../documents/utc-l2-26-099.md) 由来の CJK additions and changes を ISO/IEC 10646 CD progression に接続した。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。 |
@@ -37,7 +38,7 @@ Unicode 18.0 cycle では、UAX \#38 Revision 40、UTS \#37 Revision 15、`RSInd
 
 ### UAX \#38 property syntax
 
-[L2/26-105](../documents/utc-l2-26-105.md) は UAX \#38 の proposed update であり、Unihan database の mechanics、property categories、property syntax、Unihan.zip の構成、property history を Unicode 18.0.0 向けに更新する。`L2/26-099` は PRI \#534 feedback と個別文書の結果を UTC \#187 の action items に変換しており、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode` などを扱う。
+[L2/26-105](../documents/utc-l2-26-105.md) は UAX \#38 の proposed update であり、Unihan database の mechanics、property categories、property syntax、Unihan.zip の構成、property history を Unicode 18.0.0 向けに更新する。`L2/26-099` は [PRI \#534](../documents/pri-534.md) feedback と個別文書の結果を UTC \#187 の action items に変換しており、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode` などを扱う。
 
 UAX \#38 は各 property の意味だけでなく、value delimiter、source reference の prefix、data file の構成を実装者が読む入口になる。Unicode 18.0 の beta data を確認する際は、UAX \#38 draft と `Unihan.zip` の実 data の両方を見る必要がある。
 
@@ -74,6 +75,7 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 ## 関連文書
 
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
+- [PRI \#534](../documents/pri-534.md) - UAX \#38 Revision 40 / Unihan data public review。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
 - [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
 - [PRI \#549](../documents/pri-549.md) - UAX \#42 Unicode Character Database in XML Revision 39 public review。
@@ -96,6 +98,7 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-105` - <https://www.unicode.org/L2/L2026/26105-uax38-40-update-pri534.pdf>
+- `pri-534` - <https://www.unicode.org/review/pri534/>
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
 - `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `pri-549` - <https://www.unicode.org/review/pri549/>
