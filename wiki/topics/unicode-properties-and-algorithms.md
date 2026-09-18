@@ -1,7 +1,7 @@
 ---
 type: Topic
 title: Unicode Properties and Algorithms
-description: "UTC #187 PAG report を中心にした Unicode properties、algorithm text、security data の更新論点。"
+description: "Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
 documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
@@ -9,14 +9,14 @@ topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pi
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
 tags: [properties, algorithms, ucd, math, uax11, uax14, uax24, uax29, uax31, uax42, uax44, uts10, uts39, uts61, security]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Unicode Properties and Algorithms
 
 ## 概要
 
-Unicode properties and algorithms は、文字追加だけでは決まらない UCD property 値、annex text、security data、collation data、segmentation behavior を調整する論点である。UTC \#188 は `L2/26-154` の recommendations を [minutes](../documents/utc-l2-26-151.md) の 188-C19〜C30 に展開し、Unicode 18.0 changes を確定した。後続の [PRI \#555](../documents/pri-555.md) と [PRI \#557](../documents/pri-557.md) は finite automata data と UAX \#11 documentation を review する。
+Unicode properties and algorithms は、文字追加だけでは決まらない UCD property 値、annex text、security data、collation data、segmentation behavior を調整する論点である。UTC \#188 は `L2/26-154` の recommendations を [minutes](../documents/utc-l2-26-151.md) の 188-C19〜C30 に展開し、Unicode 18.0 changes を確定した。final UAX / UTS と `/Public/18.0.0/` data を実装基準とし、後続の [PRI \#555](../documents/pri-555.md) / [PRI \#557](../documents/pri-557.md) は Unicode 19.0 cycle と分ける。
 
 この topic は、CJK、emoji、script proposals とは別に、実装結果に直接影響する data / algorithm updates を追う入口である。
 
@@ -44,12 +44,14 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UAX \#29 Revision 48 public review が close し、GB9c / Indic_Conjunct_Break による grapheme cluster boundary の更新が UTC \#188 に接続した。 |
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、security mechanisms / confusables data の Unicode 18.0 finalization が UTC \#188 に接続した。 |
 | 2026-07-07 | UTC | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、ISO 15924 mixed-script script codes の explanation が UTC \#188 に接続した。 |
+| 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 が variation-selector conformance、UCD properties、line breaking、segmentation、collation、security changes を確定した。 |
+| 2026-09-16 | Unicode | Unicode 18.0.0 release | Final UAX / UTS text、UCD、auxiliary test data、security / collation data を公開した。 |
 
 ## 主な論点
 
 ### UCD property と line breaking
 
-PAG report は、Arabic marks の Diacritic property、U+FE51 / U+2012 / U+2013 / U+00AD の Line_Break 値、LB12a text を Unicode 18.0 に合わせて調整する。実装者は release note だけでなく beta UCD と UAX \#14 text を確認する必要がある。
+Final UAX \#14 は LB12a を BA × GL に変更し、U+2012 FIGURE DASH / U+2013 EN DASH を HH から BA、U+00AD SOFT HYPHEN を BA から HH へ変更した。実装者は final `LineBreak.txt` と `LineBreakTest.txt` を同時に更新する。
 
 [PRI \#547](../documents/pri-547.md) の UAX \#44 Revision 37 は、Unicode 18.0 の UCD directory structure、property definitions、derived properties、UCD change history を読む入口である。特に `InCB=Linker` derivation、`JurchenSources.txt` / `SealSources.txt`、UAX \#60 data file documentation は、PAG report や beta data と合わせて確認する。
 
@@ -59,11 +61,15 @@ PAG report は、Arabic marks の Diacritic property、U+FE51 / U+2012 / U+2013 
 
 UAX \#29 GB9c と UAX \#44 の InCB=Linker derivation は、新規文字追加と連動して更新される。文字追加 proposal が独立に見えても、grapheme cluster behavior や derived property に実装差が出る場合がある。
 
-[PRI \#552](../documents/pri-552.md) の UAX \#29 Revision 48 は、GB9c を `InCB=Linker` / `InCB=Extend` / `InCB=Consonant` の関係として更新する review issue である。実装者は UAX \#29 rule text、UAX \#44 derived property documentation、beta UCD auxiliary data を合わせて確認する。
+[PRI \#552](../documents/pri-552.md) の review を経て、final UAX \#29 は GB9c から linker 前方 context の要件を除き、Balinese cluster breaking を改善した。UAX \#44 の `Indic_Conjunct_Break` derivation も `Script` ではなく `Script_Extensions` を使うため、Bengali を含む derived data と grapheme tests を合わせて更新する。
 
 ### Collation と CLDR alignment
 
-UTS \#10 / DUCET / CLDR alignment では Tibetan contractions、U+FFFE / U+FFFF weights などが扱われた。[L2/26-109](../documents/utc-l2-26-109.md) は、DUCET well-formedness を保つために 10 個の Tibetan contractions を説明し、U+FFFE を lowest primary weight `0200`、U+FFFF を highest primary weight `FFFF` に map する special handling を明確化する。Unicode release と CLDR release の両方に関わるため、collation は UTC 文書だけで完結しない。
+Final UTS \#10 は Jurchen / Small Seal を implicit weighting に追加し、10 Tibetan contractions、U+FFFE / U+FFFF の special handling を加え、Shift-Trimmed option を削除した。Unicode release と CLDR release の両方に関わるため、collation は DUCET と CLDR root tailoring の差も確認する。
+
+### Security と identifier data
+
+Final UTS \#39 は Hntl script code support、Rule A1 の ZWNJ 周辺制約強化、`nonspacing mark` terminology の明確化を含む。`confusables.txt` は NFD で現れない未使用 lines を削除し、`IdentifierType.txt` は code point order に並べ替えられた。data diff を semantic change と単なる並べ替えに分けて検証する必要がある。
 
 ### Arabic mark rendering
 

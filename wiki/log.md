@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-09-19
+
+- **Topics**: Expanded [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) and related release, properties / algorithms, script pipeline, Unihan, UAX \#60, Small Seal, and emoji topics with final 2026-09-16 repertoire, beta-to-final differences, versioned artifacts, and migration checks.
+
 ## 2026-09-18
 
 - **Catalog**: Refreshed all current registry pages, adding UTC L2/26-150 through L2/26-216 plus revised entries, IRG N2961R2 through N2971 with reserved rows through N3000, and PRI \#555 through PRI \#560; WG2 had no manifest changes.

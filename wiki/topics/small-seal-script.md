@@ -4,10 +4,10 @@ title: Small Seal Script
 description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 bodies: [UTC, WG2]
-documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
-status: in-ballot-pipeline
+documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
+status: encoded-unicode-18
 tags: [script, seal, cjk, ideographic]
-timestamp: 2026-07-06T21:31:45+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Small Seal Script
@@ -42,6 +42,8 @@ Small Seal Script は、`Shuowen Jiezi` に基づく小篆を UCS / Unicode に�
 | 2026-01 | WG2 | [WG2 N5344R2](../documents/wg2-n5344r2.md) | Small Seal WG が revised proposal を提出。11,328 characters を `3D000..3FC3F` の `Small Seal` block に置く案へ更新。 |
 | 2026-03 | WG2 | [WG2 N5348R](../documents/wg2-n5348r.md), [WG2 N5355](../documents/wg2-n5355.md) | modern CJK 対応値、`liding`（隷定）、`zhèngzhuàn`（正篆）/ `chóngwén`（重文）に関する feedback と clarification。 |
 | 2026-06 | WG2 | [WG2 N5360R](../documents/wg2-n5360r.md), [WG2 N5354](../documents/wg2-n5354.md), [WG2 N5369](../documents/wg2-n5369.md) | draft で proposed nonacceptance だった name change を WG2 discussion で採用し、[WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md) として確定。M73.04 は 7th edition DIS への進行を勧告。 |
+| 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md), [L2/26-160R](../documents/utc-l2-26-160r.md) | UTC 188-C3 が 11,328 algorithmic names を `SMALL SEAL CHARACTER-XXXXX` へ変更し、18.0 final data / charts への反映を指示。 |
+| 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0 で U+3D000..U+3FC3F の 11,328 Small Seal characters と `SealSources.txt` を公開。 |
 
 ## 主な論点
 
@@ -81,11 +83,11 @@ Small Seal は modern Hanzi の書体差ではなく、`Oracle Bone script`、`B
 
 [WG2 N5344R2](../documents/wg2-n5344r2.md) では script property と character names は ISO 15924 に合わせて `Seal` を使う案だった。WG2 \#73 の CD.4 disposition による名称・property 変更は [WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md) に集約する。具体的には、`WG2 N5369` が `3D000..3FC3F` の names を `SMALL SEAL CHARACTER-XXXXX` に変え、6 characters の `kSEAL_Rad`、20 characters の `kSEAL_MCJK`、U+3F80E の glyph correction を採択した。
 
-Unicode 18.0 draft release page と beta review page では、Seal が Unicode 18.0 の 4 new scripts の一つとして扱われ、Seal block は `3D000..3FC3F`、新 data file として `SealSources.txt` が示されている。Unicode 18.0 全体の変更点資料は [Unicode 18.0 Change Sources](unicode-18-change-sources.md) にまとめる。
+Unicode 18.0 final release は Seal を 3 new scripts の一つとして符号化し、block `3D000..3FC3F` に 11,328 characters を追加した。block name と `Script` property value は `Seal`、code chart header と core specification は `Small Seal` を使う。`SealSources.txt` は `kSEAL_THXSrc`、`kSEAL_CCZSrc`、`kSEAL_DYCSrc`、`kSEAL_QJZSrc` の normative source properties を収録する。
 
 ## 現状
 
-2026-06-26 の WG2 \#73 recommendations 時点では、Small Seal は ISO/IEC 10646 7th edition CD4 の disposition に含まれており、M73.04 はその変更を含む DIS text を SC2 secretariat に回すことを勧告している。M73.04 の target は DIS 2026-10-01、IS 2027-06-01。
+Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。ISO 側では WG2 \#73 M73.04 が Small Seal changes を含む ISO/IEC 10646 7th edition DIS text を SC2 secretariat に回すよう勧告しており、body と時点を分けて追跡する。
 
 ## 関連文書
 
@@ -163,5 +165,7 @@ Unicode 18.0 draft release page と beta review page では、Seal が Unicode 1
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>
 - `wg2-n5369` - <https://www.unicode.org/wg2/docs/n5369-CD7th-4-DOC.pdf>
-- Unicode 18.0 draft release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0 Seal code chart - <https://www.unicode.org/charts/PDF/U3D000.pdf>
+- UAX \#60, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/>
 - Unicode 18.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>

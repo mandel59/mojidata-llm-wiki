@@ -4,19 +4,19 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
-timestamp: 2026-07-09T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Script Encoding Pipeline
 
 ## 概要
 
-Script Encoding Pipeline は、script / character proposals が UTC で provisional assignment、保留、再提案、property / glyph correction に分かれて進む過程を追う topic である。UTC \#187 では [L2/26-100](../documents/utc-l2-26-100.md) Script Encoding WG report が主要文書で、Unicode 18.0 に向けた Latin、Arabic、currency / alchemical symbols、Shaaldaa、Cossic などの処理を束ねる。
+Script Encoding Pipeline は、script / character proposals が UTC で provisional assignment、保留、再提案、property / glyph correction に分かれて進む過程を追う topic である。UTC \#187 の [L2/26-100](../documents/utc-l2-26-100.md) に加え、UTC \#188 の [L2/26-158](../documents/utc-l2-26-158.md) と [minutes](../documents/utc-l2-26-151.md) を比較し、working group recommendation と UTC decision を分離する。
 
 この topic は特定 script の解説ではなく、SEW report と WG2 recommendations を decision hub として、どの proposal がどの条件で先へ進むかを読むための入口である。
 
@@ -50,6 +50,8 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2026-06-09 | UTC | [L2/26-144](../documents/utc-l2-26-144.md) | Medievalist / Tlahuica と historical Khakas 用に I / i 由来の2 casing pairs、4文字を提案した。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 が Amendment 1 project、first amendment additions、Sirmauri / Leke / Proto-Cuneiform / Mwangwego / Shaaldaa などの script additions、Maya review request を勧告した。 |
 | 2026-07-07 | PRI | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、Script property と ISO 15924 mixed-script script codes の documentation update が Unicode 18.0 finalization に接続した。 |
+| 2026-07-27/30 | UTC | [L2/26-158](../documents/utc-l2-26-158.md), [L2/26-151](../documents/utc-l2-26-151.md) | SEW recommendations を UTC \#188 が選択的に処理。KORE SEBELI、Ndiko Jonam、N’ti は保留し、複数の character / symbol proposals を provisional assignment へ進めた。 |
+| 2026-09-16 | Unicode | Unicode 18.0.0 | Final new scripts は Proto-Cuneiform numerals、Jurchen、Seal の 3 つ。Chisoi は Unicode 19.0 へ延期。 |
 
 ## 主な論点
 
@@ -73,7 +75,13 @@ Ndiko Jonam / Luo Lakeside、[N'ti Script](nti-script.md)、[N'ko Bambara](../do
 
 ### UTC \#188 候補の新規 script / notation proposals
 
-UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacritics、[L2/26-114](../documents/utc-l2-26-114.md) Devanagari vowel length mark、[L2/26-129](../documents/utc-l2-26-129.md) [Leke](leke-script.md)、[L2/26-132](../documents/utc-l2-26-132.md) [KORE SEBELI](kore-sebeli-script.md)、[L2/26-131](../documents/utc-l2-26-131.md) Kannada Samavedic svara markers が登録された。これらは次回 UTC meeting の agenda が未公開なため決定済みではないが、script / notation pipeline の候補として追跡する。
+UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacritics、[L2/26-114](../documents/utc-l2-26-114.md) Devanagari vowel length mark、[L2/26-129](../documents/utc-l2-26-129.md) [Leke](leke-script.md)、[L2/26-132](../documents/utc-l2-26-132.md) [KORE SEBELI](kore-sebeli-script.md)、[L2/26-131](../documents/utc-l2-26-131.md) Kannada Samavedic svara markers が登録された。UTC \#188 minutes では KORE SEBELI は character names revision のため延期、Ndiko Jonam / N’ti は IP clarification 待ち、Samavedic markers は追加 user confirmation 待ちとなった。
+
+SEW が provisional assignment を勧告しても UTC がそのまま採択するとは限らない。`SEW-188-C1` と UTC minutes の `188-C1` のように番号体系も別であるため、final status は UTC consensus / action item を参照する。
+
+### Unicode 18.0 final repertoire boundary
+
+Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-26-160r.md) と UTC 188-C2 により approval が revert され、Unicode 19.0 target の provisional assignment に戻った。Final 18.0 の new-script list は Proto-Cuneiform numerals、Jurchen、Seal であり、beta list を pipeline の採択結果として扱わない。
 
 [KORE SEBELI Script](kore-sebeli-script.md) は 2020 年から続く proposal chain であり、106 characters から 95 characters、さらに 2026 年 version 12 の 93 / 91 count へ repertoire が変化している。単発の UTC \#188 候補ではなく、repertoire count と atomic dotted-letter model の安定化を確認する必要がある。
 
@@ -120,6 +128,9 @@ UTC \#187 後には、[L2/26-113](../documents/utc-l2-26-113.md) Kannada diacrit
 - [L2/26-132](../documents/utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-137](../documents/utc-l2-26-137.md) - Joining_Type for left-to-right scripts。
 - [L2/26-144](../documents/utc-l2-26-144.md) - I / i 由来の Latin orthographic pairs proposal。
+- [L2/26-151](../documents/utc-l2-26-151.md) - UTC \#188 final decisions。
+- [L2/26-158](../documents/utc-l2-26-158.md) - SEW recommendations to UTC \#188。
+- [L2/26-160R](../documents/utc-l2-26-160r.md) - Chisoi postponement と final release recommendations。
 - [PRI \#554](../documents/pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [L2/25-131](../documents/utc-l2-25-131.md) - historic alchemical symbols proposal。
 - [WG2 N5310R](../documents/wg2-n5310r.md) - Tai Xaau / Dai Xaau script revised proposal。

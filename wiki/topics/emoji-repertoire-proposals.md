@@ -8,7 +8,7 @@ documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-
 topics: [emoji-interoperability-and-intake, unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms]
 status: active
 tags: [emoji, repertoire, proposal, unicode-18, esr]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Emoji Repertoire Proposals
@@ -17,7 +17,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 Emoji Repertoire Proposals は、個別 emoji proposal が ESR review を通って Unicode / Emoji version の candidate list に入る過程を追う topic である。[Emoji Interoperability and Intake](emoji-interoperability-and-intake.md) が process / CLDR / interoperability を扱うのに対し、この topic では concrete repertoire、code point、final character name、replaced candidate を整理する。
 
-Unicode 18.0 では [L2/25-230R](../documents/utc-l2-25-230r.md) が 9 new emoji characters を推薦し、[L2/26-008R](../documents/utc-l2-26-008r.md) が FACE WITH SQUINTING EYES を CRACKING FACE に置き換えた。Emoji 19.0 については、[L2/26-098](../documents/utc-l2-26-098.md) が intake window と review priorities を示す。
+Unicode 18.0 は 2026-09-16 に 9 new emoji characters を公開した。[L2/25-230R](../documents/utc-l2-25-230r.md) が short list を推薦し、[L2/26-008R](../documents/utc-l2-26-008r.md) が FACE WITH SQUINTING EYES を CRACKING FACE に置き換えた。Emoji 19.0 については、[L2/26-098](../documents/utc-l2-26-098.md) が intake window と review priorities を示す。
 
 ## 経緯
 
@@ -29,8 +29,9 @@ Unicode 18.0 では [L2/25-230R](../documents/utc-l2-25-230r.md) が 9 new emoji
 | 2026-01-21 | UTC | [L2/26-008R](../documents/utc-l2-26-008r.md) | ESR が U+1FAEB FACE WITH SQUINTING EYES を CRACKING FACE に変更し、Unicode 18.0 final emoji candidates を更新した。 |
 | 2026-04-03 | UTC | [L2/26-104](../documents/utc-l2-26-104.md) | UTS \#51 Revision 30 draft が Emoji 18.0 の specification / data layer を更新した。 |
 | 2026-04-14 | UTC | [L2/26-098](../documents/utc-l2-26-098.md) | ESR が monarch butterfly feedback、Emoji 19.0 intake、CLDR keyword intake を UTC \#187 に報告した。 |
+| 2026-09-16 | Unicode | Unicode 18.0 / Emoji 18.0 | 9 characters と対応する emoji data / charts を公開した。 |
 
-## Unicode 18.0 final emoji candidates
+## Unicode 18.0 released emoji
 
 | Code point | Final name | 主 proposal / rationale | 備考 |
 | --- | --- | --- | --- |
@@ -60,7 +61,7 @@ Final character name が決まっても、user-facing search は CLDR short name
 
 ### UTS \#51 data layer
 
-[L2/26-104](../documents/utc-l2-26-104.md) は、Emoji 18.0 の proposed UTS \#51 update として、RGI sets、emoji sequences、ZWJ / tag sequence、design guidance を定義する。Repertoire proposal の採択後は、code point だけでなく `emoji-data.txt` や CLDR data への反映を追う必要がある。
+[L2/26-104](../documents/utc-l2-26-104.md) は Emoji 18.0 の proposed UTS \#51 update で、final UTS \#51 は emoji / text presentation selectors と default presentation style の guidance を更新した。Repertoire の確認では code points、final emoji charts、`emoji-data.txt`、CLDR names / keywords を分けて追う。
 
 ## 関連文書
 
@@ -82,4 +83,5 @@ Final character name が決まっても、user-facing search は CLDR short name
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-098` - <https://www.unicode.org/L2/L2026/26098-esr-report-utc187.pdf>
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
-
+- Emoji Recently Added, v18.0 - <https://www.unicode.org/emoji/charts-18.0/emoji-released.html>
+- Unicode 18.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>

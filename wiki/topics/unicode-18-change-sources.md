@@ -5,18 +5,20 @@ description: "Unicode 18.0 の変更点を調べるための公式資料と関�
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
 documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-151, utc-l2-26-154, utc-l2-26-157, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
-topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
+topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, small-seal-script, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 events: [utc-188-unicode-18-release-authorization]
 status: released
 tags: [unicode-18, release, beta, ucd, migration]
-timestamp: 2026-07-07T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Unicode 18.0 Change Sources
 
 ## 概要
 
-Unicode 18.0 の変更点は、単一の提案文書ではなく、release summary、UCD / UAX / UTS、UTC minutes、WG2 recommendations、IRG / CJK & Unihan documents に分散している。[UTC \#188 minutes](../documents/utc-l2-26-151.md) は release を authorize し、[L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) は Unicode 18.0 が 2026-09-16 に release されたことを報告する。
+Unicode 18.0 は 2026-09-16 に公開され、13,007 characters を追加して総数 172,808 characters になった。新規 scripts は Proto-Cuneiform numerals、Jurchen、Seal (= Small Seal) の 3 つで、beta に含まれていた Chisoi 40 characters は UTC \#188 で Unicode 19.0 へ延期された。
+
+変更点は release summary、UCD / UAX / UTS、UTC minutes、WG2 recommendations、IRG / CJK & Unihan documents に分散している。[UTC \#188 minutes](../documents/utc-l2-26-151.md) は release を authorize し、[L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) は実際の publication を報告する。このページでは beta 時点の候補と final 18.0 の内容を分けて扱う。
 
 ## 経緯
 
@@ -44,20 +46,27 @@ Unicode 18.0 の変更点は、単一の提案文書ではなく、release summa
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UAX \#29 Revision 48 public review が close し、Unicode 18.0 の text segmentation / GB9c 更新に接続した。 |
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTS \#39 Revision 33 public review が close し、Unicode 18.0 の security mechanisms / confusables data finalization に接続した。 |
 | 2026-07-07 | UTC | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、Script property と ISO 15924 mixed-script script codes の documentation update を確認対象にした。 |
+| 2026-07-27/30 | UTC | [L2/26-158](../documents/utc-l2-26-158.md), [L2/26-160R](../documents/utc-l2-26-160r.md), [L2/26-151](../documents/utc-l2-26-151.md) | SEW / RMG recommendations を UTC \#188 が処理し、Chisoi の 18.0 approval を revert、Small Seal names を変更、final repertoire / data / specification actions を確定した。 |
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 の 188-C47 が Unicode 18.0 と同期 UTS の release を authorize。 |
-| 2026-09-16 | UTC | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0 が release された。 |
+| 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0.0、versioned UCD、code charts、core specification、同期 UTS が公開された。 |
 
 ## 主な論点
 
 ### まず見るべき公式資料
 
-Unicode 18.0 の全体像は `Unicode 18.0.0` draft release page が入口になる。このページは、character additions、new blocks、UAX / UTS changes、UCD files、UAX \#38 / UAX \#45 / UAX \#60 data files、migration implications へのリンクを持つ。正式リリース前は draft warning があるため、変更点の最終確認には beta page と UCD data directory も併用する。
+Unicode 18.0 の全体像は `Unicode 18.0.0` release page が入口になる。このページは、final character additions、new blocks、UAX / UTS changes、versioned UCD、code charts、UAX \#38 / UAX \#45 / UAX \#60 data files、migration implications へのリンクを持つ。ページ上部には preliminary draft の注意書きが残っているが、2026-09-16 announcement、version reference、`/Public/18.0.0/` artifacts は公開済みである。
 
-Beta review page は、reviewer 向けに beta UCD、single-block delta charts、all-block charts、emoji charts、auxiliary HTML charts、annex proposed updates、related UTS updates、notable issues をまとめる。実装者が変更点を機械的に確認する場合は、summary description だけでなく beta UCD と delta charts を直接見る必要がある。
+Beta review page は review 過程と beta-to-final delta を確認する資料として残す。実装や引用の基準は final `/Public/18.0.0/` directory、versioned code charts、final UAX / UTS とし、beta UCD を production input にしない。
 
 ### Unicode 18.0 の大枠
 
-Draft release page は、Unicode 18.0 が 13,047 characters を追加し、総文字数が 172,848 characters になると説明している。新 script は Chisoi、Proto-Cuneiform numerals、Jurchen、Seal の 4 つである。新 block は Bengali Supplement、Archaic Cuneiform Numerals、Chisoi、Jurchen、Jurchen Radicals、Musical Symbols Supplement、Miscellaneous Symbols and Arrows Extended、Seal である。
+Final release は 13,007 characters を追加し、総数を 172,808 characters とした。新 script は Proto-Cuneiform numerals、Jurchen、Seal の 3 つ、新 block は Bengali Supplement、Archaic Cuneiform Numerals、Jurchen、Jurchen Radicals、Musical Symbols Supplement、Miscellaneous Symbols and Arrows Extended、Seal の 7 つである。
+
+### Beta から final への差分
+
+Beta は 13,047 additions、総数 172,848、4 new scripts として Chisoi を含んでいた。[L2/26-160R](../documents/utc-l2-26-160r.md) と [UTC \#188 minutes](../documents/utc-l2-26-151.md) の 188-C2 は Chisoi 40 code points `U+16D80..U+16DA9` の Unicode 18.0 approval を revert し、provisionally assigned / Unicode 19.0 target に戻した。したがって beta page の repertoire summary を final 18.0 の説明に再利用してはならない。
+
+Small Seal は beta から残ったが、188-C3 により 11,328 characters の algorithmic names が `SEAL` から `SMALL SEAL` へ変更された。block name と `Script` property value は `Seal`、code chart headers と core specification では `Small Seal` を使うため、名称差は意図されたものとして扱う。
 
 ### CJK / Unihan / ideographic scripts の確認点
 
@@ -79,11 +88,19 @@ UTC \#187 の重要な change source は RMG と CJK & Unihan だけではない
 
 ### 実装者が見るべき data
 
-実装影響は UCD と synchronized UTS の data files に現れる。draft release page は UCD 18.0.0 directory、Unihan.zip、USourceData.txt / USourceGlyphs.pdf / USourceRSChart.pdf、JurchenSources.txt、SealSources.txt、NushuSources.txt、TangutSources.txt、StandardizedVariants.txt、security data、emoji data などを list of components として示している。
+実装影響は UCD と synchronized UTS の data files に現れる。final release page は UCD 18.0.0 directory、Unihan.zip、USourceData.txt / USourceGlyphs.pdf / USourceRSChart.pdf、JurchenSources.txt、SealSources.txt、NushuSources.txt、TangutSources.txt、StandardizedVariants.txt、security data、emoji data などを list of components として示している。
 
 UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut data files は、character names だけでは追えない script-specific identity data を UCD component として扱う。UAX \#53 の AMTRA、[PRI \#545](../documents/pri-545.md) の UAX \#11 East_Asian_Width update、[PRI \#551](../documents/pri-551.md) の UAX \#14 line breaking update、[PRI \#552](../documents/pri-552.md) の UAX \#29 GB9c update、UTS \#10 の DUCET changes、[PRI \#553](../documents/pri-553.md) の UTS \#39 security mechanisms update は、data file だけでなく algorithm / guidance text の更新として確認する必要がある。
 
 [PRI \#549](../documents/pri-549.md) の UAX \#42 XML update は、Jurchen / Seal / Tangut / Unihan attributes を `ucdxml` schema 側に反映する。[PRI \#554](../documents/pri-554.md) の UAX \#24 update は `Script` / `Script_Extensions` documentation、[PRI \#550](../documents/pri-550.md) の UAX \#41 update は common references と versioned data URLs の確認点である。
+
+### Final migration checklist
+
+- hard-coded repertoire count、new-script list、block ranges から Chisoi を除き、final values へ更新する。
+- UAX \#14 の LB12a と `Line_Break` changes、UAX \#29 GB9c / `Indic_Conjunct_Break` derivation、UTS \#39 Rule A1 / Hntl support を再テストする。
+- UAX \#38 property additions / removals / delimiter changes、CJK Extension D の assigned end `U+2B81E`、Mongolian standardized variation sequences を差分確認する。
+- UTS \#10 の Jurchen / Small Seal implicit weights、Tibetan contractions、U+FFFE / U+FFFF handling、Shift-Trimmed removal を確認する。
+- versioned code charts、delta charts、UCD / non-UCD data directory を final `/Public/18.0.0/` から固定して取得する。
 
 ### Delta charts feedback
 
@@ -155,7 +172,10 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 
 ## 出典
 
-- Unicode 18.0.0 draft release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0.0 versioned data - <https://www.unicode.org/Public/18.0.0/>
+- Unicode 18.0.0 code charts - <https://www.unicode.org/Public/18.0.0/charts/>
+- Unicode 18.0 announcement - <https://blog.unicode.org/2026/09/announcing-unicode-standard-version-180.html>
 - Unicode 18.0.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
 - `pri-547` - <https://www.unicode.org/review/pri547/>
 - `pri-548` - <https://www.unicode.org/review/pri548/>

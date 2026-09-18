@@ -1,16 +1,16 @@
 ---
 type: Topic
 title: Unicode Release Coordination and Publication
-description: "UTC #187 で扱われた Unicode 18.0 の release、charts、editorial、liaison coordination。"
+description: "Unicode 18.0 の beta gate、UTC release authorization、versioned artifacts、publication coordination。"
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
 documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
 topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts, unicode-properties-and-algorithms, emoji-repertoire-proposals]
 meetings: [utc-meeting-187, utc-meeting-188]
 events: [utc-188-unicode-18-release-authorization]
-status: active
+status: released
 tags: [unicode-18, release, charts, editorial, publication, liaison]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Unicode Release Coordination and Publication
@@ -19,7 +19,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 Unicode release coordination は、文字や property の採択だけでなく、core specification、charts、NamesList、UCD / Unihan data、beta review page、implementation liaison を同じ release schedule に乗せる作業である。UTC \#187 の beta authorization に続き、UTC \#188 は release を authorizeし、Unicode 18.0 は 2026-09-16 に公開された。
 
-この topic は [Unicode 18.0 Change Sources](unicode-18-change-sources.md) のうち、publication artifact と release process に関する文書を分けて読むための入口である。個別の CJK / script / property decisions は関連 topic に分ける。
+Final publication は core specification、versioned code charts、`/Public/18.0.0/` data、UAXes と同期 UTS \#10 / \#39 / \#46 / \#51 / \#58 を一組として扱う。この topic は [Unicode 18.0 Change Sources](unicode-18-change-sources.md) のうち、authorization と actual publication、stable / auxiliary artifacts の違いを読む入口である。
 
 ## 経緯
 
@@ -36,7 +36,7 @@ Unicode release coordination は、文字や property の採択だけでなく�
 | 2026-07-07 | UTC | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Unicode 18.0 の UCD XML schema / attributes が release artifact の確認対象になった。 |
 | 2026-07-07 | UTC | [PRI \#550](../documents/pri-550.md) | UAX \#41 Revision 37 public review が close し、common references と versioned data URLs が release artifact の確認対象になった。 |
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 の 188-C47 が Unicode 18.0 と同期 UTS の release を authorize。 |
-| 2026-09-16 | UTC | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0 の release を報告。 |
+| 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0.0、versioned UCD、core specification、code charts、同期 UTS を公開。 |
 
 ## 主な論点
 
@@ -62,6 +62,12 @@ Unicode release coordination は、文字や property の採択だけでなく�
 
 [PRI \#549](../documents/pri-549.md) は UAX \#42 XML representation の review であり、Unicode 18.0 の new scripts / blocks、Jurchen / Seal / Tangut data、Unihan property changes を XML schema に反映する。[PRI \#550](../documents/pri-550.md) は UAX \#41 common references の review であり、versioned data URLs と report references を release artifact として確認する入口である。
 
+Final release では `/Public/18.0.0/` が固定された data root になり、block / delta / consolidated charts と complete radical-stroke index は stable artifacts として扱われる。一方、auxiliary charts は informative で stability guarantee がない。再現可能な実装検査では `latest` URL や beta directory ではなく versioned paths を保存する。
+
+### Authorization と publication の分離
+
+[L2/26-160R](../documents/utc-l2-26-160r.md) は RMG recommendation、[L2/26-151](../documents/utc-l2-26-151.md) の 188-C47 は UTC authorization、[L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) と 2026-09-16 announcement は actual publication を記録する。同じ「release」と呼ばれる三段階を時点と文書の役割で区別する。
+
 ### Implementation liaison
 
 [L2/26-126](../documents/utc-l2-26-126.md) は、ICU4X が UCD / Unihan data、segmentation、properties をどう取り込むか、TC39 Intl / Temporal proposals がどこまで進んだかを報告する。release artifact の変更が実装 ecosystem にどう接続するかを見るための資料である。
@@ -86,6 +92,9 @@ Unicode release coordination は、文字や property の採択だけでなく�
 - [L2/25-230R](../documents/utc-l2-25-230r.md) - UTC \#185 ESR report and Unicode 18.0 emoji short list。
 - [L2/26-008R](../documents/utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
 - [L2/26-104](../documents/utc-l2-26-104.md) - UTS \#51 Revision 30 proposed update。
+- [L2/26-151](../documents/utc-l2-26-151.md) - UTC \#188 minutes and release authorization。
+- [L2/26-160R](../documents/utc-l2-26-160r.md) - RMG finalization / release recommendations。
+- [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) - actual publication を報告する activity report。
 
 ## 関連トピック
 
@@ -112,3 +121,6 @@ Unicode release coordination は、文字や property の採択だけでなく�
 - `utc-l2-25-230r` - <https://www.unicode.org/L2/L2025/25230r-esr-report-utc185.pdf>
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
+- Unicode 18.0.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0.0 versioned data - <https://www.unicode.org/Public/18.0.0/>
+- Unicode 18.0.0 code charts - <https://www.unicode.org/Public/18.0.0/charts/>

@@ -1,23 +1,23 @@
 ---
 type: Topic
-title: "UAX #60 Data for Large East Asian Scripts"
-description: "UAX #60 の title / data model と Small Seal など large East Asian scripts 向け data の保守。"
+title: "UAX #60 Data for East Asian Scripts"
+description: "Unicode 18.0 で新設された UAX #60 と Jurchen / Nüshu / Seal / Tangut data files。"
 slug: uax60-large-east-asian-scripts
 bodies: [UTC, WG2]
 documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, pri-549, wg2-n5209, wg2-n5344r2]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, small-seal-script]
-status: active
+status: released
 tags: [uax60, east-asian-scripts, data-files, small-seal, unicode-18]
-timestamp: 2026-07-07T21:45:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
-# UAX \#60 Data for Large East Asian Scripts
+# UAX \#60 Data for East Asian Scripts
 
 ## 概要
 
-UAX \#60 Data for Large East Asian Scripts は、Unicode の large East Asian scripts 向け補助 data を扱う technical annex である。[L2/26-108](../documents/utc-l2-26-108.md) は、Unicode 18.0.0 向け draft として Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data files を説明する。
+UAX \#60 Data for East Asian Scripts は Unicode 18.0 で新設された technical annex で、Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data files を説明する。[L2/26-108](../documents/utc-l2-26-108.md) は public review draft、final UAX \#60 と versioned source files は実装基準である。
 
-この wiki では、Unicode 18.0 周辺で UAX \#60 が `Data for Non Han Ideographic Scripts` から `Data for Large East Asian Scripts` へ title 変更され、Small Seal data の syntax / description update と接続する点を追う。
+Draft title は `Data for Non Han Ideographic Scripts`、RMG 調整後の呼称は `Data for Large East Asian Scripts` だったが、final title は `Data for East Asian Scripts` になった。document stage ごとの title を区別し、Small Seal data の syntax / description update と接続して追う。
 
 ## 経緯
 
@@ -50,7 +50,9 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 
 ### Unicode 18.0 release 管理との関係
 
-`L2/26-102` は UAX \#60 title change を Unicode 18.0 beta deliverables の調整項目として記録している。したがって UAX \#60 は、Small Seal proposal、Unicode 18.0 beta data、draft annex update の接点にある。
+`L2/26-102` は UAX \#60 title change を Unicode 18.0 beta deliverables の調整項目として記録した。Final Unicode 18.0 は UAX \#60 を正式 component とし、`JurchenSources.txt` と `SealSources.txt` を新規追加、既存 `NushuSources.txt` / `TangutSources.txt` と同じ versioned data group に置いた。
+
+`SealSources.txt` の `kSEAL_THXSrc`、`kSEAL_CCZSrc`、`kSEAL_DYCSrc`、`kSEAL_QJZSrc` は normative source properties である。block / script name の `Seal` と、chart / core text の `Small Seal` を混同しない。
 
 ## 関連文書
 
@@ -78,3 +80,5 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 - `utc-l2-26-095` - <https://www.unicode.org/L2/L2026/26095-public-review-issues.html>
 - `wg2-n5209` - <https://www.unicode.org/wg2/docs/n5209-ConsiderationsSmallSeal.pdf>
 - `wg2-n5344r2` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>
+- UAX \#60, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/>
+- Unicode 18.0 UAX \#60 data - <https://www.unicode.org/Public/18.0.0/ucd/>

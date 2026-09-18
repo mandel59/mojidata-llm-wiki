@@ -7,9 +7,9 @@ bodies: [UTC, IRG, WG2]
 documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
 topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path]
 people: [ken-lunde, utc, irg, wg2]
-status: active
+status: released
 tags: [unihan, data-format, property-syntax, uax38, uts37, unicode-18]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Unihan Data Format and Property Syntax
@@ -40,7 +40,7 @@ Unicode 18.0 cycle では、UAX \#38 Revision 40、UTS \#37 Revision 15、`RSInd
 
 [L2/26-105](../documents/utc-l2-26-105.md) は UAX \#38 の proposed update であり、Unihan database の mechanics、property categories、property syntax、Unihan.zip の構成、property history を Unicode 18.0.0 向けに更新する。`L2/26-099` は [PRI \#534](../documents/pri-534.md) feedback と個別文書の結果を UTC \#187 の action items に変換しており、`kIICore` syntax、`kOtherNumeric` description、`kSpoofingVariant`、`kIRG_GSource`、`kRSUnicode` などを扱う。
 
-UAX \#38 は各 property の意味だけでなく、value delimiter、source reference の prefix、data file の構成を実装者が読む入口になる。Unicode 18.0 の beta data を確認する際は、UAX \#38 draft と `Unihan.zip` の実 data の両方を見る必要がある。
+UAX \#38 は各 property の意味だけでなく、value delimiter、source reference の prefix、data file の構成を実装者が読む入口になる。Unicode 18.0 では final UAX \#38 と versioned `Unihan.zip` の実 data を一組として確認する。
 
 ### UAX \#42 XML representation
 
@@ -68,9 +68,15 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 
 `kTotalStrokes` は informative property だが、検索、indexing、review metadata に影響する。FS / SC conventions と Unihan property value の差が大きい場合、IRG review infrastructure と published Unihan data のどちらを基準にするかを明示して追う必要がある。
 
+### Unicode 18.0 final changes
+
+Final UAX \#38 は provisional `kJapaneseNewVariant` / `kJapaneseOldVariant` を追加し、`kIRGDaeJaweon` / `kIRGKangXi` を削除した。23 properties の delimiter、`kGB5` syntax、`kIRG_GSource` syntax / description、`kIRG_KSource` / `kIRG_UKSource` / `kJinmeiyoKanji` / `kOtherNumeric` / `kTang` descriptions が更新された。
+
+CJK Unified Ideographs Extension D は U+2B81E まで assigned range が延びたため、hard-coded end point `U+2B81D` を持つ実装は修正が必要である。[L2/26-148](../documents/utc-l2-26-148.md) の 458 `kTotalStrokes` changes も final Unihan data に入る。
+
 ### Unicode 18.0 release chain
 
-[Unicode 18.0 Change Sources](unicode-18-change-sources.md) では、UCD、Unihan.zip、UAX / UTS proposed updates、WG2 recommendations、IRG agenda を横断して release 影響を追う。この topic は、そのうち Unihan data format / property syntax に関係する文書を束ねる。正式 release 前の段階では、proposal page だけでなく beta UCD / Unihan.zip と UTC \#188 以降の minutes を確認する必要がある。
+[Unicode 18.0 Change Sources](unicode-18-change-sources.md) では、UCD、Unihan.zip、UAX / UTS updates、WG2 recommendations、IRG documents を横断して release 影響を追う。この topic は、そのうち Unihan data format / property syntax に関係する文書を束ねる。proposal / beta は decision provenance、final UAX \#38 と `/Public/18.0.0/ucd/Unihan.zip` は実装基準として役割を分ける。
 
 ## 関連文書
 
@@ -102,6 +108,8 @@ Revision 15 の変更点は、collection URL を registrant ではなく registr
 - `utc-l2-26-112` - <https://www.unicode.org/L2/L2026/26112-uts37-15-update-pri541.pdf>
 - `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `pri-549` - <https://www.unicode.org/review/pri549/>
+- UAX \#38, Unicode Han Database, Version 18.0 - <https://www.unicode.org/reports/tr38/>
+- Unicode 18.0 Unihan data - <https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
