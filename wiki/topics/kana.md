@@ -4,10 +4,10 @@ title: Kana
 description: "仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名を追跡する topic。"
 slug: kana
 bodies: [UTC, WG2]
-documents: [utc-l2-99-238, wg2-n2092, utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-20-233, utc-l2-20-280, utc-l2-20-209r, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r]
+documents: [utc-l2-99-238, wg2-n2092, utc-l2-07-421, utc-l2-08-117, utc-l2-08-358, utc-l2-09-062, utc-l2-15-239, utc-l2-15-343, utc-l2-16-188, utc-l2-16-334, utc-l2-16-354, utc-l2-16-358r, utc-l2-17-014, utc-l2-17-091, utc-l2-19-381, utc-l2-19-382, utc-l2-20-152, utc-l2-20-233, utc-l2-20-280, utc-l2-20-209r, utc-l2-23-112, utc-l2-23-118, utc-l2-23-123, utc-l2-23-127, utc-l2-24-150, utc-l2-24-279, utc-l2-25-035, utc-l2-25-036, utc-l2-25-042, utc-l2-25-060, utc-l2-25-151r, pri-548, utc-l2-26-151]
 status: active
 tags: [kana, hiragana, katakana, hentaigana]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-09-19T00:00:00+09:00
 ---
 
 # Kana
@@ -15,6 +15,8 @@ timestamp: 2026-07-08T00:00:00+09:00
 ## 概要
 
 Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extended-A などに関わる仮名の標準化議論を束ねる topic である。近年の論点は、歴史的資料を写すための合略仮名（合字的な kana ligatures）、小書き仮名、明治期の alternate Katakana などに分かれる。
+
+Unicode 18.0 では、この系譜から7文字が正式収録された。Kana Extended-A の U+1B123..U+1B128 に合略仮名4文字と alternate Katakana 2文字、Small Kana Extension の U+1B168 に KATAKANA LETTER SMALL ARCHAIC YE が追加された。したがって、これらは未決 proposal ではなく Unicode 18.0 repertoire の一部である。一方、KATAKANA LETTER SMALL NE や Ryukyuan superscript Katakana はこの7文字には含まれない。
 
 この topic では、仮名文字・仮名由来文字・仮名を使う表記体系に関わる Unicode / ISO/IEC 10646 上の論点を扱う。日本語史資料に限らず、Ryukyuan languages の superscript Katakana や Taiwanese Kana なども kana usage として関連するが、個別の大きな proposal は別 topic に分ける余地がある。
 
@@ -52,8 +54,24 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 | 2025-01-15 | UTC | [L2/25-036](../documents/utc-l2-25-036.md) | CheonHyeong Sim が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |
 | 2025-01-16 / 2025-02-24 | UTC | [L2/25-042](../documents/utc-l2-25-042.md), [L2/25-060](../documents/utc-l2-25-060.md) | Kentaro Bimbatti が KATAKANA LETTER SMALL NE を提案し、広告・看板・表紙資料の attestations を追加。 |
 | 2025-05-23 | UTC | [L2/25-151R](../documents/utc-l2-25-151r.md) | Eiso Chan が KATAKANA LETTER ALTERNATE NE / WI を提案。明治期活字・教科書資料を根拠とし、current Katakana / Hentaigana との統合不可を主張。 |
+| 2026-07-28/30 | UTC | [UTC Meeting \#188 minutes](../documents/utc-l2-26-151.md) | Unicode 18.0 の内容を最終化し、release を authorize。仮名7文字は beta repertoire に残り、最終版へ進んだ。 |
+| 2026-09-16 | Unicode | [Unicode 18.0.0](https://www.unicode.org/versions/Unicode18.0.0/) | 仮名7文字を正式公開。`DerivedAge.txt` は U+1B123..U+1B128 と U+1B168 を `Age=18.0` とし、`UnicodeData.txt` で最終 character names を確認できる。 |
 
 ## 主な論点
+
+### Unicode 18.0 で収録された7文字
+
+| Code point | Character name | 系譜 |
+| --- | --- | --- |
+| U+1B123 | HIRAGANA DIGRAPH KOTO | [L2/24-150](../documents/utc-l2-24-150.md) の reduced kana-ligature proposal。 |
+| U+1B124 | KATAKANA DIGRAPH TOKI | [L2/24-150](../documents/utc-l2-24-150.md)。 |
+| U+1B125 | KATAKANA DIGRAPH TOTE | [L2/24-150](../documents/utc-l2-24-150.md)。 |
+| U+1B126 | KATAKANA DIGRAPH YORI | [L2/24-279](../documents/utc-l2-24-279.md) の個別再提案。 |
+| U+1B127 | KATAKANA LETTER ALTERNATE NE | [L2/25-151R](../documents/utc-l2-25-151r.md)。 |
+| U+1B128 | KATAKANA LETTER ALTERNATE WI | [L2/25-151R](../documents/utc-l2-25-151r.md)。 |
+| U+1B168 | KATAKANA LETTER SMALL ARCHAIC YE | [L2/25-036](../documents/utc-l2-25-036.md)。 |
+
+U+1B123..U+1B126 には縦書き用 compatibility decomposition があり、U+1B168 の最終 `Vertical_Orientation` は `Tu` である。文字の収録と、縦書き表示・検索時の分解表現・font support は別の実装課題として追う必要がある。
 
 ### YE と hentaigana の境界
 
@@ -83,11 +101,15 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](../documen
 
 `L2/24-279` は、その流れから漏れた KATAKANA DIGRAPH YORI を再提案する文書である。CJK & Unihan WG が hiragana ligatures には vertical-only implication への懸念を持ちつつ、katakana ligatures にはより前向きだった、という整理を根拠にしている。
 
+この4文字は Unicode 18.0 で U+1B123..U+1B126 に収録された。最終 `UnicodeData.txt` は、KOTO / TOKI / TOTE / YORI にそれぞれ `<vertical>` compatibility decomposition を与えているため、proposal 時の vertical-only implication は符号化後も normalization / rendering 上の性質として残る。
+
 ### alternate Katakana NE / WI
 
 [L2/23-127](../documents/utc-l2-23-127.md) と `L2/25-151R` は、明治期活字・教科書資料に現れる current Katakana とは別字形の NE / WI を扱う。提案は KATAKANA LETTER ALTERNATE NE と KATAKANA LETTER ALTERNATE WI を Kana Extended-A に置くことを求め、子（U+5B50）由来の NE、井（U+4E95）由来の WI と説明する。
 
 この提案は Hentaigana とも関係するが、Katakana repertoire の歴史的字種として扱う点が特徴である。`L2/25-151R` は、これらを current Katakana NE / WI や Hentaigana と統合できないと主張し、同時に 子 / 井 との confusable pair として扱う必要にも触れている。
+
+両文字は Unicode 18.0 で U+1B127 / U+1B128 に収録された。収録によって repertoire 上の扱いは決着したが、Han characters 子 / 井との視覚的類似や historical fonts での識別は、検索・OCR・security data 側に残る実装課題である。
 
 ### Ryukyuan superscript Katakana
 
@@ -126,6 +148,7 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](../documen
 
 - [CJK Hybrid Characters](cjk-hybrid-characters.md)
 - [CJK Security Confusables](cjk-security-confusables.md)
+- [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 
 ## 出典
 
@@ -161,3 +184,9 @@ Japan NB の [L2/15-239](../documents/utc-l2-15-239.md) / [WG2 N4674](../documen
 - `utc-l2-25-042` - <https://www.unicode.org/L2/L2025/25042-katakana-letter-small-ne.pdf>
 - `utc-l2-25-060` - <https://www.unicode.org/L2/L2025/25060-katakana-letter-small-ne.pdf>
 - `utc-l2-25-151r` - <https://www.unicode.org/L2/L2025/25151r-katakana-ne-wi.pdf>
+- `pri-548` - <https://www.unicode.org/review/pri548/>
+- `utc-l2-26-151` - <https://www.unicode.org/L2/L2026/26151.htm>
+- Unicode 18.0.0 release summary - <https://www.unicode.org/versions/Unicode18.0.0/>
+- Unicode 18.0 `DerivedAge.txt` - <https://www.unicode.org/Public/18.0.0/ucd/DerivedAge.txt>
+- Unicode 18.0 `UnicodeData.txt` - <https://www.unicode.org/Public/18.0.0/ucd/UnicodeData.txt>
+- Unicode 18.0 `VerticalOrientation.txt` - <https://www.unicode.org/Public/18.0.0/ucd/VerticalOrientation.txt>
