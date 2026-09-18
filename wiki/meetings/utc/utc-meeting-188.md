@@ -19,7 +19,7 @@ timestamp: 2026-07-09T00:00:00+09:00
 
 ## 概要
 
-UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-07-17 時点で、`UTC #188 Agenda`、minutes、working group reports は catalog に掲載されていない。
+UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-09-18 の registry 再同期時点で、`UTC #188 Agenda`、minutes、working group reports は catalog に掲載されていない。
 
 このページは、正式な agenda / minutes が出た時点で更新する tracking page である。現時点で断定できるのは、[PRI \#548](../../documents/pri-548.md) として Unicode 18.0 beta public review が 2026-07-07 に closed になったこと、[PRI \#552](../../documents/pri-552.md) として UAX \#29 Revision 48 public review、[PRI \#553](../../documents/pri-553.md) として UTS \#39 Revision 33 public review も同日に closed になったこと、UTC \#188 が 2026-07-30 content finalize の予定として `L2/26-102` に記録されていること、そして `L2/26-127` 以降に UTC \#187 後の候補文書が複数登録されていることである。
 

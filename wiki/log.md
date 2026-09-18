@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-09-18
+
+- **Digest**: Refreshed [L2/26-145 / WG2 N5366](documents/utc-l2-26-145.md) and [L2/26-146 / WG2 N5367](documents/utc-l2-26-146.md) from the latest registered Maya draft PDFs, detailing the Codical format-control model, the incomplete Extended-A specification, and WG2 M73.14 review status without creating duplicate alias pages.
+
 ## 2026-07-31
 
 - **Digest**: Added [PRI \#534](documents/pri-534.md), separating the UAX \#38 Revision 40 draft from accumulated Unihan / UAX \#45 data feedback and tracking the UTC \#186/\#187 reviewed layers versus UTC \#188 follow-up.

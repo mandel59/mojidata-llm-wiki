@@ -23,8 +23,9 @@ Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classi
 
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
-| 2026-06-22 | UTC / WG2 | [L2/26-145](../documents/utc-l2-26-145.md) | Postclassic codices を対象に Codical Maya Hieroglyphs を base set として提案した。 |
-| 2026-06-22 | UTC / WG2 | [L2/26-146](../documents/utc-l2-26-146.md) | Classic Maya corpus の first extension tranche として Maya Hieroglyphs Extended-A を提案した。 |
+| 2026-06-19 | WG2 | [WG2 N5366](../documents/utc-l2-26-145.md) | Postclassic codices を対象に Codical Maya Hieroglyphs Version 1.0 を base set として提出した。 |
+| 2026-06-19 | WG2 | [WG2 N5367](../documents/utc-l2-26-146.md) | Classic Maya corpus の first extension tranche、Version 0.61 を提出した。 |
+| 2026-06-22 | UTC | [L2/26-145](../documents/utc-l2-26-145.md) / [L2/26-146](../documents/utc-l2-26-146.md) | 同じ2提案を UTC Document Registry に登録した。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.14 が [WG2 N5366](../documents/utc-l2-26-145.md) / [WG2 N5367](../documents/utc-l2-26-146.md) を WG2 \#74 までに review するよう National Bodies / liaison organizations に求めた。 |
 | 2026-07-30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | UTC \#188 の agenda / minutes は未掲載だが、UTC \#187 後の候補文書として追跡する。 |
 
@@ -42,6 +43,8 @@ Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classi
 
 Maya hieroglyphic writing は glyph blocks と affixation を持つため、plain linear sequence だけでは表現できない。Codical proposal の format controls は Classic Maya proposal も依存するため、repertoire より先に text model / rendering model の妥当性を確認する必要がある。
 
+Codical draft は joiners、appearance modifiers、segment delimiters、compression controls、damage modifiers を提案し、Dresden Codex の prototype typesetting を示す。Extended-A draft はこの control set に依存する一方、`Properties` section が placeholder のままである。したがって両案は同時に review する必要があるが、仕様成熟度は同一ではない。
+
 ## 関連文書
 
 - [L2/26-145](../documents/utc-l2-26-145.md) - Codical Maya Hieroglyphs。
@@ -57,4 +60,6 @@ Maya hieroglyphic writing は glyph blocks と affixation を持つため、plai
 
 - `utc-l2-26-145` - <https://www.unicode.org/L2/L2026/26145-codical-maya.pdf>
 - `utc-l2-26-146` - <https://www.unicode.org/L2/L2026/26146-classic-maya.pdf>
+- `wg2-n5366` - <https://www.unicode.org/wg2/docs/n5366-Codical_Maya_20260619.pdf>
+- `wg2-n5367` - <https://www.unicode.org/wg2/docs/n5367-Classic_Maya_20260619.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
