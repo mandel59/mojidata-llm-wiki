@@ -1,13 +1,13 @@
 {
   "derived_document_count": 3,
-  "document_count": 2984,
+  "document_count": 3017,
   "last_sync_latest_only": true,
-  "last_sync_register_document_count": 220,
+  "last_sync_register_document_count": 250,
   "latest_only": false,
   "name": "IRG Document Register",
   "registers": [
     {
-      "document_count": 220,
+      "document_count": 250,
       "url": "https://www.unicode.org/irg/IRG-curdoc.html"
     },
     {
