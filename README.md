@@ -43,6 +43,8 @@ uv run python tools/sync_registries.py --registry all --latest-only
 uv run python tools/check_catalog.py
 ```
 
+オンライン同期では Registry の root / latest page を毎回再取得し、過去 register のキャッシュだけを再利用します。ネットワークを使わずキャッシュだけで再現する場合は `--offline`、過去 register も含めてすべて再取得する場合は `--refresh` を指定します。
+
 全 register を root ページから辿る場合:
 
 ```sh

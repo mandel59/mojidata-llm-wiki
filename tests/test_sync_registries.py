@@ -2,10 +2,57 @@ from __future__ import annotations
 
 import unittest
 
-from tools.sync_registries import count_derived_entries, merge_derived_entries
+from tools.sync_registries import (
+    count_derived_entries,
+    merge_derived_entries,
+    should_refresh_registry_url,
+)
 
 
 class SyncRegistriesTest(unittest.TestCase):
+    def test_online_sync_refreshes_root_and_latest_but_not_historical_pages(self) -> None:
+        config = {
+            "root_url": "https://example.test/registry.html",
+            "latest_url": "https://example.test/current.html",
+        }
+
+        self.assertTrue(
+            should_refresh_registry_url(
+                config["root_url"], config, offline=False, refresh=False
+            )
+        )
+        self.assertTrue(
+            should_refresh_registry_url(
+                config["latest_url"], config, offline=False, refresh=False
+            )
+        )
+        self.assertFalse(
+            should_refresh_registry_url(
+                "https://example.test/register-2025.html",
+                config,
+                offline=False,
+                refresh=False,
+            )
+        )
+
+    def test_refresh_and_offline_modes_are_explicit(self) -> None:
+        config = {
+            "root_url": "https://example.test/registry.html",
+            "latest_url": "https://example.test/current.html",
+        }
+        historical_url = "https://example.test/register-2025.html"
+
+        self.assertTrue(
+            should_refresh_registry_url(
+                historical_url, config, offline=False, refresh=True
+            )
+        )
+        self.assertFalse(
+            should_refresh_registry_url(
+                config["latest_url"], config, offline=True, refresh=True
+            )
+        )
+
     def test_merge_derived_entries_skips_existing_registry_entry(self) -> None:
         entries = [
             {

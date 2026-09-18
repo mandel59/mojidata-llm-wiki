@@ -57,6 +57,22 @@ def fetch_text(url: str, cache_dir: Path, offline: bool = False, refresh: bool =
     return text
 
 
+def should_refresh_registry_url(
+    url: str,
+    registry_config: dict,
+    *,
+    offline: bool,
+    refresh: bool,
+) -> bool:
+    """Refresh registry entry pages online while retaining historical-page caching."""
+    if offline:
+        return False
+    return refresh or url in {
+        registry_config["root_url"],
+        registry_config["latest_url"],
+    }
+
+
 def load_derived_documents(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -132,13 +148,34 @@ def sync_one(
     if latest_only:
         register_urls = [registry_config["latest_url"]]
     else:
-        root_html = fetch_text(registry_config["root_url"], registry_cache, offline=offline, refresh=refresh)
+        root_url = registry_config["root_url"]
+        root_html = fetch_text(
+            root_url,
+            registry_cache,
+            offline=offline,
+            refresh=should_refresh_registry_url(
+                root_url,
+                registry_config,
+                offline=offline,
+                refresh=refresh,
+            ),
+        )
         register_urls = discover_register_urls(registry_config, root_html, latest_only=False)
 
     entries: list[dict] = []
     registers: list[dict] = []
     for register_url in register_urls:
-        html = fetch_text(register_url, registry_cache, offline=offline, refresh=refresh)
+        html = fetch_text(
+            register_url,
+            registry_cache,
+            offline=offline,
+            refresh=should_refresh_registry_url(
+                register_url,
+                registry_config,
+                offline=offline,
+                refresh=refresh,
+            ),
+        )
         register_entries = parse_register_documents(registry_key, html, register_url)
         entries.extend(register_entries)
         registers.append(
@@ -185,7 +222,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg", "pri"], default="all")
     parser.add_argument("--latest-only", action="store_true", help="Only sync each registry's current register page.")
     parser.add_argument("--offline", action="store_true", help="Use cached registry HTML only.")
-    parser.add_argument("--refresh", action="store_true", help="Refetch registry HTML even when cached.")
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help="Refetch all registry HTML, including historical pages; current pages refresh online by default.",
+    )
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--derived-documents", type=Path, default=DEFAULT_DERIVED_DOCUMENTS)
     parser.add_argument("--catalog-dir", type=Path, default=DEFAULT_CATALOG)
