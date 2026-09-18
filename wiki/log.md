@@ -4,7 +4,7 @@
 
 ## 2026-09-19
 
-- **Topics**: Updated [Kana](topics/kana.md) and four source-document pages with the seven kana characters published in Unicode 18.0, including final code points, names, vertical decompositions, and `Vertical_Orientation` data.
+- **Topics**: Updated [Kana](topics/kana.md) and four source-document pages with the seven kana characters published in Unicode 18.0, including final code points, names, vertical decompositions, and `Vertical_Orientation` data; kept the topic timeline at proposal / review granularity and recorded release outcomes in the dedicated Unicode 18.0 section.
 
 - **Topics**: Expanded [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) and related release, properties / algorithms, script pipeline, Unihan, UAX \#60, Small Seal, and emoji topics with final 2026-09-16 repertoire, beta-to-final differences, versioned artifacts, and migration checks.
 

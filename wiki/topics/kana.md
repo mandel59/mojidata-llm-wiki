@@ -54,8 +54,6 @@ Unicode 18.0 では、この系譜から7文字が正式収録された。Kana E
 | 2025-01-15 | UTC | [L2/25-036](../documents/utc-l2-25-036.md) | CheonHyeong Sim が KATAKANA LETTER SMALL ARCHAIC YE を提案。昭和期の Micronesian / Marshallese transliteration 資料を根拠とする。 |
 | 2025-01-16 / 2025-02-24 | UTC | [L2/25-042](../documents/utc-l2-25-042.md), [L2/25-060](../documents/utc-l2-25-060.md) | Kentaro Bimbatti が KATAKANA LETTER SMALL NE を提案し、広告・看板・表紙資料の attestations を追加。 |
 | 2025-05-23 | UTC | [L2/25-151R](../documents/utc-l2-25-151r.md) | Eiso Chan が KATAKANA LETTER ALTERNATE NE / WI を提案。明治期活字・教科書資料を根拠とし、current Katakana / Hentaigana との統合不可を主張。 |
-| 2026-07-28/30 | UTC | [UTC Meeting \#188 minutes](../documents/utc-l2-26-151.md) | Unicode 18.0 の内容を最終化し、release を authorize。仮名7文字は beta repertoire に残り、最終版へ進んだ。 |
-| 2026-09-16 | Unicode | [Unicode 18.0.0](https://www.unicode.org/versions/Unicode18.0.0/) | 仮名7文字を正式公開。`DerivedAge.txt` は U+1B123..U+1B128 と U+1B168 を `Age=18.0` とし、`UnicodeData.txt` で最終 character names を確認できる。 |
 
 ## 主な論点
 
