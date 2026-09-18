@@ -4,9 +4,10 @@ title: Unicode Release Coordination and Publication
 description: "UTC #187 で扱われた Unicode 18.0 の release、charts、editorial、liaison coordination。"
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
 topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts, unicode-properties-and-algorithms, emoji-repertoire-proposals]
 meetings: [utc-meeting-187, utc-meeting-188]
+events: [utc-188-unicode-18-release-authorization]
 status: active
 tags: [unicode-18, release, charts, editorial, publication, liaison]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -16,7 +17,7 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ## 概要
 
-Unicode release coordination は、文字や property の採択だけでなく、core specification、charts、NamesList、UCD / Unihan data、beta review page、implementation liaison を同じ release schedule に乗せる作業である。UTC \#187 では Unicode 18.0 beta review authorization を中心に、RMG、Editorial WG、Charts WG、ICU4X / TC39 liaison reports がこの論点を構成した。
+Unicode release coordination は、文字や property の採択だけでなく、core specification、charts、NamesList、UCD / Unihan data、beta review page、implementation liaison を同じ release schedule に乗せる作業である。UTC \#187 の beta authorization に続き、UTC \#188 は release を authorizeし、Unicode 18.0 は 2026-09-16 に公開された。
 
 この topic は [Unicode 18.0 Change Sources](unicode-18-change-sources.md) のうち、publication artifact と release process に関する文書を分けて読むための入口である。個別の CJK / script / property decisions は関連 topic に分ける。
 
@@ -34,7 +35,8 @@ Unicode release coordination は、文字や property の採択だけでなく�
 | 2026-07-07 | UTC | [PRI \#548](../documents/pri-548.md) | Unicode 18.0.0 Beta public review が close し、substantive feedback は July UTC meeting での検討対象になった。 |
 | 2026-07-07 | UTC | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Unicode 18.0 の UCD XML schema / attributes が release artifact の確認対象になった。 |
 | 2026-07-07 | UTC | [PRI \#550](../documents/pri-550.md) | UAX \#41 Revision 37 public review が close し、common references と versioned data URLs が release artifact の確認対象になった。 |
-| 2026-07-30 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | UTC \#188 で Unicode 18.0 content finalize が予定されている。 |
+| 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 の 188-C47 が Unicode 18.0 と同期 UTS の release を authorize。 |
+| 2026-09-16 | UTC | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0 の release を報告。 |
 
 ## 主な論点
 

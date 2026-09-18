@@ -22,7 +22,7 @@ Chinese Folk Music Notation は、Chinese folk music、Chinese Xiqu Opera、Chin
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2026-05-14 | UTC / WG2 | [L2/26-130](../documents/utc-l2-26-130.md) | Eiso Chan が Chinese folk music 用 breath mark と free repeat controls を提案した。 |
-| 2026-07-30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | UTC \#188 の agenda / minutes は未掲載だが、UTC \#187 後の候補文書として追跡する。 |
+| 2026-07-28/30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | 188-C18 が U+1D282 MUSICAL SYMBOL DOWN ARROWHEAD BREATH MARK を provisionally assign した。 |
 
 ## 主な論点
 
@@ -45,4 +45,3 @@ Chinese Folk Music Notation は、Chinese folk music、Chinese Xiqu Opera、Chin
 ## 出典
 
 - `utc-l2-26-130` - <https://www.unicode.org/L2/L2026/26130-chinese-folk-music.pdf>
-

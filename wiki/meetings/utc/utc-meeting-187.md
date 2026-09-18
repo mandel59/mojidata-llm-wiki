@@ -50,8 +50,8 @@ UTC Meeting \#187 は 2026-04-21/23 に hybrid online/in-person meeting とし�
 
 ## 後続確認
 
-- [UTC Meeting \#188](utc-meeting-188.md) - `L2/26-102` では 2026-07-30 UTC \#188 で Unicode 18.0 content finalize が予定されている。
-- Unicode 18.0 beta public review close は 2026-07-07。現時点では、UTC \#188 agenda / minutes / WG reports は catalog に未掲載。
+- [UTC Meeting \#188](utc-meeting-188.md) - `L2/26-151` は Unicode 18.0 content の finalization と release authorization を記録する。
+- Unicode 18.0 beta public review は 2026-07-07 に close し、[UTC Meeting \#188](utc-meeting-188.md) が finalization と release authorization を行った。
 - [WG2 Meeting \#73](../wg2/wg2-meeting-73.md) - `WG2 N5354` が `L2/26-099` の selected sections を ISO/IEC 10646 CD の CJK additions and changes に取り込む。
 
 ## 出典

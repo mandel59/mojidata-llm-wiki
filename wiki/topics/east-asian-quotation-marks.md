@@ -23,7 +23,7 @@ East Asian Quotation Marks は、CJK / East Asian text における quotation ma
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2026-05-06 | UTC | [L2/26-128](../documents/utc-l2-26-128.md) | Night Koo が East Asian quotation marks の core spec text update を提案した。 |
-| 2026-07-30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | UTC \#188 の agenda / minutes は未掲載だが、UTC \#187 後の候補文書として追跡する。 |
+| 2026-07-28/30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | 188-A125 が `L2/26-128` と PRI feedback を踏まえ、Unicode 19.0 向け core specification edits の検討を Editorial WG に課した。 |
 
 ## 主な論点
 
@@ -50,4 +50,3 @@ Vertical text での substitution / rotation は UAX \#50 と接続する。ま�
 ## 出典
 
 - `utc-l2-26-128` - <https://www.unicode.org/L2/L2026/26128-east-asian-quotation-marks.pdf>
-

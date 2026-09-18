@@ -1,17 +1,18 @@
 ---
 type: Meeting
 title: "UTC Meeting #188"
-description: "2026-07-30 予定の UTC Meeting #188。Unicode 18.0 content finalize と UTC #187 後に登録された候補文書の追跡ページ。"
+description: "2026-07-28/30 の UTC Meeting #188。Unicode 18.0 release authorization、Unicode 19.0 pipeline、property / CJK decisions。"
 slug: utc-meeting-188
 body: UTC
 bodies: [UTC]
 meeting: 188
-date: "2026-07-30"
-location: TBD
-documents: [utc-l2-26-102, pri-547, pri-548, pri-552, pri-553, utc-l2-26-113, utc-l2-26-114, utc-l2-26-127, utc-l2-26-128, utc-l2-26-129, utc-l2-26-130, utc-l2-26-131, utc-l2-26-132, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-144, utc-l2-26-145, utc-l2-26-146, utc-l2-26-147, utc-l2-26-148, utc-l2-26-149]
+date: "2026-07-28/30"
+location: Redmond, Washington, United States / virtual
+documents: [utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-158, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-133r, utc-l2-26-134, utc-l2-26-136, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-144, utc-l2-26-148, pri-548]
 topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
-status: tracking
-tags: [meeting, utc, unicode-18, tracking]
+events: [utc-188-unicode-18-release-authorization]
+status: completed
+tags: [meeting, utc, unicode-18, unicode-19, release, cjk]
 timestamp: 2026-07-09T00:00:00+09:00
 ---
 
@@ -19,67 +20,43 @@ timestamp: 2026-07-09T00:00:00+09:00
 
 ## 概要
 
-UTC Meeting \#188 は、`L2/26-102` の Unicode 18.0 timeline では 2026-07-30 に 18.0 content を finalize する会合として予定されている。2026-09-18 の registry 再同期時点で、`UTC #188 Agenda`、minutes、working group reports は catalog に掲載されていない。
+UTC Meeting \#188 は 2026-07-28/30 に Microsoft Redmond と online の hybrid meeting として開催された。Agenda `L2/26-150` と [minutes L2/26-151](../../documents/utc-l2-26-151.md) は、Unicode 18.0 finalization、Unicode 19.0 pipeline、working group recommendations を記録する。
 
-このページは、正式な agenda / minutes が出た時点で更新する tracking page である。現時点で断定できるのは、[PRI \#548](../../documents/pri-548.md) として Unicode 18.0 beta public review が 2026-07-07 に closed になったこと、[PRI \#552](../../documents/pri-552.md) として UAX \#29 Revision 48 public review、[PRI \#553](../../documents/pri-553.md) として UTS \#39 Revision 33 public review も同日に closed になったこと、UTC \#188 が 2026-07-30 content finalize の予定として `L2/26-102` に記録されていること、そして `L2/26-127` 以降に UTC \#187 後の候補文書が複数登録されていることである。
+会合は48件の consensus と132件の action item を置いた。中心的な節目は、188-C47 による Unicode 18.0 と同期 UTS の release authorization である。
 
-## 追跡候補
+## 主要議題
 
-以下は UTC \#187 後に registerへ追加された文書と Unicode 18.0 finalize に関係するreview文書を整理した候補一覧であり、UTC \#188 の正式agenda itemとして確認されたものではない。agenda公開後、実際に掲載された案件だけを `## 主要議題` として再整理する。
-
-- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - [PRI \#548](../../documents/pri-548.md) の beta feedback snapshot 後の content finalize。
-- [CJK Security Confusables](../../topics/cjk-security-confusables.md) - [L2/26-127](../../documents/utc-l2-26-127.md) の second review request。
-- [East Asian Quotation Marks](../../topics/east-asian-quotation-marks.md) - [L2/26-128](../../documents/utc-l2-26-128.md) の core spec text update。
-- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - [L2/26-113](../../documents/utc-l2-26-113.md)、[L2/26-114](../../documents/utc-l2-26-114.md)、[L2/26-129](../../documents/utc-l2-26-129.md) / [Leke Script](../../topics/leke-script.md)、[L2/26-131](../../documents/utc-l2-26-131.md)、[L2/26-132](../../documents/utc-l2-26-132.md) / [KORE SEBELI Script](../../topics/kore-sebeli-script.md)、[L2/26-144](../../documents/utc-l2-26-144.md) の Latin orthographic pairs などの script / mark proposals。
-- [Chinese Folk Music Notation](../../topics/chinese-folk-music-notation.md) - [L2/26-130](../../documents/utc-l2-26-130.md) の musical symbol / format controls。
-- [Ideographic Punctuation Proposals](../../topics/ideographic-punctuation-proposals.md) - [L2/26-133](../../documents/utc-l2-26-133.md) と [L2/26-136](../../documents/utc-l2-26-136.md)。
-- [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - [PRI \#547](../../documents/pri-547.md) の UAX \#44 / UCD directory review、[PRI \#552](../../documents/pri-552.md) の UAX \#29 text segmentation review、[PRI \#553](../../documents/pri-553.md) の UTS \#39 security mechanisms review、[L2/26-137](../../documents/utc-l2-26-137.md)、[L2/26-138](../../documents/utc-l2-26-138.md)、[L2/26-139](../../documents/utc-l2-26-139.md) の joining / rendering / compose issues。
-- [Leibnizian and Historic Mathematical Symbols](../../topics/leibnizian-and-historic-mathematical-symbols.md) - [L2/26-140](../../documents/utc-l2-26-140.md) から [L2/26-143](../../documents/utc-l2-26-143.md)、[L2/26-149](../../documents/utc-l2-26-149.md)。
-- [Maya Hieroglyph Encoding](../../topics/maya-hieroglyph-encoding.md) - [L2/26-145](../../documents/utc-l2-26-145.md) と [L2/26-146](../../documents/utc-l2-26-146.md)。
-- [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - [L2/26-147](../../documents/utc-l2-26-147.md) の U-source horizontal extension。
-- [Unihan Data Format and Property Syntax](../../topics/unihan-data-format-and-property-syntax.md) - [L2/26-148](../../documents/utc-l2-26-148.md) の `kTotalStrokes` changes。
+- [Unicode 18.0 Change Sources](../../topics/unicode-18-change-sources.md) - Chisoi postponement、Small Seal names、property / algorithm / data changes、release authorization。
+- [Unicode Properties and Algorithms](../../topics/unicode-properties-and-algorithms.md) - `L2/26-154` の variation selectors、joining、bidi、line break、segmentation、collation、security recommendations。
+- [Script Encoding Pipeline](../../topics/script-encoding-pipeline.md) - `L2/26-158` に基づく provisional assignments と保留案件。
+- [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-157` に基づく property / glyph / source changes。
+- [CJKV Components](../../topics/cjkv-components.md) / [kIRG_SGSource](../../topics/kirg-sgsource.md) - Unicode 19.0 target の new blocks / source property。
+- [Ideographic Punctuation Proposals](../../topics/ideographic-punctuation-proposals.md) - U+16FE5 / U+16FE6 と standardized variation sequences。
 
 ## 決定事項
 
-2026-07-11 時点では、会合前であり決定事項は発生していない。Agenda / minutes / RMG report が UTC register に掲載された後に更新する。
+| Consensus | 決定 |
+| --- | --- |
+| 188-C2 / C3 | Chisoi を Unicode 18.0 から延期し、Small Seal algorithmic names を変更。 |
+| 188-C4〜C18 | Kannada、Tulu-Tigalari、Newa、Brahmi、Arabic、Latin、Leibnizian、musical symbol の provisional assignments / VS。 |
+| 188-C19〜C34 | Unicode 18.0 の property、algorithm、security、UAX \#60 title changes。 |
+| 188-C35〜C46 | Unihan / CJK changes、U+16FE5 / U+16FE6、Components-A/B、`kIRG_SGSource`、Unikemet changes。 |
+| 188-C47 / C48 | Unicode 18.0 と同期 UTS の release、および UTS \#51 Version 18.0 を承認。 |
+
+Codical Maya / Maya Extended-A は `L2/26-158` の reference list には含まれるが、minutes に採択 consensus はない。
 
 ## 後続確認
 
-- UTC register に `UTC #188 Agenda` が掲載されるか。
-- UTC \#188 minutes が掲載された後、Unicode 18.0 content finalize の consensus / action items を確認する。
-- [PRI \#548](../../documents/pri-548.md) で集まった substantive feedback が UTC \#188 minutes / action items でどう処理されたか。
-- [PRI \#552](../../documents/pri-552.md) の UAX \#29 GB9c feedback が最終 UAX \#29 / segmentation data にどう反映されたか。
-- [PRI \#553](../../documents/pri-553.md) の UTS \#39 feedback が最終 UTS \#39 / security data directory にどう反映されたか。
-- Unicode 18.0 beta page の planned release date 2026-09-16 と、`L2/26-102` の 2026-09-15 release schedule の差分が最終 release page でどう整理されるか。
-- `L2/26-145` / `L2/26-146` は in-progress draft として提出されているため、正式な SEW / UTC disposition を確認する。
+- [L2/26-215 / IRG N2944](../../documents/utc-l2-26-215.md) は Unicode 18.0 が 2026-09-16 に release されたことを確認する。
+- [PRI \#555](../../documents/pri-555.md)〜[PRI \#560](../../documents/pri-560.md) は UTC \#189 に向けた後続 review。
+- Unicode 19.0 target の provisional assignments は UTC \#189 以降の repertoire decision と alpha review で追う。
 
 ## 出典
 
-- `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
-- `pri-547` - <https://www.unicode.org/review/pri547/>
-- `pri-548` - <https://www.unicode.org/review/pri548/>
-- `pri-552` - <https://www.unicode.org/review/pri552/>
-- `pri-553` - <https://www.unicode.org/review/pri553/>
-- `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
-- `utc-l2-26-114` - <https://www.unicode.org/L2/L2026/26114-devanagari-vowel-length-mark.pdf>
-- `utc-l2-26-127` - <https://www.unicode.org/L2/L2026/26127-2nd-cjk-confusables.pdf>
-- `utc-l2-26-128` - <https://www.unicode.org/L2/L2026/26128-east-asian-quotation-marks.pdf>
-- `utc-l2-26-129` - <https://www.unicode.org/L2/L2026/26129-leke-proposal.pdf>
-- `utc-l2-26-130` - <https://www.unicode.org/L2/L2026/26130-chinese-folk-music.pdf>
-- `utc-l2-26-131` - <https://www.unicode.org/L2/L2026/26131-samavedic-svara-markers.pdf>
-- `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>
-- `utc-l2-26-133` - <https://www.unicode.org/L2/L2026/26133-dbl-ideo-fs.pdf>
-- `utc-l2-26-136` - <https://www.unicode.org/L2/L2026/26136-white-ideographic-comma.pdf>
-- `utc-l2-26-137` - <https://www.unicode.org/L2/L2026/26137-left-right.pdf>
-- `utc-l2-26-138` - <https://www.unicode.org/L2/L2026/26138-consecutive-anusvaras.pdf>
-- `utc-l2-26-139` - <https://www.unicode.org/L2/L2026/26139-compose.pdf>
-- `utc-l2-26-140` - <https://www.unicode.org/L2/L2026/26140-miscellaneous-symbols.pdf>
-- `utc-l2-26-141` - <https://www.unicode.org/L2/L2026/26141-two-combining-marks.pdf>
-- `utc-l2-26-142` - <https://www.unicode.org/L2/L2026/26142-letterlike-symbols.pdf>
-- `utc-l2-26-143` - <https://www.unicode.org/L2/L2026/26143-leibnizian-ambiguous-signs.pdf>
-- `utc-l2-26-144` - <https://www.unicode.org/L2/L2026/26144-dotless-i-with-descender.pdf>
-- `utc-l2-26-145` - <https://www.unicode.org/L2/L2026/26145-codical-maya.pdf>
-- `utc-l2-26-146` - <https://www.unicode.org/L2/L2026/26146-classic-maya.pdf>
-- `utc-l2-26-149` - <https://www.unicode.org/L2/L2026/26149-leibniz.pdf>
-- UTC Document Register for 2026 - <https://www.unicode.org/L2/L-curdoc.htm>
-- Unicode 18.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
+- `utc-l2-26-150` - <https://www.unicode.org/L2/L2026/26150.htm>
+- `utc-l2-26-151` - <https://www.unicode.org/L2/L2026/26151.htm>
+- `utc-l2-26-154` - <https://www.unicode.org/L2/L2026/26154-utc188-properties-recs.pdf>
+- `utc-l2-26-157` - <https://www.unicode.org/L2/L2026/26157-cjk-unihan-wg-utc188.pdf>
+- `utc-l2-26-158` - <https://www.unicode.org/L2/L2026/26158-sew-report-utc188.pdf>
+- `utc-l2-26-160r` - <https://www.unicode.org/L2/L2026/26160r-rmg-report-utc188.pdf>
+- `utc-l2-26-215` - <https://www.unicode.org/L2/L2026/26215-irgn2944-activity-rept.pdf>

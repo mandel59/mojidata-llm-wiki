@@ -16,6 +16,7 @@
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20) - IRG N2878R3 が CJK Unified Ideographs Components-A/B の final proposal として 494 characters を提示した出来事。
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11) - CJK & Unihan Working Group が UTC \#187 向け recommendations で UAX \#45 additions を FutureWS records として受け入れるよう勧告した出来事。
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26) - WG2 \#73 が ISO/IEC 10646 7th edition CD4 disposition の一部として Small Seal の名称変更と property correction を記録した出来事。
+- [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30) - UTC \#188 が会合の decisions / actions を取り込んだ Unicode 18.0 と同期 UTS の release を authorize した出来事。
 
 ## By Topic
 
@@ -79,6 +80,18 @@
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 
+### [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md)
+
+- [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+
+### [Unicode Properties and Algorithms](../topics/unicode-properties-and-algorithms.md)
+
+- [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+
+### [Unicode Release Coordination and Publication](../topics/unicode-release-coordination-and-publication.md)
+
+- [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+
 ## By Body
 
 ### IRG
@@ -97,6 +110,7 @@
 ### UTC
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+- [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
 
 ### WG2
 

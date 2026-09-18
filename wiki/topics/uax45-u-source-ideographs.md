@@ -5,7 +5,7 @@ description: "UAX #45 の U-source database、USourceData.txt、kIRG_USource、F
 slug: uax45-u-source-ideographs
 aliases: [U-Source, U-source, USourceData, kIRG_USource]
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-07-159, utc-l2-07-160, utc-l2-08-284, utc-l2-10-198, irg-n1534, irg-n1535, utc-l2-11-439, irg-n2369r, irg-n2439, irg-n2511, utc-l2-22-185, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-053, utc-l2-25-199, utc-l2-25-221, utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-071, utc-l2-26-072, utc-l2-26-080, utc-l2-26-083, utc-l2-26-085, utc-l2-26-099, utc-l2-26-147]
+documents: [utc-l2-07-159, utc-l2-07-160, utc-l2-08-284, utc-l2-10-198, irg-n1534, irg-n1535, utc-l2-11-439, irg-n2369r, irg-n2439, irg-n2511, utc-l2-22-185, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-053, utc-l2-25-199, utc-l2-25-221, utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-071, utc-l2-26-072, utc-l2-26-080, utc-l2-26-083, utc-l2-26-085, utc-l2-26-099, utc-l2-26-147, pri-559]
 topics: [unihan-database-maintenance, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs]
 people: [utc, irg, wg2, john-h-jenkins, richard-cook, ken-lunde, uk]
 events: [utc-187-uax45-futurews-additions]
@@ -23,6 +23,8 @@ UAX \#45 / U-Source Ideographs は、UTC が受け取った CJK ideograph candid
 UAX \#45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRSChart.pdf` である。`USourceData.txt` は identifier、status、Unicode code point、radical / stroke data、IDS、source field、comments などを持ち、提案段階の ideograph と、既符号化文字へ source reference を後付けする horizontal extension の両方を扱う。
 
 この topic は、既存の UAX \#45 / FutureWS additions に加えて、U-source database を public/versioned reference にする初期提案、Extension D evidence、`AJ1` source reference、2019/2026 horizontal extension、U-source glyph issue を統合して読む入口である。
+
+[PRI \#559](../documents/pri-559.md) は、Components-B 用 `CmptB` status、optional / duplicate fields、source-tag syntax、IRG submission の residual-stroke rule を review する Unicode 19.0 向け draft である。
 
 ## 経緯
 

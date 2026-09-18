@@ -56,7 +56,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
 
-[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting \#67 agenda と catalog には `IRG N2952` が載っているが、2026-07-08 の取得時点で registry URL は 404 だったため、内容の精読は後続確認とする。
+[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting \#67 agenda と catalog には `IRG N2952` が載っているが、2026-09-18 の再取得でも registry URL は 404 だったため、内容の精読は後続確認とする。
 
 ## 関連文書
 

@@ -8,11 +8,18 @@
 
 ### 2026
 
+- [L2/26-215](utc-l2-26-215.md) - Unicode 18.0 release、次期 IRG working set、kTabooVariant、IVD、WS2024 review を報告する US/Unicode activity report。
+- [L2/26-216](utc-l2-26-216.md) - taboo variants を standard forms に対応付ける provisional Unihan property と UTN \#63 を提案する。
+- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
+- [L2/26-151](utc-l2-26-151.md) - UTC \#188 の minutes。Unicode 18.0 release authorization、script / property / CJK decisions、Unicode 19.0 pipeline items を記録する。
+- [L2/26-158](utc-l2-26-158.md) - SEW が script / character proposals の provisional assignment と継続 review を UTC に勧告した report。
+- [L2/26-157](utc-l2-26-157.md) - Unicode 18.0 の Unihan data corrections と CJK proposals に関する working group recommendations。
+- [L2/26-160R](utc-l2-26-160r.md) - Unicode 18.0 finalization、release authorization、Chisoi postponement、Small Seal naming changes を勧告する RMG report。
+- [L2/26-133](utc-l2-26-133.md) - DOUBLE IDEOGRAPHIC FULL STOP proposal。
 - [L2/26-149](utc-l2-26-149.md) - Leibniz Unicode Characters Project feedback。
 - [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。
 - [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/26-146](utc-l2-26-146.md) - Maya Hieroglyphs Extended-A draft proposal。
-- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
 - [L2/26-144](utc-l2-26-144.md) - Medievalist・Tlahuica 用 I with oblique stroke と historical Khakas 用 I with descender の4文字を Latin Extended-D に追加する提案。
 - [L2/26-143](utc-l2-26-143.md) - Leibnizian ambiguous signs proposal。
 - [L2/26-142](utc-l2-26-142.md) - historic letterlike symbols proposal。
@@ -22,7 +29,6 @@
 - [L2/26-138](utc-l2-26-138.md) - Indic scripts の consecutive anusvaras FYI。
 - [L2/26-137](utc-l2-26-137.md) - LTR scripts 向け Joining_Type discussion。
 - [L2/26-136](utc-l2-26-136.md) - WHITE IDEOGRAPHIC COMMA proposal。
-- [L2/26-133](utc-l2-26-133.md) - DOUBLE IDEOGRAPHIC FULL STOP proposal。
 - [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
 - [L2/26-132](utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-131](utc-l2-26-131.md) - Kannada 用 Samavedic svara markers proposal。
@@ -299,6 +305,7 @@
 
 ### 2026
 
+- [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。会合前の placeholder で本文は未公開。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
@@ -430,6 +437,12 @@
 
 ### 2026
 
+- [PRI \#560](pri-560.md) - U+16FE5 / U+16FE6 の vertical orientation glyphs を追加する UAX \#50 draft の PRI。
+- [PRI \#559](pri-559.md) - IRG restructuring、CmptB status、source-tag syntax、residual strokes を更新する UAX \#45 draft の PRI。
+- [PRI \#558](pri-558.md) - IRG restructuring、kIRG_SGSource、Components-A/B source prefixes を反映する UAX \#38 draft の PRI。
+- [PRI \#557](pri-557.md) - UAX \#11 East Asian Width Revision 47 draft の terminology と derived data references を review する PRI。
+- [PRI \#556](pri-556.md) - UTC Meeting \#189 向けのその他 feedback を受け付ける open PRI。
+- [PRI \#555](pri-555.md) - Unicode 18.0 line breaking / segmentation algorithms の finite-state-machine data files を review する PRI。
 - [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
 - [PRI \#554](pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [PRI \#553](pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。

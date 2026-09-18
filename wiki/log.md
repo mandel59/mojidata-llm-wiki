@@ -4,7 +4,10 @@
 
 ## 2026-09-18
 
-- **Digest**: Refreshed [L2/26-145 / WG2 N5366](documents/utc-l2-26-145.md) and [L2/26-146 / WG2 N5367](documents/utc-l2-26-146.md) from the latest registered Maya draft PDFs, detailing the Codical format-control model, the incomplete Extended-A specification, and WG2 M73.14 review status without creating duplicate alias pages.
+- **Catalog**: Refreshed all current registry pages, adding UTC L2/26-150 through L2/26-216 plus revised entries, IRG N2961R2 through N2971 with reserved rows through N3000, and PRI \#555 through PRI \#560; WG2 had no manifest changes.
+- **Tools**: Changed online registry sync to refresh root/latest pages by default while retaining historical-page caching, with regression tests and updated operation guidance.
+- **Digest**: Rebuilt [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) from [minutes L2/26-151](documents/utc-l2-26-151.md), [CJK & Unihan recommendations L2/26-157](documents/utc-l2-26-157.md), and [RMG report L2/26-160R](documents/utc-l2-26-160r.md); recorded the [Unicode 18.0 release authorization](events/utc-188-unicode-18-release-authorization.md), updated [IRG Meeting \#67](meetings/irg/irg-meeting-67.md), added [L2/26-215 / IRG N2944](documents/utc-l2-26-215.md), [L2/26-216](documents/utc-l2-26-216.md), and PRI \#555–\#560, and corrected the Maya digest to [L2/26-145R Version 1.2](documents/utc-l2-26-145.md).
+- **Digest**: Initially refreshed [L2/26-145 / WG2 N5366](documents/utc-l2-26-145.md) and [L2/26-146 / WG2 N5367](documents/utc-l2-26-146.md), detailing the Codical format-control model, the incomplete Extended-A specification, and WG2 M73.14 review status without creating duplicate alias pages; the later L2/26-145R revision is recorded above.
 
 ## 2026-07-31
 

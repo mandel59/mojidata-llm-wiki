@@ -4,7 +4,7 @@ title: Unihan Database Maintenance
 description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-151, utc-l2-26-157, utc-l2-26-215, utc-l2-26-216, pri-534, pri-546, pri-558, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
@@ -18,6 +18,8 @@ timestamp: 2026-07-07T00:00:00+09:00
 Unihan Database Maintenance は、CJK Unified Ideographs に付与される `k*` properties、Unihan database の release updates、個別 property value の追加・変更・削除を追う umbrella topic である。代表字形や source reference の変更は、最終的に `kRSUnicode`、`kTotalStrokes`、`kIRG_*Source`、`kMandarin`、variant properties などの Unihan property 更新として反映される。
 
 Data file の field structure、property syntax、IVD file format、`RSIndex.txt` separator、`kTotalStrokes` と IRG review data の接続は [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md) に分割する。このページでは、property / release maintenance の入口と、関連文書の全体像を保つ。
+
+UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 の Unihan corrections を進め、[PRI \#558](../documents/pri-558.md) が Unicode 19.0 向け UAX \#38 draft を review している。[L2/26-216](../documents/utc-l2-26-216.md) の `kTabooVariant` は別の未採択 proposal である。
 
 ## 経緯
 
