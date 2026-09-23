@@ -324,8 +324,11 @@
 - [IRG N2970](irg-n2970.md) - Vietnam が既存 CJK ideographs に9,263件の V-source references を追加する提案。
 - [IRG N2968](irg-n2968.md) - CJK glyph の skeleton data と stroke library から font を生成する個人 project の報告。
 - [IRG N2967](irg-n2967.md) - SC 2 の Advisory Group としての IRG の目的、範囲、参加、報告権限を定める。
+- [IRG N2966](irg-n2966.md) - SC 2/AG 1 として設置された IRG の構成員を募集する SC 2 通知。
 - [IRG N2962R2](irg-n2962r2.md) - G-source convention と原資料に照らした代表字形の修正要求。IRG N2963R3 と一部見解が異なる。
 - [IRG N2963R3](irg-n2963r3.md) - 41件の GZJW-source representative glyph 修正を原資料と部品正規化の観点から提案する。
+- [IRG N2965](irg-n2965.md) - Unicode 18.0 の漢字 block を BMP、SIP、TIP ごとに色分けして示す図。
+- [IRG N2964](irg-n2964.md) - Unicode 18.0 の CJK 統合漢字・互換漢字を block、導入版、未割当範囲ごとに集計した資料。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。

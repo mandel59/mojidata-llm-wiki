@@ -4,7 +4,7 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935, irg-n2964, irg-n2965]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, small-seal-script, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 events: [utc-188-unicode-18-release-authorization]
 status: released
@@ -49,6 +49,7 @@ Unicode 18.0 は 2026-09-16 に公開され、13,007 characters を追加して�
 | 2026-07-27/30 | UTC | [L2/26-158](../documents/utc-l2-26-158.md), [L2/26-160R](../documents/utc-l2-26-160r.md), [L2/26-151](../documents/utc-l2-26-151.md) | SEW / RMG recommendations を UTC \#188 が処理し、Chisoi の 18.0 approval を revert、Small Seal names を変更、final repertoire / data / specification actions を確定した。 |
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 の 188-C47 が Unicode 18.0 と同期 UTS の release を authorize。 |
 | 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0.0、versioned UCD、code charts、core specification、同期 UTS が公開された。 |
+| 2026-07/09 | IRG | [IRG N2964](../documents/irg-n2964.md), [IRG N2965](../documents/irg-n2965.md) | 18.0 の CJK 集計表と Han block 配置図。registry 掲載日は 7 月、N2964 PDF 内の版日は 2026-09-16。 |
 
 ## 主な論点
 
@@ -69,6 +70,8 @@ Beta は 13,047 additions、総数 172,848、4 new scripts として Chisoi を�
 Small Seal は beta から残ったが、188-C3 により 11,328 characters の algorithmic names が `SEAL` から `SMALL SEAL` へ変更された。block name と `Script` property value は `Seal`、code chart headers と core specification では `Small Seal` を使うため、名称差は意図されたものとして扱う。
 
 ### CJK / Unihan / ideographic scripts の確認点
+
+[IRG N2964](../documents/irg-n2964.md) は Unicode 18.0 の CJK Unified Ideographs 101,997 文字と CJK Compatibility Ideographs 1,002 文字を block / version 別に集計する。[IRG N2965](../documents/irg-n2965.md) は同じ Han block 配置を BMP、SIP、TIP の図として示す。Extension D の U+2B81E を含む確定版の範囲を読む入口となる。
 
 Beta review page の notable issues は、Unihan properties の review を強調している。主な確認点は、`kIRGDaeJaweon` / `kIRGKangXi` removal、`kJapaneseNewVariant` / `kJapaneseOldVariant` addition、23 properties の delimiter changes、`kGB5` / `kIRG_GSource` syntax changes、U+2B81E / U+2EA07 に関係する disunification、約 1,800 IRG source references changes、`kRSUnicode` / `kTotalStrokes` changes、G / H / K / T / U source horizontal extensions である。
 
@@ -107,6 +110,8 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 [L2/26-149](../documents/utc-l2-26-149.md) は、Leibnizian ambiguous variation sequences の descriptive names と Unicode 18.0 delta charts の wording consistency に関する feedback である。これは新規 repertoire proposal ではなく、beta / delta review artifact の correction として読む。
 
 ## 関連文書
+
+- [IRG N2964](../documents/irg-n2964.md), [IRG N2965](../documents/irg-n2965.md) - Unicode 18.0 の CJK repertoire 集計と Han block 配置図。
 
 - [L2/26-150](../documents/utc-l2-26-150.md), [L2/26-152](../documents/utc-l2-26-152.md), [L2/26-153](../documents/utc-l2-26-153.md) - UTC \#188 の agenda、closed action items、PRI 一覧。
 - [L2/26-155](../documents/utc-l2-26-155.md), [L2/26-159](../documents/utc-l2-26-159.md) - Editorial と Charts の公開物を追う報告。

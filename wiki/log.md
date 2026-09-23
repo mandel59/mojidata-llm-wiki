@@ -4,6 +4,7 @@
 
 ## 2026-09-23
 
+- **Digest**: Added [IRG N2964](documents/irg-n2964.md) and [IRG N2965](documents/irg-n2965.md) for the Unicode 18.0 Han repertoire and block diagram, and [IRG N2966](documents/irg-n2966.md) for the SC 2/AG 1 membership call; linked them from the related topics.
 - **Topics**: Connected the newly digested 2026 documents to IRG process, UNC, source/glyph, Unicode release, properties, emoji, charts, and script topics; added [IRG Working Process and Liaison](topics/irg-working-process-and-liaison.md) and [IRG Urgently Needed Ideographs](topics/irg-urgently-needed-ideographs.md).
 - **Catalog**: Refreshed the 2026 IRG register: `IRG N2935` and `IRG N2950` dates changed, `IRG N2937` gained a date, and newly available `IRG N2973` replaced a reserved row.
 - **Digest**: Added [L2/26-154](documents/utc-l2-26-154.md), [L2/26-212](documents/utc-l2-26-212.md), and [L2/26-214](documents/utc-l2-26-214.md) for UTC \#188 properties recommendations and later Word_Break proposals.
