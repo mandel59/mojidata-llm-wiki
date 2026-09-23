@@ -4,7 +4,7 @@ title: Unicode Release Coordination and Publication
 description: "Unicode 18.0 の beta gate、UTC release authorization、versioned artifacts、publication coordination。"
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-155, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
 topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts, unicode-properties-and-algorithms, emoji-repertoire-proposals]
 meetings: [utc-meeting-187, utc-meeting-188]
 events: [utc-188-unicode-18-release-authorization]
@@ -93,6 +93,11 @@ Final release では `/Public/18.0.0/` が固定された data root になり、
 - [L2/26-008R](../documents/utc-l2-26-008r.md) - UTC \#186 ESR report and CRACKING FACE name change。
 - [L2/26-104](../documents/utc-l2-26-104.md) - UTS \#51 Revision 30 proposed update。
 - [L2/26-151](../documents/utc-l2-26-151.md) - UTC \#188 minutes and release authorization。
+- [L2/26-150](../documents/utc-l2-26-150.md) - UTC \#188 agenda と入力文書の案内。
+- [L2/26-152](../documents/utc-l2-26-152.md) - 会合後に閉じた action items の台帳。
+- [L2/26-153](../documents/utc-l2-26-153.md) - UTC \#188 に先立つ PRI 一覧。
+- [L2/26-155](../documents/utc-l2-26-155.md) - Editorial WG の Core Specification / technical reports 出版報告。
+- [L2/26-159](../documents/utc-l2-26-159.md) - Charts WG の versioned charts と ISO/IEC 10646 charts に関する報告。
 - [L2/26-160R](../documents/utc-l2-26-160r.md) - RMG finalization / release recommendations。
 - [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) - actual publication を報告する activity report。
 
@@ -107,6 +112,11 @@ Final release では `/Public/18.0.0/` が固定された data root になり、
 
 ## 出典
 
+- `utc-l2-26-150` - <https://www.unicode.org/L2/L2026/26150.htm>
+- `utc-l2-26-152` - <https://www.unicode.org/L2/L2026/26152-recently-closed-ai.pdf>
+- `utc-l2-26-153` - <https://www.unicode.org/L2/L2026/26153-public-review-issues.html>
+- `utc-l2-26-155` - <https://www.unicode.org/L2/L2026/26155-edc-report-utc188.pdf>
+- `utc-l2-26-159` - <https://www.unicode.org/L2/L2026/26159-charts-wg-rept-utc188.pdf>
 - `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
 - `utc-l2-26-093` - <https://www.unicode.org/L2/L2026/26093.htm>
 - `utc-l2-26-095` - <https://www.unicode.org/L2/L2026/26095-public-review-issues.html>

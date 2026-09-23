@@ -4,7 +4,7 @@ title: Emoji Interoperability and Intake
 description: "UTC #187 ESR report を入口にした emoji interoperability、inclusion criteria、CLDR keyword intake。"
 slug: emoji-interoperability-and-intake
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-25-254, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-092, utc-l2-26-093, utc-l2-26-098, utc-l2-26-104]
+documents: [utc-l2-25-230r, utc-l2-25-254, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-092, utc-l2-26-093, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r]
 topics: [emoji-repertoire-proposals, unicode-18-change-sources]
 meetings: [utc-meeting-187]
 status: active
@@ -56,6 +56,7 @@ Emoji 19.0 の review は 2026-04-02 に始まり、submissions は 2026-07-31 �
 ## 関連文書
 
 - [L2/26-098](../documents/utc-l2-26-098.md) - ESR report for UTC \#187。
+- [L2/26-156R](../documents/utc-l2-26-156r.md) - UTC \#188 ESR report。Emoji 18.0 の repertoire と interoperability audit を報告。
 - [L2/25-230R](../documents/utc-l2-25-230r.md) - ESR report for UTC \#185。
 - [L2/26-008R](../documents/utc-l2-26-008r.md) - ESR report for UTC \#186。
 - [L2/26-092](../documents/utc-l2-26-092.md) - UTC \#187 Agenda。
@@ -71,6 +72,7 @@ Emoji 19.0 の review は 2026-04-02 に始まり、submissions は 2026-07-31 �
 
 ## 出典
 
+- `utc-l2-26-156r` - <https://www.unicode.org/L2/L2026/26156r-esr-report-utc188.pdf>
 - `utc-l2-25-230r` - <https://www.unicode.org/L2/L2025/25230r-esr-report-utc185.pdf>
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-098` - <https://www.unicode.org/L2/L2026/26098-esr-report-utc187.pdf>

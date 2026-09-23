@@ -4,7 +4,7 @@ title: ISO/IEC 10646 Edition and Code Charts
 description: "WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。"
 slug: iso-10646-edition-and-code-charts
 bodies: [WG2, SC2, UTC]
-documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5360r, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102]
+documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5360r, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102, utc-l2-26-159]
 topics: [unicode-release-coordination-and-publication, unicode-18-change-sources, script-encoding-pipeline, shaaldaa-script, unihan-database-maintenance]
 meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187]
 status: active
@@ -64,6 +64,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 - [WG2 N5253](../documents/wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
 - [WG2 N5304](../documents/wg2-n5304.md) - WG2 \#72 recommendations。
 - [WG2 N5315](../documents/wg2-n5315.md) - ISO/IEC 10646 code charts consideration。
+- [L2/26-159](../documents/utc-l2-26-159.md) - UTC Charts WG が Unicode / ISO chart 公開の接続を報告。
 - [WG2 N5339](../documents/wg2-n5339.md) - CD.2 disposition。
 - [WG2 N5350R8](../documents/wg2-n5350r8.md) - WG2 \#73 revised agenda。
 - [WG2 N5354](../documents/wg2-n5354.md) - WG2 \#73 recommendations。
@@ -83,6 +84,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 
 ## 出典
 
+- `utc-l2-26-159` - <https://www.unicode.org/L2/L2026/26159-charts-wg-rept-utc188.pdf>
 - `wg2-n5304` - <https://www.unicode.org/wg2/docs/n5304-Mtg72-Niigata-Recs-rev5-final.pdf>
 - `wg2-n5253` - <https://www.unicode.org/wg2/docs/n5253-Considerations-7thedition.pdf>
 - `wg2-n5315` - <https://www.unicode.org/wg2/docs/n5315-Considerations-CodeCharts.pdf>

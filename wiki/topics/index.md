@@ -6,6 +6,8 @@ Script、block、property、proposal、横断論点などの精読ページを�
 
 - [Small Seal Script](small-seal-script.md) - `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。
 - [IRG Working Set 2024](irg-working-set-2024.md) - IRG Working Set 2024 Version 5.0 review と schedule。
+- [IRG Working Process and Liaison](irg-working-process-and-liaison.md) - IRG の審査手続、SC 2 に対する位置づけ、会議運営と連携。
+- [IRG Urgently Needed Ideographs](irg-urgently-needed-ideographs.md) - UNC の提出経路と個別提案の審査段階。
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md) - 既存 CJK Unified Ideographs に source data を追加する horizontal extension。
 - [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md) - JMJ references の J-column horizontal extension と IRG review path。
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) - IRG source reference、representative glyph、Unihan property 修正。

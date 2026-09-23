@@ -4,6 +4,7 @@
 
 ## 2026-09-23
 
+- **Topics**: Connected the newly digested 2026 documents to IRG process, UNC, source/glyph, Unicode release, properties, emoji, charts, and script topics; added [IRG Working Process and Liaison](topics/irg-working-process-and-liaison.md) and [IRG Urgently Needed Ideographs](topics/irg-urgently-needed-ideographs.md).
 - **Catalog**: Refreshed the 2026 IRG register: `IRG N2935` and `IRG N2950` dates changed, `IRG N2937` gained a date, and newly available `IRG N2973` replaced a reserved row.
 - **Digest**: Added [L2/26-154](documents/utc-l2-26-154.md), [L2/26-212](documents/utc-l2-26-212.md), and [L2/26-214](documents/utc-l2-26-214.md) for UTC \#188 properties recommendations and later Word_Break proposals.
 - **Digest**: Added [IRG N2969](documents/irg-n2969.md), [IRG N2970](documents/irg-n2970.md), [IRG N2962R2](documents/irg-n2962r2.md), [IRG N2963R3](documents/irg-n2963r3.md), and [IRG N2973](documents/irg-n2973.md) for Meeting \#67 input; updated the canonical [U-source horizontal extension](documents/utc-l2-26-147.md) to its 74-character R2 revision.

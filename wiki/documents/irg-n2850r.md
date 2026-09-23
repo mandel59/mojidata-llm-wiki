@@ -10,7 +10,7 @@ registry: irg
 date: "2026-03-15"
 source: IRG Convenor
 documents: [irg-n2935, irg-n2967]
-topics: [irg-working-set-2024, irg-indexing-rules]
+topics: [irg-working-process-and-liaison, irg-indexing-rules, irg-urgently-needed-ideographs]
 people: [irg, wg2]
 tags: [document, irg, principles-and-procedures, draft]
 ---

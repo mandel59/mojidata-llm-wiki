@@ -4,7 +4,7 @@ title: Emoji Repertoire Proposals
 description: "Emoji 18.0 / 19.0 に向けた個別 emoji proposal、ESR short list、final candidate name の整理。"
 slug: emoji-repertoire-proposals
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-25-255, utc-l2-25-256, utc-l2-25-257, utc-l2-25-258, utc-l2-25-259, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-098, utc-l2-26-104]
+documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-25-255, utc-l2-25-256, utc-l2-25-257, utc-l2-25-258, utc-l2-25-259, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r]
 topics: [emoji-interoperability-and-intake, unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms]
 status: active
 tags: [emoji, repertoire, proposal, unicode-18, esr]
@@ -68,6 +68,7 @@ Final character name が決まっても、user-facing search は CLDR short name
 - [L2/25-230R](../documents/utc-l2-25-230r.md) - ESR report for UTC \#185。
 - [L2/26-008R](../documents/utc-l2-26-008r.md) - ESR report for UTC \#186。
 - [L2/26-098](../documents/utc-l2-26-098.md) - ESR report for UTC \#187。
+- [L2/26-156R](../documents/utc-l2-26-156r.md) - UTC \#188 の Emoji 18.0 repertoire review。
 - [L2/26-104](../documents/utc-l2-26-104.md) - UTS \#51 Revision 30 proposed update。
 
 ## 関連トピック
@@ -79,6 +80,7 @@ Final character name が決まっても、user-facing search は CLDR short name
 
 ## 出典
 
+- `utc-l2-26-156r` - <https://www.unicode.org/L2/L2026/26156r-esr-report-utc188.pdf>
 - `utc-l2-25-230r` - <https://www.unicode.org/L2/L2025/25230r-esr-report-utc185.pdf>
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-098` - <https://www.unicode.org/L2/L2026/26098-esr-report-utc187.pdf>

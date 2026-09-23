@@ -4,7 +4,7 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-151, utc-l2-26-154, utc-l2-26-157, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, small-seal-script, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 events: [utc-188-unicode-18-release-authorization]
 status: released
@@ -108,6 +108,9 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 
 ## 関連文書
 
+- [L2/26-150](../documents/utc-l2-26-150.md), [L2/26-152](../documents/utc-l2-26-152.md), [L2/26-153](../documents/utc-l2-26-153.md) - UTC \#188 の agenda、closed action items、PRI 一覧。
+- [L2/26-155](../documents/utc-l2-26-155.md), [L2/26-159](../documents/utc-l2-26-159.md) - Editorial と Charts の公開物を追う報告。
+- [L2/26-156R](../documents/utc-l2-26-156r.md) - Emoji 18.0 repertoire と interoperability の ESR 報告。
 - [L2/26-099](../documents/utc-l2-26-099.md) - CJK & Unihan Working Group Recommendations for UTC \#187。
 - [L2/26-074](../documents/utc-l2-26-074.md) - `kJapaneseNewVariant` / `kJapaneseOldVariant` proposal。
 - [L2/26-084](../documents/utc-l2-26-084.md) - `kMandarin` additions / changes feedback。

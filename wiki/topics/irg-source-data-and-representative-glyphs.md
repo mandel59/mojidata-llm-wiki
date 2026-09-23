@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, utc-l2-26-099, wg2-n5353, wg2-n5354]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, utc-l2-26-099, wg2-n5353, wg2-n5354]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -44,6 +44,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2026-06 | IRG | [IRG N2958](../documents/irg-n2958.md), [IRG N2959](../documents/irg-n2959.md) | G-source glyph revision と SAT-source glyph issue が提出された。 |
 | 2026-06 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | Recommendation M73.02 が [L2/26-099](../documents/utc-l2-26-099.md) の selected sections を CJK additions and changes として ISO/IEC 10646 CD に取り込むよう勧告した。 |
 | 2026-07 | IRG | [IRG N2962](../documents/irg-n2962.md) | 9 G-source glyphs の revision request が提出された。 |
+| 2026-08/09 | IRG | [IRG N2962R2](../documents/irg-n2962r2.md), [IRG N2963R3](../documents/irg-n2963r3.md), [IRG N2970](../documents/irg-n2970.md) | G-source 修正案への feedback と V-source horizontal extension の候補が加わった。 |
 | 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
 
 ## 主な論点
@@ -76,6 +77,10 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 
 ## 関連文書
 
+- [IRG N2889R2](../documents/irg-n2889r2.md) - G-source glyph 修正への feedback。
+- [IRG N2962R2](../documents/irg-n2962r2.md) / [IRG N2963R3](../documents/irg-n2963r3.md) - G-source glyph / reference 修正案への feedback。
+- [IRG N2968](../documents/irg-n2968.md) - glyph 生成用 MetaHan project の情報報告。規格変更案ではない。
+- [IRG N2970](../documents/irg-n2970.md) - V-source horizontal extension 提案。glyph 修正案件とは区別する。
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N891](../documents/irg-n891.md) - China Extension C1 submission。
@@ -119,6 +124,11 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 
 ## 出典
 
+- `irg-n2889r2` - <https://www.unicode.org/irg/docs/n2889r2-IRGN2884-N2838-N2730Feedback.pdf>
+- `irg-n2962r2` - <https://www.unicode.org/irg/docs/n2962r2-GSourceGlyphIssues.pdf>
+- `irg-n2963r3` - <https://www.unicode.org/irg/docs/n2963r3-GSourceGlyphIssues.pdf>
+- `irg-n2968` - <https://www.unicode.org/irg/docs/n2968-MetaHanWIP.pdf>
+- `irg-n2970` - <https://www.unicode.org/irg/docs/n2970-VietnamHorizontalExtension.pdf>
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n891` - <https://www.unicode.org/irg/docs/n0891-China-ExtensionC1-sub.pdf>
 - `irg-n1519` - <https://www.unicode.org/irg/docs/n1519-GSourceEvidenceExtensionD.pdf>

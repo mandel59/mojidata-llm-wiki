@@ -4,7 +4,7 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
@@ -100,6 +100,7 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 ## 関連文書
 
 - [L2/26-100](../documents/utc-l2-26-100.md) - SEW recommendations for UTC \#187。
+- [L2/26-161](../documents/utc-l2-26-161.md) - SEI liaison が支援済み・開発中の script proposals を区別して報告。
 - [L2/26-092](../documents/utc-l2-26-092.md) - UTC \#187 Agenda。
 - [L2/26-093](../documents/utc-l2-26-093.md) - UTC \#187 Meeting Minutes。
 - [L2/26-040R2](../documents/utc-l2-26-040r2.md) - Shaaldaa revised proposal。
@@ -157,6 +158,7 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 
 ## 出典
 
+- `utc-l2-26-161` - <https://www.unicode.org/L2/L2026/26161-sei-liaison-report-utc188.pdf>
 - `utc-l2-26-100` - <https://www.unicode.org/L2/L2026/26100-sew-report-utc187.pdf>
 - `utc-l2-22-073` - <https://www.unicode.org/L2/L2022/22073-african-script-status.pdf>
 - `utc-l2-23-203` - <https://www.unicode.org/L2/L2023/23203-update-african-scripts.pdf>

@@ -4,7 +4,7 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: [irg-n1105, irg-n2171, irg-n2221, irg-n2826, irg-n2862r2, irg-n2909, irg-n2915, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
+documents: [irg-n1105, irg-n2171, irg-n2221, irg-n2826, irg-n2850r, irg-n2862r2, irg-n2909, irg-n2915, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
@@ -69,6 +69,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - [IRG N2931](../documents/irg-n2931.md)
 - [IRG N2925](../documents/irg-n2925.md)
 - [IRG N2951](../documents/irg-n2951.md)
+- [IRG N2850R](../documents/irg-n2850r.md) - IRG の審査・会合手順を定める改訂草案。
 - [L2/26-134](../documents/utc-l2-26-134.md)
 - [L2/26-148](../documents/utc-l2-26-148.md)
 - [IRG Working Set 2024](irg-working-set-2024.md)
@@ -76,6 +77,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 ## 関連トピック
 
+- [IRG Working Process and Liaison](irg-working-process-and-liaison.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)
 - [UCV and NUCV Lists](ucv-nucv-lists.md)

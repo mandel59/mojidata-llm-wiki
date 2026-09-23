@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
@@ -92,6 +92,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 - [IRG N2958](../documents/irg-n2958.md) - G-source glyph revision request。
 - [IRG N2959](../documents/irg-n2959.md) - SAT-source glyph issue document。
 - [IRG N2962](../documents/irg-n2962.md) - 9 G-source glyphs の revision request。
+- [IRG N2889R2](../documents/irg-n2889r2.md) - G-source glyph 修正への feedback。
+- [IRG N2962R2](../documents/irg-n2962r2.md) - 9 glyphs の revision request の改訂版。
+- [IRG N2963R3](../documents/irg-n2963r3.md) - G-source glyph / reference 修正案への feedback。
 
 ## 関連トピック
 
@@ -103,6 +106,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 ## 出典
 
+- `irg-n2889r2` - <https://www.unicode.org/irg/docs/n2889r2-IRGN2884-N2838-N2730Feedback.pdf>
+- `irg-n2962r2` - <https://www.unicode.org/irg/docs/n2962r2-GSourceGlyphIssues.pdf>
+- `irg-n2963r3` - <https://www.unicode.org/irg/docs/n2963r3-GSourceGlyphIssues.pdf>
 - `irg-n2954` - <https://www.unicode.org/irg/docs/n2954-GSourceIssue.pdf>
 - `irg-n2955` - <https://www.unicode.org/irg/docs/n2955-IRGN2954Feedback.pdf>
 - `irg-n2919r` - <https://www.unicode.org/irg/docs/n2919r-GSourceChanges.pdf>

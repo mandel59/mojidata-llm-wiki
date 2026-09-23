@@ -4,7 +4,7 @@ title: CJK Security Confusables
 description: "UTS #39 security data、Unihan kSpoofingVariant / kZVariant、Han identifier policy における CJK confusables。"
 slug: cjk-security-confusables
 bodies: [UTC, IRG]
-documents: [irg-n2206, utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127, pri-553]
+documents: [irg-n2206, utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127, utc-l2-26-154, pri-553]
 status: active
 tags: [cjk, security, confusables, uts39]
 timestamp: 2026-07-07T00:00:00+09:00
@@ -78,6 +78,7 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 - [L2/26-086](../documents/utc-l2-26-086.md)
 - [L2/26-099](../documents/utc-l2-26-099.md)
 - [L2/26-127](../documents/utc-l2-26-127.md)
+- [L2/26-154](../documents/utc-l2-26-154.md) - UTS \#39 の Hntl、identifier、confusables に関する UTC \#188 PAG 勧告。
 - [PRI \#553](../documents/pri-553.md)
 
 ## 関連トピック
@@ -89,6 +90,7 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 
 ## 出典
 
+- `utc-l2-26-154` - <https://www.unicode.org/L2/L2026/26154-utc188-properties-recs.pdf>
 - `irg-n2206` - <https://www.unicode.org/irg/docs/n2206-EasilyConfusedIdeographs.pdf>
 - `utc-l2-19-281` - <https://www.unicode.org/L2/L2019/19281-prop-kzvariant.pdf>
 - `utc-l2-19-282` - <https://www.unicode.org/L2/L2019/19282-prop-kspoofing-var.pdf>
