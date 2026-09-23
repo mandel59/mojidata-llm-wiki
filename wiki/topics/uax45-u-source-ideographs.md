@@ -44,7 +44,7 @@ UAX \#45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRS
 | 2024-07-11 | UTC       | [L2/24-165](../documents/utc-l2-24-165.md)                                             | UTC \#180 CJK & Unihan Working Group recommendations が、UTC-03488 から UTC-03511 までの 24 U-source records を `FutureWS` として受け入れ、WS2024 submission を FYI とした。 |
 | 2025-07-17 | UTC       | [L2/25-199](../documents/utc-l2-25-199.md)                                             | UAX \#45 Revision 31 proposed update が、`ExtJ` と `WS-2024` status、first residual stroke value `6`、Unicode 17.0 additions を反映した。          |
 | 2026-04-11 | UTC       | [L2/26-099](../documents/utc-l2-26-099.md)                                             | UTC \#187 向けに 30 UAX \#45 additions を `FutureWS` records として受け入れるよう勧告された。                                                                |
-| 2026-07-05 | UTC / IRG | [L2/26-147](../documents/utc-l2-26-147.md) / [IRG N2961](../documents/utc-l2-26-147.md)                               | 40 encoded CJK Unified Ideographs へ `kIRG_USource` values と U-source representative glyphs を追加する U-source horizontal extension が提出された。 |
+| 2026-07/08 | UTC / IRG | [L2/26-147R2 / IRG N2961R2](../documents/utc-l2-26-147.md) | 初版40文字から74 encoded CJK Unified Ideographs へ拡大した U-source horizontal extension が提出された。 |
 
 ## 抽出したコンセプト
 
@@ -96,7 +96,7 @@ UAX \#45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRS
 
 ### Glyph issue と unification note
 
-[IRG N2511](../documents/irg-n2511.md) は、U+30759 / UTC-01250 の code chart glyph が historical evidence と合わない可能性を指摘し、glyph update または別符号化を提案した。2026 年の [L2/26-147](../documents/utc-l2-26-147.md) も、40 characters の U-source horizontal extension で UCV number や ad hoc unification を source-specific notes として列挙している。U-source では、source reference だけでなく representative glyph と unification rationale も後続 review の対象になる。
+[IRG N2511](../documents/irg-n2511.md) は、U+30759 / UTC-01250 の code chart glyph が historical evidence と合わない可能性を指摘し、glyph update または別符号化を提案した。2026 年の [L2/26-147R2](../documents/utc-l2-26-147.md) も、74 characters の U-source horizontal extension で UCV number や ad hoc unification を source-specific notes として列挙している。U-source では、source reference だけでなく representative glyph と unification rationale も後続 review の対象になる。
 
 ### 日本の地名 ideographs
 

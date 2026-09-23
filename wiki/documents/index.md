@@ -10,15 +10,26 @@
 
 - [L2/26-215](utc-l2-26-215.md) - Unicode 18.0 release、次期 IRG working set、kTabooVariant、IVD、WS2024 review を報告する US/Unicode activity report。
 - [L2/26-216](utc-l2-26-216.md) - taboo variants を standard forms に対応付ける provisional Unihan property と UTN \#63 を提案する。
+- [L2/26-214](utc-l2-26-214.md) - Armenian hyphen と fullwidth comma / semicolon の Word_Break 値の見直しを提案する報告。
+- [L2/26-212](utc-l2-26-212.md) - UAX \#29 の Word_Break=ALetter を音声転写や正書法で使う記号へ拡張する提案。
 - [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
+- [L2/26-147](utc-l2-26-147.md) - 改訂版 L2/26-147R2 / IRG N2961R2 で74文字を対象にした U-source horizontal extension。
 - [L2/26-151](utc-l2-26-151.md) - UTC \#188 の minutes。Unicode 18.0 release authorization、script / property / CJK decisions、Unicode 19.0 pipeline items を記録する。
+- [L2/26-161](utc-l2-26-161.md) - Script Encoding Initiative が支援する proposals と開発中の script 案件を UTC に報告する。
+- [L2/26-159](utc-l2-26-159.md) - Unicode 18.0 charts の版管理、PDF 公開、ISO/IEC 10646 charts、feedback を報告する。
 - [L2/26-158](utc-l2-26-158.md) - SEW が script / character proposals の provisional assignment と継続 review を UTC に勧告した report。
+- [L2/26-155](utc-l2-26-155.md) - Unicode 18.0 Core Specification と technical reports の編集・feedback 対応を UTC に報告する。
+- [L2/26-135](utc-l2-26-135.md) - UAX 14 と UAX 29 の break 判定を DFA とデータファイルで実装するための提案。
+- [L2/26-150](utc-l2-26-150.md) - 2026-07-28/30 の UTC Meeting 188 の議題と入力文書を整理する agenda。
+- [L2/26-156R](utc-l2-26-156r.md) - Emoji 18.0 repertoire、chart design、public feedback、interoperability audit の ESR 報告。
+- [L2/26-152](utc-l2-26-152.md) - UTC 187 以降に closed となった action items の担当・完了日・成果物を列挙する。
+- [L2/26-154](utc-l2-26-154.md) - PAG が UTC \#188 に提出した Unicode 18.0 の property・algorithm・security data に関する feedback と recommendations。
+- [L2/26-153](utc-l2-26-153.md) - UTC 188 に先立つ公開 review issues と feedback 文書への一覧。
 - [L2/26-157](utc-l2-26-157.md) - Unicode 18.0 の Unihan data corrections と CJK proposals に関する working group recommendations。
 - [L2/26-160R](utc-l2-26-160r.md) - Unicode 18.0 finalization、release authorization、Chisoi postponement、Small Seal naming changes を勧告する RMG report。
 - [L2/26-133](utc-l2-26-133.md) - DOUBLE IDEOGRAPHIC FULL STOP proposal。
 - [L2/26-149](utc-l2-26-149.md) - Leibniz Unicode Characters Project feedback。
 - [L2/26-148](utc-l2-26-148.md) - 458 ideographs の `kTotalStrokes` property values 修正提案。
-- [L2/26-147](utc-l2-26-147.md) - 2026 U-source horizontal extension。
 - [L2/26-146](utc-l2-26-146.md) - Maya Hieroglyphs Extended-A draft proposal。
 - [L2/26-144](utc-l2-26-144.md) - Medievalist・Tlahuica 用 I with oblique stroke と historical Khakas 用 I with descender の4文字を Latin Extended-D に追加する提案。
 - [L2/26-143](utc-l2-26-143.md) - Leibnizian ambiguous signs proposal。
@@ -307,6 +318,14 @@
 
 - [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。会合前の placeholder で本文は未公開。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2973](irg-n2973.md) - IRG の技術討議で中国語を使い、実質的な論拠と正式記録を英語で共有する会議運営案。
+- [IRG N2971](irg-n2971.md) - W3C Internationalization の CJK layout、ruby、string handling、IRG 連携を報告する。
+- [IRG N2969](irg-n2969.md) - 『毛泽东文集』の未符号化1文字を UNC として追加する China の提案。
+- [IRG N2970](irg-n2970.md) - Vietnam が既存 CJK ideographs に9,263件の V-source references を追加する提案。
+- [IRG N2968](irg-n2968.md) - CJK glyph の skeleton data と stroke library から font を生成する個人 project の報告。
+- [IRG N2967](irg-n2967.md) - SC 2 の Advisory Group としての IRG の目的、範囲、参加、報告権限を定める。
+- [IRG N2962R2](irg-n2962r2.md) - G-source convention と原資料に照らした代表字形の修正要求。IRG N2963R3 と一部見解が異なる。
+- [IRG N2963R3](irg-n2963r3.md) - 41件の GZJW-source representative glyph 修正を原資料と部品正規化の観点から提案する。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
@@ -322,12 +341,14 @@
 - [IRG N2914R](irg-n2914r.md) - 2026年10月の IRG Meeting 67 について、会場、参加登録、visa、交通・宿泊情報を案内する logistics 文書。
 - [IRG N2931](irg-n2931.md) - UCV & NUCV lists。
 - [IRG N2953](irg-n2953.md) - `IRG N2928` への U+268A1 / U+268A2 glyph follow-up。
+- [IRG N2889R2](irg-n2889r2.md) - China が G-source glyph revision と U+2A790 の分離可能性を検討する feedback。
 - [IRG N2874R](irg-n2874r.md) - `IRG N2840` の4 G-source glyph issuesへのfeedback。
 - [IRG N2899](irg-n2899.md) - IRG Meeting \#66 schedule and agenda。
 - [IRG N2878R3](irg-n2878r3.md) - CJK Unified Ideographs Components-A/B の final proposal。
 - [IRG N2911](irg-n2911.md) - IRG Meeting \#66 miscellaneous editorial report。
 - [IRG N2909](irg-n2909.md) - IRG Meeting \#66 recommendations and action items。
 - [IRG N2927R](irg-n2927r.md) - T-source U+2976E / U+20885 pending glyph clarification。
+- [IRG N2850R](irg-n2850r.md) - IRG の CJK submission、unification、working set review、meeting procedure を扱う改訂草案。
 - [IRG N2930](irg-n2930.md) - 3 GU-source references を GHC-source references へ移す提案。
 - [IRG N2929](irg-n2929.md) - G-source horizontal extensions for 9156 characters。
 - [IRG N2928](irg-n2928.md) - U+268A1 / U+268A2 の V-source representative glyph enquiry。
@@ -456,3 +477,4 @@
 - [PRI \#544](pri-544.md) - 個別 PRI や特定 review topic に属さない UTC \#188 向け public feedback 17 件を working group 別に集成した review record。
 - [PRI \#534](pri-534.md) - Unicode 18.0 向け UAX \#38 Revision 40 と Unihan data corrections に対する public review record。
 - [PRI \#533](pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。
+- [PRI \#509](pri-509.md) - 平文中の URL と email address の検出・formatting を扱う公開 review issue。

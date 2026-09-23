@@ -2,6 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-09-23
+
+- **Catalog**: Refreshed the 2026 IRG register: `IRG N2935` and `IRG N2950` dates changed, `IRG N2937` gained a date, and newly available `IRG N2973` replaced a reserved row.
+- **Digest**: Added [L2/26-154](documents/utc-l2-26-154.md), [L2/26-212](documents/utc-l2-26-212.md), and [L2/26-214](documents/utc-l2-26-214.md) for UTC \#188 properties recommendations and later Word_Break proposals.
+- **Digest**: Added [IRG N2969](documents/irg-n2969.md), [IRG N2970](documents/irg-n2970.md), [IRG N2962R2](documents/irg-n2962r2.md), [IRG N2963R3](documents/irg-n2963r3.md), and [IRG N2973](documents/irg-n2973.md) for Meeting \#67 input; updated the canonical [U-source horizontal extension](documents/utc-l2-26-147.md) to its 74-character R2 revision.
+- **Digest**: Filled the remaining referenced 2026 document gaps: UTC \#188 [agenda](documents/utc-l2-26-150.md), [closed actions](documents/utc-l2-26-152.md), [PRI list](documents/utc-l2-26-153.md), [Editorial](documents/utc-l2-26-155.md), [ESR](documents/utc-l2-26-156r.md), [Charts](documents/utc-l2-26-159.md), and [SEI](documents/utc-l2-26-161.md) reports; [finite automata proposal](documents/utc-l2-26-135.md); IRG [feedback](documents/irg-n2889r2.md), [P&P draft](documents/irg-n2850r.md), [revised ToR](documents/irg-n2967.md), [MetaHan report](documents/irg-n2968.md), and [W3C report](documents/irg-n2971.md); and [PRI \#509](documents/pri-509.md).
+
 ## 2026-09-19
 
 - **Topics**: Updated [Kana](topics/kana.md) and four source-document pages with the seven kana characters published in Unicode 18.0, including final code points, names, vertical decompositions, and `Vertical_Orientation` data; kept the topic timeline at proposal / review granularity and recorded release outcomes in the dedicated Unicode 18.0 section.

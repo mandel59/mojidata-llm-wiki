@@ -8,7 +8,7 @@ bodies: [IRG]
 meeting: 67
 date: "2026-10-12/16"
 location: Tokyo, Japan
-documents: [irg-n2914r, irg-n2928, irg-n2934r, irg-n2935, irg-n2944, irg-n2946, irg-n2953, irg-n2960, irg-n2961r2, irg-n2962r2, irg-n2963r3, irg-n2967, irg-n2968, irg-n2969, irg-n2970, irg-n2971, utc-l2-26-147, utc-l2-26-215, utc-l2-26-216]
+documents: [irg-n2914r, irg-n2928, irg-n2934r, irg-n2935, irg-n2944, irg-n2946, irg-n2953, irg-n2960, irg-n2962r2, irg-n2963r3, irg-n2967, irg-n2968, irg-n2969, irg-n2970, irg-n2971, irg-n2973, utc-l2-26-147, utc-l2-26-215, utc-l2-26-216]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
 tags: [meeting, irg, agenda, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -18,7 +18,7 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 ## 概要
 
-IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call により 2026-10-12/16 に Tokyo, Japan で hybrid 開催すると告知された。[IRG N2914R](../../documents/irg-n2914r.md) は、National Center of Sciences Building 内の会場、2026-09-18 の参加登録期限、visa・交通・宿泊などの logistics を補う。公開 agenda [IRG N2935](../../documents/irg-n2935.md) の last update は 2026-09-17。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
+IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call により 2026-10-12/16 に Tokyo, Japan で hybrid 開催すると告知された。[IRG N2914R](../../documents/irg-n2914r.md) は、National Center of Sciences Building 内の会場、2026-09-18 の参加登録期限、visa・交通・宿泊などの logistics を補う。公開 agenda [IRG N2935](../../documents/irg-n2935.md) の registry 上の日付は 2026-09-22。金曜日 2026-10-16 は meeting なしとされ、実質的な議事は 2026-10-12/15 に集中している。
 
 会合の中心は [IRG Working Set 2024](../../topics/irg-working-set-2024.md) Version 5.0 の review で、火曜と水曜の大部分が割り当てられている。月曜には IRG Meeting \#66 の recommendations / action items の follow-up、Horizontal Extension、Representative Glyph / Source Reference Issues が置かれている。
 
@@ -26,6 +26,7 @@ IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call 
 
 - [IRG Working Set 2024](../../topics/irg-working-set-2024.md) - `IRG N2932` と `IRG N2933` の consolidated comments をもとに Version 5.0 を review する。
 - [CJK Horizontal Extensions](../../topics/cjk-horizontal-extensions.md) - China `G-source` 9156 characters、[UK 2 characters](../../documents/irg-n2960.md)、U-source `IRG N2961R2`、V-source `IRG N2970` の horizontal extension を扱う。
+- [IRG N2973](../../documents/irg-n2973.md) - China と W3C が技術討議での中国語使用と英語による論拠共有を提案した。agenda での審議・採否は未確認。
 - [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `IRG N2961` / `L2/26-147` の U-source horizontal extension と `kIRG_USource` data。
 - [IRG Source Data and Representative Glyphs](../../topics/irg-source-data-and-representative-glyphs.md) - `G` / `T` / `K` / `UK` / `V` / `SAT` / `U` source の representative glyph、source reference、Unihan property の修正。V-source では [V-source Representative Glyph Issues](../../topics/v-source-representative-glyph-issues.md) が [IRG N2928](../../documents/irg-n2928.md) / [IRG N2953](../../documents/irg-n2953.md) の U+268A1 / U+268A2 issue を追う。
 - [G-source Glyph and Source Reference Issues](../../topics/g-source-glyph-and-reference-issues.md) - `IRG N2962R2` と `IRG N2963R3` の一部 glyph corrections は conflicting viewpoints として会合で検討する。
@@ -36,7 +37,7 @@ IRG Meeting \#67 は [IRG N2934R](../../documents/irg-n2934r.md) の First Call 
 
 ## 決定事項
 
-このページは 2026-09-17 agenda ingest であり、Meeting \#67 は未来の会合なので決定事項はまだ発生していない。Section 6 に `IRG N2969` が追加され、Section 7 "Disunification Proposals & Documents" は `NONE` とされている。
+このページは 2026-09-22 agenda を参照しており、Meeting \#67 は未来の会合なので決定事項はまだ発生していない。Section 6 に `IRG N2969` が追加され、Section 7 "Disunification Proposals & Documents" は `NONE` とされている。
 
 IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendations and Action Items" row と URL が先に登録されている。ただし 2026-07-20 に同URLを再確認した時点でも HTTP 404 であり、recommendations 本文が公開済みであることを意味しない。会合後に実体が公開された時点で、この節を `IRG N2946` に基づく決定事項へ更新する。
 
@@ -50,8 +51,10 @@ IRG register には成果文書用の `IRG N2946` "IRG Meeting \#67 Recommendati
 - `IRG N2929R` - China Horizontal Extension の revised document。`IRG N2909` の action item では 2026-09-25 までに提出予定。
 - `IRG N2952` - Rules for Assigning Radicals。register は available とするが、2026-09-18 の再取得でも PDF URL は HTTP 404 を返した。
 - [L2/26-215 / IRG N2944](../../documents/utc-l2-26-215.md) - Unicode 18.0 release、next working set、`kTabooVariant`、WS2024 review の US/Unicode activity report。
-- `IRG N2969` - China UNC proposal 1 character。
-- `IRG N2970` - V-source Horizontal Extension。
+- [IRG N2969](../../documents/irg-n2969.md) - China UNC proposal 1 character。
+- [IRG N2970](../../documents/irg-n2970.md) - V-source Horizontal Extension 9,263 references。
+- [IRG N2962R2](../../documents/irg-n2962r2.md) / [IRG N2963R3](../../documents/irg-n2963r3.md) - G-source glyph の相反する見解。
+- [IRG N2973](../../documents/irg-n2973.md) - 会議での中国語利用案。
 - `IRG N2946` - Meeting \#67 Recommendations and Action Items 用の row。会合後の決定事項の一次ソースとして読む。
 
 ## 出典
