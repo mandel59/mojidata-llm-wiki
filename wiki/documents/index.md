@@ -8,6 +8,8 @@
 
 ### 2026
 
+- [L2/26-218](utc-l2-26-218.md) - 重複 glyph のため標準 data から省かれた Small Seal source references を示す provisional property の提案。
+- [L2/26-217](utc-l2-26-217.md) - Elixir 実装で DFA data を検証した PRI \#555 への支持と、仕様・tailoring の未解決点を報告する feedback。
 - [L2/26-215](utc-l2-26-215.md) - Unicode 18.0 release、次期 IRG working set、kTabooVariant、IVD、WS2024 review を報告する US/Unicode activity report。
 - [L2/26-216](utc-l2-26-216.md) - taboo variants を standard forms に対応付ける provisional Unihan property と UTN \#63 を提案する。
 - [L2/26-214](utc-l2-26-214.md) - Armenian hyphen と fullwidth comma / semicolon の Word_Break 値の見直しを提案する報告。
@@ -317,7 +319,18 @@
 ### 2026
 
 - [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。会合前の placeholder で本文は未公開。
+- [IRG N2936](irg-n2936.md) - China の未符号化 ideographs、G-source revision、次期 working set 向け作業を報告する文書。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2929R](irg-n2929r.md) - China が GCW-Source に基づく G-source horizontal extension の対象を9,178文字へ改訂した提案。
+- [IRG N2975](irg-n2975.md) - TCA が U+3097C の T-source glyph を改訂することに同意し、更新済み font を提出した feedback。
+- [IRG N2972](irg-n2972.md) - TCA が人名資料と CNS 11643 Web を根拠に700字を既存 Extension B ideographs へ追加する提案。
+- [IRG N2942](irg-n2942.md) - SAT Committee の Kanbun、WS2024、Meeting \#67 準備と次期 working set の活動報告。
+- [IRG N2952](irg-n2952.md) - IRG 提出 ideograph と Working Set に primary / secondary Kangxi radical を割り当てる判断順序を定めた Version 1。
+- [IRG N2940](irg-n2940.md) - JSC 2 が IRG 活動への参加再開を決め、mailing list と会合から段階的に関与すると報告する。
+- [IRG N2974](irg-n2974.md) - U+3097C の T-source representative glyph を別版の文献証拠に基づいて変更する提案。
+- [IRG N2945](irg-n2945.md) - WS2024 review、V-source horizontal extension、U+268A1 / U+268A2 の将来の glyph normalization 案を報告する。
+- [IRG N2939](irg-n2939.md) - 次期 IRG Working Set へ約 1,500～2,000 文字を提出する TCA の計画と資料群を報告する。
+- [IRG N2938](irg-n2938.md) - MSCS 443 文字の維持、次期 Working Set への提出予定なし、実装支援と AG 1 liaison 検討を報告する。
 - [IRG N2973](irg-n2973.md) - IRG の技術討議で中国語を使い、実質的な論拠と正式記録を英語で共有する会議運営案。
 - [IRG N2971](irg-n2971.md) - W3C Internationalization の CJK layout、ruby、string handling、IRG 連携を報告する。
 - [IRG N2969](irg-n2969.md) - 『毛泽东文集』の未符号化1文字を UNC として追加する China の提案。
@@ -329,6 +342,7 @@
 - [IRG N2963R3](irg-n2963r3.md) - 41件の GZJW-source representative glyph 修正を原資料と部品正規化の観点から提案する。
 - [IRG N2965](irg-n2965.md) - Unicode 18.0 の漢字 block を BMP、SIP、TIP ごとに色分けして示す図。
 - [IRG N2964](irg-n2964.md) - Unicode 18.0 の CJK 統合漢字・互換漢字を block、導入版、未割当範囲ごとに集計した資料。
+- [IRG N2933](irg-n2933.md) - WS2024 Version 5.0 の source 別 comments を attributes、unification、glyph design などで整理した会合入力文書。
 - [IRG N2962](irg-n2962.md) - 9 G-source glyphs の revision request。
 - [IRG N2960](irg-n2960.md) - UK-source 2 characters の horizontal extension proposal。
 - [IRG N2959](irg-n2959.md) - SAT-source glyph issue document。
@@ -466,7 +480,7 @@
 - [PRI \#558](pri-558.md) - IRG restructuring、kIRG_SGSource、Components-A/B source prefixes を反映する UAX \#38 draft の PRI。
 - [PRI \#557](pri-557.md) - UAX \#11 East Asian Width Revision 47 draft の terminology と derived data references を review する PRI。
 - [PRI \#556](pri-556.md) - UTC Meeting \#189 向けのその他 feedback を受け付ける open PRI。
-- [PRI \#555](pri-555.md) - Unicode 18.0 line breaking / segmentation algorithms の finite-state-machine data files を review する PRI。
+- [PRI \\#555](pri-555.md) - Unicode 18.0 line breaking / segmentation algorithms の finite-state-machine data files を review する PRI。
 - [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
 - [PRI \#554](pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [PRI \#553](pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。

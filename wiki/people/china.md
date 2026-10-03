@@ -4,7 +4,7 @@ title: China
 description: G-source、Small Seal Script、CJKV Components、CJK Hybrid Characters に関係する China member body。
 slug: china
 bodies: [IRG, WG2]
-documents: [irg-n891, irg-n1519, irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2935, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369]
+documents: [irg-n891, irg-n1519, irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369]
 topics: [cjk-horizontal-extensions, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, cjkv-components, g-source-glyph-and-reference-issues, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -21,7 +21,8 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
 | [IRG N891](../documents/irg-n891.md), [IRG N1519](../documents/irg-n1519.md) | Extension C1 submission と CJK_D evidence package を提出し、後続の G-source evidence history の参照点を形成。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
-| `IRG N2929` | 9156 characters の `G-source` horizontal extension を提出。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| [IRG N2929](../documents/irg-n2929.md), [IRG N2929R](../documents/irg-n2929r.md) | G-source horizontal extension を初版9,156字から改訂版9,178字へ更新。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| [IRG N2936](../documents/irg-n2936.md) | 公式地名・人名資料から未符号化候補6,169字を整理し、次期 working set の計画を報告。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) |
 | `IRG N2893` | CJK Hybrid Characters block の新設と、Han-Kana / Han-Bopomofo / Han-Latin を CJKUI に入れない方針を提示。 | [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) |
 | `IRG N2867R` | Han-only multi-syllabic abbreviation characters の source prioritization と GB 18030 mapping 方針を論じる。 | [CJK Multi-Syllabic and Abbreviation Characters](../topics/cjk-multi-syllabic-and-abbreviation-characters.md) |
 | `IRG N2878R3` | TCA とともに CJK Unified Ideographs Components-A/B の final proposal source。 | [CJKV Components](../topics/cjkv-components.md) |

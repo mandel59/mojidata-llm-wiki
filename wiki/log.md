@@ -2,6 +2,18 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-03
+
+- **Catalog**: 最新の UTC / IRG register を同期し、L2/26-218 を追加。IRG N2831 の公開化、IRG N2929R、N2936、N2942、N2972、N2975 の公開と関連する registry dates / title を反映した。
+- **Digest**: [L2/26-218](documents/utc-l2-26-218.md)、[IRG N2929R](documents/irg-n2929r.md)、[N2936](documents/irg-n2936.md)、[N2942](documents/irg-n2942.md)、[N2972](documents/irg-n2972.md)、[N2975](documents/irg-n2975.md) を追加。N2972 と N2975 の PDF が公開されたため、それぞれの提案・feedback を読んで要約した。
+- **Topics**: IRG N2929 の改訂件数、Meeting \#67 の agenda と後続文書、T-source U+3097C feedback、Small Seal / UAX \#60 property proposal、China / SAT activity reports を関連ページへ反映した。
+
+## 2026-09-25
+
+- **Catalog**: Added `L2/26-217`; updated `IRG N2935`, `IRG N2938`, `IRG N2939`, `IRG N2940`, `IRG N2945`, and `IRG N2952` dates / title, and recorded newly linked `IRG N2972`, `IRG N2974`, and `IRG N2975`. The PDFs for `IRG N2972` and `IRG N2975` still returned HTTP 404.
+- **Digest**: Added [L2/26-217](documents/utc-l2-26-217.md), [IRG N2933](documents/irg-n2933.md), [IRG N2952](documents/irg-n2952.md), [IRG N2974](documents/irg-n2974.md), and Meeting \#67 activity reports from [Macao SAR](documents/irg-n2938.md), [TCA](documents/irg-n2939.md), [Japan](documents/irg-n2940.md), and [Vietnam](documents/irg-n2945.md).
+- **Topics**: Updated finite-automata review, radical assignment, T-source glyphs, horizontal extensions, WS2024, V-source evidence, Japan's IRG participation, and Meeting \#67 agenda with the new primary documents.
+
 ## 2026-09-23
 
 - **Digest**: Added [IRG N2964](documents/irg-n2964.md) and [IRG N2965](documents/irg-n2965.md) for the Unicode 18.0 Han repertoire and block diagram, and [IRG N2966](documents/irg-n2966.md) for the SC 2/AG 1 membership call; linked them from the related topics.

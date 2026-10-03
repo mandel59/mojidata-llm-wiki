@@ -4,7 +4,7 @@ title: JMJ Horizontal Extension Review Path
 description: MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column に追加する large horizontal extension と、その review body を WG2 から IRG へ接続する議論。
 slug: jmj-horizontal-extension-review-path
 bodies: [WG2, IRG]
-documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870, pri-546]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870, irg-n2940, pri-546]
 topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax]
 people: [japan, wg2, irg, ken-lunde]
 status: active
@@ -33,6 +33,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 | 2025-08-13 | IRG | [IRG N2859](../documents/irg-n2859.md) | IRG Convenor が [IRG N2722](../documents/irg-n2722.md) などを受け、J-source source reference / representative glyph disposition 案を Japan NB に照会した。 |
 | 2025-09-25 | IRG | [IRG N2870](../documents/irg-n2870.md) | Japan NB が [IRG N2859](../documents/irg-n2859.md) に対し、符号化済み文字の current status 維持を求めた。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を背景に、Moji_Joho collection への 8 IVS 追加を review に出した。 |
+| 2026-09-25 | IRG | [IRG N2940](../documents/irg-n2940.md) | JSC 2 が IRG 活動への参加再開を決め、mailing list と会合から段階的に関与すると報告した。 |
 
 ## 主な論点
 
@@ -47,6 +48,8 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 [IRG N2367](../documents/irg-n2367.md) は、Japan が IRG Working Set review から離れ、SC2 balloting phase で review を続けるという 2019 年時点の分担を示した。[IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` は、Japan が WG2 に `WG2 N5221` を提出したことを、Japan が Han ideograph review の能力と必要性を持つ根拠として扱う。IRG Convenor は、IRG の方が WG2 より頻繁に会合し、CJK experts が horizontal extension を review しやすいと説明した。
 
 [WG2 N5301](../documents/wg2-n5301.md) の Section 8.2 はこの request を WG2 Meeting \#72 で議論した記録である。Japan representative は復帰を検討できるが human resources / workload が課題だと述べ、他の experts は Maintenance Agency model や IRG review の効率化を踏まえて active participation を促している。
+
+[IRG N2940](../documents/irg-n2940.md) で JSC 2 は IRG 活動への参加再開を決めたと報告した。当初は mailing list と会合に参加し、資源に応じて貢献を広げる。Working Set review の全面再開まで決まったとは読まない。
 
 ### 追加後に見つかった JMJ source issues
 
@@ -66,7 +69,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 ## 現状
 
-`WG2 N5221` の提出により、JMJ references の大規模 J-column horizontal extension は WG2 / IRG の両方で可視化された。`IRG N2721` / `WG2 N5284` と `WG2 N5301` は、今後の同種 review は IRG active participation と IRG review workflow に接続する必要があることを示す。
+`WG2 N5221` の提出により、JMJ references の大規模 J-column horizontal extension は WG2 / IRG の両方で可視化された。`IRG N2721` / `WG2 N5284` の要請と `WG2 N5301` の検討を経て、JSC 2 は [IRG N2940](../documents/irg-n2940.md) で IRG 活動への段階的な参加再開を報告した。今後の Working Set review の具体的な範囲は未定である。
 
 一方、追加済み JMJ data の具体的 correction は、`IRG N2722` から `IRG N2859` / `IRG N2870` へ進み、符号化済み文字の安定性と source-data correction の調整問題として残っている。
 
@@ -80,6 +83,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 - [WG2 N5304](../documents/wg2-n5304.md) - WG2 Meeting \#72 recommendations; M72.07。
 - [IRG N2859](../documents/irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2870](../documents/irg-n2870.md) - Japan NB feedback on `IRG N2859`。
+- [IRG N2940](../documents/irg-n2940.md) - JSC 2 の IRG 参加再開方針。
 - [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
 
 ## 関連トピック
@@ -97,6 +101,8 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 - [Ken Lunde](../people/ken-lunde.md)
 
 ## 出典
+
+- `irg-n2940` - <https://www.unicode.org/irg/docs/n2940-JapanActivityReport.pdf>
 
 - `irg-n2367` - <https://www.unicode.org/irg/docs/n2367-JapanActivityReport.pdf>
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>

@@ -4,7 +4,7 @@ title: Unicode Properties and Algorithms
 description: "Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
+documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
@@ -46,12 +46,13 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-07-07 | UTC | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、ISO 15924 mixed-script script codes の explanation が UTC \#188 に接続した。 |
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 が variation-selector conformance、UCD properties、line breaking、segmentation、collation、security changes を確定した。 |
 | 2026-09-16 | Unicode | Unicode 18.0.0 release | Final UAX / UTS text、UCD、auxiliary test data、security / collation data を公開した。 |
+| 2026-09-24 | UTC | [L2/26-217](../documents/utc-l2-26-217.md) | PRI \#555 の DFA data を Elixir で実装した feedback が、test 結果と仕様明確化の要望を報告した。 |
 
 ## 主な論点
 
 ### 審議中の text processing 提案
 
-[L2/26-135](../documents/utc-l2-26-135.md) は finite automata を使った Unicode text processing の提案、[PRI \#509](../documents/pri-509.md) は URL / email address の検出・formatting を扱う UTS \#58 公開レビューである。Unicode 18.0 の確定済み UCD 変更とは区別して読む。
+[L2/26-135](../documents/utc-l2-26-135.md) は finite automata を使った Unicode text processing の提案である。[L2/26-217](../documents/utc-l2-26-217.md) は PRI \#555 の公開 DFA data を使った Elixir 実装での conformance / performance の結果を報告し、UnicodeSet 構文、dictionary、CLDR tailoring、表と本文の優先関係の明確化を求める。[PRI \#509](../documents/pri-509.md) は URL / email address の検出・formatting を扱う UTS \#58 公開レビューである。Unicode 18.0 の確定済み UCD 変更とは区別して読む。
 
 ### UCD property と line breaking
 
@@ -176,6 +177,8 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [Plain-Text Composition and Overstriking](plain-text-composition-and-overstriking.md)
 
 ## 出典
+
+- `utc-l2-26-217` - <https://www.unicode.org/L2/L2026/26217-pri555-feedback.pdf>
 
 - `pri-509` - <https://www.unicode.org/review/pri509/>
 - `utc-l2-26-135` - <https://www.unicode.org/L2/L2026/26135-finite-automata.pdf>

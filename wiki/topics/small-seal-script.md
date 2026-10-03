@@ -4,7 +4,7 @@ title: Small Seal Script
 description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 bodies: [UTC, WG2]
-documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
+documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
 status: encoded-unicode-18
 tags: [script, seal, cjk, ideographic]
 timestamp: 2026-09-19T00:00:00+09:00
@@ -44,6 +44,7 @@ Small Seal Script は、`Shuowen Jiezi` に基づく小篆を UCS / Unicode に�
 | 2026-06 | WG2 | [WG2 N5360R](../documents/wg2-n5360r.md), [WG2 N5354](../documents/wg2-n5354.md), [WG2 N5369](../documents/wg2-n5369.md) | draft で proposed nonacceptance だった name change を WG2 discussion で採用し、[WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md) として確定。M73.04 は 7th edition DIS への進行を勧告。 |
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md), [L2/26-160R](../documents/utc-l2-26-160r.md) | UTC 188-C3 が 11,328 algorithmic names を `SMALL SEAL CHARACTER-XXXXX` へ変更し、18.0 final data / charts への反映を指示。 |
 | 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0 で U+3D000..U+3FC3F の 11,328 Small Seal characters と `SealSources.txt` を公開。 |
+| 2026-09-29 | UTC | [L2/26-218](../documents/utc-l2-26-218.md) | SealSources.txt の重複 glyph により省略された source references を示す `kSEAL_AdditionalSrc` property が提案された。 |
 
 ## 主な論点
 
@@ -89,6 +90,8 @@ Unicode 18.0 final release は Seal を 3 new scripts の一つとして符号�
 
 Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。ISO 側では WG2 \#73 M73.04 が Small Seal changes を含む ISO/IEC 10646 7th edition DIS text を SC2 secretariat に回すよう勧告しており、body と時点を分けて追跡する。
 
+Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重複 glyph のため current SealSources.txt に記録されない source references を補う provisional property を提案した。採択は確認されておらず、既存の Unicode 18.0 data と proposal を区別する。
+
 ## 関連文書
 
 - [WG2 N5344R2](../documents/wg2-n5344r2.md) - revised proposal
@@ -112,6 +115,7 @@ Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。IS
 - [WG2 N5355](../documents/wg2-n5355.md) - `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification
 - [WG2 N5360R](../documents/wg2-n5360r.md) - CD.4 revised draft disposition
 - [WG2 N5369](../documents/wg2-n5369.md) - CD.4 disposition of comments
+- [L2/26-218](../documents/utc-l2-26-218.md) - proposed kSEAL_AdditionalSrc property for omitted source references
 - [WG2 meeting \#72](../meetings/wg2/wg2-meeting-72.md)
 - [WG2 meeting \#73](../meetings/wg2/wg2-meeting-73.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
@@ -141,6 +145,7 @@ Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。IS
 - `wg2-n5105` - <https://unicode.org/wg2/docs/n5105_smallseal%20Appendix%20update_V2%20.pdf>
 - `utc-l2-19-228` / alias of `wg2-n5105` - <https://www.unicode.org/L2/L2019/19228-n5105-small-seal-update.pdf>
 - `wg2-n5108` - <https://unicode.org/wg2/docs/n5108-Seal-da_rev3.pdf>
+- `utc-l2-26-218` - <https://www.unicode.org/L2/L2026/26218-seal-property.pdf>
 - `utc-l2-19-245` / alias of `wg2-n5108` - <https://www.unicode.org/L2/L2019/19245-n5108-seal-report.pdf>
 - `wg2-n5209` - <https://www.unicode.org/wg2/docs/n5209-ConsiderationsSmallSeal.pdf>
 - `wg2-n5211` - <https://www.unicode.org/wg2/docs/n5211-14-columnchart-documentation.pdf>

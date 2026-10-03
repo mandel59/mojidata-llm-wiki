@@ -4,7 +4,7 @@ title: IRG Working Process and Liaison
 description: IRG の手続、SC 2 に対する位置づけ、会議運営、外部団体との連携。
 slug: irg-working-process-and-liaison
 bodies: [IRG, SC2]
-documents: [irg-n2850r, irg-n2966, irg-n2967, irg-n2971, irg-n2973]
+documents: [irg-n2850r, irg-n2938, irg-n2940, irg-n2966, irg-n2967, irg-n2971, irg-n2973]
 topics: [irg-indexing-rules, irg-urgently-needed-ideographs]
 meetings: [irg-meeting-67]
 status: active
@@ -26,6 +26,7 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 | 2026-08 | SC 2 | [IRG N2967 / SC 2 N5063](../documents/irg-n2967.md) | SC 2/AG 1 としての IRG の revised Terms of Reference が登録された。 |
 | 2026-09 | IRG | [IRG N2971](../documents/irg-n2971.md) | W3C Internationalization が IRG との連携と関連作業を報告した。 |
 | 2026-09 | IRG | [IRG N2973](../documents/irg-n2973.md) | China と W3C が技術討議における中国語使用と英語での正式記録を提案した。 |
+| 2026-09 | IRG | [IRG N2938](../documents/irg-n2938.md), [IRG N2940](../documents/irg-n2940.md) | Macao SAR は Category C liaison を検討し、JSC 2 は IRG 活動への参加再開を決めたと報告した。 |
 
 ## 主な論点
 
@@ -37,6 +38,8 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 
 [IRG N2971](../documents/irg-n2971.md) は W3C の活動報告であり、[IRG N2973](../documents/irg-n2973.md) は会議の言語運用に関する提案である。両者を IRG の決定として扱わない。
 
+[IRG N2938](../documents/irg-n2938.md) の Macao SAR Category C liaison は設立検討段階であり、[IRG N2940](../documents/irg-n2940.md) の Japan / JSC 2 は mailing list と会合から IRG 参加を再開する方針である。組織参加の状態をそれぞれの報告時点で読む。
+
 ## 関連文書
 
 - [IRG N2850R](../documents/irg-n2850r.md) - Principles & Procedures の改訂草案。
@@ -44,6 +47,8 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 - [IRG N2967](../documents/irg-n2967.md) - SC 2/AG 1 の Terms of Reference。
 - [IRG N2971](../documents/irg-n2971.md) - W3C activity report。
 - [IRG N2973](../documents/irg-n2973.md) - 会議の言語運用案。
+- [IRG N2938](../documents/irg-n2938.md) - Macao SAR の liaison 検討。
+- [IRG N2940](../documents/irg-n2940.md) - JSC 2 の IRG 参加再開。
 
 ## 関連トピック
 
@@ -57,3 +62,5 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 - `irg-n2967` - <https://www.unicode.org/irg/docs/n2967-SC2N5063.pdf>
 - `irg-n2971` - <https://www.unicode.org/irg/docs/n2971-W3CActivityReport.pdf>
 - `irg-n2973` - <https://www.unicode.org/irg/docs/n2973-ChineseLanguageUse.pdf>
+- `irg-n2938` - <https://www.unicode.org/irg/docs/n2938-MacaoSARActivityReport.pdf>
+- `irg-n2940` - <https://www.unicode.org/irg/docs/n2940-JapanActivityReport.pdf>

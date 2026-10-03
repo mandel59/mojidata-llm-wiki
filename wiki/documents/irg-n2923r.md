@@ -9,7 +9,7 @@ document_type: proposal
 registry: irg
 date: "2026-03-10"
 source: DONG, Wenjie
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2919r, irg-n2929, irg-n2930]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2864r, irg-n2868, irg-n2909, irg-n2911, irg-n2919r, irg-n2929, irg-n2929r, irg-n2930]
 topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
 people: [china, irg]
 meetings: [irg-meeting-66, irg-meeting-67]

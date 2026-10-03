@@ -4,7 +4,7 @@ title: SAT
 description: SAT-source と IRG source data に関係する organization。
 slug: sat
 bodies: [IRG]
-documents: [irg-n2914r, irg-n2935, irg-n2959]
+documents: [irg-n2914r, irg-n2935, irg-n2942, irg-n2959]
 topics: [g-source-glyph-and-reference-issues, irg-source-data-and-representative-glyphs, irg-working-set-2024]
 tags: [organization, source, sat-source]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -23,11 +23,13 @@ SAT は、大蔵経テキストデータベースに関わる organization / sou
 | [IRG N2914R](../documents/irg-n2914r.md) | Meeting \#67 の host として、会場、登録、visa、交通・宿泊の logistics を案内。 | [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) |
 | `IRG N2935` | Meeting \#67 host として SAT Daizōkyō Text Database Committee を記録。WS2024 Version 5.0 の SAT-source items も agenda に含まれる。 | [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) |
 | `IRG N2959` | SAT-source glyphs に関する issue document。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
+| [IRG N2942](../documents/irg-n2942.md) | Kanbun repertoire と WS2024 の作業、Meeting \#67 準備、次期 working set 向け約300字を報告。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) |
 
 ## 関連文書
 
 - [IRG N2914R](../documents/irg-n2914r.md) - IRG Meeting \#67 logistics
 - `irg-n2935` - IRG Meeting \#67 agenda
+- [IRG N2942](../documents/irg-n2942.md) - SAT activity report to Meeting \#67
 - `irg-n2959` - SAT-source glyph issues
 
 ## 関連トピック

@@ -4,7 +4,7 @@ title: V-source Representative Glyph Issues
 description: V-source / Nom glyph evidence、Vietnam NB confirmation、representative glyph change と Unihan property update の論点。
 slug: v-source-representative-glyph-issues
 bodies: [IRG, UTC]
-documents: [utc-l2-26-068, utc-l2-26-099, irg-n2909, irg-n2911, irg-n2928, irg-n2935, irg-n2953]
+documents: [utc-l2-26-068, utc-l2-26-099, irg-n2909, irg-n2911, irg-n2928, irg-n2935, irg-n2945, irg-n2953]
 topics: [irg-source-data-and-representative-glyphs, unihan-database-maintenance]
 people: [vietnam, ng-koon-hang, irg, utc]
 status: active
@@ -30,6 +30,7 @@ V-source representative glyph issues は、Vietnam / Nom evidence に基づく C
 | 2026-03-25 | IRG | [IRG N2953](../documents/irg-n2953.md) | [IRG N2928](../documents/irg-n2928.md) の follow-up として、現行形を支持する evidence と、脊 component への normalized form を示す evidence が追加された。 |
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が U+2B8A0 の V-source representative glyph change と `kRSUnicode` / `kTotalStrokes` 変更を Unicode Version 18.0 target で受け入れるよう勧告した。 |
 | 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が U+268A1 / U+268A2 issue を Section 9.1 の "Redux" issue として置き、[IRG N2953](../documents/irg-n2953.md) を follow-up input にした。 |
+| 2026-09-24 | IRG | [IRG N2945](../documents/irg-n2945.md) | Vietnam が U+268A1 / U+268A2 の glyph normalization 案を将来の提案に含める予定と報告した。 |
 
 ## 主な論点
 
@@ -38,6 +39,8 @@ V-source representative glyph issues は、Vietnam / Nom evidence に基づく C
 [IRG N2928](../documents/irg-n2928.md) は、U+268A1 / U+268A2 の現行 component を、semantic component 脊 の variant と見るべきかを問う。IRG \#66 では Vietnam が original evidence を確認し、current representative glyph は意図されたものだとしたが、同時に glyph change suggestion は意味的に合理的で、十分な supporting evidence があれば変更提案が可能だと整理された。
 
 [IRG N2953](../documents/irg-n2953.md) は、`Bảng tra chữ Nôm` が現行形を支持する一方、`Giúp đọc Nôm và Hán Việt` には U+268A1 の normalized form ⿰屋脊 があるとする。このため、V-source glyph issue では「source owner が意図した glyph」と「別 evidence に現れる normalized glyph」を両方見て判断する必要がある。
+
+[IRG N2945](../documents/irg-n2945.md) で Vietnam は二つの component forms をともに有効としつつ、他の V-source characters との一貫性から U+268A1 / U+268A2 の normalization 案を将来提出すると報告した。これは source owner の意向を示すが、まだ IRG / UTC の glyph change 決定ではない。
 
 ### Glyph change と Unihan property update の結合
 
@@ -55,6 +58,7 @@ IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 
 - [L2/26-099](../documents/utc-l2-26-099.md) - UTC \#187 CJK & Unihan Working Group recommendations。
 - [IRG N2928](../documents/irg-n2928.md) - U+268A1 / U+268A2 glyph enquiry。
 - [IRG N2953](../documents/irg-n2953.md) - `IRG N2928` follow-up evidence。
+- [IRG N2945](../documents/irg-n2945.md) - Vietnam の今後の glyph normalization 提案予定。
 - [IRG N2909](../documents/irg-n2909.md) - IRG Meeting \#66 recommendations。
 - [IRG N2911](../documents/irg-n2911.md) - IRG Meeting \#66 editorial report。
 - [IRG N2935](../documents/irg-n2935.md) - IRG Meeting \#67 agenda。
@@ -82,3 +86,4 @@ IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 
 - `irg-n2928` - <https://www.unicode.org/irg/docs/n2928-VSourceGlyphIssues.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2953` - <https://www.unicode.org/irg/docs/n2953-IRGN2928Followup.pdf>
+- `irg-n2945` - <https://www.unicode.org/irg/docs/n2945-VietnamActivityReport.pdf>

@@ -34,7 +34,8 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.18 が [IRG N2862R2](../documents/irg-n2862r2.md) を previous FS / SC documents の replacement として accept し、final [IRG N2951](../documents/irg-n2951.md) の準備を求めた。 |
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
 | 2026-04 | IRG | [IRG N2951](../documents/irg-n2951.md) | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
-| 2026-07 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
+| 2026-09 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
+| 2026-09-25 | IRG | [IRG N2952](../documents/irg-n2952.md) | Rules for Assignment of Radicals Version 1 が公開され、Meeting \#67 の review 対象になった。 |
 
 ## 主な論点
 
@@ -56,7 +57,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
 
-[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed version を含む `IRG N2952` を準備するよう求めた。Meeting \#67 agenda と catalog には `IRG N2952` が載っているが、2026-09-18 の再取得でも registry URL は 404 だったため、内容の精読は後続確認とする。
+[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed rules を準備するよう求めた。[IRG N2952](../documents/irg-n2952.md) Version 1 は、形声字では意符を優先し、独体字・合体字では構造と画数を使う判断順序を示す。secondary radical は二通りの分析を支える証拠がある場合に限る。Meeting \#67 の採否は未確認。
 
 ## 関連文書
 
@@ -68,6 +69,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - [IRG N2915](../documents/irg-n2915.md)
 - [IRG N2931](../documents/irg-n2931.md)
 - [IRG N2925](../documents/irg-n2925.md)
+- [IRG N2952](../documents/irg-n2952.md)
 - [IRG N2951](../documents/irg-n2951.md)
 - [IRG N2850R](../documents/irg-n2850r.md) - IRG の審査・会合手順を定める改訂草案。
 - [L2/26-134](../documents/utc-l2-26-134.md)
@@ -103,6 +105,6 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
-- `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>（2026-07-08 取得時点で 404）
+- `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>

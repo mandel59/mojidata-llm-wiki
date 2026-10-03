@@ -4,7 +4,7 @@ title: Japan
 description: Japan NB / J-source / 日本関係 ideograph proposals / WG2 関連 activity に関わる IRG / WG2 member body。
 slug: japan
 bodies: [UTC, IRG, WG2]
-documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2914r, irg-n2934r, pri-546]
+documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2914r, irg-n2934r, irg-n2940, pri-546]
 topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
 events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition]
 tags: [member-body, source, japan, j-source, uax45]
@@ -17,7 +17,7 @@ timestamp: 2026-07-06T23:08:00+09:00
 
 Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `J-source` に関する source owner として CJK source data の確認・回答を担う。UTC 側では、日本の地名・登記資料・古典籍に関係する ideograph proposal や、仮名・Unihan `kJapanese` の data maintenance も Japan 関連 activity として追跡できる。
 
-最近の公開文書では、WG2 への大規模 JMJ horizontal extension、Japan NB の IRG active participation への復帰要請、J-source representative glyph / source reference の disposition、WG2 Meeting \#72 の新潟開催、IRG Meeting \#67 の東京開催に加えて、UAX \#45 へ日本地名 ideographs を追加する UTC documents がまとまって確認できる。
+最近の公開文書では、WG2 への大規模 JMJ horizontal extension、IRG active participation への復帰要請と JSC 2 による参加再開の報告、J-source representative glyph / source reference の disposition、IRG Meeting \#67 の東京開催などが確認できる。
 
 ## 最近の活動
 
@@ -32,9 +32,10 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 | 2025-01-30/2026-01-14 | `L2/25-053`, `L2/25-221`, `L2/26-044` | Tsukada Masaki が、日本の地名・登記資料に現れる 5 ideographs を UAX \#45 へ追加する proposals を UTC に提出。 | Japan NB 文書ではないが、日本の登記・地名資料を根拠に UTC source data / FutureWS pipeline へ文字を載せる recent activity。 |
 | 2025-12-19 | `L2/25-274` | Lin Anning が、日本古典籍 `古学二千文` などに現れる IDS `⿰犭華` の 1 ideograph 追加を提案。 | 日本古典籍由来の未符号化 ideograph を扱う UTC document。地名文字とは異なる historical evidence の系統として追う必要がある。 |
 | 2025-08-13 | `IRG N2859` | [IRG N2859 J-source disposition request](../events/irg-n2859-j-source-disposition-request.md)。 | J-source の具体的な保守・変更判断が Japan NB の確認事項として扱われている。 |
-| 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | Japan NB の最新の明示的 position。既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
+| 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | J-source disposition について、既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
 | 2026-04-02 | [IRG N2914R](../documents/irg-n2914r.md), [IRG N2934R](../documents/irg-n2934r.md) | IRG Meeting \#67 の logistics / First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
 | 2026-07-31 closing | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。registrant は ITSCJ / IPSJ、representative は Shuichi Tashiro。 | `WG2 N5221` 後の Moji Jōhō Kiban code point 対応更新が IVD collection maintenance へ波及した例。 |
+| 2026-09-25 | [IRG N2940](../documents/irg-n2940.md) | JSC 2 が IRG 活動への参加再開を決定したと報告した。 | mailing list と会合から始め、資源に応じて貢献を広げる。Working Set review の全面再開は表明していない。 |
 
 ## 主な論点
 
@@ -58,7 +59,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ### IRG active participation
 
-[IRG N2367](../documents/irg-n2367.md) は、Japan が 2019 年時点で human resource 不足により future IRG Working Set review には参加しない一方、SC2 balloting phase では CJK Unified Ideograph extension proposals の review を続けると報告した文書である。[IRG N2721](../documents/irg-n2721.md) は、この経緯を前提に、IRG への active member body としての復帰を求める。理由として、Extension G / H への ballot comments、WG2 へ提出された大規模 horizontal extension、Han ideograph 標準化における Japan の専門性、post-COVID の virtual / hybrid meeting による参加障壁の低下が挙げられている。
+[IRG N2367](../documents/irg-n2367.md) は、Japan が 2019 年時点で human resource 不足により future IRG Working Set review には参加しない一方、SC2 balloting phase では CJK Unified Ideograph extension proposals の review を続けると報告した文書である。[IRG N2721](../documents/irg-n2721.md) は、この経緯を前提に、IRG への active member body としての復帰を求めた。[IRG N2940](../documents/irg-n2940.md) で JSC 2 は参加再開を決め、mailing list と IRG 会合から段階的に関わると報告した。Working Set review の具体的な担当範囲は未確認である。
 
 ### UTC における日本関係 ideograph proposals
 
@@ -75,6 +76,8 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 [IRG N2914R](../documents/irg-n2914r.md) と [IRG N2934R](../documents/irg-n2934r.md) は、IRG Meeting \#67 が 2026-10-12/16 に東京で hybrid 開催されることを logistics / First Call の役割で告知する。host は SAT Daizōkyō Text Database Committee であり、Japan NB の position paper ではない。ただし、日本国内での IRG 会合開催は、Japan / Japanese experts / SAT の IRG activity を追跡するうえで関連するイベントである。
 
 ## 関連文書
+
+- [IRG N2940](../documents/irg-n2940.md) - JSC 2 の IRG 活動への参加再開。
 
 - `WG2 N5221` - Japan NB による JMJ-source 36,422 characters の J-column horizontal extension request。
 - [IRG N2367](../documents/irg-n2367.md) - 2019 年時点の Japan Activity Report。
@@ -109,6 +112,8 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 - [SAT](sat.md)
 
 ## 出典
+
+- `irg-n2940` - <https://www.unicode.org/irg/docs/n2940-JapanActivityReport.pdf>
 
 - `irg-n2367` - <https://www.unicode.org/irg/docs/n2367-JapanActivityReport.pdf>
 - `wg2-n5221` - <https://www.unicode.org/wg2/docs/n5221-JNB_contribution_2304.pdf>

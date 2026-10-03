@@ -4,7 +4,7 @@ title: "UAX #60 Data for East Asian Scripts"
 description: "Unicode 18.0 で新設された UAX #60 と Jurchen / Nüshu / Seal / Tangut data files。"
 slug: uax60-large-east-asian-scripts
 bodies: [UTC, WG2]
-documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, pri-549, wg2-n5209, wg2-n5344r2]
+documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-26-218, pri-549, wg2-n5209, wg2-n5344r2]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, small-seal-script]
 status: released
 tags: [uax60, east-asian-scripts, data-files, small-seal, unicode-18]
@@ -29,6 +29,7 @@ Draft title は `Data for Non Han Ideographic Scripts`、RMG 調整後の呼称�
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group recommendations が PRI \#520 / Draft UAX \#60 feedback として、`kSEAL_Rad` delimiter、`kSEAL_THXSrc` syntax、description 文字列の修正を action item 化した。 |
 | 2026-04-15 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | RMG report が Unicode 18.0 beta に入れる調整として、UAX \#60 title を [Data for Non Han Ideographic Scripts](../documents/utc-l2-26-108.md) から `Data for Large East Asian Scripts` に変える action を記録した。 |
 | 2026-07-07 | PRI | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Seal / Jurchen / Tangut data attributes が UCD XML representation に反映された。 |
+| 2026-09-29 | UTC | [L2/26-218](../documents/utc-l2-26-218.md) | 重複 glyph のため省略された Seal source references を補う `kSEAL_AdditionalSrc` を提案した。 |
 
 ## 主な論点
 
@@ -39,6 +40,8 @@ UAX \#60 は Small Seal Script そのものの encoding proposal ではないが
 [WG2 N5209](../documents/wg2-n5209.md) は、TCA / China proposal と Cook source mapping を比較する過程で、source references、modern CJK equivalents、radical modern form、alternate radical、radical number を持つ Small Seal database 形式を示した。[WG2 N5344R2](../documents/wg2-n5344r2.md) は Small Seal encoding proposal 側で、これらの source references、modern CJK equivalents、radical values を proposed database としてまとめる。[L2/26-099](../documents/utc-l2-26-099.md) では、`kSEAL_Rad` と `kSEAL_THXSrc` の syntax / description correction が PRI feedback の処理として扱われた。
 
 [PRI \#549](../documents/pri-549.md) の UAX \#42 Revision 39 は、同じ Seal data を XML UCD representation の attributes として扱う。Small Seal は proposal / chart / data file だけでなく、`ucdxml` schema にも現れるため、tooling は UAX \#60 と UAX \#42 の両方を確認する必要がある。
+
+[L2/26-218](../documents/utc-l2-26-218.md) は、SealSources.txt で重複 glyph のため省略された THX / CCZ / QJZ / DYC source references と code point の対応を、新しい provisional property で表す proposal である。これは Unicode 18.0.0 の既存 property ではなく、UTC の後続審議を待つ。
 
 ### UAX \#38 との対応
 
@@ -63,6 +66,7 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 - [L2/26-095](../documents/utc-l2-26-095.md) - PRI \#520 を含む Public Review Issues 一覧。
 - [WG2 N5209](../documents/wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
 - [WG2 N5344R2](../documents/wg2-n5344r2.md) - Small Seal proposal と proposed database。
+- [L2/26-218](../documents/utc-l2-26-218.md) - SealSources.txt の proposed additional source property。
 
 ## 関連トピック
 
@@ -80,5 +84,6 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 - `utc-l2-26-095` - <https://www.unicode.org/L2/L2026/26095-public-review-issues.html>
 - `wg2-n5209` - <https://www.unicode.org/wg2/docs/n5209-ConsiderationsSmallSeal.pdf>
 - `wg2-n5344r2` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>
+- `utc-l2-26-218` - <https://www.unicode.org/L2/L2026/26218-seal-property.pdf>
 - UAX \#60, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/>
 - Unicode 18.0 UAX \#60 data - <https://www.unicode.org/Public/18.0.0/ucd/>
