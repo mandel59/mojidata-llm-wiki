@@ -1,13 +1,13 @@
 {
   "derived_document_count": 0,
-  "document_count": 11150,
+  "document_count": 11152,
   "last_sync_latest_only": true,
-  "last_sync_register_document_count": 216,
+  "last_sync_register_document_count": 218,
   "latest_only": false,
   "name": "UTC Document Registry",
   "registers": [
     {
-      "document_count": 216,
+      "document_count": 218,
       "url": "https://www.unicode.org/L2/L-curdoc.htm"
     },
     {
