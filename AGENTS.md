@@ -320,6 +320,14 @@ uv run python tools/generate_document_index.py --check
 
 ## コミット規約
 
+変更を伴う作業では、ユーザーから「コミットしない」などの指示がない限り、必要な検証後に毎回コミットする。コミットの追加指示や確認を待たず、完了手順の一部として実行する。
+
+- 作業開始時に `git status --short` で既存の変更を把握する。
+- 完了前に全差分と未追跡ファイルを確認し、コミット漏れを防ぐ。残っている変更も内容を確認してコミットし、未コミット変更を残さない。
+- `.gitignore` 対象の cache や外部文書実体はこの対象に含めない。
+- コミット後に `git status --porcelain=v1` が空であることを確認してから完了を報告する。
+- push を依頼されている場合は既存の未送信コミットも含めて push し、upstream との比較で未送信コミットがないことを確認する。
+
 - 目録更新: `[catalog] update Unicode registry manifests`
 - wiki 追加・更新: `[wiki] ingest small seal script discussion`
 - tool 変更: `[tools] improve Unicode registry parser`
