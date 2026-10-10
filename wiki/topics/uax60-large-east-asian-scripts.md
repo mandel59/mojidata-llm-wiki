@@ -8,14 +8,15 @@ documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-2
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, small-seal-script]
 status: released
 tags: [uax60, east-asian-scripts, data-files, small-seal, unicode-18]
-timestamp: 2026-10-10T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
+events: [uax60-unicode-18-first-published-version]
 ---
 
 # UAX \#60 Data for East Asian Scripts
 
 ## 概要
 
-UAX \#60 Data for East Asian Scripts は Unicode 18.0 で新設された technical annex で、Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data files を説明する。[L2/26-108](../documents/utc-l2-26-108.md) は public review draft、final UAX \#60 と versioned source files は実装基準である。
+UAX \#60 Data for East Asian Scripts は Unicode 18.0 で新設された technical annex で、Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data files を説明する。[L2/26-108](../documents/utc-l2-26-108.md) は public review draft、確定版と正式データは [Revision 3 確定 event](../events/uax60-unicode-18-first-published-version.md) から辿れる。
 
 Draft title は `Data for Non Han Ideographic Scripts`、RMG 調整後の呼称は `Data for Large East Asian Scripts` だったが、final title は `Data for East Asian Scripts` になった。document stage ごとの title を区別し、Small Seal data の syntax / description update と接続して追う。
 
@@ -29,6 +30,8 @@ Draft title は `Data for Non Han Ideographic Scripts`、RMG 調整後の呼称�
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group recommendations が PRI \#520 / Draft UAX \#60 feedback として、`kSEAL_Rad` delimiter、`kSEAL_THXSrc` syntax、description 文字列の修正を action item 化した。 |
 | 2026-04-15 | UTC | [L2/26-102](../documents/utc-l2-26-102.md) | RMG report が Unicode 18.0 beta に入れる調整として、UAX \#60 title を [Data for Non Han Ideographic Scripts](../documents/utc-l2-26-108.md) から `Data for Large East Asian Scripts` に変える action を記録した。 |
 | 2026-07-07 | PRI | [PRI \#549](../documents/pri-549.md) | UAX \#42 Revision 39 public review が close し、Seal / Jurchen / Tangut data attributes が UCD XML representation に反映された。 |
+| 2026-07-07 closing | PRI | [PRI \#520 / L2/26-108](../documents/utc-l2-26-108.md) | draft の review closing date。Resolved Issues で解決済みを確認し、仕様の確定は後続 event で追う。 |
+| 2026-09-02 specification date | Unicode Consortium | [UAX \#60 Revision 3 確定](../events/uax60-unicode-18-first-published-version.md) | 初の承認済み公開版と正式データへの接続。 |
 | 2026-09-29 | UTC | [L2/26-218](../documents/utc-l2-26-218.md) | 重複 glyph のため省略された Seal source references を補う `kSEAL_AdditionalSrc` を提案した。 |
 
 ## 主な論点
@@ -53,7 +56,7 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 
 ### Unicode 18.0 release 管理との関係
 
-PRI \#520 は review closing date が 2026-07-07 で、2026-10-10 確認時点の [Resolved Issues](https://www.unicode.org/review/resolved.html) に掲載されている。個別 PRI page の `Status: Open` 表示は残っているが、catalog の review 状態は registry の掲載先に基づき `resolved` とする。review の終了と、確定 UAX / data files の公開は別の記録として確認する。
+[PRI \#520 / L2/26-108](../documents/utc-l2-26-108.md) は解決済みの draft review、[Revision 3 確定 event](../events/uax60-unicode-18-first-published-version.md) は確定仕様と正式データの節目である。review closing date、仕様日付、Unicode 全体の release date を分けて読む。
 
 `L2/26-102` は UAX \#60 title change を Unicode 18.0 beta deliverables の調整項目として記録した。Final Unicode 18.0 は UAX \#60 を正式 component とし、`JurchenSources.txt` と `SealSources.txt` を新規追加、既存 `NushuSources.txt` / `TangutSources.txt` と同じ versioned data group に置いた。
 
@@ -63,7 +66,7 @@ PRI \#520 は review closing date が 2026-07-07 で、2026-10-10 確認時点�
 
 - [L2/26-099](../documents/utc-l2-26-099.md) - CJK & Unihan Working Group recommendations。
 - [L2/26-102](../documents/utc-l2-26-102.md) - Release Management Group report to UTC \#187。
-- [L2/26-108](../documents/utc-l2-26-108.md) - Draft UAX \#60 Revision 2。
+- [L2/26-108 / PRI \#520](../documents/utc-l2-26-108.md) - Draft UAX \#60 Revision 2 と、解決済み review の後続確認。
 - [PRI \#549](../documents/pri-549.md) - UAX \#42 Unicode Character Database in XML Revision 39 public review。
 - [L2/26-095](../documents/utc-l2-26-095.md) - PRI \#520 を含む Public Review Issues 一覧。
 - [WG2 N5209](../documents/wg2-n5209.md) - Small Seal source mapping comparison と database considerations。
@@ -89,5 +92,5 @@ PRI \#520 は review closing date が 2026-07-07 で、2026-10-10 確認時点�
 - `wg2-n5209` - <https://www.unicode.org/wg2/docs/n5209-ConsiderationsSmallSeal.pdf>
 - `wg2-n5344r2` - <https://www.unicode.org/wg2/docs/n5344R2-SmallSealProposal.pdf>
 - `utc-l2-26-218` - <https://www.unicode.org/L2/L2026/26218-seal-property.pdf>
-- UAX \#60, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/>
+- UAX \#60 Revision 3, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/tr60-3.html> (2026-09-02)
 - Unicode 18.0 UAX \#60 data - <https://www.unicode.org/Public/18.0.0/ucd/>

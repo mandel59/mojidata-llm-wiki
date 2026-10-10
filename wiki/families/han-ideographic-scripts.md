@@ -21,7 +21,7 @@ Han / ideographic 系の script、block、source data、variation database、関
 | --- | --- | --- |
 | [Ideographic Variation Database](../topics/ideographic-variation-database.md) | active | IVD collections、IVS 登録履歴、public review と正式データの追跡。 |
 | [Small Seal Script](../topics/small-seal-script.md) | in-ballot-pipeline | `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。 |
-| [UAX \#60 Data for Large East Asian Scripts](../topics/uax60-large-east-asian-scripts.md) | active | Small Seal など large East Asian scripts 向け data annex の title / syntax / description 保守。 |
+| [UAX \#60 Data for East Asian Scripts](../topics/uax60-large-east-asian-scripts.md) | active | Small Seal など large East Asian scripts 向け data annex の title / syntax / description 保守。 |
 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) | active | UTC の U-source database、FutureWS records、`kIRG_USource`、horizontal extension の保守論点。 |
 | [Japanese Place-Name Ideographs](../topics/japanese-place-name-ideographs.md) | active | 日本の地名・登記資料に現れる未符号化漢字を UAX \#45 / FutureWS records として扱う proposals。 |
 | [Japanese Historical Ideographs](../topics/japanese-historical-ideographs.md) | active | 日本古典籍・近世近代資料に現れる未符号化漢字を UTC / CJK 標準化候補として扱う proposal chain。 |

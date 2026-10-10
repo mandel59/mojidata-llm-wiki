@@ -11,7 +11,7 @@ people: [ken-lunde, japan, eiso-chan]
 events: [ivd-2025-07-14-caaph-registration, ivd-2026-08-03-moji-joho-registration]
 status: active
 tags: [ivd, uts37, cjk, variation-sequences, registration]
-timestamp: 2026-10-10T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
 ---
 
 # Ideographic Variation Database
@@ -20,7 +20,7 @@ timestamp: 2026-10-10T00:00:00+09:00
 
 Ideographic Variation Database (IVD) は、漢字と variation selector の組合せで字形の範囲を指定する Ideographic Variation Sequence (IVS) の登録データベースである。Unicode Consortium が registration authority、IVD Registrar が登録手続を担当する。collection は利用目的ごとに IVS と glyph identifiers を束ねる。
 
-2026-10-10 確認時点の最新版は **IVD 2026-08-03**、登録済み collection は 6。直近の変更は [Moji_Joho 追加登録](../events/ivd-2026-08-03-moji-joho-registration.md)で追う。手続とデータ形式の仕様は **UTS \#37 Version 7.0 / Revision 16 (2026-04-30)**。仕様の版、IVD データの日付、Unicode の文字 repertoire の版はそれぞれ独立して確認する。
+2026-10-11 確認時点の最新版は **IVD 2026-08-03**、登録済み collection は 6。直近の変更は [Moji_Joho 追加登録](../events/ivd-2026-08-03-moji-joho-registration.md)で追う。手続とデータ形式の仕様は **UTS \#37 Version 7.0 / Revision 16 (2026-04-30)**。仕様の版、IVD データの日付、Unicode の文字 repertoire の版はそれぞれ独立して確認する。
 
 まず [IVD 公式ページ](https://www.unicode.org/ivd/) の release history / review 状態を確認し、対象 PRI の archive、日付付き正式データ、collection page の順で読む。以下の登録履歴は公式 IVD history に基づく。
 
@@ -66,7 +66,7 @@ UTS \#37 は IVS の適格性、登録手続、データ形式を規定する。
 
 collection と sequence の登録には、それぞれ少なくとも 90 日の public review がある。同時申請もできる。review closing date は登録日ではなく、PRI page の冒頭に当初の「review 中」という文言が残っていても、archive の登録完了追記と IVD release history を確認する。
 
-IVD 公式ページでは 2026-10-10 確認時点に審査中の submission はない。登録完了の一次根拠は PRI archive と日付付き正式データである。
+IVD 公式ページでは 2026-10-11 確認時点に審査中の submission はない。[PRI \#546](../documents/pri-546.md) は Resolved Issues に掲載され、archive も登録完了を記録する。具体的な割当は [2026-08-03 event](../events/ivd-2026-08-03-moji-joho-registration.md) を参照する。登録完了の一次根拠は PRI archive と日付付き正式データである。
 
 ### 字形共有、mapping correction、使用非推奨
 
@@ -111,7 +111,8 @@ UTS \#37 は proposed update と確定版を分け、登録申請は review 期�
 
 ## 出典
 
-- IVD 登録履歴・collections・review 状態 - <https://www.unicode.org/ivd/> (2026-10-10 確認)。
+- PRI Resolved Issues - <https://www.unicode.org/review/resolved.html> (2026-10-11 確認)。
+- IVD 登録履歴・collections・review 状態 - <https://www.unicode.org/ivd/> (2026-10-11 確認)。
 - UTS \#37 Version 7.0 / Revision 16, 2026-04-30 - <https://www.unicode.org/reports/tr37/tr37-16.html>。
 - IVD 2026-08-03 - <https://www.unicode.org/ivd/data/2026-08-03/IVD_Collections.txt>、<https://www.unicode.org/ivd/data/2026-08-03/IVD_Sequences.txt>、<https://www.unicode.org/ivd/data/2026-08-03/IVD_Stats.txt>。
 - `pri-259` - <https://www.unicode.org/ivd/pri/pri259/>

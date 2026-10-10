@@ -19,6 +19,7 @@
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26) - WG2 \#73 が ISO/IEC 10646 7th edition CD4 disposition の一部として Small Seal の名称変更と property correction を記録した出来事。
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30) - UTC \#188 が会合の decisions / actions を取り込んだ Unicode 18.0 と同期 UTS の release を authorize した出来事。
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03) - IVD Registrar が PRI \#546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02) - PRI \#520 の review と UTC の調整を経た UAX \#60 が、Unicode 18.0.0 の初の承認済み公開版 Revision 3 として確定した節目。
 
 ## By Topic
 
@@ -87,18 +88,25 @@
 
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
 ### [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 
+### [UAX \#60 Data for East Asian Scripts](../topics/uax60-large-east-asian-scripts.md)
+
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
+
 ### [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md)
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
 ### [Unicode Properties and Algorithms](../topics/unicode-properties-and-algorithms.md)
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
 ### [Unicode Release Coordination and Publication](../topics/unicode-release-coordination-and-publication.md)
 
@@ -136,6 +144,7 @@
 
 - [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
+- [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
 ### WG2
 

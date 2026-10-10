@@ -4,12 +4,12 @@ title: Unicode 18.0 Change Sources
 description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935, irg-n2964, irg-n2965]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935, irg-n2964, irg-n2965, pri-520]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, small-seal-script, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
-events: [utc-188-unicode-18-release-authorization]
+events: [utc-188-unicode-18-release-authorization, uax60-unicode-18-first-published-version]
 status: released
 tags: [unicode-18, release, beta, ucd, migration]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
 ---
 
 # Unicode 18.0 Change Sources
@@ -147,7 +147,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - [UTC Meeting \#187](../meetings/utc/utc-meeting-187.md) - Unicode 18.0 beta review authorization と working group reports。
 - [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) - Unicode 18.0 content finalization と release authorization の会合要約。
 - [CJK Strokes Variation Sequences](cjk-strokes-variation-sequences.md)
-- [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)
+- [UAX \#60 Data for East Asian Scripts](uax60-large-east-asian-scripts.md)
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
 - [L2/26-134](../documents/utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
@@ -158,6 +158,10 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - [IRG N2927R](../documents/irg-n2927r.md) - T-source U+2976E glyph clarification。
 - [IRG N2930](../documents/irg-n2930.md) - G-source reference changes。
 - `IRG N2935` - IRG Meeting \#67 agenda。Unicode 18.0 Beta review 反映済みの CJK source data status を含む。
+
+## 関連出来事
+
+- [UAX \#60 Revision 3 確定](../events/uax60-unicode-18-first-published-version.md) - 解決済み PRI \#520 と正式 specification / data への入口。
 
 ## 関連トピック
 
@@ -176,7 +180,7 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [Arabic Mark Rendering](arabic-mark-rendering.md)
 - [Egyptian Hieroglyph Data and Unikemet](egyptian-hieroglyph-data-and-unikemet.md)
-- [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)
+- [UAX \#60 Data for East Asian Scripts](uax60-large-east-asian-scripts.md)
 
 ## 出典
 

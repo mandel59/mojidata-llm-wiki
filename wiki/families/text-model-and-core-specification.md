@@ -41,7 +41,7 @@ Text Model and Core Specification は、個別 character proposal ではなく�
 
 - [Unicode Properties and Algorithms](../topics/unicode-properties-and-algorithms.md) - PAG report を中心に properties / algorithms を広く扱う topic であり、emoji family との接続も強い。
 - [Unicode Release Coordination and Publication](../topics/unicode-release-coordination-and-publication.md) - Unicode release 全体の coordination を扱う topic であり、この family の publication 論点と重なる。
-- [UAX \#60 Data for Large East Asian Scripts](../topics/uax60-large-east-asian-scripts.md) - data file / property syntax の論点は重なるが、Han / ideographic family と Small Seal data への接続が強い。
+- [UAX \#60 Data for East Asian Scripts](../topics/uax60-large-east-asian-scripts.md) - data file / property syntax の論点は重なるが、Han / ideographic family と Small Seal data への接続が強い。
 - [Script and Notation Proposals](script-and-notation-proposals.md) - COMPOSE や format control、historic mathematical symbols が proposal の一部になる場合でも、個別 script / notation repertoire の読み口は別 family に置く。
 
 ## 出典

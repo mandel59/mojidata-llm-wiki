@@ -4,11 +4,12 @@ title: Small Seal Script
 description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 bodies: [UTC, WG2]
-documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
+documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369, pri-520]
 status: encoded-unicode-18
 tags: [script, seal, cjk, ideographic]
-timestamp: 2026-10-10T00:00:00+09:00
-topics: [ideographic-variation-database]
+timestamp: 2026-10-11T00:00:00+09:00
+topics: [ideographic-variation-database, uax60-large-east-asian-scripts]
+events: [uax60-unicode-18-first-published-version]
 ---
 
 # Small Seal Script
@@ -123,6 +124,8 @@ Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 
 ## 関連出来事
+
+- [UAX \#60 Revision 3 確定](../events/uax60-unicode-18-first-published-version.md) - 解決済み PRI \#520 と正式 specification / data への入口。
 
 - [WG2 M72.13 Small Seal future edition candidate](../events/wg2-m72-13-small-seal-future-candidate.md)
 - [WG2 M73.01 Small Seal CD4 disposition](../events/wg2-m73-01-small-seal-cd4-disposition.md)

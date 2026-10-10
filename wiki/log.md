@@ -2,6 +2,10 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-11
+
+- **Resolved PRI follow-up**: PRI \#520 の canonical page [L2/26-108](documents/utc-l2-26-108.md) を再レビューし、[UAX \#60 Revision 3 確定](events/uax60-unicode-18-first-published-version.md)を追加。確定版と Unicode 18.0.0 の4 source data files を非 Git cache に取得し、Seal radical / source syntax と照合。関連 document / topic / meeting / Michel Suignard を接続し、current-topic links の表題を確定版へ整理。PRI \#546 は archive の登録完了と正式データへの接続を再確認し、IVD topic に解決済み review を反映した。
+
 ## 2026-10-10
 
 - **PRI sync**: `--latest-only` でも Open Issues / Resolved Issues を毎回再取得し、同期時に新規・変更 entry と review 状態遷移を表示するよう修正。固定 archive の別 URL と過去目録を保持する回帰テスト、offline 再現と取得失敗時の目録保持テストを追加。catalog の `pri-520` / `pri-546` を `open` から `resolved` に更新し、PRI \#546 と UAX \#60 topic を再確認。変更された既存 PRI を `--refresh` で再取得・再レビューする手順を README / AGENTS に明記した。

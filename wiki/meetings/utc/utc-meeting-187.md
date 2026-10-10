@@ -8,11 +8,11 @@ bodies: [UTC]
 meeting: 187
 date: "2026-04-21/23"
 location: Hybrid online/in-person
-documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-126]
+documents: [utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-126, pri-520]
 topics: [unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, cjk-security-confusables, small-seal-script, japanese-place-name-ideographs]
-events: [utc-187-uax45-futurews-additions]
+events: [utc-187-uax45-futurews-additions, uax60-unicode-18-first-published-version]
 tags: [meeting, utc, unicode-18, beta, cjk]
-timestamp: 2026-07-07T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
 ---
 
 # UTC Meeting \#187
@@ -31,7 +31,7 @@ UTC Meeting \#187 は 2026-04-21/23 に hybrid online/in-person meeting とし�
 - [Emoji Repertoire Proposals](../../topics/emoji-repertoire-proposals.md) - Unicode 18.0 final emoji candidates と U+1FAEB CRACKING FACE name change。
 - [Unihan Database Maintenance](../../topics/unihan-database-maintenance.md) - `L2/26-099`、`L2/26-105`、`L2/26-112` などの Unihan / UAX \#38 / UTS \#37 changes。
 - [Unihan Data Format and Property Syntax](../../topics/unihan-data-format-and-property-syntax.md) - UAX \#38 / UTS \#37 の data format / property syntax 更新。
-- [UAX \#60 Data for Large East Asian Scripts](../../topics/uax60-large-east-asian-scripts.md) - Draft UAX \#60 と Small Seal / Jurchen / Nüshu / Tangut data files。
+- [UAX \#60 Data for East Asian Scripts](../../topics/uax60-large-east-asian-scripts.md) - Draft UAX \#60 と Small Seal / Jurchen / Nüshu / Tangut data files。
 - [Arabic Mark Rendering](../../topics/arabic-mark-rendering.md) - UAX \#53 / AMTRA の rendering-side mark reordering。
 - [Egyptian Hieroglyph Data and Unikemet](../../topics/egyptian-hieroglyph-data-and-unikemet.md) - UAX \#57 / `Unikemet.txt` data model。
 - [UAX \#45 / U-Source Ideographs](../../topics/uax45-u-source-ideographs.md) - `L2/26-099` Sections 23-31 の UAX \#45 additions。
@@ -50,6 +50,7 @@ UTC Meeting \#187 は 2026-04-21/23 に hybrid online/in-person meeting とし�
 
 ## 後続確認
 
+- UAX \#60 / PRI \#520 の後続は [Revision 3 確定 event](../../events/uax60-unicode-18-first-published-version.md) へ。会合時点の審議と、仕様日付を持つ確定版を分けて確認する。
 - [UTC Meeting \#188](utc-meeting-188.md) - `L2/26-151` は Unicode 18.0 content の finalization と release authorization を記録する。
 - Unicode 18.0 beta public review は 2026-07-07 に close し、[UTC Meeting \#188](utc-meeting-188.md) が finalization と release authorization を行った。
 - [WG2 Meeting \#73](../wg2/wg2-meeting-73.md) - `WG2 N5354` が `L2/26-099` の selected sections を ISO/IEC 10646 CD の CJK additions and changes に取り込む。

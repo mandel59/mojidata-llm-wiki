@@ -45,7 +45,7 @@ Script、block、property、proposal、横断論点などの精読ページを�
 - [Japanese Historical Ideographs](japanese-historical-ideographs.md) - 日本古典籍・近世近代資料に現れる未符号化漢字の proposal。
 - [CJK Abbreviated and Simplified Ideographs](cjk-abbreviated-and-simplified-ideographs.md) - 略字・俗簡字・簡化字由来の未符号化 CJK ideographs を UAX \#45 additions として扱う topic。
 - [CJK Strokes Variation Sequences](cjk-strokes-variation-sequences.md) - CJK Strokes characters の standardized variation sequences と StandardizedVariants.txt 更新。
-- [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md) - UAX \#60 の title / data model と Small Seal data の保守。
+- [UAX \#60 Data for East Asian Scripts](uax60-large-east-asian-scripts.md) - UAX \#60 の title / data model と Small Seal data の保守。
 - [CJK Security Confusables](cjk-security-confusables.md) - UTS \#39 security data、Unihan `kSpoofingVariant` / `kZVariant`、Han identifier policy における CJK confusables。
 - [Ideographic Punctuation Proposals](ideographic-punctuation-proposals.md) - Ideographic Symbols and Punctuation block 周辺の句読点追加提案。
 - [Kana](kana.md) - 仮名の追加符号化、歴史的仮名、変体仮名、小書き仮名、合略仮名。

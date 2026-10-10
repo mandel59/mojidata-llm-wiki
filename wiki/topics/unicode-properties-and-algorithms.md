@@ -4,12 +4,13 @@ title: Unicode Properties and Algorithms
 description: "Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-219, utc-l2-26-225]
+documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-219, utc-l2-26-225, pri-520]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
 tags: [properties, algorithms, ucd, math, uax11, uax14, uax24, uax29, uax31, uax42, uax44, uts10, uts39, uts61, security]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
+events: [uax60-unicode-18-first-published-version]
 ---
 
 # Unicode Properties and Algorithms
@@ -121,7 +122,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 [Unicode Set Notation](unicode-set-notation.md) は UTS \#61 として draft status に進められた。set notation は properties / regular expression / tooling に関わるため、単独 proposal ではなく properties and algorithms の一部として扱う。
 
-[UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md) は Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data を UCD data files として扱う。Small Seal data は script proposal と UCD annex の両方に接続する。
+[UAX \#60 Data for East Asian Scripts](uax60-large-east-asian-scripts.md) は Jurchen、Nüshu、Seal、Tangut の source / radical-stroke / reading data を UCD data files として扱う。Small Seal data は script proposal と UCD annex の両方に接続する。
 
 ### UTC \#188 候補の text model issues
 
@@ -169,6 +170,10 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [L2/26-138](../documents/utc-l2-26-138.md) - consecutive anusvaras in Indic scripts。
 - [L2/26-139](../documents/utc-l2-26-139.md) - COMPOSE / overstriking proposal。
 
+## 関連出来事
+
+- [UAX \#60 Revision 3 確定](../events/uax60-unicode-18-first-published-version.md) - 解決済み PRI \#520 と正式 specification / data への入口。
+
 ## 関連トピック
 
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
@@ -178,7 +183,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - [N'ti Script](nti-script.md)
 - [East Asian Spacing](east-asian-spacing.md)
 - [Unicode Set Notation](unicode-set-notation.md)
-- [UAX \#60 Data for Large East Asian Scripts](uax60-large-east-asian-scripts.md)
+- [UAX \#60 Data for East Asian Scripts](uax60-large-east-asian-scripts.md)
 - [Arabic Mark Rendering](arabic-mark-rendering.md)
 - [Egyptian Hieroglyph Data and Unikemet](egyptian-hieroglyph-data-and-unikemet.md)
 - [Indic Script Notation and Rendering](indic-script-notation-and-rendering.md)

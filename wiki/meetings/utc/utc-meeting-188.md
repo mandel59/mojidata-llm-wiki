@@ -8,12 +8,12 @@ bodies: [UTC]
 meeting: 188
 date: "2026-07-28/30"
 location: Redmond, Washington, United States / virtual
-documents: [utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-158, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-133r, utc-l2-26-134, utc-l2-26-136, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-144, utc-l2-26-148, pri-548]
-topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs]
-events: [utc-188-unicode-18-release-authorization]
+documents: [utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-158, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-133r, utc-l2-26-134, utc-l2-26-136, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-144, utc-l2-26-148, pri-548, pri-520]
+topics: [unicode-18-change-sources, cjk-security-confusables, east-asian-quotation-marks, script-encoding-pipeline, leke-script, kore-sebeli-script, chinese-folk-music-notation, indic-script-notation-and-rendering, ideographic-punctuation-proposals, unihan-data-format-and-property-syntax, unicode-properties-and-algorithms, plain-text-composition-and-overstriking, leibnizian-and-historic-mathematical-symbols, maya-hieroglyph-encoding, uax45-u-source-ideographs, uax60-large-east-asian-scripts]
+events: [utc-188-unicode-18-release-authorization, uax60-unicode-18-first-published-version]
 status: completed
 tags: [meeting, utc, unicode-18, unicode-19, release, cjk]
-timestamp: 2026-07-09T00:00:00+09:00
+timestamp: 2026-10-11T00:00:00+09:00
 ---
 
 # UTC Meeting \#188
@@ -47,6 +47,7 @@ Codical Maya / Maya Extended-A は `L2/26-158` の reference list には含ま�
 
 ## 後続確認
 
+- UAX \#60 / PRI \#520 の後続は [Revision 3 確定 event](../../events/uax60-unicode-18-first-published-version.md) へ。会合時点の審議と、仕様日付を持つ確定版を分けて確認する。
 - [L2/26-215 / IRG N2944](../../documents/utc-l2-26-215.md) は Unicode 18.0 が 2026-09-16 に release されたことを確認する。
 - [PRI \#555](../../documents/pri-555.md)〜[PRI \#560](../../documents/pri-560.md) は UTC \#189 に向けた後続 review。
 - Unicode 19.0 target の provisional assignments は UTC \#189 以降の repertoire decision と alpha review で追う。
