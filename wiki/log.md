@@ -4,6 +4,7 @@
 
 ## 2026-10-10
 
+- **PRI sync**: `--latest-only` でも Open Issues / Resolved Issues を毎回再取得し、同期時に新規・変更 entry と review 状態遷移を表示するよう修正。固定 archive の別 URL と過去目録を保持する回帰テスト、offline 再現と取得失敗時の目録保持テストを追加。catalog の `pri-520` / `pri-546` を `open` から `resolved` に更新し、PRI \#546 と UAX \#60 topic を再確認。変更された既存 PRI を `--refresh` で再取得・再レビューする手順を README / AGENTS に明記した。
 - **IVD topic**: [Ideographic Variation Database](topics/ideographic-variation-database.md) を追加し、全10版の登録履歴、6 collections、UTS \#37 確定版、review と登録完了の確認経路を整理。PRI \#259 / \#354 / \#418 / \#456 / \#521 を取得・要約し、[CAAPH 登録完了](events/ivd-2025-07-14-caaph-registration.md)を追加。既存の PRI \#546、L2/26-112、登録完了を既に報告していた L2/26-215、JMJ / Unihan / Han family と入口を接続した。
 - **IVD**: 取得済みの PRI \#546 が review 中の記述に留まっていたため、公開 archive を再取得し、公式 IVD 説明と 2026-08-03 / 2025-07-14 データを非 Git cache に取得・比較。[Moji_Joho 登録完了](events/ivd-2026-08-03-moji-joho-registration.md)を追加し、正式な 8 IVS 割当、9 件の非規範的な使用非推奨とデータ残存、collection URL 更新を反映。PRI / JMJ / Unihan / Japan / Ken Lunde と入口を接続した。
 

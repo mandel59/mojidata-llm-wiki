@@ -4,11 +4,11 @@ title: "UAX #60 Data for East Asian Scripts"
 description: "Unicode 18.0 で新設された UAX #60 と Jurchen / Nüshu / Seal / Tangut data files。"
 slug: uax60-large-east-asian-scripts
 bodies: [UTC, WG2]
-documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-26-218, pri-549, wg2-n5209, wg2-n5344r2]
+documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-26-218, pri-520, pri-549, wg2-n5209, wg2-n5344r2]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, small-seal-script]
 status: released
 tags: [uax60, east-asian-scripts, data-files, small-seal, unicode-18]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # UAX \#60 Data for East Asian Scripts
@@ -53,6 +53,8 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 
 ### Unicode 18.0 release 管理との関係
 
+PRI \#520 は review closing date が 2026-07-07 で、2026-10-10 確認時点の [Resolved Issues](https://www.unicode.org/review/resolved.html) に掲載されている。個別 PRI page の `Status: Open` 表示は残っているが、catalog の review 状態は registry の掲載先に基づき `resolved` とする。review の終了と、確定 UAX / data files の公開は別の記録として確認する。
+
 `L2/26-102` は UAX \#60 title change を Unicode 18.0 beta deliverables の調整項目として記録した。Final Unicode 18.0 は UAX \#60 を正式 component とし、`JurchenSources.txt` と `SealSources.txt` を新規追加、既存 `NushuSources.txt` / `TangutSources.txt` と同じ versioned data group に置いた。
 
 `SealSources.txt` の `kSEAL_THXSrc`、`kSEAL_CCZSrc`、`kSEAL_DYCSrc`、`kSEAL_QJZSrc` は normative source properties である。block / script name の `Seal` と、chart / core text の `Small Seal` を混同しない。
@@ -77,6 +79,8 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 
 ## 出典
 
+- `pri-520` - <https://www.unicode.org/review/pri520/>。registry 上の closing date: 2026-07-07。
+- PRI Resolved Issues - <https://www.unicode.org/review/resolved.html> (2026-10-10 確認)。
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-102` - <https://www.unicode.org/L2/L2026/26102-rmg-report-utc187.pdf>
 - `utc-l2-26-108` - <https://www.unicode.org/L2/L2026/26108-uax60-2-draft-pri520.pdf>
