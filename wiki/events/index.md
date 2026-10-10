@@ -17,12 +17,17 @@
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11) - CJK & Unihan Working Group が UTC \#187 向け recommendations で UAX \#45 additions を FutureWS records として受け入れるよう勧告した出来事。
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26) - WG2 \#73 が ISO/IEC 10646 7th edition CD4 disposition の一部として Small Seal の名称変更と property correction を記録した出来事。
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30) - UTC \#188 が会合の decisions / actions を取り込んだ Unicode 18.0 と同期 UTS の release を authorize した出来事。
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03) - IVD Registrar が PRI \#546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。
 
 ## By Topic
 
 ### [CJK Abbreviated and Simplified Ideographs](../topics/cjk-abbreviated-and-simplified-ideographs.md)
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
+
+### [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
+
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ### [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md)
 
@@ -62,6 +67,7 @@
 
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ### [Kana](../topics/kana.md)
 
@@ -92,6 +98,14 @@
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
 
+### [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
+
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
+
+### [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
+
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
+
 ## By Body
 
 ### IRG
@@ -111,6 +125,7 @@
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ### WG2
 

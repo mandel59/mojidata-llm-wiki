@@ -4,7 +4,7 @@ title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935, irg-n2936, irg-n2938, irg-n2939, irg-n2942, irg-n2945, wg2-n5353]
+documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935, irg-n2936, irg-n2938, irg-n2939, irg-n2942, irg-n2945, wg2-n5353, irg-n2939r, irg-n2941, irg-n2979, irg-n2980]
 status: active
 tags: [irg, working-set, cjk, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -32,6 +32,7 @@ IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs �
 | 2026-09 | IRG | [IRG N2938](../documents/irg-n2938.md), [IRG N2939](../documents/irg-n2939.md), [IRG N2945](../documents/irg-n2945.md) | 次期 Working Set について Macao SAR は提出予定なし、TCA は約 1,500～2,000 文字を計画、Vietnam は将来候補約 5,000 文字と報告した。 |
 | 2026-09 | IRG | [IRG N2936](../documents/irg-n2936.md), [IRG N2942](../documents/irg-n2942.md) | China は7,000字超の未符号化候補と WS2027 quota の見込みを、SAT は次期 Working Set へ約300字を計画すると報告した。 |
 | 2026-10 | IRG | Meeting \#67 | submitter responses は 2026-10-09 までに ORT へ入力し、会合で review する予定。 |
+| 2026-10-07/08 | IRG | [IRG N2941](../documents/irg-n2941.md), [IRG N2939R](../documents/irg-n2939r.md) | ROK は ORT response と次期最大200字、TCA 改訂版は次期約1,500～2,000字の計画を報告した。 |
 
 ## 主な論点
 
@@ -57,9 +58,17 @@ Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ide
 
 ### 次期 Working Set の member body 予定
 
-[IRG N2938](../documents/irg-n2938.md) は Macao SAR が次期 Working Set に提出しない方針、[IRG N2939](../documents/irg-n2939.md) は TCA が約 1,500～2,000 文字を提出する計画を示す。[IRG N2945](../documents/irg-n2945.md) の Vietnam 約 5,000 文字は将来の符号化候補の見積もりであり、次期提出数ではない。いずれも Meeting \#67 前の member body report で、採択・登録件数ではない。
+[IRG N2938](../documents/irg-n2938.md) は Macao SAR が次期 Working Set に提出しない方針、[IRG N2939R](../documents/irg-n2939r.md) は TCA が約 1,500～2,000 文字を提出する計画を維持する。[IRG N2941](../documents/irg-n2941.md) は ROK が承政院日記から集めた300字をさらに review し、最大200字を次期 Working Set に提案すると報告する。[IRG N2945](../documents/irg-n2945.md) の Vietnam 約 5,000 文字は将来の符号化候補の見積もりであり、次期提出数ではない。いずれも Meeting \#67 前の member body report で、採択・登録件数ではない。
+
+### 次版文書の登録と本文公開
+
+register は `IRG N2979`（Version 6.0）と `IRG N2980`（consolidated comments）の URL を登録したが、日付は空欄で、2026-10-10 の取得は両方とも HTTP 404 だった。現行 review が Version 6.0 に移ったとは推定せず、Version 5.0 の公開文書と \#67 agenda を入口にする。
 
 ## 関連文書
+
+- [IRG N2941](../documents/irg-n2941.md) - ROK Activity Report (IRG Meeting \#67)。
+
+- [IRG N2939R](../documents/irg-n2939r.md) - TCA Activity Report (IRG Meeting \#67)。
 
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N2702](../documents/irg-n2702.md)
@@ -88,3 +97,7 @@ Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ide
 - `irg-n2932` - <https://www.unicode.org/irg/docs/n2932-WS2024v5.pdf>
 - `irg-n2933` - <https://www.unicode.org/irg/docs/n2933-WS2024v5ConsolidatedComments.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
+- `irg-n2941` - <https://www.unicode.org/irg/docs/n2941-ROKActivityReport.pdf>
+- `irg-n2979` - <https://www.unicode.org/irg/docs/n2979-WS2024v6.pdf>
+- `irg-n2980` - <https://www.unicode.org/irg/docs/n2980-WS2024v6ConsolidatedComments.pdf>

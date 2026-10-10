@@ -48,7 +48,7 @@ source は GCW-Source 一種類で、official geographical names、personal name
 
 ## 後続決定
 
-IRG Meeting \#67 の公開 agenda IRG N2935 は Section 8.1 に初版 IRG N2929 の9,156文字を掲載しており、改訂版の件数は反映していない。会合での審議・採否は recommendation と action items が公開された後に確認する。
+[IRG N2935](irg-n2935.md) の2026-10-08版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できるが、会合での採否は後続 recommendation と action items で確認する。
 
 ## 論点
 
@@ -64,4 +64,4 @@ IRG Meeting \#67 の公開 agenda IRG N2935 は Section 8.1 に初版 IRG N2929 
 ## 出典
 
 - irg-n2929r - <https://www.unicode.org/irg/docs/n2929r-ChinaHorizontalExtension.pdf>
-
+- `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>

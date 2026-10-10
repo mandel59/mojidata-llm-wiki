@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -48,7 +48,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2026-09-24 | IRG | [IRG N2974](../documents/irg-n2974.md) | U+3097C の T-source glyph を ⿱敉目 に変更する提案が加わった。 |
 | 2026-09-29 | IRG | [IRG N2975](../documents/irg-n2975.md) | TCA が U+3097C glyph change に同意し、更新 font を IRG と WG2 に提出した。 |
 | 2026-09-30 | IRG | [IRG N2929R](../documents/irg-n2929r.md) | China の GCW-Source horizontal extension が9,178文字へ改訂された。 |
-| 2026-09-30 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
+| 2026-10-08 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
 
 ## 主な論点
 
@@ -74,11 +74,17 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 
 ### Unicode / ISO progression との接続
 
-`IRG N2935` は、G-source reference の一部、T-source representative glyph、K-source representative glyph と `kRSUnicode` property change が UTC CJK & Unihan Working Group と UTC Meeting \#187 を経て Unicode Version 18.0 Beta review に反映された、と記録している。一方、Meeting \#67 に残る G / UK / V / SAT の案件は、まだ IRG 側の検討・追加 evidence・member body response が必要である。
+`IRG N2935` は、G-source reference の一部、T-source representative glyph、K-source representative glyph と `kRSUnicode` property change が UTC CJK & Unihan Working Group と UTC Meeting \#187 を経て 2026-09-16 の Unicode Version 18.0 release に反映された、と2026-10-08版で記録している。一方、Meeting \#67 に残る G / UK / V / SAT の案件は、まだ IRG 側の検討・追加 evidence・member body response が必要である。
 
 [`L2/26-099`](../documents/utc-l2-26-099.md) は、この接続を具体的な action item に分解する文書である。[IRG N2911](../documents/irg-n2911.md) / [IRG N2909](../documents/irg-n2909.md) の M66.10、M66.12、M66.13 などに基づき、[IRG N2916](../documents/irg-n2916.md)、[IRG N2927R](../documents/irg-n2927r.md)、[IRG N2930](../documents/irg-n2930.md) 由来の K / T / G source representative glyph changes、`kIRG_GSource` changes、`kRSUnicode` changes を Unihan database / code charts の更新として扱う。さらに WG2 \#73 の `WG2 N5354` Recommendation M73.02 は、その一部を ISO/IEC 10646 CD の CJK additions and changes に含めるよう勧告した。
 
+### Horizontal extension の glyph 確認
+
+[IRG N2939R](../documents/irg-n2939r.md) は、[IRG N2972](../documents/irg-n2972.md) の700字提案のうち5字に suggestions が寄せられ、TCA が会合で glyph を説明すると報告する。具体的な修正案や承認は記録しない。個別の確認事項は改訂報告で、提案全体の審議予定は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
+
 ## 関連文書
+
+- [IRG N2939R](../documents/irg-n2939r.md) - T-source horizontal extension に伴う glyph 確認事項。
 
 - [IRG N2889R2](../documents/irg-n2889r2.md) - G-source glyph 修正への feedback。
 - [IRG N2962R2](../documents/irg-n2962r2.md) / [IRG N2963R3](../documents/irg-n2963r3.md) - G-source glyph / reference 修正案への feedback。
@@ -159,3 +165,5 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 - `irg-n2962` - <https://www.unicode.org/irg/docs/n2962-GSourceGlyphIssues.pdf>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
+- `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>

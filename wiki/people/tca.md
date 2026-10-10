@@ -4,8 +4,8 @@ title: TCA
 description: T-source、Small Seal Script、CJKV Components に関係する TCA member body。
 slug: tca
 bodies: [IRG, WG2]
-documents: [irg-n2861, irg-n2878r3, irg-n2927r, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355]
-topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script, t-source-representative-glyph-issues]
+documents: [irg-n2861, irg-n2878r3, irg-n2927r, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, irg-n2939r, irg-n2972]
+topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script, t-source-representative-glyph-issues, irg-working-set-2024, cjk-horizontal-extensions]
 tags: [member-body, source, tca, t-source]
 timestamp: 2026-07-06T21:31:45+09:00
 ---
@@ -27,6 +27,7 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 | `WG2 N5355` | China とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2878R3` | China とともに CJK Unified Ideographs Components proposal の source。 | [CJKV Components](../topics/cjkv-components.md) |
 | [IRG N2861](../documents/irg-n2861.md), [IRG N2927R](../documents/irg-n2927r.md) | `IRG N2860` の T-source glyph revision request に response し、pending だった U+2976E / U+20885 の扱いを整理。 | [T-source Representative Glyph Issues](../topics/t-source-representative-glyph-issues.md) |
+| [IRG N2939R](../documents/irg-n2939r.md), [IRG N2972](../documents/irg-n2972.md) | 次期 Working Set の提出計画と、T-source 700字の horizontal extension / 5字の glyph 説明予定を報告。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md), [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
 
 ## 関連文書
 
@@ -62,3 +63,5 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
 - `irg-n2861` - <https://www.unicode.org/irg/docs/n2861-IRGN2860Feedback.pdf>
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>
+- `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
+- `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>

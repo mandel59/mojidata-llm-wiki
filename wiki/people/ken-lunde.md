@@ -7,7 +7,8 @@ bodies: [UTC, IRG]
 documents: [utc-l2-11-439, utc-l2-22-181, utc-l2-25-199, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148, irg-n2934r, wg2-n5353]
 topics: [unihan-database-maintenance, unihan-data-format-and-property-syntax, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]
 tags: [person, utc, cjk, unihan, source-data]
-timestamp: 2026-07-07T00:00:00+09:00
+events: [ivd-2026-08-03-moji-joho-registration]
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # Ken Lunde
@@ -15,6 +16,8 @@ timestamp: 2026-07-07T00:00:00+09:00
 ## 概要
 
 Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan data maintenance に継続して関わる contributor である。`L2/11-439` では `AJ1` source for `kIRG_USource`、`L2/22-181` では Unihan `kJapanese`、`L2/25-199` では UAX \#45 Revision 31、`L2/26-147` では U-source horizontal extension に関係している。`L2/26-099` では CJK & Unihan Working Group recommendations の source に含まれ、UTC \#187 に向けた Unihan database、source data、UAX \#38、UAX \#45、UTS \#37、RSIndex.txt、`kTotalStrokes` 修正などの更新作業に関係している。
+
+IVD の公式ページでは Registrar とされる。[IVD 2026-08-03 登録完了](../events/ivd-2026-08-03-moji-joho-registration.md)は、IVD registration の担当として関係する。
 
 ## 標準化での役割
 
@@ -45,6 +48,8 @@ Ken Lunde は、UTC / CJK & Unihan Working Group の公開文書で CJK / Unihan
 - [CJK Security Confusables](../topics/cjk-security-confusables.md)
 
 ## 出典
+
+- IVD Registrar - <https://www.unicode.org/ivd/>
 
 - `utc-l2-11-439` - <https://www.unicode.org/L2/L2011/11439-irgn1825r.pdf>
 - `utc-l2-22-181` - <https://www.unicode.org/L2/L2022/22181-unihan-kjapanese.pdf>

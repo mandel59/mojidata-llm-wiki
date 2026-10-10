@@ -8,6 +8,15 @@
 
 ### 2026
 
+- [L2/26-226](utc-l2-26-226.md) - Vithkuqi の HHA / IJE の注釈削除と reserved slots の表示追加を求める提案。
+- [L2/26-225](utc-l2-26-225.md) - Soft_Dotted の安定性問題を避けるため turned dotless i を別文字にする追加提案。
+- [L2/26-224](utc-l2-26-224.md) - Wagindara を Mongolian から独立した graphemic joining script として39字を提案する文書。
+- [L2/26-223](utc-l2-26-223.md) - Wei Rma を alphabet として再整理し69字を追加する改訂提案。
+- [L2/26-222](utc-l2-26-222.md) - Southern Pa’O の Kham Dom orthography に必要な Myanmar combining / tone signs 3字の提案。
+- [L2/26-221](utc-l2-26-221.md) - Jain Nagari 写本で省略された vowel sign を補う上付き correction mark の提案。
+- [L2/26-220](utc-l2-26-220.md) - Big5 ETen の二重円弧罫線4字を区別し、変換での情報損失を避ける符号化提案。
+- [L2/26-219](utc-l2-26-219.md) - Mongolian の共用文字・FVS・Ali Gali を writing system ごとにどう shaping するかを問う文書。
+- [L2/26-181R](utc-l2-26-181r.md) - Jain Nagari の行末 anusvara と gap filler を独立文字として追加する改訂提案。
 - [L2/26-218](utc-l2-26-218.md) - 重複 glyph のため標準 data から省かれた Small Seal source references を示す provisional property の提案。
 - [L2/26-217](utc-l2-26-217.md) - Elixir 実装で DFA data を検証した PRI \#555 への支持と、仕様・tailoring の未解決点を報告する feedback。
 - [L2/26-215](utc-l2-26-215.md) - Unicode 18.0 release、次期 IRG working set、kTabooVariant、IVD、WS2024 review を報告する US/Unicode activity report。
@@ -319,8 +328,10 @@
 ### 2026
 
 - [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。会合前の placeholder で本文は未公開。
-- [IRG N2936](irg-n2936.md) - China の未符号化 ideographs、G-source revision、次期 working set 向け作業を報告する文書。
+- [IRG N2939R](irg-n2939r.md) - TCA の次期 Working Set 計画と horizontal extension 5字の確認事項を加えた改訂報告。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2941](irg-n2941.md) - ROK の WS2024 review response と次期 Working Set 最大200字の提出計画を報告する。
+- [IRG N2936](irg-n2936.md) - China の未符号化 ideographs、G-source revision、次期 working set 向け作業を報告する文書。
 - [IRG N2929R](irg-n2929r.md) - China が GCW-Source に基づく G-source horizontal extension の対象を9,178文字へ改訂した提案。
 - [IRG N2975](irg-n2975.md) - TCA が U+3097C の T-source glyph を改訂することに同意し、更新済み font を提出した feedback。
 - [IRG N2972](irg-n2972.md) - TCA が人名資料と CNS 11643 Web を根拠に700字を既存 Extension B ideographs へ追加する提案。
@@ -481,7 +492,7 @@
 - [PRI \#557](pri-557.md) - UAX \#11 East Asian Width Revision 47 draft の terminology と derived data references を review する PRI。
 - [PRI \#556](pri-556.md) - UTC Meeting \#189 向けのその他 feedback を受け付ける open PRI。
 - [PRI \\#555](pri-555.md) - Unicode 18.0 line breaking / segmentation algorithms の finite-state-machine data files を review する PRI。
-- [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録 review。
+- [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録の提案・review。登録完了は IVD 2026-08-03 event を参照。
 - [PRI \#554](pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [PRI \#553](pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
 - [PRI \#552](pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。

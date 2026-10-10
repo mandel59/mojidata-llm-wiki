@@ -4,7 +4,7 @@ title: Unicode Properties and Algorithms
 description: "Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139]
+documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-219, utc-l2-26-225]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
@@ -47,6 +47,7 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-07-30 | UTC | [L2/26-151](../documents/utc-l2-26-151.md) | UTC \#188 が variation-selector conformance、UCD properties、line breaking、segmentation、collation、security changes を確定した。 |
 | 2026-09-16 | Unicode | Unicode 18.0.0 release | Final UAX / UTS text、UCD、auxiliary test data、security / collation data を公開した。 |
 | 2026-09-24 | UTC | [L2/26-217](../documents/utc-l2-26-217.md) | PRI \#555 の DFA data を Elixir で実装した feedback が、test 結果と仕様明確化の要望を報告した。 |
+| 2026-10-09 | UTC | [L2/26-219](../documents/utc-l2-26-219.md), [L2/26-225](../documents/utc-l2-26-225.md) | Mongolian の writing-system ごとの FVS / shaping と、Soft_Dotted を変更しない turned dotless i 案が登録された。 |
 
 ## 主な論点
 
@@ -126,7 +127,15 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 [L2/26-137](../documents/utc-l2-26-137.md) は [N'ti Script](nti-script.md) などの LTR joining scripts に対する Joining_Type property の意味を問い、[L2/26-138](../documents/utc-l2-26-138.md) は Indic scripts の valid consecutive anusvaras と rendering behavior を扱う。[L2/26-139](../documents/utc-l2-26-139.md) は COMPOSE character による overstriking を plain text として扱う proposal であり、grapheme cluster、security、normalization、font shaping に影響し得る。
 
+### FVS と Soft_Dotted の後続入力
+
+[L2/26-219](../documents/utc-l2-26-219.md) は writing system ごとに異なる glyph、FVS validity、default form を language tags と shaping で扱う guidance を求める。[L2/26-225](../documents/utc-l2-26-225.md) は既存 turned i の Soft_Dotted を変更せず新しい dotless character を追加する案で、canonical equivalence と DoNotEmit data の扱いを分ける。両文書とも property 変更の決定ではない。
+
 ## 関連文書
+
+- [L2/26-225](../documents/utc-l2-26-225.md) - Unicode request for turned dotless i。
+
+- [L2/26-219](../documents/utc-l2-26-219.md) - Resolving Cross-Writing-System Ambiguity in Mongolian Script。
 
 - [L2/26-096](../documents/utc-l2-26-096.md) - PAG report for UTC \#187。
 - [PRI \#509](../documents/pri-509.md) - UTS \#58 Link Detection and Formatting の公開レビュー。
@@ -210,3 +219,5 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - `utc-l2-26-137` - <https://www.unicode.org/L2/L2026/26137-left-right.pdf>
 - `utc-l2-26-138` - <https://www.unicode.org/L2/L2026/26138-consecutive-anusvaras.pdf>
 - `utc-l2-26-139` - <https://www.unicode.org/L2/L2026/26139-compose.pdf>
+- `utc-l2-26-219` - <https://www.unicode.org/L2/L2026/26219-mongolian-locale.pdf>
+- `utc-l2-26-225` - <https://www.unicode.org/L2/L2026/26225-turned-dotless-i.pdf>

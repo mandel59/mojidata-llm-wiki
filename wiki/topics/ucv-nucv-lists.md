@@ -4,7 +4,7 @@ title: UCV and NUCV Lists
 description: "IRG の UCV / NUCV lists による component variation と unification / disunification 境界の整理。"
 slug: ucv-nucv-lists
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935]
+documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935, irg-n2978]
 topics: [irg-indexing-rules, irg-disunified-ideographs, cjkv-components, unihan-database-maintenance]
 people: [irg]
 status: active
@@ -52,6 +52,10 @@ NUCV list は、同じく component variation を扱うが、source code separat
 
 UCV / NUCV の判断は、最終的には encoded character の source references、representative glyphs、`kRSUnicode`、radical / stroke data などと整合する必要がある。[Unihan Database Maintenance](unihan-database-maintenance.md) 側では、UCV / NUCV を直接 property として持つのではなく、review 結果が glyph data や source data、radical / stroke properties に反映される点を追う。
 
+### 次回 review 用 URL
+
+register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は空欄で、2026-10-10 の取得は HTTP 404 だった。本文を読めないため、改訂内容や list の切替を推定せず、既存の公開版と会合記録を基準にする。
+
 ## 関連文書
 
 - [IRG N2931](../documents/irg-n2931.md) - UCV & NUCV lists。
@@ -75,3 +79,4 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `irg-n2978` - <https://www.unicode.org/irg/docs/n2978-Complete.pdf>

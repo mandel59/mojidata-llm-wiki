@@ -4,7 +4,7 @@ title: T-source Representative Glyph Issues
 description: "IRG N2860 / N2861 / N2927R による T-source representative glyph と source mapping correction の整理。"
 slug: t-source-representative-glyph-issues
 bodies: [IRG, UTC, WG2]
-documents: [irg-n2860, irg-n2861, irg-n2927r, irg-n2909, irg-n2911, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5354]
+documents: [irg-n2860, irg-n2861, irg-n2927r, irg-n2909, irg-n2911, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5354, irg-n2939r, irg-n2972]
 topics: [irg-source-data-and-representative-glyphs, unihan-database-maintenance, unicode-18-change-sources]
 people: [ma-shijie, tca, irg]
 meetings: [irg-meeting-66, utc-meeting-187, wg2-meeting-73]
@@ -52,7 +52,13 @@ U+2976E と U+20885 は [IRG N2861](../documents/irg-n2861.md) では pending �
 
 [IRG N2974](../documents/irg-n2974.md) は、《龍龕手鑑》と《中華字海》の別版を根拠に、U+3097C（T13-2F35）の T-source glyph を変更するよう求める。[IRG N2975](../documents/irg-n2975.md) で TCA は、米の hook 有無を複数版で確認し、Dictionary of Chinese Character Variants が unhooked form を standard glyph にしたことから変更案に同意した。更新 font は IRG と WG2 に提出済みだが、正式な group disposition はまだ確認できない。
 
+### Horizontal extension の glyph 確認
+
+[IRG N2939R](../documents/irg-n2939r.md) は、[IRG N2972](../documents/irg-n2972.md) の700字提案のうち5字に suggestions が寄せられ、TCA が会合で glyph を説明すると報告する。具体的な修正案や承認は記録しない。個別の確認事項は改訂報告で、提案全体の審議予定は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
+
 ## 関連文書
+
+- [IRG N2939R](../documents/irg-n2939r.md) - T-source horizontal extension に伴う glyph 確認事項。
 
 - [IRG N2860](../documents/irg-n2860.md) - 25 T-source glyphs の revision request。
 - [IRG N2861](../documents/irg-n2861.md) - `IRG N2860` への TCA response。
@@ -80,3 +86,5 @@ U+2976E と U+20885 は [IRG N2861](../documents/irg-n2861.md) では pending �
 - `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
+- `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>

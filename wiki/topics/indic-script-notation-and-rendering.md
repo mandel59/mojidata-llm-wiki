@@ -4,7 +4,7 @@ title: Indic Script Notation and Rendering
 description: "Indic scripts における Vedic notation、combining marks、rendering guidance。"
 slug: indic-script-notation-and-rendering
 bodies: [UTC]
-documents: [utc-l2-26-062, pri-552, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138]
+documents: [utc-l2-26-062, pri-552, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138, utc-l2-26-181r, utc-l2-26-221, utc-l2-26-222]
 topics: [script-encoding-pipeline, unicode-properties-and-algorithms]
 status: active
 tags: [indic, vedic, kannada, rendering, combining-marks]
@@ -29,6 +29,7 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 | 2026-05-14 | UTC | [L2/26-131](../documents/utc-l2-26-131.md) | Kannada script 用 Samavedic svara markers 12 文字が提案された。 |
 | 2026-06-09 | UTC | [L2/26-138](../documents/utc-l2-26-138.md) | Consecutive anusvaras が valid Sanskrit forms に現れることと rendering support の問題が報告された。 |
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UTC が UAX \#29 Revision 48 public review を close し、GB9c の `InCB=Linker` / `InCB=Extend` / `InCB=Consonant` rule update を Unicode 18.0 finalization へ接続した。 |
+| 2026-10-09 | UTC | [L2/26-181R](../documents/utc-l2-26-181r.md), [L2/26-221](../documents/utc-l2-26-221.md), [L2/26-222](../documents/utc-l2-26-222.md) | Jain Nagari の FINAL ANUSVARA / vowel correction mark と Southern Pa’O の combining / tone signs が登録された。 |
 
 ## 主な論点
 
@@ -48,7 +49,19 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 
 [PRI \#552](../documents/pri-552.md) の GB9c update は、valid Indic conjunct sequences を editing / selection / regex などの text segmentation layer でどう扱うかに関わる。これは glyph shaping の成否を直接決めるものではないが、rendering guidance と同じく Indic text の user-perceived character boundary に影響する。
 
+### 写本記号と orthography-specific marks
+
+[L2/26-181R](../documents/utc-l2-26-181r.md) は行末 anusvara に gap filler 用例も添えて Lo を提案する。[L2/26-221](../documents/utc-l2-26-221.md) は omitted vowel signs の上付き correction mark と、その結合・表示を扱う。音価だけでなく写本上の機能を区別する必要がある。
+
+[L2/26-222](../documents/utc-l2-26-222.md) は Kham Dom Pa’O の medial consonant、vowel sign、tone mark の保存順序と下付き glyph 配置を記述する。提案 property と Northern Pa’O の代替文字を混同せず、collation の未決点を追う。
+
 ## 関連文書
+
+- [L2/26-222](../documents/utc-l2-26-222.md) - Proposal to encode Myanmar letters for Kham Dom Pa'O。
+
+- [L2/26-221](../documents/utc-l2-26-221.md) - Proposal to encode the Devanagari Correction Mark for Vowel Signs。
+
+- [L2/26-181R](../documents/utc-l2-26-181r.md) - Proposal to encode the Devanagari Sign Final Anusvara in Unicode (revised)。
 
 - [PRI \#552](../documents/pri-552.md) - UAX \#29 Unicode Text Segmentation Revision 48 public review。
 - [L2/26-131](../documents/utc-l2-26-131.md) - Samavedic svara markers in Kannada。
@@ -70,3 +83,6 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 - `utc-l2-26-062` - <https://www.unicode.org/L2/L2026/26062-indian-language-feedback.pdf>
 - `utc-l2-26-113` - <https://www.unicode.org/L2/L2026/26113-kannada-diacritics.pdf>
 - `utc-l2-26-114` - <https://www.unicode.org/L2/L2026/26114-devanagari-vowel-length-mark.pdf>
+- `utc-l2-26-181r` - <https://www.unicode.org/L2/L2026/26181r-final-anusvara.pdf>
+- `utc-l2-26-221` - <https://www.unicode.org/L2/L2026/26221-devanagari-correction-mark.pdf>
+- `utc-l2-26-222` - <https://www.unicode.org/L2/L2026/26222-kham-dom.pdf>

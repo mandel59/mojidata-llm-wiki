@@ -4,7 +4,7 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368, utc-l2-26-181r, utc-l2-26-219, utc-l2-26-220, utc-l2-26-221, utc-l2-26-222, utc-l2-26-223, utc-l2-26-224, utc-l2-26-225, utc-l2-26-226]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
@@ -52,6 +52,9 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2026-07-07 | PRI | [PRI \#554](../documents/pri-554.md) | UAX \#24 Revision 40 public review が close し、Script property と ISO 15924 mixed-script script codes の documentation update が Unicode 18.0 finalization に接続した。 |
 | 2026-07-27/30 | UTC | [L2/26-158](../documents/utc-l2-26-158.md), [L2/26-151](../documents/utc-l2-26-151.md) | SEW recommendations を UTC \#188 が選択的に処理。KORE SEBELI、Ndiko Jonam、N’ti は保留し、複数の character / symbol proposals を provisional assignment へ進めた。 |
 | 2026-09-16 | Unicode | Unicode 18.0.0 | Final new scripts は Proto-Cuneiform numerals、Jurchen、Seal の 3 つ。Chisoi は Unicode 19.0 へ延期。 |
+| 2026-10-09 | UTC | [L2/26-181R](../documents/utc-l2-26-181r.md), [L2/26-221](../documents/utc-l2-26-221.md), [L2/26-222](../documents/utc-l2-26-222.md) | Jain Nagari の2記号と Kham Dom Pa’O の3字を追加する提案が登録された。 |
+| 2026-10-09 | UTC | [L2/26-223](../documents/utc-l2-26-223.md), [L2/26-224](../documents/utc-l2-26-224.md) | Wei Rma 69字、Wagindara 39字の改訂提案が登録された。 |
+| 2026-10-09 | UTC | [L2/26-219](../documents/utc-l2-26-219.md), [L2/26-220](../documents/utc-l2-26-220.md), [L2/26-225](../documents/utc-l2-26-225.md), [L2/26-226](../documents/utc-l2-26-226.md) | Mongolian shaping guidance、Big5 double arcs、turned dotless i、Vithkuqi annotations の提案が登録された。 |
 
 ## 主な論点
 
@@ -97,7 +100,31 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 
 [PRI \#554](../documents/pri-554.md) の UAX \#24 Revision 40 は、`Script` / `Script_Extensions` property と ISO 15924 mixed-script script codes の関係を説明する documentation update である。これは script proposal の採択決定ではなく、encoded script が property values、aliases、regex、identifier processing に現れる後段の layer として読む。
 
+### 2026-10-09 登録分の encoding model と scope
+
+[Wei Rma](../documents/utc-l2-26-223.md) は従来の Abugida model を alphabet として再整理し、letters / marks と二層の syllable structure を記述する。[Wagindara](../documents/utc-l2-26-224.md) は Mongolian 由来でも独立した graphemic joining script を提案する。一方、[Mongolian](../documents/utc-l2-26-219.md) は既存 block の writing-system tagging / shaping guidance を求める案件である。
+
+[turned dotless i](../documents/utc-l2-26-225.md) は既存 Soft_Dotted property の変更を避ける新文字案、[Big5 double arcs](../documents/utc-l2-26-220.md) は legacy conversion の情報保持、[Vithkuqi](../documents/utc-l2-26-226.md) は新文字追加を伴わない注釈修正である。いずれも登録された提案であり、UTC の採否・assignment は後続の一次記録で確認する。
+
 ## 関連文書
+
+- [L2/26-226](../documents/utc-l2-26-226.md) - Unicode request for Vithkuqi annotations II。
+
+- [L2/26-225](../documents/utc-l2-26-225.md) - Unicode request for turned dotless i。
+
+- [L2/26-224](../documents/utc-l2-26-224.md) - Proposal to encode Wagindara in the UCS。
+
+- [L2/26-223](../documents/utc-l2-26-223.md) - Proposal to encode Wei Rma in the UCS。
+
+- [L2/26-222](../documents/utc-l2-26-222.md) - Proposal to encode Myanmar letters for Kham Dom Pa'O。
+
+- [L2/26-221](../documents/utc-l2-26-221.md) - Proposal to encode the Devanagari Correction Mark for Vowel Signs。
+
+- [L2/26-220](../documents/utc-l2-26-220.md) - Proposal to Encode 4 Unencoded Big5 ETen Extension Box Drawing Characters。
+
+- [L2/26-219](../documents/utc-l2-26-219.md) - Resolving Cross-Writing-System Ambiguity in Mongolian Script。
+
+- [L2/26-181R](../documents/utc-l2-26-181r.md) - Proposal to encode the Devanagari Sign Final Anusvara in Unicode (revised)。
 
 - [L2/26-100](../documents/utc-l2-26-100.md) - SEW recommendations for UTC \#187。
 - [L2/26-161](../documents/utc-l2-26-161.md) - SEI liaison が支援済み・開発中の script proposals を区別して報告。
@@ -197,3 +224,12 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 - `wg2-n5362` - <https://www.unicode.org/wg2/docs/n5362-proposal_to_start_new_amendment_of_10646.pdf>
 - `wg2-n5365` - <https://www.unicode.org/wg2/docs/n5365-SEILiaisonReport-June2026_WG2.pdf>
 - `wg2-n5368` - <https://www.unicode.org/wg2/docs/n5368-SupplementaryMaterialsDaiXaauScript.pdf>
+- `utc-l2-26-181r` - <https://www.unicode.org/L2/L2026/26181r-final-anusvara.pdf>
+- `utc-l2-26-219` - <https://www.unicode.org/L2/L2026/26219-mongolian-locale.pdf>
+- `utc-l2-26-220` - <https://www.unicode.org/L2/L2026/26220-box-drawing.pdf>
+- `utc-l2-26-221` - <https://www.unicode.org/L2/L2026/26221-devanagari-correction-mark.pdf>
+- `utc-l2-26-222` - <https://www.unicode.org/L2/L2026/26222-kham-dom.pdf>
+- `utc-l2-26-223` - <https://www.unicode.org/L2/L2026/26223-wei-rma.pdf>
+- `utc-l2-26-224` - <https://www.unicode.org/L2/L2026/26224-wagindara.pdf>
+- `utc-l2-26-225` - <https://www.unicode.org/L2/L2026/26225-turned-dotless-i.pdf>
+- `utc-l2-26-226` - <https://www.unicode.org/L2/L2026/26226-vithkuqi.pdf>

@@ -6,9 +6,9 @@ slug: japan
 bodies: [UTC, IRG, WG2]
 documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2914r, irg-n2934r, irg-n2940, pri-546]
 topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
-events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition]
+events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition, ivd-2026-08-03-moji-joho-registration]
 tags: [member-body, source, japan, j-source, uax45]
-timestamp: 2026-07-06T23:08:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # Japan
@@ -35,6 +35,7 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 | 2025-09-25 | `IRG N2870` | [IRG N2870 Japan feedback on J-source disposition](../events/irg-n2870-japan-feedback-on-j-source-disposition.md)。 | J-source disposition について、既存符号化済み文字への disunification を避け、現状維持を求める立場が確認できる。 |
 | 2026-04-02 | [IRG N2914R](../documents/irg-n2914r.md), [IRG N2934R](../documents/irg-n2934r.md) | IRG Meeting \#67 の logistics / First Call。会合は 2026-10-12 から 2026-10-16 に東京で hybrid 開催され、SAT Daizōkyō Text Database Committee が host とされる。 | これは Japan NB の文書ではないが、日本国内で IRG 会合が開催される直近の activity として関連する。Japan NB の J-source issues と同じ IRG 文脈で追跡する価値がある。 |
 | 2026-07-31 closing | [PRI \#546](../documents/pri-546.md) | IVD Registrar が Moji_Joho collection への 8 IVS 追加登録を public review に出した。registrant は ITSCJ / IPSJ、representative は Shuichi Tashiro。 | `WG2 N5221` 後の Moji Jōhō Kiban code point 対応更新が IVD collection maintenance へ波及した例。 |
+| 2026-08-03 | [IVD 2026-08-03](../events/ivd-2026-08-03-moji-joho-registration.md) | PRI \#546 review 後の登録完了。 | ITSCJ / IPSJ による collection maintenance の後続結果として追う。 |
 | 2026-09-25 | [IRG N2940](../documents/irg-n2940.md) | JSC 2 が IRG 活動への参加再開を決定したと報告した。 | mailing list と会合から始め、資源に応じて貢献を広げる。Working Set review の全面再開は表明していない。 |
 
 ## 主な論点
@@ -45,7 +46,7 @@ Japan は、IRG / WG2 に参加する member body であり、`kIRG_JSource` / `
 
 この提出は後続の [IRG N2721](../documents/irg-n2721.md) / `WG2 N5284` で重要な根拠として引用された。IRG Convenor は、Japan が WG2 に大規模 horizontal extension を提出したことを挙げ、こうした案件はより頻繁に会合し CJK review に適した IRG へ提出する方がよいと述べ、Japan の IRG active participation を促した。review path の詳細は [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md) に分ける。
 
-[PRI \#546](../documents/pri-546.md) は、この horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の code point 対応更新を理由として Moji_Joho IVD collection の追加登録 review が必要になったことを示す。
+[PRI \#546](../documents/pri-546.md) は、この horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の code point 対応更新を理由として Moji_Joho IVD collection maintenance へ波及したことを示す。登録結果は[IVD 2026-08-03 event](../events/ivd-2026-08-03-moji-joho-registration.md)を参照する。
 
 ### WG2 \#72 と J-source glyph corrections
 

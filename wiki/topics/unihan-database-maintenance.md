@@ -8,7 +8,8 @@ documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-2
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
-timestamp: 2026-07-07T00:00:00+09:00
+events: [ivd-2026-08-03-moji-joho-registration]
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # Unihan Database Maintenance
@@ -43,6 +44,7 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 | 2026-07-05 | UTC | [L2/26-148](../documents/utc-l2-26-148.md) | 458 ideographs の `kTotalStrokes` values を IRG N2951 FS & SC conventions と ORT metadata checking に合わせて変更する proposal。 |
 | 2026-07-07 | PRI | [PRI \#534](../documents/pri-534.md) | UAX \#38 Revision 40 と Unihan data corrections の public review が close。feedback の一部は UTC \#186 / \#187 で review 済みで、後続分は UTC \#188 / final data で追う。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、Moji_Joho collection に 8 IVS を追加し、9 既登録 sequences を deprecated とする review を開いた。 |
+| 2026-08-03 | IVD Registrar | [IVD 2026-08-03](../events/ivd-2026-08-03-moji-joho-registration.md) | PRI \#546 review 後の登録完了。正式データと使用非推奨の扱いは event を参照。 |
 
 ## 主な論点
 
@@ -74,7 +76,7 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 
 ### Moji_Joho IVD collection
 
-[PRI \#546](../documents/pri-546.md) は、Moji Jōhō Kiban database の code point 対応更新に伴い、Moji_Joho IVD collection へ 8 sequences を追加登録する review である。背景には [WG2 N5221](../documents/wg2-n5221.md) の JMJ horizontal extension があり、source reference addition が IVD sequence registration と既登録 sequence deprecation にも波及することを示している。
+[PRI \#546](../documents/pri-546.md) は、Moji Jōhō Kiban database の code point 対応更新に伴い、Moji_Joho IVD collection の追加登録を review した PRI である。後続の[IVD 2026-08-03 登録完了](../events/ivd-2026-08-03-moji-joho-registration.md)を collection maintenance の節目として追う。背景には [WG2 N5221](../documents/wg2-n5221.md) の JMJ horizontal extension があり、source reference addition が IVD sequence registration と既登録 sequence deprecation にも波及することを示している。
 
 ### CJK Hybrid Characters の property 設計
 
@@ -98,7 +100,7 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
 - [PRI \#534](../documents/pri-534.md) - UAX \#38 Revision 40 と Unihan data corrections の public review record。
 - [L2/26-112](../documents/utc-l2-26-112.md) - Proposed Update UTS \#37。
-- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
+- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録の提案・review。登録完了は IVD 2026-08-03 event を参照。
 - [L2/26-134](../documents/utc-l2-26-134.md) - RSIndex.txt syntax enhancement。
 - [L2/26-148](../documents/utc-l2-26-148.md) - `kTotalStrokes` changes。
 

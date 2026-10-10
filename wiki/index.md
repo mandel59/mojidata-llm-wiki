@@ -19,15 +19,17 @@ okf_version: "0.1"
 
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
-- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-09-17版agenda。WS2024、horizontal extensions、source / glyph issuesをreviewする。
+- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-08版agenda。改訂 horizontal extensions、TCA / ROK報告、WS2024 reviewと会議運営案を追う。
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - 7th edition DISとAmendment 1 projectの進行状況。
 - [Small Seal Script](topics/small-seal-script.md) - 7th edition pipelineに入ったSmall Seal repertoire、source model、glyph corrections。
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
-- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 新script・文字提案のprovisional assignment、保留、WG2 progression。
+- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-09登録のWei Rma / Wagindaraなどの提案と、既存のprovisional assignment / 保留を追う。
 
 完全な49 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
+
+- [IVD 2026-08-03 Moji_Joho registration](events/ivd-2026-08-03-moji-joho-registration.md) - PRI \#546 review 後の IVS 追加登録と正式データ。
 
 - [UTC \#188 Unicode 18.0 release authorization](events/utc-188-unicode-18-release-authorization.md) - Unicode 18.0 と同期 UTS の releaseを承認。
 - [WG2 M73.01 Small Seal CD4 disposition](events/wg2-m73-01-small-seal-cd4-disposition.md) - Small Seal names、properties、glyph correctionsをCD.4 dispositionへ反映。

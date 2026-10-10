@@ -9,7 +9,8 @@ topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative
 people: [japan, wg2, irg, ken-lunde]
 status: active
 tags: [cjk, horizontal-extension, jmj, j-source, source-data]
-timestamp: 2026-07-08T00:00:00+09:00
+events: [ivd-2026-08-03-moji-joho-registration]
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # JMJ Horizontal Extension Review Path
@@ -33,6 +34,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 | 2025-08-13 | IRG | [IRG N2859](../documents/irg-n2859.md) | IRG Convenor が [IRG N2722](../documents/irg-n2722.md) などを受け、J-source source reference / representative glyph disposition 案を Japan NB に照会した。 |
 | 2025-09-25 | IRG | [IRG N2870](../documents/irg-n2870.md) | Japan NB が [IRG N2859](../documents/irg-n2859.md) に対し、符号化済み文字の current status 維持を求めた。 |
 | 2026-07-31 closing | PRI | [PRI \#546](../documents/pri-546.md) | IVD Registrar が、JMJ horizontal extension 後の Moji Jōhō Kiban code point 対応更新を背景に、Moji_Joho collection への 8 IVS 追加を review に出した。 |
+| 2026-08-03 | IVD Registrar | [IVD 2026-08-03](../events/ivd-2026-08-03-moji-joho-registration.md) | PRI \#546 review 後の登録完了。正式データと使用非推奨の扱いは event を参照。 |
 | 2026-09-25 | IRG | [IRG N2940](../documents/irg-n2940.md) | JSC 2 が IRG 活動への参加再開を決め、mailing list と会合から段階的に関与すると報告した。 |
 
 ## 主な論点
@@ -59,7 +61,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 ### IVD collection への波及
 
-[PRI \#546](../documents/pri-546.md) は、`WG2 N5221` 由来の horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の対応 code points が更新され、その結果として Moji_Joho IVD collection の sequence registration も更新対象になったことを示す。8 sequences の追加登録に加え、9 既登録 sequences を deprecated とする点が重要である。
+[PRI \#546](../documents/pri-546.md) は、`WG2 N5221` 由来の horizontal extension が Unicode 16.0 / ISO/IEC 10646:2020/Amd.2:2025 に取り込まれた後、Moji Jōhō Kiban database の対応 code points が更新され、その結果として Moji_Joho IVD collection の sequence registration も更新対象になったことを示す。後続の[IVD 2026-08-03 登録完了](../events/ivd-2026-08-03-moji-joho-registration.md)は、JMJ mapping maintenance が IVD へ波及した節目として追う。
 
 ### 後続の correction topics との境界
 
@@ -84,7 +86,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 - [IRG N2859](../documents/irg-n2859.md) - J-source disposition recommendations。
 - [IRG N2870](../documents/irg-n2870.md) - Japan NB feedback on `IRG N2859`。
 - [IRG N2940](../documents/irg-n2940.md) - JSC 2 の IRG 参加再開方針。
-- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録 review。
+- [PRI \#546](../documents/pri-546.md) - Moji_Joho collection への IVS 追加登録の提案・review。登録完了は IVD 2026-08-03 event を参照。
 
 ## 関連トピック
 

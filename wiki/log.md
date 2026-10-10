@@ -2,6 +2,15 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-10
+
+- **IVD**: 取得済みの PRI \#546 が review 中の記述に留まっていたため、公開 archive を再取得し、公式 IVD 説明と 2026-08-03 / 2025-07-14 データを非 Git cache に取得・比較。[Moji_Joho 登録完了](events/ivd-2026-08-03-moji-joho-registration.md)を追加し、正式な 8 IVS 割当、9 件の非規範的な使用非推奨とデータ残存、collection URL 更新を反映。PRI / JMJ / Unihan / Japan / Ken Lunde と入口を接続した。
+
+- **Catalog**: UTC / WG2 / IRG / PRI の最新 register を同期。UTC に `L2/26-181R` と `L2/26-219`～`L2/26-226`、IRG に `IRG N2939R` を追加し、`IRG N2935`、`N2941`、`N2978`～`N2984` の date / title / source / URL を更新した。過去目録を保持し、WG2 / PRI の目録差分はなかった。
+- **Digest**: UTC の追加9件と [IRG N2939R](documents/irg-n2939r.md)、[IRG N2941](documents/irg-n2941.md) を精読して11件の Source Document page を追加。[IRG N2935](documents/irg-n2935.md) を2026-10-08版へ更新した。
+- **Topics**: Script pipeline、Indic notation、properties / algorithms、code charts を新規提案に接続。IRG Meeting \#67、horizontal extensions、WS2024、working process、TCA と contributor pages に改訂 agenda / activity reports を反映した。提案・審議予定と会合決定を分離した。
+- **Fetch**: 文書実体12件を非 Git cache に取得。`IRG N2946`、`N2978`、`N2979`、`N2980`、`N2981`、`N2982` の登録 URL は HTTP 404 だったため、本文の要約や会合結果を作らず、関連ページに公開状態と後続確認先を記録した。
+
 ## 2026-10-03
 
 - **Catalog**: 最新の UTC / IRG register を同期し、L2/26-218 を追加。IRG N2831 の公開化、IRG N2929R、N2936、N2942、N2972、N2975 の公開と関連する registry dates / title を反映した。

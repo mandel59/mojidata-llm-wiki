@@ -3,9 +3,9 @@ type: Person
 title: Eiso Chan
 description: CJKV Components、kIRG_SGSource、IRG indexing rules、Kana proposals / feedback に関係する contributor。
 slug: eiso-chan
-bodies: [UTC, IRG]
-documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r]
-topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables]
+bodies: [UTC, IRG, WG2]
+documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r, utc-l2-26-223]
+topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables, script-encoding-pipeline]
 tags: [person, components, unihan, source-data, indexing]
 timestamp: 2026-07-08T00:00:00+09:00
 ---
@@ -29,6 +29,7 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 | `L2/23-123` | Ryukyuan superscript Katakana proposal への feedback。 | [Kana](../topics/kana.md) |
 | `L2/23-127` | 明治期活字見本に現れる alternate Katakana NE / WI の introduction。 | [Kana](../topics/kana.md) |
 | `L2/25-151R` | KATAKANA LETTER ALTERNATE NE / WI revised proposal。 | [Kana](../topics/kana.md), [CJK Security Confusables](../topics/cjk-security-confusables.md) |
+| [L2/26-223](../documents/utc-l2-26-223.md) | Proposal to encode Wei Rma in the UCS の author。 | [Script Encoding Pipeline](../topics/script-encoding-pipeline.md) |
 
 ## 関連トピック
 
@@ -55,3 +56,4 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 - `utc-l2-23-123` - <https://www.unicode.org/L2/L2023/23123-ryukyu-kana-feedback.pdf>
 - `utc-l2-23-127` - <https://www.unicode.org/L2/L2023/23127-katakana.pdf>
 - `utc-l2-25-151r` - <https://www.unicode.org/L2/L2025/25151r-katakana-ne-wi.pdf>
+- `utc-l2-26-223` - <https://www.unicode.org/L2/L2026/26223-wei-rma.pdf>
