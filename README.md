@@ -43,7 +43,9 @@ uv run python tools/sync_registries.py --registry all --latest-only
 uv run python tools/check_catalog.py
 ```
 
-オンライン同期では Registry の root / latest page を毎回再取得し、過去 register のキャッシュだけを再利用します。ネットワークを使わずキャッシュだけで再現する場合は `--offline`、過去 register も含めてすべて再取得する場合は `--refresh` を指定します。
+オンライン同期では Registry の root / latest page を毎回再取得し、過去 register のキャッシュだけを再利用します。PRI は `config/registries.json` の `current_register_urls` に Resolved Issues を指定し、`--latest-only` でも Open Issues と Resolved Issues の両方を毎回再取得する。過去の固定 archive は保持する。ネットワークを使わずキャッシュだけで再現する場合は `--offline`、過去 register も含めてすべて再取得する場合は `--refresh` を指定します。
+
+同期結果には、新規・変更された `entry_id` と変更 field を表示する。PRI の `review_status: open -> resolved` は、既に Source Document page がある場合も再レビュー対象にする。対象文書は `uv run python tools/fetch_documents.py --registry pri --doc <entry_id> --refresh` で再取得し、archive の登録結果・確定仕様・正式データを読んで、document / event / topic と `wiki/log.md` を更新する。未 digest 候補の抽出だけでは既存ページの更新を検出できないため、同期結果と catalog 差分も必ず確認する。
 
 全 register を root ページから辿る場合:
 

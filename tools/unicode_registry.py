@@ -203,11 +203,17 @@ def cache_path_for_url(cache_dir: Path, url: str, suffix: str = ".html") -> Path
 
 
 def discover_register_urls(config: dict, root_html: str, latest_only: bool = False) -> list[str]:
+    current_urls = list(
+        dict.fromkeys(
+            normalize_registry_url(url)
+            for url in [config["latest_url"], *config.get("current_register_urls", [])]
+        )
+    )
     if latest_only:
-        return [normalize_registry_url(config["latest_url"])]
+        return current_urls
 
     if config.get("register_urls"):
-        return sorted({normalize_registry_url(url) for url in config["register_urls"]})
+        return sorted({normalize_registry_url(url) for url in config["register_urls"]} | set(current_urls))
 
     root_url = config["root_url"]
     parser = parse_html(root_html, root_url)
@@ -219,7 +225,7 @@ def discover_register_urls(config: dict, root_html: str, latest_only: bool = Fal
         if any(pattern.search(link.url) or pattern.search(relative_part) for pattern in patterns):
             urls.append(normalize_registry_url(link.url))
 
-    urls.append(normalize_registry_url(config["latest_url"]))
+    urls.extend(current_urls)
     return sorted(set(urls))
 
 

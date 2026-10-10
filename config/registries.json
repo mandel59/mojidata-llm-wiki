@@ -40,6 +40,9 @@
         "https://www.unicode.org/review/resolved.html",
         "https://www.unicode.org/review/resolved-pri-100.html",
         "https://www.unicode.org/review/resolved-pri.html"
+      ],
+      "current_register_urls": [
+        "https://www.unicode.org/review/resolved.html"
       ]
     }
   }

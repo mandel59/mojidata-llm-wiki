@@ -22,6 +22,7 @@ from tools.unicode_registry import (
     dedupe_entries,
     discover_register_urls,
     load_config,
+    normalize_registry_url,
     parse_register_documents,
     read_jsonl,
     write_jsonl,
@@ -67,10 +68,15 @@ def should_refresh_registry_url(
     """Refresh registry entry pages online while retaining historical-page caching."""
     if offline:
         return False
-    return refresh or url in {
-        registry_config["root_url"],
-        registry_config["latest_url"],
+    current_urls = {
+        normalize_registry_url(current_url)
+        for current_url in [
+            registry_config["root_url"],
+            registry_config["latest_url"],
+            *registry_config.get("current_register_urls", []),
+        ]
     }
+    return refresh or normalize_registry_url(url) in current_urls
 
 
 def load_derived_documents(path: Path) -> list[dict]:
@@ -103,14 +109,60 @@ def load_register_metadata(path: Path) -> dict | None:
         return json.load(fh)
 
 
-def merge_latest_entries(existing_entries: list[dict], latest_entries: list[dict]) -> list[dict]:
+def merge_latest_entries(
+    existing_entries: list[dict],
+    latest_entries: list[dict],
+    refreshed_register_urls: list[str] | None = None,
+) -> list[dict]:
     latest_ids = {(entry["registry"], entry["entry_id"]) for entry in latest_entries}
+    refreshed_urls = {normalize_registry_url(url) for url in refreshed_register_urls or []}
     preserved_entries = [
         entry
         for entry in existing_entries
         if (entry["registry"], entry["entry_id"]) not in latest_ids
+        or (
+            refreshed_register_urls is not None
+            and entry.get("register_url")
+            and normalize_registry_url(entry["register_url"]) not in refreshed_urls
+            and entry.get("catalog_source") != "derived"
+        )
     ]
     return preserved_entries + latest_entries
+
+
+def catalog_change_lines(existing_entries: list[dict], updated_entries: list[dict]) -> list[str]:
+    """Describe added/updated identities, including changes to already-digested PRIs."""
+
+    def group(entries: list[dict]) -> dict[str, list[dict]]:
+        grouped: dict[str, list[dict]] = {}
+        for entry in entries:
+            grouped.setdefault(entry["entry_id"], []).append(entry)
+        for values in grouped.values():
+            values.sort(key=lambda entry: json.dumps(entry, sort_keys=True))
+        return grouped
+
+    previous = group(existing_entries)
+    updated = group(updated_entries)
+    lines: list[str] = []
+    for entry_id, entries in updated.items():
+        old_entries = previous.get(entry_id)
+        if old_entries is None:
+            lines.append(f"  {entry_id}: added")
+        elif old_entries != entries:
+            if len(old_entries) == len(entries) == 1:
+                old, new = old_entries[0], entries[0]
+                fields = sorted(key for key in old.keys() | new.keys() if old.get(key) != new.get(key))
+                details = [
+                    f"review_status: {old.get(key, '(none)')} -> {new.get(key, '(none)')}"
+                    if key == "review_status" else key
+                    for key in fields
+                ]
+                lines.append(f"  {entry_id}: updated ({', '.join(details)})")
+            else:
+                lines.append(f"  {entry_id}: updated")
+    for entry_id in sorted(previous.keys() - updated.keys()):
+        lines.append(f"  {entry_id}: removed")
+    return lines
 
 
 def merge_register_metadata(existing_metadata: dict | None, latest_registers: list[dict]) -> list[dict]:
@@ -146,7 +198,7 @@ def sync_one(
 ) -> dict:
     registry_cache = cache_dir / registry_key
     if latest_only:
-        register_urls = [registry_config["latest_url"]]
+        register_urls = discover_register_urls(registry_config, "", latest_only=True)
     else:
         root_url = registry_config["root_url"]
         root_html = fetch_text(
@@ -192,7 +244,7 @@ def sync_one(
     if latest_only:
         existing_entries = read_jsonl(target_dir / "documents.jsonl")
         if existing_entries:
-            entries = merge_latest_entries(existing_entries, entries)
+            entries = merge_latest_entries(existing_entries, entries, register_urls)
             registers = merge_register_metadata(existing_metadata, registers)
 
     register_document_count = len(entries)
@@ -220,7 +272,7 @@ def sync_one(
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Sync unicode.org document registries into commit-safe manifests.")
     parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg", "pri"], default="all")
-    parser.add_argument("--latest-only", action="store_true", help="Only sync each registry's current register page.")
+    parser.add_argument("--latest-only", action="store_true", help="Sync current register pages, including both open and resolved PRI issues.")
     parser.add_argument("--offline", action="store_true", help="Use cached registry HTML only.")
     parser.add_argument(
         "--refresh",
@@ -243,6 +295,8 @@ def main(argv: list[str] | None = None) -> int:
     selected = registries.keys() if args.registry == "all" else [args.registry]
 
     for registry_key in selected:
+        manifest_path = args.catalog_dir / registry_key / "documents.jsonl"
+        previous_entries = read_jsonl(manifest_path)
         metadata = sync_one(
             registry_key,
             registries[registry_key],
@@ -254,6 +308,8 @@ def main(argv: list[str] | None = None) -> int:
             args.refresh,
         )
         print(f"{registry_key}: {metadata['document_count']} documents from {len(metadata['registers'])} register(s)")
+        for line in catalog_change_lines(previous_entries, read_jsonl(manifest_path)):
+            print(line)
 
     return 0
 

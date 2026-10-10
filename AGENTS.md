@@ -240,9 +240,11 @@ uv run python tools/sync_registries.py --registry all --latest-only
 uv run python tools/check_catalog.py
 ```
 
-オンライン同期では Registry の root / latest page を毎回再取得する。`--offline` はキャッシュだけで再現する場合、`--refresh` は過去 register も含めてすべて再取得する場合に使う。
+オンライン同期では Registry の root / latest page を毎回再取得する。PRI は `config/registries.json` の `current_register_urls` に Resolved Issues を指定し、`--latest-only` でも Open Issues と Resolved Issues の両方を毎回再取得する。過去の固定 archive は保持する。`--offline` はキャッシュだけで再現する場合、`--refresh` は過去 register も含めてすべて再取得する場合に使う。
 
 `--latest-only` は既存の full manifest に最新 register の entries だけを差し替え merge する用途で使う。既存 manifest がある状態で過去年分が消える差分、または `document_count` が最新 register だけの件数へ大きく減る差分は異常なのでコミットしない。広く過去分を取り込むときは `--latest-only` を外す。更新後は `catalog/registries/*/documents.jsonl` と `registers.json` の差分を見る。新規・変更された文書番号だけを `wiki/log.md` に記録する。
+
+同期結果には、新規・変更された `entry_id` と変更 field を表示する。PRI の `review_status: open -> resolved` は、既に Source Document page がある場合も再レビュー対象にする。対象文書は `uv run python tools/fetch_documents.py --registry pri --doc <entry_id> --refresh` で再取得し、archive の登録結果・確定仕様・正式データを読んで、document / event / topic と `wiki/log.md` を更新する。未 digest 候補の抽出だけでは既存ページの更新を検出できないため、同期結果と catalog 差分も必ず確認する。
 
 ### Materialize Documents
 
