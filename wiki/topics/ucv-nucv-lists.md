@@ -5,11 +5,11 @@ description: "IRG の UCV / NUCV lists による component variation と unifica
 slug: ucv-nucv-lists
 bodies: [IRG]
 documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935, irg-n2978]
-topics: [irg-indexing-rules, irg-disunified-ideographs, cjkv-components, unihan-database-maintenance]
+topics: [irg-indexing-rules, irg-disunified-ideographs, cjkv-components, unihan-database-maintenance, ideographic-variation-database]
 people: [irg]
 status: active
 tags: [irg, ucv, nucv, unification, components]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # UCV and NUCV Lists
@@ -66,6 +66,7 @@ register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [IRG Indexing Rules](irg-indexing-rules.md)
 - [IRG Disunified Ideographs](irg-disunified-ideographs.md)
 - [CJKV Components](cjkv-components.md)

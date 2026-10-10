@@ -8,6 +8,7 @@
 
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27) - WG2 \#72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27) - WG2 \#72 が 11,339 Small Seal characters を将来版候補として検討するよう勧告した出来事。
+- [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14) - IVD Registrar が PRI \#521 review 後に CAAPH collection と 198 IVS を登録し、IVD 2025-07-14 を公開した出来事。
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13) - IRG Convenor が J-source representative glyph / source reference issues の disposition をまとめ、Japan NB に feedback を求めた出来事。
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25) - Japan NB が IRG N2859 へ回答し、published encoded characters の current status 維持を求めた出来事。
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16) - IRG \#65 Recommendation M65.24 が CJK hybrid characters を WG2 に委ねつつ IRG oversight で CJKUI / 別 block を判断する方針を記録した出来事。
@@ -41,6 +42,11 @@
 
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
+
+### [Ideographic Variation Database](../topics/ideographic-variation-database.md)
+
+- [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14)
+- [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ### [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
@@ -125,6 +131,10 @@
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+
+### Unicode Consortium
+
+- [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ### WG2

@@ -5,7 +5,7 @@ description: UTC / CJK & Unihan Working Group で CJK / Unihan data maintenance 
 slug: ken-lunde
 bodies: [UTC, IRG]
 documents: [utc-l2-11-439, utc-l2-22-181, utc-l2-25-199, utc-l2-26-099, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-134, utc-l2-26-147, utc-l2-26-148, irg-n2934r, wg2-n5353]
-topics: [unihan-database-maintenance, unihan-data-format-and-property-syntax, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables]
+topics: [unihan-database-maintenance, unihan-data-format-and-property-syntax, kana, uax45-u-source-ideographs, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, cjk-security-confusables, ideographic-variation-database]
 tags: [person, utc, cjk, unihan, source-data]
 events: [ivd-2026-08-03-moji-joho-registration]
 timestamp: 2026-10-10T00:00:00+09:00
@@ -38,6 +38,7 @@ IVD の公式ページでは Registrar とされる。[IVD 2026-08-03 登録完�
 
 ## 関連トピック
 
+- [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 - [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
 - [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
 - [Kana](../topics/kana.md)

@@ -506,3 +506,23 @@
 - [PRI \#534](pri-534.md) - Unicode 18.0 向け UAX \#38 Revision 40 と Unihan data corrections に対する public review record。
 - [PRI \#533](pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。
 - [PRI \#509](pri-509.md) - 平文中の URL と email address の検出・formatting を扱う公開 review issue。
+
+### 2025
+
+- [PRI \#521](pri-521.md) - 文化艺术出版社の CAAPH collection と 198 IVS を登録する public review。
+
+### 2022
+
+- [PRI \#456](pri-456.md) - Adobe-Japan1-7 の Extension H ideograph に対応する 1 IVS の追加登録。
+
+### 2020
+
+- [PRI \#418](pri-418.md) - MSCS-2020 の字形と base characters に対応する MSARG collection の 133 IVS 追加登録。
+
+### 2017
+
+- [PRI \#354](pri-354.md) - Extension F の符号化後に行政用の字形区別を保持する Moji_Joho 追加登録。
+
+### 2014
+
+- [PRI \#259](pri-259.md) - Moji_Joho collection の初回登録。行政用の字形区別と Hanyo-Denshi との sequence sharing を扱う。

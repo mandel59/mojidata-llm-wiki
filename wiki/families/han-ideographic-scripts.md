@@ -3,10 +3,10 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules、関連 data / symbols を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals]
-topics: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals]
+members: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals, ideographic-variation-database]
+topics: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals, ideographic-variation-database]
 tags: [family, han, ideographic]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # Han Ideographic Scripts
@@ -19,6 +19,7 @@ Han / ideographic 系の script、block、source data、variation database、関
 
 | Topic | 状態 | 一言 |
 | --- | --- | --- |
+| [Ideographic Variation Database](../topics/ideographic-variation-database.md) | active | IVD collections、IVS 登録履歴、public review と正式データの追跡。 |
 | [Small Seal Script](../topics/small-seal-script.md) | in-ballot-pipeline | `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。 |
 | [UAX \#60 Data for Large East Asian Scripts](../topics/uax60-large-east-asian-scripts.md) | active | Small Seal など large East Asian scripts 向け data annex の title / syntax / description 保守。 |
 | [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md) | active | UTC の U-source database、FutureWS records、`kIRG_USource`、horizontal extension の保守論点。 |

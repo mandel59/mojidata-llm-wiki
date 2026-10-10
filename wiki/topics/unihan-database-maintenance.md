@@ -5,7 +5,7 @@ description: "Unihan database、関連 k* properties、release updates の保守
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-151, utc-l2-26-157, utc-l2-26-215, utc-l2-26-216, pri-534, pri-546, pri-558, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
-topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
+topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, ideographic-variation-database]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
 events: [ivd-2026-08-03-moji-joho-registration]
@@ -106,6 +106,7 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [Unihan Data Format and Property Syntax](unihan-data-format-and-property-syntax.md)

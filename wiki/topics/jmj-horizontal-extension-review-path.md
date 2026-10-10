@@ -5,7 +5,7 @@ description: MOJI-JOHO-KIBAN IDEOGRAPHS-2018 の JMJ references を J-column に
 slug: jmj-horizontal-extension-review-path
 bodies: [WG2, IRG]
 documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5301, wg2-n5304, irg-n2859, irg-n2870, irg-n2940, pri-546]
-topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax]
+topics: [cjk-horizontal-extensions, j-source, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax, ideographic-variation-database]
 people: [japan, wg2, irg, ken-lunde]
 status: active
 tags: [cjk, horizontal-extension, jmj, j-source, source-data]
@@ -90,6 +90,7 @@ JMJ horizontal extension は、MOJI-JOHO-KIBAN IDEOGRAPHS-2018 に由来する J
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [CJK Horizontal Extensions](cjk-horizontal-extensions.md)
 - [J-source and JMJ Source Issues](j-source.md)
 - [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md)

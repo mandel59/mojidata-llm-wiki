@@ -7,7 +7,8 @@ bodies: [UTC, WG2]
 documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369]
 status: encoded-unicode-18
 tags: [script, seal, cjk, ideographic]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
+topics: [ideographic-variation-database]
 ---
 
 # Small Seal Script
@@ -135,6 +136,10 @@ Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重
 - [UTC](../people/utc.md)
 - [China](../people/china.md)
 - [TCA](../people/tca.md)
+
+## 関連トピック
+
+- [Ideographic Variation Database](ideographic-variation-database.md)
 
 ## 出典
 

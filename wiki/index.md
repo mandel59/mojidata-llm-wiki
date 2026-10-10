@@ -17,6 +17,7 @@ okf_version: "0.1"
 
 ## Current Focus
 
+- [Ideographic Variation Database](topics/ideographic-variation-database.md) - 全10版の登録履歴、6 collections、UTS \#37 と関連 PRI。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
 - [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-08版agenda。改訂 horizontal extensions、TCA / ROK報告、WS2024 reviewと会議運営案を追う。
@@ -25,7 +26,7 @@ okf_version: "0.1"
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-09登録のWei Rma / Wagindaraなどの提案と、既存のprovisional assignment / 保留を追う。
 
-完全な49 topicは [Topics index](topics/index.md) を参照してください。
+完全な53 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
 

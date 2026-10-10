@@ -4,10 +4,11 @@ title: Eiso Chan
 description: CJKV Components、kIRG_SGSource、IRG indexing rules、Kana proposals / feedback に関係する contributor。
 slug: eiso-chan
 bodies: [UTC, IRG, WG2]
-documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r, utc-l2-26-223]
-topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables, script-encoding-pipeline]
+documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r, utc-l2-26-223, pri-521]
+topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables, script-encoding-pipeline, ideographic-variation-database]
 tags: [person, components, unihan, source-data, indexing]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
+events: [ivd-2025-07-14-caaph-registration]
 ---
 
 # Eiso Chan
@@ -20,6 +21,7 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 
 | 文書 | 役割 | 関連 topic |
 | --- | --- | --- |
+| [PRI \#521](../documents/pri-521.md) | CAAPH collection の登録申請 representative。 | [Ideographic Variation Database](../topics/ideographic-variation-database.md) |
 | `IRG N2799` | CJKV components proposal の author。Jianzi Musical Notation 由来 data などに関係。 | [CJKV Components](../topics/cjkv-components.md) |
 | `IRG N2878R3` | CJK Unified Ideographs Components final proposal の author list に含まれる。 | [CJKV Components](../topics/cjkv-components.md) |
 | `IRG N2926` | new normative `kIRG_SGSource` property の proposal。 | [kIRG_SGSource](../topics/kirg-sgsource.md) |
@@ -33,6 +35,7 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 
 ## 関連トピック
 
+- [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 - [CJKV Components](../topics/cjkv-components.md)
 - [kIRG_SGSource](../topics/kirg-sgsource.md)
 - [IRG Indexing Rules](../topics/irg-indexing-rules.md)
@@ -41,11 +44,13 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 
 ## 関連出来事
 
+- [IVD 2025-07-14 CAAPH registration](../events/ivd-2025-07-14-caaph-registration.md)
 - [IRG N2878R3 CJKV Components final proposal](../events/irg-n2878r3-cjkv-components-final-proposal.md)
 - [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)
 
 ## 出典
 
+- `pri-521` - <https://www.unicode.org/ivd/pri/pri521/>
 - `irg-n2799` - <https://www.unicode.org/irg/docs/n2799-CJKComponents4IDS.pdf>
 - `irg-n2878r3` - <https://www.unicode.org/irg/docs/n2878r3-CJKComponents.pdf>
 - `irg-n2926` - <https://www.unicode.org/irg/docs/n2926-SGSource.pdf>

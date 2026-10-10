@@ -5,7 +5,7 @@ description: 既存 CJK Unified Ideographs に JMJ / G / UK / U / V source data 
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
 documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, irg-n2945, irg-n2960, utc-l2-26-147, irg-n2970, irg-n2972, pri-546, irg-n2939r]
-topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax]
+topics: [jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax, ideographic-variation-database]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
 events: [ivd-2026-08-03-moji-joho-registration]
@@ -106,6 +106,7 @@ IRG N2972 は、TCA が household registration の人名文字と CNS 11643 Web 
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [JMJ Horizontal Extension Review Path](jmj-horizontal-extension-review-path.md)
 - [UAX \#45 / U-Source Ideographs](uax45-u-source-ideographs.md)

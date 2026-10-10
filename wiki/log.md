@@ -4,6 +4,7 @@
 
 ## 2026-10-10
 
+- **IVD topic**: [Ideographic Variation Database](topics/ideographic-variation-database.md) を追加し、全10版の登録履歴、6 collections、UTS \#37 確定版、review と登録完了の確認経路を整理。PRI \#259 / \#354 / \#418 / \#456 / \#521 を取得・要約し、[CAAPH 登録完了](events/ivd-2025-07-14-caaph-registration.md)を追加。既存の PRI \#546、L2/26-112、登録完了を既に報告していた L2/26-215、JMJ / Unihan / Han family と入口を接続した。
 - **IVD**: 取得済みの PRI \#546 が review 中の記述に留まっていたため、公開 archive を再取得し、公式 IVD 説明と 2026-08-03 / 2025-07-14 データを非 Git cache に取得・比較。[Moji_Joho 登録完了](events/ivd-2026-08-03-moji-joho-registration.md)を追加し、正式な 8 IVS 割当、9 件の非規範的な使用非推奨とデータ残存、collection URL 更新を反映。PRI / JMJ / Unihan / Japan / Ken Lunde と入口を接続した。
 
 - **Catalog**: UTC / WG2 / IRG / PRI の最新 register を同期。UTC に `L2/26-181R` と `L2/26-219`～`L2/26-226`、IRG に `IRG N2939R` を追加し、`IRG N2935`、`N2941`、`N2978`～`N2984` の date / title / source / URL を更新した。過去目録を保持し、WG2 / PRI の目録差分はなかった。

@@ -4,6 +4,7 @@ Script、block、property、proposal、横断論点などの精読ページを�
 
 ## 一覧
 
+- [Ideographic Variation Database](ideographic-variation-database.md) - IVD collections、登録履歴、UTS \#37 と PRI を追う入口。
 - [Small Seal Script](small-seal-script.md) - `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。
 - [IRG Working Set 2024](irg-working-set-2024.md) - IRG Working Set 2024 Version 5.0 review と schedule。
 - [IRG Working Process and Liaison](irg-working-process-and-liaison.md) - IRG の審査手続、SC 2 に対する位置づけ、会議運営と連携。

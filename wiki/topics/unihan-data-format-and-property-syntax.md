@@ -5,7 +5,7 @@ description: "Unicode 18.0 cycle の UAX #38 / UTS #37 / RSIndex.txt / kTotalStr
 slug: unihan-data-format-and-property-syntax
 bodies: [UTC, IRG, WG2]
 documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
-topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path]
+topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path, ideographic-variation-database]
 people: [ken-lunde, utc, irg, wg2]
 status: released
 tags: [unihan, data-format, property-syntax, uax38, uts37, unicode-18]
@@ -95,6 +95,7 @@ CJK Unified Ideographs Extension D は U+2B81E まで assigned range が延び�
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 - [IRG Indexing Rules](irg-indexing-rules.md)

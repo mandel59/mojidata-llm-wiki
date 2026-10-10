@@ -5,10 +5,10 @@ description: "CJK Strokes characters に standardized variation sequences を追
 slug: cjk-strokes-variation-sequences
 bodies: [UTC]
 documents: [utc-l2-26-073r, utc-l2-26-099, wg2-n5360r, wg2-n5369]
-topics: [unicode-18-change-sources]
+topics: [unicode-18-change-sources, ideographic-variation-database]
 status: accepted-for-unicode-18
 tags: [cjk, strokes, variation-sequences, standardizedvariants, unicode-18]
-timestamp: 2026-07-07T21:45:00+09:00
+timestamp: 2026-10-10T00:00:00+09:00
 ---
 
 # CJK Strokes Variation Sequences
@@ -45,6 +45,7 @@ CJK Strokes は Unihan property そのものではないが、`L2/26-099` では
 
 ## 関連トピック
 
+- [Ideographic Variation Database](ideographic-variation-database.md)
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unicode 18.0 Change Sources](unicode-18-change-sources.md)
 

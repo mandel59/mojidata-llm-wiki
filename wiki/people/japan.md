@@ -5,7 +5,7 @@ description: Japan NB / J-source / 日本関係 ideograph proposals / WG2 関連
 slug: japan
 bodies: [UTC, IRG, WG2]
 documents: [irg-n2367, wg2-n5221, irg-n2721, wg2-n5284, irg-n2722, wg2-n5296, wg2-n5301, wg2-n5304, wg2-n5311, utc-l2-25-053, utc-l2-25-221, utc-l2-25-274, utc-l2-26-044, irg-n2859, irg-n2870, irg-n2914r, irg-n2934r, irg-n2940, pri-546]
-topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, japanese-place-name-ideographs, japanese-historical-ideographs, kana]
+topics: [jmj-horizontal-extension-review-path, j-source, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, japanese-place-name-ideographs, japanese-historical-ideographs, kana, ideographic-variation-database]
 events: [utc-187-uax45-futurews-additions, wg2-m72-07-j-source-glyph-revert, irg-n2859-j-source-disposition-request, irg-n2870-japan-feedback-on-j-source-disposition, ivd-2026-08-03-moji-joho-registration]
 tags: [member-body, source, japan, j-source, uax45]
 timestamp: 2026-10-10T00:00:00+09:00
@@ -102,6 +102,7 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ## 関連トピック
 
+- [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 - [J-source and JMJ Source Issues](../topics/j-source.md)
 - [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
 - [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)

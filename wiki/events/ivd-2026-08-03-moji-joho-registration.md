@@ -4,9 +4,9 @@ title: "IVD 2026-08-03 Moji_Joho registration"
 description: "IVD Registrar が PRI #546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。"
 slug: ivd-2026-08-03-moji-joho-registration
 date: "2026-08-03"
-bodies: [UTC]
-documents: [pri-546, wg2-n5221]
-topics: [jmj-horizontal-extension-review-path, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, unihan-database-maintenance]
+bodies: [Unicode Consortium]
+documents: [pri-546, wg2-n5221, utc-l2-26-215]
+topics: [jmj-horizontal-extension-review-path, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, unihan-database-maintenance, ideographic-variation-database]
 people: [japan, ken-lunde]
 status: registered
 tags: [event, ivd, moji-joho, variation-sequences, jmj]
@@ -58,6 +58,7 @@ Moji_Joho の公式 collection page は、登録者が非規範的に deprecated
 
 ## 関連ページ
 
+- [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 - [PRI \#546](../documents/pri-546.md) - 追加登録の提案と review。
 - [JMJ Horizontal Extension Review Path](../topics/jmj-horizontal-extension-review-path.md)
 - [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
@@ -68,6 +69,7 @@ Moji_Joho の公式 collection page は、登録者が非規範的に deprecated
 
 ## 出典
 
+- `utc-l2-26-215` - <https://www.unicode.org/L2/L2026/26215-irgn2944-activity-rept.pdf>。公開後の activity report。
 - `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>。review closing date: 2026-07-31。archive の追記が 2026-08-03 版への登録を明記する。
 - IVD version history / collection counts - <https://www.unicode.org/ivd/>
 - IVD 2026-08-03 data - <https://www.unicode.org/ivd/data/2026-08-03/IVD_Sequences.txt>、<https://www.unicode.org/ivd/data/2026-08-03/IVD_Collections.txt>、<https://www.unicode.org/ivd/data/2026-08-03/IVD_Stats.txt>
