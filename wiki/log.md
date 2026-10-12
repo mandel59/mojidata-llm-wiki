@@ -2,6 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-12
+
+- **Catalog**: UTC / WG2 / IRG / PRI の最新 register を再取得。変更は IRG の9件で、`IRG N2935` / `N2943` の日付更新と `N2976` / `N2977` / `N2983`～`N2987` の公開・表題・source・URL を反映した。過去目録を保持し、UTC / WG2 / PRI に差分はなかった。
+- **Digest**: [IRG N2943](documents/irg-n2943.md)、[N2976](documents/irg-n2976.md)、[N2977](documents/irg-n2977.md)、[N2983](documents/irg-n2983.md)、[N2984](documents/irg-n2984.md)、[N2985](documents/irg-n2985.md)、[N2986](documents/irg-n2986.md)、[N2987](documents/irg-n2987.md) を精読して8件の Source Document page を追加。glyph / property 変更表を画像でも照合し、PDF 内の日付と registry date を区別した。
+- **Wiki**: [IRG N2935](documents/irg-n2935.md) と [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) を開催初日の agenda へ更新。U+2EA07 の再検討、G / V-source 修正、China の feedback、UK の次期 Working Set 準備を関連 topic / document / member body と接続した。提案と修正意向を会合決定として扱わない。
+- **Fetch**: 更新対象9件を非 Git cache に取得。`IRG N2946`、`N2978`、`N2979`、`N2980`、`N2981`、`N2982` は再取得でも HTTP 404。公開確認日を更新し、N2946 の空欄 registry date と会期末の区別を明記した。
+
 ## 2026-10-11
 
 - **Resolved PRI follow-up**: PRI \#520 の canonical page [L2/26-108](documents/utc-l2-26-108.md) を再レビューし、[UAX \#60 Revision 3 確定](events/uax60-unicode-18-first-published-version.md)を追加。確定版と Unicode 18.0.0 の4 source data files を非 Git cache に取得し、Seal radical / source syntax と照合。関連 document / topic / meeting / Michel Suignard を接続し、current-topic links の表題を確定版へ整理。PRI \#546 は archive の登録完了と正式データへの接続を再確認し、IVD topic に解決済み review を反映した。

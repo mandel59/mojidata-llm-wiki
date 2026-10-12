@@ -9,7 +9,7 @@ document_type: proposal
 registry: irg
 date: "2026-09-30"
 source: China
-documents: [irg-n2909, irg-n2929, irg-n2935, irg-n2936]
+documents: [irg-n2909, irg-n2929, irg-n2935, irg-n2936, irg-n2984, irg-n2987, irg-n2983]
 topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs]
 people: [china, irg]
 meetings: [irg-meeting-67]
@@ -48,7 +48,9 @@ source は GCW-Source 一種類で、official geographical names、personal name
 
 ## 後続決定
 
-[IRG N2935](irg-n2935.md) の2026-10-08版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できるが、会合での採否は後続 recommendation と action items で確認する。
+[IRG N2935](irg-n2935.md) の2026-10-12版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できるが、会合での採否は後続 recommendation と action items で確認する。
+
+[IRG N2984](irg-n2984.md) と [IRG N2987](irg-n2987.md) が glyph normalization の feedback と回答を補う。U+2EA07 の個別調査は [IRG N2983](irg-n2983.md) を参照する。
 
 ## 論点
 

@@ -4,10 +4,11 @@ title: UK
 description: UK-source horizontal extension と glyph change に関係する UK member body。
 slug: uk
 bodies: [IRG]
-documents: [irg-n2918, irg-n2960]
-topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs]
+documents: [irg-n2918, irg-n2960, irg-n2943]
+topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-working-set-2024]
 tags: [member-body, source, uk-source]
 timestamp: 2026-07-06T21:31:45+09:00
+meetings: [irg-meeting-67]
 ---
 
 # UK
@@ -22,6 +23,7 @@ UK は、IRG に参加する member body / source で、UK-source representative
 | --- | --- | --- |
 | [IRG N2918](../documents/irg-n2918.md) | UK-source representative glyphs for U+3062B / U+30C68 の update proposal。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
 | [IRG N2960](../documents/irg-n2960.md) | WS2024 review で既存 CJK Unified Ideographs に unified された 2 UK-source characters の horizontal extension proposal。 | [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md) |
+| [IRG N2943](../documents/irg-n2943.md) | John Knightley が N2960 と次期 Working Set 約1,000字の準備を報告。 | [IRG Working Set 2024](../topics/irg-working-set-2024.md) |
 
 ## 関連文書
 
@@ -37,3 +39,4 @@ UK は、IRG に参加する member body / source で、UK-source representative
 
 - `irg-n2918` - <https://www.unicode.org/irg/docs/n2918-UKSourceGlyphIssues.pdf>
 - `irg-n2960` - <https://www.unicode.org/irg/docs/n2960-UKHorizontalExtension.pdf>
+- `irg-n2943` - <https://www.unicode.org/irg/docs/n2943-UKActivityReport.pdf>

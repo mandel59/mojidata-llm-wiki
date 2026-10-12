@@ -20,7 +20,7 @@ okf_version: "0.1"
 - [Ideographic Variation Database](topics/ideographic-variation-database.md) - 全10版の登録履歴、6 collections、UTS \#37 と関連 PRI。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
-- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-08版agenda。改訂 horizontal extensions、TCA / ROK報告、WS2024 reviewと会議運営案を追う。
+- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-12版agenda。U+2EA07再検討、G-source glyph / horizontal extension feedback、UK報告とWS2024 reviewを追う。
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - 7th edition DISとAmendment 1 projectの進行状況。
 - [Small Seal Script](topics/small-seal-script.md) - 7th edition pipelineに入ったSmall Seal repertoire、source model、glyph corrections。
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。

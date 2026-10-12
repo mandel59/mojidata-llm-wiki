@@ -327,9 +327,16 @@
 
 ### 2026
 
-- [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。会合前の placeholder で本文は未公開。
-- [IRG N2939R](irg-n2939r.md) - TCA の次期 Working Set 計画と horizontal extension 5字の確認事項を加えた改訂報告。
+- [IRG N2987](irg-n2987.md) - Wang Xieyang が G-source horizontal extension の2字の修正意向と、他の字形を維持する理由を回答した feedback。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2986](irg-n2986.md) - China が Extension C の GBK-source 5字について glyph、reference、stroke data の修正案を提示した feedback。
+- [IRG N2985](irg-n2985.md) - China が U+2CCA3 を原 evidence の金偏へ戻し、radical / stroke data を修正する案を支持した feedback。
+- [IRG N2984](irg-n2984.md) - 改訂 G-source horizontal extension の15字と追加1字について、字形正規化と evidence の扱いを問う feedback。
+- [IRG N2983](irg-n2983.md) - U+2EA07 の source glyphs を顧 / 䫃との関係から再検討し、SAT evidence の確認を求める報告。
+- [IRG N2977](irg-n2977.md) - U+26866 の radical と V-source references、U+26842 の G-source glyph を合わせて修正する提案。
+- [IRG N2976](irg-n2976.md) - U+21D0A の G-source representative glyph を original evidence に合わせて戻す提案。
+- [IRG N2943](irg-n2943.md) - UK が horizontal extension と次期 Working Set 約1,000字の準備状況を報告した文書。
+- [IRG N2939R](irg-n2939r.md) - TCA の次期 Working Set 計画と horizontal extension 5字の確認事項を加えた改訂報告。
 - [IRG N2941](irg-n2941.md) - ROK の WS2024 review response と次期 Working Set 最大200字の提出計画を報告する。
 - [IRG N2936](irg-n2936.md) - China の未符号化 ideographs、G-source revision、次期 working set 向け作業を報告する文書。
 - [IRG N2929R](irg-n2929r.md) - China が GCW-Source に基づく G-source horizontal extension の対象を9,178文字へ改訂した提案。
@@ -481,6 +488,10 @@
 ### 2000
 
 - [IRG N743](irg-n743.md) - Extension C member body submissions の初期集計。
+
+### Undated
+
+- [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。本文未公開の placeholder。
 
 ## PRI
 

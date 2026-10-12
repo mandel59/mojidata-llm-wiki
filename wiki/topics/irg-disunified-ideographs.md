@@ -4,9 +4,9 @@ title: IRG Disunified Ideographs
 description: "IRG Meeting #45 以降の CJK ideograph disunification と、その決定経路をまとめる IRG reference page。"
 slug: irg-disunified-ideographs
 bodies: [UTC, WG2, IRG]
-documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2767, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911, wg2-n5353]
+documents: [irg-n2491r, irg-n2517, irg-n2552, irg-n2654r, irg-n2710r, irg-n2767, irg-n2786, irg-n2811, irg-n2892, irg-n2909, irg-n2911, wg2-n5353, irg-n2834, irg-n2983, irg-n2935]
 topics: [ucv-nucv-lists, irg-source-data-and-representative-glyphs, cjk-horizontal-extensions]
-meetings: [irg-meeting-66]
+meetings: [irg-meeting-66, irg-meeting-67]
 people: [irg]
 status: active
 tags: [irg, cjk, disunification, unification]
@@ -32,6 +32,7 @@ IRG Meeting \#66 は、この web page を旧 `IWDS Series 4` の replacement �
 | 2026-02-16 | IRG | [IRG Disunified Ideographs](https://www.unicode.org/irg/disunified.html) | web page の表示上の最終更新日。pending と implemented の表から decision trail を参照できる。 |
 | 2026-03-19 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.05 が web page を `IWDS Series 4` の replacement として accept した。 |
 | 2026-04-30 | IRG / WG2 | [WG2 N5353](../documents/wg2-n5353.md) | Meetings \#65 / \#66 の disunifications と web page への移行を WG2 に報告した。 |
+| 2026-10-11 | IRG | [IRG N2983](../documents/irg-n2983.md) | U+2EA07 の source glyphs を再検討し、SAT の original evidence の確認を求めた。 |
 
 ## 主な論点
 
@@ -47,6 +48,10 @@ disunification は IRG recommendation だけで完結せず、WG2 recommendation
 
 [UCV and NUCV Lists](ucv-nucv-lists.md) が component variation の unifiable / non-unifiable boundary を例示するのに対し、IRG Disunified Ideographs page は個別 code point の disunification と実装状況を記録する。Meeting \#66 では、この page の採択と NUCV exception note が同じ recommendation 群で扱われた。
 
+### U+2EA07 の後続調査
+
+[IRG N2983](../documents/irg-n2983.md) は、[IRG N2786](../documents/irg-n2786.md) / [IRG N2834](../documents/irg-n2834.md) の後に U+2EA07 へ集約された source glyphs を、顧 / 䫃の異体関係から問い直す。[IRG N2935](../documents/irg-n2935.md) の2026-10-12版は Section 7 に掲載するが、特定の再分離案の採択を記録していない。過去の決定を上書きせず、新たな evidence review として追う。
+
 ## 関連文書
 
 - [IRG N2491R](../documents/irg-n2491r.md) - Meeting \#45 から \#56 までの初期 source-remapping list。
@@ -55,6 +60,8 @@ disunification は IRG recommendation だけで完結せず、WG2 recommendation
 - [IRG N2909](../documents/irg-n2909.md) - Meeting \#66 recommendations。
 - [IRG N2911](../documents/irg-n2911.md) - Meeting \#66 CJK editorial group report。
 - [IRG N2892](../documents/irg-n2892.md) - Meeting \#45 から \#65 までの IRG Disunified Ideographs。
+
+- [IRG N2983](../documents/irg-n2983.md) - Some Further Research on U+2EA07。
 
 ## 関連トピック
 
@@ -68,3 +75,5 @@ disunification は IRG recommendation だけで完結せず、WG2 recommendation
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2911` - <https://www.unicode.org/irg/docs/n2911-MiscEditorialReport.pdf>
 - `irg-n2892` - <https://www.unicode.org/irg/docs/n2892-Disunified.pdf>
+- `irg-n2983` - <https://www.unicode.org/irg/docs/n2983-FurtherResearch2EA07.pdf>
+- `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>

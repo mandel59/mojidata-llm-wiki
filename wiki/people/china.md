@@ -4,10 +4,11 @@ title: China
 description: G-source、Small Seal Script、CJKV Components、CJK Hybrid Characters に関係する China member body。
 slug: china
 bodies: [IRG, WG2]
-documents: [irg-n891, irg-n1519, irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369]
+documents: [irg-n891, irg-n1519, irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369, irg-n2985, irg-n2986, irg-n2984, irg-n2987]
 topics: [cjk-horizontal-extensions, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, cjkv-components, g-source-glyph-and-reference-issues, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
 timestamp: 2026-07-06T21:31:45+09:00
+meetings: [irg-meeting-67]
 ---
 
 # China
@@ -33,6 +34,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | `WG2 N5355` | TCA とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5369` | CD.4 disposition の China comment `CN6-025` として Small Seal radical / modern CJK corrections を提示。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2935` | Meeting \#67 agenda で G-source reference / glyph response、G-source horizontal extension revised document の follow-up が予定されている。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
+| [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | Tao Yang が source owner の立場から U+2CCA3 と GBK-source 5字の修正案を回答。会合決定は後続確認。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
 
 ## 関連文書
 
@@ -81,3 +83,5 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 - `wg2-n5318` - <https://www.unicode.org/wg2/docs/n5318R-Proposal%20to%20encode%20Four-Column%20Small%20Seal%20Script%20in%20UCS.pdf>
 - `wg2-n5355` - <https://www.unicode.org/wg2/docs/n5355-SealNormalizedForm.pdf>
 - `wg2-n5369` - <https://www.unicode.org/wg2/docs/n5369-CD7th-4-DOC.pdf>
+- `irg-n2985` - <https://www.unicode.org/irg/docs/n2985-IRGN2954-N2955Feedback.pdf>
+- `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>

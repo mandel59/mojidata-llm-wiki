@@ -54,7 +54,7 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 
 ### 次回 review 用 URL
 
-register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は空欄で、2026-10-10 の取得は HTTP 404 だった。本文を読めないため、改訂内容や list の切替を推定せず、既存の公開版と会合記録を基準にする。
+register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は空欄で、2026-10-12 の再取得は HTTP 404 だった。本文を読めないため、改訂内容や list の切替を推定せず、既存の公開版と会合記録を基準にする。
 
 ## 関連文書
 

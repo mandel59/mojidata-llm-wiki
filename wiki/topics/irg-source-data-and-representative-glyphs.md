@@ -4,8 +4,8 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r]
-topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2983]
+topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, irg-disunified-ideographs]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -81,6 +81,12 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ### Horizontal extension の glyph 確認
 
 [IRG N2939R](../documents/irg-n2939r.md) は、[IRG N2972](../documents/irg-n2972.md) の700字提案のうち5字に suggestions が寄せられ、TCA が会合で glyph を説明すると報告する。具体的な修正案や承認は記録しない。個別の確認事項は改訂報告で、提案全体の審議予定は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
+
+### Meeting \#67 開始時の追加資料
+
+2026-10-12版 agenda は [IRG N2976](../documents/irg-n2976.md) / [IRG N2977](../documents/irg-n2977.md) の glyph issues と、China の [IRG N2985](../documents/irg-n2985.md) / [IRG N2986](../documents/irg-n2986.md) を Section 9.1 に加える。具体的な修正案は [G-source Glyph and Source Reference Issues](g-source-glyph-and-reference-issues.md) で追う。
+
+[IRG N2984](../documents/irg-n2984.md) / [IRG N2987](../documents/irg-n2987.md) の horizontal extension feedback は [CJK Horizontal Extensions](cjk-horizontal-extensions.md)、[IRG N2983](../documents/irg-n2983.md) の U+2EA07 調査は [IRG Disunified Ideographs](irg-disunified-ideographs.md) へ分ける。いずれも会合結果ではなく提出資料である。
 
 ## 関連文書
 
@@ -167,3 +173,10 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
 - `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>
+- `irg-n2976` - <https://www.unicode.org/irg/docs/n2976-GSourceGlyphIssue.pdf>
+- `irg-n2977` - <https://www.unicode.org/irg/docs/n2977-GlyphIssues.pdf>
+- `irg-n2984` - <https://www.unicode.org/irg/docs/n2984-IRGN2929RFeedback.pdf>
+- `irg-n2985` - <https://www.unicode.org/irg/docs/n2985-IRGN2954-N2955Feedback.pdf>
+- `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>
+- `irg-n2987` - <https://www.unicode.org/irg/docs/n2987-IRGN2984Feedback.pdf>
+- `irg-n2983` - <https://www.unicode.org/irg/docs/n2983-FurtherResearch2EA07.pdf>

@@ -4,12 +4,13 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
 tags: [irg, g-source, source-reference, representative-glyphs]
 timestamp: 2026-07-08T00:00:00+09:00
+meetings: [irg-meeting-67]
 ---
 
 # G-source Glyph and Source Reference Issues
@@ -41,6 +42,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 | 2026-06-10 | IRG | [IRG N2958](../documents/irg-n2958.md) | Ma Shijie が多数の G-source glyph revisions を提案し、normal form、taboo form、source evidence、glyph convention の関係を問題にした。 |
 | 2026-06-10 | IRG | [IRG N2959](../documents/irg-n2959.md) | Ma Shijie が SAT-source glyph issues を提出した。G-source ではないが、representative glyph correction queue として同じ Section 9.1 に接続する。 |
 | 2026-07-04 | IRG | [IRG N2962](../documents/irg-n2962.md) | Lin Anning が 9 G-source glyphs の revision request を提出し、G-source convention と original evidence に基づく修正を求めた。 |
+| 2026-10-11 | IRG | [IRG N2976](../documents/irg-n2976.md), [IRG N2977](../documents/irg-n2977.md) | U+21D0A の glyph 重複と U+26842 / U+26866 の source / radical 調整案が提出された。 |
+| 2026-10-11 | IRG | [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | China が U+2CCA3 と GBK-source 5字の修正案を回答した。 |
+| 2026-10-11/12 | IRG | [IRG N2984](../documents/irg-n2984.md), [IRG N2987](../documents/irg-n2987.md) | G-source horizontal extension の normalization feedback と回答が公開された。 |
 
 ## 主な論点
 
@@ -78,6 +82,16 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 
 [IRG N2959](../documents/irg-n2959.md) は SAT-source glyphs を扱うため、G-source topic の中核ではない。ただし、current representative glyph と source evidence の整合、radical / stroke data の修正、Meeting \#67 Section 9.1 の review queue という点では同じ作業単位に属する。G-source 固有の責任主体と SAT-source 固有の責任主体を混同しないよう、ここでは隣接案件として扱う。
 
+### China の source-owner feedback
+
+[IRG N2985](../documents/irg-n2985.md) は U+2CCA3 の glyph を ⿰钅𣃍 へ戻す案を支持し、radical / stroke data と U+28C09 との対応を示す。[IRG N2986](../documents/irg-n2986.md) は GBK-source 5字について glyph 修正2件、reference 修正3件を提案する。具体的な値は各文書ページで追い、会合決定や確定 data と区別する。
+
+### 新規 glyph issue と normalization 方針
+
+[IRG N2976](../documents/irg-n2976.md) は U+21D0A を original evidence の形へ戻す案、[IRG N2977](../documents/irg-n2977.md) は U+26842 / U+26866 の G / V-source と radical を合わせて扱う案である。
+
+[IRG N2984](../documents/irg-n2984.md) / [IRG N2987](../documents/irg-n2987.md) は新しい horizontal extension glyph に関する論争であり、既存 G-source correction と区別する。修正意向と source normalization の方針は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
+
 ## 関連文書
 
 - [IRG N2919R](../documents/irg-n2919r.md) - 3 G-source glyphs と 10 references の proposal。
@@ -95,6 +109,13 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 - [IRG N2889R2](../documents/irg-n2889r2.md) - G-source glyph 修正への feedback。
 - [IRG N2962R2](../documents/irg-n2962r2.md) - 9 glyphs の revision request の改訂版。
 - [IRG N2963R3](../documents/irg-n2963r3.md) - G-source glyph / reference 修正案への feedback。
+
+- [IRG N2976](../documents/irg-n2976.md) - Proposal on the glyph issue of U+21D0A and U+20553。
+- [IRG N2977](../documents/irg-n2977.md) - Proposal for handling the issues of U+26842 and U+26866。
+- [IRG N2984](../documents/irg-n2984.md) - Feedback on IRG N2929R。
+- [IRG N2985](../documents/irg-n2985.md) - Feedback to IRG N2954 and IRG N2955。
+- [IRG N2986](../documents/irg-n2986.md) - Feedback to IRG N2956。
+- [IRG N2987](../documents/irg-n2987.md) - Feedback to IRG N2984。
 
 ## 関連トピック
 
@@ -121,3 +142,9 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 - `irg-n2958` - <https://www.unicode.org/irg/docs/n2958-GSourceGlyphIssues.pdf>
 - `irg-n2959` - <https://www.unicode.org/irg/docs/n2959-SSourceGlyphIssues.pdf>
 - `irg-n2962` - <https://www.unicode.org/irg/docs/n2962-GSourceGlyphIssues.pdf>
+- `irg-n2976` - <https://www.unicode.org/irg/docs/n2976-GSourceGlyphIssue.pdf>
+- `irg-n2977` - <https://www.unicode.org/irg/docs/n2977-GlyphIssues.pdf>
+- `irg-n2984` - <https://www.unicode.org/irg/docs/n2984-IRGN2929RFeedback.pdf>
+- `irg-n2985` - <https://www.unicode.org/irg/docs/n2985-IRGN2954-N2955Feedback.pdf>
+- `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>
+- `irg-n2987` - <https://www.unicode.org/irg/docs/n2987-IRGN2984Feedback.pdf>

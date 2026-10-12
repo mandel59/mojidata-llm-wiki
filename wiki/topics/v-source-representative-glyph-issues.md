@@ -4,7 +4,7 @@ title: V-source Representative Glyph Issues
 description: V-source / Nom glyph evidence、Vietnam NB confirmation、representative glyph change と Unihan property update の論点。
 slug: v-source-representative-glyph-issues
 bodies: [IRG, UTC]
-documents: [utc-l2-26-068, utc-l2-26-099, irg-n2909, irg-n2911, irg-n2928, irg-n2935, irg-n2945, irg-n2953]
+documents: [utc-l2-26-068, utc-l2-26-099, irg-n2909, irg-n2911, irg-n2928, irg-n2935, irg-n2945, irg-n2953, irg-n2977]
 topics: [irg-source-data-and-representative-glyphs, unihan-database-maintenance]
 people: [vietnam, ng-koon-hang, irg, utc]
 status: active
@@ -31,6 +31,7 @@ V-source representative glyph issues は、Vietnam / Nom evidence に基づく C
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が U+2B8A0 の V-source representative glyph change と `kRSUnicode` / `kTotalStrokes` 変更を Unicode Version 18.0 target で受け入れるよう勧告した。 |
 | 2026-07-05 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が U+268A1 / U+268A2 issue を Section 9.1 の "Redux" issue として置き、[IRG N2953](../documents/irg-n2953.md) を follow-up input にした。 |
 | 2026-09-24 | IRG | [IRG N2945](../documents/irg-n2945.md) | Vietnam が U+268A1 / U+268A2 の glyph normalization 案を将来の提案に含める予定と報告した。 |
+| 2026-10-11 | IRG | [IRG N2977](../documents/irg-n2977.md) | U+26842 / U+26866 の V-source references の交換と radical / G-source glyph 調整を提案した。 |
 
 ## 主な論点
 
@@ -52,6 +53,10 @@ U+268A1 / U+268A2 はまだ glyph change の採否が記録されていないた
 
 IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 に残っている。一方、UTC 側で accepted された V-source glyph / property change は Unihan database と code chart action item へ変換される。したがって、IRG document だけでなく、UTC CJK & Unihan Working Group recommendations と会合 minutes でどの時点の状態かを確認する必要がある。
 
+### U+26842 / U+26866 の source references
+
+[IRG N2977](../documents/irg-n2977.md) は U+26866 を月 radical とし、V2-8222 と VN references の交換、U+26842 の G-source glyph 修正を連動させる個人提案である。Vietnam NB と China NB の検討を求めた段階であり、U+268A1 / U+268A2 の既存 issue や確定した data changes と混同しない。
+
 ## 関連文書
 
 - [L2/26-068](../documents/utc-l2-26-068.md) - U+2B8A0 の V-source glyph / property change proposal。
@@ -62,6 +67,8 @@ IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 
 - [IRG N2909](../documents/irg-n2909.md) - IRG Meeting \#66 recommendations。
 - [IRG N2911](../documents/irg-n2911.md) - IRG Meeting \#66 editorial report。
 - [IRG N2935](../documents/irg-n2935.md) - IRG Meeting \#67 agenda。
+
+- [IRG N2977](../documents/irg-n2977.md) - Proposal for handling the issues of U+26842 and U+26866。
 
 ## 関連トピック
 
@@ -87,3 +94,4 @@ IRG 側の V-source glyph issue は、Meeting \#67 agenda の Section 4.9 / 9.1 
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2953` - <https://www.unicode.org/irg/docs/n2953-IRGN2928Followup.pdf>
 - `irg-n2945` - <https://www.unicode.org/irg/docs/n2945-VietnamActivityReport.pdf>
+- `irg-n2977` - <https://www.unicode.org/irg/docs/n2977-GlyphIssues.pdf>
