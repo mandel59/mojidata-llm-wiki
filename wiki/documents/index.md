@@ -190,6 +190,8 @@
 - [L2/19-328](utc-l2-19-328.md) - `kSpoofingVariant` data と review process の問題提起。
 - [L2/19-282](utc-l2-19-282.md) - `kSpoofingVariant` field の初期 data proposal。
 - [L2/19-281](utc-l2-19-281.md) - `kZVariant` field の 93-pair data proposal。
+- [L2/19-186](utc-l2-19-186.md) - 旧 kZVariant の生成上の問題、全面見直し、spoofing variants 用の新 field を扱う ad hoc report。
+- [L2/19-015](utc-l2-19-015.md) - Unicode 13.0 に向けた kZVariant の全面置換、定義・syntax 改訂の提案。
 
 ### 2017
 
@@ -206,6 +208,7 @@
 ### 2015
 
 - [L2/15-343](utc-l2-15-343.md) - Hentaigana revised proposal。
+- [L2/15-266](utc-l2-15-266.md) - kZVariant の定義と既存データの全面置換を求めた2015年の提案。L2/19-015 の旧版。
 - [L2/15-239](utc-l2-15-239.md) - Japanese HENTAIGANA 初期 proposal。
 
 ### 2013

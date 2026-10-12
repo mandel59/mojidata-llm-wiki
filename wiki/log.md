@@ -2,6 +2,11 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-13
+
+- **Digest / Topic**: [kZVariant](topics/kzvariant.md) を追加し、[L2/15-266](documents/utc-l2-15-266.md)、[L2/19-015](documents/utc-l2-19-015.md)、[L2/19-186](documents/utc-l2-19-186.md) を精読・digest。既存 L2/19-281 / L2/19-328 に後続確認を追加し、L2/22-133 / L2/26-127、Unihan / security topics、John H. Jenkins、Han family と相互リンクした。UTC \#158 / \#159 / \#160 minutes で指示の対象を確認し、提案を採択済み一覧として扱わない。
+- **Event**: [Unicode 13.0 kZVariant data overhaul](events/unicode-13-kzvariant-data-overhaul.md) を追加。正式 Unihan 12.0.0 / 13.0.0 を Git 管理外 cache に取得して比較し、行数・方向付き関係・組数と削除例を記録。UAX \#44 の公式記載「2,438 entries」と実データ集計の不一致を明示し、削除を spoofing field への自動移行と解釈しない。
+
 ## 2026-10-12
 
 - **Catalog**: UTC / WG2 / IRG / PRI の最新 register を再取得。変更は IRG の9件で、`IRG N2935` / `N2943` の日付更新と `N2976` / `N2977` / `N2983`～`N2987` の公開・表題・source・URL を反映した。過去目録を保持し、UTC / WG2 / PRI に差分はなかった。

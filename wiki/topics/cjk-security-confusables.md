@@ -7,7 +7,9 @@ bodies: [UTC, IRG]
 documents: [irg-n2206, utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127, utc-l2-26-154, pri-553]
 status: active
 tags: [cjk, security, confusables, uts39]
-timestamp: 2026-07-07T00:00:00+09:00
+timestamp: 2026-10-13T00:00:00+09:00
+topics: [kzvariant]
+events: [unicode-13-kzvariant-data-overhaul]
 ---
 
 # CJK Security Confusables
@@ -35,6 +37,8 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 | 2026-07-07 | UTC | [PRI \#553](../documents/pri-553.md) | UTC が UTS \#39 Revision 33 の Unicode 18.0 public review issue を close し、security mechanisms / confusables data の finalization を UTC \#188 へ接続した。 |
 
 ## 主な論点
+
+`kZVariant` の定義・Unicode 13.0 向け全面見直しは [専用 topic](kzvariant.md)、正式データの変更は [release event](../events/unicode-13-kzvariant-data-overhaul.md) から読む。
 
 ### CJK WG review の必要性
 
@@ -82,6 +86,8 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 - [PRI \#553](../documents/pri-553.md)
 
 ## 関連トピック
+
+- [kZVariant](kzvariant.md)
 
 - [Han Ideographic Scripts](../families/han-ideographic-scripts.md)
 - [Unihan Database Maintenance](unihan-database-maintenance.md)

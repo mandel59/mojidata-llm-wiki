@@ -4,6 +4,8 @@ Script、block、property、proposal、横断論点などの精読ページを�
 
 ## 一覧
 
+- [kZVariant](kzvariant.md) - Unicode 12.0→13.0 のデータ見直しと大量削除、Z-variants と spoofing variants の境界。
+
 - [Ideographic Variation Database](ideographic-variation-database.md) - IVD collections、登録履歴、UTS \#37 と PRI を追う入口。
 - [Small Seal Script](small-seal-script.md) - `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。
 - [IRG Working Set 2024](irg-working-set-2024.md) - IRG Working Set 2024 Version 5.0 review と schedule。

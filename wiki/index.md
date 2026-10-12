@@ -17,6 +17,8 @@ okf_version: "0.1"
 
 ## Current Focus
 
+- [kZVariant](topics/kzvariant.md) - Unicode 12.0→13.0 の全面見直し、関連提案と正式データの削除例。
+
 - [Ideographic Variation Database](topics/ideographic-variation-database.md) - 全10版の登録履歴、6 collections、UTS \#37 と関連 PRI。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
@@ -26,7 +28,7 @@ okf_version: "0.1"
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-09登録のWei Rma / Wagindaraなどの提案と、既存のprovisional assignment / 保留を追う。
 
-完全な53 topicは [Topics index](topics/index.md) を参照してください。
+完全な54 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
 

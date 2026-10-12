@@ -6,6 +6,7 @@
 
 ## All Events
 
+- [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10) - Unicode 13.0 の正式 Unihan data で旧 kZVariant の大幅削除と再構成が反映された出来事。
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27) - WG2 \#72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27) - WG2 \#72 が 11,339 Small Seal characters を将来版候補として検討するよう勧告した出来事。
 - [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14) - IVD Registrar が PRI \#521 review 後に CAAPH collection と 198 IVS を登録し、IVD 2025-07-14 を公開した出来事。
@@ -38,6 +39,10 @@
 ### [CJK Multi-Syllabic and Abbreviation Characters](../topics/cjk-multi-syllabic-and-abbreviation-characters.md)
 
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
+
+### [CJK Security Confusables](../topics/cjk-security-confusables.md)
+
+- [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
 
 ### [CJKV Components](../topics/cjkv-components.md)
 
@@ -84,6 +89,10 @@
 
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 
+### [kZVariant](../topics/kzvariant.md)
+
+- [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
+
 ### [Small Seal Script](../topics/small-seal-script.md)
 
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
@@ -118,6 +127,7 @@
 
 ### [Unihan Database Maintenance](../topics/unihan-database-maintenance.md)
 
+- [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
 ## By Body
@@ -137,6 +147,7 @@
 
 ### UTC
 
+- [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
 
