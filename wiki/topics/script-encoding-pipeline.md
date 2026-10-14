@@ -4,7 +4,7 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368, utc-l2-26-181r, utc-l2-26-219, utc-l2-26-220, utc-l2-26-221, utc-l2-26-222, utc-l2-26-223, utc-l2-26-224, utc-l2-26-225, utc-l2-26-226]
+documents: ["utc-l2-13-116", "utc-l2-20-180", "utc-l2-21-209", "utc-l2-22-073", "utc-l2-22-222", "utc-l2-23-203", "utc-l2-24-246", "utc-l2-24-273", "utc-l2-26-050r", "utc-l2-26-092", "utc-l2-26-093", "utc-l2-26-100", "utc-l2-26-151", "utc-l2-26-158", "utc-l2-26-160r", "utc-l2-26-161", "utc-l2-26-015r", "utc-l2-26-028r", "utc-l2-26-040r2", "utc-l2-26-065", "utc-l2-26-079", "utc-l2-26-087", "utc-l2-26-088", "utc-l2-26-089", "utc-l2-26-090", "utc-l2-26-091", "utc-l2-26-113", "utc-l2-26-114", "utc-l2-26-117", "utc-l2-26-118", "utc-l2-26-119", "utc-l2-26-120", "utc-l2-26-129", "utc-l2-26-131", "utc-l2-26-132", "utc-l2-26-137", "utc-l2-26-144", "pri-554", "utc-l2-25-131", "wg2-n5310r", "wg2-n5340", "wg2-n5354", "wg2-n5361r", "wg2-n5362", "wg2-n5365", "wg2-n5368", "utc-l2-26-181r", "utc-l2-26-219", "utc-l2-26-220", "utc-l2-26-221", "utc-l2-26-222", "utc-l2-26-223", "utc-l2-26-224", "utc-l2-26-225", "utc-l2-26-226", "utc-l2-26-227", "utc-l2-26-229", "utc-l2-26-230", "utc-l2-26-243", "utc-l2-26-244", "utc-l2-26-245", "utc-l2-26-246", "utc-l2-26-247", "utc-l2-26-248", "utc-l2-26-249", "utc-l2-26-252", "utc-l2-26-257", "utc-l2-26-258"]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73]
 status: active
@@ -55,6 +55,7 @@ Script Encoding Pipeline は、script / character proposals が UTC で provisio
 | 2026-10-09 | UTC | [L2/26-181R](../documents/utc-l2-26-181r.md), [L2/26-221](../documents/utc-l2-26-221.md), [L2/26-222](../documents/utc-l2-26-222.md) | Jain Nagari の2記号と Kham Dom Pa’O の3字を追加する提案が登録された。 |
 | 2026-10-09 | UTC | [L2/26-223](../documents/utc-l2-26-223.md), [L2/26-224](../documents/utc-l2-26-224.md) | Wei Rma 69字、Wagindara 39字の改訂提案が登録された。 |
 | 2026-10-09 | UTC | [L2/26-219](../documents/utc-l2-26-219.md), [L2/26-220](../documents/utc-l2-26-220.md), [L2/26-225](../documents/utc-l2-26-225.md), [L2/26-226](../documents/utc-l2-26-226.md) | Mongolian shaping guidance、Big5 double arcs、turned dotless i、Vithkuqi annotations の提案が登録された。 |
+| 2026-10-12/13 | UTC | L2/26-227、229、230、243–246、248–249、252、257–258 | Arabic / Latin / Cyrillic 追加、Quikscript・Kadu・Zou、Turkestan Brāhmī の新規・再提案。採択は後続記録で確認する。 |
 
 ## 主な論点
 
@@ -107,6 +108,32 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 [turned dotless i](../documents/utc-l2-26-225.md) は既存 Soft_Dotted property の変更を避ける新文字案、[Big5 double arcs](../documents/utc-l2-26-220.md) は legacy conversion の情報保持、[Vithkuqi](../documents/utc-l2-26-226.md) は新文字追加を伴わない注釈修正である。いずれも登録された提案であり、UTC の採否・assignment は後続の一次記録で確認する。
 
 ## 関連文書
+
+- [L2/26-258](../documents/utc-l2-26-258.md) - Dr. T Marvin Zou が Zou / Zoulai script と numerals の符号化を提案する。
+
+- [L2/26-257](../documents/utc-l2-26-257.md) - Kadu Than Naing が Kadu language 用の Asak kyeing を符号化する案を提出する。
+
+- [L2/26-252](../documents/utc-l2-26-252.md) - Francesco Catoni が North / South Turkestan Brāhmī を既存 Brahmi block 内で扱う preliminary proposal を提出する。
+
+- [L2/26-249](../documents/utc-l2-26-249.md) - Biswajit Mandal が DEVANAGARI DOUBLE SEPARATOR 1文字を提案する。
+
+- [L2/26-248](../documents/utc-l2-26-248.md) - Biswajit Mandal が Jain Nagari などの Sanskrit / Prakrit 写本に使う3 signs を提案する。
+
+- [L2/26-247](../documents/utc-l2-26-247.md) - Roozbeh Pournader が UTC 159-A81 に対応し、Core Specification の cedilla / comma rendering 説明を修正するよう報告する。
+
+- [L2/26-246](../documents/utc-l2-26-246.md) - Denis Moyogo Jacquerye が LATIN CAPITAL LETTER TURNED W 1文字を再提案する。
+
+- [L2/26-245](../documents/utc-l2-26-245.md) - Yoram Meroz と Karl Pentzlin が Yahgan / Ona の記録に使う Ellis’s Phonotypic Alphabet 拡張8文字を提案する。
+
+- [L2/26-244](../documents/utc-l2-26-244.md) - Kirk Miller が South Slavic の音声・方言表記に使う Cyrillic modifier letters 6文字を提案する。
+
+- [L2/26-243](../documents/utc-l2-26-243.md) - Karl Pentzlin が Kingsley Read の Quikscript を Shavian から独立した script として符号化する案を提出する。
+
+- [L2/26-230](../documents/utc-l2-26-230.md) - Karl Pentzlin が Benjamin Franklin の reformed alphabet の未符号化 Latin letters 4文字を再提案する。
+
+- [L2/26-229](../documents/utc-l2-26-229.md) - Rikza F. Sh. が特殊な Indo-Pak mushaf の tajwīd・waqf・補助注記に使う Arabic characters 26文字を提案する。
+
+- [L2/26-227](../documents/utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
 
 - [L2/26-226](../documents/utc-l2-26-226.md) - Unicode request for Vithkuqi annotations II。
 
@@ -233,3 +260,16 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 - `utc-l2-26-224` - <https://www.unicode.org/L2/L2026/26224-wagindara.pdf>
 - `utc-l2-26-225` - <https://www.unicode.org/L2/L2026/26225-turned-dotless-i.pdf>
 - `utc-l2-26-226` - <https://www.unicode.org/L2/L2026/26226-vithkuqi.pdf>
+- `utc-l2-26-227` - <https://www.unicode.org/L2/L2026/26227-alef-maksura-with-comma-above.pdf>
+- `utc-l2-26-229` - <https://www.unicode.org/L2/L2026/26229-indo-pak-mushafs.pdf>
+- `utc-l2-26-230` - <https://www.unicode.org/L2/L2026/26230-benjaminfranklin.pdf>
+- `utc-l2-26-243` - <https://www.unicode.org/L2/L2026/26243-quikscript.pdf>
+- `utc-l2-26-244` - <https://www.unicode.org/L2/L2026/26244-cyrillic-modifier-letters.pdf>
+- `utc-l2-26-245` - <https://www.unicode.org/L2/L2026/26245-yahgan-ona.pdf>
+- `utc-l2-26-246` - <https://www.unicode.org/L2/L2026/26246-latin-capital-letter-turned-w.pdf>
+- `utc-l2-26-247` - <https://www.unicode.org/L2/L2026/26247-commas-and-cedillas.pdf>
+- `utc-l2-26-248` - <https://www.unicode.org/L2/L2026/26248-three-new-characters-devanagari.pdf>
+- `utc-l2-26-249` - <https://www.unicode.org/L2/L2026/26249-devanagari-double-separator.pdf>
+- `utc-l2-26-252` - <https://www.unicode.org/L2/L2026/26252-turkestan-brahmi.pdf>
+- `utc-l2-26-257` - <https://www.unicode.org/L2/L2026/26257-kadu.pdf>
+- `utc-l2-26-258` - <https://www.unicode.org/L2/L2026/26258-zou.pdf>

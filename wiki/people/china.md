@@ -4,7 +4,7 @@ title: China
 description: G-source、Small Seal Script、CJKV Components、CJK Hybrid Characters に関係する China member body。
 slug: china
 bodies: [IRG, WG2]
-documents: [irg-n891, irg-n1519, irg-n2866r2, irg-n2867r, irg-n2893, irg-n2878r3, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, wg2-n5369, irg-n2985, irg-n2986, irg-n2984, irg-n2987]
+documents: ["irg-n891", "irg-n1519", "irg-n2866r2", "irg-n2867r", "irg-n2893", "irg-n2878r3", "irg-n2929", "irg-n2929r", "irg-n2935", "irg-n2936", "wg2-n4634", "wg2-n4688", "wg2-n5105", "wg2-n5318", "wg2-n5355", "wg2-n5369", "irg-n2985", "irg-n2986", "irg-n2984", "irg-n2987", "irg-n2929r2", "irg-n2969r", "irg-n2988"]
 topics: [cjk-horizontal-extensions, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, cjkv-components, g-source-glyph-and-reference-issues, small-seal-script, irg-source-data-and-representative-glyphs]
 tags: [member-body, source, china, g-source]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -37,6 +37,12 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | Tao Yang が source owner の立場から U+2CCA3 と GBK-source 5字の修正案を回答。会合決定は後続確認。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
 
 ## 関連文書
+
+- [IRG N2988](../documents/irg-n2988.md) - Request to revise some G-source glyphs
+
+- [IRG N2969R](../documents/irg-n2969r.md) - China’s UNC proposal on 1 character for Collected Works of Mao Zedong
+
+- [IRG N2929R2](../documents/irg-n2929r2.md) - G-Source horizontal extensions for 9178 characters
 
 - `irg-n2929` - G-source horizontal extensions for 9156 characters
 - [IRG N891](../documents/irg-n891.md) - China Extension C1 submission
@@ -85,3 +91,6 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 - `wg2-n5369` - <https://www.unicode.org/wg2/docs/n5369-CD7th-4-DOC.pdf>
 - `irg-n2985` - <https://www.unicode.org/irg/docs/n2985-IRGN2954-N2955Feedback.pdf>
 - `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>
+- `irg-n2929r2` - <https://www.unicode.org/irg/docs/n2929r2-ChinaHorizontalExtension.pdf>
+- `irg-n2969r` - <https://www.unicode.org/irg/docs/n2969r-UNC-China.pdf>
+- `irg-n2988` - <https://www.unicode.org/irg/docs/n2988-GSourceGlyphIssues.pdf>

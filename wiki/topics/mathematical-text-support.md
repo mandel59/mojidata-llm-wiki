@@ -5,7 +5,7 @@ description: "UTR #25 を入口に、Unicode の数学文字 repertoire、Math p
 slug: mathematical-text-support
 aliases: ["UTR #25", "Unicode Support for Mathematics", "MathClass"]
 bodies: [UTC]
-documents: [pri-533, utc-l2-25-267, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149]
+documents: ["pri-533", "utc-l2-25-267", "utc-l2-26-140", "utc-l2-26-141", "utc-l2-26-142", "utc-l2-26-143", "utc-l2-26-149", "utc-l2-26-228"]
 topics: [unicode-properties-and-algorithms, leibnizian-and-historic-mathematical-symbols, plain-text-composition-and-overstriking, unicode-set-notation]
 meetings: [utc-meeting-188]
 status: active
@@ -29,6 +29,7 @@ Mathematical Text Support は、Unicode の数学文字 repertoire、mathematica
 | 2026-05-26 | UTC / WG2 | [L2/26-140](../documents/utc-l2-26-140.md), [L2/26-141](../documents/utc-l2-26-141.md), [L2/26-142](../documents/utc-l2-26-142.md), [L2/26-143](../documents/utc-l2-26-143.md) | historic mathematical sources / Leibnizian signs 用の symbols、combining marks、letterlike symbols、variation sequences が UTC \#188 / WG2 Amendment 1 候補として提出された。 |
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian VS names と Unicode 18.0 delta charts への feedback が提出された。 |
 | 2026-07-07 | PRI | [PRI \#533](../documents/pri-533.md) | UTR \#25 Revision 16 draft 2 public review の closing date。2026-07-10 時点で PRI page / catalog は Open。 |
+| 2026-10-12 | UTC | [L2/26-228](../documents/utc-l2-26-228.md) | balanced ternary の −1 用 TURNED DIGIT ONE を提案。 |
 
 ## 主な論点
 
@@ -56,6 +57,8 @@ Mathematical alphanumeric symbols は、数式内で font style に見える差�
 
 ## 関連文書
 
+- [L2/26-228](../documents/utc-l2-26-228.md) - Adam Victor が balanced ternary の負の単位桁 −1 を表す TURNED DIGIT ONE 1文字を提案する。
+
 - [PRI \#533](../documents/pri-533.md) - UTR \#25 Revision 16 public review。
 - [L2/25-267](../documents/utc-l2-25-267.md) - UTR \#25 Revision 16 proposed update。
 - [L2/26-140](../documents/utc-l2-26-140.md) - miscellaneous mathematical symbols。
@@ -76,3 +79,4 @@ Mathematical alphanumeric symbols は、数式内で font style に見える差�
 - `pri-533` - <https://www.unicode.org/review/pri533/>
 - UTR \#25 Revision 16 draft 2 - <https://www.unicode.org/reports/tr25/tr25-16d2.html>
 - `utc-l2-25-267` - <https://www.unicode.org/L2/L2025/25267-utr25-update-16-pri533.pdf>
+- `utc-l2-26-228` - <https://www.unicode.org/L2/L2026/26228-turned-digit-one.pdf>

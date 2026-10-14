@@ -22,15 +22,17 @@ okf_version: "0.1"
 - [Ideographic Variation Database](topics/ideographic-variation-database.md) - 全10版の登録履歴、6 collections、UTS \#37 と関連 PRI。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
-- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-12版agenda。U+2EA07再検討、G-source glyph / horizontal extension feedback、UK報告とWS2024 reviewを追う。
+- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-14版agendaの進捗、改訂 horizontal extensions、TCA差替えとUK回答を追う。
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - 7th edition DISとAmendment 1 projectの進行状況。
 - [Small Seal Script](topics/small-seal-script.md) - 7th edition pipelineに入ったSmall Seal repertoire、source model、glyph corrections。
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
-- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-09登録のWei Rma / Wagindaraなどの提案と、既存のprovisional assignment / 保留を追う。
+- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-12/13登録のQuikscript / Kadu / Zou、Arabic / Latin追加案と既存の保留を追う。
 
 完全な54 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
+
+- [TCA U+2403D source replacement](events/irg-67-tca-u2403d-source-replacement.md) - IRG \#67 の討議を受けた提出案の差替え。正式 acceptance と区別する。
 
 - [IVD 2026-08-03 Moji_Joho registration](events/ivd-2026-08-03-moji-joho-registration.md) - PRI \#546 review 後の IVS 追加登録と正式データ。
 

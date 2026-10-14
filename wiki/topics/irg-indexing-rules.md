@@ -32,7 +32,7 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 | 2026-01 | IRG | [IRG N2862R2](../documents/irg-n2862r2.md) | Eiso Chan が N2862 への feedback を受けて SC / FS guideline R2 を提出し、N2915 への response も記録した。 |
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.04 が updated UCV / NUCV examples を provisionally accept し、[IRG N2931](../documents/irg-n2931.md) の準備と review schedule を置いた。 |
 | 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.18 が [IRG N2862R2](../documents/irg-n2862r2.md) を previous FS / SC documents の replacement として accept し、final [IRG N2951](../documents/irg-n2951.md) の準備を求めた。 |
-| 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む `IRG N2952` を準備するよう求めた。 |
+| 2026-03 | IRG | [IRG N2909](../documents/irg-n2909.md) | M66.19 が [IRG N2925](../documents/irg-n2925.md) をもとに condensed rules を含む [IRG N2952](../documents/irg-n2952.md) を準備するよう求めた。 |
 | 2026-04 | IRG | [IRG N2951](../documents/irg-n2951.md) | Consolidated FS & SC Guidelines が提出され、138 entries の structure と values を示した。 |
 | 2026-09 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda が UCV / NUCV comments due 2026-07-24、FS / SC final document、radical assignment follow-up を載せた。 |
 | 2026-09-25 | IRG | [IRG N2952](../documents/irg-n2952.md) | Rules for Assignment of Radicals Version 1 が公開され、Meeting \#67 の review 対象になった。 |

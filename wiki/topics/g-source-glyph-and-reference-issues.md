@@ -4,7 +4,7 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987]
+documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1531", "irg-n1532r", "irg-n2835r", "irg-n2837", "irg-n2838", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2919r", "irg-n2923r", "irg-n2930", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2988"]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
@@ -45,6 +45,7 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 | 2026-10-11 | IRG | [IRG N2976](../documents/irg-n2976.md), [IRG N2977](../documents/irg-n2977.md) | U+21D0A の glyph 重複と U+26842 / U+26866 の source / radical 調整案が提出された。 |
 | 2026-10-11 | IRG | [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | China が U+2CCA3 と GBK-source 5字の修正案を回答した。 |
 | 2026-10-11/12 | IRG | [IRG N2984](../documents/irg-n2984.md), [IRG N2987](../documents/irg-n2987.md) | G-source horizontal extension の normalization feedback と回答が公開された。 |
+| 2026-10-13 | IRG | [IRG N2988](../documents/irg-n2988.md) | Suisenn が6 glyphs の style 修正を要求。agenda は再検討印。 |
 
 ## 主な論点
 
@@ -93,6 +94,8 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 [IRG N2984](../documents/irg-n2984.md) / [IRG N2987](../documents/irg-n2987.md) は新しい horizontal extension glyph に関する論争であり、既存 G-source correction と区別する。修正意向と source normalization の方針は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
 
 ## 関連文書
+
+- [IRG N2988](../documents/irg-n2988.md) - Suisenn が G-source style に合わない6 glyphs の修正を China NB へ求める。
 
 - [IRG N2919R](../documents/irg-n2919r.md) - 3 G-source glyphs と 10 references の proposal。
 - [IRG N891](../documents/irg-n891.md) - China Extension C1 submission。
@@ -148,3 +151,4 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 - `irg-n2985` - <https://www.unicode.org/irg/docs/n2985-IRGN2954-N2955Feedback.pdf>
 - `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>
 - `irg-n2987` - <https://www.unicode.org/irg/docs/n2987-IRGN2984Feedback.pdf>
+- `irg-n2988` - <https://www.unicode.org/irg/docs/n2988-GSourceGlyphIssues.pdf>

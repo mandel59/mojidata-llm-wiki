@@ -2,6 +2,14 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-14
+
+- **Catalog**: 最新 UTC / WG2 / IRG / PRI を再取得し、過去目録を保持。UTC に `L2/26-140R` / `145R2` / `147R3` と `227`～`259` の36件、IRG に `N2929R2` / `N2961R3` / `N2969R` / `N2972R` の4件を追加。`IRG N2935` の日付、`N2988` / `N2989` の公開・表題・source・URL を更新。WG2 / PRI に差分なし。
+- **Tools**: UTC の `NOTPOSTED` placeholder を unposted / URLなしとして扱う修正と回帰テスト。新規 `L2/26-231`～`242` の12件と既存 `146` の誤った available 状態を修正した。
+- **Digest**: 新規 UTC 21件、IRG 5件の計26 Source Document pages を作成。既存 canonical [L2/26-140](documents/utc-l2-26-140.md)、[145](documents/utc-l2-26-145.md)、[147](documents/utc-l2-26-147.md) を改訂版へ更新し、別 registry / revision 番号は aliases に接続。Maya・Zou の repertoire / property table と Devanagari annotation の内部不一致を明示した。
+- **Wiki / Event**: [IRG \#67](meetings/irg/irg-meeting-67.md) と [N2935](documents/irg-n2935.md) を会期中の進捗へ更新し、[TCA U+2403D source replacement](events/irg-67-tca-u2403d-source-replacement.md) を canonical event として追加。UK の条件付き回答、新規 Latin / Arabic / Indic / script 提案を topic / people へ接続した。
+- **Fetch**: 更新対象31件を非 Git cache へ取得。`IRG N2946` / `N2978` / `N2979` / `N2980` / `N2981` / `N2982` は2026-10-14の再取得も HTTP 404。正式な recommendation / 次版 working set の本文は作らず、再確認先を保持した。
+
 ## 2026-10-13
 
 - **Digest / Topic**: [kZVariant](topics/kzvariant.md) を追加し、[L2/15-266](documents/utc-l2-15-266.md)、[L2/19-015](documents/utc-l2-19-015.md)、[L2/19-186](documents/utc-l2-19-186.md) を精読・digest。既存 L2/19-281 / L2/19-328 に後続確認を追加し、L2/22-133 / L2/26-127、Unihan / security topics、John H. Jenkins、Han family と相互リンクした。UTC \#158 / \#159 / \#160 minutes で指示の対象を確認し、提案を採択済み一覧として扱わない。

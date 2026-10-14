@@ -7,6 +7,7 @@ members: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideo
 topics: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals, ideographic-variation-database, kzvariant]
 tags: [family, han, ideographic]
 timestamp: 2026-10-13T00:00:00+09:00
+events: ["irg-67-tca-u2403d-source-replacement"]
 ---
 
 # Han Ideographic Scripts
@@ -48,6 +49,8 @@ Han / ideographic 系の script、block、source data、variation database、関
 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) | active | Ideographic Symbols and Punctuation block 周辺の句読点・記号追加提案。 |
 
 ## 横断テーマ
+
+IRG \#67 の [TCA source replacement](../events/irg-67-tca-u2403d-source-replacement.md) は、horizontal extension と source-owner の glyph 確認が接続する例。提出案の変更と正式な標準データへの反映を分けて追う。
 
 - source references が character identity を支えるか。
 - modern CJK equivalents を normative data とするか、informative / indexing data とするか。

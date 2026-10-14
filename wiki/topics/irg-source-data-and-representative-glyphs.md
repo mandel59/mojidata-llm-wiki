@@ -4,7 +4,7 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2983]
+documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1532r", "irg-n2837", "irg-n2860", "irg-n2861", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2909", "irg-n2911", "irg-n2916", "irg-n2918", "irg-n2919r", "irg-n2923r", "irg-n2927r", "irg-n2928", "irg-n2929r", "irg-n2930", "irg-n2935", "irg-n2953", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2968", "irg-n2970", "irg-n2972", "irg-n2974", "irg-n2975", "utc-l2-26-099", "wg2-n5353", "wg2-n5354", "irg-n2939r", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2983", "irg-n2929r2", "irg-n2988", "irg-n2989"]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, irg-disunified-ideographs]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
@@ -49,6 +49,7 @@ G-source に集中する `IRG N2954` から `IRG N2962` までの proposal / fee
 | 2026-09-29 | IRG | [IRG N2975](../documents/irg-n2975.md) | TCA が U+3097C glyph change に同意し、更新 font を IRG と WG2 に提出した。 |
 | 2026-09-30 | IRG | [IRG N2929R](../documents/irg-n2929r.md) | China の GCW-Source horizontal extension が9,178文字へ改訂された。 |
 | 2026-10-08 | IRG | [IRG N2935](../documents/irg-n2935.md) | Meeting \#67 agenda Section 9.1 に representative glyph / source reference issues がまとまった。 |
+| 2026-10-14 | IRG | [IRG N2989](../documents/irg-n2989.md) | UK が2 glyph changes に whole-character unifiability を条件として回答。 |
 
 ## 主な論点
 
@@ -89,6 +90,12 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 [IRG N2984](../documents/irg-n2984.md) / [IRG N2987](../documents/irg-n2987.md) の horizontal extension feedback は [CJK Horizontal Extensions](cjk-horizontal-extensions.md)、[IRG N2983](../documents/irg-n2983.md) の U+2EA07 調査は [IRG Disunified Ideographs](irg-disunified-ideographs.md) へ分ける。いずれも会合結果ではなく提出資料である。
 
 ## 関連文書
+
+- [IRG N2989](../documents/irg-n2989.md) - UK が IRG N2918 の U+3062B / U+30C68 reference glyph changes へ条件付きで異議なしと回答する。
+
+- [IRG N2988](../documents/irg-n2988.md) - Suisenn が G-source style に合わない6 glyphs の修正を China NB へ求める。
+
+- [IRG N2929R2](../documents/irg-n2929r2.md) - China の GCW-source horizontal extension proposal の R2 revision。
 
 - [IRG N2939R](../documents/irg-n2939r.md) - T-source horizontal extension に伴う glyph 確認事項。
 
@@ -180,3 +187,6 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 - `irg-n2986` - <https://www.unicode.org/irg/docs/n2986-IRGN2956Feedback.pdf>
 - `irg-n2987` - <https://www.unicode.org/irg/docs/n2987-IRGN2984Feedback.pdf>
 - `irg-n2983` - <https://www.unicode.org/irg/docs/n2983-FurtherResearch2EA07.pdf>
+- `irg-n2929r2` - <https://www.unicode.org/irg/docs/n2929r2-ChinaHorizontalExtension.pdf>
+- `irg-n2988` - <https://www.unicode.org/irg/docs/n2988-GSourceGlyphIssues.pdf>
+- `irg-n2989` - <https://www.unicode.org/irg/docs/n2989-IRGN2918Feedback.pdf>

@@ -8,6 +8,29 @@
 
 ### 2026
 
+- [L2/26-259](utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
+- [L2/26-258](utc-l2-26-258.md) - Dr. T Marvin Zou が Zou / Zoulai script と numerals の符号化を提案する。
+- [L2/26-257](utc-l2-26-257.md) - Kadu Than Naing が Kadu language 用の Asak kyeing を符号化する案を提出する。
+- [L2/26-256](utc-l2-26-256.md) - Roozbeh Pournader が UTC 164-A63 の Devanagari / Vedic shaping properties 調査を報告する。
+- [L2/26-255](utc-l2-26-255.md) - Roozbeh Pournader が UTC 158-A106 の Unicode 12.0 beta feedback 調査を報告する。
+- [L2/26-254](utc-l2-26-254.md) - Sridatta A / Srinidhi A が Sinhala の nukta 使用を提示する preliminary document。
+- [L2/26-253](utc-l2-26-253.md) - Sridatta A / Srinidhi A が Kannada の repha と他の marks の表示順を報告し、SEWG へ feedback を求める。
+- [L2/26-252](utc-l2-26-252.md) - Francesco Catoni が North / South Turkestan Brāhmī を既存 Brahmi block 内で扱う preliminary proposal を提出する。
+- [L2/26-251](utc-l2-26-251.md) - Sridatta A / Srinidhi A が Malayalam の Vedic Double Anusvara 1文字を提案する。
+- [L2/26-250](utc-l2-26-250.md) - Sridatta A / Srinidhi A が U+0CD5 KANNADA LENGTH MARK の独立使用と property を検討する。
+- [L2/26-249](utc-l2-26-249.md) - Biswajit Mandal が DEVANAGARI DOUBLE SEPARATOR 1文字を提案する。
+- [L2/26-248](utc-l2-26-248.md) - Biswajit Mandal が Jain Nagari などの Sanskrit / Prakrit 写本に使う3 signs を提案する。
+- [L2/26-247](utc-l2-26-247.md) - Roozbeh Pournader が UTC 159-A81 に対応し、Core Specification の cedilla / comma rendering 説明を修正するよう報告する。
+- [L2/26-246](utc-l2-26-246.md) - Denis Moyogo Jacquerye が LATIN CAPITAL LETTER TURNED W 1文字を再提案する。
+- [L2/26-245](utc-l2-26-245.md) - Yoram Meroz と Karl Pentzlin が Yahgan / Ona の記録に使う Ellis’s Phonotypic Alphabet 拡張8文字を提案する。
+- [L2/26-244](utc-l2-26-244.md) - Kirk Miller が South Slavic の音声・方言表記に使う Cyrillic modifier letters 6文字を提案する。
+- [L2/26-243](utc-l2-26-243.md) - Karl Pentzlin が Kingsley Read の Quikscript を Shavian から独立した script として符号化する案を提出する。
+- [L2/26-230](utc-l2-26-230.md) - Karl Pentzlin が Benjamin Franklin の reformed alphabet の未符号化 Latin letters 4文字を再提案する。
+- [L2/26-229](utc-l2-26-229.md) - Rikza F. Sh. が特殊な Indo-Pak mushaf の tajwīd・waqf・補助注記に使う Arabic characters 26文字を提案する。
+- [L2/26-228](utc-l2-26-228.md) - Adam Victor が balanced ternary の負の単位桁 −1 を表す TURNED DIGIT ONE 1文字を提案する。
+- [L2/26-227](utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
+- [L2/26-147](utc-l2-26-147.md) - L2/26-147R3 / IRG N2961R3。対象74字を維持し、U+8821 の chart を追加。
+- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs Version 1.5。repertoire / property table の不一致を含めて review。
 - [L2/26-226](utc-l2-26-226.md) - Vithkuqi の HHA / IJE の注釈削除と reserved slots の表示追加を求める提案。
 - [L2/26-225](utc-l2-26-225.md) - Soft_Dotted の安定性問題を避けるため turned dotless i を別文字にする追加提案。
 - [L2/26-224](utc-l2-26-224.md) - Wagindara を Mongolian から独立した graphemic joining script として39字を提案する文書。
@@ -23,8 +46,6 @@
 - [L2/26-216](utc-l2-26-216.md) - taboo variants を standard forms に対応付ける provisional Unihan property と UTN \#63 を提案する。
 - [L2/26-214](utc-l2-26-214.md) - Armenian hyphen と fullwidth comma / semicolon の Word_Break 値の見直しを提案する報告。
 - [L2/26-212](utc-l2-26-212.md) - UAX \#29 の Word_Break=ALetter を音声転写や正書法で使う記号へ拡張する提案。
-- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs draft proposal。
-- [L2/26-147](utc-l2-26-147.md) - 改訂版 L2/26-147R2 / IRG N2961R2 で74文字を対象にした U-source horizontal extension。
 - [L2/26-151](utc-l2-26-151.md) - UTC \#188 の minutes。Unicode 18.0 release authorization、script / property / CJK decisions、Unicode 19.0 pipeline items を記録する。
 - [L2/26-161](utc-l2-26-161.md) - Script Encoding Initiative が支援する proposals と開発中の script 案件を UTC に報告する。
 - [L2/26-159](utc-l2-26-159.md) - Unicode 18.0 charts の版管理、PDF 公開、ISO/IEC 10646 charts、feedback を報告する。
@@ -46,7 +67,7 @@
 - [L2/26-143](utc-l2-26-143.md) - Leibnizian ambiguous signs proposal。
 - [L2/26-142](utc-l2-26-142.md) - historic letterlike symbols proposal。
 - [L2/26-141](utc-l2-26-141.md) - slashed digits 用 combining marks proposal。
-- [L2/26-140](utc-l2-26-140.md) - historic mathematical sources 用 miscellaneous symbols proposal。
+- [L2/26-140](utc-l2-26-140.md) - miscellaneous symbols 10字の5th revision。DOWN TACK との区別根拠を追加。
 - [L2/26-139](utc-l2-26-139.md) - COMPOSE / overstriking proposal。
 - [L2/26-138](utc-l2-26-138.md) - Indic scripts の consecutive anusvaras FYI。
 - [L2/26-137](utc-l2-26-137.md) - LTR scripts 向け Joining_Type discussion。
@@ -330,8 +351,12 @@
 
 ### 2026
 
-- [IRG N2987](irg-n2987.md) - Wang Xieyang が G-source horizontal extension の2字の修正意向と、他の字形を維持する理由を回答した feedback。
+- [IRG N2989](irg-n2989.md) - UK が IRG N2918 の U+3062B / U+30C68 reference glyph changes へ条件付きで異議なしと回答する。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2988](irg-n2988.md) - Suisenn が G-source style に合わない6 glyphs の修正を China NB へ求める。
+- [IRG N2972R](irg-n2972r.md) - TCA が Extension B の700字に対する T-source horizontal extension proposal を改訂する。
+- [IRG N2987](irg-n2987.md) - Wang Xieyang が G-source horizontal extension の2字の修正意向と、他の字形を維持する理由を回答した feedback。
+- [IRG N2929R2](irg-n2929r2.md) - China の GCW-source horizontal extension proposal の R2 revision。
 - [IRG N2986](irg-n2986.md) - China が Extension C の GBK-source 5字について glyph、reference、stroke data の修正案を提示した feedback。
 - [IRG N2985](irg-n2985.md) - China が U+2CCA3 を原 evidence の金偏へ戻し、radical / stroke data を修正する案を支持した feedback。
 - [IRG N2984](irg-n2984.md) - 改訂 G-source horizontal extension の15字と追加1字について、字形正規化と evidence の扱いを問う feedback。
@@ -354,6 +379,7 @@
 - [IRG N2938](irg-n2938.md) - MSCS 443 文字の維持、次期 Working Set への提出予定なし、実装支援と AG 1 liaison 検討を報告する。
 - [IRG N2973](irg-n2973.md) - IRG の技術討議で中国語を使い、実質的な論拠と正式記録を英語で共有する会議運営案。
 - [IRG N2971](irg-n2971.md) - W3C Internationalization の CJK layout、ruby、string handling、IRG 連携を報告する。
+- [IRG N2969R](irg-n2969r.md) - China が Collected Works of Mao Zedong の digitization 用に未符号化1字を UNC として再提案する。
 - [IRG N2969](irg-n2969.md) - 『毛泽东文集』の未符号化1文字を UNC として追加する China の提案。
 - [IRG N2970](irg-n2970.md) - Vietnam が既存 CJK ideographs に9,263件の V-source references を追加する提案。
 - [IRG N2968](irg-n2968.md) - CJK glyph の skeleton data と stroke library から font を生成する個人 project の報告。

@@ -4,7 +4,7 @@ title: Arabic Mark Rendering
 description: "UAX #53 / AMTRA による Arabic combining marks の rendering order と property data の論点。"
 slug: arabic-mark-rendering
 bodies: [UTC]
-documents: [utc-l2-26-095, utc-l2-26-096, utc-l2-26-106]
+documents: ["utc-l2-26-095", "utc-l2-26-096", "utc-l2-26-106", "utc-l2-26-227", "utc-l2-26-229"]
 topics: [unicode-properties-and-algorithms]
 status: draft-uax
 tags: [arabic, rendering, combining-marks, uax53, amtra]
@@ -28,6 +28,7 @@ Arabic Mark Rendering は、Arabic combining marks を含む text を、canonica
 | 2026-04-03 | UTC | [L2/26-095](../documents/utc-l2-26-095.md) | Michelle Perham が PRI \#539 を public review issue 一覧に含めた。 |
 | 2026-04-03 | UTC | [L2/26-106](../documents/utc-l2-26-106.md) | Roozbeh Pournader、Bob Hallissy、Lorna Evans が UAX \#53 Revision 12 proposed update を提出し、AMTRA を Arabic mark rendering の推奨解として整理した。 |
 | 2026-04-16 | UTC | [L2/26-096](../documents/utc-l2-26-096.md) | PAG が UTC \#187 向けに Arabic marks の property updates と broader properties / algorithms review を扱った。 |
+| 2026-10-12 | UTC | [L2/26-227](../documents/utc-l2-26-227.md)、[L2/26-229](../documents/utc-l2-26-229.md) | letter identity の再検討と Indo-Pak mushaf の letters / combining marks 追加案。 |
 
 ## 主な論点
 
@@ -49,6 +50,10 @@ Arabic script では、Quranic marks や minority orthographies の有効な組�
 
 ## 関連文書
 
+- [L2/26-229](../documents/utc-l2-26-229.md) - Rikza F. Sh. が特殊な Indo-Pak mushaf の tajwīd・waqf・補助注記に使う Arabic characters 26文字を提案する。
+
+- [L2/26-227](../documents/utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
+
 - [L2/26-106](../documents/utc-l2-26-106.md) - UAX \#53 Revision 12 proposed update。
 - [L2/26-096](../documents/utc-l2-26-096.md) - UTC \#187 PAG report。
 - [L2/26-095](../documents/utc-l2-26-095.md) - PRI \#539 を含む Public Review Issues 一覧。
@@ -63,3 +68,5 @@ Arabic script では、Quranic marks や minority orthographies の有効な組�
 - `utc-l2-26-106` - <https://www.unicode.org/L2/L2026/26106-uax53-12-update-pri539.pdf>
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
 - `utc-l2-26-095` - <https://www.unicode.org/L2/L2026/26095-public-review-issues.html>
+- `utc-l2-26-227` - <https://www.unicode.org/L2/L2026/26227-alef-maksura-with-comma-above.pdf>
+- `utc-l2-26-229` - <https://www.unicode.org/L2/L2026/26229-indo-pak-mushafs.pdf>

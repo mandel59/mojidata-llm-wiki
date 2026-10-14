@@ -4,7 +4,7 @@ title: IRG Urgently Needed Ideographs
 description: IRG の UNC 提出経路と個別提案の evidence、審査段階。
 slug: irg-urgently-needed-ideographs
 bodies: [IRG]
-documents: [irg-n2850r, irg-n2969]
+documents: ["irg-n2850r", "irg-n2969", "irg-n2969r"]
 topics: [irg-working-process-and-liaison]
 meetings: [irg-meeting-67]
 status: active
@@ -23,12 +23,15 @@ Urgently Needed Character（UNC）は、通常の working set と区別して審
 | --- | --- | --- | --- |
 | 2026-03 | IRG | [IRG N2850R](../documents/irg-n2850r.md) | Principles & Procedures の改訂草案が提出経路と審査手順を整理した。 |
 | 2026-09 | IRG | [IRG N2969](../documents/irg-n2969.md) | China が『毛泽东文集』の未符号化1文字を UNC として提案した。 |
+| 2026-10-14 | IRG | [IRG N2969R](../documents/irg-n2969r.md) | agenda Section 6.1 は改訂 UNC 案を討議完了と記録。正式採択は未確認。 |
 
 ## 主な論点
 
 [IRG N2969](../documents/irg-n2969.md) は字形と文献上の用例を提示する提案である。符号化の決定やコードポイントの確定を意味しない。後続の扱いは [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) の記録で確認する。
 
 ## 関連文書
+
+- [IRG N2969R](../documents/irg-n2969r.md) - China が Collected Works of Mao Zedong の digitization 用に未符号化1字を UNC として再提案する。
 
 - [IRG N2850R](../documents/irg-n2850r.md) - 審査手順の草案。
 - [IRG N2969](../documents/irg-n2969.md) - China の1文字 UNC 提案。
@@ -41,3 +44,4 @@ Urgently Needed Character（UNC）は、通常の working set と区別して審
 
 - `irg-n2850r` - <https://www.unicode.org/irg/docs/n2850r-PPv18d2.html>
 - `irg-n2969` - <https://www.unicode.org/irg/docs/n2969-UNC-China.pdf>
+- `irg-n2969r` - <https://www.unicode.org/irg/docs/n2969r-UNC-China.pdf>

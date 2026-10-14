@@ -4,7 +4,7 @@ title: IRG
 description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group。
 slug: irg
 bodies: [IRG, WG2]
-documents: [irg-n2721, irg-n2722, irg-n2792, irg-n2826, irg-n2828, irg-n2860, irg-n2861, irg-n2866r2, irg-n2867r, irg-n2885r, irg-n2893, irg-n2909, irg-n2931, irg-n2935]
+documents: ["irg-n2721", "irg-n2722", "irg-n2792", "irg-n2826", "irg-n2828", "irg-n2860", "irg-n2861", "irg-n2866r2", "irg-n2867r", "irg-n2885r", "irg-n2893", "irg-n2909", "irg-n2931", "irg-n2935", "irg-n2929r2", "irg-n2969r", "irg-n2972r", "irg-n2988", "irg-n2989"]
 topics: [irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, t-source-representative-glyph-issues, kirg-sgsource, cjkv-components, irg-indexing-rules, ucv-nucv-lists]
 tags: [organization, standards-body, irg]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -28,6 +28,16 @@ IRG は、CJK Unified Ideographs の review、IRG Working Set、source reference
 | `IRG N2935` | IRG Meeting \#67 Schedule & Agenda。次回会合の議題入口。 | [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) |
 
 ## 関連文書
+
+- [IRG N2989](../documents/irg-n2989.md) - UK response to IRGN2918 Proposal to update the reference glyphs for 2 UK-source ideographs
+
+- [IRG N2988](../documents/irg-n2988.md) - Request to revise some G-source glyphs
+
+- [IRG N2972R](../documents/irg-n2972r.md) - T-Source horizontal extensions for 700 characters
+
+- [IRG N2969R](../documents/irg-n2969r.md) - China’s UNC proposal on 1 character for Collected Works of Mao Zedong
+
+- [IRG N2929R2](../documents/irg-n2929r2.md) - G-Source horizontal extensions for 9178 characters
 
 - `irg-n2721` - Japan active IRG participation request
 - `irg-n2722` - JMJ horizontal extension issue report
@@ -62,3 +72,8 @@ IRG は、CJK Unified Ideographs の review、IRG Working Set、source reference
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `irg-n2929r2` - <https://www.unicode.org/irg/docs/n2929r2-ChinaHorizontalExtension.pdf>
+- `irg-n2969r` - <https://www.unicode.org/irg/docs/n2969r-UNC-China.pdf>
+- `irg-n2972r` - <https://www.unicode.org/irg/docs/n2972r-TCAHorizontalExtension.pdf>
+- `irg-n2988` - <https://www.unicode.org/irg/docs/n2988-GSourceGlyphIssues.pdf>
+- `irg-n2989` - <https://www.unicode.org/irg/docs/n2989-IRGN2918Feedback.pdf>

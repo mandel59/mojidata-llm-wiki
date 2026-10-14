@@ -4,7 +4,7 @@ title: ISO/IEC 10646 Edition and Code Charts
 description: "WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。"
 slug: iso-10646-edition-and-code-charts
 bodies: [WG2, SC2, UTC]
-documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5360r, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102, utc-l2-26-159, utc-l2-26-226]
+documents: ["wg2-n5253", "wg2-n5300r9", "wg2-n5304", "wg2-n5315", "wg2-n5339", "wg2-n5350r8", "wg2-n5354", "wg2-n5360r", "wg2-n5361r", "wg2-n5362", "wg2-n5363r", "wg2-n5369", "utc-l2-26-102", "utc-l2-26-159", "utc-l2-26-226", "utc-l2-26-259"]
 topics: [unicode-release-coordination-and-publication, unicode-18-change-sources, script-encoding-pipeline, shaaldaa-script, unihan-database-maintenance]
 meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187]
 status: active
@@ -36,6 +36,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 recommendations が DIS progression、external code charts、Amendment 1 project subdivision、first amendment additions を採択した。 |
 | 2026-06-29 | WG2 / UTC | [WG2 N5361R](../documents/wg2-n5361r.md) | Unicode 18.0 後の future repertoire として、Amendment 1 候補を含む provisionally assigned code points が整理された。 |
 | 2026-10-09 | UTC | [L2/26-226](../documents/utc-l2-26-226.md) | Vithkuqi の冗長な注釈削除と予約位置の表示追加を提案した。glyph redraw は別案件とする。 |
+| 2026-10-13 | UTC | [L2/26-259](../documents/utc-l2-26-259.md) | 将来追加の letterlike symbols の配置交換要求。 |
 
 ## 主な論点
 
@@ -60,6 +61,8 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 [L2/26-102](../documents/utc-l2-26-102.md) は Unicode 18.0 の beta / release schedule と ISO/IEC 10646 7th edition synchronization risk を扱う。一方、この topic の WG2 文書群は、ISO/IEC 10646 側の edition text、DIS ballot、Amendment 1 project を扱う。両者は同期するが、UTC の release authorization と WG2 / SC2 の ballot decision は body と時点を分けて読む必要がある。
 
 ## 関連文書
+
+- [L2/26-259](../documents/utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
 
 - [L2/26-226](../documents/utc-l2-26-226.md) - Unicode request for Vithkuqi annotations II。
 
@@ -98,3 +101,4 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 - `wg2-n5363r` - <https://www.unicode.org/wg2/docs/n5363R-codechart.pdf>
 - `wg2-n5369` - <https://www.unicode.org/wg2/docs/n5369-CD7th-4-DOC.pdf>
 - `utc-l2-26-226` - <https://www.unicode.org/L2/L2026/26226-vithkuqi.pdf>
+- `utc-l2-26-259` - <https://www.unicode.org/L2/L2026/26259-reorder-1db00-block.pdf>

@@ -4,7 +4,7 @@ title: Unicode Release Coordination and Publication
 description: "Unicode 18.0 の beta gate、UTC release authorization、versioned artifacts、publication coordination。"
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-155, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126]
+documents: ["utc-l2-25-230r", "utc-l2-26-008r", "utc-l2-26-092", "utc-l2-26-093", "utc-l2-26-095", "utc-l2-26-097", "utc-l2-26-101", "utc-l2-26-102", "utc-l2-26-150", "utc-l2-26-151", "utc-l2-26-152", "utc-l2-26-153", "utc-l2-26-155", "utc-l2-26-159", "utc-l2-26-160r", "utc-l2-26-215", "pri-547", "pri-548", "pri-549", "pri-550", "utc-l2-26-104", "utc-l2-26-126", "utc-l2-26-231", "utc-l2-26-232", "utc-l2-26-233", "utc-l2-26-234", "utc-l2-26-235", "utc-l2-26-236", "utc-l2-26-237", "utc-l2-26-238", "utc-l2-26-239", "utc-l2-26-240", "utc-l2-26-241", "utc-l2-26-242"]
 topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts, unicode-properties-and-algorithms, emoji-repertoire-proposals]
 meetings: [utc-meeting-187, utc-meeting-188]
 events: [utc-188-unicode-18-release-authorization]
@@ -39,6 +39,10 @@ Final publication は core specification、versioned code charts、`/Public/18.0
 | 2026-09-16 | Unicode | [L2/26-215 / IRG N2944](../documents/utc-l2-26-215.md) | Unicode 18.0.0、versioned UCD、core specification、code charts、同期 UTS を公開。 |
 
 ## 主な論点
+
+### UTC \#189 の登録枠
+
+2026-10-14 の current register は L2/26-231～L2/26-242 に agenda / minutes / working-group reports などの登録枠を置くが、すべて `NOTPOSTED`。公開本文がある新規提案と区別し、minutes や reports が公開されてから meeting digest と正式決定を更新する。
 
 ### Beta review gate
 
@@ -134,3 +138,4 @@ Final release では `/Public/18.0.0/` が固定された data root になり、
 - Unicode 18.0.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
 - Unicode 18.0.0 versioned data - <https://www.unicode.org/Public/18.0.0/>
 - Unicode 18.0.0 code charts - <https://www.unicode.org/Public/18.0.0/charts/>
+- `utc-l2-26-231`～`utc-l2-26-242` - <https://www.unicode.org/L2/L-curdoc.htm>（未公開の登録枠）

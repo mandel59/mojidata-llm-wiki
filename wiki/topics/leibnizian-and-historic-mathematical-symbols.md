@@ -4,7 +4,7 @@ title: Leibnizian and Historic Mathematical Symbols
 description: "Leibnizian ambiguous signs と historic mathematical sources 用 symbols / combining marks / letterlike symbols。"
 slug: leibnizian-and-historic-mathematical-symbols
 bodies: [UTC, WG2]
-documents: [pri-533, utc-l2-25-131, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354, wg2-n5361r, wg2-n5364]
+documents: ["pri-533", "utc-l2-25-131", "utc-l2-26-140", "utc-l2-26-141", "utc-l2-26-142", "utc-l2-26-143", "utc-l2-26-149", "wg2-n5354", "wg2-n5361r", "wg2-n5364", "utc-l2-26-259"]
 topics: [mathematical-text-support, unicode-18-change-sources, script-encoding-pipeline]
 status: proposed
 tags: [math, leibniz, symbols, variation-sequences, unicode-18]
@@ -29,6 +29,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.06 が combining overlays、letterlike / Leibnizian symbols を first amendment additions として扱った。 |
 | 2026-07-05 | UTC | [L2/26-149](../documents/utc-l2-26-149.md) | Leibnizian VS names と Unicode 18.0 delta charts への corrections / recommendations が提出された。 |
 | 2026-07-07 | PRI | [PRI \#533](../documents/pri-533.md) | UTR \#25 Revision 16 public review の closing date。数学文字 support 全体の HTML migration / data update 前段として、この topic の個別 proposal 群とは別 layer に置く。 |
+| 2026-10-12/13 | UTC | [L2/26-140R](../documents/utc-l2-26-140.md)、[L2/26-259](../documents/utc-l2-26-259.md) | DOWN TACK との区別根拠を追加。別の letterlike symbols 案では位置交換を要求。 |
 
 ## 主な論点
 
@@ -49,6 +50,8 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 [Mathematical Text Support](mathematical-text-support.md) は UTR \#25 を入口に、現代的な mathematical repertoire、Math property、math data files、plain-text math と markup の境界を扱う。この topic は、その中でも historic sources / Leibnizian signs の個別 proposal chain に焦点を置く。
 
 ## 関連文書
+
+- [L2/26-259](../documents/utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
 
 - [PRI \#533](../documents/pri-533.md) - UTR \#25 Revision 16 public review。
 - [L2/26-140](../documents/utc-l2-26-140.md) - miscellaneous mathematical symbols。
@@ -76,3 +79,4 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 - `utc-l2-26-143` - <https://www.unicode.org/L2/L2026/26143-leibnizian-ambiguous-signs.pdf>
 - `utc-l2-26-149` - <https://www.unicode.org/L2/L2026/26149-leibniz.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `utc-l2-26-259` - <https://www.unicode.org/L2/L2026/26259-reorder-1db00-block.pdf>

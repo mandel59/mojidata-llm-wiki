@@ -4,7 +4,7 @@ title: Eiso Chan
 description: CJKV Components、kIRG_SGSource、IRG indexing rules、Kana proposals / feedback に関係する contributor。
 slug: eiso-chan
 bodies: [UTC, IRG, WG2]
-documents: [irg-n2799, irg-n2878r3, irg-n2926, irg-n2862r2, irg-n2915, irg-n2951, utc-l2-20-233, utc-l2-23-123, utc-l2-23-127, utc-l2-25-151r, utc-l2-26-223, pri-521]
+documents: ["irg-n2799", "irg-n2878r3", "irg-n2926", "irg-n2862r2", "irg-n2915", "irg-n2951", "utc-l2-20-233", "utc-l2-23-123", "utc-l2-23-127", "utc-l2-25-151r", "utc-l2-26-223", "pri-521", "irg-n2969r"]
 topics: [cjkv-components, kirg-sgsource, irg-indexing-rules, kana, cjk-security-confusables, script-encoding-pipeline, ideographic-variation-database]
 tags: [person, components, unihan, source-data, indexing]
 timestamp: 2026-10-10T00:00:00+09:00
@@ -48,6 +48,10 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 - [IRG N2878R3 CJKV Components final proposal](../events/irg-n2878r3-cjkv-components-final-proposal.md)
 - [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md)
 
+## 関連文書
+
+- [IRG N2969R](../documents/irg-n2969r.md) - China’s UNC proposal on 1 character for Collected Works of Mao Zedong
+
 ## 出典
 
 - `pri-521` - <https://www.unicode.org/ivd/pri/pri521/>
@@ -62,3 +66,4 @@ Eiso Chan は、CJKV Components proposal、`kIRG_SGSource`、FS / SC guidelines�
 - `utc-l2-23-127` - <https://www.unicode.org/L2/L2023/23127-katakana.pdf>
 - `utc-l2-25-151r` - <https://www.unicode.org/L2/L2025/25151r-katakana-ne-wi.pdf>
 - `utc-l2-26-223` - <https://www.unicode.org/L2/L2026/26223-wei-rma.pdf>
+- `irg-n2969r` - <https://www.unicode.org/irg/docs/n2969r-UNC-China.pdf>

@@ -4,7 +4,7 @@ title: Unicode Properties and Algorithms
 description: "Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。"
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-219, utc-l2-26-225, pri-520]
+documents: ["utc-l2-25-220", "utc-l2-26-092", "utc-l2-26-093", "utc-l2-26-095", "utc-l2-26-096", "utc-l2-26-135", "utc-l2-26-217", "utc-l2-26-151", "utc-l2-26-154", "utc-l2-26-212", "utc-l2-26-214", "utc-l2-25-100", "utc-l2-26-070r", "utc-l2-26-091", "utc-l2-26-106", "utc-l2-26-107", "utc-l2-26-108", "utc-l2-26-109", "utc-l2-26-110", "pri-509", "pri-533", "pri-545", "pri-547", "pri-549", "pri-550", "pri-551", "pri-552", "pri-553", "pri-554", "pri-555", "pri-557", "utc-l2-26-111", "utc-l2-26-119", "utc-l2-26-120", "utc-l2-26-137", "utc-l2-26-138", "utc-l2-26-139", "utc-l2-26-219", "utc-l2-26-225", "pri-520", "utc-l2-26-247", "utc-l2-26-250", "utc-l2-26-255", "utc-l2-26-256"]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188]
 status: active
@@ -49,8 +49,13 @@ Unicode properties and algorithms は、文字追加だけでは決まらない 
 | 2026-09-16 | Unicode | Unicode 18.0.0 release | Final UAX / UTS text、UCD、auxiliary test data、security / collation data を公開した。 |
 | 2026-09-24 | UTC | [L2/26-217](../documents/utc-l2-26-217.md) | PRI \#555 の DFA data を Elixir で実装した feedback が、test 結果と仕様明確化の要望を報告した。 |
 | 2026-10-09 | UTC | [L2/26-219](../documents/utc-l2-26-219.md), [L2/26-225](../documents/utc-l2-26-225.md) | Mongolian の writing-system ごとの FVS / shaping と、Soft_Dotted を変更しない turned dotless i 案が登録された。 |
+| 2026-10-12/13 | UTC | L2/26-247、250、255、256 | cedilla guidance、Kannada LENGTH MARK、InSC / InPC の変更要求を登録。 |
 
 ## 主な論点
+
+### 古い action items の調査と新しい変更要求
+
+[L2/26-247](../documents/utc-l2-26-247.md) は cedilla / comma の編集修正、[255](../documents/utc-l2-26-255.md) / [256](../documents/utc-l2-26-256.md) は InSC / InPC の変更案。[250](../documents/utc-l2-26-250.md) は KANNADA LENGTH MARK の Mc→Lo / CM→AL を問う。調査の終了、変更要求の提出、正式 data の変更は別段階である。
 
 ### 審議中の text processing 提案
 
@@ -133,6 +138,14 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 [L2/26-219](../documents/utc-l2-26-219.md) は writing system ごとに異なる glyph、FVS validity、default form を language tags と shaping で扱う guidance を求める。[L2/26-225](../documents/utc-l2-26-225.md) は既存 turned i の Soft_Dotted を変更せず新しい dotless character を追加する案で、canonical equivalence と DoNotEmit data の扱いを分ける。両文書とも property 変更の決定ではない。
 
 ## 関連文書
+
+- [L2/26-256](../documents/utc-l2-26-256.md) - Roozbeh Pournader が UTC 164-A63 の Devanagari / Vedic shaping properties 調査を報告する。
+
+- [L2/26-255](../documents/utc-l2-26-255.md) - Roozbeh Pournader が UTC 158-A106 の Unicode 12.0 beta feedback 調査を報告する。
+
+- [L2/26-250](../documents/utc-l2-26-250.md) - Sridatta A / Srinidhi A が U+0CD5 KANNADA LENGTH MARK の独立使用と property を検討する。
+
+- [L2/26-247](../documents/utc-l2-26-247.md) - Roozbeh Pournader が UTC 159-A81 に対応し、Core Specification の cedilla / comma rendering 説明を修正するよう報告する。
 
 - [L2/26-225](../documents/utc-l2-26-225.md) - Unicode request for turned dotless i。
 
@@ -226,3 +239,7 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 - `utc-l2-26-139` - <https://www.unicode.org/L2/L2026/26139-compose.pdf>
 - `utc-l2-26-219` - <https://www.unicode.org/L2/L2026/26219-mongolian-locale.pdf>
 - `utc-l2-26-225` - <https://www.unicode.org/L2/L2026/26225-turned-dotless-i.pdf>
+- `utc-l2-26-247` - <https://www.unicode.org/L2/L2026/26247-commas-and-cedillas.pdf>
+- `utc-l2-26-250` - <https://www.unicode.org/L2/L2026/26250-kannada-length-mark.pdf>
+- `utc-l2-26-255` - <https://www.unicode.org/L2/L2026/26255-indic-158-a106.pdf>
+- `utc-l2-26-256` - <https://www.unicode.org/L2/L2026/26256-indic-164-a63.pdf>

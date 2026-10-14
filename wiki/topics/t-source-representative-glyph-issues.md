@@ -4,13 +4,14 @@ title: T-source Representative Glyph Issues
 description: "IRG N2860 / N2861 / N2927R による T-source representative glyph と source mapping correction の整理。"
 slug: t-source-representative-glyph-issues
 bodies: [IRG, UTC, WG2]
-documents: [irg-n2860, irg-n2861, irg-n2927r, irg-n2909, irg-n2911, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5354, irg-n2939r, irg-n2972]
+documents: ["irg-n2860", "irg-n2861", "irg-n2927r", "irg-n2909", "irg-n2911", "irg-n2974", "irg-n2975", "utc-l2-26-099", "wg2-n5354", "irg-n2939r", "irg-n2972", "irg-n2972r"]
 topics: [irg-source-data-and-representative-glyphs, unihan-database-maintenance, unicode-18-change-sources]
 people: [ma-shijie, tca, irg]
 meetings: [irg-meeting-66, utc-meeting-187, wg2-meeting-73]
 status: active
 tags: [irg, t-source, source-reference, representative-glyphs]
 timestamp: 2026-07-09T00:00:00+09:00
+events: ["irg-67-tca-u2403d-source-replacement"]
 ---
 
 # T-source Representative Glyph Issues
@@ -58,6 +59,10 @@ U+2976E と U+20885 は [IRG N2861](../documents/irg-n2861.md) では pending �
 
 ## 関連文書
 
+- [IRG N2972R](../documents/irg-n2972r.md) - TCA が Extension B の700字に対する T-source horizontal extension proposal を改訂する。
+
+- [IRG \#67 TCA U+2403D source replacement](../events/irg-67-tca-u2403d-source-replacement.md) - TCA の source / glyph 差替えの経緯。
+
 - [IRG N2939R](../documents/irg-n2939r.md) - T-source horizontal extension に伴う glyph 確認事項。
 
 - [IRG N2860](../documents/irg-n2860.md) - 25 T-source glyphs の revision request。
@@ -88,3 +93,4 @@ U+2976E と U+20885 は [IRG N2861](../documents/irg-n2861.md) では pending �
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
 - `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>
+- `irg-n2972r` - <https://www.unicode.org/irg/docs/n2972r-TCAHorizontalExtension.pdf>

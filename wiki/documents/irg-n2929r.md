@@ -9,7 +9,7 @@ document_type: proposal
 registry: irg
 date: "2026-09-30"
 source: China
-documents: [irg-n2909, irg-n2929, irg-n2935, irg-n2936, irg-n2984, irg-n2987, irg-n2983]
+documents: ["irg-n2909", "irg-n2929", "irg-n2935", "irg-n2936", "irg-n2984", "irg-n2987", "irg-n2983", "irg-n2929r2"]
 topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs]
 people: [china, irg]
 meetings: [irg-meeting-67]
@@ -48,6 +48,8 @@ source は GCW-Source 一種類で、official geographical names、personal name
 
 ## 後続決定
 
+後続資料は [IRG N2929R2](irg-n2929r2.md)。改訂 / feedback と会合全体の正式 recommendation を区別する。
+
 [IRG N2935](irg-n2935.md) の2026-10-12版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できるが、会合での採否は後続 recommendation と action items で確認する。
 
 [IRG N2984](irg-n2984.md) と [IRG N2987](irg-n2987.md) が glyph normalization の feedback と回答を補う。U+2EA07 の個別調査は [IRG N2983](irg-n2983.md) を参照する。
@@ -67,3 +69,4 @@ source は GCW-Source 一種類で、official geographical names、personal name
 
 - irg-n2929r - <https://www.unicode.org/irg/docs/n2929r-ChinaHorizontalExtension.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `irg-n2929r2` - <https://www.unicode.org/irg/docs/n2929r2-ChinaHorizontalExtension.pdf>

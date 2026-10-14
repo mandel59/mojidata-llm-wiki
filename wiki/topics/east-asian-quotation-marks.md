@@ -23,7 +23,7 @@ East Asian Quotation Marks は、CJK / East Asian text における quotation ma
 | 日付 | Body | 文書 | できごと |
 | --- | --- | --- | --- |
 | 2026-05-06 | UTC | [L2/26-128](../documents/utc-l2-26-128.md) | Night Koo が East Asian quotation marks の core spec text update を提案した。 |
-| 2026-07-28/30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | 188-A125 が `L2/26-128` と PRI feedback を踏まえ、Unicode 19.0 向け core specification edits の検討を Editorial WG に課した。 |
+| 2026-07-28/30 | UTC | [UTC Meeting \#188](../meetings/utc/utc-meeting-188.md) | 188-A125 が [L2/26-128](../documents/utc-l2-26-128.md) と PRI feedback を踏まえ、Unicode 19.0 向け core specification edits の検討を Editorial WG に課した。 |
 
 ## 主な論点
 

@@ -21,6 +21,7 @@
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30) - UTC \#188 が会合の decisions / actions を取り込んだ Unicode 18.0 と同期 UTS の release を authorize した出来事。
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03) - IVD Registrar が PRI \#546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02) - PRI \#520 の review と UTC の調整を経た UAX \#60 が、Unicode 18.0.0 の初の承認済み公開版 Revision 3 として確定した節目。
+- [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12) - TCA が IRG \#67 の討議を受け、U+2403D の horizontal extension proposal の source / glyph を差し替えた出来事。
 
 ## By Topic
 
@@ -31,6 +32,7 @@
 ### [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
+- [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12)
 
 ### [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md)
 
@@ -99,6 +101,10 @@
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
+### [T-source Representative Glyph Issues](../topics/t-source-representative-glyph-issues.md)
+
+- [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12)
+
 ### [UAX \#45 / U-Source Ideographs](../topics/uax45-u-source-ideographs.md)
 
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
@@ -140,6 +146,7 @@
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
+- [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12)
 
 ### SC2
 

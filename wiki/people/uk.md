@@ -4,7 +4,7 @@ title: UK
 description: UK-source horizontal extension と glyph change に関係する UK member body。
 slug: uk
 bodies: [IRG]
-documents: [irg-n2918, irg-n2960, irg-n2943]
+documents: ["irg-n2918", "irg-n2960", "irg-n2943", "irg-n2989"]
 topics: [cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-working-set-2024]
 tags: [member-body, source, uk-source]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -27,6 +27,8 @@ UK は、IRG に参加する member body / source で、UK-source representative
 
 ## 関連文書
 
+- [IRG N2989](../documents/irg-n2989.md) - UK response to IRGN2918 Proposal to update the reference glyphs for 2 UK-source ideographs
+
 - [IRG N2918](../documents/irg-n2918.md) - UK-source representative glyph issues
 - [IRG N2960](../documents/irg-n2960.md) - UK Horizontal Extensions
 
@@ -40,3 +42,4 @@ UK は、IRG に参加する member body / source で、UK-source representative
 - `irg-n2918` - <https://www.unicode.org/irg/docs/n2918-UKSourceGlyphIssues.pdf>
 - `irg-n2960` - <https://www.unicode.org/irg/docs/n2960-UKHorizontalExtension.pdf>
 - `irg-n2943` - <https://www.unicode.org/irg/docs/n2943-UKActivityReport.pdf>
+- `irg-n2989` - <https://www.unicode.org/irg/docs/n2989-IRGN2918Feedback.pdf>

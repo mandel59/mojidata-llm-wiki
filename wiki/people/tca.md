@@ -4,10 +4,11 @@ title: TCA
 description: T-source、Small Seal Script、CJKV Components に関係する TCA member body。
 slug: tca
 bodies: [IRG, WG2]
-documents: [irg-n2861, irg-n2878r3, irg-n2927r, wg2-n4634, wg2-n4688, wg2-n5105, wg2-n5318, wg2-n5355, irg-n2939r, irg-n2972]
+documents: ["irg-n2861", "irg-n2878r3", "irg-n2927r", "wg2-n4634", "wg2-n4688", "wg2-n5105", "wg2-n5318", "wg2-n5355", "irg-n2939r", "irg-n2972", "irg-n2972r"]
 topics: [cjkv-components, irg-source-data-and-representative-glyphs, small-seal-script, t-source-representative-glyph-issues, irg-working-set-2024, cjk-horizontal-extensions]
 tags: [member-body, source, tca, t-source]
 timestamp: 2026-07-06T21:31:45+09:00
+events: ["irg-67-tca-u2403d-source-replacement"]
 ---
 
 # TCA
@@ -31,6 +32,8 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 
 ## 関連文書
 
+- [IRG N2972R](../documents/irg-n2972r.md) - T-Source horizontal extensions for 700 characters
+
 - [WG2 N4634](../documents/wg2-n4634.md) - Small Seal Script initial proposal
 - [WG2 N4688](../documents/wg2-n4688.md) - Small Seal Script complete proposal
 - [WG2 N5105](../documents/wg2-n5105.md) - Small Seal proposal appendix update
@@ -49,6 +52,8 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 
 ## 関連出来事
 
+- [IRG \#67 TCA U+2403D source replacement](../events/irg-67-tca-u2403d-source-replacement.md) - TCA の source / glyph 差替えの経緯。
+
 - [WG2 M72.13 Small Seal future edition candidate](../events/wg2-m72-13-small-seal-future-candidate.md)
 - [IRG N2878R3 CJKV Components final proposal](../events/irg-n2878r3-cjkv-components-final-proposal.md)
 - [IRG M66.17 CJKV Components forward to WG2](../events/irg-m66-17-cjkv-components-forward-to-wg2.md)
@@ -65,3 +70,4 @@ TCA は、IRG / WG2 に参加する member body / source で、T-source data と
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>
 - `irg-n2939r` - <https://www.unicode.org/irg/docs/n2939r-TCAActivityReport.pdf>
 - `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>
+- `irg-n2972r` - <https://www.unicode.org/irg/docs/n2972r-TCAHorizontalExtension.pdf>

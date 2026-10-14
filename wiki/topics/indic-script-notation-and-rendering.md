@@ -4,7 +4,7 @@ title: Indic Script Notation and Rendering
 description: "Indic scripts における Vedic notation、combining marks、rendering guidance。"
 slug: indic-script-notation-and-rendering
 bodies: [UTC]
-documents: [utc-l2-26-062, pri-552, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138, utc-l2-26-181r, utc-l2-26-221, utc-l2-26-222]
+documents: ["utc-l2-26-062", "pri-552", "utc-l2-26-113", "utc-l2-26-114", "utc-l2-26-131", "utc-l2-26-138", "utc-l2-26-181r", "utc-l2-26-221", "utc-l2-26-222", "utc-l2-26-248", "utc-l2-26-249", "utc-l2-26-250", "utc-l2-26-251", "utc-l2-26-252", "utc-l2-26-253", "utc-l2-26-254", "utc-l2-26-255", "utc-l2-26-256"]
 topics: [script-encoding-pipeline, unicode-properties-and-algorithms]
 status: active
 tags: [indic, vedic, kannada, rendering, combining-marks]
@@ -30,8 +30,13 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 | 2026-06-09 | UTC | [L2/26-138](../documents/utc-l2-26-138.md) | Consecutive anusvaras が valid Sanskrit forms に現れることと rendering support の問題が報告された。 |
 | 2026-07-07 | UTC | [PRI \#552](../documents/pri-552.md) | UTC が UAX \#29 Revision 48 public review を close し、GB9c の `InCB=Linker` / `InCB=Extend` / `InCB=Consonant` rule update を Unicode 18.0 finalization へ接続した。 |
 | 2026-10-09 | UTC | [L2/26-181R](../documents/utc-l2-26-181r.md), [L2/26-221](../documents/utc-l2-26-221.md), [L2/26-222](../documents/utc-l2-26-222.md) | Jain Nagari の FINAL ANUSVARA / vowel correction mark と Southern Pa’O の combining / tone signs が登録された。 |
+| 2026-10-13 | UTC | L2/26-248–L2/26-256 | Devanagari / Malayalam 追加、Kannada / Sinhala 表現、Indic properties の調査報告を登録。 |
 
 ## 主な論点
+
+### 2026年10月の新規入力
+
+[L2/26-248](../documents/utc-l2-26-248.md) / [249](../documents/utc-l2-26-249.md) は写本 punctuation、[251](../documents/utc-l2-26-251.md) は Malayalam Vedic anusvara の追加案。[250](../documents/utc-l2-26-250.md) / [253](../documents/utc-l2-26-253.md) は Kannada の独立 mark usage と shaping、[254](../documents/utc-l2-26-254.md) は Sinhala nukta、[252](../documents/utc-l2-26-252.md) は Turkestan Brāhmī の preliminary model を扱う。[255](../documents/utc-l2-26-255.md) / [256](../documents/utc-l2-26-256.md) の property 調査は、新文字提案と分けて読む。
 
 ### script-specific Samavedic marks
 
@@ -56,6 +61,24 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 [L2/26-222](../documents/utc-l2-26-222.md) は Kham Dom Pa’O の medial consonant、vowel sign、tone mark の保存順序と下付き glyph 配置を記述する。提案 property と Northern Pa’O の代替文字を混同せず、collation の未決点を追う。
 
 ## 関連文書
+
+- [L2/26-256](../documents/utc-l2-26-256.md) - Roozbeh Pournader が UTC 164-A63 の Devanagari / Vedic shaping properties 調査を報告する。
+
+- [L2/26-255](../documents/utc-l2-26-255.md) - Roozbeh Pournader が UTC 158-A106 の Unicode 12.0 beta feedback 調査を報告する。
+
+- [L2/26-254](../documents/utc-l2-26-254.md) - Sridatta A / Srinidhi A が Sinhala の nukta 使用を提示する preliminary document。
+
+- [L2/26-253](../documents/utc-l2-26-253.md) - Sridatta A / Srinidhi A が Kannada の repha と他の marks の表示順を報告し、SEWG へ feedback を求める。
+
+- [L2/26-252](../documents/utc-l2-26-252.md) - Francesco Catoni が North / South Turkestan Brāhmī を既存 Brahmi block 内で扱う preliminary proposal を提出する。
+
+- [L2/26-251](../documents/utc-l2-26-251.md) - Sridatta A / Srinidhi A が Malayalam の Vedic Double Anusvara 1文字を提案する。
+
+- [L2/26-250](../documents/utc-l2-26-250.md) - Sridatta A / Srinidhi A が U+0CD5 KANNADA LENGTH MARK の独立使用と property を検討する。
+
+- [L2/26-249](../documents/utc-l2-26-249.md) - Biswajit Mandal が DEVANAGARI DOUBLE SEPARATOR 1文字を提案する。
+
+- [L2/26-248](../documents/utc-l2-26-248.md) - Biswajit Mandal が Jain Nagari などの Sanskrit / Prakrit 写本に使う3 signs を提案する。
 
 - [L2/26-222](../documents/utc-l2-26-222.md) - Proposal to encode Myanmar letters for Kham Dom Pa'O。
 
@@ -86,3 +109,12 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 - `utc-l2-26-181r` - <https://www.unicode.org/L2/L2026/26181r-final-anusvara.pdf>
 - `utc-l2-26-221` - <https://www.unicode.org/L2/L2026/26221-devanagari-correction-mark.pdf>
 - `utc-l2-26-222` - <https://www.unicode.org/L2/L2026/26222-kham-dom.pdf>
+- `utc-l2-26-248` - <https://www.unicode.org/L2/L2026/26248-three-new-characters-devanagari.pdf>
+- `utc-l2-26-249` - <https://www.unicode.org/L2/L2026/26249-devanagari-double-separator.pdf>
+- `utc-l2-26-250` - <https://www.unicode.org/L2/L2026/26250-kannada-length-mark.pdf>
+- `utc-l2-26-251` - <https://www.unicode.org/L2/L2026/26251-vedic-double-anusvara.pdf>
+- `utc-l2-26-252` - <https://www.unicode.org/L2/L2026/26252-turkestan-brahmi.pdf>
+- `utc-l2-26-253` - <https://www.unicode.org/L2/L2026/26253-repha-in-kannada.pdf>
+- `utc-l2-26-254` - <https://www.unicode.org/L2/L2026/26254-nukta-in-sinhala.pdf>
+- `utc-l2-26-255` - <https://www.unicode.org/L2/L2026/26255-indic-158-a106.pdf>
+- `utc-l2-26-256` - <https://www.unicode.org/L2/L2026/26256-indic-164-a63.pdf>
