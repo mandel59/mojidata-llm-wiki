@@ -143,6 +143,25 @@ class RegistryParserTest(unittest.TestCase):
         self.assertEqual(entries[0]["doc_number"], "L2/26-093")
         self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/L2/L2026/26093.htm")
 
+    def test_notposted_placeholder_is_not_a_document(self) -> None:
+        html = """<table><tr>
+          <td><a href="L2026/NOTPOSTED">L2/26-231</a></td>
+          <td>UTC #189 Agenda <a href="https://example.org/info">Info</a></td>
+          <td>Peter Constable</td><td>2026-10-</td>
+        </tr></table>"""
+        for placeholder in ("NOTPOSTED", "notposted"):
+            with self.subTest(placeholder=placeholder):
+                entry, = parse_register_documents(
+                    "utc", html.replace("NOTPOSTED", placeholder),
+                    "https://www.unicode.org/L2/L-curdoc.htm",
+                )
+                self.assertEqual(entry["entry_id"], "utc-l2-26-231")
+                self.assertEqual(entry["status"], "unposted")
+                self.assertIsNone(entry["document_url"])
+                self.assertEqual(entry["related_links"], [
+                    {"text": "Info", "url": "https://example.org/info"},
+                ])
+
     def test_parse_wg2_document_and_reserved_number(self) -> None:
         entries = parse_register_documents("wg2", WG2_SAMPLE, "https://www.unicode.org/wg2/WG2-curdoc.html")
         self.assertEqual(len(entries), 2)

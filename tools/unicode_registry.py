@@ -266,8 +266,11 @@ def parse_row_entries(registry: str, row: tuple[Cell, ...], register_url: str) -
     if parsed_number is None:
         return []
 
-    all_links = [link for cell in row for link in cell.links]
-    number_links = list(row[0].links)
+    all_links = [
+        link for cell in row for link in cell.links
+        if Path(urlparse(link.url).path).name.casefold() != "notposted"
+    ]
+    number_links = [link for link in row[0].links if link in all_links]
     document_url = number_links[0].url if number_links else None
     primary_number = choose_primary_doc_number(registry, parsed_number, document_url)
 
