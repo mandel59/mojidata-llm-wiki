@@ -2,6 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-16
+
+- **Catalog**: IRG 全12 register を過去分も refresh し、3032行を保持。追加9件は N085R、N094R、N179R、N180R、N181R、N186R、N194R、N486R、N679R。更新198件は N001–N003、N007–N008、N013、N055、N058、N080–N084、N086–N093、N095–N107、N110–N127、N129–N178、N182–N183、N187–N193、N196–N197、N200、N202、N208–N209、N213、N226、N255、N259、N310、N313、N315、N318、N321–N322、N325、N361、N364–N368、N382–N385、N388、N473、N479–N480、N485、N515、N536、N1018、N1036、N1130、N1163、N1204、N1221、N1309、N1458、N1464、N2083、N2113–N2114、N2116、N2127–N2128、N2233、N2422、N2614、N2644、N2749、N2935、N2946–N2949、N2968、N2990–N3000、N108R、N109R、N128R、N184R、N185R、N195R、N207R、N257R、N258R、N2107R2、N2115R、N2229R、N2230R、N2231R、N2232R、N2241R。更新 field は各文書の date / document_url / source / status / subject / related_links。現行 register から消えた既存番号・改訂版18件を保持し、過去 entries の削除なし。
+- **History**: [初期 IRG 議論](topics/early-irg-history.md)を作成。1993-05-25 の設立案から第1～3回会合と1995年の components 討議を精読し、10 Source Document pages、3 Meeting pages、4 historical events を追加。source・統合・拡張方式・components・review 工程を現在の7 topics、IRG、Han family と相互接続した。
+- **Current comparison**: 新たに公開された [IRG N2946](documents/irg-n2946.md)を digest し、[horizontal extension dispositions](events/irg-67-horizontal-extension-dispositions.md)と [WS2024 Version 6.0 schedule](events/irg-67-ws2024-version6-review-schedule.md)を追加。比較先の topic・proposal・meeting の後続確認と、N2968 の unused 変更を更新し、agenda を2026-10-15版へ再取得。IRG 勧告と Unicode / ISO data への反映完了は区別した。
+- **Sources**: 初期資料15件・最新 recommendation と比較用の現行資料・agenda を非 Git cache へ取得。画像のみの設立提案、SC 2 設立決議、Users Guide、誤り報告、初期会合結論、components 討議は原文画像で照合。Users Guide の文字数表記差、Annex の当時の適用範囲、未公開資料の限界を明記した。
+
 ## 2026-10-14
 
 - **Catalog**: 最新 UTC / WG2 / IRG / PRI を再取得し、過去目録を保持。UTC に `L2/26-140R` / `145R2` / `147R3` と `227`～`259` の36件、IRG に `N2929R2` / `N2961R3` / `N2969R` / `N2972R` の4件を追加。`IRG N2935` の日付、`N2988` / `N2989` の公開・表題・source・URL を更新。WG2 / PRI に差分なし。

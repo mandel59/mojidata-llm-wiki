@@ -4,11 +4,11 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に JMJ / G / UK / U / V source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
-documents: ["wg2-n5221", "irg-n2721", "irg-n2722", "irg-n2369r", "utc-l2-24-012", "irg-n2909", "irg-n2923r", "irg-n2929", "irg-n2929r", "irg-n2935", "irg-n2936", "irg-n2945", "irg-n2960", "utc-l2-26-147", "irg-n2970", "irg-n2972", "pri-546", "irg-n2939r", "irg-n2943", "irg-n2983", "irg-n2984", "irg-n2987", "irg-n2929r2", "irg-n2972r"]
-topics: [irg-disunified-ideographs, jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax, ideographic-variation-database]
+documents: ["wg2-n5221", "irg-n2721", "irg-n2722", "irg-n2369r", "utc-l2-24-012", "irg-n2909", "irg-n2923r", "irg-n2929", "irg-n2929r", "irg-n2935", "irg-n2936", "irg-n2945", "irg-n2960", "utc-l2-26-147", "irg-n2970", "irg-n2972", "pri-546", "irg-n2939r", "irg-n2943", "irg-n2983", "irg-n2984", "irg-n2987", "irg-n2929r2", "irg-n2972r", "irg-n080", "irg-n131", "irg-n2946"]
+topics: ["irg-disunified-ideographs", "jmj-horizontal-extension-review-path", "uax45-u-source-ideographs", "irg-source-data-and-representative-glyphs", "unihan-data-format-and-property-syntax", "ideographic-variation-database", "early-irg-history"]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
-events: ["ivd-2026-08-03-moji-joho-registration", "irg-67-tca-u2403d-source-replacement"]
+events: ["ivd-2026-08-03-moji-joho-registration", "irg-67-tca-u2403d-source-replacement", "irg-2-extension-terminology-and-v-column", "irg-67-horizontal-extension-dispositions"]
 timestamp: 2026-10-10T00:00:00+09:00
 meetings: [irg-meeting-67]
 ---
@@ -20,6 +20,8 @@ meetings: [irg-meeting-67]
 CJK horizontal extension は、既に encoded されている CJK Unified Ideographs に対して、member body source の source reference と representative glyph を追加する作業である。新しい code point を追加する proposal ではなく、既存文字への source data / glyph data の追加・更新として扱われる。
 
 近年の例には、Japan NB の JMJ references、China の `G-source` 9,178 characters、UK の 2 characters、UTC の `U-source` 改訂版74 characters、Vietnam の V-source 9,263 references がある。TCA は [IRG N2972](../documents/irg-n2972.md) で700件の T-source references を提案した。大規模 source addition は、source owner の review、representative glyph、Unihan source property maintenance に接続する。
+
+2026-10-15 の最新 disposition は [IRG \#67 horizontal extension event](../events/irg-67-horizontal-extension-dispositions.md)を参照する。従来の提案・agenda 各行はその時点の記録として残す。
 
 ## 経緯
 
@@ -65,13 +67,13 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 
 [IRG N2929](../documents/irg-n2929.md) の初版は、中国の official geographical names、personal names、philological monographs、dictionaries、periodicals、local gazetteers などを根拠に、G-source reference を持たない9,156 encoded characters へ `GCW-Source` を追加する提案だった。改訂版 [IRG N2929R](../documents/irg-n2929r.md) は9,178字を対象とし、内訳を URO 21、Extension A 168、Extension B 3061、Extension C 421、Extension D 27、Extension E 377、Extension F 2795、Extension G 1537、Extension H 366、Extension J 405 とする。
 
-[IRG N2909](../documents/irg-n2909.md) の M66.09 は、IRG experts が 2026-08-28 までに feedback を送り、China が 2026-09-25 までに revised document を出す schedule を置いた。[IRG N2935](../documents/irg-n2935.md) の2026-10-14版は改訂版 N2929R2 を Section 8.1 に掲載する。会合での採否は後続 recommendation と action items で確認する。
+[IRG N2909](../documents/irg-n2909.md) の M66.09 は、IRG experts が 2026-08-28 までに feedback を送り、China が 2026-09-25 までに revised document を出す schedule を置いた。[IRG N2935](../documents/irg-n2935.md) の2026-10-14版は改訂版 N2929R2 を Section 8.1 に掲載する。後続の正式勧告は [IRG \#67 disposition event](../events/irg-67-horizontal-extension-dispositions.md)を参照する。
 
 [IRG N2923R](../documents/irg-n2923r.md) Appendix B は、GGH-source 6 characters と GXC-source 3 characters を horizontal extension candidates として示す。IRG Meeting \#66 editorial report は、China がこれらを separate proposal にするか、`IRG N2929R` に merge することを検討するよう求めた。
 
 ### G-source glyph normalization feedback
 
-[IRG N2984](../documents/irg-n2984.md) は N2929R の15字と追加 U+28123 を点検し、新字形、historical evidence、人名用 font の優先順位を問う。[IRG N2987](../documents/irg-n2987.md) は U+217B2 と U+28545 の修正意向を示す一方、特定の normalization standard への一律追従には同意せず、実際の使用や関連字との一貫性を説明する。これを改訂版の反映完了や IRG acceptance として扱わない。
+[IRG N2984](../documents/irg-n2984.md) は N2929R の15字と追加 U+28123 を点検し、新字形、historical evidence、人名用 font の優先順位を問う。[IRG N2987](../documents/irg-n2987.md) は U+217B2 と U+28545 の修正意向を示す一方、特定の normalization standard への一律追従には同意せず、実際の使用や関連字との一貫性を説明する。回答だけから改訂版への反映完了を推定しない。IRG の受入勧告は後続の [disposition event](../events/irg-67-horizontal-extension-dispositions.md)に記録する。
 
 U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、source addition が既存 unification の再検討に波及する例となる。詳細は [IRG Disunified Ideographs](irg-disunified-ideographs.md) を参照する。
 
@@ -89,13 +91,17 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 
 ### V-source horizontal extension
 
-[IRG N2970](../documents/irg-n2970.md) は Vietnam が9,263件の V-source references を既存 ideographs に追加する提案である。Hán-Nôm 資料の略号、quốc ngữ の読み、出典ページを各文字に付ける。2026-10-14版 agenda は再検討印であり、追加済みの Unihan data と区別する。
+[IRG N2970](../documents/irg-n2970.md) は Vietnam が9,263件の V-source references を既存 ideographs に追加する提案である。Hán-Nôm 資料の略号、quốc ngữ の読み、出典ページを各文字に付ける。後続の [M67.12 disposition](../events/irg-67-horizontal-extension-dispositions.md)は ORT review と次回改訂を求めており、追加済みの Unihan data と区別する。
 
 [IRG N2945](../documents/irg-n2945.md) は、この 9,263 件を Vietnamese documents での使用と読みを資料化しやすい範囲として説明し、NomNaTong-Regular font の数百 glyph を修正したと報告する。追加提案の可能性も示すが、件数や受理は未定である。
 
 ### T-source horizontal extension
 
 [IRG N2972](../documents/irg-n2972.md) は、TCA が household registration の人名文字と CNS 11643 Web を根拠に700件の T-source references と glyphs を既存 Extension B code points に追加する proposal である。2026-10-12版 agenda の Section 8.5 に審議予定として掲載された。[IRG N2939R](../documents/irg-n2939r.md) は U+203A6、U+23E25、U+2403D、U+23CFE、U+25337 の glyph を説明する予定を補う。提案、agenda、会合後の採否は別々に扱う。
+
+### 初期 IRG との接続
+
+[1994年の拡張方式と V-column](../events/irg-2-extension-terminology-and-v-column.md)は、既存表の column 追加と新規 code positions を区別する歴史的な比較点である。現在は既存 source column 内への references / glyphs 追加も含むため、当時の定義を現行手続へ直結しない。[初期 IRG 議論](early-irg-history.md)に対照表を置く。
 
 ## 関連文書
 
@@ -174,3 +180,6 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 - `irg-n2987` - <https://www.unicode.org/irg/docs/n2987-IRGN2984Feedback.pdf>
 - `irg-n2929r2` - <https://www.unicode.org/irg/docs/n2929r2-ChinaHorizontalExtension.pdf>
 - `irg-n2972r` - <https://www.unicode.org/irg/docs/n2972r-TCAHorizontalExtension.pdf>
+- `irg-n080` - <https://www.unicode.org/irg/docs/n0080-Resolutions.pdf>（registry date: 1994-03-16）
+- `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）

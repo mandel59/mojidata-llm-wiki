@@ -17,20 +17,25 @@ okf_version: "0.1"
 
 ## Current Focus
 
+- [Early IRG History (1993–1995)](topics/early-irg-history.md) - 1993年5月の設立案から最初期会合を精読し、現在の source・統合・review 手続と比較。
+
 - [kZVariant](topics/kzvariant.md) - Unicode 12.0→13.0 の全面見直し、関連提案と正式データの削除例。
 
 - [Ideographic Variation Database](topics/ideographic-variation-database.md) - 全10版の登録履歴、6 collections、UTS \#37 と関連 PRI。
 - [Unicode 18.0 Change Sources](topics/unicode-18-change-sources.md) - UTC \#188 release authorization と2026-09-16 publicationを追う中心topic。
 - [UTC Meeting \#188](meetings/utc/utc-meeting-188.md) - Unicode 18.0 finalization、Unicode 19.0 pipeline、property / CJK decisions。
-- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-14版agendaの進捗、改訂 horizontal extensions、TCA差替えとUK回答を追う。
+- [IRG Meeting \#67](meetings/irg/irg-meeting-67.md) - 2026-10-15 の正式勧告、horizontal extensions と WS2024 次版 review を追う。
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - 7th edition DISとAmendment 1 projectの進行状況。
 - [Small Seal Script](topics/small-seal-script.md) - 7th edition pipelineに入ったSmall Seal repertoire、source model、glyph corrections。
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
 - [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-12/13登録のQuikscript / Kadu / Zou、Arabic / Latin追加案と既存の保留を追う。
 
-完全な54 topicは [Topics index](topics/index.md) を参照してください。
+完全な55 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
+
+- [IRG \#67 horizontal extension dispositions](events/irg-67-horizontal-extension-dispositions.md) - 4 body の受入勧告と Vietnam の継続 review。
+- [IRG \#67 WS2024 Version 6.0 schedule](events/irg-67-ws2024-version6-review-schedule.md) - 次版作成、ORT review、次期提出準備。
 
 - [TCA U+2403D source replacement](events/irg-67-tca-u2403d-source-replacement.md) - IRG \#67 の討議を受けた提出案の差替え。正式 acceptance と区別する。
 

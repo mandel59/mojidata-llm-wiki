@@ -4,17 +4,19 @@ title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2887, irg-n2888, irg-n2909, irg-n2910, irg-n2932, irg-n2933, irg-n2935, irg-n2936, irg-n2938, irg-n2939, irg-n2942, irg-n2945, wg2-n5353, irg-n2939r, irg-n2941, irg-n2979, irg-n2980, irg-n2943]
+documents: ["irg-n2702", "irg-n2765", "irg-n2887", "irg-n2888", "irg-n2909", "irg-n2910", "irg-n2932", "irg-n2933", "irg-n2935", "irg-n2936", "irg-n2938", "irg-n2939", "irg-n2942", "irg-n2945", "wg2-n5353", "irg-n2939r", "irg-n2941", "irg-n2979", "irg-n2980", "irg-n2943", "irg-n131", "irg-n2946"]
 status: active
 tags: [irg, working-set, cjk, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
+topics: ["early-irg-history"]
+events: ["irg-67-ws2024-version6-review-schedule"]
 ---
 
 # IRG Working Set 2024
 
 ## 概要
 
-IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs の現行 working set である。IRG Meeting \#67 では Version 5.0 が中心議題になっており、`IRG N2935` の2026-10-12版 schedule では火曜全日と水曜午前がこの review に割り当てられている。
+IRG Working Set 2024 は、IRG が review している CJK Unified Ideographs の現行 working set である。IRG Meeting \#67 は Version 5.0 を review し、[Version 6.0 の作成・review schedule](../events/irg-67-ws2024-version6-review-schedule.md)に合意した。
 
 [IRG N2932](../documents/irg-n2932.md) は Version 5.0 の chart / list で、各候補の source、attributes、discussion record を含む。[IRG N2933](../documents/irg-n2933.md) は Version 5.0 consolidated comments で、過去版から unresolved の指摘を含む source 別の review 意見を束ねる。Meeting \#67 前の入力文書であり、個別の採否は記録しない。
 
@@ -65,7 +67,11 @@ Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ide
 
 ### 次版文書の登録と本文公開
 
-register は `IRG N2979`（Version 6.0）と `IRG N2980`（consolidated comments）の URL を登録したが、日付は空欄で、2026-10-12 の再取得は両方とも HTTP 404 だった。現行 review が Version 6.0 に移ったとは推定せず、Version 5.0 の公開文書と \#67 agenda を入口にする。
+[M67.05](../events/irg-67-ws2024-version6-review-schedule.md)は N2979（Version 6.0）を2026-12-25、N2980（consolidated comments）を2027-02-26に release する予定を定めた。作成への合意と、文書本文の公開・review 完了を区別する。
+
+### 初期 IRG との接続
+
+[N131](../documents/irg-n131.md) V5–V6 は候補ごとの根拠、MRF data、draft、複数回の review、WG2 送付を工程化した。[初期 IRG 議論](early-irg-history.md)では現在の ORT / responses cycle と比較し、同一の手続が1994年から存在したとは扱わない。
 
 ## 関連文書
 
@@ -105,3 +111,5 @@ register は `IRG N2979`（Version 6.0）と `IRG N2980`（consolidated comments
 - `irg-n2979` - <https://www.unicode.org/irg/docs/n2979-WS2024v6.pdf>
 - `irg-n2980` - <https://www.unicode.org/irg/docs/n2980-WS2024v6ConsolidatedComments.pdf>
 - `irg-n2943` - <https://www.unicode.org/irg/docs/n2943-UKActivityReport.pdf>
+- `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）

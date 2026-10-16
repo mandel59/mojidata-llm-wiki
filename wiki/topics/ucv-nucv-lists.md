@@ -4,12 +4,13 @@ title: UCV and NUCV Lists
 description: "IRG の UCV / NUCV lists による component variation と unification / disunification 境界の整理。"
 slug: ucv-nucv-lists
 bodies: [IRG]
-documents: [irg-n2702, irg-n2765, irg-n2909, irg-n2910, irg-n2931, irg-n2935, irg-n2978]
-topics: [irg-indexing-rules, irg-disunified-ideographs, cjkv-components, unihan-database-maintenance, ideographic-variation-database]
+documents: ["irg-n2702", "irg-n2765", "irg-n2909", "irg-n2910", "irg-n2931", "irg-n2935", "irg-n2978", "irg-n100", "irg-n131", "irg-n2946"]
+topics: ["irg-indexing-rules", "irg-disunified-ideographs", "cjkv-components", "unihan-database-maintenance", "ideographic-variation-database", "early-irg-history"]
 people: [irg]
 status: active
 tags: [irg, ucv, nucv, unification, components]
 timestamp: 2026-10-10T00:00:00+09:00
+events: ["irg-3-unification-annex-forwarding"]
 ---
 
 # UCV and NUCV Lists
@@ -54,7 +55,11 @@ UCV / NUCV の判断は、最終的には encoded character の source reference
 
 ### 次回 review 用 URL
 
-register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は空欄で、2026-10-12 の再取得は HTTP 404 だった。本文を読めないため、改訂内容や list の切替を推定せず、既存の公開版と会合記録を基準にする。
+[N2946](../documents/irg-n2946.md) M67.03 は N2978 の準備を2026-11-27、expert feedback を2027-01-01、必要な改訂版を01-29、残る feedback を02-19とする。次版の作成予定と公開済み list の切替を区別する。
+
+### 初期 IRG との接続
+
+[N100](../documents/irg-n100.md)の構造・字形差と [第3回 Annex 送付](../events/irg-3-unification-annex-forwarding.md)は、統合判断の対象範囲を読む歴史的な比較点となる。[初期 IRG 議論](early-irg-history.md)では1994年の Annex を現行の UCV / NUCV 一覧と同一視しない。[N2946](../documents/irg-n2946.md) M67.02–03 が2026年の確認・新規例受理と次回 review schedule を記録する。
 
 ## 関連文書
 
@@ -81,3 +86,6 @@ register に `IRG N2978` UCV & NUCV Lists の URL が登録された。日付は
 - `irg-n2931` - <https://www.unicode.org/irg/docs/n2931-Complete.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `irg-n2978` - <https://www.unicode.org/irg/docs/n2978-Complete.pdf>
+- `irg-n100` - <https://www.unicode.org/irg/docs/n0100-AnnexS.pdf>（registry date: 1994-07-07）
+- `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）

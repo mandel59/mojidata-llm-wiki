@@ -351,8 +351,9 @@
 
 ### 2026
 
-- [IRG N2989](irg-n2989.md) - UK が IRG N2918 の U+3062B / U+30C68 reference glyph changes へ条件付きで異議なしと回答する。
+- [IRG N2946](irg-n2946.md) - IRG \#67 の正式勧告。WS2024 次版、horizontal extensions、source / glyph の disposition。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
+- [IRG N2989](irg-n2989.md) - UK が IRG N2918 の U+3062B / U+30C68 reference glyph changes へ条件付きで異議なしと回答する。
 - [IRG N2988](irg-n2988.md) - Suisenn が G-source style に合わない6 glyphs の修正を China NB へ求める。
 - [IRG N2972R](irg-n2972r.md) - TCA が Extension B の700字に対する T-source horizontal extension proposal を改訂する。
 - [IRG N2987](irg-n2987.md) - Wang Xieyang が G-source horizontal extension の2字の修正意向と、他の字形を維持する理由を回答した feedback。
@@ -518,9 +519,24 @@
 
 - [IRG N743](irg-n743.md) - Extension C member body submissions の初期集計。
 
-### Undated
+### 1995
 
-- [IRG N2946](irg-n2946.md) - IRG Meeting 67 の recommendations / action items 用 registry entry。本文未公開の placeholder。
+- [IRG N200](irg-n200.md) - Zhang Zhoucai が IRG 内外の experts に components / composition の討議参加を呼びかけた案内。
+
+### 1994
+
+- [IRG N131](irg-n131.md) - 1994-09-02 の Beijing 第3回会合結論。
+- [IRG N100](irg-n100.md) - Takeo Koike による CJK 統合・分離と配列の informative Annex 草案。
+- [IRG N080](irg-n080.md) - 1994-02-28/03-04 の Ha Noi 第2回会合決議。registry date は1994-03-16。
+
+### 1993
+
+- [IRG N034](irg-n034.md) - 1993-10-04/06、Fukuoka で開かれた IRG 第1回会合の結論。
+- [IRG N013](irg-n013.md) - Japan が初版 ISO/IEC 10646-1 の CJK chart の誤りを報告した文書。
+- [IRG N008](irg-n008.md) - Japan が ISO/IEC 10646-1 への informative annexes 作成を求めた提案。
+- [IRG N007](irg-n007.md) - Japan が IRG 第1回会合へ提出した Users Guide の新規 work item 提案。
+- [IRG N003](irg-n003.md) - 1993-05-27/28 の Athens SC 2 Plenary \#4 決議集。
+- [IRG N002](irg-n002.md) - 1993-05-25 の Mark Davis、Kato Shigenobu、T. J. Kang による IRG 設立提案。
 
 ## PRI
 

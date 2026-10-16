@@ -4,11 +4,12 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: [irg-n1105, irg-n2171, irg-n2221, irg-n2826, irg-n2850r, irg-n2862r2, irg-n2909, irg-n2915, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148]
-topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters]
+documents: ["irg-n1105", "irg-n2171", "irg-n2221", "irg-n2826", "irg-n2850r", "irg-n2862r2", "irg-n2909", "irg-n2915", "irg-n2925", "irg-n2931", "irg-n2935", "irg-n2951", "irg-n2952", "utc-l2-26-134", "utc-l2-26-148", "irg-n100", "irg-n131", "irg-n2946"]
+topics: ["unihan-data-format-and-property-syntax", "ucv-nucv-lists", "cjk-hybrid-characters", "cjk-multi-syllabic-and-abbreviation-characters", "early-irg-history"]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
 timestamp: 2026-07-06T21:31:45+09:00
+events: ["irg-3-unification-annex-forwarding"]
 ---
 
 # IRG Indexing Rules
@@ -57,7 +58,11 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [IRG N2925](../documents/irg-n2925.md) は Primary / Secondary Radical assignment rules の更新提案であり、WS2017 / WS2021 で続いた radical assignment の議論を背景にしている。論点は、semantic radical が discoverability を妨げる場合に primary radical を直感的に選び、technically correct radical を secondary radical とする運用と、その secondary radical の追加が ORT manager と会合時間の負担を増やしている点である。
 
-[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed rules を準備するよう求めた。[IRG N2952](../documents/irg-n2952.md) Version 1 は、形声字では意符を優先し、独体字・合体字では構造と画数を使う判断順序を示す。secondary radical は二通りの分析を支える証拠がある場合に限る。Meeting \#67 の採否は未確認。
+[IRG N2925](../documents/irg-n2925.md) は、lookup 目的の追加 radical は一般利用者には有用でも IRG の encoding review の scope から外れ得るため、CJK & Unihan Working Group 側で扱う選択肢を示している。IRG \#66 は、この proposal をもとに condensed rules を準備するよう求めた。[IRG N2952](../documents/irg-n2952.md) Version 1 は、形声字では意符を優先し、独体字・合体字では構造と画数を使う判断順序を示す。secondary radical は二通りの分析を支える証拠がある場合に限る。後続の [N2946](../documents/irg-n2946.md) M67.04 は、今後の提出の radical assignment rules として N2952 を受理した。
+
+### 初期 IRG との接続
+
+[1994年の Annex 送付](../events/irg-3-unification-annex-forwarding.md)は、規則の適用対象を既存1993年版に限定した。[N100](../documents/irg-n100.md)の source separation・abstract / actual shape と現代の review rules の比較は [初期 IRG 議論](early-irg-history.md)へ。M67.04 は [N2952](../documents/irg-n2952.md)を今後の提出用 radical rules として受理した（[N2946](../documents/irg-n2946.md)）。
 
 ## 関連文書
 
@@ -108,3 +113,6 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - `irg-n2952` - <https://www.unicode.org/irg/docs/n2952-RadicalAssignments.pdf>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
+- `irg-n100` - <https://www.unicode.org/irg/docs/n0100-AnnexS.pdf>（registry date: 1994-07-07）
+- `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）

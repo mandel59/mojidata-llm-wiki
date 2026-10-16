@@ -6,6 +6,10 @@
 
 ## All Events
 
+- [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28) - SC 2 が WG2 の Ideographic Rapporteur Group 設立と consensus による運営を承認した。
+- [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06) - 第1回会合が Users Guide と規格 addendum の修正案を上位 body へ送付するとした。
+- [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04) - 第2回会合が補充・拡張の3方式を定義し、Vietnam の V-column を設けるとした。
+- [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02) - 第3回会合が Annex N128 を編集修正付きで受理し、既存1993年版への適用に限定した。
 - [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10) - Unicode 13.0 の正式 Unihan data で旧 kZVariant の大幅削除と再構成が反映された出来事。
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27) - WG2 \#72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27) - WG2 \#72 が 11,339 Small Seal characters を将来版候補として検討するよう勧告した出来事。
@@ -22,6 +26,8 @@
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03) - IVD Registrar が PRI \#546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02) - PRI \#520 の review と UTC の調整を経た UAX \#60 が、Unicode 18.0.0 の初の承認済み公開版 Revision 3 として確定した節目。
 - [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12) - TCA が IRG \#67 の討議を受け、U+2403D の horizontal extension proposal の source / glyph を差し替えた出来事。
+- [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15) - IRG \#67 が WS2024 Version 6.0 の生成と ORT review の日程を定めた。
+- [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15) - IRG \#67 が4 body の horizontal extension へ受入勧告を行い、Vietnam 案には review を継続した。
 
 ## By Topic
 
@@ -31,8 +37,10 @@
 
 ### [CJK Horizontal Extensions](../topics/cjk-horizontal-extensions.md)
 
+- [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 - [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12)
+- [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
 
 ### [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md)
 
@@ -51,10 +59,24 @@
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
 
+### [Early IRG History (1993–1995)](../topics/early-irg-history.md)
+
+- [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28)
+- [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
+- [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
+- [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
+- [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
+- [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
+
 ### [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 
 - [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
+
+### [IRG Indexing Rules](../topics/irg-indexing-rules.md)
+
+- [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
+- [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
 
 ### [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
@@ -62,6 +84,17 @@
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
+- [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
+
+### [IRG Working Process and Liaison](../topics/irg-working-process-and-liaison.md)
+
+- [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28)
+- [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
+
+### [IRG Working Set 2024](../topics/irg-working-set-2024.md)
+
+- [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
+- [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
 
 ### [J-source and JMJ Source Issues](../topics/j-source.md)
 
@@ -113,6 +146,10 @@
 
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
 
+### [UCV and NUCV Lists](../topics/ucv-nucv-lists.md)
+
+- [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
+
 ### [Unicode 18.0 Change Sources](../topics/unicode-18-change-sources.md)
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
@@ -140,6 +177,9 @@
 
 ### IRG
 
+- [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
+- [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
+- [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
@@ -147,9 +187,12 @@
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
 - [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12)
+- [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
+- [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
 
 ### SC2
 
+- [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28)
 - [WG2 M73.01 Small Seal CD4 disposition](wg2-m73-01-small-seal-cd4-disposition.md) (2026-06-26)
 
 ### UTC

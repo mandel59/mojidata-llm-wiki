@@ -4,8 +4,8 @@ title: CJKV Components
 description: CJK Unified Ideographs Components-A/B の標準化提案と IRG / WG2 での議論を追跡する。
 slug: cjkv-components
 bodies: [IRG, WG2, SC2]
-documents: [utc-l2-21-134, irg-n1081, irg-n1133, irg-n2702, irg-n2733r, irg-n2765, irg-n2799, irg-n2826, irg-n2852, irg-n2878, irg-n2878r, irg-n2878r2, irg-n2878r3, irg-n2890, irg-n2895, irg-n2909, irg-n2917, irg-n2935, wg2-n5354, wg2-n5358, wg2-n5361r]
-topics: [ucv-nucv-lists]
+documents: ["utc-l2-21-134", "irg-n1081", "irg-n1133", "irg-n2702", "irg-n2733r", "irg-n2765", "irg-n2799", "irg-n2826", "irg-n2852", "irg-n2878", "irg-n2878r", "irg-n2878r2", "irg-n2878r3", "irg-n2890", "irg-n2895", "irg-n2909", "irg-n2917", "irg-n2935", "wg2-n5354", "wg2-n5358", "wg2-n5361r", "irg-n080", "irg-n131", "irg-n200"]
+topics: ["ucv-nucv-lists", "early-irg-history"]
 status: accepted-for-future-version
 tags: [cjk, components, irg, ideographic]
 timestamp: 2026-07-06T21:58:00+09:00
@@ -17,7 +17,7 @@ timestamp: 2026-07-06T21:58:00+09:00
 
 CJKV Components は、CJK ideographs を構成要素として扱う characters を UCS / Unicode に符号化する議論である。最終 proposal の `IRG N2878R3` は、`CJK Unified Ideographs Components-A` に 119 characters、`CJK Unified Ideographs Components-B` に 375 characters、合計 494 characters を置く。
 
-議論は、IDS を実際の字形レベルで簡潔に記述したい要求、教育・辞書・検索で使われる部件リスト、各 member body の component data をどう統合するかから始まった。2004-2005 年には China と TCA から component data / decomposition rules の先行文書が出ており、`IRG N2733R` は China の GF 3001-1997 / GF 0014-2009 を土台に 131 components を提案し、`IRG N2799` は HKSAR、TCA、Vietnam、Jianzi Musical Notation 由来の追加 data を含む CJKV 全体の整理へ拡張した。
+議論は、IDS を実際の字形レベルで簡潔に記述したい要求、教育・辞書・検索で使われる部件リスト、各 member body の component data をどう統合するかから始まった。1994～1995年の [N080](../documents/irg-n080.md) / [N131](../documents/irg-n131.md) / [N200](../documents/irg-n200.md) にも components と composition の定義・討議が見える。2004-2005 年には China と TCA から component data / decomposition rules の先行文書が出ており、`IRG N2733R` は China の GF 3001-1997 / GF 0014-2009 を土台に 131 components を提案し、`IRG N2799` は HKSAR、TCA、Vietnam、Jianzi Musical Notation 由来の追加 data を含む CJKV 全体の整理へ拡張した。
 
 2026-07-05 更新の `IRG N2935` 時点では、IRG Convenor が `IRG N2878R3` に Proposal Summary Form を付けて WG2 \#73 へ提出し、`WG2 N5358` として扱われた。WG2 は two new blocks の受け入れを勧告し、SC2 は 2026-06-26 に ISO/IEC 10646 Seventh Edition Amendment 1 として accept した。Unicode Version 19.0 (2027) target とされる。
 
@@ -118,6 +118,10 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 
 未決・後続確認は、WS2024 からの 11 characters withdrawal、Unicode / ISO の actual code chart and property data への反映、future batch の proposal procedure、individual feedback を second or later batches でどう扱うかである。
 
+### 初期 IRG との接続
+
+[N080](../documents/irg-n080.md) 項目13、[N131](../documents/irg-n131.md) C1、[N200](../documents/irg-n200.md)により、component 定義と composition scheme の議論は1994～1995年まで遡れる。[初期 IRG 議論](early-irg-history.md)に比較を置く。これを2026年の494文字案の同一 repertoire や、全過程の直接の継承関係の証明とはしない。
+
 ## 関連文書
 
 - [IRG N1081](../documents/irg-n1081.md) - China source の 146 ideographic components proposal
@@ -185,3 +189,6 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `wg2-n5358` - <https://www.unicode.org/wg2/docs/n5358-irgn2878r3-CJKComponents.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `irg-n080` - <https://www.unicode.org/irg/docs/n0080-Resolutions.pdf>（registry date: 1994-03-16）
+- `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
+- `irg-n200` - <https://www.unicode.org/irg/docs/n0200-IdeographicComponents.pdf>（registry date: 1995-04-03）

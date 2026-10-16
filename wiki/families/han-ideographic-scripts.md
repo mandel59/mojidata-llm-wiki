@@ -3,8 +3,8 @@ type: Synthesis
 title: Han Ideographic Scripts
 description: Han / ideographic 系の script、source data、component、indexing rules、関連 data / symbols を束ねる synthesis。
 slug: han-ideographic-scripts
-members: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals, ideographic-variation-database, kzvariant]
-topics: [small-seal-script, uax60-large-east-asian-scripts, uax45-u-source-ideographs, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs, unihan-database-maintenance, unihan-data-format-and-property-syntax, irg-working-set-2024, cjk-horizontal-extensions, jmj-horizontal-extension-review-path, j-source, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, irg-source-data-and-representative-glyphs, g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, kirg-sgsource, cjkv-components, cjk-strokes-variation-sequences, irg-indexing-rules, ucv-nucv-lists, cjk-security-confusables, ideographic-punctuation-proposals, ideographic-variation-database, kzvariant]
+members: ["small-seal-script", "uax60-large-east-asian-scripts", "uax45-u-source-ideographs", "japanese-place-name-ideographs", "japanese-historical-ideographs", "cjk-abbreviated-and-simplified-ideographs", "unihan-database-maintenance", "unihan-data-format-and-property-syntax", "irg-working-set-2024", "cjk-horizontal-extensions", "jmj-horizontal-extension-review-path", "j-source", "cjk-hybrid-characters", "cjk-multi-syllabic-and-abbreviation-characters", "irg-source-data-and-representative-glyphs", "g-source-glyph-and-reference-issues", "t-source-representative-glyph-issues", "v-source-representative-glyph-issues", "kirg-sgsource", "cjkv-components", "cjk-strokes-variation-sequences", "irg-indexing-rules", "ucv-nucv-lists", "cjk-security-confusables", "ideographic-punctuation-proposals", "ideographic-variation-database", "kzvariant", "early-irg-history"]
+topics: ["small-seal-script", "uax60-large-east-asian-scripts", "uax45-u-source-ideographs", "japanese-place-name-ideographs", "japanese-historical-ideographs", "cjk-abbreviated-and-simplified-ideographs", "unihan-database-maintenance", "unihan-data-format-and-property-syntax", "irg-working-set-2024", "cjk-horizontal-extensions", "jmj-horizontal-extension-review-path", "j-source", "cjk-hybrid-characters", "cjk-multi-syllabic-and-abbreviation-characters", "irg-source-data-and-representative-glyphs", "g-source-glyph-and-reference-issues", "t-source-representative-glyph-issues", "v-source-representative-glyph-issues", "kirg-sgsource", "cjkv-components", "cjk-strokes-variation-sequences", "irg-indexing-rules", "ucv-nucv-lists", "cjk-security-confusables", "ideographic-punctuation-proposals", "ideographic-variation-database", "kzvariant", "early-irg-history"]
 tags: [family, han, ideographic]
 timestamp: 2026-10-13T00:00:00+09:00
 events: ["irg-67-tca-u2403d-source-replacement"]
@@ -20,6 +20,7 @@ Han / ideographic 系の script、block、source data、variation database、関
 
 | Topic | 状態 | 一言 |
 | --- | --- | --- |
+| [Early IRG History (1993–1995)](../topics/early-irg-history.md) | historical | 最初期の一次資料と現在の論点の比較。 |
 | [kZVariant](../topics/kzvariant.md) | active | Z-variant property の定義、Unicode 13.0 のデータ見直しと削除履歴。 |
 | [Ideographic Variation Database](../topics/ideographic-variation-database.md) | active | IVD collections、IVS 登録履歴、public review と正式データの追跡。 |
 | [Small Seal Script](../topics/small-seal-script.md) | in-ballot-pipeline | `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。 |
@@ -47,6 +48,8 @@ Han / ideographic 系の script、block、source data、variation database、関
 | [UCV and NUCV Lists](../topics/ucv-nucv-lists.md) | active | component variation の unification / disunification 境界を整理する IRG reference lists。 |
 | [CJK Security Confusables](../topics/cjk-security-confusables.md) | active | UTS \#39 security data、Unihan `kSpoofingVariant` / `kZVariant`、Han identifier policy の CJK confusables。 |
 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) | active | Ideographic Symbols and Punctuation block 周辺の句読点・記号追加提案。 |
+
+[初期 IRG 議論](../topics/early-irg-history.md)は1993年の設立と第1～3回会合から、source・統合・拡張・components・review の問題設定を現在へ接続する歴史の入口である。
 
 ## 横断テーマ
 

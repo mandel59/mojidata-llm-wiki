@@ -5,13 +5,14 @@ description: "TCA が IRG #67 の討議を受け、U+2403D の horizontal extens
 slug: "irg-67-tca-u2403d-source-replacement"
 date: "2026-10-12"
 bodies: ["IRG"]
-documents: ["irg-n2972", "irg-n2972r"]
+documents: ["irg-n2972", "irg-n2972r", "irg-n2946"]
 topics: ["cjk-horizontal-extensions", "t-source-representative-glyph-issues"]
 people: ["tca", "irg"]
 meetings: ["irg-meeting-67"]
 status: "revised"
 tags: ["event", "t-source", "horizontal-extension", "glyph"]
 timestamp: "2026-10-14T00:00:00+09:00"
+events: ["irg-67-horizontal-extension-dispositions"]
 ---
 
 # IRG \#67 TCA U+2403D source replacement
@@ -40,7 +41,10 @@ TCA は2026-10-12 の討議を受け、700字の T-source horizontal extension p
 - [TCA](../people/tca.md)
 - [IRG N2972R](../documents/irg-n2972r.md)
 
+後続の正式な受入勧告は [IRG \#67 horizontal extension disposition](../events/irg-67-horizontal-extension-dispositions.md)に記録する。提出案の変更日と勧告日は分けて読む。
+
 ## 出典
 
 - `irg-n2972r` - <https://www.unicode.org/irg/docs/n2972r-TCAHorizontalExtension.pdf>（registry date: 2026-10-13。本文が記録する討議日は2026-10-12）
 - `irg-n2972` - <https://www.unicode.org/irg/docs/n2972-TCAHorizontalExtension.pdf>
+- `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）

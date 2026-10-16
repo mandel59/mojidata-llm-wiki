@@ -4,6 +4,10 @@ UTC、WG2、IRG の会合単位の要約を置く。
 
 ## 一覧
 
+- [IRG Meeting \#1](irg/irg-meeting-1.md) - 1993年、CJK-JRG からの移行と Users Guide / Annex。
+- [IRG Meeting \#2](irg/irg-meeting-2.md) - 1994年、拡張方式と V-column。
+- [IRG Meeting \#3](irg/irg-meeting-3.md) - 1994年、Annex、候補分類、review schedule。
+
 - [UTC Meeting \#187](utc/utc-meeting-187.md) - Unicode 18.0 beta review authorization と working group reports。
 - [UTC Meeting \#188](utc/utc-meeting-188.md) - Unicode 18.0 release authorization、Unicode 19.0 pipeline、property / CJK decisions。
 - [IRG Meeting \#66](irg/irg-meeting-66.md) - Meeting \#67 へ引き継がれた recommendations と action items。
