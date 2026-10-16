@@ -5,13 +5,14 @@ description: "IRG #66 Recommendation M66.16 が kIRG_SGSource の establishment 
 slug: irg-m66-16-kirg-sgsource-establishment
 date: "2026-03-19"
 bodies: [IRG]
-documents: [irg-n2909, irg-n2926]
+documents: ["irg-n2909", "irg-n2926", "irg-n360"]
 topics: [kirg-sgsource, irg-source-data-and-representative-glyphs]
 people: [irg, wg2, eiso-chan]
 meetings: [irg-meeting-66]
 status: adopted
 tags: [event, unihan, source-data, singapore]
 timestamp: 2026-07-06T23:50:00+09:00
+events: ["irg-7-s-column-merge-into-g"]
 ---
 
 # IRG M66.16 kIRG_SGSource establishment
@@ -32,6 +33,8 @@ M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source へ
 
 この event は、Singapore characters を G-source から分離する source data governance の変更として扱う。個別 glyph issue である U+48B4 / GS-2151 の扱いは、source data and representative glyphs topic とあわせて追跡する。
 
+[1996年の S-column 統合](irg-7-s-column-merge-into-g.md)は、source のまとめ方と保守責任を比較する歴史的な参照点である。
+
 ## 関連ページ
 
 - [kIRG_SGSource](../topics/kirg-sgsource.md)
@@ -46,3 +49,4 @@ M66.16 は `kIRG_SGSource` の establishment と `GS` prefix の `SG` source へ
 - `irg-n2909` - <https://www.unicode.org/irg/docs/n2909-Recommendations.pdf>
 - `irg-n2926` - <https://www.unicode.org/irg/docs/n2926-SGSource.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `irg-n360` - <https://www.unicode.org/irg/docs/n0360-Resolutions.pdf>（registry date: 1996-06-27）

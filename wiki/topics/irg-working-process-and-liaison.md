@@ -4,12 +4,12 @@ title: IRG Working Process and Liaison
 description: IRG の手続、SC 2 に対する位置づけ、会議運営、外部団体との連携。
 slug: irg-working-process-and-liaison
 bodies: [IRG, SC2]
-documents: ["irg-n2850r", "irg-n2938", "irg-n2940", "irg-n2966", "irg-n2967", "irg-n2971", "irg-n2973", "irg-n2935", "irg-n002", "irg-n003", "irg-n034", "irg-n131", "irg-n2946"]
+documents: ["irg-n2850r", "irg-n2938", "irg-n2940", "irg-n2966", "irg-n2967", "irg-n2971", "irg-n2973", "irg-n2935", "irg-n002", "irg-n003", "irg-n034", "irg-n131", "irg-n2946", "irg-n189", "irg-n250"]
 topics: ["irg-indexing-rules", "irg-urgently-needed-ideographs", "early-irg-history"]
 meetings: [irg-meeting-67]
 status: active
 tags: [irg, process, liaison]
-events: ["sc2-1993-irg-establishment", "irg-1-users-guide-and-annex-forwarding"]
+events: ["sc2-1993-irg-establishment", "irg-1-users-guide-and-annex-forwarding", "irg-4-officer-role-restriction-withdrawal"]
 ---
 
 # IRG Working Process and Liaison
@@ -46,6 +46,10 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 
 1993年の [IRG 設立](../events/sc2-1993-irg-establishment.md)と2026年の [SC 2/AG 1 ToR](../documents/irg-n2967.md)を比較すると、consensus と技術提案の役割は共通し、組織上の所属・権限は異なる。詳しい対照は [初期 IRG 議論](early-irg-history.md)を参照する。M67.19 の会合言語に関する記録は [N2946](../documents/irg-n2946.md)へ。
 
+### 既存合意を変更した記録
+
+[第4回の兼任制限撤回](../events/irg-4-officer-role-restriction-withdrawal.md)は、1993年の三役兼任を禁じる一文を撤回した例である。[N189](../documents/irg-n189.md) W1 は既存合意の変更・撤回を plenary 承認によるものとする。初期の運営規則を現行の規則として固定しない。
+
 ## 関連文書
 
 - [IRG N2935](../documents/irg-n2935.md) - IRG Meeting \#67 Schedule & Agenda。
@@ -78,3 +82,5 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 - `irg-n034` - <https://www.unicode.org/irg/docs/n0034-Conclusions.pdf>（registry date: 1993-10-06）
 - `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
+- `irg-n189` - <https://www.unicode.org/irg/docs/n0189-Resolutions.pdf>（registry date: 1995-03-03）
+- `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）

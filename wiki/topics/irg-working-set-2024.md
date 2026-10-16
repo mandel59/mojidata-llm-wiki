@@ -4,12 +4,12 @@ title: IRG Working Set 2024
 description: IRG Working Set 2024 Version 5.0 review と production schedule に関する論点。
 slug: irg-working-set-2024
 bodies: [IRG]
-documents: ["irg-n2702", "irg-n2765", "irg-n2887", "irg-n2888", "irg-n2909", "irg-n2910", "irg-n2932", "irg-n2933", "irg-n2935", "irg-n2936", "irg-n2938", "irg-n2939", "irg-n2942", "irg-n2945", "wg2-n5353", "irg-n2939r", "irg-n2941", "irg-n2979", "irg-n2980", "irg-n2943", "irg-n131", "irg-n2946"]
+documents: ["irg-n2702", "irg-n2765", "irg-n2887", "irg-n2888", "irg-n2909", "irg-n2910", "irg-n2932", "irg-n2933", "irg-n2935", "irg-n2936", "irg-n2938", "irg-n2939", "irg-n2942", "irg-n2945", "wg2-n5353", "irg-n2939r", "irg-n2941", "irg-n2979", "irg-n2980", "irg-n2943", "irg-n131", "irg-n2946", "irg-n250", "irg-n315", "irg-n321", "irg-n360", "irg-n391"]
 status: active
 tags: [irg, working-set, cjk, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
 topics: ["early-irg-history"]
-events: ["irg-67-ws2024-version6-review-schedule"]
+events: ["irg-67-ws2024-version6-review-schedule", "wg2-31-extension-a-repertoire-and-bmp-consultation"]
 ---
 
 # IRG Working Set 2024
@@ -73,6 +73,10 @@ Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ide
 
 [N131](../documents/irg-n131.md) V5–V6 は候補ごとの根拠、MRF data、draft、複数回の review、WG2 送付を工程化した。[初期 IRG 議論](early-irg-history.md)では現在の ORT / responses cycle と比較し、同一の手続が1994年から存在したとは扱わない。
 
+### 初期の優先順位・証拠と配置判断
+
+[N250](../documents/irg-n250.md) / [N315](../documents/irg-n315.md)は候補の優先順位と、国の規格・公的資料・辞書・使用頻度などの根拠を扱った。[1996年の Extension A 処理](../events/wg2-31-extension-a-repertoire-and-bmp-consultation.md)は repertoire の受理と BMP 配置照会を分ける。現在の production / review 日程を当時へ投影せず、選択・送付・配置・発行を区別する比較に使う。
+
 ## 関連文書
 
 - [IRG N2941](../documents/irg-n2941.md) - ROK Activity Report (IRG Meeting \#67)。
@@ -113,3 +117,8 @@ Meeting \#67 agenda は、`CJK Unified Ideographs Components-B` に入る 11 ide
 - `irg-n2943` - <https://www.unicode.org/irg/docs/n2943-UKActivityReport.pdf>
 - `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
+- `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）
+- `irg-n315` - <https://www.unicode.org/irg/docs/n0315-Resolutions.pdf>（registry date: 1996-02-08）
+- `irg-n321` - <https://www.unicode.org/irg/docs/n0321-IRGSummary.pdf>（registry date: 1996-04-17）
+- `irg-n360` - <https://www.unicode.org/irg/docs/n0360-Resolutions.pdf>（registry date: 1996-06-27）
+- `irg-n391` - <https://www.unicode.org/irg/docs/n0391-WG2Resolutions31.pdf>（registry date: 1996-08-16）

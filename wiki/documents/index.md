@@ -519,9 +519,26 @@
 
 - [IRG N743](irg-n743.md) - Extension C member body submissions の初期集計。
 
+### 1996
+
+- [IRG N394R](irg-n394r.md) - WG2 第31回の結果を受けた Rapporteur の改訂 action plan 案。
+- [IRG N392](irg-n392.md) - WG2 第31回で受けた ideographic composition 関連4案への質問集。
+- [IRG N391](irg-n391.md) - 1996-08-12/16、Quebec City の WG2 第31回会合決議。
+- [IRG N366](irg-n366.md) - 「似ているが同じではない」漢字を示す1つの Ideographic Variation Mark の追加案。
+- [IRG N365](irg-n365.md) - 12の Ideographic Structure Characters を BMP へ収録するよう WG2 に求める提出案。
+- [IRG N361](irg-n361.md) - 1996-06-27 の IRG 第7回会合 action items。
+- [IRG N360](irg-n360.md) - 1996-06-27、Hong Kong の IRG 第7回会合決議。
+- [IRG N321](irg-n321.md) - 1996-04-17 の Rapporteur による IRG 進捗・要求の WG2 向け報告。
+- [IRG N313](irg-n313.md) - China が N310 を踏まえて提示した13構造記号の改訂表。
+- [IRG N315](irg-n315.md) - 1996-02-08、Cupertino の IRG 第6回会合決議。
+- [IRG N310](irg-n310.md) - 1996-02-05 の Ideographic Components and Composition Scheme 討議文書。
+
 ### 1995
 
+- [IRG N259](irg-n259.md) - China が GBK の13 Ideographic Structure Symbols を BMP に追加するよう求めた提案。
+- [IRG N250](irg-n250.md) - 1995-08-22 の Seoul 第5回会合決議。
 - [IRG N200](irg-n200.md) - Zhang Zhoucai が IRG 内外の experts に components / composition の討議参加を呼びかけた案内。
+- [IRG N189](irg-n189.md) - 1995-03-03、Taipei の第4回会合結論。
 
 ### 1994
 

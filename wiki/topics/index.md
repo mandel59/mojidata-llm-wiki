@@ -4,7 +4,7 @@ Script、block、property、proposal、横断論点などの精読ページを�
 
 ## 一覧
 
-- [Early IRG History (1993–1995)](early-irg-history.md) - 設立、第1～3回会合、統合・拡張・components と2026年の接続。
+- [Early IRG History (1993–1996)](early-irg-history.md) - 設立、第1～7回会合、構成記法・SG-source・配置判断と2026年の接続。
 
 - [kZVariant](kzvariant.md) - Unicode 12.0→13.0 のデータ見直しと大量削除、Z-variants と spoofing variants の境界。
 

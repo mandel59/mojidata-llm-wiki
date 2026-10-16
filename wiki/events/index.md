@@ -10,6 +10,12 @@
 - [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06) - 第1回会合が Users Guide と規格 addendum の修正案を上位 body へ送付するとした。
 - [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04) - 第2回会合が補充・拡張の3方式を定義し、Vietnam の V-column を設けるとした。
 - [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02) - 第3回会合が Annex N128 を編集修正付きで受理し、既存1993年版への適用に限定した。
+- [IRG \#4 components and composition definitions](irg-4-components-composition-definitions.md) (1995-03-03) - IRG 第4回会合は N189 C1 で ideographic components と ideographic composition の定義を採用し、C2 で Zhang Zhoucai 主導の討議継続と IRG 外の experts の参加を認めた。
+- [IRG \#4 officer-role restriction withdrawal](irg-4-officer-role-restriction-withdrawal.md) (1995-03-03) - IRG 第4回会合は N189 W2 で、第1回結論 N034 項目3c の「一国が Rapporteur、Secretariat、Editor を同時に担わない」という最初の一文を撤回した。
+- [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27) - IRG 第7回会合は N360 項目5で、CJK Unified Ideograph Extension A に提案された S-column を G-column へ統合すると全会一致で決議した。
+- [IRG \#7 ideographic-description proposals forwarding](irg-7-ideographic-description-proposals-forwarding.md) (1996-06-27) - IRG 第7回会合は N360 項目10で、Structure Characters、Variation Mark、Radical Supplement、Component Supplement の4案を BMP 収録に向けて WG2 に送ると決議した。
+- [WG2 \#31 Extension A repertoire and BMP consultation](wg2-31-extension-a-repertoire-and-bmp-consultation.md) (1996-08-16) - WG2 第31回 M31.10 は Extension A Version 1.1 の6,585文字と字形を規格収録に向け全会一致で受理した。
+- [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16) - WG2 第31回 M31.12b は、構造・variation・component・radical の4案を、会合で受けた comments に基づいて改訂するよう IRG に全会一致で促した。
 - [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10) - Unicode 13.0 の正式 Unihan data で旧 kZVariant の大幅削除と再構成が反映された出来事。
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27) - WG2 \#72 が WG2 N5296 に基づき J-source glyph changes の revert を勧告した出来事。
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27) - WG2 \#72 が 11,339 Small Seal characters を将来版候補として検討するよう勧告した出来事。
@@ -56,20 +62,31 @@
 
 ### [CJKV Components](../topics/cjkv-components.md)
 
+- [IRG \#4 components and composition definitions](irg-4-components-composition-definitions.md) (1995-03-03)
+- [IRG \#7 ideographic-description proposals forwarding](irg-7-ideographic-description-proposals-forwarding.md) (1996-06-27)
+- [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16)
 - [IRG M66.17 CJKV Components forward to WG2](irg-m66-17-cjkv-components-forward-to-wg2.md) (2026-03-19)
 - [IRG N2878R3 CJKV Components final proposal](irg-n2878r3-cjkv-components-final-proposal.md) (2026-03-20)
 
-### [Early IRG History (1993–1995)](../topics/early-irg-history.md)
+### [Early IRG History (1993–1996)](../topics/early-irg-history.md)
 
 - [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28)
 - [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
 - [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
 - [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
+- [IRG \#4 components and composition definitions](irg-4-components-composition-definitions.md) (1995-03-03)
+- [IRG \#4 officer-role restriction withdrawal](irg-4-officer-role-restriction-withdrawal.md) (1995-03-03)
+- [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27)
+- [IRG \#7 ideographic-description proposals forwarding](irg-7-ideographic-description-proposals-forwarding.md) (1996-06-27)
+- [WG2 \#31 Extension A repertoire and BMP consultation](wg2-31-extension-a-repertoire-and-bmp-consultation.md) (1996-08-16)
+- [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16)
 - [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
 - [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
 
 ### [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 
+- [IRG \#7 ideographic-description proposals forwarding](irg-7-ideographic-description-proposals-forwarding.md) (1996-06-27)
+- [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16)
 - [IVD 2025-07-14 CAAPH registration](ivd-2025-07-14-caaph-registration.md) (2025-07-14)
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03)
 
@@ -80,6 +97,7 @@
 
 ### [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md)
 
+- [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27)
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27)
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
@@ -90,11 +108,17 @@
 
 - [SC 2 1993 IRG establishment](sc2-1993-irg-establishment.md) (1993-05-28)
 - [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
+- [IRG \#4 officer-role restriction withdrawal](irg-4-officer-role-restriction-withdrawal.md) (1995-03-03)
 
 ### [IRG Working Set 2024](../topics/irg-working-set-2024.md)
 
 - [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
+- [WG2 \#31 Extension A repertoire and BMP consultation](wg2-31-extension-a-repertoire-and-bmp-consultation.md) (1996-08-16)
 - [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
+
+### [ISO/IEC 10646 Edition and Code Charts](../topics/iso-10646-edition-and-code-charts.md)
+
+- [WG2 \#31 Extension A repertoire and BMP consultation](wg2-31-extension-a-repertoire-and-bmp-consultation.md) (1996-08-16)
 
 ### [J-source and JMJ Source Issues](../topics/j-source.md)
 
@@ -122,6 +146,7 @@
 
 ### [kIRG_SGSource](../topics/kirg-sgsource.md)
 
+- [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27)
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 
 ### [kZVariant](../topics/kzvariant.md)
@@ -180,6 +205,10 @@
 - [IRG \#1 Users Guide and Annex forwarding](irg-1-users-guide-and-annex-forwarding.md) (1993-10-06)
 - [IRG \#2 extension terminology and V-column](irg-2-extension-terminology-and-v-column.md) (1994-03-04)
 - [IRG \#3 unification Annex forwarding](irg-3-unification-annex-forwarding.md) (1994-09-02)
+- [IRG \#4 components and composition definitions](irg-4-components-composition-definitions.md) (1995-03-03)
+- [IRG \#4 officer-role restriction withdrawal](irg-4-officer-role-restriction-withdrawal.md) (1995-03-03)
+- [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27)
+- [IRG \#7 ideographic-description proposals forwarding](irg-7-ideographic-description-proposals-forwarding.md) (1996-06-27)
 - [IRG N2859 J-source disposition request](irg-n2859-j-source-disposition-request.md) (2025-08-13)
 - [IRG N2870 Japan feedback on J-source disposition](irg-n2870-japan-feedback-on-j-source-disposition.md) (2025-09-25)
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)
@@ -209,6 +238,8 @@
 
 ### WG2
 
+- [WG2 \#31 Extension A repertoire and BMP consultation](wg2-31-extension-a-repertoire-and-bmp-consultation.md) (1996-08-16)
+- [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16)
 - [WG2 M72.07 J-source glyph revert recommendation](wg2-m72-07-j-source-glyph-revert.md) (2025-06-27)
 - [WG2 M72.13 Small Seal future edition candidate](wg2-m72-13-small-seal-future-candidate.md) (2025-06-27)
 - [IRG M65.24 CJK Hybrid Characters](irg-m65-24-cjk-hybrid-characters.md) (2025-10-16)

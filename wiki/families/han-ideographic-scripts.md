@@ -20,7 +20,7 @@ Han / ideographic 系の script、block、source data、variation database、関
 
 | Topic | 状態 | 一言 |
 | --- | --- | --- |
-| [Early IRG History (1993–1995)](../topics/early-irg-history.md) | historical | 最初期の一次資料と現在の論点の比較。 |
+| [Early IRG History (1993–1996)](../topics/early-irg-history.md) | historical | 最初期の一次資料と現在の論点の比較。 |
 | [kZVariant](../topics/kzvariant.md) | active | Z-variant property の定義、Unicode 13.0 のデータ見直しと削除履歴。 |
 | [Ideographic Variation Database](../topics/ideographic-variation-database.md) | active | IVD collections、IVS 登録履歴、public review と正式データの追跡。 |
 | [Small Seal Script](../topics/small-seal-script.md) | in-ballot-pipeline | `Shuowen Jiezi` に基づく小篆を独立 script として符号化する提案。 |
@@ -50,6 +50,8 @@ Han / ideographic 系の script、block、source data、variation database、関
 | [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md) | active | Ideographic Symbols and Punctuation block 周辺の句読点・記号追加提案。 |
 
 [初期 IRG 議論](../topics/early-irg-history.md)は1993年の設立と第1～3回会合から、source・統合・拡張・components・review の問題設定を現在へ接続する歴史の入口である。
+
+[1996年の S-column 統合](../events/irg-7-s-column-merge-into-g.md)と [2026年の SG-source 独立化](../events/irg-m66-16-kirg-sgsource-establishment.md)、[構成関連4案への WG2 の質問](../events/wg2-31-ideographic-description-refinement.md)は、source 保守と components / variation の現在を比較する具体的な記録である。
 
 ## 横断テーマ
 

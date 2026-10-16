@@ -17,7 +17,7 @@ okf_version: "0.1"
 
 ## Current Focus
 
-- [Early IRG History (1993–1995)](topics/early-irg-history.md) - 1993年5月の設立案から最初期会合を精読し、現在の source・統合・review 手続と比較。
+- [Early IRG History (1993–1996)](topics/early-irg-history.md) - 1993年の設立案から1996年の第7回・WG2第31回へ。source column、構成記法、配置判断を現在と比較。
 
 - [kZVariant](topics/kzvariant.md) - Unicode 12.0→13.0 の全面見直し、関連提案と正式データの削除例。
 

@@ -4,11 +4,12 @@ title: CJKV Components
 description: CJK Unified Ideographs Components-A/B の標準化提案と IRG / WG2 での議論を追跡する。
 slug: cjkv-components
 bodies: [IRG, WG2, SC2]
-documents: ["utc-l2-21-134", "irg-n1081", "irg-n1133", "irg-n2702", "irg-n2733r", "irg-n2765", "irg-n2799", "irg-n2826", "irg-n2852", "irg-n2878", "irg-n2878r", "irg-n2878r2", "irg-n2878r3", "irg-n2890", "irg-n2895", "irg-n2909", "irg-n2917", "irg-n2935", "wg2-n5354", "wg2-n5358", "wg2-n5361r", "irg-n080", "irg-n131", "irg-n200"]
+documents: ["utc-l2-21-134", "irg-n1081", "irg-n1133", "irg-n2702", "irg-n2733r", "irg-n2765", "irg-n2799", "irg-n2826", "irg-n2852", "irg-n2878", "irg-n2878r", "irg-n2878r2", "irg-n2878r3", "irg-n2890", "irg-n2895", "irg-n2909", "irg-n2917", "irg-n2935", "wg2-n5354", "wg2-n5358", "wg2-n5361r", "irg-n080", "irg-n131", "irg-n200", "irg-n189", "irg-n250", "irg-n259", "irg-n310", "irg-n313", "irg-n315", "irg-n365", "irg-n392"]
 topics: ["ucv-nucv-lists", "early-irg-history"]
 status: accepted-for-future-version
 tags: [cjk, components, irg, ideographic]
 timestamp: 2026-07-06T21:58:00+09:00
+events: ["irg-4-components-composition-definitions", "irg-7-ideographic-description-proposals-forwarding", "wg2-31-ideographic-description-refinement"]
 ---
 
 # CJKV Components
@@ -122,6 +123,10 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 
 [N080](../documents/irg-n080.md) 項目13、[N131](../documents/irg-n131.md) C1、[N200](../documents/irg-n200.md)により、component 定義と composition scheme の議論は1994～1995年まで遡れる。[初期 IRG 議論](early-irg-history.md)に比較を置く。これを2026年の494文字案の同一 repertoire や、全過程の直接の継承関係の証明とはしない。
 
+### 1995～1996年の構成方式と部件集合
+
+[第4回の定義採用](../events/irg-4-components-composition-definitions.md)、[第7回の4案送付](../events/irg-7-ideographic-description-proposals-forwarding.md)、[WG2 の改訂要請](../events/wg2-31-ideographic-description-refinement.md)で、component 自体の集合と composition scheme の区別が具体化した。[N392](../documents/irg-n392.md)は既存統合漢字とは独立した部件集合にするか、単独利用を認めるか、どの統合原則を使うかを問う。2026年案の「components を CJK ideographs として扱う」という整理と比較できるが、同じ repertoire が継続したと断定しない。
+
 ## 関連文書
 
 - [IRG N1081](../documents/irg-n1081.md) - China source の 146 ideographic components proposal
@@ -192,3 +197,11 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 - `irg-n080` - <https://www.unicode.org/irg/docs/n0080-Resolutions.pdf>（registry date: 1994-03-16）
 - `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
 - `irg-n200` - <https://www.unicode.org/irg/docs/n0200-IdeographicComponents.pdf>（registry date: 1995-04-03）
+- `irg-n189` - <https://www.unicode.org/irg/docs/n0189-Resolutions.pdf>（registry date: 1995-03-03）
+- `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）
+- `irg-n259` - <https://www.unicode.org/irg/docs/n0259-IdeographicStructureSymbols.pdf>（registry date: 1995-11-07）
+- `irg-n310` - <https://www.unicode.org/irg/docs/n0310-IdeographicComposition.pdf>（registry date: 1996-02-05）
+- `irg-n313` - <https://www.unicode.org/irg/docs/n0313-IdeographicComposition.pdf>（registry date: 1996-04-12）
+- `irg-n315` - <https://www.unicode.org/irg/docs/n0315-Resolutions.pdf>（registry date: 1996-02-08）
+- `irg-n365` - <https://www.unicode.org/irg/docs/n0365-IDC.pdf>（registry date: 1996-07-31）
+- `irg-n392` - <https://www.unicode.org/irg/docs/n0392-IdeographicCompositionOpinions.pdf>（registry date: 1996-08-16）

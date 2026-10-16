@@ -10,10 +10,10 @@ aliases: ["WG2 N914"]
 registry: "irg"
 date: "1993-10-06"
 source: "IRG Rapporteur (KATO, Shigenobu)"
-documents: ["irg-n002", "irg-n003", "irg-n007", "irg-n008", "irg-n080"]
+documents: ["irg-n002", "irg-n003", "irg-n007", "irg-n008", "irg-n080", "irg-n189"]
 topics: ["early-irg-history", "irg-working-process-and-liaison"]
 meetings: ["irg-meeting-1"]
-events: ["irg-1-users-guide-and-annex-forwarding"]
+events: ["irg-1-users-guide-and-annex-forwarding", "irg-4-officer-role-restriction-withdrawal"]
 tags: ["document", "irg", "history"]
 people: ["irg", "japan", "china", "kato-shigenobu"]
 ---
@@ -38,6 +38,9 @@ Japan の Users Guide と規格 addendum の提案を修正のうえ承認・受
 
 提案送付の意味は [canonical event](../events/irg-1-users-guide-and-annex-forwarding.md)、技術作業の具体化は [第2回会合](../meetings/irg/irg-meeting-2.md)を参照。
 
+役職兼任を禁じた一文の後続変更は [第4回の撤回 event](../events/irg-4-officer-role-restriction-withdrawal.md)へ。1993年の結論を後年の状態で書き換えない。
+
 ## 出典
 
 - `irg-n034` - <https://www.unicode.org/irg/docs/n0034-Conclusions.pdf>（registry date: 1993-10-06）
+- `irg-n189` - <https://www.unicode.org/irg/docs/n0189-Resolutions.pdf>（registry date: 1995-03-03）

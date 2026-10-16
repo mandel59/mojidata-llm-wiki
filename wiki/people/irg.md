@@ -4,12 +4,12 @@ title: IRG
 description: CJK Unified Ideographs、IRG Working Set、source reference を扱う Ideographic Research Group。
 slug: irg
 bodies: [IRG, WG2]
-documents: ["irg-n2721", "irg-n2722", "irg-n2792", "irg-n2826", "irg-n2828", "irg-n2860", "irg-n2861", "irg-n2866r2", "irg-n2867r", "irg-n2885r", "irg-n2893", "irg-n2909", "irg-n2931", "irg-n2935", "irg-n2929r2", "irg-n2969r", "irg-n2972r", "irg-n2988", "irg-n2989", "irg-n002", "irg-n003", "irg-n034", "irg-n2946"]
+documents: ["irg-n2721", "irg-n2722", "irg-n2792", "irg-n2826", "irg-n2828", "irg-n2860", "irg-n2861", "irg-n2866r2", "irg-n2867r", "irg-n2885r", "irg-n2893", "irg-n2909", "irg-n2931", "irg-n2935", "irg-n2929r2", "irg-n2969r", "irg-n2972r", "irg-n2988", "irg-n2989", "irg-n002", "irg-n003", "irg-n034", "irg-n2946", "irg-n189", "irg-n250", "irg-n360", "irg-n391"]
 topics: ["irg-working-set-2024", "cjk-horizontal-extensions", "jmj-horizontal-extension-review-path", "cjk-hybrid-characters", "cjk-multi-syllabic-and-abbreviation-characters", "irg-source-data-and-representative-glyphs", "t-source-representative-glyph-issues", "kirg-sgsource", "cjkv-components", "irg-indexing-rules", "ucv-nucv-lists", "early-irg-history"]
 tags: [organization, standards-body, irg]
 timestamp: 2026-07-06T21:31:45+09:00
-events: ["sc2-1993-irg-establishment", "irg-1-users-guide-and-annex-forwarding", "irg-67-horizontal-extension-dispositions", "irg-67-ws2024-version6-review-schedule"]
-meetings: ["irg-meeting-1", "irg-meeting-2", "irg-meeting-3", "irg-meeting-67"]
+events: ["sc2-1993-irg-establishment", "irg-1-users-guide-and-annex-forwarding", "irg-67-horizontal-extension-dispositions", "irg-67-ws2024-version6-review-schedule", "irg-4-components-composition-definitions", "irg-4-officer-role-restriction-withdrawal", "irg-7-s-column-merge-into-g", "irg-7-ideographic-description-proposals-forwarding", "wg2-31-ideographic-description-refinement", "wg2-31-extension-a-repertoire-and-bmp-consultation"]
+meetings: ["irg-meeting-1", "irg-meeting-2", "irg-meeting-3", "irg-meeting-67", "irg-meeting-4", "irg-meeting-5", "irg-meeting-6", "irg-meeting-7", "wg2-meeting-31"]
 ---
 
 # IRG

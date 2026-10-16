@@ -10,7 +10,7 @@ date: "1993-10-04/06"
 location: "Fukuoka, Japan"
 documents: ["irg-n007", "irg-n008", "irg-n013", "irg-n034"]
 topics: ["early-irg-history", "cjk-horizontal-extensions", "irg-indexing-rules", "cjkv-components"]
-events: ["irg-1-users-guide-and-annex-forwarding"]
+events: ["irg-1-users-guide-and-annex-forwarding", "irg-4-officer-role-restriction-withdrawal"]
 tags: ["meeting", "irg", "history"]
 ---
 
@@ -33,6 +33,8 @@ tags: ["meeting", "irg", "history"]
 ## 後続確認
 
 [第2回会合](irg-meeting-2.md)が Annex と拡張方式を具体化する。N035 の minutes は catalog で題名・日付を確認できるが URL はないため、結論にない詳細発言は補わない。
+
+役職兼任制限の後続変更は [第4回の撤回](../../events/irg-4-officer-role-restriction-withdrawal.md)を参照する。
 
 ## 出典
 

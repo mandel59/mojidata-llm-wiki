@@ -4,12 +4,12 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1532r", "irg-n2837", "irg-n2860", "irg-n2861", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2909", "irg-n2911", "irg-n2916", "irg-n2918", "irg-n2919r", "irg-n2923r", "irg-n2927r", "irg-n2928", "irg-n2929r", "irg-n2930", "irg-n2935", "irg-n2953", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2968", "irg-n2970", "irg-n2972", "irg-n2974", "irg-n2975", "utc-l2-26-099", "wg2-n5353", "wg2-n5354", "irg-n2939r", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2983", "irg-n2929r2", "irg-n2988", "irg-n2989", "irg-n013", "irg-n2946"]
+documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1532r", "irg-n2837", "irg-n2860", "irg-n2861", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2909", "irg-n2911", "irg-n2916", "irg-n2918", "irg-n2919r", "irg-n2923r", "irg-n2927r", "irg-n2928", "irg-n2929r", "irg-n2930", "irg-n2935", "irg-n2953", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2968", "irg-n2970", "irg-n2972", "irg-n2974", "irg-n2975", "utc-l2-26-099", "wg2-n5353", "wg2-n5354", "irg-n2939r", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2983", "irg-n2929r2", "irg-n2988", "irg-n2989", "irg-n013", "irg-n2946", "irg-n360"]
 topics: ["g-source-glyph-and-reference-issues", "t-source-representative-glyph-issues", "v-source-representative-glyph-issues", "irg-disunified-ideographs", "early-irg-history"]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
 timestamp: 2026-07-06T21:31:45+09:00
-events: ["irg-67-horizontal-extension-dispositions"]
+events: ["irg-67-horizontal-extension-dispositions", "irg-7-s-column-merge-into-g"]
 ---
 
 # IRG Source Data and Representative Glyphs
@@ -93,6 +93,10 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ### 初期 IRG との接続
 
 [1993年の N013](../documents/irg-n013.md)は source code の誤りと、wrong shape / wrong quality を分けた。現在の source / glyph 保守と共通する問いは [初期 IRG 議論](early-irg-history.md)に整理する。N013 の各修正の反映時期と、[N2946](../documents/irg-n2946.md) M67.13–18 の別案件の disposition は分けて読む。
+
+### 初期の source / 配置判断との比較
+
+[1996年の S-column 統合](../events/irg-7-s-column-merge-into-g.md)は source column をまとめた当時の判断であり、現在の [SG-source 独立化](kirg-sgsource.md)と保守責任を比較する参照点になる。
 
 ## 関連文書
 

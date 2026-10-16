@@ -4,12 +4,13 @@ title: ISO/IEC 10646 Edition and Code Charts
 description: "WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。"
 slug: iso-10646-edition-and-code-charts
 bodies: [WG2, SC2, UTC]
-documents: ["wg2-n5253", "wg2-n5300r9", "wg2-n5304", "wg2-n5315", "wg2-n5339", "wg2-n5350r8", "wg2-n5354", "wg2-n5360r", "wg2-n5361r", "wg2-n5362", "wg2-n5363r", "wg2-n5369", "utc-l2-26-102", "utc-l2-26-159", "utc-l2-26-226", "utc-l2-26-259"]
-topics: [unicode-release-coordination-and-publication, unicode-18-change-sources, script-encoding-pipeline, shaaldaa-script, unihan-database-maintenance]
+documents: ["wg2-n5253", "wg2-n5300r9", "wg2-n5304", "wg2-n5315", "wg2-n5339", "wg2-n5350r8", "wg2-n5354", "wg2-n5360r", "wg2-n5361r", "wg2-n5362", "wg2-n5363r", "wg2-n5369", "utc-l2-26-102", "utc-l2-26-159", "utc-l2-26-226", "utc-l2-26-259", "irg-n391"]
+topics: ["unicode-release-coordination-and-publication", "unicode-18-change-sources", "script-encoding-pipeline", "shaaldaa-script", "unihan-database-maintenance", "early-irg-history"]
 meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187]
 status: active
 tags: [iso-10646, code-charts, dis, amendment, wg2, sc2]
 timestamp: 2026-07-08T00:00:00+09:00
+events: ["wg2-31-extension-a-repertoire-and-bmp-consultation"]
 ---
 
 # ISO/IEC 10646 Edition and Code Charts
@@ -59,6 +60,10 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 ### Unicode release coordination との境界
 
 [L2/26-102](../documents/utc-l2-26-102.md) は Unicode 18.0 の beta / release schedule と ISO/IEC 10646 7th edition synchronization risk を扱う。一方、この topic の WG2 文書群は、ISO/IEC 10646 側の edition text、DIS ballot、Amendment 1 project を扱う。両者は同期するが、UTC の release authorization と WG2 / SC2 の ballot decision は body と時点を分けて読む必要がある。
+
+### 初期の source / 配置判断との比較
+
+[1996年の Extension A 処理](../events/wg2-31-extension-a-repertoire-and-bmp-consultation.md)は repertoire の受理と BMP 配置照会を分けている。現在の edition / amendment pipeline を読む際も、候補の受理・配置・ballot・発行の段階を区別する歴史的な比較点となる。
 
 ## 関連文書
 

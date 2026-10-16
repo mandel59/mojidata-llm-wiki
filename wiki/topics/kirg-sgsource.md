@@ -4,10 +4,12 @@ title: kIRG_SGSource
 description: Singapore characters を kIRG_GSource から分離する normative IRG source property 提案。
 slug: kirg-sgsource
 bodies: [IRG, WG2, UTC]
-documents: [irg-n2909, irg-n2926, irg-n2935, wg2-n5354, wg2-n5359]
+documents: ["irg-n2909", "irg-n2926", "irg-n2935", "wg2-n5354", "wg2-n5359", "irg-n250", "irg-n360"]
 status: accepted-for-future-version
 tags: [unihan, source-data, singapore, irg]
 timestamp: 2026-07-06T21:31:45+09:00
+topics: ["early-irg-history"]
+events: ["irg-7-s-column-merge-into-g", "irg-m66-16-kirg-sgsource-establishment"]
 ---
 
 # kIRG_SGSource
@@ -43,6 +45,10 @@ timestamp: 2026-07-06T21:31:45+09:00
 
 Meeting \#67 agenda の current status では、WG2 と SC2 の acceptance を経て、`kIRG_SGSource` は Unicode Version 19.0 (2027) target とされている。IRG \#66 での establishment は [IRG M66.16 kIRG_SGSource establishment](../events/irg-m66-16-kirg-sgsource-establishment.md) に集約する。
 
+### 1996年の column 統合との比較
+
+[第7回の S-column 統合](../events/irg-7-s-column-merge-into-g.md)は、Extension A の S-column を G-column にまとめた決議である。現在の GS-source 保守責任と SG-source 独立化を読む具体的な歴史の比較点となる。GS prefix の導入や全 mapping の経路まで、この決議だけで確定しない。
+
 ## 関連文書
 
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
@@ -70,3 +76,5 @@ Meeting \#67 agenda の current status では、WG2 と SC2 の acceptance を�
 - `irg-n2926` - <https://www.unicode.org/irg/docs/n2926-SGSource.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）
+- `irg-n360` - <https://www.unicode.org/irg/docs/n0360-Resolutions.pdf>（registry date: 1996-06-27）

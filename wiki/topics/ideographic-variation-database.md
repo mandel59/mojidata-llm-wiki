@@ -5,10 +5,10 @@ description: "IVD の collection、IVS 登録履歴、UTS #37、public review �
 slug: ideographic-variation-database
 aliases: [IVD, Ideographic Variation Database, "UTS #37"]
 bodies: [UTC, WG2, IRG]
-documents: [pri-98, pri-108, pri-167, pri-183, pri-187, pri-259, pri-326, pri-349, pri-351, pri-354, pri-418, pri-456, pri-521, pri-546, utc-l2-26-112, utc-l2-26-215, utc-l2-26-070r, irg-n2767, wg2-n5221, irg-n2722, wg2-n5089]
-topics: [jmj-horizontal-extension-review-path, cjk-horizontal-extensions, unihan-data-format-and-property-syntax, unihan-database-maintenance, ucv-nucv-lists, cjk-strokes-variation-sequences, small-seal-script]
+documents: ["pri-98", "pri-108", "pri-167", "pri-183", "pri-187", "pri-259", "pri-326", "pri-349", "pri-351", "pri-354", "pri-418", "pri-456", "pri-521", "pri-546", "utc-l2-26-112", "utc-l2-26-215", "utc-l2-26-070r", "irg-n2767", "wg2-n5221", "irg-n2722", "wg2-n5089", "irg-n366", "irg-n392"]
+topics: ["jmj-horizontal-extension-review-path", "cjk-horizontal-extensions", "unihan-data-format-and-property-syntax", "unihan-database-maintenance", "ucv-nucv-lists", "cjk-strokes-variation-sequences", "small-seal-script", "early-irg-history"]
 people: [ken-lunde, japan, eiso-chan]
-events: [ivd-2025-07-14-caaph-registration, ivd-2026-08-03-moji-joho-registration]
+events: ["ivd-2025-07-14-caaph-registration", "ivd-2026-08-03-moji-joho-registration", "irg-7-ideographic-description-proposals-forwarding", "wg2-31-ideographic-description-refinement"]
 status: active
 tags: [ivd, uts37, cjk, variation-sequences, registration]
 timestamp: 2026-10-11T00:00:00+09:00
@@ -86,6 +86,10 @@ IVD の IVS、`StandardizedVariants.txt` の standardized variation sequences、
 
 UTS \#37 は proposed update と確定版を分け、登録申請は review 期間と実際の登録日を分けて追う。IRG の endorsement や source-data correction は背景資料として読み、Registrar の登録完了と混同しない。
 
+### 初期の Variation Mark 提案との比較
+
+[IRG N366](../documents/irg-n366.md)は1996年の1つの warning mark 案であり、[N392](../documents/irg-n392.md)は類似の軸、適用対象、sorting / lexical properties の明確化を求めた。現在の UTS \#37 Revision 16 §2 は base character と U+E0100–U+E01EF の variation selector による IVS と、登録された glyphic subset を定める。問題設定の比較はできるが、1記号の編集警告を IVS / IVD そのものや直接の前身と断定しない。
+
 ## 関連文書
 
 - [PRI \#259](../documents/pri-259.md)、[PRI \#354](../documents/pri-354.md)、[PRI \#546](../documents/pri-546.md) - Moji_Joho の初回登録と追加登録。
@@ -136,3 +140,6 @@ UTS \#37 は proposed update と確定版を分け、登録申請は review 期�
 - `pri-326` - <https://www.unicode.org/ivd/pri/pri326/>
 - `pri-349` - <https://www.unicode.org/ivd/pri/pri349/>
 - `pri-351` - <https://www.unicode.org/ivd/pri/pri351/>
+- `irg-n366` - <https://www.unicode.org/irg/docs/n0366-IdeographicVariationMark.pdf>（registry date: 1996-07-31）
+- `irg-n392` - <https://www.unicode.org/irg/docs/n0392-IdeographicCompositionOpinions.pdf>（registry date: 1996-08-16）
+- 比較仕様: UTS \#37 Revision 16 §2 - <https://www.unicode.org/reports/tr37/tr37-16.html>（2026-04-30）
