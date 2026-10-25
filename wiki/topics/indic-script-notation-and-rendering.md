@@ -1,14 +1,15 @@
 ---
 type: Topic
 title: Indic Script Notation and Rendering
-description: "Indic scripts における Vedic notation、combining marks、rendering guidance。"
+description: Indic scripts における Vedic notation、combining marks、rendering guidance。
 slug: indic-script-notation-and-rendering
 bodies: [UTC]
-documents: ["utc-l2-26-062", "pri-552", "utc-l2-26-113", "utc-l2-26-114", "utc-l2-26-131", "utc-l2-26-138", "utc-l2-26-181r", "utc-l2-26-221", "utc-l2-26-222", "utc-l2-26-248", "utc-l2-26-249", "utc-l2-26-250", "utc-l2-26-251", "utc-l2-26-252", "utc-l2-26-253", "utc-l2-26-254", "utc-l2-26-255", "utc-l2-26-256"]
+documents: [utc-l2-26-062, pri-552, utc-l2-26-113, utc-l2-26-114, utc-l2-26-131, utc-l2-26-138, utc-l2-26-181r, utc-l2-26-221, utc-l2-26-222, utc-l2-26-248, utc-l2-26-249, utc-l2-26-250, utc-l2-26-251, utc-l2-26-252, utc-l2-26-253, utc-l2-26-254, utc-l2-26-255, utc-l2-26-256, utc-l2-26-239, utc-l2-26-260]
 topics: [script-encoding-pipeline, unicode-properties-and-algorithms]
 status: active
 tags: [indic, vedic, kannada, rendering, combining-marks]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-07-08T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Indic Script Notation and Rendering
@@ -59,6 +60,10 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 [L2/26-181R](../documents/utc-l2-26-181r.md) は行末 anusvara に gap filler 用例も添えて Lo を提案する。[L2/26-221](../documents/utc-l2-26-221.md) は omitted vowel signs の上付き correction mark と、その結合・表示を扱う。音価だけでなく写本上の機能を区別する必要がある。
 
 [L2/26-222](../documents/utc-l2-26-222.md) は Kham Dom Pa’O の medial consonant、vowel sign、tone mark の保存順序と下付き glyph 配置を記述する。提案 property と Northern Pa’O の代替文字を混同せず、collation の未決点を追う。
+
+## UTC \#189 の review と SEQ
+
+[SEW report](../documents/utc-l2-26-239.md) は Devanagari の追加と InSC / InPC 更新を勧告し、U+0CD5 の property変更は支持しない。[SEQ report](../documents/utc-l2-26-260.md) はvalidation / display / reading normalizationを検討する。SEQ の構想をNFCの変更や完成仕様として扱わない。
 
 ## 関連文書
 
@@ -118,3 +123,5 @@ Indic Script Notation and Rendering は、Indic scripts における Vedic / San
 - `utc-l2-26-254` - <https://www.unicode.org/L2/L2026/26254-nukta-in-sinhala.pdf>
 - `utc-l2-26-255` - <https://www.unicode.org/L2/L2026/26255-indic-158-a106.pdf>
 - `utc-l2-26-256` - <https://www.unicode.org/L2/L2026/26256-indic-164-a63.pdf>
+- `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-260` - <https://www.unicode.org/L2/L2026/26260-seq-report-utc189.pdf>（registry date: 2026-10-21）

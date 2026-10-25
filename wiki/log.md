@@ -2,6 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-10-25
+
+- **Catalog**: UTC / WG2 / IRG / PRI の最新 register を同期し、過去 entries の削除なし。UTC に `L2/26-132R` / `145R3` / `260`〜`273` の16件を追加。`219` の文書割当、`226` の not used、`227` の日付、`231` / `233`〜`241` の公開・日付・URL等を更新。IRG に `N3001`〜`N3010` を追加（`3007`〜`3010` は未公開枠）。WG2 / PRI に目録差分なし。
+- **Digest / identity**: UTC \#189のagenda・closed actions・PRI集約・7 WG reports、script packages、ISO CDAM 1 / MA consultation、5 UAX/UTR snapshots、5 emoji proposalsを精読してページ化。旧 `L2/26-219` / `226` の重複割当で記録していた Mongolian / Vithkuqi 文書を正しい [L2/26-207](documents/utc-l2-26-207.md) / [208](documents/utc-l2-26-208.md) へ移し、本文・relation・出典を修正。現行219は別のcommunity支援提案として更新した。
+- **Wiki**: [UTC Meeting \#189](meetings/utc/utc-meeting-189.md) と [SEW script勧告event](events/sew-189-script-provisional-assignment-recommendations.md) を追加。MayaをVersion 1.6（481 + 32文字）、KORE SEBELIをVersion 13へ更新し、93 / 91 countの不一致を保持。関連topic・人物・入口を接続し、WG勧告とUTC採択、ISO相談回答と承認投票を区別した。
+- **Fetch / review**: UTC更新対象28件と正規番号207 / 208を非Git cacheへ取得。Windows標準PDF rendererでMaya・KORE SEBELI・ESRの該当ページを画像照合。IRG N3001〜N3005は2026-10-25の取得でHTTP 404、N3006 experts listは取得。未取得文書の本文やIRG \#68の結果は要約しない。
+
 ## 2026-10-16
 
 - **History continuation**: 1995～1996年の IRG N189 / N250 / N259 / N310 / N313 / N315 / N321 / N360 / N361 / N365 / N366 / N391 / N392 / N394R を精読し、14 Source Document pages、IRG 第4～7回と WG2 第31回の5 Meeting pages、6 canonical events を追加。[初期 IRG 議論](topics/early-irg-history.md)を1996年まで拡張し、三役兼任禁止の撤回、S-column 統合と2026年の SG-source 独立化、構成記法と Variation Mark、Extension A の repertoire / BMP 配置の段階を既存 topics へ接続。PDF 原文画像、正式決議と報告内引用の件数差、日付・注記・賛否を照合した。外部資料は非 Git cache に保持。

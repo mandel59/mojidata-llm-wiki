@@ -20,3 +20,5 @@ UTC、WG2、IRG の会合単位の要約を置く。
 - [IRG Meeting \#67](irg/irg-meeting-67.md) - 2026-09-17更新の Tokyo hybrid meeting agenda。
 - [WG2 Meeting \#72](wg2/wg2-meeting-72.md) - ISO/IEC 10646 7th edition CD.2、code charts、Small Seal、J-source / CJK recommendations。
 - [WG2 Meeting \#73](wg2/wg2-meeting-73.md) - ISO/IEC 10646 7th edition DIS、external code charts、Amendment 1、Small Seal / CJK recommendations。
+
+- [UTC Meeting \#189](utc/utc-meeting-189.md) - 2026-10-26〜28開催予定。agenda・WG勧告・Unicode 19.0計画。

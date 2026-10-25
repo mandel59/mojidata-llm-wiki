@@ -4,13 +4,13 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に JMJ / G / UK / U / V source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
-documents: ["wg2-n5221", "irg-n2721", "irg-n2722", "irg-n2369r", "utc-l2-24-012", "irg-n2909", "irg-n2923r", "irg-n2929", "irg-n2929r", "irg-n2935", "irg-n2936", "irg-n2945", "irg-n2960", "utc-l2-26-147", "irg-n2970", "irg-n2972", "pri-546", "irg-n2939r", "irg-n2943", "irg-n2983", "irg-n2984", "irg-n2987", "irg-n2929r2", "irg-n2972r", "irg-n080", "irg-n131", "irg-n2946"]
-topics: ["irg-disunified-ideographs", "jmj-horizontal-extension-review-path", "uax45-u-source-ideographs", "irg-source-data-and-representative-glyphs", "unihan-data-format-and-property-syntax", "ideographic-variation-database", "early-irg-history"]
+documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, irg-n2945, irg-n2960, utc-l2-26-147, irg-n2970, irg-n2972, pri-546, irg-n2939r, irg-n2943, irg-n2983, irg-n2984, irg-n2987, irg-n2929r2, irg-n2972r, irg-n080, irg-n131, irg-n2946, utc-l2-26-238]
+topics: [irg-disunified-ideographs, jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax, ideographic-variation-database, early-irg-history]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
-events: ["ivd-2026-08-03-moji-joho-registration", "irg-67-tca-u2403d-source-replacement", "irg-2-extension-terminology-and-v-column", "irg-67-horizontal-extension-dispositions"]
-timestamp: 2026-10-10T00:00:00+09:00
-meetings: [irg-meeting-67]
+events: [ivd-2026-08-03-moji-joho-registration, irg-67-tca-u2403d-source-replacement, irg-2-extension-terminology-and-v-column, irg-67-horizontal-extension-dispositions]
+timestamp: "2026-10-10T00:00:00+09:00"
+meetings: [irg-meeting-67, utc-meeting-189]
 ---
 
 # CJK Horizontal Extensions
@@ -103,6 +103,10 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 
 [1994年の拡張方式と V-column](../events/irg-2-extension-terminology-and-v-column.md)は、既存表の column 追加と新規 code positions を区別する歴史的な比較点である。現在は既存 source column 内への references / glyphs 追加も含むため、当時の定義を現行手続へ直結しない。[初期 IRG 議論](early-irg-history.md)に対照表を置く。
 
+## UTC \#189 への接続
+
+[CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §13〜16 は IRG \#67 の G 9,178 / T 700 / UK 2 / U 74文字の horizontal extensions を Unicode 19.0向けに受け入れる案。IRG段階の勧告を、UTC採択・正式データ反映と読み替えない。
+
 ## 関連文書
 
 - [IRG N2972R](../documents/irg-n2972r.md) - TCA が Extension B の700字に対する T-source horizontal extension proposal を改訂する。
@@ -183,3 +187,4 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 - `irg-n080` - <https://www.unicode.org/irg/docs/n0080-Resolutions.pdf>（registry date: 1994-03-16）
 - `irg-n131` - <https://www.unicode.org/irg/docs/n0131-Resolutions.pdf>（registry date: 1994-09-02）
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

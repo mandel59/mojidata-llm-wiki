@@ -5,13 +5,14 @@ description: "UAX #45 の U-source database、USourceData.txt、kIRG_USource、F
 slug: uax45-u-source-ideographs
 aliases: [U-Source, U-source, USourceData, kIRG_USource]
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-07-159, utc-l2-07-160, utc-l2-08-284, utc-l2-10-198, irg-n1534, irg-n1535, utc-l2-11-439, irg-n2369r, irg-n2439, irg-n2511, utc-l2-22-185, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-053, utc-l2-25-199, utc-l2-25-221, utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-071, utc-l2-26-072, utc-l2-26-080, utc-l2-26-083, utc-l2-26-085, utc-l2-26-099, utc-l2-26-147, pri-559]
+documents: [utc-l2-07-159, utc-l2-07-160, utc-l2-08-284, utc-l2-10-198, irg-n1534, irg-n1535, utc-l2-11-439, irg-n2369r, irg-n2439, irg-n2511, utc-l2-22-185, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-053, utc-l2-25-199, utc-l2-25-221, utc-l2-26-043, utc-l2-26-044, utc-l2-26-057, utc-l2-26-064, utc-l2-26-071, utc-l2-26-072, utc-l2-26-080, utc-l2-26-083, utc-l2-26-085, utc-l2-26-099, utc-l2-26-147, pri-559, utc-l2-26-265, utc-l2-26-238]
 topics: [unihan-database-maintenance, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, irg-indexing-rules, japanese-place-name-ideographs, japanese-historical-ideographs, cjk-abbreviated-and-simplified-ideographs]
 people: [utc, irg, wg2, john-h-jenkins, richard-cook, ken-lunde, uk]
 events: [utc-187-uax45-futurews-additions]
 status: active
 tags: [uax45, u-source, futurews, cjk, source-data, horizontal-extension]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-07-08T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # UAX \#45 / U-Source Ideographs
@@ -104,6 +105,10 @@ UAX \#45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRS
 
 UTC \#187 では `L2/26-044` が受理されたが、現行 catalog / cache の範囲では `L2/25-053` と `L2/25-221` の採択 decision は確認できない。UAX \#45 topic では、同じ地名 evidence 系の proposal でも、decision set に入ったものと pending のものを分けて扱う。
 
+## Unicode 19.0 Proposed Update
+
+[L2/26-265](../documents/utc-l2-26-265.md) は Revision 35 の snapshot。CmptB status、UNKN source tag、空field と residual strokes を整理する。[CJK & Unihan 勧告](../documents/utc-l2-26-238.md) の U-source extension / reference corrections と併読する。
+
 ## 関連文書
 
 - [L2/07-159](../documents/utc-l2-07-159.md) - U-source database を public / versioned UTR にする提案。
@@ -168,3 +173,5 @@ UTC \#187 では `L2/26-044` が受理されたが、現行 catalog / cache の�
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-147` - <https://www.unicode.org/L2/L2026/26147-irgn2961-unicodehorizontalextension.pdf>
 - `USourceData.txt` - <https://www.unicode.org/Public/UCD/latest/ucd/USourceData.txt>
+- `utc-l2-26-265` - <https://www.unicode.org/L2/L2026/26265-uax45-35-update-pri559.pdf>（registry date: 2026-10-16）
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

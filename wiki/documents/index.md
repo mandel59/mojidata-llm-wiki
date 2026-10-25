@@ -8,6 +8,34 @@
 
 ### 2026
 
+- [L2/26-240](utc-l2-26-240.md) - Charts WG の18.0公開後の振り返りと19.0準備の報告。
+- [L2/26-239](utc-l2-26-239.md) - SEW が UTC \#189 に提出する script proposals の review と勧告集。
+- [L2/26-236](utc-l2-26-236.md) - Editorial WG の Unicode 18.0 振り返りと19.0編集計画。
+- [L2/26-219](utc-l2-26-219.md) - 新しく作られた script の利用を支える application 向け script packages と、実現可能性を調査する ad-hoc group を提案する。
+- [L2/26-273](utc-l2-26-273.md) - 積み重ねた石による Inukshuk を、Inuit / Arctic の文化・道案内を表す emoji として提案する。
+- [L2/26-272](utc-l2-26-272.md) - Vulture / condor の特徴と比喩的な用途を示し、bird emoji の追加を提案する。
+- [L2/26-271](utc-l2-26-271.md) - Orchid Flower を flower emoji の追加として提案する。
+- [L2/26-270](utc-l2-26-270.md) - 装飾された glass bottle を fragrance / potion / elixir などに使う emoji として追加する提案。
+- [L2/26-269](utc-l2-26-269.md) - 既存の 👀 に対し、右向きの視線を独立した emoji として追加する提案。
+- [L2/26-237](utc-l2-26-237.md) - ESR が Unicode 19.0 向けに新しい emoji 5文字を勧告する。
+- [L2/26-231](utc-l2-26-231.md) - UTC \#189 の preliminary draft agenda。会合は2026-10-26〜28、Nancy, France / online の hybrid 形式を予定する。
+- [L2/26-132](utc-l2-26-132.md) - KORE SEBELI Version 13。名称改訂と93 / 91 countを確認。
+- [L2/26-260](utc-l2-26-260.md) - Joint CLDR/UTC Orthographic Sequences WG（SEQ）の活動・設計状況を報告する。
+- [L2/26-235](utc-l2-26-235.md) - PAG が UTC \#189 に提出する properties / algorithms の勧告集。
+- [L2/26-234](utc-l2-26-234.md) - 2026-07-07〜10-05 の期間に公開 review の対象となった PRI をまとめる。
+- [L2/26-233](utc-l2-26-233.md) - 2026-07-23 以降に closed となった UTC action items の一覧。
+- [L2/26-238](utc-l2-26-238.md) - 2026-10-09 の CJK & Unihan WG review に基づく UTC \#189 向け勧告。
+- [L2/26-145](utc-l2-26-145.md) - Codical Maya Version 1.6。481文字と32 controls、SEW勧告を追う。
+- [L2/26-227](utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
+- [L2/26-268](utc-l2-26-268.md) - UTR \#25 Revision 16, Draft 5 の Proposed Update snapshot。PRI \#533 の review 対象に対応する。
+- [L2/26-267](utc-l2-26-267.md) - UAX \#11 Revision 47 の Proposed Update snapshot。PRI \#557 の review 対象に対応する。
+- [L2/26-266](utc-l2-26-266.md) - UAX \#38 Revision 42, Draft 3 の Proposed Update snapshot。PRI \#558 の review 対象に対応する。
+- [L2/26-265](utc-l2-26-265.md) - UAX \#45 Revision 35 の Proposed Update snapshot。PRI \#559 の review 対象に対応する。
+- [L2/26-264](utc-l2-26-264.md) - UAX \#50 Revision 36 の Proposed Update snapshot。PRI \#560 の review 対象に対応する。
+- [L2/26-263](utc-l2-26-263.md) - SC 2 N5062 の ISO/IEC 10646 Maintenance Agency ToR draft に対する consultation 結果（SC 2 N5073）。
+- [L2/26-262](utc-l2-26-262.md) - ISO/IEC 10646 第7版の Amendment 1、CDAM 1（SC 2 N5072）の公開 draft。
+- [L2/26-261](utc-l2-26-261.md) - Unicode 4.0.0〜8.0.0 の StandardizedVariants.html が使う旧 CGI glyph service を data URL に置き換える提案。
+- [L2/26-241](utc-l2-26-241.md) - RMG が Unicode 18.0 の公開と作業工程を振り返り、19.0 の scope・日程・repertoire を提案する。
 - [L2/26-259](utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
 - [L2/26-258](utc-l2-26-258.md) - Dr. T Marvin Zou が Zou / Zoulai script と numerals の符号化を提案する。
 - [L2/26-257](utc-l2-26-257.md) - Kadu Than Naing が Kadu language 用の Asak kyeing を符号化する案を提出する。
@@ -28,17 +56,13 @@
 - [L2/26-230](utc-l2-26-230.md) - Karl Pentzlin が Benjamin Franklin の reformed alphabet の未符号化 Latin letters 4文字を再提案する。
 - [L2/26-229](utc-l2-26-229.md) - Rikza F. Sh. が特殊な Indo-Pak mushaf の tajwīd・waqf・補助注記に使う Arabic characters 26文字を提案する。
 - [L2/26-228](utc-l2-26-228.md) - Adam Victor が balanced ternary の負の単位桁 −1 を表す TURNED DIGIT ONE 1文字を提案する。
-- [L2/26-227](utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
 - [L2/26-147](utc-l2-26-147.md) - L2/26-147R3 / IRG N2961R3。対象74字を維持し、U+8821 の chart を追加。
-- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs Version 1.5。repertoire / property table の不一致を含めて review。
-- [L2/26-226](utc-l2-26-226.md) - Vithkuqi の HHA / IJE の注釈削除と reserved slots の表示追加を求める提案。
 - [L2/26-225](utc-l2-26-225.md) - Soft_Dotted の安定性問題を避けるため turned dotless i を別文字にする追加提案。
 - [L2/26-224](utc-l2-26-224.md) - Wagindara を Mongolian から独立した graphemic joining script として39字を提案する文書。
 - [L2/26-223](utc-l2-26-223.md) - Wei Rma を alphabet として再整理し69字を追加する改訂提案。
 - [L2/26-222](utc-l2-26-222.md) - Southern Pa’O の Kham Dom orthography に必要な Myanmar combining / tone signs 3字の提案。
 - [L2/26-221](utc-l2-26-221.md) - Jain Nagari 写本で省略された vowel sign を補う上付き correction mark の提案。
 - [L2/26-220](utc-l2-26-220.md) - Big5 ETen の二重円弧罫線4字を区別し、変換での情報損失を避ける符号化提案。
-- [L2/26-219](utc-l2-26-219.md) - Mongolian の共用文字・FVS・Ali Gali を writing system ごとにどう shaping するかを問う文書。
 - [L2/26-181R](utc-l2-26-181r.md) - Jain Nagari の行末 anusvara と gap filler を独立文字として追加する改訂提案。
 - [L2/26-218](utc-l2-26-218.md) - 重複 glyph のため標準 data から省かれた Small Seal source references を示す provisional property の提案。
 - [L2/26-217](utc-l2-26-217.md) - Elixir 実装で DFA data を検証した PRI \#555 への支持と、仕様・tailoring の未解決点を報告する feedback。
@@ -46,6 +70,8 @@
 - [L2/26-216](utc-l2-26-216.md) - taboo variants を standard forms に対応付ける provisional Unihan property と UTN \#63 を提案する。
 - [L2/26-214](utc-l2-26-214.md) - Armenian hyphen と fullwidth comma / semicolon の Word_Break 値の見直しを提案する報告。
 - [L2/26-212](utc-l2-26-212.md) - UAX \#29 の Word_Break=ALetter を音声転写や正書法で使う記号へ拡張する提案。
+- [L2/26-208](utc-l2-26-208.md) - Vithkuqi の HHA / IJE の注釈削除と reserved slots の表示追加を求める提案。
+- [L2/26-207](utc-l2-26-207.md) - Mongolian の共用文字・FVS・Ali Gali を writing system ごとにどう shaping するかを問う文書。
 - [L2/26-151](utc-l2-26-151.md) - UTC \#188 の minutes。Unicode 18.0 release authorization、script / property / CJK decisions、Unicode 19.0 pipeline items を記録する。
 - [L2/26-161](utc-l2-26-161.md) - Script Encoding Initiative が支援する proposals と開発中の script 案件を UTC に報告する。
 - [L2/26-159](utc-l2-26-159.md) - Unicode 18.0 charts の版管理、PDF 公開、ISO/IEC 10646 charts、feedback を報告する。
@@ -73,7 +99,6 @@
 - [L2/26-137](utc-l2-26-137.md) - LTR scripts 向け Joining_Type discussion。
 - [L2/26-136](utc-l2-26-136.md) - WHITE IDEOGRAPHIC COMMA proposal。
 - [L2/26-134](utc-l2-26-134.md) - `RSIndex.txt` syntax enhancement。
-- [L2/26-132](utc-l2-26-132.md) - KORE SEBELI script proposal。
 - [L2/26-131](utc-l2-26-131.md) - Kannada 用 Samavedic svara markers proposal。
 - [L2/26-130](utc-l2-26-130.md) - Chinese folk music notation の musical symbol / format controls proposal。
 - [L2/26-129](utc-l2-26-129.md) - Leke script proposal。

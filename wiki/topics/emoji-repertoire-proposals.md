@@ -1,14 +1,15 @@
 ---
 type: Topic
 title: Emoji Repertoire Proposals
-description: "Emoji 18.0 / 19.0 に向けた個別 emoji proposal、ESR short list、final candidate name の整理。"
+description: Emoji 18.0 / 19.0 に向けた個別 emoji proposal、ESR short list、final candidate name の整理。
 slug: emoji-repertoire-proposals
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-25-255, utc-l2-25-256, utc-l2-25-257, utc-l2-25-258, utc-l2-25-259, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r]
+documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-25-255, utc-l2-25-256, utc-l2-25-257, utc-l2-25-258, utc-l2-25-259, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r, utc-l2-26-237]
 topics: [emoji-interoperability-and-intake, unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms]
 status: active
 tags: [emoji, repertoire, proposal, unicode-18, esr]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: "2026-09-19T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Emoji Repertoire Proposals
@@ -63,6 +64,10 @@ Final character name が決まっても、user-facing search は CLDR short name
 
 [L2/26-104](../documents/utc-l2-26-104.md) は Emoji 18.0 の proposed UTS \#51 update で、final UTS \#51 は emoji / text presentation selectors と default presentation style の guidance を更新した。Repertoire の確認では code points、final emoji charts、`emoji-data.txt`、CLDR names / keywords を分けて追う。
 
+## Unicode 19.0 向けの5候補
+
+[ESR report](../documents/utc-l2-26-237.md) が Eyes looking right / Ornate bottle / Orchid / Vulture / Inukshuk を勧告する。各提案とコード位置案は report page に集約する。2026-10-25時点では UTC \#189 開催前であり、採択済みemojiではない。
+
 ## 関連文書
 
 - [L2/25-230R](../documents/utc-l2-25-230r.md) - ESR report for UTC \#185。
@@ -87,3 +92,4 @@ Final character name が決まっても、user-facing search は CLDR short name
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
 - Emoji Recently Added, v18.0 - <https://www.unicode.org/emoji/charts-18.0/emoji-released.html>
 - Unicode 18.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
+- `utc-l2-26-237` - <https://www.unicode.org/L2/L2026/26237-esr-report-utc-189.pdf>（registry date: 2026-10-23）

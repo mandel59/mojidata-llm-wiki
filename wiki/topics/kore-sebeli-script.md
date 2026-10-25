@@ -1,23 +1,24 @@
 ---
 type: Topic
 title: KORE SEBELI Script
-description: "Soso language 用 KORE SEBELI / Wakara script の Unicode encoding proposal chain。"
+description: Soso language 用 KORE SEBELI / Wakara script の Unicode encoding proposal chain。
 slug: kore-sebeli-script
-aliases: ["Koré Sébèli", Wakara]
+aliases: [Koré Sébèli, Wakara]
 bodies: [UTC]
-documents: [utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-132]
+documents: [utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-26-050r, utc-l2-26-132, utc-l2-26-132r, utc-l2-26-239]
 topics: [script-encoding-pipeline]
-meetings: [utc-meeting-188]
+meetings: [utc-meeting-188, utc-meeting-189]
 status: proposed
 tags: [script, proposal, kore-sebeli, soso, guinea]
-timestamp: 2026-07-09T00:00:00+09:00
+timestamp: "2026-07-09T00:00:00+09:00"
+events: [sew-189-script-provisional-assignment-recommendations]
 ---
 
 # KORE SEBELI Script
 
 ## 概要
 
-KORE SEBELI / Koré Sébèli / Wakara は、Mohamed Bentoura Bangoura が Soso language 用に作成した contemporary Guinean script として UTC に提案されている script である。proposal chain は 2020 年の [L2/20-180](../documents/utc-l2-20-180.md) から 2026 年の [L2/26-050R](../documents/utc-l2-26-050r.md) / [L2/26-132](../documents/utc-l2-26-132.md) まで続く。
+KORE SEBELI / Koré Sébèli / Wakara は、Mohamed Bentoura Bangoura が Soso language 用に作成した contemporary Guinean script として UTC に提案されている script である。proposal chain は 2020 年の [L2/20-180](../documents/utc-l2-20-180.md) から 2026 年の [L2/26-050R](../documents/utc-l2-26-050r.md) / [L2/26-132R](../documents/utc-l2-26-132.md) Version 13 まで続く。
 
 主な論点は、106 characters から 95 characters、さらに 93 / 91 count へ変化する repertoire、vowels / dotted letters の combining vs atomic model、horizontal left-to-right と traditional vertical direction の扱い、contemporary invented script としての community evidence である。
 
@@ -32,7 +33,8 @@ KORE SEBELI / Koré Sébèli / Wakara は、Mohamed Bentoura Bangoura が Soso l
 | 2023-09-21 | UTC | [L2/23-203](../documents/utc-l2-23-203.md) | Oreen Yousuf らが African scripts status report で、KORE SEBELI は 2009 年作成で継続的に教えられ、students が hundreds に達すると記録した。 |
 | 2024-10-28 | UTC | [L2/24-246](../documents/utc-l2-24-246.md) | Mohamed Bentoura Bangoura が version 08 として 95 characters model に再編したが、proposal summary form には 106 characters と残る箇所がある。 |
 | 2026-04-13 | UTC | [L2/26-050R](../documents/utc-l2-26-050r.md) | Mohamed Bentoura Bangoura が version 12 の revised proposal を提出し、表紙・目次では 93 characters、本文 section では 91 characters とした。 |
-| 2026-05-14 | UTC | [L2/26-132](../documents/utc-l2-26-132.md) | Mohamed Bentoura Bangoura の KORE SEBELI proposal が UTC \#188 候補文書として登録された。抽出テキスト上は April 2026 version 12 と同内容である。 |
+| 2026-05-14 | UTC | [L2/26-132](../documents/utc-l2-26-132.md) | April 2026 Version 12 を登録。 |
+| 2026-10-23 | UTC | [L2/26-132R](../documents/utc-l2-26-132.md) | October 2026 Version 13 を登録。名称を改訂。 |
 
 ## 主な論点
 
@@ -55,6 +57,10 @@ KORE SEBELI / Koré Sébèli / Wakara は、Mohamed Bentoura Bangoura が Soso l
 ### contemporary script evidence
 
 proposal は Soso language community、teachers / students、syllabary、handwritten samples、songs、national anthem sample、font use、school / publication plans を evidence として示す。contemporary invented script としては、community use と orthographic stability が後続 review の中心になる。
+
+## UTC \#189 に向けた改訂
+
+[L2/26-132R](../documents/utc-l2-26-132.md) は2026-10-23登録の Version 13。character names を整理したが、表紙93 / 本文91の記述は残る。legal clearance 再確認と93文字の provisional assignment 勧告は [SEW event](../events/sew-189-script-provisional-assignment-recommendations.md) に集約する。
 
 ## 関連文書
 
@@ -82,3 +88,5 @@ proposal は Soso language community、teachers / students、syllabary、handwri
 - `utc-l2-24-246` - <https://www.unicode.org/L2/L2024/24246-kore-sebeli.pdf>
 - `utc-l2-26-050r` - <https://www.unicode.org/L2/L2026/26050r-kore-sebeli-proposal.pdf>
 - `utc-l2-26-132` - <https://www.unicode.org/L2/L2026/26132-kore-sebeli-proposal.pdf>
+- `utc-l2-26-132r` - <https://www.unicode.org/L2/L2026/26132r-kore-sebeli-proposal.pdf>（registry date: 2026-10-23）
+- `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）

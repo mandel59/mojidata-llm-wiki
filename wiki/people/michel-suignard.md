@@ -4,10 +4,10 @@ title: Michel Suignard
 description: "Small Seal Script proposal、UAX #60 editor、WG2 project editor 関連文書に関わる contributor。"
 slug: michel-suignard
 bodies: [UTC, WG2]
-documents: [wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344r2, wg2-n5348r, wg2-n5369, utc-l2-25-049, utc-l2-25-111, utc-l2-26-108]
+documents: [wg2-n5209, wg2-n5294, wg2-n5306, wg2-n5317, wg2-n5344r2, wg2-n5348r, wg2-n5369, utc-l2-25-049, utc-l2-25-111, utc-l2-26-108, utc-l2-26-238, utc-l2-26-240, utc-l2-26-262]
 topics: [small-seal-script, uax60-large-east-asian-scripts]
 tags: [person, project-editor, small-seal]
-timestamp: 2026-10-11T00:00:00+09:00
+timestamp: "2026-10-11T00:00:00+09:00"
 events: [uax60-unicode-18-first-published-version]
 ---
 

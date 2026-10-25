@@ -4,12 +4,13 @@ title: CJKV Components
 description: CJK Unified Ideographs Components-A/B の標準化提案と IRG / WG2 での議論を追跡する。
 slug: cjkv-components
 bodies: [IRG, WG2, SC2]
-documents: ["utc-l2-21-134", "irg-n1081", "irg-n1133", "irg-n2702", "irg-n2733r", "irg-n2765", "irg-n2799", "irg-n2826", "irg-n2852", "irg-n2878", "irg-n2878r", "irg-n2878r2", "irg-n2878r3", "irg-n2890", "irg-n2895", "irg-n2909", "irg-n2917", "irg-n2935", "wg2-n5354", "wg2-n5358", "wg2-n5361r", "irg-n080", "irg-n131", "irg-n200", "irg-n189", "irg-n250", "irg-n259", "irg-n310", "irg-n313", "irg-n315", "irg-n365", "irg-n392"]
-topics: ["ucv-nucv-lists", "early-irg-history"]
+documents: [utc-l2-21-134, irg-n1081, irg-n1133, irg-n2702, irg-n2733r, irg-n2765, irg-n2799, irg-n2826, irg-n2852, irg-n2878, irg-n2878r, irg-n2878r2, irg-n2878r3, irg-n2890, irg-n2895, irg-n2909, irg-n2917, irg-n2935, wg2-n5354, wg2-n5358, wg2-n5361r, irg-n080, irg-n131, irg-n200, irg-n189, irg-n250, irg-n259, irg-n310, irg-n313, irg-n315, irg-n365, irg-n392, utc-l2-26-266, utc-l2-26-265, utc-l2-26-262]
+topics: [ucv-nucv-lists, early-irg-history]
 status: accepted-for-future-version
 tags: [cjk, components, irg, ideographic]
-timestamp: 2026-07-06T21:58:00+09:00
-events: ["irg-4-components-composition-definitions", "irg-7-ideographic-description-proposals-forwarding", "wg2-31-ideographic-description-refinement"]
+timestamp: "2026-07-06T21:58:00+09:00"
+events: [irg-4-components-composition-definitions, irg-7-ideographic-description-proposals-forwarding, wg2-31-ideographic-description-refinement]
+meetings: [utc-meeting-189]
 ---
 
 # CJKV Components
@@ -127,6 +128,10 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 
 [第4回の定義採用](../events/irg-4-components-composition-definitions.md)、[第7回の4案送付](../events/irg-7-ideographic-description-proposals-forwarding.md)、[WG2 の改訂要請](../events/wg2-31-ideographic-description-refinement.md)で、component 自体の集合と composition scheme の区別が具体化した。[N392](../documents/irg-n392.md)は既存統合漢字とは独立した部件集合にするか、単独利用を認めるか、どの統合原則を使うかを問う。2026年案の「components を CJK ideographs として扱う」という整理と比較できるが、同じ repertoire が継続したと断定しない。
 
+## Unicode / ISO draft への反映
+
+[UAX \#38](../documents/utc-l2-26-266.md)、[UAX \#45](../documents/utc-l2-26-265.md)、[ISO CDAM 1](../documents/utc-l2-26-262.md) が Components-A/B の source / status / chart presentation を記す。既存の UTC \#188承認と、draft の文面・データ更新を区別する。
+
 ## 関連文書
 
 - [IRG N1081](../documents/irg-n1081.md) - China source の 146 ideographic components proposal
@@ -205,3 +210,6 @@ CJKV Components では、形が異なることや既存 ideograph の variant �
 - `irg-n315` - <https://www.unicode.org/irg/docs/n0315-Resolutions.pdf>（registry date: 1996-02-08）
 - `irg-n365` - <https://www.unicode.org/irg/docs/n0365-IDC.pdf>（registry date: 1996-07-31）
 - `irg-n392` - <https://www.unicode.org/irg/docs/n0392-IdeographicCompositionOpinions.pdf>（registry date: 1996-08-16）
+- `utc-l2-26-266` - <https://www.unicode.org/L2/L2026/26266-uax38-42-update-pri558.pdf>（registry date: 2026-10-16）
+- `utc-l2-26-265` - <https://www.unicode.org/L2/L2026/26265-uax45-35-update-pri559.pdf>（registry date: 2026-10-16）
+- `utc-l2-26-262` - <https://www.unicode.org/L2/L2026/26262-iso-iec10646-2026-cda-md1-ed7.pdf>（registry date: 2026-10-15）

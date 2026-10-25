@@ -4,9 +4,9 @@ title: IRG Urgently Needed Ideographs
 description: IRG の UNC 提出経路と個別提案の evidence、審査段階。
 slug: irg-urgently-needed-ideographs
 bodies: [IRG]
-documents: ["irg-n2850r", "irg-n2969", "irg-n2969r"]
+documents: [irg-n2850r, irg-n2969, irg-n2969r, utc-l2-26-238]
 topics: [irg-working-process-and-liaison]
-meetings: [irg-meeting-67]
+meetings: [irg-meeting-67, utc-meeting-189]
 status: active
 tags: [irg, unc, proposal]
 ---
@@ -29,6 +29,10 @@ Urgently Needed Character（UNC）は、通常の working set と区別して審
 
 [IRG N2969](../documents/irg-n2969.md) は字形と文献上の用例を提示する提案である。符号化の決定やコードポイントの確定を意味しない。後続の扱いは [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) の記録で確認する。
 
+## UTC \#189 への接続
+
+[CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §12 は IRG M67.07 を受け、U+2B81F と GHS prefix の追加を勧告する。IRGの処置と Unicode 19.0 の採択を区別し、UTC minutes を待つ。
+
 ## 関連文書
 
 - [IRG N2969R](../documents/irg-n2969r.md) - China が Collected Works of Mao Zedong の digitization 用に未符号化1字を UNC として再提案する。
@@ -45,3 +49,4 @@ Urgently Needed Character（UNC）は、通常の working set と区別して審
 - `irg-n2850r` - <https://www.unicode.org/irg/docs/n2850r-PPv18d2.html>
 - `irg-n2969` - <https://www.unicode.org/irg/docs/n2969-UNC-China.pdf>
 - `irg-n2969r` - <https://www.unicode.org/irg/docs/n2969r-UNC-China.pdf>
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

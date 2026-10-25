@@ -4,13 +4,14 @@ title: Unihan Data Format and Property Syntax
 description: "Unicode 18.0 cycle の UAX #38 / UTS #37 / RSIndex.txt / kTotalStrokes など、Unihan 周辺 data format と property syntax の更新論点。"
 slug: unihan-data-format-and-property-syntax
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354]
+documents: [utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, pri-534, utc-l2-26-112, pri-546, pri-549, utc-l2-26-134, utc-l2-26-148, irg-n2951, wg2-n5354, utc-l2-26-266]
 topics: [unihan-database-maintenance, unicode-18-change-sources, irg-indexing-rules, ucv-nucv-lists, jmj-horizontal-extension-review-path, ideographic-variation-database]
 people: [ken-lunde, utc, irg, wg2]
 status: released
 tags: [unihan, data-format, property-syntax, uax38, uts37, unicode-18]
 events: [ivd-2026-08-03-moji-joho-registration]
-timestamp: 2026-10-10T00:00:00+09:00
+timestamp: "2026-10-10T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Unihan Data Format and Property Syntax
@@ -80,6 +81,10 @@ CJK Unified Ideographs Extension D は U+2B81E まで assigned range が延び�
 
 [Unicode 18.0 Change Sources](unicode-18-change-sources.md) では、UCD、Unihan.zip、UAX / UTS updates、WG2 recommendations、IRG documents を横断して release 影響を追う。この topic は、そのうち Unihan data format / property syntax に関係する文書を束ねる。proposal / beta は decision provenance、final UAX \#38 と `/Public/18.0.0/ucd/Unihan.zip` は実装基準として役割を分ける。
 
+## Unicode 19.0 Proposed Update
+
+[L2/26-266](../documents/utc-l2-26-266.md) は UAX \#38 Revision 42 Draft 3 の snapshot。kIRG_SGSource、components の source prefixes と block / indexing の更新を示す。PRI \#558 の確定結果と区別する。
+
 ## 関連文書
 
 - [L2/26-105](../documents/utc-l2-26-105.md) - Proposed Update UAX \#38。
@@ -117,3 +122,4 @@ CJK Unified Ideographs Extension D は U+2B81E まで assigned range が延び�
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
 - `irg-n2951` - <https://www.unicode.org/irg/docs/n2951-FSSC.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
+- `utc-l2-26-266` - <https://www.unicode.org/L2/L2026/26266-uax38-42-update-pri558.pdf>（registry date: 2026-10-16）

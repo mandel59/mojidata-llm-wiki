@@ -4,12 +4,13 @@ title: CJK Security Confusables
 description: "UTS #39 security data、Unihan kSpoofingVariant / kZVariant、Han identifier policy における CJK confusables。"
 slug: cjk-security-confusables
 bodies: [UTC, IRG]
-documents: [irg-n2206, utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127, utc-l2-26-154, pri-553]
+documents: [irg-n2206, utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-25-031, utc-l2-26-082, utc-l2-26-086, utc-l2-26-099, utc-l2-26-127, utc-l2-26-154, pri-553, utc-l2-26-238, utc-l2-26-235]
 status: active
 tags: [cjk, security, confusables, uts39]
-timestamp: 2026-10-13T00:00:00+09:00
+timestamp: "2026-10-13T00:00:00+09:00"
 topics: [kzvariant]
 events: [unicode-13-kzvariant-data-overhaul]
+meetings: [utc-meeting-189]
 ---
 
 # CJK Security Confusables
@@ -70,6 +71,10 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 
 `L2/26-099` Section 33 は、`L2/26-082` の候補のうち U+3A36 / U+6440 pair を除外した。理由は、U+9CE5 鳥と U+70CF 烏が一画差でも区別されるように、この pair も distinct と判断されたためである。
 
+## UTC \#189 向けの variant review
+
+[L2/26-238](../documents/utc-l2-26-238.md) §4 は Unihan の semantic / spoofing variant 変更とUTS \#39のconfusables追加を分けて勧告する。§7は kTabooVariant の再検討を求める。[PAG report](../documents/utc-l2-26-235.md) のsecurity修正も採択前の案として追う。
+
 ## 関連文書
 
 - [IRG N2206](../documents/irg-n2206.md)
@@ -108,3 +113,5 @@ CJK Security Confusables は、UTS \#39 security data の `confusables.txt` と�
 - `utc-l2-26-099` - <https://www.unicode.org/L2/L2026/26099-cjk-unihan-wg-utc187.pdf>
 - `utc-l2-26-127` - <https://www.unicode.org/L2/L2026/26127-2nd-cjk-confusables.pdf>
 - `pri-553` - <https://www.unicode.org/review/pri553/>
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）
+- `utc-l2-26-235` - <https://www.unicode.org/L2/L2026/26235-utc189-properties-recs.pdf>（registry date: 2026-10-20）

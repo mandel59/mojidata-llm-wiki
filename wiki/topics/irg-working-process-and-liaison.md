@@ -4,12 +4,12 @@ title: IRG Working Process and Liaison
 description: IRG の手続、SC 2 に対する位置づけ、会議運営、外部団体との連携。
 slug: irg-working-process-and-liaison
 bodies: [IRG, SC2]
-documents: ["irg-n2850r", "irg-n2938", "irg-n2940", "irg-n2966", "irg-n2967", "irg-n2971", "irg-n2973", "irg-n2935", "irg-n002", "irg-n003", "irg-n034", "irg-n131", "irg-n2946", "irg-n189", "irg-n250"]
-topics: ["irg-indexing-rules", "irg-urgently-needed-ideographs", "early-irg-history"]
-meetings: [irg-meeting-67]
+documents: [irg-n2850r, irg-n2938, irg-n2940, irg-n2966, irg-n2967, irg-n2971, irg-n2973, irg-n2935, irg-n002, irg-n003, irg-n034, irg-n131, irg-n2946, irg-n189, irg-n250, utc-l2-26-263]
+topics: [irg-indexing-rules, irg-urgently-needed-ideographs, early-irg-history]
+meetings: [irg-meeting-67, utc-meeting-189]
 status: active
 tags: [irg, process, liaison]
-events: ["sc2-1993-irg-establishment", "irg-1-users-guide-and-annex-forwarding", "irg-4-officer-role-restriction-withdrawal"]
+events: [sc2-1993-irg-establishment, irg-1-users-guide-and-annex-forwarding, irg-4-officer-role-restriction-withdrawal]
 ---
 
 # IRG Working Process and Liaison
@@ -50,6 +50,10 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 
 [第4回の兼任制限撤回](../events/irg-4-officer-role-restriction-withdrawal.md)は、1993年の三役兼任を禁じる一文を撤回した例である。[N189](../documents/irg-n189.md) W1 は既存合意の変更・撤回を plenary 承認によるものとする。初期の運営規則を現行の規則として固定しない。
 
+## MA ToR consultation の結果
+
+[L2/26-263 / SC 2 N5073](../documents/utc-l2-26-263.md) の index.pdf は20 bodiesの回答と、6 bodiesがコメントありと回答したことを示す。Yes / No は承認の賛否ではない。JVG / NBVG / IAVG、MAのscope、AGとしてのIRG等への意見を、draftとその成立結果に分けて追う。
+
 ## 関連文書
 
 - [IRG N2935](../documents/irg-n2935.md) - IRG Meeting \#67 Schedule & Agenda。
@@ -84,3 +88,4 @@ IRG の提出・審査手順と会合運営を扱う。技術的な文字判断�
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
 - `irg-n189` - <https://www.unicode.org/irg/docs/n0189-Resolutions.pdf>（registry date: 1995-03-03）
 - `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）
+- `utc-l2-26-263` - <https://www.unicode.org/L2/L2026/26263-isoiec-jtc1-sc2-n5073-summary-consultation.zip>（registry date: 2026-10-16）

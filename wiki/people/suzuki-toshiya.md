@@ -4,10 +4,10 @@ title: Suzuki Toshiya
 description: Small Seal Script、CJK / IRG source data、script feedback に関する recurring contributor。
 slug: suzuki-toshiya
 bodies: [WG2, IRG, UTC]
-documents: [wg2-n5108, wg2-n5211, wg2-n5327]
+documents: [wg2-n5108, wg2-n5211, wg2-n5327, utc-l2-26-238]
 topics: [small-seal-script, j-source, irg-source-data-and-representative-glyphs]
 tags: [person, small-seal, cjk, source-data]
-timestamp: 2026-07-09T00:00:00+09:00
+timestamp: "2026-07-09T00:00:00+09:00"
 ---
 
 # Suzuki Toshiya

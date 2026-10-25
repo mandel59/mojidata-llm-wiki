@@ -1,15 +1,17 @@
 ---
 type: Topic
-title: "N'ti Script"
-description: "Soninke 用 N'ti / Nti script の Unicode encoding proposal chain と LTR joining model。"
+title: N'ti Script
+description: Soninke 用 N'ti / Nti script の Unicode encoding proposal chain と LTR joining model。
 slug: nti-script
-aliases: ["N’ti", "N'ti", Nti]
+aliases: [N’ti, N'ti, Nti]
 bodies: [UTC]
-documents: [utc-l2-23-203, utc-l2-26-028r, utc-l2-26-087, utc-l2-26-100, utc-l2-26-137]
+documents: [utc-l2-23-203, utc-l2-26-028r, utc-l2-26-087, utc-l2-26-100, utc-l2-26-137, utc-l2-26-239]
 topics: [script-encoding-pipeline, unicode-properties-and-algorithms]
 status: proposed
 tags: [script, proposal, nti, soninke, joining-type]
-timestamp: 2026-07-09T00:00:00+09:00
+timestamp: "2026-07-09T00:00:00+09:00"
+meetings: [utc-meeting-189]
+events: [sew-189-script-provisional-assignment-recommendations]
 ---
 
 # N'ti Script
@@ -50,6 +52,10 @@ N'ti は left-to-right に書くが、word 内の letters は baseline で join 
 
 `L2/26-137` は N'ti / Ndiko Jonam のような LTR joining scripts に対し、visually right-joining characters を `Joining_Type=L` とする既存 Phags-pa practice を維持するか、視覚方向どおり `R` とするかを比較する。これは N'ti だけの採否ではなく、future script encoding の property model を決める論点である。
 
+## UTC \#189 への勧告
+
+UTC \#188 からの legal clearance 確認を経た SEW の47文字の provisional assignment 勧告は [canonical event](../events/sew-189-script-provisional-assignment-recommendations.md) へ。2026-10-25 時点では UTC の採択前である。
+
 ## 関連文書
 
 - [L2/23-203](../documents/utc-l2-23-203.md) - African scripts usage / implementation status report。
@@ -70,3 +76,4 @@ N'ti は left-to-right に書くが、word 内の letters は baseline で join 
 - `utc-l2-26-087` - <https://www.unicode.org/L2/L2026/26087-nti-proposal.pdf>
 - `utc-l2-26-100` - <https://www.unicode.org/L2/L2026/26100-sew-report-utc187.pdf>
 - `utc-l2-26-137` - <https://www.unicode.org/L2/L2026/26137-left-right.pdf>
+- `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）

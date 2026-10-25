@@ -4,12 +4,13 @@ title: "UAX #60 Data for East Asian Scripts"
 description: "Unicode 18.0 で新設された UAX #60 と Jurchen / Nüshu / Seal / Tangut data files。"
 slug: uax60-large-east-asian-scripts
 bodies: [UTC, WG2]
-documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-26-218, pri-520, pri-549, wg2-n5209, wg2-n5344r2]
+documents: [utc-l2-26-095, utc-l2-26-099, utc-l2-26-102, utc-l2-26-108, utc-l2-26-218, pri-520, pri-549, wg2-n5209, wg2-n5344r2, utc-l2-26-238]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, small-seal-script]
 status: released
 tags: [uax60, east-asian-scripts, data-files, small-seal, unicode-18]
-timestamp: 2026-10-11T00:00:00+09:00
+timestamp: "2026-10-11T00:00:00+09:00"
 events: [uax60-unicode-18-first-published-version]
+meetings: [utc-meeting-189]
 ---
 
 # UAX \#60 Data for East Asian Scripts
@@ -62,6 +63,10 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 
 `SealSources.txt` の `kSEAL_THXSrc`、`kSEAL_CCZSrc`、`kSEAL_DYCSrc`、`kSEAL_QJZSrc` は normative source properties である。block / script name の `Seal` と、chart / core text の `Small Seal` を混同しない。
 
+## Unicode 19.0 の変更案
+
+[L2/26-238](../documents/utc-l2-26-238.md) §1〜2 / §9 は kJURC_Src syntax・誤記と provisional kSEAL_AdditionalSrc を扱う。Revision 3 の公開済み仕様と、19.0向けの新たな勧告を分ける。
+
 ## 関連文書
 
 - [L2/26-099](../documents/utc-l2-26-099.md) - CJK & Unihan Working Group recommendations。
@@ -94,3 +99,4 @@ Jurchen と Tangut は radical-stroke / numeric value を持ち、Jurchen と N�
 - `utc-l2-26-218` - <https://www.unicode.org/L2/L2026/26218-seal-property.pdf>
 - UAX \#60 Revision 3, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/tr60-3.html> (2026-09-02)
 - Unicode 18.0 UAX \#60 data - <https://www.unicode.org/Public/18.0.0/ucd/>
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

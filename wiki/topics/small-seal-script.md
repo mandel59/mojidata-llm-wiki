@@ -4,12 +4,13 @@ title: Small Seal Script
 description: Shuowen Jiezi に基づく小篆を UCS / Unicode に独立 script として符号化する議論。
 slug: small-seal-script
 bodies: [UTC, WG2]
-documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369, pri-520]
+documents: [utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-26-102, utc-l2-26-151, utc-l2-26-160r, utc-l2-26-215, utc-l2-26-218, wg2-n4634, wg2-n4688, wg2-n4716, wg2-n5089, wg2-n5105, wg2-n5108, wg2-n5209, wg2-n5211, wg2-n5230, wg2-n5294r3, wg2-n5306, wg2-n5307r, wg2-n5312, wg2-n5313r, wg2-n5317r3, wg2-n5318r, wg2-n5327, wg2-n5337, wg2-n5341, wg2-n5344r2, wg2-n5346, wg2-n5348r, wg2-n5354, wg2-n5355, wg2-n5360r, wg2-n5369, pri-520, utc-l2-26-238]
 status: encoded-unicode-18
 tags: [script, seal, cjk, ideographic]
-timestamp: 2026-10-11T00:00:00+09:00
+timestamp: "2026-10-11T00:00:00+09:00"
 topics: [ideographic-variation-database, uax60-large-east-asian-scripts]
 events: [uax60-unicode-18-first-published-version]
+meetings: [utc-meeting-189]
 ---
 
 # Small Seal Script
@@ -93,6 +94,10 @@ Unicode 18.0 final release は Seal を 3 new scripts の一つとして符号�
 Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。ISO 側では WG2 \#73 M73.04 が Small Seal changes を含む ISO/IEC 10646 7th edition DIS text を SC2 secretariat に回すよう勧告しており、body と時点を分けて追跡する。
 
 Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重複 glyph のため current SealSources.txt に記録されない source references を補う provisional property を提案した。採択は確認されておらず、既存の Unicode 18.0 data と proposal を区別する。
+
+## 追加 source references の勧告段階
+
+[CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §9 は kSEAL_AdditionalSrc の追加を支持し、SealSources / UAX \#60 / UAX \#42 の更新を勧告する。重複glyphの追加出典を provisional data として扱う案であり、2026-10-25時点では UTC 採択前。
 
 ## 関連文書
 
@@ -182,3 +187,4 @@ Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重
 - Unicode 18.0 Seal code chart - <https://www.unicode.org/charts/PDF/U3D000.pdf>
 - UAX \#60, Data for East Asian Scripts - <https://www.unicode.org/reports/tr60/>
 - Unicode 18.0 beta review page - <https://www.unicode.org/versions/beta-18.0.0.html>
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

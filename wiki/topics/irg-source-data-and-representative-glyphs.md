@@ -4,12 +4,13 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1532r", "irg-n2837", "irg-n2860", "irg-n2861", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2909", "irg-n2911", "irg-n2916", "irg-n2918", "irg-n2919r", "irg-n2923r", "irg-n2927r", "irg-n2928", "irg-n2929r", "irg-n2930", "irg-n2935", "irg-n2953", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2968", "irg-n2970", "irg-n2972", "irg-n2974", "irg-n2975", "utc-l2-26-099", "wg2-n5353", "wg2-n5354", "irg-n2939r", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2983", "irg-n2929r2", "irg-n2988", "irg-n2989", "irg-n013", "irg-n2946", "irg-n360"]
-topics: ["g-source-glyph-and-reference-issues", "t-source-representative-glyph-issues", "v-source-representative-glyph-issues", "irg-disunified-ideographs", "early-irg-history"]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2983, irg-n2929r2, irg-n2988, irg-n2989, irg-n013, irg-n2946, irg-n360, utc-l2-26-238]
+topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, irg-disunified-ideographs, early-irg-history]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
-timestamp: 2026-07-06T21:31:45+09:00
-events: ["irg-67-horizontal-extension-dispositions", "irg-7-s-column-merge-into-g"]
+timestamp: "2026-07-06T21:31:45+09:00"
+events: [irg-67-horizontal-extension-dispositions, irg-7-s-column-merge-into-g]
+meetings: [utc-meeting-189]
 ---
 
 # IRG Source Data and Representative Glyphs
@@ -97,6 +98,10 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ### 初期の source / 配置判断との比較
 
 [1996年の S-column 統合](../events/irg-7-s-column-merge-into-g.md)は source column をまとめた当時の判断であり、現在の [SG-source 独立化](kirg-sgsource.md)と保守責任を比較する参照点になる。
+
+## UTC \#189 への接続
+
+[CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §3 / §17〜19 が U+2BAD5 のsource replacement、G-source reference / glyph、T-source U+3097C の変更を扱う。IRGでの処置とUnicodeのversionへの反映は別の段階で追う。
 
 ## 関連文書
 
@@ -201,3 +206,4 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 - `irg-n2989` - <https://www.unicode.org/irg/docs/n2989-IRGN2918Feedback.pdf>
 - `irg-n013` - <https://www.unicode.org/irg/docs/n0013-ErrorReport.pdf>（registry date: 1993-10-04）
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）

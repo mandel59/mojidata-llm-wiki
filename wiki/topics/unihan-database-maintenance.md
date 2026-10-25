@@ -1,15 +1,16 @@
 ---
 type: Topic
 title: Unihan Database Maintenance
-description: "Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。"
+description: Unihan database、関連 k* properties、release updates の保守論点。data format / syntax は専用 topic に分割する。
 slug: unihan-database-maintenance
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-151, utc-l2-26-157, utc-l2-26-215, utc-l2-26-216, pri-534, pri-546, pri-558, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826]
+documents: [utc-l2-19-281, utc-l2-19-282, utc-l2-19-328, utc-l2-22-133, utc-l2-22-181, utc-l2-24-012, utc-l2-24-067, utc-l2-24-165, utc-l2-25-213, utc-l2-26-068, utc-l2-26-074, utc-l2-26-084, utc-l2-26-099, utc-l2-26-102, utc-l2-26-105, utc-l2-26-151, utc-l2-26-157, utc-l2-26-215, utc-l2-26-216, pri-534, pri-546, pri-558, utc-l2-26-112, utc-l2-26-134, utc-l2-26-148, wg2-n5354, irg-n2826, utc-l2-26-238, utc-l2-26-266]
 topics: [unihan-data-format-and-property-syntax, ucv-nucv-lists, v-source-representative-glyph-issues, cjk-hybrid-characters, cjk-multi-syllabic-and-abbreviation-characters, ideographic-variation-database, kzvariant]
 status: active
 tags: [unihan, uax38, uts37, cjk, properties]
 events: [ivd-2026-08-03-moji-joho-registration, unicode-13-kzvariant-data-overhaul]
-timestamp: 2026-10-13T00:00:00+09:00
+timestamp: "2026-10-13T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Unihan Database Maintenance
@@ -84,6 +85,10 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 
 `IRG N2826` M65.24 は、CJK Hybrid Characters に Unihan database properties を付与する場合、IRG review process で IRG source references、Kangxi radical、stroke count、readings などの規則を議論できると整理した。CJKUI と別 block に置く場合でも、CJK text で使われる文字として検索・分類 data をどう持つかは [CJK Hybrid Characters](cjk-hybrid-characters.md) 側の未決点である。
 
+## UTC \#189 に向けた CJK review
+
+[L2/26-238](../documents/utc-l2-26-238.md) が IRG \#67 の UNC / source / glyph 勧告と PRI \#558 feedback をまとめる。kTabooVariant は mapping の方向・名称・対象選定の再検討を求め、provisional property の採択は勧告していない。Unicode 19.0 の変更は UTC の後続決定で確認する。
+
 ## 関連文書
 
 - [L2/26-099](../documents/utc-l2-26-099.md)
@@ -144,3 +149,5 @@ UTC \#188 は `kIRG_SGSource`、CJKV Components source prefixes、Unicode 18.0 �
 - `pri-546` - <https://www.unicode.org/ivd/pri/pri546/>
 - `utc-l2-26-134` - <https://www.unicode.org/L2/L2026/26134-rsindex-syntax-change.pdf>
 - `utc-l2-26-148` - <https://www.unicode.org/L2/L2026/26148-ktotalstrokes-changes.pdf>
+- `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）
+- `utc-l2-26-266` - <https://www.unicode.org/L2/L2026/26266-uax38-42-update-pri558.pdf>（registry date: 2026-10-16）

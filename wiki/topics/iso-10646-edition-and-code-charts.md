@@ -1,16 +1,16 @@
 ---
 type: Topic
 title: ISO/IEC 10646 Edition and Code Charts
-description: "WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。"
+description: WG2 / SC2 における ISO/IEC 10646 7th edition、DIS progression、code charts 外部参照、Amendment 1 project の整理。
 slug: iso-10646-edition-and-code-charts
 bodies: [WG2, SC2, UTC]
-documents: ["wg2-n5253", "wg2-n5300r9", "wg2-n5304", "wg2-n5315", "wg2-n5339", "wg2-n5350r8", "wg2-n5354", "wg2-n5360r", "wg2-n5361r", "wg2-n5362", "wg2-n5363r", "wg2-n5369", "utc-l2-26-102", "utc-l2-26-159", "utc-l2-26-226", "utc-l2-26-259", "irg-n391"]
-topics: ["unicode-release-coordination-and-publication", "unicode-18-change-sources", "script-encoding-pipeline", "shaaldaa-script", "unihan-database-maintenance", "early-irg-history"]
-meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187]
+documents: [wg2-n5253, wg2-n5300r9, wg2-n5304, wg2-n5315, wg2-n5339, wg2-n5350r8, wg2-n5354, wg2-n5360r, wg2-n5361r, wg2-n5362, wg2-n5363r, wg2-n5369, utc-l2-26-102, utc-l2-26-159, utc-l2-26-208, utc-l2-26-259, irg-n391, utc-l2-26-262, utc-l2-26-240, utc-l2-26-263]
+topics: [unicode-release-coordination-and-publication, unicode-18-change-sources, script-encoding-pipeline, shaaldaa-script, unihan-database-maintenance, early-irg-history]
+meetings: [wg2-meeting-72, wg2-meeting-73, utc-meeting-187, utc-meeting-189]
 status: active
 tags: [iso-10646, code-charts, dis, amendment, wg2, sc2]
-timestamp: 2026-07-08T00:00:00+09:00
-events: ["wg2-31-extension-a-repertoire-and-bmp-consultation"]
+timestamp: "2026-07-08T00:00:00+09:00"
+events: [wg2-31-extension-a-repertoire-and-bmp-consultation]
 ---
 
 # ISO/IEC 10646 Edition and Code Charts
@@ -36,7 +36,7 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 | 2026-06-25 | WG2 | [WG2 N5363R](../documents/wg2-n5363r.md) | 10646 code charts を Unicode Consortium が生成する外部 chart resource として normative reference する案が具体化された。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 recommendations が DIS progression、external code charts、Amendment 1 project subdivision、first amendment additions を採択した。 |
 | 2026-06-29 | WG2 / UTC | [WG2 N5361R](../documents/wg2-n5361r.md) | Unicode 18.0 後の future repertoire として、Amendment 1 候補を含む provisionally assigned code points が整理された。 |
-| 2026-10-09 | UTC | [L2/26-226](../documents/utc-l2-26-226.md) | Vithkuqi の冗長な注釈削除と予約位置の表示追加を提案した。glyph redraw は別案件とする。 |
+| 2026-08-11 | UTC | [L2/26-208](../documents/utc-l2-26-208.md) | Vithkuqi の冗長な注釈削除と予約位置の表示追加を提案した。glyph redraw は別案件とする。 |
 | 2026-10-13 | UTC | [L2/26-259](../documents/utc-l2-26-259.md) | 将来追加の letterlike symbols の配置交換要求。 |
 
 ## 主な論点
@@ -65,11 +65,15 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 
 [1996年の Extension A 処理](../events/wg2-31-extension-a-repertoire-and-bmp-consultation.md)は repertoire の受理と BMP 配置照会を分けている。現在の edition / amendment pipeline を読む際も、候補の受理・配置・ballot・発行の段階を区別する歴史的な比較点となる。
 
+## UTC \#189 の公開資料
+
+[CDAM 1 / SC 2 N5072](../documents/utc-l2-26-262.md) が Amendment 1 の文字・SG-source・external delta charts を示す。[Charts report](../documents/utc-l2-26-240.md) は18.0 / 17.0のversion別archiveと19.0準備を報告する。[MA ToR consultation](../documents/utc-l2-26-263.md) は draftへのコメント照会であり、MA設置決定とは別。
+
 ## 関連文書
 
 - [L2/26-259](../documents/utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
 
-- [L2/26-226](../documents/utc-l2-26-226.md) - Unicode request for Vithkuqi annotations II。
+- [L2/26-208](../documents/utc-l2-26-208.md) - Unicode request for Vithkuqi annotations II。
 
 - [WG2 N5300R9](../documents/wg2-n5300r9.md) - WG2 \#72 revised agenda。
 - [WG2 N5253](../documents/wg2-n5253.md) - ISO/IEC 10646 7th edition stabilization considerations。
@@ -105,5 +109,8 @@ WG2 \#72 では CD.2 disposition と code charts の外部化検討が採択さ�
 - `wg2-n5362` - <https://www.unicode.org/wg2/docs/n5362-proposal_to_start_new_amendment_of_10646.pdf>
 - `wg2-n5363r` - <https://www.unicode.org/wg2/docs/n5363R-codechart.pdf>
 - `wg2-n5369` - <https://www.unicode.org/wg2/docs/n5369-CD7th-4-DOC.pdf>
-- `utc-l2-26-226` - <https://www.unicode.org/L2/L2026/26226-vithkuqi.pdf>
+- `utc-l2-26-208` - <https://www.unicode.org/L2/L2026/26208-vithkuqi-annotations.pdf>
 - `utc-l2-26-259` - <https://www.unicode.org/L2/L2026/26259-reorder-1db00-block.pdf>
+- `utc-l2-26-262` - <https://www.unicode.org/L2/L2026/26262-iso-iec10646-2026-cda-md1-ed7.pdf>（registry date: 2026-10-15）
+- `utc-l2-26-240` - <https://www.unicode.org/L2/L2026/26240-charts-wg-rept-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-263` - <https://www.unicode.org/L2/L2026/26263-isoiec-jtc1-sc2-n5073-summary-consultation.zip>（registry date: 2026-10-16）

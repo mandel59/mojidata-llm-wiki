@@ -4,12 +4,13 @@ title: kIRG_SGSource
 description: Singapore characters を kIRG_GSource から分離する normative IRG source property 提案。
 slug: kirg-sgsource
 bodies: [IRG, WG2, UTC]
-documents: ["irg-n2909", "irg-n2926", "irg-n2935", "wg2-n5354", "wg2-n5359", "irg-n250", "irg-n360"]
+documents: [irg-n2909, irg-n2926, irg-n2935, wg2-n5354, wg2-n5359, irg-n250, irg-n360, utc-l2-26-266, utc-l2-26-262]
 status: accepted-for-future-version
 tags: [unihan, source-data, singapore, irg]
-timestamp: 2026-07-06T21:31:45+09:00
-topics: ["early-irg-history"]
-events: ["irg-7-s-column-merge-into-g", "irg-m66-16-kirg-sgsource-establishment"]
+timestamp: "2026-07-06T21:31:45+09:00"
+topics: [early-irg-history]
+events: [irg-7-s-column-merge-into-g, irg-m66-16-kirg-sgsource-establishment]
+meetings: [utc-meeting-189]
 ---
 
 # kIRG_SGSource
@@ -49,6 +50,10 @@ Meeting \#67 agenda の current status では、WG2 と SC2 の acceptance を�
 
 [第7回の S-column 統合](../events/irg-7-s-column-merge-into-g.md)は、Extension A の S-column を G-column にまとめた決議である。現在の GS-source 保守責任と SG-source 独立化を読む具体的な歴史の比較点となる。GS prefix の導入や全 mapping の経路まで、この決議だけで確定しない。
 
+## Unicode / ISO draft への反映
+
+[UAX \#38 snapshot](../documents/utc-l2-26-266.md) と [ISO CDAM 1](../documents/utc-l2-26-262.md) が SG-source の property / source presentation を具体化する。両者は draft であり、それぞれの承認手続きを分けて追う。
+
 ## 関連文書
 
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
@@ -78,3 +83,5 @@ Meeting \#67 agenda の current status では、WG2 と SC2 の acceptance を�
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `irg-n250` - <https://www.unicode.org/irg/docs/n0250-Resolutions.pdf>（registry date: 1995-08-22）
 - `irg-n360` - <https://www.unicode.org/irg/docs/n0360-Resolutions.pdf>（registry date: 1996-06-27）
+- `utc-l2-26-266` - <https://www.unicode.org/L2/L2026/26266-uax38-42-update-pri558.pdf>（registry date: 2026-10-16）
+- `utc-l2-26-262` - <https://www.unicode.org/L2/L2026/26262-iso-iec10646-2026-cda-md1-ed7.pdf>（registry date: 2026-10-15）

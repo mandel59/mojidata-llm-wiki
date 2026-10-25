@@ -3,14 +3,14 @@ type: Topic
 title: Mathematical Text Support
 description: "UTR #25 を入口に、Unicode の数学文字 repertoire、Math property、math data files、plain-text math と markup の境界を扱う topic。"
 slug: mathematical-text-support
-aliases: ["UTR #25", "Unicode Support for Mathematics", "MathClass"]
+aliases: ["UTR #25", Unicode Support for Mathematics, MathClass]
 bodies: [UTC]
-documents: ["pri-533", "utc-l2-25-267", "utc-l2-26-140", "utc-l2-26-141", "utc-l2-26-142", "utc-l2-26-143", "utc-l2-26-149", "utc-l2-26-228"]
+documents: [pri-533, utc-l2-25-267, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, utc-l2-26-228, utc-l2-26-268, utc-l2-26-235]
 topics: [unicode-properties-and-algorithms, leibnizian-and-historic-mathematical-symbols, plain-text-composition-and-overstriking, unicode-set-notation]
-meetings: [utc-meeting-188]
+meetings: [utc-meeting-188, utc-meeting-189]
 status: active
 tags: [math, mathematical-text, utr25, properties, data-files, text-model]
-timestamp: 2026-07-10T00:00:00+09:00
+timestamp: "2026-07-10T00:00:00+09:00"
 ---
 
 # Mathematical Text Support
@@ -55,6 +55,10 @@ Mathematical alphanumeric symbols は、数式内で font style に見える差�
 
 数学用 alphanumeric symbols は、regular text の styled letters と混同されやすい。UTR \#25 draft は domain names など security sensitive environments での除外に触れており、UTS \#39 / identifier policy と隣接する。
 
+## UTR \#25 の再公開に向けて
+
+[L2/26-268](../documents/utc-l2-26-268.md) は Revision 16 Draft 5 の snapshot。[PAG report](../documents/utc-l2-26-235.md) §12.1 は Revision 17 としての公開を勧告する。HTML化と data / references の更新を、文字追加の提案と分けて追う。
+
 ## 関連文書
 
 - [L2/26-228](../documents/utc-l2-26-228.md) - Adam Victor が balanced ternary の負の単位桁 −1 を表す TURNED DIGIT ONE 1文字を提案する。
@@ -80,3 +84,5 @@ Mathematical alphanumeric symbols は、数式内で font style に見える差�
 - UTR \#25 Revision 16 draft 2 - <https://www.unicode.org/reports/tr25/tr25-16d2.html>
 - `utc-l2-25-267` - <https://www.unicode.org/L2/L2025/25267-utr25-update-16-pri533.pdf>
 - `utc-l2-26-228` - <https://www.unicode.org/L2/L2026/26228-turned-digit-one.pdf>
+- `utc-l2-26-268` - <https://www.unicode.org/L2/L2026/26268-utr25-16-update-pri533.pdf>（registry date: 2026-10-16）
+- `utc-l2-26-235` - <https://www.unicode.org/L2/L2026/26235-utc189-properties-recs.pdf>（registry date: 2026-10-20）

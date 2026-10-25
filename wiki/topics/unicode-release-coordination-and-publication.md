@@ -1,16 +1,16 @@
 ---
 type: Topic
 title: Unicode Release Coordination and Publication
-description: "Unicode 18.0 の beta gate、UTC release authorization、versioned artifacts、publication coordination。"
+description: Unicode 18.0 の beta gate、UTC release authorization、versioned artifacts、publication coordination。
 slug: unicode-release-coordination-and-publication
 bodies: [UTC]
-documents: ["utc-l2-25-230r", "utc-l2-26-008r", "utc-l2-26-092", "utc-l2-26-093", "utc-l2-26-095", "utc-l2-26-097", "utc-l2-26-101", "utc-l2-26-102", "utc-l2-26-150", "utc-l2-26-151", "utc-l2-26-152", "utc-l2-26-153", "utc-l2-26-155", "utc-l2-26-159", "utc-l2-26-160r", "utc-l2-26-215", "pri-547", "pri-548", "pri-549", "pri-550", "utc-l2-26-104", "utc-l2-26-126", "utc-l2-26-231", "utc-l2-26-232", "utc-l2-26-233", "utc-l2-26-234", "utc-l2-26-235", "utc-l2-26-236", "utc-l2-26-237", "utc-l2-26-238", "utc-l2-26-239", "utc-l2-26-240", "utc-l2-26-241", "utc-l2-26-242"]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-097, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-155, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-547, pri-548, pri-549, pri-550, utc-l2-26-104, utc-l2-26-126, utc-l2-26-231, utc-l2-26-232, utc-l2-26-233, utc-l2-26-234, utc-l2-26-235, utc-l2-26-236, utc-l2-26-237, utc-l2-26-238, utc-l2-26-239, utc-l2-26-240, utc-l2-26-241, utc-l2-26-242, utc-l2-26-261]
 topics: [unicode-18-change-sources, iso-10646-edition-and-code-charts, unicode-properties-and-algorithms, emoji-repertoire-proposals]
-meetings: [utc-meeting-187, utc-meeting-188]
+meetings: [utc-meeting-187, utc-meeting-188, utc-meeting-189]
 events: [utc-188-unicode-18-release-authorization]
 status: released
 tags: [unicode-18, release, charts, editorial, publication, liaison]
-timestamp: 2026-09-19T00:00:00+09:00
+timestamp: "2026-09-19T00:00:00+09:00"
 ---
 
 # Unicode Release Coordination and Publication
@@ -42,7 +42,7 @@ Final publication は core specification、versioned code charts、`/Public/18.0
 
 ### UTC \#189 の登録枠
 
-2026-10-14 の current register は L2/26-231～L2/26-242 に agenda / minutes / working-group reports などの登録枠を置くが、すべて `NOTPOSTED`。公開本文がある新規提案と区別し、minutes や reports が公開されてから meeting digest と正式決定を更新する。
+2026-10-25時点で [agenda](../documents/utc-l2-26-231.md)、closed actions、PRI一覧、7 WG reports が公開され、[UTC Meeting \#189](../meetings/utc/utc-meeting-189.md) に束ねた。L2/26-232 minutes と L2/26-242 SEI report は引き続き `unposted`。WG勧告と会合後の正式決定は区別して追う。
 
 ### Beta review gate
 
@@ -79,6 +79,10 @@ Final release では `/Public/18.0.0/` が固定された data root になり、
 ### Emoji data と release artifact
 
 [L2/25-230R](../documents/utc-l2-25-230r.md) / [L2/26-008R](../documents/utc-l2-26-008r.md) は Unicode 18.0 emoji candidates を整理し、[L2/26-104](../documents/utc-l2-26-104.md) は UTS \#51 / emoji data layer を更新する。Emoji additions は code charts だけでなく RGI sets、modifier sequences、CLDR data にも反映される。
+
+## Unicode 19.0 の scope と工程案
+
+[RMG report](../documents/utc-l2-26-241.md) が2,090文字のscope案と2027-09-15 releaseを提案する。[Editorial](../documents/utc-l2-26-236.md) / [Charts](../documents/utc-l2-26-240.md) はbetaでのPDF review、検索・引用・archive改善を報告する。release直前のLLM reviewで発生したtriage負荷を踏まえ、内容QAとstagingの前倒しを求める。いずれも UTC \#189 に向けた計画である。
 
 ## 関連文書
 
@@ -138,4 +142,9 @@ Final release では `/Public/18.0.0/` が固定された data root になり、
 - Unicode 18.0.0 release page - <https://www.unicode.org/versions/Unicode18.0.0/>
 - Unicode 18.0.0 versioned data - <https://www.unicode.org/Public/18.0.0/>
 - Unicode 18.0.0 code charts - <https://www.unicode.org/Public/18.0.0/charts/>
-- `utc-l2-26-231`～`utc-l2-26-242` - <https://www.unicode.org/L2/L-curdoc.htm>（未公開の登録枠）
+- `utc-l2-26-232` / `utc-l2-26-242` - <https://www.unicode.org/L2/L-curdoc.htm>（2026-10-25時点の未公開登録枠）
+- `utc-l2-26-231` - <https://www.unicode.org/L2/L2026/26231.htm>（registry date: 2026-10-23）
+- `utc-l2-26-241` - <https://www.unicode.org/L2/L2026/26241-rmg-report-utc189.pdf>（registry date: 2026-10-15）
+- `utc-l2-26-236` - <https://www.unicode.org/L2/L2026/26236-edc-report-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-240` - <https://www.unicode.org/L2/L2026/26240-charts-wg-rept-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-261` - <https://www.unicode.org/L2/L2026/26261-images-standardized-variants-files.pdf>（registry date: 2026-10-15）

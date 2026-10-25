@@ -3,14 +3,14 @@ type: Topic
 title: Unicode Set Notation
 description: "UTS #61 draft が定義する、Unicode specifications と tools で finite sets of code points / strings を表す machine-readable notation。"
 slug: unicode-set-notation
-aliases: ["UTS #61", "UnicodeSet"]
+aliases: ["UTS #61", UnicodeSet]
 bodies: [UTC]
-documents: [utc-l2-26-111, utc-l2-26-092, utc-l2-26-096]
+documents: [utc-l2-26-111, utc-l2-26-092, utc-l2-26-096, utc-l2-26-235]
 topics: [unicode-properties-and-algorithms]
-meetings: [utc-meeting-187]
+meetings: [utc-meeting-187, utc-meeting-189]
 status: draft-uts
 tags: [uts61, unicode-set, properties, algorithms, tooling]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-07-08T00:00:00+09:00"
 ---
 
 # Unicode Set Notation
@@ -43,6 +43,10 @@ Draft は escaped / named / bracketed elements、property queries、difference /
 
 Unicode specifications では、POSIX-style property queries を避け、`\p` を基本にし、regex match / property comparison / version qualifier を仕様本文で使わないことが推奨される。Higher-level syntax で `#` が comment marker になる場合は escape する、という実務的な注意も含まれる。
 
+## UTC \#189 向けの公開勧告
+
+[PAG report](../documents/utc-l2-26-235.md) §13.4 が UTS \#61 の初版公開と PRI \#523 の終了を勧告する。PRI / draft の現状は会合後の minutes と正式公開で確認する。
+
 ## 関連文書
 
 - [L2/26-111](../documents/utc-l2-26-111.md) - Proposed Draft UTS \#61, Unicode Set Notation。
@@ -58,4 +62,4 @@ Unicode specifications では、POSIX-style property queries を避け、`\p` �
 - `utc-l2-26-111` - <https://www.unicode.org/L2/L2026/26111-uts61-1-draft-pri523.pdf>
 - `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
-
+- `utc-l2-26-235` - <https://www.unicode.org/L2/L2026/26235-utc189-properties-recs.pdf>（registry date: 2026-10-20）

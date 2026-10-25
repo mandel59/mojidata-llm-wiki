@@ -1,14 +1,15 @@
 ---
 type: Topic
 title: Leibnizian and Historic Mathematical Symbols
-description: "Leibnizian ambiguous signs と historic mathematical sources 用 symbols / combining marks / letterlike symbols。"
+description: Leibnizian ambiguous signs と historic mathematical sources 用 symbols / combining marks / letterlike symbols。
 slug: leibnizian-and-historic-mathematical-symbols
 bodies: [UTC, WG2]
-documents: ["pri-533", "utc-l2-25-131", "utc-l2-26-140", "utc-l2-26-141", "utc-l2-26-142", "utc-l2-26-143", "utc-l2-26-149", "wg2-n5354", "wg2-n5361r", "wg2-n5364", "utc-l2-26-259"]
+documents: [pri-533, utc-l2-25-131, utc-l2-26-140, utc-l2-26-141, utc-l2-26-142, utc-l2-26-143, utc-l2-26-149, wg2-n5354, wg2-n5361r, wg2-n5364, utc-l2-26-259, utc-l2-26-239, utc-l2-26-241]
 topics: [mathematical-text-support, unicode-18-change-sources, script-encoding-pipeline]
 status: proposed
 tags: [math, leibniz, symbols, variation-sequences, unicode-18]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-07-08T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Leibnizian and Historic Mathematical Symbols
@@ -49,6 +50,10 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 
 [Mathematical Text Support](mathematical-text-support.md) は UTR \#25 を入口に、現代的な mathematical repertoire、Math property、math data files、plain-text math と markup の境界を扱う。この topic は、その中でも historic sources / Leibnizian signs の個別 proposal chain に焦点を置く。
 
+## UTC \#189 への再勧告
+
+[SEW report](../documents/utc-l2-26-239.md) §3.1〜3.2 は letterlike 5文字とmiscellaneous 10文字を再勧告する。GREEK OMICRON UPSILON SYMBOL の名称と code point order、PROPORTION WITH ONE STROKE のdisunification根拠を確認した。[RMG report](../documents/utc-l2-26-241.md) は19.0収録を提案する。
+
 ## 関連文書
 
 - [L2/26-259](../documents/utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
@@ -80,3 +85,5 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 - `utc-l2-26-149` - <https://www.unicode.org/L2/L2026/26149-leibniz.pdf>
 - `wg2-n5354` - <https://www.unicode.org/wg2/docs/n5354-Mtg73-Paris-Recs-rev5.pdf>
 - `utc-l2-26-259` - <https://www.unicode.org/L2/L2026/26259-reorder-1db00-block.pdf>
+- `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-241` - <https://www.unicode.org/L2/L2026/26241-rmg-report-utc189.pdf>（registry date: 2026-10-15）

@@ -17,6 +17,8 @@ okf_version: "0.1"
 
 ## Current Focus
 
+- [UTC Meeting \#189](meetings/utc/utc-meeting-189.md) - 10月26〜28日の会合前資料。Unicode 19.0計画とscript / CJK / property / emoji勧告。
+
 - [Early IRG History (1993–1996)](topics/early-irg-history.md) - 1993年の設立案から1996年の第7回・WG2第31回へ。source column、構成記法、配置判断を現在と比較。
 
 - [kZVariant](topics/kzvariant.md) - Unicode 12.0→13.0 の全面見直し、関連提案と正式データの削除例。
@@ -28,11 +30,13 @@ okf_version: "0.1"
 - [ISO/IEC 10646 Edition and Code Charts](topics/iso-10646-edition-and-code-charts.md) - 7th edition DISとAmendment 1 projectの進行状況。
 - [Small Seal Script](topics/small-seal-script.md) - 7th edition pipelineに入ったSmall Seal repertoire、source model、glyph corrections。
 - [CJKV Components](topics/cjkv-components.md) - Components-A/Bのfuture-version encodingとvariant / unification policy。
-- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - 2026-10-12/13登録のQuikscript / Kadu / Zou、Arabic / Latin追加案と既存の保留を追う。
+- [Script Encoding Pipeline](topics/script-encoding-pipeline.md) - UTC \#189へのSEW勧告と、新script・文字追加・community支援案を追う。
 
 完全な55 topicは [Topics index](topics/index.md) を参照してください。
 
 ## Current Decisions and Milestones
+
+- [SEW \#189 script 勧告](events/sew-189-script-provisional-assignment-recommendations.md) - Maya / N’ti / Ndiko Jonam / KORE SEBELI。UTC採択前の節目。
 
 - [IRG \#67 horizontal extension dispositions](events/irg-67-horizontal-extension-dispositions.md) - 4 body の受入勧告と Vietnam の継続 review。
 - [IRG \#67 WS2024 Version 6.0 schedule](events/irg-67-ws2024-version6-review-schedule.md) - 次版作成、ORT review、次期提出準備。

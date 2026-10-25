@@ -1,15 +1,16 @@
 ---
 type: Topic
 title: Unicode 18.0 Change Sources
-description: "Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。"
+description: Unicode 18.0 の変更点を調べるための公式資料と関連 UTC / WG2 / IRG 文書。
 slug: unicode-18-change-sources
 bodies: [UTC, WG2, IRG]
-documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935, irg-n2964, irg-n2965, pri-520]
+documents: [utc-l2-25-230r, utc-l2-26-008r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-073r, utc-l2-26-074, utc-l2-26-084, utc-l2-26-095, utc-l2-26-096, utc-l2-26-097, utc-l2-26-098, utc-l2-26-099, utc-l2-26-100, utc-l2-26-101, utc-l2-26-102, utc-l2-26-150, utc-l2-26-151, utc-l2-26-152, utc-l2-26-153, utc-l2-26-154, utc-l2-26-155, utc-l2-26-156r, utc-l2-26-157, utc-l2-26-159, utc-l2-26-160r, utc-l2-26-215, pri-534, pri-545, pri-547, pri-548, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, utc-l2-26-104, utc-l2-26-105, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-112, utc-l2-26-126, utc-l2-26-134, utc-l2-26-148, utc-l2-26-149, wg2-n5354, irg-n2916, irg-n2927r, irg-n2930, irg-n2935, irg-n2964, irg-n2965, pri-520, utc-l2-26-241, utc-l2-26-236, utc-l2-26-240]
 topics: [unicode-release-coordination-and-publication, unicode-properties-and-algorithms, script-encoding-pipeline, emoji-interoperability-and-intake, emoji-repertoire-proposals, leibnizian-and-historic-mathematical-symbols, unihan-data-format-and-property-syntax, cjk-strokes-variation-sequences, uax60-large-east-asian-scripts, small-seal-script, east-asian-spacing, t-source-representative-glyph-issues, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet]
 events: [utc-188-unicode-18-release-authorization, uax60-unicode-18-first-published-version]
 status: released
 tags: [unicode-18, release, beta, ucd, migration]
-timestamp: 2026-10-11T00:00:00+09:00
+timestamp: "2026-10-11T00:00:00+09:00"
+meetings: [utc-meeting-189]
 ---
 
 # Unicode 18.0 Change Sources
@@ -108,6 +109,10 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 ### Delta charts feedback
 
 [L2/26-149](../documents/utc-l2-26-149.md) は、Leibnizian ambiguous variation sequences の descriptive names と Unicode 18.0 delta charts の wording consistency に関する feedback である。これは新規 repertoire proposal ではなく、beta / delta review artifact の correction として読む。
+
+## 公開後の振り返り
+
+[RMG](../documents/utc-l2-26-241.md)、[Editorial](../documents/utc-l2-26-236.md)、[Charts](../documents/utc-l2-26-240.md) の報告が、18.0のstaging・block tables・auxiliary chartsの変更と残課題を整理する。19.0への修正予定を、18.0の公開済みデータに遡及して書き換えない。
 
 ## 関連文書
 
@@ -226,3 +231,6 @@ UAX \#57 の `Unikemet.txt` と UAX \#60 の Jurchen / Nüshu / Seal / Tangut da
 - `irg-n2927r` - <https://www.unicode.org/irg/docs/n2927r-TSourceGlyphChanges.pdf>
 - `irg-n2930` - <https://www.unicode.org/irg/docs/n2930-GSourceChanges.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>
+- `utc-l2-26-241` - <https://www.unicode.org/L2/L2026/26241-rmg-report-utc189.pdf>（registry date: 2026-10-15）
+- `utc-l2-26-236` - <https://www.unicode.org/L2/L2026/26236-edc-report-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-240` - <https://www.unicode.org/L2/L2026/26240-charts-wg-rept-utc189.pdf>（registry date: 2026-10-24）

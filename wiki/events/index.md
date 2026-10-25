@@ -34,6 +34,7 @@
 - [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12) - TCA が IRG \#67 の討議を受け、U+2403D の horizontal extension proposal の source / glyph を差し替えた出来事。
 - [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15) - IRG \#67 が WS2024 Version 6.0 の生成と ORT review の日程を定めた。
 - [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15) - IRG \#67 が4 body の horizontal extension へ受入勧告を行い、Vietnam 案には review を継続した。
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23) - SEW が Maya、N’ti、Ndiko Jonam、KORE SEBELI の provisional assignment を UTC \#189 に勧告した段階。
 
 ## By Topic
 
@@ -149,9 +150,25 @@
 - [IRG \#7 S-column merge into G-column](irg-7-s-column-merge-into-g.md) (1996-06-27)
 - [IRG M66.16 kIRG_SGSource establishment](irg-m66-16-kirg-sgsource-establishment.md) (2026-03-19)
 
+### [KORE SEBELI Script](../topics/kore-sebeli-script.md)
+
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
+
 ### [kZVariant](../topics/kzvariant.md)
 
 - [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
+
+### [Maya Hieroglyph Encoding](../topics/maya-hieroglyph-encoding.md)
+
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
+
+### [N'ti Script](../topics/nti-script.md)
+
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
+
+### [Script Encoding Pipeline](../topics/script-encoding-pipeline.md)
+
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
 
 ### [Small Seal Script](../topics/small-seal-script.md)
 
@@ -229,6 +246,7 @@
 - [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
 
 ### Unicode Consortium
 
