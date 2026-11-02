@@ -42,7 +42,7 @@ uv run python tools/check_wiki_review.py
 uv run python tools/check_events.py
 ```
 
-CI は Ubuntu 26.04、Node.js 24 対応の `actions/checkout@v7` / `astral-sh/setup-uv@v10` を使います。uv の cache を有効にし、保存前の prune を明示しています。
+CI は Ubuntu 26.04、Node.js 24 対応の `actions/checkout@v7.0.1` / `astral-sh/setup-uv@v10.3.3` を使います。公開済みのリリースタグを指定し、uv の cache と保存前の prune を明示しています。
 
 ## 目録の更新
 
