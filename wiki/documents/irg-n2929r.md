@@ -50,7 +50,9 @@ source は GCW-Source 一種類で、official geographical names、personal name
 
 後続資料は [IRG N2929R2](irg-n2929r2.md)。改訂 / feedback と会合全体の正式 recommendation を区別する。
 
-[IRG N2935](irg-n2935.md) の2026-10-12版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できるが、会合での採否は後続 recommendation と action items で確認する。
+[IRG N2935](irg-n2935.md) の2026-10-12版は Section 8.1 に改訂版 N2929R / 9,178字を掲載する。審議予定への反映を確認できる。
+
+<!-- editorial: 会合での採否は後続 recommendation と action items で確認する。 -->
 
 [IRG N2984](irg-n2984.md) と [IRG N2987](irg-n2987.md) が glyph normalization の feedback と回答を補う。U+2EA07 の個別調査は [IRG N2983](irg-n2983.md) を参照する。
 

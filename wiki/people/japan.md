@@ -60,7 +60,9 @@ WG2 Meeting \#72 は 2025-06-23/27 に Niigata, Japan で開催された。`WG2 
 
 ### IRG active participation
 
-[IRG N2367](../documents/irg-n2367.md) は、Japan が 2019 年時点で human resource 不足により future IRG Working Set review には参加しない一方、SC2 balloting phase では CJK Unified Ideograph extension proposals の review を続けると報告した文書である。[IRG N2721](../documents/irg-n2721.md) は、この経緯を前提に、IRG への active member body としての復帰を求めた。[IRG N2940](../documents/irg-n2940.md) で JSC 2 は参加再開を決め、mailing list と IRG 会合から段階的に関わると報告した。Working Set review の具体的な担当範囲は未確認である。
+[IRG N2367](../documents/irg-n2367.md) は、Japan が 2019 年時点で human resource 不足により future IRG Working Set review には参加しない一方、SC2 balloting phase では CJK Unified Ideograph extension proposals の review を続けると報告した文書である。[IRG N2721](../documents/irg-n2721.md) は、この経緯を前提に、IRG への active member body としての復帰を求めた。[IRG N2940](../documents/irg-n2940.md) で JSC 2 は参加再開を決め、mailing list と IRG 会合から段階的に関わると報告した。
+
+<!-- editorial: Working Set review の具体的な担当範囲は未確認である。 -->
 
 ### UTC における日本関係 ideograph proposals
 

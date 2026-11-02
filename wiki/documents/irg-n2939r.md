@@ -33,7 +33,9 @@ IRG N2972 の horizontal extension に関し、5字への私的 feedback を受�
 
 ## 後続決定
 
-本報告は member body の活動・計画であり、会合の決定や受理件数ではない。後続の submission と会合記録で進捗を確認する。
+本報告は member body の活動・計画であり、会合の決定や受理件数ではない。
+
+<!-- editorial: 後続の submission と会合記録で進捗を確認する。 -->
 
 ## 論点
 

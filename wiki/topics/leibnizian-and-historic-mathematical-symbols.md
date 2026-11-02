@@ -52,7 +52,7 @@ Leibnizian and Historic Mathematical Symbols は、Leibniz manuscripts と histo
 
 ## UTC \#189 への再勧告
 
-[SEW report](../documents/utc-l2-26-239.md) §3.1〜3.2 は letterlike 5文字とmiscellaneous 10文字を再勧告する。GREEK OMICRON UPSILON SYMBOL の名称と code point order、PROPORTION WITH ONE STROKE のdisunification根拠を確認した。[RMG report](../documents/utc-l2-26-241.md) は19.0収録を提案する。
+[SEW report](../documents/utc-l2-26-239.md) §3.1〜3.2 は letterlike 5文字とmiscellaneous 10文字を再勧告する。[RMG report](../documents/utc-l2-26-241.md) は19.0収録を提案する。
 
 ## 関連文書
 

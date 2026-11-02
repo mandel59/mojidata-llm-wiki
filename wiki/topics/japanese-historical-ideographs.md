@@ -48,7 +48,11 @@ Japanese Historical Ideographs は、日本の古典籍・近世近代資料に�
 
 ### 後続 review の確認状況
 
-現行 catalog と UTC \#187 minutes の範囲では、`L2/25-274` を受け入れた consensus / action item は確認していない。UTC \#187 で処理された UAX \#45 FutureWS additions は 2026 年提出の文書群に限られており、この historical ideograph proposal は pending proposal として扱う。
+<!-- editorial: 現行 catalog と UTC \#187 minutes の範囲では、`L2/25-274` を受け入れた consensus / action item は確認していない。 -->
+
+UTC \#187 で処理された UAX \#45 FutureWS additions は 2026 年提出の文書群に限られる。
+
+<!-- editorial: この historical ideograph proposal は pending proposal として整理している。採否は後続の一次資料で確認する。 -->
 
 ## 関連文書
 

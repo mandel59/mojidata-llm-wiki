@@ -34,7 +34,7 @@ China は、IRG / WG2 に参加する member body / source で、G-source data�
 | `WG2 N5355` | TCA とともに Small Seal modern CJK 対応値の `zhèngzhuàn`（正篆）/ `chóngwén`（重文）clarification を提出。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `WG2 N5369` | CD.4 disposition の China comment `CN6-025` として Small Seal radical / modern CJK corrections を提示。 | [Small Seal Script](../topics/small-seal-script.md) |
 | `IRG N2935` | Meeting \#67 agenda で G-source reference / glyph response、G-source horizontal extension revised document の follow-up が予定されている。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
-| [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | Tao Yang が source owner の立場から U+2CCA3 と GBK-source 5字の修正案を回答。会合決定は後続確認。 | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
+| [IRG N2985](../documents/irg-n2985.md), [IRG N2986](../documents/irg-n2986.md) | Tao Yang が source owner の立場から U+2CCA3 と GBK-source 5字の修正案を回答。<!-- editorial: 会合決定は後続確認。 --> | [G-source Glyph and Source Reference Issues](../topics/g-source-glyph-and-reference-issues.md) |
 
 ## 関連文書
 

@@ -41,9 +41,11 @@ Japanese Place-Name Ideographs は、日本の地名・小字名・橋名・登�
 
 ### 2025 年提案の後続状態
 
-現行 catalog と UTC \#187 minutes の範囲では、`L2/25-053` と `L2/25-221` を受け入れた consensus / action item は確認していない。2026 年 4 月の [UTC \#187 UAX \#45 FutureWS additions](../events/utc-187-uax45-futurews-additions.md) は同じ topic の [L2/26-044](../documents/utc-l2-26-044.md) を `UTC-03661` として受理したが、2025 年提出の 1+3 ideographs はその decision set に含まれない。
+<!-- editorial: 現行 catalog と UTC \#187 minutes の範囲では、`L2/25-053` と `L2/25-221` を受け入れた consensus / action item は確認していない。 -->
 
-そのため、この topic では `L2/25-053` と `L2/25-221` を「submitted / pending」として扱い、採択済みの UAX \#45 record とは分けて読む。
+2026 年 4 月の [UTC \#187 UAX \#45 FutureWS additions](../events/utc-187-uax45-futurews-additions.md) は同じ topic の [L2/26-044](../documents/utc-l2-26-044.md) を `UTC-03661` として受理したが、2025 年提出の 1+3 ideographs はその decision set に含まれない。
+
+<!-- editorial: そのため、この topic では `L2/25-053` と `L2/25-221` を「submitted / pending」として扱い、採択済みの UAX \#45 record とは分けて読む。 -->
 
 ### Hanyo-Denshi で拾われなかった地名文字
 

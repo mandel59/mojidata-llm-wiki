@@ -18,7 +18,9 @@ Kana は、Hiragana / Katakana / Hentaigana / Small Kana Extension / Kana Extend
 
 Unicode 18.0 では、この系譜から7文字が正式収録された。Kana Extended-A の U+1B123..U+1B128 に合略仮名4文字と alternate Katakana 2文字、Small Kana Extension の U+1B168 に KATAKANA LETTER SMALL ARCHAIC YE が追加された。したがって、これらは未決 proposal ではなく Unicode 18.0 repertoire の一部である。一方、KATAKANA LETTER SMALL NE や Ryukyuan superscript Katakana はこの7文字には含まれない。
 
-この topic では、仮名文字・仮名由来文字・仮名を使う表記体系に関わる Unicode / ISO/IEC 10646 上の論点を扱う。日本語史資料に限らず、Ryukyuan languages の superscript Katakana や Taiwanese Kana なども kana usage として関連するが、個別の大きな proposal は別 topic に分ける余地がある。
+この topic では、仮名文字・仮名由来文字・仮名を使う表記体系に関わる Unicode / ISO/IEC 10646 上の論点を扱う。日本語史資料に限らず、Ryukyuan languages の superscript Katakana や Taiwanese Kana なども kana usage として関連する。
+
+<!-- editorial: 個別の大きな proposal は別 topic に分ける余地がある。 -->
 
 ## 経緯
 

@@ -62,7 +62,7 @@ CJK multi-syllabic / abbreviation characters は、複数音節の語・単位�
 
 2025-10-16 の IRG Meeting \#65 時点で、multi-syllabic / abbreviation characters だけを独立 block とする consensus は記録されていない。整理されたのは、Han-only abbreviation characters と script-hybrid characters を混同しないこと、CJK hybrid characters の broad policy は M65.24 で WG2 / IRG oversight に委ねること、property assignment rules は IRG で後続議論することまでである。
 
-このため、この topic は [CJK Hybrid Characters](cjk-hybrid-characters.md) の subclass-specific follow-up として維持し、正式な encoding path や block proposal が出たら Source Document page と event に分離する。
+<!-- editorial: このため、この topic は [CJK Hybrid Characters](cjk-hybrid-characters.md) の subclass-specific follow-up として維持し、正式な encoding path や block proposal が出たら Source Document page と event に分離する。 -->
 
 ## 関連文書
 

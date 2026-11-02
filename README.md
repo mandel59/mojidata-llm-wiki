@@ -16,6 +16,8 @@ UTC、WG2、IRG の公開 Document Registry と Unicode Public Review Issues (PR
 
 記事の編集メモは、対象の近くに `<!-- editorial: … -->` で書けます。自由文で、1行・複数行のどちらも使えます。通常の本文表示・graph・文書参照集計からは分離し、編集用表示では元の位置に残します。
 
+既存本文からの移行状況と未確認範囲は [編集ノート移行の進捗](maintenance/editorial-note-migration.md) に記録します。
+
 ```sh
 uv run python tools/document_sections.py read irg-n2439
 uv run python tools/document_sections.py read irg-n2439 --view editing

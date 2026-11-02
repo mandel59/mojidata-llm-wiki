@@ -103,7 +103,9 @@ UAX \#45 の中心 data は `USourceData.txt`、`USourceGlyphs.pdf`、`USourceRS
 
 [Japanese Place-Name Ideographs](japanese-place-name-ideographs.md) は、UAX \#45 additions のうち日本の地名・登記資料に基づく提案を束ねる topic である。`L2/25-053`、`L2/25-221`、`L2/26-044` は、Hanyo-Denshi project で網羅されなかった登記・小字名・橋名の文字を、IDS、`kJapanese` reading、radical / stroke data とともに `FutureWS` record として扱う。
 
-UTC \#187 では `L2/26-044` が受理されたが、現行 catalog / cache の範囲では `L2/25-053` と `L2/25-221` の採択 decision は確認できない。UAX \#45 topic では、同じ地名 evidence 系の proposal でも、decision set に入ったものと pending のものを分けて扱う。
+UTC \#187 では `L2/26-044` が受理された。`L2/25-053` と `L2/25-221` は、この UAX \#45 FutureWS additions の decision set には含まれない。
+
+<!-- editorial: 現行 catalog / cache の範囲では `L2/25-053` と `L2/25-221` の採択 decision は未確認。pending と整理しているが、後続の一次資料で採否を照合する。 -->
 
 ## Unicode 19.0 Proposed Update
 

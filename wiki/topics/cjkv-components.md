@@ -75,7 +75,11 @@ CJKV Components は、CJK ideographs を構成要素として扱う characters �
 
 `IRG N2878R` は本文ヘッダの日付が 2025-10-12 で、IRG \#65 Recommendation M65.23 でも review 対象として扱われる。catalog entry `irg-n2878r` は本文 URL、IRG \#66 agenda item 4.19、M65.23 を provenance とし、本文日付を catalog の `date` として持つ derived entry である。`IRG N2878R2` は M65.23 の Action Item が要求した次版で、`IRG N2917` が feedback target として明示しているため、catalog entry `irg-n2878r2` はこの 2 件を provenance とする。
 
-ただし、2026-07-06 時点の IRG current document register で公開 row として確認できるのは `IRG N2878R3` であり、`IRG N2878` / `IRG N2878R` / `IRG N2878R2` は Document Register 由来の entry ではない。このため、catalog では `status: referenced` と `provenance` を持つ derived entry として区別し、この wiki でも独立 document page ではなく revision lineage として topic 内で扱う。日付は `IRG N2890`、`IRG N2826`、`IRG N2917`、`IRG N2878R3` などの周辺文書で確認できる範囲に限定して記述する。
+ただし、2026-07-06 時点の IRG current document register で公開 row として確認できるのは `IRG N2878R3` であり、`IRG N2878` / `IRG N2878R` / `IRG N2878R2` は Document Register 由来の entry ではない。このため、catalog では `status: referenced` と `provenance` を持つ derived entry として区別する。
+
+<!-- editorial: 独立 document page ではなく revision lineage として topic 内で扱う。 -->
+
+日付は `IRG N2890`、`IRG N2826`、`IRG N2917`、`IRG N2878R3` などの周辺文書で確認できる範囲に限定して記述する。
 
 ### WS2024 との重複
 

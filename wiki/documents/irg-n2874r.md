@@ -46,7 +46,7 @@ timestamp: 2026-07-10T00:00:00+09:00
 | U+204F2 / U+23515 | `IRG N2840` の提案を受け入れ、連続する新しいevidenceに従って両文字を区別する。 | U+204F2を `GHZR-10237.05`、U+23515を `GHZR-10237.06` に対応させる。さらにU+204F2のradical valueを入 `11.10` から木 `75.8` へ変えるよう求める。 |
 | U+249BC / U+249E9 | U+249BCのglyph revisionと `GHZR-21200.09` へのreference変更を受け入れ、もう一方を別variantとして保持する。 | U+249E9のreference変更は `IRG N2864R` で扱われ、本feedbackは両code pointsを区別するglyph assignmentを示す。 |
 
-PDFの表にはglyph画像が含まれるため、具体的な字形は一次資料で確認する必要がある。本ページでは画像を文字名やreferenceだけから推定せず、どのcode pointを維持し、どちらを修正するかというresponseの境界を記録する。
+PDFの表にはglyph画像が含まれるため、具体的な字形は一次資料で確認する必要がある。<!-- editorial: 画像を文字名やreferenceだけから推定せず、どのcode pointを維持し、どちらを修正するかというresponseの境界を記録する。 -->
 
 ### glyph、reference、radicalの分離
 

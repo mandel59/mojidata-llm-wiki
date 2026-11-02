@@ -20,7 +20,9 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 WG2 Meeting \#73 は 2026-06-22/26 に Paris, France で開催された。中心は ISO/IEC 10646 7th edition CD.4 disposition の受け入れ、DIS progression、UCS code charts の external linked content 化、7th edition Amendment 1 project subdivision、Small Seal / CJK / Unihan changes、Maya review、`kIRG_SGSource` である。
 
-この meeting の一次入口は revised agenda [WG2 N5350R8](../../documents/wg2-n5350r8.md) と recommendations [WG2 N5354](../../documents/wg2-n5354.md) である。[WG2 N5353](../../documents/wg2-n5353.md) は IRG Meetings \#65 / \#66 から送られた action requests の入口になる。`WG2 N5351` は minutes / action items として catalog にあるが、2026-07-08 時点では document URL が未掲載なので、決定事項は [WG2 N5354](../../documents/wg2-n5354.md) を一次ソースにする。
+この meeting の一次入口は revised agenda [WG2 N5350R8](../../documents/wg2-n5350r8.md) と recommendations [WG2 N5354](../../documents/wg2-n5354.md) である。[WG2 N5353](../../documents/wg2-n5353.md) は IRG Meetings \#65 / \#66 から送られた action requests の入口になる。決定事項は [WG2 N5354](../../documents/wg2-n5354.md) を一次ソースにする。
+
+<!-- editorial: WG2 N5351 minutes / action items は、2026-07-08 時点の catalog では document URL が未掲載。追加時は公開 URL を再確認し、会議記録を照合する。 -->
 
 ## 主要議題
 
@@ -49,7 +51,7 @@ WG2 Meeting \#73 は 2026-06-22/26 に Paris, France で開催された。中心
 
 ## 後続確認
 
-- `WG2 N5351` - WG2 \#73 minutes / action items。2026-07-08 時点では catalog entry はあるが document URL は未掲載。
+- `WG2 N5351` - WG2 \#73 minutes / action items。
 - [WG2 N5363R](../../documents/wg2-n5363r.md) - external code charts の DIS text 反映。
 - [WG2 N5361R](../../documents/wg2-n5361r.md) / [WG2 N5362](../../documents/wg2-n5362.md) - Amendment 1 starting repertoire と project schedule。
 - [WG2 N5365](../../documents/wg2-n5365.md) - SEI liaison report と script proposal pipeline。

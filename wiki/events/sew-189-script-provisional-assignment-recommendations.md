@@ -38,7 +38,9 @@ SEW は pipeline 更新と compliant fonts の提出支援を勧告した。KORE
 
 ## 影響範囲
 
-各 script の最新版 proposal と、UTC に求められた処置を結びつける入口になる。後続確認は [UTC Meeting \#189](../meetings/utc/utc-meeting-189.md) の minutes で行う。
+各 script の最新版 proposal と、UTC に求められた処置を結びつける入口になる。
+
+<!-- editorial: 後続確認は [UTC Meeting \#189](../meetings/utc/utc-meeting-189.md) の minutes で行う。 -->
 
 ## 関連ページ
 

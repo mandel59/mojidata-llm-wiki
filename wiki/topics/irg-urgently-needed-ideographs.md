@@ -23,7 +23,7 @@ Urgently Needed Character（UNC）は、通常の working set と区別して審
 | --- | --- | --- | --- |
 | 2026-03 | IRG | [IRG N2850R](../documents/irg-n2850r.md) | Principles & Procedures の改訂草案が提出経路と審査手順を整理した。 |
 | 2026-09 | IRG | [IRG N2969](../documents/irg-n2969.md) | China が『毛泽东文集』の未符号化1文字を UNC として提案した。 |
-| 2026-10-14 | IRG | [IRG N2969R](../documents/irg-n2969r.md) | agenda Section 6.1 は改訂 UNC 案を討議完了と記録。正式採択は未確認。 |
+| 2026-10-14 | IRG | [IRG N2969R](../documents/irg-n2969r.md) | agenda Section 6.1 は改訂 UNC 案を討議完了と記録。<!-- editorial: 正式採択は未確認。 --> |
 
 ## 主な論点
 

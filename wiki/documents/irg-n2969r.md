@@ -30,9 +30,9 @@ registry date は 2026-09-13 だが PDF 表紙は 2026-10-12。両日付を区�
 - GHS-\d{5} を China Revolution and Reform Literature の source syntax とし、Hakka の用法を説明する。
 - kMandarin=bì、traditional variant U+289E2、semantic variant U+2CB7D を提案属性として示す。
 
-## 後続決定
+## 会合との関係
 
-[IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) と IRG N2946 の正式 recommendation / action items で採否を確認する。
+会合結果は [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md) と [IRG N2946](irg-n2946.md) を参照する。
 
 ## 論点
 

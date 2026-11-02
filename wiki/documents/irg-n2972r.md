@@ -35,10 +35,11 @@ PDF / registry date は2026-10-13、総数は700字を維持する。
 
 後続の勧告と継続 review は [IRG \#67 horizontal extension disposition](../events/irg-67-horizontal-extension-dispositions.md)に集約する。
 
-
 ## 論点
 
-表紙の scope は700 TA-source characters のままだが、改訂表には T9-source の置換を含む。全体をすべて TA-source として数えず、正式 data への反映は後続記録で確認する。
+表紙の scope は700 TA-source characters のままだが、改訂表には T9-source の置換を含む。全体をすべて TA-source として数えない。
+
+<!-- editorial: 正式 data への反映は後続記録で確認する。 -->
 
 ## 関連ページ
 
