@@ -49,6 +49,7 @@ tools/
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
   query_wiki.py                   wiki concept graph を機械的にクエリ
   document_sections.py            本文・編集用原文・編集ノートの表示、目次と section 抽出
+  editorial_migration_review.py    移行台帳に基づく全文精査の表示と確認済み記録
   link_timeline_documents.py      経緯表の既存文書番号を wiki page へリンク
   generate_document_index.py      文書indexをregistry・年別に生成
   check_okf.py                    wiki の OKF v0.1 互換検査
@@ -118,6 +119,8 @@ uv run python tools/document_sections.py notes --format table
 ```
 
 ノートの parser と位置情報は `wiki_store.py` に集約する。原文の構文検査と読者向け本文の意味検査を分ける。ノート内だけの見出し・リンク・文書番号を通常の目次・graph・参照頻度へ入れず、frontmatter relation に自動昇格させない。generator 等が本文を作り直す場合は `preserve_editorial_notes()` を使う。対応する文脈を失う更新は停止し、ノートを明示的に残すか移してから再実行する。本文混入の警告はレビュー候補とし、自動移動しない。
+
+既存記事の移行では `maintenance/editorial-note-migration.md` と JSON 台帳で候補精査・全文精査を別に管理する。`tools/editorial_migration_review.py packet` は既読記事または同じ表示内と完全一致する段落の再読だけを省き、節の文脈とリンク表示名・注記を残す。表示を読み終えてから `record` で全文精査を記録する。表示の切り捨てや変更前の snapshot を確認済みへ昇格させない。この台帳は移行作業用であり、通常のノート執筆に ID や分類を要求しない。
 
 ## 出典の優先順位
 
