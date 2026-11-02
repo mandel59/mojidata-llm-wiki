@@ -8,6 +8,7 @@ import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable
 
 try:
     from cli_support import configure_utf8_stdio
@@ -25,6 +26,8 @@ from wiki_store import (
     scalar,
     string_list,
     normalize_lookup_key,
+    split_editorial_notes,
+    article_spans,
 )
 from unicode_registry import parse_doc_number
 
@@ -161,7 +164,7 @@ def check_local_markdown_links_exist() -> list[str]:
 def links_from_index(index_path: Path) -> set[str]:
     page = read_page(index_path)
     links: set[str] = set()
-    for target in markdown_link_targets(index_path, page.body):
+    for target in markdown_link_targets(index_path, page.article_body):
         if target.endswith(".md"):
             links.add((index_path.parent / target).resolve().relative_to(WIKI.resolve()).as_posix())
     return links
@@ -196,7 +199,7 @@ def check_directory_indexes() -> list[str]:
 def topic_index_entries() -> dict[str, str]:
     index = WIKI / "topics" / "index.md"
     entries: dict[str, str] = {}
-    for line in index.read_text(encoding="utf-8").splitlines():
+    for line in read_page(index).article_body.splitlines():
         match = re.match(r"^- \[([^\]]+)\]\(([^)]+\.md)\)(.*)$", line)
         if not match:
             continue
@@ -211,14 +214,14 @@ def root_current_topic_links() -> set[str]:
     page = read_page(root)
     return {
         Path(target).stem
-        for target in markdown_link_targets(root, page.body)
+        for target in markdown_link_targets(root, page.article_body)
         if target.startswith("topics/") and target.endswith(".md") and Path(target).name != "index.md"
     }
 
 
 def check_root_current_topics(concepts: dict[str, Concept], fix: bool) -> list[str]:
     present = root_current_topic_links()
-    root_text = (WIKI / "index.md").read_text(encoding="utf-8")
+    root_text = read_page(WIKI / "index.md").article_body
     errors: list[str] = []
     if "(topics/)" not in root_text and "(topics/index.md)" not in root_text:
         errors.append("index.md: root navigation must link to the complete Topics index")
@@ -337,7 +340,28 @@ def escape_obsidian_tags_in_line(line: str) -> tuple[str, list[str]]:
     return "".join(pieces), tags
 
 
+def transform_outside_notes(
+    markdown: str, transform: Callable[[str], tuple[str, list[tuple[int, str]]]]
+) -> tuple[str, list[tuple[int, str]]]:
+    document = split_editorial_notes(markdown)
+    parts: list[str] = []
+    findings: list[tuple[int, str]] = []
+    cursor = 0
+    for start, end in article_spans(document):
+        parts.append(markdown[cursor:start])
+        fixed, items = transform(markdown[start:end])
+        parts.append(fixed)
+        line_offset = markdown.count("\n", 0, start)
+        findings.extend((line + line_offset, value) for line, value in items)
+        cursor = end
+    return "".join(parts), findings
+
+
 def escape_obsidian_tags_in_markdown(markdown: str) -> tuple[str, list[tuple[int, str]]]:
+    return transform_outside_notes(markdown, escape_obsidian_body_tags)
+
+
+def escape_obsidian_body_tags(markdown: str) -> tuple[str, list[tuple[int, str]]]:
     findings: list[tuple[int, str]] = []
     fixed_lines: list[str] = []
     in_fence = False
@@ -380,6 +404,10 @@ def unescape_hashes_in_inline_code_line(line: str) -> tuple[str, list[str]]:
 
 
 def unescape_hashes_in_inline_code_markdown(markdown: str) -> tuple[str, list[tuple[int, str]]]:
+    return transform_outside_notes(markdown, unescape_body_code_hashes)
+
+
+def unescape_body_code_hashes(markdown: str) -> tuple[str, list[tuple[int, str]]]:
     findings: list[tuple[int, str]] = []
     fixed_lines: list[str] = []
     in_fence = False
@@ -601,7 +629,9 @@ def check_stale_unavailable_text(catalog: dict[str, CatalogEntry]) -> list[str]:
     errors: list[str] = []
     for path in sorted(WIKI.rglob("*.md")):
         rel_path = path.relative_to(WIKI).as_posix()
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        text = path.read_text(encoding="utf-8")
+        visible = split_editorial_notes(text, path).masked()
+        for line_number, line in enumerate(visible.splitlines(), start=1):
             if not any(pattern in line for pattern in UNAVAILABLE_PATTERNS):
                 continue
             for entry in catalog_entries_mentioned_in_line(line, name_index):
@@ -633,6 +663,18 @@ def check_frequent_unresolved_documents(
             f" (examples: {examples})"
         )
     return errors
+
+
+def editorial_body_warnings() -> list[str]:
+    """Candidates for human review, never automatic text moves or lint errors."""
+    pattern = re.compile(r"まだ\s*event\s*化していない|後で[^。\n]*(?:event|meeting|ページ)[^。\n]*(?:分離|作成)|このページでは[^。\n]*未整理")
+    warnings: list[str] = []
+    for path in sorted(WIKI.rglob("*.md")):
+        page = read_page(path)
+        for line_number, line in enumerate(page.editorial.masked().splitlines(), page.body_start_line):
+            if pattern.search(line):
+                warnings.append(f"{page.rel_path}:{line_number}: consider moving editing work to an editorial note")
+    return warnings
 
 
 def run_checks(args: argparse.Namespace) -> list[str]:
@@ -670,7 +712,13 @@ def run_checks(args: argparse.Namespace) -> list[str]:
 def main(argv: list[str] | None = None) -> int:
     configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
-    errors = run_checks(args)
+    try:
+        errors = run_checks(args)
+        for warning in editorial_body_warnings():
+            print(f"warning: {warning}", file=sys.stderr)
+    except ValueError as error:
+        print(error, file=sys.stderr)
+        return 1
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

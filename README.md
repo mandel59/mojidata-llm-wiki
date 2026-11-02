@@ -14,6 +14,14 @@ UTC、WG2、IRG の公開 Document Registry と Unicode Public Review Issues (PR
 - `wiki/` は OKF v0.1 bundle として扱い、入口は `wiki/index.md` に置きます。
 - `AGENTS.md` は運用 schema です。新しい LLM セッションは最初に読みます。
 
+記事の編集メモは、対象の近くに `<!-- editorial: … -->` で書けます。自由文で、1行・複数行のどちらも使えます。通常の本文表示・graph・文書参照集計からは分離し、編集用表示では元の位置に残します。
+
+```sh
+uv run python tools/document_sections.py read irg-n2439
+uv run python tools/document_sections.py read irg-n2439 --view editing
+uv run python tools/document_sections.py notes --format json
+```
+
 ## 参照する公開 Registry
 
 - UTC Document Registry: <https://www.unicode.org/L2/>

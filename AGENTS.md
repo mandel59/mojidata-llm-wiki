@@ -48,7 +48,7 @@ tools/
   generate_event_indexes.py       event metadata から index を生成
   rewrite_event_timelines.py      event metadata から marker block の timeline を更新
   query_wiki.py                   wiki concept graph を機械的にクエリ
-  document_sections.py            Markdown concept page の目次表示と section 抽出
+  document_sections.py            本文・編集用原文・編集ノートの表示、目次と section 抽出
   link_timeline_documents.py      経緯表の既存文書番号を wiki page へリンク
   generate_document_index.py      文書indexをregistry・年別に生成
   check_okf.py                    wiki の OKF v0.1 互換検査
@@ -87,6 +87,37 @@ tools/
 concept lookup は `id`、ファイル path、`title`、`doc_number`、frontmatter の `aliases` を対象にする。たとえば同じ Source Document が UTC `L2/...` と WG2 `N...` の両方で参照される場合は、canonical な `entry_id` のページを 1 つ作り、もう一方の文書番号を `aliases` に入れる。
 
 `check_okf.py` は OKF bundle と `schema/concept_types.json` に基づく repository schema の検査に集中する。`check_events.py` は Event 固有の意味検査、たとえば event documents が catalog / derived documents に存在することの確認に集中する。topic / people / meeting / event relation は、未ページ化 target を残せるよう存在確認で失敗させない。`query_wiki.py`、`generate_event_indexes.py`、`rewrite_event_timelines.py` は `wiki_store.py` の API を使い、validation tool を共通 library として import しない。
+
+`read_page()` の `body` は編集ノートを含む原文、`article_body` はノートを除いた本文とする。`load_concepts()` が返す `Concept.body` は読者向け本文であり、graph / backlinks / 文書 mention 集計にも編集ノートを含めない。書き戻しには `WikiPage.body` を使い、`article_body` や `Concept.body` をそのまま保存してノートを消さない。
+
+## 編集ノート
+
+編集上の未確認事項、取得失敗、編集予定、判断理由、本文に採用していない仮説・候補は、対象の近くに `<!-- editorial: … -->` で残す。Markdown 本文の任意位置に置け、1行・複数行の両方を許す。別ファイルや記事末尾の専用節への集約、参照ID、分類、担当者、状態、日付は必須にしない。チェックリストも任意とする。
+
+```markdown
+対象の2文字は符号化済みである。
+<!-- editorial: UNC としての承認経路は未整理。後続の recommendation を照合する。 -->
+```
+
+- frontmatter には入れない。コードフェンス / インラインコード内の記法は例示用の文字列として扱う。
+- ノートは `-->` で閉じ、コメントを入れ子にしない。閉じ忘れや入れ子は検査エラーとし、残りの本文を黙って非表示にしない。
+- 取得失敗など、時点が意味を持つ記録には観測日を添える。ノート内の記録を、現在の公開状態や標準化上の決定の根拠として使わない。
+- ノートを除いても本文の意味と根拠が成立するようにする。資料間の不一致、決定主体・時点の違い、出典の解釈限界など、読者に必要な注意は本文にも残す。
+- 「採否を未調査・未整理」と「会議で未決定」を区別する。ノートへの移動によって本文の断定を強めない。
+- 解消した作業はその場で削除し、継続して必要な編集判断は残す。履歴は Git で追う。本文の移動・削除時には隣接するノートも見直す。
+- ノートの追加・解消だけを毎回 `wiki/log.md` に重複記録しない。通常のリンク制約はノートにも適用し、未作成ページは文書番号等で記録する。
+
+通常の検索・回答・公開用にはノートを除く `article`、編集・レビューには元の位置にノートを含む `editing`、作業の棚卸しには位置・見出し・周辺本文付きの `notes` 表示を使う。HTML コメントは生ファイルを読む LLM や `rg` には見えるため、通常の回答でノートの記述を本文の事実として採用しない。
+
+```sh
+uv run python tools/document_sections.py read irg-n2439
+uv run python tools/document_sections.py read irg-n2439 --view editing
+uv run python tools/document_sections.py section irg-n2439 後続決定 --view editing
+uv run python tools/document_sections.py notes irg-n2439 --format json
+uv run python tools/document_sections.py notes --format table
+```
+
+ノートの parser と位置情報は `wiki_store.py` に集約する。原文の構文検査と読者向け本文の意味検査を分ける。ノート内だけの見出し・リンク・文書番号を通常の目次・graph・参照頻度へ入れず、frontmatter relation に自動昇格させない。generator 等が本文を作り直す場合は `preserve_editorial_notes()` を使う。対応する文脈を失う更新は停止し、ノートを明示的に残すか移してから再実行する。本文混入の警告はレビュー候補とし、自動移動しない。
 
 ## 出典の優先順位
 
@@ -171,7 +202,7 @@ tags: [document, recommendations]
 
 1. `## 要約` - 3〜8 行。
 2. `## 提案内容` / `## 決定・Action Item` / `## 報告内容` - `document_type` に応じて、文書そのものが述べる内容を書く。提案文書では決定事項をここに書かない。
-3. `## 後続決定` - 提案を取り上げた meeting / event がある場合、event / meeting へリンクし、このページでは決定概要を重複記述しない。未確認なら未確認と書く。
+3. `## 後続決定` - 提案を取り上げた meeting / event がある場合、event / meeting へリンクし、このページでは決定概要を重複記述しない。一次資料が記録する未決事項は資料と時点を示して本文に書き、編集上の未調査・未整理は対象の近くの編集ノートに残す。本文に書ける後続記録がない場合、空の節を作る必要はない。
 4. `## 論点` - 後続文書や他 body との関係。
 5. `## 出典` - `catalog` の `entry_id`、`document_url`、取得日ではなく registry 上の日付。
 
@@ -289,7 +320,7 @@ event index の生成差分は `uv run python tools/generate_event_indexes.py --
 1. `uv run python tools/query_wiki.py events` で event を日付順に確認する。
 2. `uv run python tools/query_wiki.py list --type Topic` や `--topic <slug>` / `--people <slug>` / `--document <entry_id>` / `--alias <name>` で concept metadata を絞り込む。
 3. `uv run python tools/query_wiki.py related <slug-or-alias> --depth 1` で frontmatter と Markdown 内部リンクから関連 concept を辿る。
-4. `uv run python tools/document_sections.py toc <slug-or-alias>` で Markdown page の見出し一覧を出し、`uv run python tools/document_sections.py section <slug-or-alias> <heading>` で特定 section だけを読む。
+4. `uv run python tools/document_sections.py toc <slug-or-alias>` で Markdown page の見出し一覧を出し、`uv run python tools/document_sections.py section <slug-or-alias> <heading>` で特定 section だけを読む。既定はノートを除く本文。編集時は `--view editing` を使い、`notes` subcommand でノートを一覧する。
 5. 未 digest の文書候補は `uv run python tools/find_digest_candidates.py --topic <slug>`、または `uv run python tools/find_digest_candidates.py --exclude-topic kana --min-refs 2` のように、wiki relation / 本文 mention と catalog を突き合わせて抽出する。
 6. 必要なら `--format json` で機械処理用に出力する。
 7. `wiki/index.md` と `catalog/registries/*/documents.jsonl` も入口に検索する。

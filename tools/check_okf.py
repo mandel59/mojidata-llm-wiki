@@ -21,6 +21,7 @@ from wiki_store import (
     load_schema,
     parse_frontmatter_header,
     split_frontmatter,
+    split_editorial_notes,
     validate_page_schema,
     validate_schema_definition,
 )
@@ -138,10 +139,15 @@ def validate_bundle(bundle: Path, schema_path: Path) -> list[str]:
     errors = validate_schema_definition(schema, schema_path)
     for path in iter_markdown_files(bundle):
         text = path.read_text(encoding="utf-8")
+        document = split_frontmatter(path, text)
+        editorial = split_editorial_notes(document.body, path, document.body_start_line)
+        errors.extend(editorial.errors)
+        # Structural article checks must not interpret headings inside notes.
+        article = text[:len(text) - len(document.body)] + editorial.article
         if path.name == "index.md":
-            errors.extend(validate_index(path, bundle, text))
+            errors.extend(validate_index(path, bundle, article))
         elif path.name == "log.md":
-            errors.extend(validate_log(path, text))
+            errors.extend(validate_log(path, article))
         else:
             errors.extend(validate_concept(path, text, schema))
         errors.extend(validate_links(path, bundle, text))

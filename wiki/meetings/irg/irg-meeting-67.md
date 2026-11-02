@@ -66,7 +66,8 @@ UK の [IRG N2943](../../documents/irg-n2943.md) は次期 Working Set の候補
 
 - [IRG \#67 TCA U+2403D source replacement](../../events/irg-67-tca-u2403d-source-replacement.md) - TCA の source / glyph 差替えの経緯。
 
-- `IRG N2981` / `IRG N2982` - Meeting \#68 の First Call / agenda 用 URL。register は 2027-03-15/19 Virtual を記録するが、2026-10-14 の再取得はいずれも HTTP 404。会合予定は N2935 Section 2.3 から確認し、未公開本文の内容は推定しない。
+- `IRG N2981` / `IRG N2982` - Meeting \#68 の First Call / agenda。register は 2027-03-15/19 Virtual を記録する。会合予定の参照先は [IRG N2935](../../documents/irg-n2935.md) Section 2.3。
+<!-- editorial: 2026-10-14 の N2981 / N2982 再取得はいずれも HTTP 404。これは当日の取得結果であり、現在の公開状態の判定には使わない。両文書の本文を要約する前に再取得する。 -->
 
 - [IRG Meeting \#66](irg-meeting-66.md) - \#67 agenda の Section 4 は \#66 recommendations / action items の follow-up。
 - [IRG N2933](../../documents/irg-n2933.md) - WS2024 Version 5.0 consolidated comments。Meeting \#67 review の入力文書。

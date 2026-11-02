@@ -12,9 +12,9 @@ except ModuleNotFoundError:
     from tools.cli_support import configure_utf8_stdio
 
 try:
-    from wiki_store import WIKI, Concept, load_concepts, relative_link
+    from wiki_store import WIKI, Concept, load_concepts, relative_link, split_editorial_notes
 except ModuleNotFoundError:
-    from tools.wiki_store import WIKI, Concept, load_concepts, relative_link
+    from tools.wiki_store import WIKI, Concept, load_concepts, relative_link, split_editorial_notes
 
 CODE_RE = re.compile(r"`([^`]+)`")
 
@@ -42,9 +42,10 @@ def document_lookup(concepts: dict[str, Concept]) -> dict[str, Concept]:
 
 def link_timeline(text: str, path: Path, lookup: dict[str, Concept]) -> tuple[str, int]:
     lines = text.splitlines(keepends=True)
+    visible_lines = split_editorial_notes(text, path).masked().splitlines(keepends=True)
     in_history = False
     changes = 0
-    for index, line in enumerate(lines):
+    for index, line in enumerate(visible_lines):
         heading = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
         if heading:
             level = len(heading.group(1))
@@ -55,16 +56,13 @@ def link_timeline(text: str, path: Path, lookup: dict[str, Concept]) -> tuple[st
         if not in_history or not line.lstrip().startswith("|"):
             continue
 
-        def replace(match: re.Match[str]) -> str:
-            nonlocal changes
+        for match in reversed(list(CODE_RE.finditer(line))):
             label = match.group(1)
             concept = lookup.get(label.strip().casefold())
             if concept is None:
-                return match.group(0)
+                continue
             changes += 1
-            return relative_link(path, concept.path, label)
-
-        lines[index] = CODE_RE.sub(replace, line)
+            lines[index] = lines[index][:match.start()] + relative_link(path, concept.path, label) + lines[index][match.end():]
     return "".join(lines), changes
 
 

@@ -13,9 +13,9 @@ except ModuleNotFoundError:
     from tools.cli_support import configure_utf8_stdio
 
 try:
-    from wiki_store import WIKI, scalar, load_concepts
+    from wiki_store import WIKI, scalar, load_concepts, article_text, preserve_editorial_notes
 except ModuleNotFoundError:
-    from tools.wiki_store import WIKI, scalar, load_concepts
+    from tools.wiki_store import WIKI, scalar, load_concepts, article_text, preserve_editorial_notes
 
 
 INDEX_LINE_RE = re.compile(r"^- \[[^]]+\]\(([^)]+)\)(?: - (.*))?$")
@@ -28,7 +28,7 @@ def existing_descriptions(index_path: Path) -> dict[str, str]:
     descriptions: dict[str, str] = {}
     if not index_path.exists():
         return descriptions
-    for line in index_path.read_text(encoding="utf-8").splitlines():
+    for line in article_text(index_path.read_text(encoding="utf-8")).splitlines():
         match = INDEX_LINE_RE.match(line)
         if match and match.group(2):
             descriptions[Path(match.group(1)).name] = match.group(2)
@@ -81,6 +81,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     path = args.bundle / "documents" / "index.md"
     rendered = render_index(args.bundle)
+    if path.exists():
+        rendered = preserve_editorial_notes(path.read_text(encoding="utf-8"), rendered)
     if args.check:
         if path.read_text(encoding="utf-8") != rendered:
             print(f"outdated: {path}", file=sys.stderr)

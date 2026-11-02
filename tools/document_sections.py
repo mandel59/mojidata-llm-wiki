@@ -13,7 +13,16 @@ try:
 except ModuleNotFoundError:
     from tools.cli_support import configure_utf8_stdio
 
-from wiki_store import Concept, concept_matches_lookup, load_concepts, read_page
+try:
+    from wiki_store import (
+        WIKI, Concept, WikiPage, concept_matches_lookup, iter_markdown_files,
+        load_concepts, read_page, split_editorial_notes,
+    )
+except ModuleNotFoundError:
+    from tools.wiki_store import (
+        WIKI, Concept, WikiPage, concept_matches_lookup, iter_markdown_files,
+        load_concepts, read_page, split_editorial_notes,
+    )
 
 
 HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+(?P<title>.+?)\s*#*\s*$")
@@ -34,16 +43,22 @@ def markdown_anchor(title: str) -> str:
     return anchor.strip("-")
 
 
-def load_markdown_target(name: str) -> tuple[str, Path, str]:
+def load_page_target(name: str, bundle: Path = WIKI) -> WikiPage:
     path = Path(name)
     if path.exists():
-        page = read_page(path.resolve(), path.resolve().parents[0])
-        return path.stem, path, page.body
+        path = path.resolve()
+        root = bundle.resolve() if path.is_relative_to(bundle.resolve()) else path.parent
+        return read_page(path, root)
 
-    concepts = load_concepts()
+    concepts = load_concepts(bundle)
     cid = find_concept(concepts, name)
     concept = concepts[cid]
-    return concept.id, concept.path, concept.body
+    return read_page(concept.path, bundle)
+
+
+def load_markdown_target(name: str, view: str = "article") -> tuple[str, Path, str]:
+    page = load_page_target(name)
+    return page.path.stem, page.path, page.body if view == "editing" else page.article_body
 
 
 def find_concept(concepts: dict[str, Concept], name: str) -> str:
@@ -58,7 +73,18 @@ def find_concept(concepts: dict[str, Concept], name: str) -> str:
 def detect_headings(markdown: str) -> list[MarkdownHeading]:
     headings: list[MarkdownHeading] = []
     seen: dict[str, int] = {}
-    for index, line in enumerate(markdown.splitlines()):
+    document = split_editorial_notes(markdown)
+    document.require_valid()
+    offset = 0
+    span_index = 0
+    for index, raw_line in enumerate(markdown.splitlines(keepends=True)):
+        line = raw_line.rstrip("\r\n")
+        while span_index < len(document.opaque_spans) and document.opaque_spans[span_index][1] <= offset:
+            span_index += 1
+        hidden = span_index < len(document.opaque_spans) and document.opaque_spans[span_index][0] <= offset
+        offset += len(raw_line)
+        if hidden:
+            continue
         match = HEADING_RE.match(line)
         if not match:
             continue
@@ -69,6 +95,40 @@ def detect_headings(markdown: str) -> list[MarkdownHeading]:
         anchor = base_anchor if count == 0 else f"{base_anchor}-{count}"
         headings.append(MarkdownHeading(len(match.group("marks")), title, index, anchor))
     return headings
+
+
+def editorial_note_rows(page: WikiPage) -> list[dict[str, object]]:
+    page.editorial.require_valid()
+    headings = detect_headings(page.body)
+    lines = page.editorial.masked().splitlines()
+    rows: list[dict[str, object]] = []
+    for note in page.editorial.notes:
+        start = note.line - page.body_start_line
+        end = note.end_line - page.body_start_line
+        heading = next((item.title for item in reversed(headings) if item.line_index <= start), "")
+        before = [line.strip() for line in lines[:start + 1] if line.strip()][-2:]
+        after = [line.strip() for line in lines[end:] if line.strip()][:2]
+        rows.append({
+            "path": page.rel_path, "line": note.line, "end_line": note.end_line,
+            "heading": heading, "text": note.text, "context_before": "\n".join(before),
+            "context_after": "\n".join(after),
+        })
+    return rows
+
+
+def render_notes(rows: list[dict[str, object]], fmt: str) -> str:
+    if fmt == "json":
+        return json.dumps(rows, ensure_ascii=False, indent=2)
+
+    def cell(value: object) -> str:
+        return str(value).replace("|", "\\|").replace("\n", "<br>")
+
+    lines = ["| path | line | heading | note | context before | context after |", "| --- | --- | --- | --- | --- | --- |"]
+    for row in rows:
+        lines.append("| " + " | ".join(cell(row[key]) for key in (
+            "path", "line", "heading", "text", "context_before", "context_after",
+        )) + " |")
+    return "\n".join(lines)
 
 
 def render_toc(headings: list[MarkdownHeading], fmt: str) -> str:
@@ -111,19 +171,48 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     toc = subparsers.add_parser("toc", help="Print Markdown headings for a wiki concept or .md file.")
     toc.add_argument("page", help="Concept id, alias, wiki path, or local Markdown path.")
     toc.add_argument("--format", choices=["table", "json"], default="table")
+    toc.add_argument("--view", choices=["article", "editing"], default="article")
 
     section = subparsers.add_parser("section", help="Extract a Markdown section by heading substring.")
     section.add_argument("page", help="Concept id, alias, wiki path, or local Markdown path.")
     section.add_argument("heading", help="Case-insensitive substring of the heading.")
     section.add_argument("--no-heading", action="store_true", help="Omit the matched heading line.")
+    section.add_argument("--view", choices=["article", "editing"], default="article")
+
+    read = subparsers.add_parser("read", help="Read an article, its editing source, or its editorial notes.")
+    read.add_argument("page")
+    read.add_argument("--view", choices=["article", "editing", "notes"], default="article")
+    read.add_argument("--format", choices=["table", "json"], default="table", help="Output format for notes.")
+
+    notes = subparsers.add_parser("notes", help="List notes from a page or across the bundle.")
+    notes.add_argument("page", nargs="?")
+    notes.add_argument("--bundle", type=Path, default=WIKI)
+    notes.add_argument("--format", choices=["table", "json"], default="table")
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
-    _cid, _path, markdown = load_markdown_target(args.page)
+    try:
+        if args.command == "notes":
+            pages = [load_page_target(args.page, args.bundle)] if args.page else (
+                read_page(path, args.bundle) for path in iter_markdown_files(args.bundle)
+            )
+            rows = [row for page in pages for row in editorial_note_rows(page)]
+            print(render_notes(rows, args.format))
+            return 0
+        if args.command == "read" and args.view == "notes":
+            print(render_notes(editorial_note_rows(load_page_target(args.page)), args.format))
+            return 0
+        _cid, _path, markdown = load_markdown_target(args.page, args.view)
+    except ValueError as error:
+        print(error, file=sys.stderr)
+        return 1
 
+    if args.command == "read":
+        print(markdown, end="" if markdown.endswith("\n") else "\n")
+        return 0
     if args.command == "toc":
         print(render_toc(detect_headings(markdown), args.format))
         return 0

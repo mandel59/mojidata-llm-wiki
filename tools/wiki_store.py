@@ -5,7 +5,9 @@ import json
 import os
 import re
 import subprocess
+from bisect import bisect_right
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Callable, Iterable
 
@@ -20,6 +22,176 @@ RELATION_KEYS = ["documents", "topics", "people", "meetings", "events"]
 KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):(?:\s*(.*))?$")
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 SCHEME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*:")
+EDITORIAL_START = "<!-- editorial:"
+FENCE_PREFIX = r"[ \t]*(?:> ?)*(?:(?:[-+*]|\d+[.)])[ \t]+)?"
+MARKDOWN_TOKEN_RE = re.compile(rf"(?m:^{FENCE_PREFIX}(?:`{{3,}}|~{{3,}})[^\r\n]*\r?$)|<!--|`+")
+FENCE_RE = re.compile(rf"^{FENCE_PREFIX}(?P<marker>`{{3,}}|~{{3,}})(?P<info>[^\r\n]*)\r?$")
+
+
+@dataclass(frozen=True)
+class EditorialNote:
+    start: int
+    end: int
+    text: str
+    line: int
+    end_line: int
+
+
+@dataclass(frozen=True)
+class EditorialDocument:
+    source: str
+    article: str
+    notes: tuple[EditorialNote, ...]
+    errors: list[str]
+    # Code and comments, including ordinary comments, are opaque to headings.
+    opaque_spans: tuple[tuple[int, int], ...]
+
+    def require_valid(self) -> None:
+        if self.errors:
+            raise ValueError("\n".join(self.errors))
+
+    def masked(self) -> str:
+        """Hide notes while retaining source offsets and line numbers."""
+        self.require_valid()
+        parts: list[str] = []
+        cursor = 0
+        for note in self.notes:
+            parts.append(self.source[cursor:note.start])
+            parts.append(re.sub(r"[^\r\n]", " ", self.source[note.start:note.end]))
+            cursor = note.end
+        parts.append(self.source[cursor:])
+        return "".join(parts)
+
+
+def split_editorial_notes(text: str, path: Path = Path("<markdown>"), first_line: int = 1) -> EditorialDocument:
+    """Scan Markdown comments without interpreting fenced/inline code as notes.
+
+    On malformed input keep the whole source; consumers must require_valid()
+    before using its article view. Editing can still inspect the raw source.
+    """
+    notes: list[EditorialNote] = []
+    errors: list[str] = []
+    opaque: list[tuple[int, int]] = []
+    line_starts = [0] + [match.end() for match in re.finditer("\n", text)]
+
+    def line_at(offset: int) -> int:
+        return first_line + bisect_right(line_starts, offset) - 1
+
+    cursor = 0
+    while match := MARKDOWN_TOKEN_RE.search(text, cursor):
+        start = match.start()
+        token = match.group()
+        escape_start = start
+        while escape_start and text[escape_start - 1] == "\\":
+            escape_start -= 1
+        if (start - escape_start) % 2:
+            cursor = match.end()
+            continue
+        fence = FENCE_RE.fullmatch(token)
+        if fence and not (fence["marker"][0] == "`" and "`" in fence["info"]):
+            marker = fence["marker"]
+            close = re.compile(
+                rf"(?m)^[ \t]*(?:> ?)*{re.escape(marker[0])}{{{len(marker)},}}[ \t]*\r?$"
+            ).search(text, match.end())
+            end = close.end() if close else len(text)
+            opaque.append((start, end))
+            cursor = end
+            continue
+        if token == "<!--":
+            close_at = text.find("-->", match.end())
+            end = close_at + 3 if close_at >= 0 else len(text)
+            opaque.append((start, end))
+            if text.startswith(EDITORIAL_START, start):
+                if close_at < 0:
+                    errors.append(f"{path}:{line_at(start)}: editorial note is not closed")
+                if "<!--" in text[start + len(EDITORIAL_START):close_at if close_at >= 0 else len(text)]:
+                    errors.append(f"{path}:{line_at(start)}: editorial note must not contain nested comments")
+                notes.append(EditorialNote(
+                    start, end, text[start + len(EDITORIAL_START):close_at if close_at >= 0 else len(text)].strip(),
+                    line_at(start), line_at(max(start, end - 1)),
+                ))
+            cursor = end
+            continue
+        # A backtick run only starts code if a matching run exists.
+        tick_start = start + token.find("`") if "`" in token else start
+        ticks = re.match(r"`+", text[tick_start:])
+        if ticks:
+            tick_end = tick_start + len(ticks.group())
+            close = re.compile(rf"(?<!`)`{{{len(ticks.group())}}}(?!`)").search(text, tick_end)
+            if close:
+                opaque.append((tick_start, close.end()))
+                cursor = close.end()
+                continue
+            cursor = tick_end
+            continue
+        cursor = match.end()
+
+    parts: list[str] = []
+    cursor = 0
+    for note in notes:
+        parts.append(text[cursor:note.start])
+        cursor = note.end
+    parts.append(text[cursor:])
+    return EditorialDocument(text, text if errors else "".join(parts), tuple(notes), errors, tuple(opaque))
+
+
+def article_text(text: str) -> str:
+    document = split_editorial_notes(text)
+    document.require_valid()
+    return document.article
+
+
+def article_spans(document: EditorialDocument) -> Iterable[tuple[int, int]]:
+    """Source spans outside notes, for edits that must retain notes verbatim."""
+    document.require_valid()
+    cursor = 0
+    for note in document.notes:
+        yield cursor, note.start
+        cursor = note.end
+    yield cursor, len(document.source)
+
+
+def preserve_editorial_notes(source: str, article: str) -> str:
+    """Carry notes through article edits; refuse edits destroying their anchors."""
+    document = split_editorial_notes(source)
+    document.require_valid()
+    if not document.notes:
+        return article
+    if document.article == article:
+        return source
+    updated = split_editorial_notes(article)
+    updated.require_valid()
+    if updated.notes:
+        raise ValueError("replacement must be an article view without editorial notes")
+    opcodes = SequenceMatcher(None, document.article, article, autojunk=False).get_opcodes()
+    insertions: list[tuple[int, str]] = []
+    removed = 0
+    for note in document.notes:
+        position = note.start - removed
+        anchor = next((j1 + position - i1 for tag, i1, i2, j1, _j2 in opcodes
+                       if tag == "equal" and i1 <= position <= i2), None)
+        if anchor is None:
+            raise ValueError(f"editorial note at line {note.line}: edit removes its context; preserve or relocate it explicitly")
+        note_source = source[note.start:note.end]
+        source_prefix = source[source.rfind("\n", 0, note.start) + 1:note.start]
+        source_line_end = source.find("\n", note.end)
+        source_suffix = source[note.end:source_line_end if source_line_end >= 0 else len(source)]
+        if not source_prefix.strip() and not source_suffix.strip():
+            # A regenerated index may collapse the empty line left by removal.
+            # Keep a standalone HTML comment from swallowing the next heading.
+            if article[article.rfind("\n", 0, anchor) + 1:anchor].strip():
+                note_source = "\n" + note_source
+            if anchor < len(article) and article[anchor] != "\n":
+                note_source += "\n"
+        insertions.append((anchor, note_source))
+        removed += note.end - note.start
+    parts: list[str] = []
+    cursor = 0
+    for position, note_source in insertions:
+        parts.extend([article[cursor:position], note_source])
+        cursor = position
+    parts.append(article[cursor:])
+    return "".join(parts)
 
 
 @dataclass(frozen=True)
@@ -27,6 +199,7 @@ class FrontmatterDocument:
     header: str | None
     body: str
     errors: list[str]
+    body_start_line: int = 1
 
 
 @dataclass(frozen=True)
@@ -36,6 +209,14 @@ class WikiPage:
     frontmatter: dict[str, object]
     body: str
     errors: list[str]
+    editorial: EditorialDocument
+    body_start_line: int = 1
+
+    @property
+    def article_body(self) -> str:
+        if self.errors:
+            raise ValueError("\n".join(self.errors))
+        return self.editorial.article
 
 
 @dataclass(frozen=True)
@@ -55,15 +236,15 @@ class Concept:
 
 
 def split_frontmatter(path: Path, text: str) -> FrontmatterDocument:
-    lines = text.splitlines()
+    lines = text.splitlines(keepends=True)
     if not lines or lines[0].strip() != "---":
         return FrontmatterDocument(None, text, [])
 
     for index, line in enumerate(lines[1:], start=1):
         if line.strip() == "---":
-            header = "\n".join(lines[1:index])
-            body = "\n".join(lines[index + 1 :])
-            return FrontmatterDocument(header, body, [])
+            header = "".join(lines[1:index]).rstrip("\r\n")
+            body = "".join(lines[index + 1 :])
+            return FrontmatterDocument(header, body, [], index + 2)
 
     return FrontmatterDocument(None, text, [f"{path}: frontmatter is not closed"])
 
@@ -144,7 +325,9 @@ def read_page(path: Path, bundle: Path = WIKI) -> WikiPage:
     if document.header is not None:
         data, frontmatter_errors = parse_frontmatter_header(path, document.header)
         errors.extend(frontmatter_errors)
-    return WikiPage(path, path.relative_to(bundle).as_posix(), data, document.body, errors)
+    editorial = split_editorial_notes(document.body, path, document.body_start_line)
+    errors.extend(editorial.errors)
+    return WikiPage(path, path.relative_to(bundle).as_posix(), data, document.body, errors, editorial, document.body_start_line)
 
 
 def scalar(data: dict[str, object], key: str) -> str:
@@ -242,7 +425,7 @@ def load_concepts(bundle: Path = WIKI) -> dict[str, Concept]:
             "path": path,
             "rel_path": page.rel_path,
             "frontmatter": page.frontmatter,
-            "body": page.body,
+            "body": page.article_body,
             "relations": relations,
         }
         path_to_id[path.resolve()] = cid
@@ -466,14 +649,19 @@ def _has_non_empty_value(data: dict[str, object], key: str) -> bool:
 
 
 def replace_marker_block(text: str, start: str, end: str, replacement: str) -> tuple[str, bool]:
+    document = split_editorial_notes(text)
+    document.require_valid()
     marker_re = re.compile(rf"{re.escape(start)}.*?{re.escape(end)}", re.DOTALL)
-    if not marker_re.search(text):
+    if not marker_re.search(document.article):
         return text, False
-    return marker_re.sub(replacement, text), True
+    updated = marker_re.sub(lambda _match: replacement, document.article)
+    return preserve_editorial_notes(text, updated), True
 
 
-def update_frontmatter(path: Path, transform: Callable[[dict[str, object]], dict[str, object]]) -> None:
-    page = read_page(path)
+def update_frontmatter(
+    path: Path, transform: Callable[[dict[str, object]], dict[str, object]], bundle: Path = WIKI
+) -> None:
+    page = read_page(path, bundle)
     if page.errors:
         raise ValueError("\n".join(page.errors))
     new_frontmatter = transform(dict(page.frontmatter))
