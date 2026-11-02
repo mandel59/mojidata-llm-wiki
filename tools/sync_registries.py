@@ -122,8 +122,10 @@ def merge_latest_entries(
         if (entry["registry"], entry["entry_id"]) not in latest_ids
         or (
             refreshed_register_urls is not None
-            and entry.get("register_url")
-            and normalize_registry_url(entry["register_url"]) not in refreshed_urls
+            and any(
+                normalize_registry_url(url) not in refreshed_urls
+                for url in [entry.get("register_url"), *entry.get("register_urls", [])] if url
+            )
             and entry.get("catalog_source") != "derived"
         )
     ]
@@ -195,9 +197,14 @@ def sync_one(
     latest_only: bool,
     offline: bool,
     refresh: bool,
+    selected_register_urls: list[str] | None = None,
 ) -> dict:
     registry_cache = cache_dir / registry_key
-    if latest_only:
+    if selected_register_urls:
+        if not read_jsonl(catalog_dir / registry_key / "documents.jsonl"):
+            raise ValueError("selected-register sync requires an existing manifest")
+        register_urls = list(dict.fromkeys(normalize_registry_url(url) for url in selected_register_urls))
+    elif latest_only:
         register_urls = discover_register_urls(registry_config, "", latest_only=True)
     else:
         root_url = registry_config["root_url"]
@@ -228,7 +235,9 @@ def sync_one(
                 refresh=refresh,
             ),
         )
-        register_entries = parse_register_documents(registry_key, html, register_url)
+        register_entries = parse_register_documents(
+            registry_key, html, register_url, registry_config.get("document_number_corrections", [])
+        )
         entries.extend(register_entries)
         registers.append(
             {
@@ -241,7 +250,7 @@ def sync_one(
     target_dir = catalog_dir / registry_key
     existing_metadata = load_register_metadata(target_dir / "registers.json")
     existing_entries: list[dict] = []
-    if latest_only:
+    if latest_only or selected_register_urls:
         existing_entries = read_jsonl(target_dir / "documents.jsonl")
         if existing_entries:
             entries = merge_latest_entries(existing_entries, entries, register_urls)
@@ -262,6 +271,8 @@ def sync_one(
         "document_count": len(entries),
         "registers": registers,
     }
+    if selected_register_urls:
+        metadata["last_sync_register_urls"] = register_urls
     target_dir.mkdir(parents=True, exist_ok=True)
     with (target_dir / "registers.json").open("w", encoding="utf-8", newline="\n") as fh:
         fh.write(json.dumps(metadata, ensure_ascii=False, indent=2, sort_keys=True))
@@ -273,6 +284,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Sync unicode.org document registries into commit-safe manifests.")
     parser.add_argument("--registry", choices=["all", "utc", "wg2", "irg", "pri"], default="all")
     parser.add_argument("--latest-only", action="store_true", help="Sync current register pages, including both open and resolved PRI issues.")
+    parser.add_argument("--register-url", action="append", default=[], help="Reprocess selected register URLs into an existing manifest; repeatable, requires one registry.")
     parser.add_argument("--offline", action="store_true", help="Use cached registry HTML only.")
     parser.add_argument(
         "--refresh",
@@ -289,6 +301,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
+    if args.register_url and (args.registry == "all" or args.latest_only):
+        raise SystemExit("--register-url requires one --registry and cannot be combined with --latest-only")
     config = load_config(args.config)
     derived_entries = load_derived_documents(args.derived_documents)
     registries = config["registries"]
@@ -306,6 +320,7 @@ def main(argv: list[str] | None = None) -> int:
             args.latest_only,
             args.offline,
             args.refresh,
+            args.register_url,
         )
         print(f"{registry_key}: {metadata['document_count']} documents from {len(metadata['registers'])} register(s)")
         for line in catalog_change_lines(previous_entries, read_jsonl(manifest_path)):

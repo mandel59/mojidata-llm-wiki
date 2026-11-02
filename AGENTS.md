@@ -277,6 +277,19 @@ uv run python tools/check_catalog.py
 
 同期結果には、新規・変更された `entry_id` と変更 field を表示する。PRI の `review_status: open -> resolved` は、既に Source Document page がある場合も再レビュー対象にする。対象文書は `uv run python tools/fetch_documents.py --registry pri --doc <entry_id> --refresh` で再取得し、archive の登録結果・確定仕様・正式データを読んで、document / event / topic と `wiki/log.md` を更新する。未 digest 候補の抽出だけでは既存ページの更新を検出できないため、同期結果と catalog 差分も必ず確認する。
 
+過去 register の parser 修正など、指定した archive だけを既存の full manifest に反映するときは `--register-url` を使う。複数指定できるが、単一の `--registry` と既存 manifest を必須とし、`--latest-only` とは併用しない。指定外の register と過去の revision は保持する。`registers.json` の `last_sync_register_urls` に対象を残す。
+
+```sh
+uv run python tools/sync_registries.py --registry irg --register-url https://www.unicode.org/irg/Register-1001.html --refresh
+```
+
+Registry 自体の番号再利用・誤表記と URL alias は区別する。
+
+- IRG の `duplicate` 行で同じ番号が異なる本体に再利用されている場合、元の `doc_number` を維持し、`entry_id` に本体 URL の filename stem 由来の suffix を付ける。`registry_duplicate_of` に元の ID を残す。同じ番号だけでは区別できない文書は、suffix 付き ID・表題・URL で指定する。既に区別できる revision ID は変えない。
+- 文書番号の誤表記は URL の番号を無条件に採用せず、`config/registries.json` の `document_number_corrections` で URL、元番号、正しい番号、根拠を限定する。catalog の `display_number` と `number_correction` に元表記と補正理由・根拠 URL を保持する。
+- legacy PRI は HTML に実在する `id` / `name` を fragment に使う。同じ PRI の同じ URL が archive と index に重複する場合は archive を一次入口とし、`register_urls` と `related_links` に取り込み元と関連資料を保持する。
+- catalog の ID lookup は `unicode_registry.index_catalog_entries()` を使い、未解決の ID 衝突を辞書の後勝ちで隠さない。checker の警告を消すためだけに別文書や正当な revision を削除しない。
+
 ### Materialize Documents
 
 wiki 作成に必要な文書だけを `.cache/` に取得する。

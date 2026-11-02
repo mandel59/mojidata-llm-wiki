@@ -42,6 +42,8 @@ uv run python tools/check_wiki_review.py
 uv run python tools/check_events.py
 ```
 
+CI は Ubuntu 26.04、Node.js 24 対応の `actions/checkout@v7` / `astral-sh/setup-uv@v10` を使います。uv の cache を有効にし、保存前の prune を明示しています。
+
 ## 目録の更新
 
 最新 register だけを同期する場合:
@@ -49,6 +51,12 @@ uv run python tools/check_events.py
 ```sh
 uv run python tools/sync_registries.py --registry all --latest-only
 uv run python tools/check_catalog.py
+```
+
+過去の特定 register だけを再処理する場合は、既存 manifest を保ったまま `--register-url` を指定できます。
+
+```sh
+uv run python tools/sync_registries.py --registry irg --register-url https://www.unicode.org/irg/Register-1001.html --refresh
 ```
 
 オンライン同期では Registry の root / latest page を毎回再取得し、過去 register のキャッシュだけを再利用します。PRI は `config/registries.json` の `current_register_urls` に Resolved Issues を指定し、`--latest-only` でも Open Issues と Resolved Issues の両方を毎回再取得する。過去の固定 archive は保持する。ネットワークを使わずキャッシュだけで再現する場合は `--offline`、過去 register も含めてすべて再取得する場合は `--refresh` を指定します。

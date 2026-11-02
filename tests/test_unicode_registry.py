@@ -225,7 +225,7 @@ class RegistryParserTest(unittest.TestCase):
         )
         self.assertEqual(len(entries), 1)
         self.assertEqual(entries[0]["entry_id"], "pri-99")
-        self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/review/resolved-pri.html#pri-99")
+        self.assertEqual(entries[0]["document_url"], "https://www.unicode.org/review/resolved-pri.html#pri99")
         self.assertEqual(entries[0]["related_links"][0]["url"], "https://www.unicode.org/reports/tr33/tr33-2.html")
         self.assertEqual(entries[0]["review_status"], "resolved")
 

@@ -13,6 +13,15 @@
     "wg2": {
       "kind": "wg2",
       "name": "WG2 Document Registry",
+      "document_number_corrections": [
+        {
+          "document_url": "http://www.unicode.org/wg2/docs/n4653-Comments%20on%20Proposals%20of%20Zanabazar%20Square%20and%20Soyombo%20Script%20from%20Mongolian%20Experts.pdf",
+          "registry_doc_number": "WG2 N4563",
+          "canonical_doc_number": "WG2 N4653",
+          "reason": "Register-4500 displays 4563 for this row; the PDF first-page header and URL identify WG2 N4653.",
+          "evidence_url": "https://www.unicode.org/wg2/docs/n4653-Comments%20on%20Proposals%20of%20Zanabazar%20Square%20and%20Soyombo%20Script%20from%20Mongolian%20Experts.pdf"
+        }
+      ],
       "root_url": "https://www.unicode.org/wg2/WG2-registry.html",
       "latest_url": "https://www.unicode.org/wg2/WG2-curdoc.html",
       "register_href_patterns": [

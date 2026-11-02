@@ -11,11 +11,11 @@ from typing import Iterable
 
 try:
     from .cli_support import configure_utf8_stdio
-    from .unicode_registry import parse_doc_number
+    from .unicode_registry import parse_doc_number, index_catalog_entries, read_jsonl
     from .wiki_store import Concept, ROOT, WIKI, concept_matches_lookup, load_concepts, normalize_lookup_key, scalar
 except ImportError:
     from cli_support import configure_utf8_stdio
-    from unicode_registry import parse_doc_number
+    from unicode_registry import parse_doc_number, index_catalog_entries, read_jsonl
     from wiki_store import Concept, ROOT, WIKI, concept_matches_lookup, load_concepts, normalize_lookup_key, scalar
 
 
@@ -113,29 +113,19 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def load_catalog(catalog_root: Path = CATALOG) -> dict[str, CatalogEntry]:
-    entries: dict[str, CatalogEntry] = {}
-    for path in sorted(catalog_root.glob("*/documents.jsonl")):
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-            if not line.strip():
-                continue
-            try:
-                data = json.loads(line)
-            except json.JSONDecodeError as error:
-                raise SystemExit(f"{path}:{line_number}: invalid JSON: {error}") from error
-            entry_id = data.get("entry_id")
-            if not isinstance(entry_id, str) or not entry_id:
-                continue
-            entries[entry_id] = CatalogEntry(
-                registry=str(data.get("registry") or ""),
-                entry_id=entry_id,
-                doc_number=str(data.get("doc_number") or ""),
-                date=str(data.get("date") or ""),
-                subject=str(data.get("subject") or ""),
-                source=str(data.get("source") or ""),
-                status=str(data.get("status") or ""),
-                document_url=data.get("document_url") if isinstance(data.get("document_url"), str) else None,
-            )
-    return entries
+    indexed = index_catalog_entries(
+        entry for path in sorted(catalog_root.glob("*/documents.jsonl")) for entry in read_jsonl(path)
+    )
+    return {
+        entry_id: CatalogEntry(
+            registry=str(data.get("registry") or ""), entry_id=entry_id,
+            doc_number=str(data.get("doc_number") or ""), date=str(data.get("date") or ""),
+            subject=str(data.get("subject") or ""), source=str(data.get("source") or ""),
+            status=str(data.get("status") or ""),
+            document_url=data.get("document_url") if isinstance(data.get("document_url"), str) else None,
+        )
+        for entry_id, data in indexed.items()
+    }
 
 
 def _read_jsonl(path: Path) -> Iterable[dict[str, object]]:
@@ -176,13 +166,17 @@ def load_latest_fetch_failures(cache_dir: Path = DEFAULT_FETCH_CACHE) -> set[str
 
 def catalog_by_doc_number(catalog: dict[str, CatalogEntry]) -> dict[str, CatalogEntry]:
     by_doc_number: dict[str, CatalogEntry] = {}
+    ambiguous: set[str] = set()
     for entry in catalog.values():
         parsed = parse_doc_number(entry.registry, entry.doc_number)
         if parsed is None:
             continue
         _display, canonical, _entry_id = parsed
-        by_doc_number[normalize_lookup_key(canonical)] = entry
-    return by_doc_number
+        key = normalize_lookup_key(canonical)
+        if key in by_doc_number and by_doc_number[key].entry_id != entry.entry_id:
+            ambiguous.add(key)
+        by_doc_number[key] = entry
+    return {key: entry for key, entry in by_doc_number.items() if key not in ambiguous}
 
 
 def concept_alias_map(concepts: dict[str, Concept]) -> dict[str, str]:
@@ -427,8 +421,12 @@ def render_table(candidates: list[DigestCandidate]) -> str:
 def main(argv: list[str] | None = None) -> int:
     configure_utf8_stdio()
     args = parse_args(argv or sys.argv[1:])
-    concepts = load_concepts(WIKI)
-    catalog = load_catalog(CATALOG)
+    try:
+        concepts = load_concepts(WIKI)
+        catalog = load_catalog(CATALOG)
+    except ValueError as error:
+        print(error, file=sys.stderr)
+        return 1
     candidates = collect_candidates(
         concepts,
         catalog,

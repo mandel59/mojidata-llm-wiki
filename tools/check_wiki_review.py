@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sys
 from collections import Counter, defaultdict
@@ -29,7 +28,7 @@ from wiki_store import (
     split_editorial_notes,
     article_spans,
 )
-from unicode_registry import parse_doc_number
+from unicode_registry import parse_doc_number, index_catalog_entries, read_jsonl
 
 
 CATALOG = ROOT / "catalog" / "registries"
@@ -87,26 +86,17 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def load_catalog() -> dict[str, CatalogEntry]:
-    entries: dict[str, CatalogEntry] = {}
-    for path in sorted(CATALOG.glob("*/documents.jsonl")):
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-            if not line.strip():
-                continue
-            try:
-                data = json.loads(line)
-            except json.JSONDecodeError as error:
-                raise SystemExit(f"{path}:{line_number}: invalid JSON: {error}") from error
-            entry_id = data.get("entry_id")
-            if not isinstance(entry_id, str) or not entry_id:
-                continue
-            entries[entry_id] = CatalogEntry(
-                registry=str(data.get("registry") or ""),
-                entry_id=entry_id,
-                doc_number=str(data.get("doc_number") or ""),
-                status=str(data.get("status") or ""),
-                document_url=data.get("document_url") if isinstance(data.get("document_url"), str) else None,
-            )
-    return entries
+    indexed = index_catalog_entries(
+        entry for path in sorted(CATALOG.glob("*/documents.jsonl")) for entry in read_jsonl(path)
+    )
+    return {
+        entry_id: CatalogEntry(
+            registry=str(data.get("registry") or ""), entry_id=entry_id,
+            doc_number=str(data.get("doc_number") or ""), status=str(data.get("status") or ""),
+            document_url=data.get("document_url") if isinstance(data.get("document_url"), str) else None,
+        )
+        for entry_id, data in indexed.items()
+    }
 
 
 def markdown_link_targets(path: Path, body: str) -> list[str]:
@@ -482,10 +472,14 @@ def catalog_names(entry: CatalogEntry) -> set[str]:
 
 def catalog_by_doc_number(catalog: dict[str, CatalogEntry]) -> dict[str, CatalogEntry]:
     by_number: dict[str, CatalogEntry] = {}
+    ambiguous: set[str] = set()
     for entry in catalog.values():
         if entry.doc_number:
-            by_number[normalize_lookup_key(entry.doc_number)] = entry
-    return by_number
+            key = normalize_lookup_key(entry.doc_number)
+            if key in by_number and by_number[key].entry_id != entry.entry_id:
+                ambiguous.add(key)
+            by_number[key] = entry
+    return {key: entry for key, entry in by_number.items() if key not in ambiguous}
 
 
 def concept_by_alias(concepts: dict[str, Concept]) -> dict[str, Concept]:

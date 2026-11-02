@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.unicode_registry import read_jsonl
+from tools.unicode_registry import read_jsonl, index_catalog_entries
 
 
 DEFAULT_CATALOG = ROOT / "catalog" / "registries"
@@ -80,17 +80,11 @@ def check_registry(catalog_dir: Path, registry: str) -> tuple[int, list[str], li
 
 
 def load_catalog_entries(catalog_dir: Path) -> dict[tuple[str, str], dict]:
-    entries: dict[tuple[str, str], dict] = {}
-    for registry in REGISTRIES:
-        path = catalog_dir / registry / "documents.jsonl"
-        if not path.exists():
-            continue
-        for entry in read_jsonl(path):
-            registry_key = entry.get("registry")
-            entry_id = entry.get("entry_id")
-            if isinstance(registry_key, str) and isinstance(entry_id, str):
-                entries[(registry_key, entry_id)] = entry
-    return entries
+    indexed = index_catalog_entries(
+        entry for registry in REGISTRIES for entry in read_jsonl(catalog_dir / registry / "documents.jsonl")
+    )
+    return {(entry["registry"], entry_id): entry for entry_id, entry in indexed.items()
+            if isinstance(entry.get("registry"), str)}
 
 
 def check_derived_documents(path: Path, catalog_dir: Path) -> tuple[int, list[str]]:
@@ -162,7 +156,10 @@ def main(argv: list[str] | None = None) -> int:
         all_errors.extend(errors)
         all_warnings.extend(warnings)
         print(f"{registry}: {count} document(s)")
-    derived_count, derived_errors = check_derived_documents(args.derived_documents, args.catalog_dir)
+    try:
+        derived_count, derived_errors = check_derived_documents(args.derived_documents, args.catalog_dir)
+    except ValueError as error:
+        derived_count, derived_errors = 0, [str(error)]
     all_errors.extend(derived_errors)
     print(f"derived overlay: {derived_count} document(s)")
 

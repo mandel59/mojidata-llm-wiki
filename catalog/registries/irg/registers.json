@@ -1,8 +1,11 @@
 {
   "derived_document_count": 3,
   "document_count": 3042,
-  "last_sync_latest_only": true,
-  "last_sync_register_document_count": 10,
+  "last_sync_latest_only": false,
+  "last_sync_register_document_count": 262,
+  "last_sync_register_urls": [
+    "https://www.unicode.org/irg/Register-1001.html"
+  ],
   "latest_only": false,
   "name": "IRG Document Register",
   "registers": [

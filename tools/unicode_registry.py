@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable
-from urllib.parse import urljoin, urlparse, urlunparse
+from urllib.parse import unquote, urljoin, urlparse, urlunparse
 
 
 @dataclass(frozen=True)
@@ -41,6 +41,9 @@ class RegistryHTMLParser(HTMLParser):
         self.base_url = base_url
         self.links: list[Link] = []
         self.rows: list[tuple[Cell, ...]] = []
+        self.row_classes: list[tuple[str, ...]] = []
+        self.pri_anchors: dict[str, str] = {}
+        self._row_classes: tuple[str, ...] = ()
 
         self._row_cells: list[Cell] | None = None
         self._cell_text: list[str] | None = None
@@ -51,8 +54,13 @@ class RegistryHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attrs_dict = dict(attrs)
+        for attribute in ("id", "name"):
+            anchor = attrs_dict.get(attribute) or ""
+            if match := re.fullmatch(r"pri-?(\d+)", anchor, re.IGNORECASE):
+                self.pri_anchors[str(int(match[1]))] = anchor
         if tag == "tr":
             self._row_cells = []
+            self._row_classes = tuple((attrs_dict.get("class") or "").split())
         elif tag in {"td", "th"} and self._row_cells is not None:
             self._cell_text = []
             self._cell_links = []
@@ -83,6 +91,7 @@ class RegistryHTMLParser(HTMLParser):
         elif tag == "tr" and self._row_cells is not None:
             if self._row_cells:
                 self.rows.append(tuple(self._row_cells))
+                self.row_classes.append(self._row_classes)
             self._row_cells = None
 
 
@@ -236,17 +245,62 @@ def normalize_registry_url(url: str) -> str:
     return url
 
 
-def parse_register_documents(registry: str, html_text: str, register_url: str) -> list[dict]:
+def parse_register_documents(
+    registry: str, html_text: str, register_url: str, number_corrections: Iterable[dict] = ()
+) -> list[dict]:
     if registry == "pri":
         return parse_pri_register_documents(html_text, register_url)
 
     parser = parse_html(html_text, register_url)
     entries: list[dict] = []
+    number_corrections = tuple(number_corrections)
 
-    for row in parser.rows:
-        entries.extend(parse_row_entries(registry, row, register_url))
+    duplicate_rows: list[dict] = []
+    for row, classes in zip(parser.rows, parser.row_classes):
+        row_entries = parse_row_entries(registry, row, register_url)
+        for entry in row_entries:
+            apply_number_correction(entry, number_corrections)
+        entries.extend(row_entries)
+        if registry == "irg" and "duplicate" in classes:
+            duplicate_rows.extend(row_entries)
+
+    urls_by_id: dict[str, set[str | None]] = {}
+    for entry in entries:
+        urls_by_id.setdefault(entry["entry_id"], set()).add(entry.get("document_url"))
+    for entry in duplicate_rows:
+        if len(urls_by_id[entry["entry_id"]]) <= 1:
+            continue  # A distinct revision already has an unambiguous identity.
+        original_id = entry["entry_id"]
+        if not entry.get("document_url"):
+            raise ValueError(f"cannot disambiguate duplicate registry document without URL: {original_id}")
+        stem = Path(unquote(urlparse(entry["document_url"]).path)).stem
+        suffix = re.sub(r"^n\d+r?\d*[-_]?", "", stem, flags=re.IGNORECASE)
+        suffix = re.sub(r"[^a-z0-9]+", "-", suffix.lower()).strip("-")
+        if not suffix:
+            raise ValueError(f"cannot disambiguate duplicate registry document: {entry['document_url']}")
+        entry["entry_id"] = f"{original_id}-{suffix}"
+        entry["registry_duplicate_of"] = original_id
 
     return entries
+
+
+def apply_number_correction(entry: dict, corrections: Iterable[dict]) -> None:
+    """Apply only documented corrections to exact source URLs, retaining display text."""
+    for correction in corrections:
+        if entry.get("document_url") != correction["document_url"]:
+            continue
+        canonical = parse_doc_number(entry["registry"], correction["canonical_doc_number"])
+        if canonical is None or not correction.get("reason") or not correction.get("evidence_url"):
+            raise ValueError(f"invalid document number correction: {correction}")
+        if entry["doc_number"] == canonical[1]:
+            return  # The publisher has corrected the register itself.
+        if entry["doc_number"] != correction["registry_doc_number"]:
+            raise ValueError(f"source number changed for correction: {entry['document_url']}")
+        entry["doc_number"], entry["entry_id"] = canonical[1:]
+        entry["number_correction"] = {
+            key: correction[key] for key in ("registry_doc_number", "reason", "evidence_url")
+        }
+        return
 
 
 def parse_row(registry: str, row: tuple[Cell, ...], register_url: str) -> dict | None:
@@ -365,7 +419,9 @@ def parse_pri_row_entries(row: tuple[Cell, ...], register_url: str) -> list[dict
     ]
 
 
-def parse_pri_legacy_row_entries(row: tuple[Cell, ...], register_url: str) -> list[dict]:
+def parse_pri_legacy_row_entries(
+    row: tuple[Cell, ...], register_url: str, anchors: dict[str, str] | None = None
+) -> list[dict]:
     if len(row) < 3:
         return []
     parsed_number = parse_doc_number("pri", row[0].text)
@@ -383,7 +439,7 @@ def parse_pri_legacy_row_entries(row: tuple[Cell, ...], register_url: str) -> li
             subject=row[1].text,
             source="",
             date=date,
-            document_url=pri_fragment_url(register_url, parsed_number[1]),
+            document_url=pri_fragment_url(register_url, parsed_number[1], anchors),
             related_links=[
                 {"text": link.text, "url": link.url}
                 for link in all_links
@@ -398,7 +454,7 @@ def parse_pri_legacy_entries(html_text: str, register_url: str) -> list[dict]:
     table_entries: list[dict] = []
     table_parser = parse_html(html_text, register_url)
     for row in table_parser.rows:
-        table_entries.extend(parse_pri_legacy_row_entries(row, register_url))
+        table_entries.extend(parse_pri_legacy_row_entries(row, register_url, table_parser.pri_anchors))
     if table_entries:
         return table_entries
 
@@ -422,7 +478,7 @@ def parse_pri_legacy_entries(html_text: str, register_url: str) -> list[dict]:
                 subject=clean_text(match.group(2)),
                 source="",
                 date=normalize_pri_date(match.group(3)),
-                document_url=pri_fragment_url(register_url, parsed_number[1]),
+                document_url=pri_fragment_url(register_url, parsed_number[1], table_parser.pri_anchors),
                 related_links=[
                     {"text": link.text, "url": link.url}
                     for link in links
@@ -476,11 +532,12 @@ def is_pri_legacy_register(register_url: str) -> bool:
     return basename in {"resolved-pri.html", "resolved-pri-100.html"}
 
 
-def pri_fragment_url(register_url: str, doc_number: str) -> str:
+def pri_fragment_url(register_url: str, doc_number: str, anchors: dict[str, str] | None = None) -> str:
     parsed = parse_doc_number("pri", doc_number)
     number = parsed[1].removeprefix("PRI #") if parsed else doc_number
     parsed_url = urlparse(register_url)
-    return urlunparse(parsed_url._replace(fragment=f"pri-{number}"))
+    fragment = (anchors or {}).get(number, f"pri-{number}")
+    return urlunparse(parsed_url._replace(fragment=fragment))
 
 
 def pri_review_status(register_url: str) -> str:
@@ -720,5 +777,39 @@ def dedupe_entries(entries: Iterable[dict]) -> list[dict]:
     deduped: dict[tuple[str, str, str | None], dict] = {}
     for entry in entries:
         key = (entry["registry"], entry["entry_id"], entry.get("document_url"))
+        previous = deduped.get(key)
+        if previous is not None and entry["registry"] == "pri":
+            # Retain the direct archive's metadata for a PRI linked by an index.
+            preferred = entry
+            if is_pri_legacy_register(previous.get("register_url") or "") and not is_pri_legacy_register(entry.get("register_url") or ""):
+                preferred = previous
+            merged = dict(preferred)
+            register_urls = sorted({
+                url for item in (previous, entry)
+                for url in [item.get("register_url"), *item.get("register_urls", [])] if url
+            })
+            if len(register_urls) > 1:
+                merged["register_urls"] = register_urls
+            links: list[dict] = []
+            for item in (previous, entry):
+                for link in item.get("related_links", []):
+                    if link.get("url") != merged.get("document_url") and link not in links:
+                        links.append(link)
+            if "related_links" in preferred:
+                merged["related_links"] = links
+            entry = merged
         deduped[key] = entry
     return sorted(deduped.values(), key=sort_key)
+
+
+def index_catalog_entries(entries: Iterable[dict]) -> dict[str, dict]:
+    """Build a lookup only from unique identities; never silently overwrite a document."""
+    indexed: dict[str, dict] = {}
+    for entry in entries:
+        entry_id = entry.get("entry_id")
+        if not isinstance(entry_id, str) or not entry_id:
+            continue
+        if entry_id in indexed:
+            raise ValueError(f"ambiguous catalog entry_id {entry_id}: {indexed[entry_id].get('document_url')} / {entry.get('document_url')}")
+        indexed[entry_id] = entry
+    return indexed
