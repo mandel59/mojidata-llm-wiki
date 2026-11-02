@@ -42,7 +42,9 @@ Japanese Historical Ideographs は、日本の古典籍・近世近代資料に�
 
 ### UAX \#45 topic との関係
 
-`L2/25-274` の registry subject は UAX \#45 additions ではないが、未符号化 CJK ideograph を evidence、IDS、reading、stroke data とともに UTC へ提出する点で UAX \#45 / FutureWS 系の提案と近い。今後、同種の日本古典籍由来文字が増える場合は、UAX \#45 records へ入るものと、直接符号化提案として扱われるものを分けて追跡する必要がある。
+`L2/25-274` の registry subject は UAX \#45 additions ではないが、未符号化 CJK ideograph を evidence、IDS、reading、stroke data とともに UTC へ提出する点で UAX \#45 / FutureWS 系の提案と近い。
+
+<!-- editorial: 今後、同種の日本古典籍由来文字が増える場合は、UAX \#45 records へ入るものと、直接符号化提案として扱われるものを分けて追跡する必要がある。 -->
 
 2026 年の UTC \#187 では、[L2/26-057](../documents/utc-l2-26-057.md)、[L2/26-072](../documents/utc-l2-26-072.md)、[L2/26-085](../documents/utc-l2-26-085.md) など、日本資料を含む UAX \#45 proposal が [UTC \#187 UAX \#45 FutureWS additions](../events/utc-187-uax45-futurews-additions.md) として FutureWS additions に入った。ここでは、文書が示した日本資料上の evidence と、UTC \#187 の CJK & Unihan WG recommendation による採択結果を別々に追跡する。
 

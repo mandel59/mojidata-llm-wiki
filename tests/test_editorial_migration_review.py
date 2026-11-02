@@ -77,6 +77,29 @@ class EditorialMigrationReviewTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "inventory differs"):
             load_ledger(self.ledger, self.bundle)
 
+    def test_can_defer_a_page_that_needs_edits(self):
+        self.page("a.md", "編集の必要がある本文。")
+        self.page("b.md", "確認を終えた本文。")
+        _text, receipt = self.packet()
+        result = record_packet(self.ledger, receipt, self.bundle, {"a.md"})
+        self.assertEqual([row["full_text_review"] for row in result["files"]], ["pending", "reviewed"])
+
+    def test_rejects_deferral_outside_the_preview(self):
+        self.page("a.md", "本文。")
+        _text, receipt = self.packet()
+        before = self.ledger.read_bytes()
+        with self.assertRaisesRegex(ValueError, "must belong"):
+            record_packet(self.ledger, receipt, self.bundle, {"missing.md"})
+        self.assertEqual(self.ledger.read_bytes(), before)
+
+    def test_all_deferred_leaves_progress_unchanged(self):
+        self.page("a.md", "編集の必要がある本文。")
+        _text, receipt = self.packet()
+        before = self.ledger.read_bytes()
+        with self.assertRaisesRegex(ValueError, "all pages were deferred"):
+            record_packet(self.ledger, receipt, self.bundle, {"a.md"})
+        self.assertEqual(self.ledger.read_bytes(), before)
+
     def test_reused_headings_still_show_section_context(self):
         self.page("a.md", "## 本文\n\n既読の本文。", reviewed=True)
         self.page("b.md", "## 本文\n\n初めて読む本文。")

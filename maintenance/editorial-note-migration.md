@@ -15,13 +15,13 @@
 
 | 区分 | ページ数 |
 | --- | ---: |
-| 候補精査・変更・検証済み | 84 |
-| 候補精査済み・本文に残す | 133 |
-| 検索候補なし・全文精査済み | 88 |
-| 検索候補なし・全文精査は未実施 | 318 |
+| 候補精査・変更・検証済み | 87 |
+| 候補精査済み・本文に残す | 131 |
+| 検索候補なし・全文精査済み | 99 |
+| 検索候補なし・全文精査は未実施 | 306 |
 | 対象外の index / log | 10 |
 
-全文精査済みは **118 / 623ページ**。未完了は505ページ。そのうち318ページは検索候補がなかったページ。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
+全文精査済みは **168 / 623ページ**。未完了は455ページ。そのうち306ページは検索候補がなかったページ。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
 
 ## 本文に残す判断
 
@@ -47,7 +47,7 @@
 | families | 4 | 0 |
 | meetings | 15 | 0 |
 | people | 22 | 0 |
-| topics | 5 | 50 |
+| topics | 55 | 0 |
 
 ## 効率的な確認手順
 
@@ -64,13 +64,31 @@ uv run python tools/editorial_migration_review.py packet --directory topics --ma
 uv run python tools/editorial_migration_review.py record .cache/editorial-review.json
 ```
 
+移行対象が見つかったページだけ未完了に残し、同時に確認した他のページを記録できる。保留するパスは表示内のものに限る。全ページを保留した場合は記録しない。
+
+~~~sh
+uv run python tools/editorial_migration_review.py record .cache/editorial-review.json --defer topics/example.md
+~~~
+
 表示後に台帳やファイルが変更された場合は記録を拒否する。Wikiを変更した場合は台帳のハッシュと判断を更新し、変更後の本文を改めて確認する。記事の追加・削除も台帳との再照合が必要になる。
 
 2026-11-02の再開作業では、人物・組織22、会合15、event28、topic5の計70ページを追加確認した。この範囲に新しい移行対象はなく、既存の出典の注意と会議体側の後続作業を本文に残した。
 
+## Topic 全文精査の追加結果
+
+2026-11-02、1745da7以降に残り50 topicを追加確認し、topic全55ページの全文精査を終えた。5記事で5件を近接ノートへ移した。既存151ノートは保持し、移行後は156ノート。会議体自身の調査計画、実装者向けのmigration checklist、資料間の数値差や正式決定との区別は本文に残した。
+
+- Early IRG History: 過去ページの保存・後続リンクという編集手順。
+- Ideographic Variation Database: 新release・PRI・正式データの照合と関連ページの接続手順。
+- Japanese Historical Ideographs: 今後同種提案が増えた場合の分類・追跡方針。
+- Small Seal Script: 追加property提案の採択を確認していないという調査状態。
+- T-source Representative Glyph Issues: 正式なgroup dispositionの確認待ち。TCAの同意・font提出との区別は本文に残す。
+
+全文精査で検索ルールに出ない6行を追加し、現在の候補記録は218ページ・319行。以下の候補ページ別判断も更新した。残りはdocumentsの455ページで、他ディレクトリのconcept記事は全文精査済みである。
+
 ## 検証
 
-82 unit tests（確認補助の9テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、ノート保持・行位置、移行後の本文に空の節がないことを確認した。
+85 unit tests（確認補助の12テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、既存151ノートの保持と追加5ノートの行位置、移行後の本文に空の節がないことを確認した。
 
 ## 候補ページ別の判断
 
@@ -261,19 +279,19 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [topics/cjk-strokes-variation-sequences.md](../wiki/topics/cjk-strokes-variation-sequences.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/cjkv-components.md](../wiki/topics/cjkv-components.md) | 移行・整理 | 由来・日付の制約は本文に残し、独立ページを作らない編集判断を移す。 |
 | [topics/dai-xaau-script.md](../wiki/topics/dai-xaau-script.md) | 本文に残す | 各版で repertoire が異なるという資料自身の差異。 |
-| [topics/early-irg-history.md](../wiki/topics/early-irg-history.md) | 移行・整理 | 精読完了の作業記録を読者向けの対象範囲の説明へ整理する。 / 未精読という編集作業の状況を移す。catalog の登録内容と歴史的な比較の限界は残す。 |
+| [topics/early-irg-history.md](../wiki/topics/early-irg-history.md) | ノートへ分離 | 過去ページの保存・リンクという編集手順を移行。歴史資料の解釈限界と出典の注意は本文に残す。 |
 | [topics/east-asian-spacing.md](../wiki/topics/east-asian-spacing.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/egyptian-hieroglyph-data-and-unikemet.md](../wiki/topics/egyptian-hieroglyph-data-and-unikemet.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [topics/emoji-repertoire-proposals.md](../wiki/topics/emoji-repertoire-proposals.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/g-source-glyph-and-reference-issues.md](../wiki/topics/g-source-glyph-and-reference-issues.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [topics/ideographic-variation-database.md](../wiki/topics/ideographic-variation-database.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
+| [topics/ideographic-variation-database.md](../wiki/topics/ideographic-variation-database.md) | ノートへ分離 | IVDの更新確認・関連ページ接続手順をノートへ移行。仕様・登録・背景資料の違いと読者の入口は本文に残す。 |
 | [topics/irg-disunified-ideographs.md](../wiki/topics/irg-disunified-ideographs.md) | 本文に残す | 公式 web page の Pending / Implemented 区分と、body・release を分ける読み方。 |
 | [topics/irg-indexing-rules.md](../wiki/topics/irg-indexing-rules.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/irg-urgently-needed-ideographs.md](../wiki/topics/irg-urgently-needed-ideographs.md) | 移行・整理 | 表の討議完了という記録は本文に残し、正式採択の調査状況を同じセル内の近接ノートへ移す。 |
 | [topics/irg-working-process-and-liaison.md](../wiki/topics/irg-working-process-and-liaison.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [topics/iso-10646-edition-and-code-charts.md](../wiki/topics/iso-10646-edition-and-code-charts.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/j-source.md](../wiki/topics/j-source.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [topics/japanese-historical-ideographs.md](../wiki/topics/japanese-historical-ideographs.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 / minutes の範囲は本文に残し、pending という編集上の仮分類を移す。 |
+| [topics/japanese-historical-ideographs.md](../wiki/topics/japanese-historical-ideographs.md) | ノートへ分離 | 同種提案が増えた場合の分類・追跡方針を近接ノートへ移す。L2/25-274とUAX #45の関係、既存の採択範囲は本文に残す。 |
 | [topics/japanese-place-name-ideographs.md](../wiki/topics/japanese-place-name-ideographs.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 / 未確認を pending と分類した編集判断を移す。UTC #187 の decision set に含まれない事実は本文に残す。 |
 | [topics/jmj-horizontal-extension-review-path.md](../wiki/topics/jmj-horizontal-extension-review-path.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/kana.md](../wiki/topics/kana.md) | 移行・整理 | 関連する表記体系は本文に残し、将来のページ分割案を移す。 |
@@ -284,7 +302,8 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [topics/maya-hieroglyph-encoding.md](../wiki/topics/maya-hieroglyph-encoding.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/nti-script.md](../wiki/topics/nti-script.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [topics/script-encoding-pipeline.md](../wiki/topics/script-encoding-pipeline.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
-| [topics/t-source-representative-glyph-issues.md](../wiki/topics/t-source-representative-glyph-issues.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
+| [topics/small-seal-script.md](../wiki/topics/small-seal-script.md) | ノートへ分離 | 採択を確認できていないという作業状態をノートへ移す。Unicode 18.0の確定データと追加property提案の区別は本文に残す。 |
+| [topics/t-source-representative-glyph-issues.md](../wiki/topics/t-source-representative-glyph-issues.md) | ノートへ分離 | 正式なgroup dispositionの確認待ちをノートへ移す。TCAの同意・font提出がgroupの決定とは別である注意を本文に残す。 |
 | [topics/uax45-u-source-ideographs.md](../wiki/topics/uax45-u-source-ideographs.md) | 移行・整理 | 受理された decision set の範囲は本文に残し、catalog / cache による未確認・仮分類を移す。 |
 | [topics/uax60-large-east-asian-scripts.md](../wiki/topics/uax60-large-east-asian-scripts.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [topics/ucv-nucv-lists.md](../wiki/topics/ucv-nucv-lists.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |

@@ -82,7 +82,7 @@ IVD の IVS、`StandardizedVariants.txt` の standardized variation sequences、
 
 ### 継続して確認する資料
 
-更新確認では、IVD 公式ページの新 release / submission と、PRI archive の登録結果を照合し、前版との `IVD_Collections.txt` / `IVD_Sequences.txt` 差分を読む。collection page の代表字形・注意事項も確認する。activity report に登録完了が載った場合は、対応する PRI、event、topic まで接続する。
+<!-- editorial: 更新確認では、IVD 公式ページの新 release / submission と、PRI archive の登録結果を照合し、前版との `IVD_Collections.txt` / `IVD_Sequences.txt` 差分を読む。collection page の代表字形・注意事項も確認する。activity report に登録完了が載った場合は、対応する PRI、event、topic まで接続する。 -->
 
 UTS \#37 は proposed update と確定版を分け、登録申請は review 期間と実際の登録日を分けて追う。IRG の endorsement や source-data correction は背景資料として読み、Registrar の登録完了と混同しない。
 

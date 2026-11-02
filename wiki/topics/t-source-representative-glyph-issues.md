@@ -33,7 +33,7 @@ T-source representative glyph issues は、TCA が担当する T-source code cha
 | 2026-04-11 | UTC | [L2/26-099](../documents/utc-l2-26-099.md) | CJK & Unihan Working Group が IRG \#66 follow-up を Unicode Version 18.0 target の data / chart action に接続した。 |
 | 2026-06-26 | WG2 | [WG2 N5354](../documents/wg2-n5354.md) | WG2 \#73 M73.02 が selected CJK additions and changes を ISO/IEC 10646 CD へ接続した。 |
 | 2026-09-24 | IRG | [IRG N2974](../documents/irg-n2974.md) | Roy Wang が U+3097C の T-source glyph を ⿱敉目 に変更するよう提案した。 |
-| 2026-09-29 | IRG | [IRG N2975](../documents/irg-n2975.md) | TCA が提案に同意し、更新 glyph を含む font を IRG と WG2 に提出した。正式な group disposition は別途確認する。 |
+| 2026-09-29 | IRG | [IRG N2975](../documents/irg-n2975.md) | TCA が提案に同意し、更新 glyph を含む font を IRG と WG2 に提出した。TCA の同意・font 提出と group の正式な disposition は区別する。 |
 
 ## 主な論点
 
@@ -51,7 +51,9 @@ U+2976E と U+20885 は [IRG N2861](../documents/irg-n2861.md) では pending �
 
 ### U+3097C の新規提案
 
-[IRG N2974](../documents/irg-n2974.md) は、《龍龕手鑑》と《中華字海》の別版を根拠に、U+3097C（T13-2F35）の T-source glyph を変更するよう求める。[IRG N2975](../documents/irg-n2975.md) で TCA は、米の hook 有無を複数版で確認し、Dictionary of Chinese Character Variants が unhooked form を standard glyph にしたことから変更案に同意した。更新 font は IRG と WG2 に提出済みだが、正式な group disposition はまだ確認できない。
+[IRG N2974](../documents/irg-n2974.md) は、《龍龕手鑑》と《中華字海》の別版を根拠に、U+3097C（T13-2F35）の T-source glyph を変更するよう求める。[IRG N2975](../documents/irg-n2975.md) で TCA は、米の hook 有無を複数版で確認し、Dictionary of Chinese Character Variants が unhooked form を standard glyph にしたことから変更案に同意した。更新 font は IRG と WG2 に提出済みである。TCA の同意・font 提出と group の正式な disposition は区別する。
+
+<!-- editorial: 正式な group disposition はまだ確認できない。後続の会合記録で確認する。 -->
 
 ### Horizontal extension の glyph 確認
 

@@ -93,7 +93,9 @@ Unicode 18.0 final release は Seal を 3 new scripts の一つとして符号�
 
 Unicode 側では 2026-09-16 の Unicode 18.0.0 で符号化済みである。ISO 側では WG2 \#73 M73.04 が Small Seal changes を含む ISO/IEC 10646 7th edition DIS text を SC2 secretariat に回すよう勧告しており、body と時点を分けて追跡する。
 
-Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重複 glyph のため current SealSources.txt に記録されない source references を補う provisional property を提案した。採択は確認されておらず、既存の Unicode 18.0 data と proposal を区別する。
+Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重複 glyph のため current SealSources.txt に記録されない source references を補う provisional property を提案した。既存の Unicode 18.0 data と proposal を区別する。
+
+<!-- editorial: 採択は確認されていない。後続の UTC 記録で確認する。 -->
 
 ## 追加 source references の勧告段階
 

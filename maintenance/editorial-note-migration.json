@@ -8,7 +8,8 @@
     "未確認": "未確認|未調査|未整理|未精読|未検証|未読|未要約|TODO|要確認|確認していない|特定していない|断定しない|確認できていない",
     "取得記録": "local catalog|既存 cache|現行 catalog|再取得|HTTP\\s*\\d|取得でき|取得失敗|未取得|未公開|公開待ち|未掲載|unposted|text extraction|extracted text|抽出.*(?:失敗|崩|限界)",
     "作業予定": "ページ化|event\\s*化|別途.*digest|分離.*(?:予定|必要)|今後.*(?:調査|確認|精読|追う)|後続.*(?:確認する|追う)|会合後.*確認|まだ.*(?:整理|作成)|本文を.*(?:補わない|推定)|alias として|aliases|canonical",
-    "補足検索": "精読|本文を読|確認した|取得した|この要約|要約していない|後続確認|(?:別|独立).*(?:ページ|topic|event).*(?:分割|分離)|cache|digest|採否.*確認"
+    "補足検索": "精読|本文を読|確認した|取得した|この要約|要約していない|後続確認|(?:別|独立).*(?:ページ|topic|event).*(?:分割|分離)|cache|digest|採否.*確認",
+    "全文精査追加": "過去ページ.*リンクする|更新確認では、IVD|今後、同種の日本古典籍|採択は確認されておらず|正式な group disposition は"
   },
   "files": [
     {
@@ -7693,16 +7694,18 @@
         }
       ],
       "scan_sha256": "fb40a6fbc91a29f604fed1528e75e3c49090f2844a1dd8a6e038c1155e0451be",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/cjk-security-confusables.md",
       "content_sha256": "f34407cef34d8e58f10883a8ee1b2de1b30f8855c8e0e69c4a868310a21ae7f8",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "f34407cef34d8e58f10883a8ee1b2de1b30f8855c8e0e69c4a868310a21ae7f8",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/cjk-strokes-variation-sequences.md",
@@ -7721,7 +7724,8 @@
         }
       ],
       "scan_sha256": "b4c61a8807ea5dbb7d4d8635685d816f812cc37be23ea2d32f9b59f00b99e567",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/cjkv-components.md",
@@ -7758,7 +7762,8 @@
         }
       ],
       "scan_sha256": "413b8b559602b68641ae8547441b012840c2451b0e8d263f6241dc82b0174f71",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/dai-xaau-script.md",
@@ -7777,13 +7782,14 @@
         }
       ],
       "scan_sha256": "472bbe7888614095287f76e5b598f8226067922fcdae3f6c57806445b2a9a38a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/early-irg-history.md",
-      "content_sha256": "ecbe3cc7af692ec771e26cfcbac6274b6a10c78254f107bf55662886ee81ec9d",
+      "content_sha256": "75a97463770bd8a1a972962274a8840cea464f2beab9c5b6289379bf1db71969",
       "status": "reviewed-changed",
-      "reason": "候補行と周辺文脈を精査し、編集作業の記述を移行・整理。検証済み。",
+      "reason": "過去ページの保存・リンクという編集手順を移行。歴史資料の解釈限界と出典の注意は本文に残す。",
       "findings": [
         {
           "baseline_line": 20,
@@ -7814,6 +7820,16 @@
           "baseline_line": 69
         },
         {
+          "baseline_line": 72,
+          "text": "[第4回の三役兼任禁止の撤回](../events/irg-4-officer-role-restriction-withdrawal.md)により、N034 項目3c の当該一文を後年にも有効な規則として扱えないことも確認できる。過去ページの記述は当時のまま残し、後続変更へリンクする。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "歴史上の規則変更の説明は本文に残し、過去ページの保存・後続リンクという編集手順だけを近接ノートへ移す。",
+          "detection_method": "full-text review"
+        },
+        {
           "text": "設立、提案送付、拡張用語、Annex 送付は上記の canonical events に集約する。これらの IRG 内の結論を、そのまま規格の publication や Unicode encoding 完了とはしない。N131 V1 の人名文字 Category H も WG2 への要求であり、WG2 が同じ分類を採択した証拠ではない。",
           "rules": [
             "作業予定"
@@ -7842,16 +7858,18 @@
         }
       ],
       "scan_sha256": "d84aa907a0b7eb1e2b175eb146980f2abfa9b12557baa629658a3b1207de396a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/east-asian-quotation-marks.md",
       "content_sha256": "599cdd653be49d7a1fa598265268312562b6d8513dac9e0c77aa2cb770db7cf9",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "599cdd653be49d7a1fa598265268312562b6d8513dac9e0c77aa2cb770db7cf9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/east-asian-spacing.md",
@@ -7870,7 +7888,8 @@
         }
       ],
       "scan_sha256": "8229442fb02cbef2aa41907069d961ca647203d12fb7dc822ea4dff492903f19",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/egyptian-hieroglyph-data-and-unikemet.md",
@@ -7898,16 +7917,18 @@
         }
       ],
       "scan_sha256": "a08577ed9764e63be3f1361743a0a7054296fd665710865b386ee40e857f1dea",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/emoji-interoperability-and-intake.md",
       "content_sha256": "1534faa3406673ddbd382b4b8c7983dd1d090f9b5874db72149d20c616314115",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "1534faa3406673ddbd382b4b8c7983dd1d090f9b5874db72149d20c616314115",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/emoji-repertoire-proposals.md",
@@ -7926,7 +7947,8 @@
         }
       ],
       "scan_sha256": "7717774b3d05d6a6a6a362a73823dae60aa71e2dc2ee18299956ffc02f8cb51d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/g-source-glyph-and-reference-issues.md",
@@ -7945,22 +7967,24 @@
         }
       ],
       "scan_sha256": "22a3195666c442b25fb1ee8938d0fff0dc45b8d5eb73698055316da241db5a40",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/ideographic-punctuation-proposals.md",
       "content_sha256": "edd45f5959fd79134c9c974f7c0dfeec22e171ca2d11d736d611c9bcc9c57a1d",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "edd45f5959fd79134c9c974f7c0dfeec22e171ca2d11d736d611c9bcc9c57a1d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/ideographic-variation-database.md",
-      "content_sha256": "533e6f69f898492555a343f5acabc07661df0f5b65682be3a99ac7ea0cbf1c7a",
-      "status": "reviewed-retained",
-      "reason": "技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。",
+      "content_sha256": "71925efb6c556689cb5ddfc9ffe8de2b6f45f67449676c88533d97aba2e21678",
+      "status": "reviewed-changed",
+      "reason": "IVDの更新確認・関連ページ接続手順をノートへ移行。仕様・登録・背景資料の違いと読者の入口は本文に残す。",
       "findings": [
         {
           "text": "UTS \\#37 は IVS の適格性、登録手続、データ形式を規定する。base character は `Ideographic` property を持ち、canonical / compatibility decomposition を持たない文字で、VS は U+E0100〜U+E01EF を使う。登録した IVS と glyphic subset の対応は恒久的で、別の subset へ再割当しない。",
@@ -7970,6 +7994,16 @@
           "decision": "retained",
           "reason": "技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。",
           "baseline_line": 61
+        },
+        {
+          "baseline_line": 85,
+          "text": "更新確認では、IVD 公式ページの新 release / submission と、PRI archive の登録結果を照合し、前版との `IVD_Collections.txt` / `IVD_Sequences.txt` 差分を読む。collection page の代表字形・注意事項も確認する。activity report に登録完了が載った場合は、対応する PRI、event、topic まで接続する。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "新release・PRI・正式データの照合とevent/topicの接続という更新作業をノートへ移す。仕様と登録日、背景資料の区別は本文に残す。",
+          "detection_method": "full-text review"
         },
         {
           "text": "[IRG N366](../documents/irg-n366.md)は1996年の1つの warning mark 案であり、[N392](../documents/irg-n392.md)は類似の軸、適用対象、sorting / lexical properties の明確化を求めた。現在の UTS \\#37 Revision 16 §2 は base character と U+E0100–U+E01EF の variation selector による IVS と、登録された glyphic subset を定める。問題設定の比較はできるが、1記号の編集警告を IVS / IVD そのものや直接の前身と断定しない。",
@@ -7982,7 +8016,8 @@
         }
       ],
       "scan_sha256": "533e6f69f898492555a343f5acabc07661df0f5b65682be3a99ac7ea0cbf1c7a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/index.md",
@@ -7996,11 +8031,12 @@
     {
       "path": "topics/indic-script-notation-and-rendering.md",
       "content_sha256": "b44a3b0855d15be817c9daab01ad1829c2ba2d06f1fe941c5b342a0082b8210d",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "b44a3b0855d15be817c9daab01ad1829c2ba2d06f1fe941c5b342a0082b8210d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-disunified-ideographs.md",
@@ -8028,7 +8064,8 @@
         }
       ],
       "scan_sha256": "0395a44d1edc8b87e5395f2f817ba3f3d5eef98ed316ebc5206479d518045679",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-indexing-rules.md",
@@ -8047,16 +8084,18 @@
         }
       ],
       "scan_sha256": "13e7840d7628767904a75f93039e2f49fc983e94b094c401bdb41cd4b87cd790",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-source-data-and-representative-glyphs.md",
       "content_sha256": "31f8a7406df7ec59893bad5e16f4e84a64e170697866c159e003cb6485962f05",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "31f8a7406df7ec59893bad5e16f4e84a64e170697866c159e003cb6485962f05",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-urgently-needed-ideographs.md",
@@ -8093,7 +8132,8 @@
         }
       ],
       "scan_sha256": "d8c9ed407236ccfd719d592c7e8924b7353c60fcdf65a4dc99462eb0723db8a9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-working-process-and-liaison.md",
@@ -8112,16 +8152,18 @@
         }
       ],
       "scan_sha256": "9ca3c8b7a0fb271d86379109312e45ac9ff538e8e3bd646921d4309c073fdacc",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/irg-working-set-2024.md",
       "content_sha256": "5dd699f9a8565682a66709f262224cbc7a29c447c5941645147df37770190eb8",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "5dd699f9a8565682a66709f262224cbc7a29c447c5941645147df37770190eb8",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/iso-10646-edition-and-code-charts.md",
@@ -8149,7 +8191,8 @@
         }
       ],
       "scan_sha256": "0b323e64a69efe5a7c766247606f53be17939bcbc295ad9200f627aad160185c",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/j-source.md",
@@ -8186,14 +8229,25 @@
         }
       ],
       "scan_sha256": "6d8b19af81362560de1074eed1a5fefbafb39fa4f65713bdd94fb43842214801",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/japanese-historical-ideographs.md",
-      "content_sha256": "f9652fb894578821dcee16da669542809694261a70f2ebd1f6c3afbef9ad9bf9",
+      "content_sha256": "a1851981d987a49847e47da73f900923a060fbda286986d103eb45e02c5b0ea9",
       "status": "reviewed-changed",
-      "reason": "候補行と周辺文脈を精査し、編集作業の記述を移行・整理。検証済み。",
+      "reason": "同種提案が増えた場合の分類・追跡方針を近接ノートへ移す。L2/25-274とUAX #45の関係、既存の採択範囲は本文に残す。",
       "findings": [
+        {
+          "baseline_line": 45,
+          "text": "`L2/25-274` の registry subject は UAX \\#45 additions ではないが、未符号化 CJK ideograph を evidence、IDS、reading、stroke data とともに UTC へ提出する点で UAX \\#45 / FutureWS 系の提案と近い。今後、同種の日本古典籍由来文字が増える場合は、UAX \\#45 records へ入るものと、直接符号化提案として扱われるものを分けて追跡する必要がある。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "同種提案が増えた場合の分類・追跡方針を近接ノートへ移す。L2/25-274とUAX #45の関係、既存の採択範囲は本文に残す。",
+          "detection_method": "full-text review"
+        },
         {
           "text": "現行 catalog と UTC \\#187 minutes の範囲では、`L2/25-274` を受け入れた consensus / action item は確認していない。UTC \\#187 で処理された UAX \\#45 FutureWS additions は 2026 年提出の文書群に限られており、この historical ideograph proposal は pending proposal として扱う。",
           "rules": [
@@ -8206,7 +8260,8 @@
         }
       ],
       "scan_sha256": "b969ef6648ceb7fa3b6198cbc7dbdf91841af6d6425c8bac972197a8737fbac0",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/japanese-place-name-ideographs.md",
@@ -8244,7 +8299,8 @@
         }
       ],
       "scan_sha256": "71f304fdf06e9f66de4d4fc0419a1865cf6885a62922b72fb2dd63ba397565f6",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/jmj-horizontal-extension-review-path.md",
@@ -8272,7 +8328,8 @@
         }
       ],
       "scan_sha256": "b759396e19c27cc09193e91faecc0a6a31ab5055e3446fec8b3086988665ce5e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/kana.md",
@@ -8291,16 +8348,18 @@
         }
       ],
       "scan_sha256": "012f3607ef6b73c2f0ededaa50cae045e8ad93c0a9eb3368af61a885d10dc55e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/kirg-sgsource.md",
       "content_sha256": "645910526e2fd67ffa27bc276fd4f95e806417d11e5bdc2193f5aeead3a4c666",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "645910526e2fd67ffa27bc276fd4f95e806417d11e5bdc2193f5aeead3a4c666",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/kore-sebeli-script.md",
@@ -8319,7 +8378,8 @@
         }
       ],
       "scan_sha256": "3446c306de4ea268ef14da49d4e7c20502bf5f035a01b27e1fac8be050e2c676",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/kzvariant.md",
@@ -8338,7 +8398,8 @@
         }
       ],
       "scan_sha256": "c1a30a4937fec68b791fd29bf5466a3f466cc64d1c1d9ad363b8bae4d24cbcc3",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/leibnizian-and-historic-mathematical-symbols.md",
@@ -8375,16 +8436,18 @@
         }
       ],
       "scan_sha256": "11308a7b1c5d2c21d8a961fa38189bc794c5f6da8c73b814ca7690dc24e760cf",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/leke-script.md",
       "content_sha256": "395194c47724a6683ea8fe3f6f3b6b82de9e39f9e9297247abd5ca15668441dd",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "395194c47724a6683ea8fe3f6f3b6b82de9e39f9e9297247abd5ca15668441dd",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/mathematical-text-support.md",
@@ -8412,7 +8475,8 @@
         }
       ],
       "scan_sha256": "2b006f4404ebbcae748128b92816f89151add9025c0cad0fd6cf9c63ca105688",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/maya-hieroglyph-encoding.md",
@@ -8431,7 +8495,8 @@
         }
       ],
       "scan_sha256": "4adb47baaa3153ad31c0c3ad2f479e3b147c9904887b880c2e4dacaa04a5f97e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/nti-script.md",
@@ -8459,16 +8524,18 @@
         }
       ],
       "scan_sha256": "cb051ed9b8470f99268fd818ca63051b5d1bbb1add0c4ae4c3d1f8de469cc62a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/plain-text-composition-and-overstriking.md",
       "content_sha256": "9c161f61c32279f63d56beb5c8c5096a65516f04d72fccf3fa2d13454fdc87a2",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "9c161f61c32279f63d56beb5c8c5096a65516f04d72fccf3fa2d13454fdc87a2",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/script-encoding-pipeline.md",
@@ -8514,31 +8581,45 @@
         }
       ],
       "scan_sha256": "2fcb6781bf295e2dd04b5717a76d7dd8f06b5ba9629e7b939ad3d6bf2c5683a7",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/shaaldaa-script.md",
       "content_sha256": "464c6fad094f46aed24f703cdfe9fbe055f9da72ff98b9b9c85255f1216d5c83",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "464c6fad094f46aed24f703cdfe9fbe055f9da72ff98b9b9c85255f1216d5c83",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/small-seal-script.md",
-      "content_sha256": "fdc3063554c4eb56c9dc0e94811dced9a8a0d30ee18a1238e61b339aeb1865da",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
-      "findings": [],
+      "content_sha256": "60c3084ae8c41691999ff467490228552c837d7cf8471dcd35ca919fc497866a",
+      "status": "reviewed-changed",
+      "reason": "採択を確認できていないという作業状態をノートへ移す。Unicode 18.0の確定データと追加property提案の区別は本文に残す。",
+      "findings": [
+        {
+          "baseline_line": 96,
+          "text": "Unicode 18.0.0 公開後の [L2/26-218](../documents/utc-l2-26-218.md) は、重複 glyph のため current SealSources.txt に記録されない source references を補う provisional property を提案した。採択は確認されておらず、既存の Unicode 18.0 data と proposal を区別する。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "採択を確認できていないという作業状態をノートへ移す。Unicode 18.0の確定データと追加property提案の区別は本文に残す。",
+          "detection_method": "full-text review"
+        }
+      ],
       "scan_sha256": "fdc3063554c4eb56c9dc0e94811dced9a8a0d30ee18a1238e61b339aeb1865da",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/t-source-representative-glyph-issues.md",
-      "content_sha256": "4f8c1c957a294b90227f59acd941ea7dc5443b530a4aa57dccb62659e86de56b",
-      "status": "reviewed-retained",
-      "reason": "記事の対象範囲と関連 topic / event / 文書への読者向け案内。",
+      "content_sha256": "21a30a724041373b9be84260a223da5d75e3b2efd3989483095f74326ae2d102",
+      "status": "reviewed-changed",
+      "reason": "正式なgroup dispositionの確認待ちをノートへ移す。TCAの同意・font提出がgroupの決定とは別である注意を本文に残す。",
       "findings": [
         {
           "text": "このページでは、Ma Shijie の [IRG N2860](../documents/irg-n2860.md)、TCA response の [IRG N2861](../documents/irg-n2861.md)、pending characters を解消した [IRG N2927R](../documents/irg-n2927r.md)、U+3097C の新しい [IRG N2974](../documents/irg-n2974.md) を扱う。親 topic の [IRG Source Data and Representative Glyphs](irg-source-data-and-representative-glyphs.md) は、G / K / T / UK / V / SAT source 全体の update queue を扱う。",
@@ -8548,10 +8629,31 @@
           "decision": "retained",
           "reason": "記事の対象範囲と関連 topic / event / 文書への読者向け案内。",
           "baseline_line": 23
+        },
+        {
+          "baseline_line": 36,
+          "text": "| 2026-09-29 | IRG | [IRG N2975](../documents/irg-n2975.md) | TCA が提案に同意し、更新 glyph を含む font を IRG と WG2 に提出した。正式な group disposition は別途確認する。 |",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "正式なgroup dispositionの確認待ちをノートへ移す。TCAの同意・font提出がgroupの決定とは別である注意を本文に残す。",
+          "detection_method": "full-text review"
+        },
+        {
+          "baseline_line": 54,
+          "text": "[IRG N2974](../documents/irg-n2974.md) は、《龍龕手鑑》と《中華字海》の別版を根拠に、U+3097C（T13-2F35）の T-source glyph を変更するよう求める。[IRG N2975](../documents/irg-n2975.md) で TCA は、米の hook 有無を複数版で確認し、Dictionary of Chinese Character Variants が unhooked form を standard glyph にしたことから変更案に同意した。更新 font は IRG と WG2 に提出済みだが、正式な group disposition はまだ確認できない。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "正式なgroup dispositionの確認待ちをノートへ移す。TCAの同意・font提出がgroupの決定とは別である注意を本文に残す。",
+          "detection_method": "full-text review"
         }
       ],
       "scan_sha256": "4f8c1c957a294b90227f59acd941ea7dc5443b530a4aa57dccb62659e86de56b",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/uax45-u-source-ideographs.md",
@@ -8579,7 +8681,8 @@
         }
       ],
       "scan_sha256": "de9e9baed2e8228b24e01caf874c6603023f687c8e93f6fbfa5bee582f7b158f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/uax60-large-east-asian-scripts.md",
@@ -8607,7 +8710,8 @@
         }
       ],
       "scan_sha256": "07ef13bc85349ed52defefce6606e8cc8417c5f784d4cfa354eee3052b4f2a18",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/ucv-nucv-lists.md",
@@ -8626,7 +8730,8 @@
         }
       ],
       "scan_sha256": "448fbf4661f511fa7e66afa420a16d146e108976f5a1ac34361f8dd4e9d16d04",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unicode-18-change-sources.md",
@@ -8654,7 +8759,8 @@
         }
       ],
       "scan_sha256": "eb70283909f412e490f8f19c52beb7b1a196b823d36a87bf2c3e6233cb319089",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unicode-properties-and-algorithms.md",
@@ -8691,7 +8797,8 @@
         }
       ],
       "scan_sha256": "481be0ff815d2c2db8f0aafb36680eab5c92f5f77dc0e92d65234f49c6f8cc9f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unicode-release-coordination-and-publication.md",
@@ -8737,7 +8844,8 @@
         }
       ],
       "scan_sha256": "ef59b992a6176ce87441fec88e0d2b1cfbaf105371afa1794cc52a80595a0003",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unicode-set-notation.md",
@@ -8765,7 +8873,8 @@
         }
       ],
       "scan_sha256": "ded7ae783ed986a23b74cf8e8d7a3f592fe2951a3e8582b9c69aae72eb49b1d4",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unihan-data-format-and-property-syntax.md",
@@ -8793,7 +8902,8 @@
         }
       ],
       "scan_sha256": "6a50947d60b667de52464bfc8df7d02ddc1af2fb89b57237ca70d169c559ffe7",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/unihan-database-maintenance.md",
@@ -8839,7 +8949,8 @@
         }
       ],
       "scan_sha256": "aa710e8ccb5081661523550ed6d057b3057bcf25a8e33b66c85d18312d61903d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "topics/v-source-representative-glyph-issues.md",
@@ -8867,12 +8978,13 @@
         }
       ],
       "scan_sha256": "b6b811b8e79d739e6216b9d30c18b4a6a7f84870347da5e37cbbd1a0c45be3e8",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     }
   ],
   "validation": {
     "status": "passed",
-    "unit_tests": 82,
+    "unit_tests": 85,
     "checks": [
       "check_catalog",
       "check_okf",
@@ -8881,19 +8993,21 @@
       "generate_document_index --check",
       "generate_event_indexes --check",
       "全633ページの台帳・SHA-256と基準コミットの候補行の照合",
-      "既存73ノートの保持・ノート位置情報・移行後の空の節なし"
+      "既存151ノートの保持・追加5ノートの位置情報・移行後の空の節なし"
     ],
     "notes_before": 73,
-    "notes_after": 151,
-    "review_tool_tests": 9,
+    "notes_after": 156,
+    "review_tool_tests": 12,
     "review_tool_checks": [
       "stale file / ledger rejection",
       "preview integrity",
       "bounded complete-page output",
       "exact paragraph reuse",
       "section context and source annotation retention",
-      "atomic code examples"
-    ]
+      "atomic code examples",
+      "deferred-page exclusion, invalid selection rejection, and all-deferred no-write"
+    ],
+    "notes_preserved_from_previous_commit": 151
   },
   "full_text_review_scope": "記事本文全体の編集記述混入を確認する。外部資料や公開状態の再調査とは別の作業。",
   "review_batches": [
@@ -8909,6 +9023,24 @@
       },
       "new_editorial_notes": 0,
       "method": "bounded full-page packets; exact reviewed paragraphs reused; snapshot checked before recording"
+    },
+    {
+      "date": "2026-11-02",
+      "baseline_commit": "1745da7701f4418a73bae4c1d233a1b6d62485c7",
+      "additional_full_text_reviews": 50,
+      "directories": {
+        "topics": 50
+      },
+      "new_editorial_notes": 5,
+      "changed_pages": [
+        "topics/early-irg-history.md",
+        "topics/ideographic-variation-database.md",
+        "topics/japanese-historical-ideographs.md",
+        "topics/small-seal-script.md",
+        "topics/t-source-representative-glyph-issues.md"
+      ],
+      "additional_findings": 6,
+      "method": "bounded full-page packets; exact reviewed paragraphs reused; pages needing edits deferred and re-reviewed after migration; snapshot checked before recording"
     }
   ]
 }

@@ -116,7 +116,7 @@ def prepare_packet(data: dict, ledger_path: Path, bundle: Path, directory: str,
     return text, receipt
 
 
-def record_packet(ledger_path: Path, receipt: dict, bundle: Path) -> dict:
+def record_packet(ledger_path: Path, receipt: dict, bundle: Path, defer: set[str] | None = None) -> dict:
     if receipt.get("version") != 1 or receipt.get("complete") is not True or not receipt.get("pages"):
         raise ValueError("receipt is not a complete, nonempty review packet")
     if digest(ledger_path) != receipt.get("ledger_sha256"):
@@ -125,6 +125,12 @@ def record_packet(ledger_path: Path, receipt: dict, bundle: Path) -> dict:
     _text, expected = prepare_packet(data, ledger_path, bundle, receipt["directory"], receipt["max_chars"])
     if expected != receipt:
         raise ValueError("receipt differs from the complete preview; prepare a new packet")
+    deferred = defer or set()
+    selected_paths = {row["path"] for row in receipt["pages"]}
+    if not deferred <= selected_paths:
+        raise ValueError("deferred pages must belong to the displayed packet")
+    if deferred == selected_paths:
+        raise ValueError("all pages were deferred; no reviews recorded")
     index = {item["path"]: item for item in data["files"]}
     seen = set()
     for row in receipt["pages"]:
@@ -135,6 +141,8 @@ def record_packet(ledger_path: Path, receipt: dict, bundle: Path) -> dict:
             raise ValueError(f"{row['path']}: content changed after preview")
         seen.add(row["path"])
     for row in receipt["pages"]:
+        if row["path"] in deferred:
+            continue
         item = index[row["path"]]
         item["full_text_review"] = "reviewed"
         item["full_text_review_method"] = (
@@ -193,6 +201,7 @@ def main() -> int:
     packet.add_argument("--receipt", type=Path, required=True)
     record = sub.add_parser("record")
     record.add_argument("receipt", type=Path)
+    record.add_argument("--defer", action="append", default=[], help="Leave a displayed page pending when it needs edits.")
     args = parser.parse_args()
     try:
         data = load_ledger(LEDGER, WIKI)
@@ -211,9 +220,9 @@ def main() -> int:
             print(f"\nDisplayed {len(receipt['pages'])} complete pages; record only after reviewing this output.")
         else:
             receipt = json.loads(args.receipt.read_text(encoding="utf-8"))
-            data = record_packet(LEDGER, receipt, WIKI)
+            data = record_packet(LEDGER, receipt, WIKI, set(args.defer))
             refresh_report(data, REPORT)
-            print(f"Recorded {len(receipt['pages'])} full-text reviews.")
+            print(f"Recorded {len(receipt['pages']) - len(set(args.defer))} full-text reviews.")
     except (OSError, ValueError, KeyError) as error:
         parser.exit(1, f"error: {error}\n")
     return 0

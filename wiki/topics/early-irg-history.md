@@ -69,7 +69,9 @@ IRG 以前の CJK-JRG の作業は N034 が参照するが、本ページはそ�
 | 編集時の類似警告と登録済み字形指定 | [N366](../documents/irg-n366.md)の Variation Mark | 現在の [IVD](ideographic-variation-database.md)は base character と variation selector の組合せを登録して glyphic subset を定める。古い1記号案との同一性・直接の継承関係は確認していない。 |
 | repertoire と配置・発行の段階 | [WG2 第31回の Extension A 処理](../events/wg2-31-extension-a-repertoire-and-bmp-consultation.md) | 現在の Working Set review、WG2 送付、版への取り込みを分ける読み方につながる。1996年の6,585字を後年の最終 block 件数に使わない。 |
 
-[第4回の三役兼任禁止の撤回](../events/irg-4-officer-role-restriction-withdrawal.md)により、N034 項目3c の当該一文を後年にも有効な規則として扱えないことも確認できる。過去ページの記述は当時のまま残し、後続変更へリンクする。
+[第4回の三役兼任禁止の撤回](../events/irg-4-officer-role-restriction-withdrawal.md)により、N034 項目3c の当該一文を後年にも有効な規則として扱えないことも確認できる。
+
+<!-- editorial: 過去ページの記述は当時のまま残し、後続変更へリンクする。 -->
 
 N259 の13記号案、N313 の13機能表、N365 の12構造記号、N366 の1記号案は、単なる改称ではなく提案の分割・意味の整理として読む。現在の code positions や文字特性を当時の proposal から推定しない。
 
