@@ -36,13 +36,17 @@ UTC \#189 は2026-10-26〜28、Nancy, France と online の hybrid meeting を�
 
 ## 決定事項
 
-2026-10-25 時点で会合前のため、UTC \#189 の決定はまだ記録しない。WG reports の Consensus / Action Item 文案や SEW-189 番号を、UTC の numbered decisions と混同しない。
+WG reports の Consensus / Action Item 文案や SEW-189 番号は、UTC の numbered decisions とは異なる。
+
+<!-- editorial:
+2026-10-25 の編集時点では会合前のため、UTC \#189 の決定をまだ記録していない。
+L2/26-232 minutes は当時の catalog で unposted。公開 URL を再確認し、勧告から採択・変更・保留になった箇所を照合する。
+Unicode 19.0 scope と日程の承認、script provisional assignments、CJK / property changes、emoji 5候補の採否を追う。
+[PRI 集約一覧](../../documents/utc-l2-26-234.md) の review と、会合後の resolved status / 確定仕様を別々に確認する。
+-->
 
 ## 後続確認
 
-- L2/26-232 minutes の公開後に、勧告から採択・変更・保留になった箇所を確認する。現時点の catalog は unposted。
-- Unicode 19.0 scope と日程の承認、script provisional assignments、CJK / property changes、emoji 5候補の採否を追う。
-- [PRI 集約一覧](../../documents/utc-l2-26-234.md) の review と、会合後の resolved status / 確定仕様を別々に確認する。
 - [Recently Closed Action Items](../../documents/utc-l2-26-233.md) は前会合等の作業完了記録として参照する。
 
 ## 出典

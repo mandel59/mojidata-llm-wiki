@@ -37,9 +37,7 @@ tags: ["meeting", "history", "wg2"]
 
 N391 M31.9 は IS/HS を pDAM / ballot 準備へ進める。[Extension A](../../events/wg2-31-extension-a-repertoire-and-bmp-consultation.md)と [構成関連4案](../../events/wg2-31-ideographic-description-refinement.md)の disposition を参照。M31.14 は Part 2 の project subdivision を SC 2 に求めた。
 
-## 後続確認
-
-[N394R](../../documents/irg-n394r.md)の改訂 action plan 案を経て、N392 の質問への回答候補は catalog の `irg-n436`。このページで回答内容を補わない。
+<!-- editorial: [N394R](../../documents/irg-n394r.md)の改訂 action plan 案を経て、N392 の質問への回答候補は catalog の `irg-n436`。本文を精読するまで、このページで回答内容を補わない。 -->
 
 ## 出典
 

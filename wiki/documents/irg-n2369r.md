@@ -27,11 +27,13 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 文書は、URO、Extensions A-F などの blocks にまたがる encoded ideographs について、block、IRG U-source、UAX \#45 glyph、UCS glyph、code point の表を提示する。これは新規符号化 proposal ではなく、既存 code points に source data を追加する horizontal extension である。
 
-## 後続決定
+## 後続提案
 
-現行 catalog と既存 cache では、`IRG N2369R` そのものの採否を示す meeting decision はまだ確認していない。一方で、同じ型の後続提案として 2026 年の [L2/26-147](utc-l2-26-147.md) / `IRG N2961` があり、既符号化文字へ `kIRG_USource` values と U-source representative glyphs を追加する horizontal extension は継続している。
+<!-- editorial: 現行 catalog と既存 cache では、`IRG N2369R` そのものの採否を示す meeting decision はまだ確認していない。 -->
 
-したがって、このページでは `IRG N2369R` を「採択済み event 不明」ではなく、2019 年時点の horizontal extension proposal として扱い、確定した後続処理は `L2/26-147` など個別の後続文書・meeting で追う。
+同じ型の後続提案として 2026 年の [L2/26-147](utc-l2-26-147.md) / `IRG N2961` があり、既符号化文字へ `kIRG_USource` values と U-source representative glyphs を追加する horizontal extension は継続している。
+
+<!-- editorial: したがって、このページでは `IRG N2369R` を「採択済み event 不明」ではなく、2019 年時点の horizontal extension proposal として扱い、確定した後続処理は `L2/26-147` など個別の後続文書・meeting で追う。 -->
 
 ## 論点
 

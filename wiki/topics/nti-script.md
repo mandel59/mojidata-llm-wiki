@@ -20,7 +20,9 @@ events: [sew-189-script-provisional-assignment-recommendations]
 
 N'ti / Nti は Soninke 用の left-to-right joining alphabet を Unicode に追加する proposal chain である。2023 年の African scripts usage survey で unencoded script として記録され、2026 年に preliminary proposal `L2/26-028R`、revised proposal `L2/26-087` が提出された。
 
-この topic の中心論点は、community usage evidence と repertoire だけでなく、word 内で letters が join / fuse する LTR script を Unicode の `Joining_Type` と shaping model へどう接続するかである。2026-07-09 時点の local catalog では、採択決定は未確認である。
+この topic の中心論点は、community usage evidence と repertoire だけでなく、word 内で letters が join / fuse する LTR script を Unicode の `Joining_Type` と shaping model へどう接続するかである。
+
+<!-- editorial: 2026-07-09 時点の local catalog では、採択決定は未確認である。 -->
 
 ## 経緯
 

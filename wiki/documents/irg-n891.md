@@ -22,7 +22,9 @@ timestamp: 2026-07-09T00:00:00+09:00
 
 `IRG N891` は、China が 2002 年に提出した CJK Extension C1 candidate list である。Kangxi radical / stroke、first sequence、source identifier、128x128 font glyph を並べる一覧型の submission で、個別文字の後続判断では original submission record として参照される。
 
-PDF text extraction では glyph 部分の確認に限界があるが、`zjw00932` は radical 宀、13 strokes の entry として現れ、後続の U+2CCA3 / `GZFY-00932` 論点で source history の一部として扱われる。
+<!-- editorial: PDF text extraction では glyph 部分の確認に限界がある。glyph の確認には原文図版を使う。 -->
+
+`zjw00932` は radical 宀、13 strokes の entry として現れ、後続の U+2CCA3 / `GZFY-00932` 論点で source history の一部として扱われる。
 
 ## データ内容
 

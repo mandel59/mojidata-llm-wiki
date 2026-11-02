@@ -9,7 +9,7 @@ document_type: notice
 registry: irg
 date: "2026-04-02"
 source: Ken Lunde, IRG Convenor
-documents: [irg-n2914r, irg-n2935]
+documents: [irg-n2914r, irg-n2935, irg-n2946]
 topics: [irg-working-set-2024]
 people: [ken-lunde, japan, sat, irg]
 meetings: [irg-meeting-67]
@@ -43,7 +43,7 @@ timestamp: 2026-07-20T00:00:00+09:00
 
 [IRG N2935](irg-n2935.md) の 2026-07-05 update は、Friday 2026-10-16 を `NO MEETING` とし、実質的な sessions を 10月12–15日に置いている。したがって First Call の meeting range `2026-10-12/16` は event identifier / 当初告知として保ち、current daily schedule は N2935 を優先する。
 
-Meeting \#67 recommendations 用の register row は予約されているが、2026-07-20 の取得では PDF URL が HTTP 404 を返した。First Call と agenda は会合開催や決定を意味せず、recommendations は実体公開後に別途 digest する。
+First Call と agenda は会合開催や決定を意味しない。会合結果は [IRG N2946](irg-n2946.md) を参照する。
 
 ## 論点
 
