@@ -9,7 +9,7 @@
     "取得記録": "local catalog|既存 cache|現行 catalog|再取得|HTTP\\s*\\d|取得でき|取得失敗|未取得|未公開|公開待ち|未掲載|unposted|text extraction|extracted text|抽出.*(?:失敗|崩|限界)",
     "作業予定": "ページ化|event\\s*化|別途.*digest|分離.*(?:予定|必要)|今後.*(?:調査|確認|精読|追う)|後続.*(?:確認する|追う)|会合後.*確認|まだ.*(?:整理|作成)|本文を.*(?:補わない|推定)|alias として|aliases|canonical",
     "補足検索": "精読|本文を読|確認した|取得した|この要約|要約していない|後続確認|(?:別|独立).*(?:ページ|topic|event).*(?:分割|分離)|cache|digest|採否.*確認",
-    "全文精査追加": "過去ページ.*リンクする|更新確認では、IVD|今後、同種の日本古典籍|採択は確認されておらず|正式な group disposition は|wiki では個々の主張|umbrella policy に残す|wiki では、|wiki でも同一|disposition はまだ確認できない|取得時点では registry URL が 404|会合後は.*状態を更新|採否は未決|正式採択はまだ確認できない|正式な disposition は|pending follow-up|両方から辿れるようにする"
+    "全文精査追加": "過去ページ.*リンクする|更新確認では、IVD|今後、同種の日本古典籍|採択は確認されておらず|正式な group disposition は|wiki では個々の主張|umbrella policy に残す|wiki では、|wiki でも同一|disposition はまだ確認できない|取得時点では registry URL が 404|会合後は.*状態を更新|採否は未決|正式採択はまだ確認できない|正式な disposition は|pending follow-up|両方から辿れるようにする|proposal page では後続決定を|publication を確認する必要|final list を別表として残す"
   },
   "files": [
     {
@@ -3203,65 +3203,72 @@
     {
       "path": "documents/utc-l2-07-159.md",
       "content_sha256": "4a18aa247e526b76ccf129c591fd3388a2ab6afb8532eb8014ed8f5aeaf77f7f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "4a18aa247e526b76ccf129c591fd3388a2ab6afb8532eb8014ed8f5aeaf77f7f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-07-160.md",
       "content_sha256": "e6bd21f9eb85a9859871688c0252aa8d5433b37bcb7b193443daa4cf73d06590",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "e6bd21f9eb85a9859871688c0252aa8d5433b37bcb7b193443daa4cf73d06590",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-07-421.md",
       "content_sha256": "f55e1c8aa05b6c87d530578a770d4a497ff827919ffc80ec229a0fc772e4b36e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "f55e1c8aa05b6c87d530578a770d4a497ff827919ffc80ec229a0fc772e4b36e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-08-117.md",
       "content_sha256": "78488a57799be34154f956d6e54eb3a16de9bd77fa1722a938a7785aa4796935",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "78488a57799be34154f956d6e54eb3a16de9bd77fa1722a938a7785aa4796935",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-08-284.md",
       "content_sha256": "a88dfdce541861d91b089ff1dd450fd475593ce5b6c831ac7d008250ca670a3e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "a88dfdce541861d91b089ff1dd450fd475593ce5b6c831ac7d008250ca670a3e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-08-358.md",
       "content_sha256": "98313db85ae0e02eb7b26066deda31046a282a3daec603388599132f3b1f9165",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "98313db85ae0e02eb7b26066deda31046a282a3daec603388599132f3b1f9165",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-09-062.md",
       "content_sha256": "5ded6213d6f29063598951c61802ee8649ae491aa7104aa4b74d4df43ccf4ce9",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "5ded6213d6f29063598951c61802ee8649ae491aa7104aa4b74d4df43ccf4ce9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-10-198.md",
@@ -3280,106 +3287,118 @@
         }
       ],
       "scan_sha256": "8e2020f9d880d3d2938b04b2e2d978059a342d771da886e9e4925f05aa415f4f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-11-439.md",
       "content_sha256": "18539ec236dd3866b603ea716bda9217475f62b0468ed58b2f65dde433124217",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "18539ec236dd3866b603ea716bda9217475f62b0468ed58b2f65dde433124217",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-13-116.md",
       "content_sha256": "eae26dc550d7f4613da65c802fc30a4cff84204e6478c4147fe6c22474bf200a",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "eae26dc550d7f4613da65c802fc30a4cff84204e6478c4147fe6c22474bf200a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-15-239.md",
       "content_sha256": "3de058407c477b58c93a756f801019a1cbfcc14b9e91eead30d9806329db2f22",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "3de058407c477b58c93a756f801019a1cbfcc14b9e91eead30d9806329db2f22",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-15-266.md",
       "content_sha256": "a5e82cb4306f488faf9b01a54520ae9f98f6e9bb5b33b8afcd1838d890dcd7e5",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "a5e82cb4306f488faf9b01a54520ae9f98f6e9bb5b33b8afcd1838d890dcd7e5",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-15-343.md",
       "content_sha256": "c8c5df07e83df2de39aa642961739dd282d1cba56591abe13d8c1ffc13e24a95",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "c8c5df07e83df2de39aa642961739dd282d1cba56591abe13d8c1ffc13e24a95",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-16-188.md",
       "content_sha256": "283edae060e6ee5148f51ead75a9a6fbd93d53aa31b751bdc9d3dd0672593e8f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "283edae060e6ee5148f51ead75a9a6fbd93d53aa31b751bdc9d3dd0672593e8f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-16-334.md",
       "content_sha256": "3bd84cdc79eb331e2cff9a7050220a71dc51a32a4a4dbf7181f6fe1701ebbb1d",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "3bd84cdc79eb331e2cff9a7050220a71dc51a32a4a4dbf7181f6fe1701ebbb1d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-16-354.md",
       "content_sha256": "26b4e75ce87eca30bb03b3c533de66b237a28ecf29d3250efce8a305abceef80",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "26b4e75ce87eca30bb03b3c533de66b237a28ecf29d3250efce8a305abceef80",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-16-358r.md",
       "content_sha256": "ca2156e7de77de291d1b803eca1a716b60d2e9eea836311e7d6694983dd95177",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "ca2156e7de77de291d1b803eca1a716b60d2e9eea836311e7d6694983dd95177",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-17-014.md",
       "content_sha256": "7dfc9ba2bc7a87678c2f4bea9f19279770cd93aa8d3a1ce3e2f09938cd33c029",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "7dfc9ba2bc7a87678c2f4bea9f19279770cd93aa8d3a1ce3e2f09938cd33c029",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-17-091.md",
       "content_sha256": "560927dbad74d1a23e9961023610325bd7c22052a8baba9fe9e22834374cd77e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "560927dbad74d1a23e9961023610325bd7c22052a8baba9fe9e22834374cd77e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-015.md",
@@ -3398,34 +3417,38 @@
         }
       ],
       "scan_sha256": "2209778ba4995b7a51b2102923a00865affffb6475bf409010bdd4e3d9419cce",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-186.md",
       "content_sha256": "78006bf5dcf10d83235f00b0f66684cf2c635a61ba75efa8e5673c254149cf38",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "78006bf5dcf10d83235f00b0f66684cf2c635a61ba75efa8e5673c254149cf38",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-281.md",
       "content_sha256": "a37d3aff879ea2f020c73d3b8f833612e81ed9f7e7fd0c420bbea46697d36a79",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "a37d3aff879ea2f020c73d3b8f833612e81ed9f7e7fd0c420bbea46697d36a79",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-282.md",
       "content_sha256": "f470071668c9f7da83aa38d7f5544c609405bc69e57823976ef733394e2b8464",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "f470071668c9f7da83aa38d7f5544c609405bc69e57823976ef733394e2b8464",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-328.md",
@@ -3444,34 +3467,38 @@
         }
       ],
       "scan_sha256": "be00a1f603672e423f853aba862d951bdba4a3577a753cf5f386e6fe9d5a1df4",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-381.md",
       "content_sha256": "91b826d8660f7b976afa67838de1f0e7e63d94f167184188487bf734dd7408e2",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "91b826d8660f7b976afa67838de1f0e7e63d94f167184188487bf734dd7408e2",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-19-382.md",
       "content_sha256": "6cc066e4b554f645780c01a1f21ad46418ea4a2f9ea41f85b46eb14d8cce54a7",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "6cc066e4b554f645780c01a1f21ad46418ea4a2f9ea41f85b46eb14d8cce54a7",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-20-152.md",
       "content_sha256": "3f5f65658ce548ac5b91d70beacbe1ff69b167349b31a0b0474cffceacb2ce72",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "3f5f65658ce548ac5b91d70beacbe1ff69b167349b31a0b0474cffceacb2ce72",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-20-180.md",
@@ -3490,7 +3517,8 @@
         }
       ],
       "scan_sha256": "f831f89df18f575bae23811eda03e3cc776ecedd745bdd7f832c8ca5c759390d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-20-209r.md",
@@ -3509,124 +3537,138 @@
         }
       ],
       "scan_sha256": "9a23d4140b41f57daf2a814d993b5a4542d1a2275a47142699b552039b6c0a7a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-20-233.md",
       "content_sha256": "c12540a5c3c5bb4057ea0cb80e039e63ef84320b84a1087e3b6debc9c2491821",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "c12540a5c3c5bb4057ea0cb80e039e63ef84320b84a1087e3b6debc9c2491821",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-20-280.md",
       "content_sha256": "5d9165c3baf66ae3edf944a586e92ede403527097483b8e96d280af8f6317c89",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "5d9165c3baf66ae3edf944a586e92ede403527097483b8e96d280af8f6317c89",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-21-134.md",
       "content_sha256": "bceba028e97a8f5ad1feb16259eb8fb954bc833a7247ae9176a8c8acdff0c3e3",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "bceba028e97a8f5ad1feb16259eb8fb954bc833a7247ae9176a8c8acdff0c3e3",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-21-209.md",
       "content_sha256": "fa8c16b850095c0ff66eeb6113ea00b4777f90ee518013639eceeb089973f564",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "fa8c16b850095c0ff66eeb6113ea00b4777f90ee518013639eceeb089973f564",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-073.md",
       "content_sha256": "720ba340d680295e9b5bd8c843603d54611c7ed44258aca8d863d8ddeb3ef7df",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "720ba340d680295e9b5bd8c843603d54611c7ed44258aca8d863d8ddeb3ef7df",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-133.md",
       "content_sha256": "0aa7159896cc5c15a9a0fa6ac7eb9f9d4e024a301315dae74be13a108837effa",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "0aa7159896cc5c15a9a0fa6ac7eb9f9d4e024a301315dae74be13a108837effa",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-181.md",
       "content_sha256": "04c902b8939462170c767abcf6c494b29df2d4b8833434fa9e1b0f672868ec7b",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "04c902b8939462170c767abcf6c494b29df2d4b8833434fa9e1b0f672868ec7b",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-185.md",
       "content_sha256": "fcbc48ddbba3d740f63f9715a5e1a4e2d1fc77f2d307f9a127bfea6e3e5e7ab2",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "fcbc48ddbba3d740f63f9715a5e1a4e2d1fc77f2d307f9a127bfea6e3e5e7ab2",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-222.md",
       "content_sha256": "837f51c180a88d671bd319b11fa053362b371a2748e84c625645380103c8e7ee",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "837f51c180a88d671bd319b11fa053362b371a2748e84c625645380103c8e7ee",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-22-279.md",
       "content_sha256": "db59058558bf70e670fe2e026701527b178980b5224e56214d82014bcd37b370",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "db59058558bf70e670fe2e026701527b178980b5224e56214d82014bcd37b370",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-23-112.md",
       "content_sha256": "0fb75533fa0f9c1c090f5b87016696fee31274725d9fc3155191e35f85ca6afb",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "0fb75533fa0f9c1c090f5b87016696fee31274725d9fc3155191e35f85ca6afb",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-23-118.md",
       "content_sha256": "8483857ba3747d6d52da901a0a8b552f717a996058effa42e102b48a8ca848ff",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "8483857ba3747d6d52da901a0a8b552f717a996058effa42e102b48a8ca848ff",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-23-123.md",
       "content_sha256": "ab9dcae76902d1f9eb618c5f471fc286ed9e56b487a5ef909ef0d04cbafdd0f4",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "ab9dcae76902d1f9eb618c5f471fc286ed9e56b487a5ef909ef0d04cbafdd0f4",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-23-127.md",
@@ -3654,61 +3696,68 @@
         }
       ],
       "scan_sha256": "961e33a25f68ab4c69881a752b83d04b9d6ecb6c02b93f8ed2eb2490eacd6abd",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-23-203.md",
       "content_sha256": "a8dd8b703e75fa8fd2ccced1850c9b34e80bc47352cbdb2b4d6a2ba63e0ec6ea",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "a8dd8b703e75fa8fd2ccced1850c9b34e80bc47352cbdb2b4d6a2ba63e0ec6ea",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-012.md",
       "content_sha256": "4a31fc1b8e9d32a13239807b2552c3a04e6c559b04aa5568577d047ea7030d2f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "4a31fc1b8e9d32a13239807b2552c3a04e6c559b04aa5568577d047ea7030d2f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-067.md",
       "content_sha256": "06290fcb81cf29f739bb8c74d3145ea02758cca3e53fb1f4bda289f7e9537e1e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "06290fcb81cf29f739bb8c74d3145ea02758cca3e53fb1f4bda289f7e9537e1e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-109.md",
       "content_sha256": "b245bd4fb1dcb136bdd4b3ef86d5cbaf2aed6b8ff507b01770a3cac4e85504be",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "b245bd4fb1dcb136bdd4b3ef86d5cbaf2aed6b8ff507b01770a3cac4e85504be",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-150.md",
       "content_sha256": "68a1242c6614b08c080a3a7bc01bec60043835ec435f78dce95763a3adf3779e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "68a1242c6614b08c080a3a7bc01bec60043835ec435f78dce95763a3adf3779e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-165.md",
       "content_sha256": "37099fc47a3c993ff8729a3240634b87a11889260f5a78b4b57f27eada3f009a",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "37099fc47a3c993ff8729a3240634b87a11889260f5a78b4b57f27eada3f009a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-246.md",
@@ -3727,124 +3776,149 @@
         }
       ],
       "scan_sha256": "982deb0ff6ee6c2f69153ba29f21f064dc930c65e570fb9e9b4c6d43aac7c97a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-273.md",
       "content_sha256": "78ad0833641d7424bbad6cc6e181624f0318fe7db9d2a4602e111f2fbb1ff370",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "78ad0833641d7424bbad6cc6e181624f0318fe7db9d2a4602e111f2fbb1ff370",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-24-279.md",
       "content_sha256": "78a906bbd3c718434c614a70d158e990c555e061ae6e867ac1800595695966ca",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "78a906bbd3c718434c614a70d158e990c555e061ae6e867ac1800595695966ca",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-031.md",
       "content_sha256": "076db77d5bf713fa20888d12d090a7d90089cbef2d760c199ecea4a8c7cabc4b",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "076db77d5bf713fa20888d12d090a7d90089cbef2d760c199ecea4a8c7cabc4b",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-035.md",
       "content_sha256": "0c0e85f8323baf5c0097537c9284549fda95ab637ae2e25bcab780992472c0b5",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "0c0e85f8323baf5c0097537c9284549fda95ab637ae2e25bcab780992472c0b5",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-036.md",
       "content_sha256": "414b8c45599e259fd329ec5d69f255edce6c4a5128a3e5bea7d93191028a53da",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "414b8c45599e259fd329ec5d69f255edce6c4a5128a3e5bea7d93191028a53da",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-042.md",
       "content_sha256": "e46804853ed465441dc594612c143a4575aea951d476aec0cd995a46c58b742f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "e46804853ed465441dc594612c143a4575aea951d476aec0cd995a46c58b742f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-053.md",
       "content_sha256": "6df690832e5e11acdb8bf076b24a61c683b89d284f95f82c04b4920b790af621",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "6df690832e5e11acdb8bf076b24a61c683b89d284f95f82c04b4920b790af621",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-060.md",
       "content_sha256": "f7f09b07fd4031cd41e43f153590d95318faebeb06b41b0363002f70dbdba0b9",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "f7f09b07fd4031cd41e43f153590d95318faebeb06b41b0363002f70dbdba0b9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-100.md",
       "content_sha256": "ee28cfda1947956adaad917681982ec212b042ad2b26cead4d1e234e478c7621",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "ee28cfda1947956adaad917681982ec212b042ad2b26cead4d1e234e478c7621",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-131.md",
-      "content_sha256": "a25e99fb308ad8ca64b7bd4f019a60b57585fa1ed4b882da56052ef2ac0bf68f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
-      "findings": [],
+      "content_sha256": "34793073b493b9ae9b47955440f77713dc6a11438af2269eba5a18450f5054ed",
+      "status": "reviewed-changed",
+      "reason": "後続決定をSEW report側へ分離する編集指示を近接ノートへ移す。個別記号の勧告と7文字全体の採択の違い、既存reportへの案内は本文に残す。",
+      "findings": [
+        {
+          "baseline_line": 45,
+          "text": "[L2/26-100](utc-l2-26-100.md) は UTC \\#187 の Script Encoding WG recommendations として、Alchemical Symbol Retort-2 を進め、crossbar annotation を付ける方向を示した。この文書全体の 7 文字すべてが同じ時点で accepted になったわけではないため、proposal page では後続決定を SEW report 側へ分離する。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "後続決定をSEW report側へ分離する編集指示を近接ノートへ移す。個別記号の勧告と7文字全体の採択の違い、既存reportへの案内は本文に残す。",
+          "detection_method": "full-text review"
+        }
+      ],
       "scan_sha256": "a25e99fb308ad8ca64b7bd4f019a60b57585fa1ed4b882da56052ef2ac0bf68f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-151r.md",
       "content_sha256": "58a2004a39be3730f5d155061bc630aa05cb674ab815e464f5756abe5c17ed52",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "58a2004a39be3730f5d155061bc630aa05cb674ab815e464f5756abe5c17ed52",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-199.md",
       "content_sha256": "116bd0dc6b1f38c2a824ac466db6d64aee262324532aa738b06dd28bb3075593",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "116bd0dc6b1f38c2a824ac466db6d64aee262324532aa738b06dd28bb3075593",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-213.md",
       "content_sha256": "328633750aef0214a9f0ad3b374c43e5e6fa0b820ce64f8bd763f7676ef1cd39",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "328633750aef0214a9f0ad3b374c43e5e6fa0b820ce64f8bd763f7676ef1cd39",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-220.md",
@@ -3872,16 +3946,18 @@
         }
       ],
       "scan_sha256": "a145b4b85cf30f40237feaa12b9e8d69e7b72eec7b14b2ef28558e74575c9049",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-221.md",
       "content_sha256": "c52bb9bd34f5f2f90d33b497870c1c54e410f5467a3bf4498814cb722d87c3ab",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "c52bb9bd34f5f2f90d33b497870c1c54e410f5467a3bf4498814cb722d87c3ab",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-230r.md",
@@ -3900,160 +3976,200 @@
         }
       ],
       "scan_sha256": "4d363be6e1060cf7e57817d72379919840d458fd553a271fb5dd993a8e9fe977",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-252.md",
       "content_sha256": "8ade95c59ab29d782867c4924fa414c516117a2734b64a47ee437fae6b940e77",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "8ade95c59ab29d782867c4924fa414c516117a2734b64a47ee437fae6b940e77",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-253.md",
       "content_sha256": "dcea312fadabe3a43dd66b2e9ef8e94bc0acc95291195a6bf03215b06c1a2848",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "dcea312fadabe3a43dd66b2e9ef8e94bc0acc95291195a6bf03215b06c1a2848",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-254.md",
       "content_sha256": "139b1c78835b8388f05be6700d55733d89c6fe0b566f1a7279a78ac9d0e4fb8f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "139b1c78835b8388f05be6700d55733d89c6fe0b566f1a7279a78ac9d0e4fb8f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-255.md",
       "content_sha256": "b48b1614517d91f0bf23f1cd78cdbeb80ccedab0735161c73853d830cc3747bf",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "b48b1614517d91f0bf23f1cd78cdbeb80ccedab0735161c73853d830cc3747bf",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-256.md",
       "content_sha256": "f7fa690bf46bac61b7985e231b42f76d1fd4499a2f832d2a09c438f115fef720",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "f7fa690bf46bac61b7985e231b42f76d1fd4499a2f832d2a09c438f115fef720",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-257.md",
       "content_sha256": "a3a0384faa7fb6866400fb3277f4ba8b500e6a448de224b6f2a7d1838ecaec40",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "a3a0384faa7fb6866400fb3277f4ba8b500e6a448de224b6f2a7d1838ecaec40",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-258.md",
       "content_sha256": "80f5c7499775c325e902901bcdf31dca0556351d8c64d46547810b0fbff9d51e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "80f5c7499775c325e902901bcdf31dca0556351d8c64d46547810b0fbff9d51e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-259.md",
       "content_sha256": "283b744160394c1ab56340805014ab7d7eda003d321d50ef62b88b7bb0ef292e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "283b744160394c1ab56340805014ab7d7eda003d321d50ef62b88b7bb0ef292e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-267.md",
-      "content_sha256": "6d28c208341345415cdeb59fe70ab634c3827e47ad6ac3a8ac233a6b31c96a36",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
-      "findings": [],
+      "content_sha256": "281a5dfdf5353fe56ef82e8b3150fd918b9c930183c6e0d3e54593d720247121",
+      "status": "reviewed-changed",
+      "reason": "UTC #188の処理・最終UTR・data filesの確認予定とcatalogの観測記録を近接ノートへ移す。日付付きのPRI公開表示、draft自身が予告する内容更新と解釈限界は本文に残す。",
+      "findings": [
+        {
+          "baseline_line": 47,
+          "text": "`L2/25-267` は `PRI #533` の review 対象であり、2026-07-10 時点では PRI page / catalog が Open のままである。UTC \\#188 の feedback handling、最終 UTR \\#25 Revision 16、math data files の publication を確認する必要がある。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "UTC #188の処理・最終UTR・data filesの確認予定とcatalogの観測記録を近接ノートへ移す。日付付きのPRI公開表示、draft自身が予告する内容更新と解釈限界は本文に残す。",
+          "detection_method": "full-text review"
+        }
+      ],
       "scan_sha256": "6d28c208341345415cdeb59fe70ab634c3827e47ad6ac3a8ac233a6b31c96a36",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-25-274.md",
       "content_sha256": "69003a9911cf84172168a33c5c12861cfb13346ab32b62c536d5c485103aaf60",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "69003a9911cf84172168a33c5c12861cfb13346ab32b62c536d5c485103aaf60",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-008r.md",
-      "content_sha256": "1aa0e6cdfaa145f1f387701cbf686e8c9d1c5b38712f24fa39a0486ef8db36e9",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
-      "findings": [],
+      "content_sha256": "3613474a619f4a854d6e101495124b965d5be0ddc76900dfff0e9ee1996ef1e0",
+      "status": "reviewed-changed",
+      "reason": "改訂後のfinal listを別表として保持する編集判断を近接ノートへ移す。Squinting FaceからCracking Faceへの名称変更と既存topicへの案内は本文に残す。",
+      "findings": [
+        {
+          "baseline_line": 43,
+          "text": "`L2/25-259` は Squinting Face proposal だが、UTC \\#186 の result は CRACKING FACE である。proposal page の title と最終 character name が違うため、[Emoji Repertoire Proposals](../topics/emoji-repertoire-proposals.md) では revised final list を別表として残す。",
+          "rules": [
+            "全文精査追加"
+          ],
+          "decision": "split",
+          "reason": "改訂後のfinal listを別表として保持する編集判断を近接ノートへ移す。Squinting FaceからCracking Faceへの名称変更と既存topicへの案内は本文に残す。",
+          "detection_method": "full-text review"
+        }
+      ],
       "scan_sha256": "1aa0e6cdfaa145f1f387701cbf686e8c9d1c5b38712f24fa39a0486ef8db36e9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-015r.md",
       "content_sha256": "4df2fc9ec768cc72c684207dc37754eca902a1abc6d665b6268aec28d000f099",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "4df2fc9ec768cc72c684207dc37754eca902a1abc6d665b6268aec28d000f099",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-028r.md",
       "content_sha256": "87bcc0bf273cba16741a7a4af71b61cbd4f88f5973eb6f05aa619dadd06dcd0b",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "87bcc0bf273cba16741a7a4af71b61cbd4f88f5973eb6f05aa619dadd06dcd0b",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-040r2.md",
       "content_sha256": "6e7967acd542d8e2ce4cb9cadab978d8e6008d2bddaf6e2e1900d7c33a2e7d69",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "6e7967acd542d8e2ce4cb9cadab978d8e6008d2bddaf6e2e1900d7c33a2e7d69",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-043.md",
       "content_sha256": "090c9106f80a3a56d9403a1fc49d7003b91147627c7b4c249697e7385e17da92",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "090c9106f80a3a56d9403a1fc49d7003b91147627c7b4c249697e7385e17da92",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-044.md",
       "content_sha256": "b32324f3420dc3a75f3b6109ca7a3cd70505a5e330244bd224e6e66d14cdf78e",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "b32324f3420dc3a75f3b6109ca7a3cd70505a5e330244bd224e6e66d14cdf78e",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-048.md",
       "content_sha256": "91ab8567b6c81745aa95fe419d55edf141701ee31a1f71f930d9c58a08294d35",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "91ab8567b6c81745aa95fe419d55edf141701ee31a1f71f930d9c58a08294d35",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-050r.md",
@@ -4072,97 +4188,108 @@
         }
       ],
       "scan_sha256": "0d1d44ea7609f2d373e8fd5ce7a2aceef7486e1158f66cbb80f9f915cf4966c1",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-057.md",
       "content_sha256": "6648ac4044d9dfa053cd9d64daeb9c0437c5eb4dac9509f9ca4c466cec799c38",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "6648ac4044d9dfa053cd9d64daeb9c0437c5eb4dac9509f9ca4c466cec799c38",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-062.md",
       "content_sha256": "ce5dd5a9b87a0c91a6a42f6ae99160719f3b58c0c07a2c518b515d8b8cdab186",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "ce5dd5a9b87a0c91a6a42f6ae99160719f3b58c0c07a2c518b515d8b8cdab186",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-064.md",
       "content_sha256": "4801d1a941f102600d25e193d792dc23b2511117851950893e4815ffee636415",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "4801d1a941f102600d25e193d792dc23b2511117851950893e4815ffee636415",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-065.md",
       "content_sha256": "e9215879629aadbe6dbe8e674fd11ea3316cab548a2a5a40c81485a73ea7385c",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "e9215879629aadbe6dbe8e674fd11ea3316cab548a2a5a40c81485a73ea7385c",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-068.md",
       "content_sha256": "7c0e6ddd2c0e6e9b7f9abbd0bd43119effd50c81ffe6a6a390a8a28789cd734f",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "7c0e6ddd2c0e6e9b7f9abbd0bd43119effd50c81ffe6a6a390a8a28789cd734f",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-070r.md",
       "content_sha256": "7b37f372002b31d58aeaae9800a3188b4247745535adeca8b385e380c6edeac3",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "7b37f372002b31d58aeaae9800a3188b4247745535adeca8b385e380c6edeac3",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-071.md",
       "content_sha256": "af0fd611bdc798fe4178250ccbe11bba652b069c3943f20c25b0fe7f3264abd4",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "af0fd611bdc798fe4178250ccbe11bba652b069c3943f20c25b0fe7f3264abd4",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-072.md",
       "content_sha256": "2da6c5196f8ce0450f09570eb9eae4f83ded97e270ba18871db8c6f7b841f991",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "2da6c5196f8ce0450f09570eb9eae4f83ded97e270ba18871db8c6f7b841f991",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-073r.md",
       "content_sha256": "0f25538c3f355b687ea4bddc7ff60562c5a7584398dcc24d411f10afb29f6723",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "0f25538c3f355b687ea4bddc7ff60562c5a7584398dcc24d411f10afb29f6723",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-074.md",
       "content_sha256": "9e42727fab6fd252b8f282c38660273e556564f40cfb46487add2c26ebabcd27",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "9e42727fab6fd252b8f282c38660273e556564f40cfb46487add2c26ebabcd27",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-079.md",
@@ -4181,61 +4308,68 @@
         }
       ],
       "scan_sha256": "f82a540f2c315207dd1a1d173c8e7cb9089912762643264f8e0593fc6f092db1",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-080.md",
       "content_sha256": "4f2bb583a8013f3f17b6a7b0745e4fcea3622741c8e0498c1339247fd67cf453",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "4f2bb583a8013f3f17b6a7b0745e4fcea3622741c8e0498c1339247fd67cf453",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-082.md",
       "content_sha256": "2e5593f2a97c1db667ba819152895dd5c5e599a5429c3c79eb2a4169f656896a",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "2e5593f2a97c1db667ba819152895dd5c5e599a5429c3c79eb2a4169f656896a",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-083.md",
       "content_sha256": "06c606f0776e30f691e4dfe59814eb7f3d5a9644b86667ec781ef588e0a9f262",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "06c606f0776e30f691e4dfe59814eb7f3d5a9644b86667ec781ef588e0a9f262",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-084.md",
       "content_sha256": "d4c6eb2fd44ec9030e46d67dc0e70d13db5b5eb6d0912d45cf85eea2b4c47cd9",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "d4c6eb2fd44ec9030e46d67dc0e70d13db5b5eb6d0912d45cf85eea2b4c47cd9",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-085.md",
       "content_sha256": "628e850adcaaad193f1296a0a24010e42f1d627d869e0a73978963635bdc7aaf",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "628e850adcaaad193f1296a0a24010e42f1d627d869e0a73978963635bdc7aaf",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-086.md",
       "content_sha256": "7f06f8ae5a11682584083bfaf5bd7b88e4549f34e0738bb4b165551c8d5ea9e5",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "7f06f8ae5a11682584083bfaf5bd7b88e4549f34e0738bb4b165551c8d5ea9e5",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-087.md",
@@ -4254,43 +4388,48 @@
         }
       ],
       "scan_sha256": "4d4bbe25eea19970fa92e56ee6447adfa0ea0ff60e02e7cc63a840b2fdd952d0",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-088.md",
       "content_sha256": "2ec58cf93417c6e1bf0ad26293e76d0db09bf08217c74ad4ef052b35cd80c749",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "2ec58cf93417c6e1bf0ad26293e76d0db09bf08217c74ad4ef052b35cd80c749",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-089.md",
       "content_sha256": "06d425d36d561b45dc76fab3c3a5c0ed023f54d5bd0d9ede3de967e9dd7c0fec",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "06d425d36d561b45dc76fab3c3a5c0ed023f54d5bd0d9ede3de967e9dd7c0fec",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-090.md",
       "content_sha256": "3767a2c8aaef7abbc2081ad89d92a5af745b3c114a2e45384102df86cbcd799d",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "3767a2c8aaef7abbc2081ad89d92a5af745b3c114a2e45384102df86cbcd799d",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-091.md",
       "content_sha256": "acba83a0bb894629af2a3c72359f1aa24d0b20085ef9e3d8b8639eaf9729acfe",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "acba83a0bb894629af2a3c72359f1aa24d0b20085ef9e3d8b8639eaf9729acfe",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "本文の全段落を精査。既読記事または同じ表示内と完全一致する段落の再読だけを省略。リンクの表示名と注記は読む。リンク先URLは既存の機械検査で確認する。"
     },
     {
       "path": "documents/utc-l2-26-092.md",
@@ -6165,11 +6304,12 @@
     {
       "path": "documents/utc-l2-99-238.md",
       "content_sha256": "9787f9f810edb2fc6b81f5940d636a0abbe85883817b0fdeb9fa37fb13f1a37b",
-      "status": "screened",
-      "reason": "検索候補なし。全文精査は未実施。",
+      "status": "reviewed-no-candidate",
+      "reason": "検索候補なし。本文全体の編集記述混入を確認し、移行対象なし。",
       "findings": [],
       "scan_sha256": "9787f9f810edb2fc6b81f5940d636a0abbe85883817b0fdeb9fa37fb13f1a37b",
-      "full_text_review": "pending"
+      "full_text_review": "reviewed",
+      "full_text_review_method": "document_sections.py read --view editingで本文の全段落を省略せず原文で精査。ノートを含む編集用表示の内容と台帳のSHA-256を照合した。"
     },
     {
       "path": "documents/wg2-n2092.md",
@@ -9284,10 +9424,10 @@
       "generate_document_index --check",
       "generate_event_indexes --check",
       "全633ページの台帳・SHA-256と基準コミットの候補行の照合",
-      "既存156ノートの保持・追加12ノートの位置情報・移行後の空の節なし"
+      "既存168ノートの保持・追加3ノートの位置情報・移行後の空の節なし"
     ],
     "notes_before": 73,
-    "notes_after": 168,
+    "notes_after": 171,
     "review_tool_tests": 12,
     "review_tool_checks": [
       "stale file / ledger rejection",
@@ -9298,7 +9438,7 @@
       "atomic code examples",
       "deferred-page exclusion, invalid selection rejection, and all-deferred no-write"
     ],
-    "notes_preserved_from_previous_commit": 156,
+    "notes_preserved_from_previous_commit": 168,
     "checked_date": "2026-11-03"
   },
   "full_text_review_scope": "記事本文全体の編集記述混入を確認する。外部資料や公開状態の再調査とは別の作業。",
@@ -9364,6 +9504,25 @@
       ],
       "additional_findings": 10,
       "method": "bounded complete-page packets; exact reviewed paragraphs reused; migrations deferred and revised snapshots re-reviewed; obsolete retrieval wait replaced by existing source-document link"
+    },
+    {
+      "date": "2026-11-03",
+      "baseline_commit": "d2362fef42770c7fb144ccd938cef4eacb49b9ee",
+      "additional_full_text_reviews": 107,
+      "directories": {
+        "documents": 107
+      },
+      "registries": {
+        "utc": 107
+      },
+      "new_editorial_notes": 3,
+      "changed_pages": [
+        "documents/utc-l2-25-131.md",
+        "documents/utc-l2-25-267.md",
+        "documents/utc-l2-26-008r.md"
+      ],
+      "additional_findings": 3,
+      "method": "bounded complete-page packets; exact reviewed paragraphs reused; migrations deferred and revised snapshots re-reviewed; final-sorting 1999 document explicitly reviewed in complete editing view; all UTC documents through 2025 reviewed"
     }
   ]
 }
