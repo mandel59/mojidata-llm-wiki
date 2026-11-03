@@ -10,7 +10,7 @@ topics: [unicode-properties-and-algorithms, leibnizian-and-historic-mathematical
 meetings: [utc-meeting-188, utc-meeting-189]
 status: active
 tags: [math, mathematical-text, utr25, properties, data-files, text-model]
-timestamp: "2026-07-10T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
 ---
 
 # Mathematical Text Support
@@ -19,7 +19,7 @@ timestamp: "2026-07-10T00:00:00+09:00"
 
 Mathematical Text Support は、Unicode の数学文字 repertoire、mathematical alphanumeric symbols、`Math` property、math data files、plain-text math と MathML / TeX / UnicodeMath などの markup / notation systems の境界を扱う topic である。
 
-[PRI \#533](../documents/pri-533.md) は UTR \#25 Unicode Support for Mathematics Revision 16 draft の public review であり、2026-07-10 時点では status が Open のままである。今回の draft は主に HTML migration と structural cleanup を扱うが、Unicode 9 から Unicode 17 までの characters / properties / examples / tables を取り込む後続 content update の前段でもある。
+[PRI \#533](../documents/pri-533.md) は UTR \#25 Unicode Support for Mathematics Revision 16 draft の public review であり、2026-11-03のpageもOpenで、closing dateは2026-12-30。オンライン案は2026-10-10付のRevision 16 draft 5である。今回の draft は主に HTML migration と structural cleanup を扱うが、Unicode 9 から Unicode 17 までの characters / properties / examples / tables を取り込む後続 content update の前段でもある。
 
 ## 経緯
 
@@ -58,6 +58,10 @@ Mathematical alphanumeric symbols は、数式内で font style に見える差�
 ## UTR \#25 の再公開に向けて
 
 [L2/26-268](../documents/utc-l2-26-268.md) は Revision 16 Draft 5 の snapshot。[PAG report](../documents/utc-l2-26-235.md) §12.1 は Revision 17 としての公開を勧告する。HTML化と data / references の更新を、文字追加の提案と分けて追う。
+
+## reviewの延長
+
+[PRI \#533](../documents/pri-533.md) のclosing dateは2026-12-30へ延長された。Draft 5と [L2/26-268](../documents/utc-l2-26-268.md) は改訂過程の資料であり、最終UTR公開と区別する。
 
 ## 関連文書
 

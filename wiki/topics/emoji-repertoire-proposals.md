@@ -8,8 +8,9 @@ documents: [utc-l2-25-230r, utc-l2-25-252, utc-l2-25-253, utc-l2-25-254, utc-l2-
 topics: [emoji-interoperability-and-intake, unicode-18-change-sources, unicode-release-coordination-and-publication, unicode-properties-and-algorithms]
 status: active
 tags: [emoji, repertoire, proposal, unicode-18, esr]
-timestamp: "2026-09-19T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
 meetings: [utc-meeting-189]
+events: [esr-189-four-characters-directional-zwj-recommendations]
 ---
 
 # Emoji Repertoire Proposals
@@ -64,9 +65,9 @@ Final character name が決まっても、user-facing search は CLDR short name
 
 [L2/26-104](../documents/utc-l2-26-104.md) は Emoji 18.0 の proposed UTS \#51 update で、final UTS \#51 は emoji / text presentation selectors と default presentation style の guidance を更新した。Repertoire の確認では code points、final emoji charts、`emoji-data.txt`、CLDR names / keywords を分けて追う。
 
-## Unicode 19.0 向けの5候補
+## Unicode 19.0向けの改訂勧告
 
-[ESR report](../documents/utc-l2-26-237.md) が Eyes looking right / Ornate bottle / Orchid / Vulture / Inukshuk を勧告する。各提案とコード位置案は report page に集約する。2026-10-25時点では UTC \#189 開催前であり、採択済みemojiではない。
+[ESRの改訂勧告 event](../events/esr-189-four-characters-directional-zwj-recommendations.md) へ。repertoireを読む際は、5 emoji候補と新規コードポイント4文字を分け、EYES LOOKING RIGHTがdirectional ZWJ sequence案へ変わった点を押さえる。各proposalとコード位置案は [report](../documents/utc-l2-26-237.md) に集約する。
 
 ## 関連文書
 

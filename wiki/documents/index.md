@@ -8,6 +8,11 @@
 
 ### 2026
 
+- [L2/26-241](utc-l2-26-241.md) - 改訂RMG reportが Unicode 19.0 の2,075文字の具体案と2027年の工程を示す。本文・脚注には旧集計が残る。
+- [L2/26-237](utc-l2-26-237.md) - 改訂ESR reportが Unicode 19.0 向けに新文字4件と EYES LOOKING RIGHT の RGI ZWJ sequence を勧告する。
+- [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs を481文字と32 format controls、計513文字で符号化する Version 1.81 proposal。
+- [L2/26-242](utc-l2-26-242.md) - SEI が Maya・Vatteluttu と今後のscript proposal支援、研究・community活動を UTC \#189 に報告する。
+- [L2/26-226](utc-l2-26-226.md) - UTS \#61 Revision 2・Version 1 draft 4のsnapshot。集合演算、conformance test案、segmentation dialectを示す。
 - [L2/26-240](utc-l2-26-240.md) - Charts WG の18.0公開後の振り返りと19.0準備の報告。
 - [L2/26-239](utc-l2-26-239.md) - SEW が UTC \#189 に提出する script proposals の review と勧告集。
 - [L2/26-236](utc-l2-26-236.md) - Editorial WG の Unicode 18.0 振り返りと19.0編集計画。
@@ -17,7 +22,6 @@
 - [L2/26-271](utc-l2-26-271.md) - Orchid Flower を flower emoji の追加として提案する。
 - [L2/26-270](utc-l2-26-270.md) - 装飾された glass bottle を fragrance / potion / elixir などに使う emoji として追加する提案。
 - [L2/26-269](utc-l2-26-269.md) - 既存の 👀 に対し、右向きの視線を独立した emoji として追加する提案。
-- [L2/26-237](utc-l2-26-237.md) - ESR が Unicode 19.0 向けに新しい emoji 5文字を勧告する。
 - [L2/26-231](utc-l2-26-231.md) - UTC \#189 の preliminary draft agenda。会合は2026-10-26〜28、Nancy, France / online の hybrid 形式を予定する。
 - [L2/26-132](utc-l2-26-132.md) - KORE SEBELI Version 13。名称改訂と93 / 91 countを確認。
 - [L2/26-260](utc-l2-26-260.md) - Joint CLDR/UTC Orthographic Sequences WG（SEQ）の活動・設計状況を報告する。
@@ -25,7 +29,6 @@
 - [L2/26-234](utc-l2-26-234.md) - 2026-07-07〜10-05 の期間に公開 review の対象となった PRI をまとめる。
 - [L2/26-233](utc-l2-26-233.md) - 2026-07-23 以降に closed となった UTC action items の一覧。
 - [L2/26-238](utc-l2-26-238.md) - 2026-10-09 の CJK & Unihan WG review に基づく UTC \#189 向け勧告。
-- [L2/26-145](utc-l2-26-145.md) - Codical Maya Version 1.6。481文字と32 controls、SEW勧告を追う。
 - [L2/26-227](utc-l2-26-227.md) - Tatar・Bashkir の yaña imlâ、Arabic-script Nogai、中国の Tatar 出版物で使う1文字を再提案する。
 - [L2/26-268](utc-l2-26-268.md) - UTR \#25 Revision 16, Draft 5 の Proposed Update snapshot。PRI \#533 の review 対象に対応する。
 - [L2/26-267](utc-l2-26-267.md) - UAX \#11 Revision 47 の Proposed Update snapshot。PRI \#557 の review 対象に対応する。
@@ -35,7 +38,6 @@
 - [L2/26-263](utc-l2-26-263.md) - SC 2 N5062 の ISO/IEC 10646 Maintenance Agency ToR draft に対する consultation 結果（SC 2 N5073）。
 - [L2/26-262](utc-l2-26-262.md) - ISO/IEC 10646 第7版の Amendment 1、CDAM 1（SC 2 N5072）の公開 draft。
 - [L2/26-261](utc-l2-26-261.md) - Unicode 4.0.0〜8.0.0 の StandardizedVariants.html が使う旧 CGI glyph service を data URL に置き換える提案。
-- [L2/26-241](utc-l2-26-241.md) - RMG が Unicode 18.0 の公開と作業工程を振り返り、19.0 の scope・日程・repertoire を提案する。
 - [L2/26-259](utc-l2-26-259.md) - Andreas Stötzner が将来追加予定の letterlike symbols の U+1DB00 block 内配置を見直すよう求める。
 - [L2/26-258](utc-l2-26-258.md) - Dr. T Marvin Zou が Zou / Zoulai script と numerals の符号化を提案する。
 - [L2/26-257](utc-l2-26-257.md) - Kadu Than Naing が Kadu language 用の Asak kyeing を符号化する案を提出する。
@@ -376,6 +378,8 @@
 
 ### 2026
 
+- [IRG N3008](irg-n3008.md) - GB/T 16500-1998「信息交换用汉字编码字符集 第七辅助集」の原資料。3,778文字の既存規格を2026-10-30にIRG Registryへ再掲。
+- [IRG N3007](irg-n3007.md) - GB/T 15564-1995「图文电视广播用汉字编码字符集 香港子集」の原資料。111文字の既存規格を2026-10-30にIRG Registryへ再掲。
 - [IRG N2946](irg-n2946.md) - IRG \#67 の正式勧告。WS2024 次版、horizontal extensions、source / glyph の disposition。
 - [IRG N2935](irg-n2935.md) - IRG Meeting \#67 schedule and agenda。
 - [IRG N2989](irg-n2989.md) - UK が IRG N2918 の U+3062B / U+30C68 reference glyph changes へ条件付きで異議なしと回答する。
@@ -584,12 +588,14 @@
 
 ### 2026
 
-- [PRI \#560](pri-560.md) - U+16FE5 / U+16FE6 の vertical orientation glyphs を追加する UAX \#50 draft の PRI。
+- [PRI \#561](pri-561.md) - UTC Meeting \#190向けの一般feedback受付。Openでclosing dateは2026-12-30。
+- [PRI \#560](pri-560.md) - UAX \#50 Revision 36 draft 2のemoji縦書き表示とTable 3更新をreviewするOpen PRI。
 - [PRI \#559](pri-559.md) - IRG restructuring、CmptB status、source-tag syntax、residual strokes を更新する UAX \#45 draft の PRI。
 - [PRI \#558](pri-558.md) - IRG restructuring、kIRG_SGSource、Components-A/B source prefixes を反映する UAX \#38 draft の PRI。
 - [PRI \#557](pri-557.md) - UAX \#11 East Asian Width Revision 47 draft の terminology と derived data references を review する PRI。
-- [PRI \#556](pri-556.md) - UTC Meeting \#189 向けのその他 feedback を受け付ける open PRI。
-- [PRI \\#555](pri-555.md) - Unicode 18.0 line breaking / segmentation algorithms の finite-state-machine data files を review する PRI。
+- [PRI \#533](pri-533.md) - UTR \#25 Revision 16 draft 5までのHTML化・数学文字data整備をreviewするOpen PRI。closing dateは2026-12-30。
+- [PRI \#556](pri-556.md) - UTC Meeting \#189向け一般feedbackのClosed PRI。Resolutionは受付終了とUTC \#190向け受付への移行を告知する。
+- [PRI \#555](pri-555.md) - line breaking / segmentation のfinite automata data公開案をreviewしたClosed PRI。正式採用のResolutionは記載されていない。
 - [PRI \#546](pri-546.md) - Moji_Joho collection への 8 IVS 追加登録の提案・review。登録完了は IVD 2026-08-03 event を参照。
 - [PRI \#554](pri-554.md) - UAX \#24 Unicode Script Property Revision 40 public review。
 - [PRI \#553](pri-553.md) - UTS \#39 Unicode Security Mechanisms Revision 33 public review。
@@ -602,7 +608,6 @@
 - [PRI \#545](pri-545.md) - UAX \#11 East Asian Width Revision 45 public review。
 - [PRI \#544](pri-544.md) - 個別 PRI や特定 review topic に属さない UTC \#188 向け public feedback 17 件を working group 別に集成した review record。
 - [PRI \#534](pri-534.md) - Unicode 18.0 向け UAX \#38 Revision 40 と Unihan data corrections に対する public review record。
-- [PRI \#533](pri-533.md) - UTR \#25 Unicode Support for Mathematics Revision 16 public review。
 - [PRI \#509](pri-509.md) - 平文中の URL と email address の検出・formatting を扱う公開 review issue。
 
 ### 2025

@@ -4,12 +4,12 @@ title: Script Encoding Pipeline
 description: "UTC #187 SEW report を入口にした script proposal の provisional assignment、保留、安定性論点。"
 slug: script-encoding-pipeline
 bodies: [UTC, WG2]
-documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368, utc-l2-26-181r, utc-l2-26-207, utc-l2-26-220, utc-l2-26-221, utc-l2-26-222, utc-l2-26-223, utc-l2-26-224, utc-l2-26-225, utc-l2-26-208, utc-l2-26-227, utc-l2-26-229, utc-l2-26-230, utc-l2-26-243, utc-l2-26-244, utc-l2-26-245, utc-l2-26-246, utc-l2-26-247, utc-l2-26-248, utc-l2-26-249, utc-l2-26-252, utc-l2-26-257, utc-l2-26-258, utc-l2-26-239, utc-l2-26-219]
+documents: [utc-l2-13-116, utc-l2-20-180, utc-l2-21-209, utc-l2-22-073, utc-l2-22-222, utc-l2-23-203, utc-l2-24-246, utc-l2-24-273, utc-l2-26-050r, utc-l2-26-092, utc-l2-26-093, utc-l2-26-100, utc-l2-26-151, utc-l2-26-158, utc-l2-26-160r, utc-l2-26-161, utc-l2-26-015r, utc-l2-26-028r, utc-l2-26-040r2, utc-l2-26-065, utc-l2-26-079, utc-l2-26-087, utc-l2-26-088, utc-l2-26-089, utc-l2-26-090, utc-l2-26-091, utc-l2-26-113, utc-l2-26-114, utc-l2-26-117, utc-l2-26-118, utc-l2-26-119, utc-l2-26-120, utc-l2-26-129, utc-l2-26-131, utc-l2-26-132, utc-l2-26-137, utc-l2-26-144, pri-554, utc-l2-25-131, wg2-n5310r, wg2-n5340, wg2-n5354, wg2-n5361r, wg2-n5362, wg2-n5365, wg2-n5368, utc-l2-26-181r, utc-l2-26-207, utc-l2-26-220, utc-l2-26-221, utc-l2-26-222, utc-l2-26-223, utc-l2-26-224, utc-l2-26-225, utc-l2-26-208, utc-l2-26-227, utc-l2-26-229, utc-l2-26-230, utc-l2-26-243, utc-l2-26-244, utc-l2-26-245, utc-l2-26-246, utc-l2-26-247, utc-l2-26-248, utc-l2-26-249, utc-l2-26-252, utc-l2-26-257, utc-l2-26-258, utc-l2-26-239, utc-l2-26-219, utc-l2-26-242]
 topics: [unicode-18-change-sources, unicode-properties-and-algorithms, indic-script-notation-and-rendering, maya-hieroglyph-encoding, shaaldaa-script, dai-xaau-script, leke-script, kore-sebeli-script, nti-script, iso-10646-edition-and-code-charts]
 meetings: [utc-meeting-187, utc-meeting-188, wg2-meeting-72, wg2-meeting-73, utc-meeting-189]
 status: active
 tags: [script, proposal, encoding, utc, unicode-18, stability]
-timestamp: "2026-09-19T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
 events: [sew-189-script-provisional-assignment-recommendations]
 ---
 
@@ -112,6 +112,10 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 ## UTC \#189 の審議入口
 
 [SEW report](../documents/utc-l2-26-239.md) と [新script 勧告 event](../events/sew-189-script-provisional-assignment-recommendations.md) が最新版への入口。Zou / Kadu / Quikscript / Wagindara の追加証拠、Wei Rma の model review、Indic properties、Leibniz symbols の再勧告も含む。新しく作られた script のデジタル利用支援は [L2/26-219](../documents/utc-l2-26-219.md) の script packages feasibility 案で別に扱う。いずれも開催前の資料である。
+
+## SEIの提案支援活動
+
+[SEI liaison report L2/26-242](../documents/utc-l2-26-242.md) は、今後のproposal改訂・preliminary research・font支援を示す。proposalの支援計画はSEWのreview勧告やUTCのprovisional assignmentと区別する。
 
 ## 関連文書
 
@@ -281,3 +285,4 @@ Unicode 18.0 beta の Chisoi 40 characters は [L2/26-160R](../documents/utc-l2-
 - `utc-l2-26-258` - <https://www.unicode.org/L2/L2026/26258-zou.pdf>
 - `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）
 - `utc-l2-26-219` - <https://www.unicode.org/L2/L2026/26219-supporting-new-scripts.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-242` - <https://www.unicode.org/L2/L2026/26242-sei-report-october2026.pdf>（registry date: 2026-10-26）

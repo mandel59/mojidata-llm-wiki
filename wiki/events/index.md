@@ -31,10 +31,12 @@
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30) - UTC \#188 が会合の decisions / actions を取り込んだ Unicode 18.0 と同期 UTS の release を authorize した出来事。
 - [IVD 2026-08-03 Moji_Joho registration](ivd-2026-08-03-moji-joho-registration.md) (2026-08-03) - IVD Registrar が PRI \#546 の review を経て Moji_Joho collection に 8 IVS を追加登録し、IVD 2026-08-03 を公開した出来事。
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02) - PRI \#520 の review と UTC の調整を経た UAX \#60 が、Unicode 18.0.0 の初の承認済み公開版 Revision 3 として確定した節目。
+- [UTC \#189向けPRI \#523・\#555・\#556のreview終了](utc-189-pri-523-555-556-review-closures.md) (2026-10-05) - closing dateが2026-10-05の3 PRIがClosedとなり、UTS \#61公開予定とUTC \#190 feedback受付への移行が告知された。
 - [IRG \#67 TCA U+2403D source replacement](irg-67-tca-u2403d-source-replacement.md) (2026-10-12) - TCA が IRG \#67 の討議を受け、U+2403D の horizontal extension proposal の source / glyph を差し替えた出来事。
 - [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15) - IRG \#67 が WS2024 Version 6.0 の生成と ORT review の日程を定めた。
 - [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15) - IRG \#67 が4 body の horizontal extension へ受入勧告を行い、Vietnam 案には review を継続した。
 - [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23) - SEW が Maya、N’ti、Ndiko Jonam、KORE SEBELI の provisional assignment を UTC \#189 に勧告した段階。
+- [ESR UTC \#189: 4 new characters and a directional ZWJ sequence](esr-189-four-characters-directional-zwj-recommendations.md) (2026-10-27) - L2/26-237RがEYES LOOKING RIGHTを新文字案からZWJ sequenceへ変更し、4新文字と合わせて勧告した。
 
 ## By Topic
 
@@ -83,6 +85,14 @@
 - [WG2 \#31 ideographic-description refinement](wg2-31-ideographic-description-refinement.md) (1996-08-16)
 - [IRG \#67 WS2024 Version 6.0 review schedule](irg-67-ws2024-version6-review-schedule.md) (2026-10-15)
 - [IRG \#67 horizontal extension dispositions](irg-67-horizontal-extension-dispositions.md) (2026-10-15)
+
+### [Emoji Interoperability and Intake](../topics/emoji-interoperability-and-intake.md)
+
+- [ESR UTC \#189: 4 new characters and a directional ZWJ sequence](esr-189-four-characters-directional-zwj-recommendations.md) (2026-10-27)
+
+### [Emoji Repertoire Proposals](../topics/emoji-repertoire-proposals.md)
+
+- [ESR UTC \#189: 4 new characters and a directional ZWJ sequence](esr-189-four-characters-directional-zwj-recommendations.md) (2026-10-27)
 
 ### [Ideographic Variation Database](../topics/ideographic-variation-database.md)
 
@@ -201,10 +211,16 @@
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
 - [UAX \#60 Unicode 18.0 first published version](uax60-unicode-18-first-published-version.md) (2026-09-02)
+- [UTC \#189向けPRI \#523・\#555・\#556のreview終了](utc-189-pri-523-555-556-review-closures.md) (2026-10-05)
 
 ### [Unicode Release Coordination and Publication](../topics/unicode-release-coordination-and-publication.md)
 
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [UTC \#189向けPRI \#523・\#555・\#556のreview終了](utc-189-pri-523-555-556-review-closures.md) (2026-10-05)
+
+### [Unicode Set Notation](../topics/unicode-set-notation.md)
+
+- [UTC \#189向けPRI \#523・\#555・\#556のreview終了](utc-189-pri-523-555-556-review-closures.md) (2026-10-05)
 
 ### [Unihan Data Format and Property Syntax](../topics/unihan-data-format-and-property-syntax.md)
 
@@ -246,7 +262,9 @@
 - [Unicode 13.0 kZVariant data overhaul](unicode-13-kzvariant-data-overhaul.md) (2020-03-10)
 - [UTC \#187 UAX \#45 FutureWS additions](utc-187-uax45-futurews-additions.md) (2026-04-11)
 - [UTC \#188 Unicode 18.0 release authorization](utc-188-unicode-18-release-authorization.md) (2026-07-30)
+- [UTC \#189向けPRI \#523・\#555・\#556のreview終了](utc-189-pri-523-555-556-review-closures.md) (2026-10-05)
 - [SEW \#189 script provisional assignment recommendations](sew-189-script-provisional-assignment-recommendations.md) (2026-10-23)
+- [ESR UTC \#189: 4 new characters and a directional ZWJ sequence](esr-189-four-characters-directional-zwj-recommendations.md) (2026-10-27)
 
 ### Unicode Consortium
 

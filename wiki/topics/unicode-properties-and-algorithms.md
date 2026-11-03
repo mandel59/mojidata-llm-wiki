@@ -4,13 +4,13 @@ title: Unicode Properties and Algorithms
 description: Unicode 18.0 の final UCD properties、line breaking、segmentation、collation、security changes。
 slug: unicode-properties-and-algorithms
 bodies: [UTC]
-documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-207, utc-l2-26-225, pri-520, utc-l2-26-247, utc-l2-26-250, utc-l2-26-255, utc-l2-26-256, utc-l2-26-235, utc-l2-26-264, utc-l2-26-267]
+documents: [utc-l2-25-220, utc-l2-26-092, utc-l2-26-093, utc-l2-26-095, utc-l2-26-096, utc-l2-26-135, utc-l2-26-217, utc-l2-26-151, utc-l2-26-154, utc-l2-26-212, utc-l2-26-214, utc-l2-25-100, utc-l2-26-070r, utc-l2-26-091, utc-l2-26-106, utc-l2-26-107, utc-l2-26-108, utc-l2-26-109, utc-l2-26-110, pri-509, pri-533, pri-545, pri-547, pri-549, pri-550, pri-551, pri-552, pri-553, pri-554, pri-555, pri-557, utc-l2-26-111, utc-l2-26-119, utc-l2-26-120, utc-l2-26-137, utc-l2-26-138, utc-l2-26-139, utc-l2-26-207, utc-l2-26-225, pri-520, utc-l2-26-247, utc-l2-26-250, utc-l2-26-255, utc-l2-26-256, utc-l2-26-235, utc-l2-26-264, utc-l2-26-267, pri-510, pri-523, utc-l2-26-226]
 topics: [unicode-18-change-sources, cjk-security-confusables, script-encoding-pipeline, nti-script, east-asian-spacing, unicode-set-notation, uax60-large-east-asian-scripts, arabic-mark-rendering, egyptian-hieroglyph-data-and-unikemet, indic-script-notation-and-rendering, mathematical-text-support, plain-text-composition-and-overstriking]
 meetings: [utc-meeting-187, utc-meeting-188, utc-meeting-189]
 status: active
 tags: [properties, algorithms, ucd, math, uax11, uax14, uax24, uax29, uax31, uax42, uax44, uts10, uts39, uts61, security]
-timestamp: "2026-10-11T00:00:00+09:00"
-events: [uax60-unicode-18-first-published-version]
+timestamp: "2026-11-03T00:00:00+09:00"
+events: [uax60-unicode-18-first-published-version, utc-189-pri-523-555-556-review-closures]
 ---
 
 # Unicode Properties and Algorithms
@@ -140,7 +140,13 @@ UTS \#39 では casefolding wording、Identifier_Type、mid-priority confusables
 
 ## UTC \#189 向けの勧告
 
-[PAG report](../documents/utc-l2-26-235.md) は finite automata、Georgian titlecase、Word_Break、bidi / normalization / security と emoji property defaults の変更を勧告する。UTS \#61 と UTR \#25 の公開案も含む。2026-10-25時点では UTC 採択前であり、Unicode 19.0 の確定仕様とは扱わない。
+[PAG report](../documents/utc-l2-26-235.md) は finite automata、Georgian titlecase、Word_Break、bidi / normalization / security と emoji property defaults の変更を勧告する。UTS \#61 と UTR \#25 の公開案も含む。WGの勧告であり、Unicode 19.0の確定仕様とは扱わない。
+
+## UTC \#189向けreviewの終了と継続
+
+[review終了 event](../events/utc-189-pri-523-555-556-review-closures.md) はUTS \#61、finite automata、一般feedbackの受付終了をまとめる。review終了と最終仕様・正式データ公開を区別し、[L2/26-226](../documents/utc-l2-26-226.md) は引き続きDraftのsnapshotとして読む。
+
+[PRI \#510](../documents/utc-l2-25-100.md)・[PRI \#533](../documents/pri-533.md)・[PRI \#557](../documents/pri-557.md)〜[PRI \#560](../documents/pri-560.md) は2026-12-30までOpenのreviewである。
 
 ## 関連文書
 

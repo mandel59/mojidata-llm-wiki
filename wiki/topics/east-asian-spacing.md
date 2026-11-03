@@ -5,12 +5,12 @@ description: "UTR #59 draft が提案する East Asian scripts と Latin / digit
 slug: east-asian-spacing
 aliases: ["UTR #59", "East_Asian_Spacing"]
 bodies: [UTC]
-documents: [utc-l2-25-100, utc-l2-26-092, utc-l2-26-096, pri-545, pri-551]
+documents: [utc-l2-25-100, utc-l2-26-092, utc-l2-26-096, pri-545, pri-551, pri-510, pri-557]
 topics: [unicode-properties-and-algorithms, east-asian-quotation-marks]
 meetings: [utc-meeting-187]
 status: draft-utr
 tags: [east-asian, typography, spacing, algorithm, utr59]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-11-03T00:00:00+09:00"
 ---
 
 # East Asian Spacing
@@ -52,6 +52,10 @@ Vertical text では upright に表示される `N` characters を spacing 対�
 
 [PRI \#545](../documents/pri-545.md) の UAX \#11 は `East_Asian_Width` property、[PRI \#551](../documents/pri-551.md) の UAX \#14 は line breaking algorithm を扱う。どちらも East Asian layout の input になるが、UTR \#59 の `East_Asian_Spacing` property とは別の specification layer である。
 
+## 継続中のreview
+
+[PRI \#510](../documents/utc-l2-25-100.md) はUTR \#59のreviewをOpenとして継続し、closing dateは2026-12-30。[PRI \#557](../documents/pri-557.md) のUAX \#11 reviewも同日まで継続する。visible spacingの生成とEast_Asian_Widthのdocumentation updateを区別する。
+
 ## 関連文書
 
 - [L2/25-100](../documents/utc-l2-25-100.md) - Proposed Draft UTR \#59, East Asian Spacing。
@@ -72,3 +76,5 @@ Vertical text では upright に表示される `N` characters を spacing 対�
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
 - `pri-545` - <https://www.unicode.org/review/pri545/>
 - `pri-551` - <https://www.unicode.org/review/pri551/>
+- `pri-510` - <https://www.unicode.org/review/pri510/>
+- `pri-557` - <https://www.unicode.org/review/pri557/>

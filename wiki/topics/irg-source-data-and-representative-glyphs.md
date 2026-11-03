@@ -4,11 +4,11 @@ title: IRG Source Data and Representative Glyphs
 description: IRG source references、representative glyphs、Unihan properties の修正論点。
 slug: irg-source-data-and-representative-glyphs
 bodies: [IRG, UTC, WG2]
-documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2983, irg-n2929r2, irg-n2988, irg-n2989, irg-n013, irg-n2946, irg-n360, utc-l2-26-238]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1532r, irg-n2837, irg-n2860, irg-n2861, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2909, irg-n2911, irg-n2916, irg-n2918, irg-n2919r, irg-n2923r, irg-n2927r, irg-n2928, irg-n2929r, irg-n2930, irg-n2935, irg-n2953, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2968, irg-n2970, irg-n2972, irg-n2974, irg-n2975, utc-l2-26-099, wg2-n5353, wg2-n5354, irg-n2939r, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2983, irg-n2929r2, irg-n2988, irg-n2989, irg-n013, irg-n2946, irg-n360, utc-l2-26-238, irg-n3007, irg-n3008, irg-n3009]
 topics: [g-source-glyph-and-reference-issues, t-source-representative-glyph-issues, v-source-representative-glyph-issues, irg-disunified-ideographs, early-irg-history]
 status: active
 tags: [irg, unihan, source-data, representative-glyphs]
-timestamp: "2026-07-06T21:31:45+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
 events: [irg-67-horizontal-extension-dispositions, irg-7-s-column-merge-into-g]
 meetings: [utc-meeting-189]
 ---
@@ -102,6 +102,12 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 ## UTC \#189 への接続
 
 [CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §3 / §17〜19 が U+2BAD5 のsource replacement、G-source reference / glyph、T-source U+3097C の変更を扱う。IRGでの処置とUnicodeのversionへの反映は別の段階で追う。
+
+## 既存source standardsの公開
+
+2026-10-30に [IRG N3007](../documents/irg-n3007.md) と [IRG N3008](../documents/irg-n3008.md) が公開された。GB/T 15564-1995とGB/T 16500-1998の原資料であり、UnihanのG-source references `GH` / `GE` を原規格へ遡る入口になる。掲載日を標準の制定日や新たなIRG採択日と取り違えない。
+
+<!-- editorial: IRG N3009は2026-11-02のRegistryでT-source ideographsのglyph revision requestと割り当てられたが、document_urlは空でunposted。公開本文を取得してから対象字形・要求内容をdigestする。 -->
 
 ## 関連文書
 
@@ -207,3 +213,5 @@ V-source 固有の evidence handling と UTC data update への接続は [V-sour
 - `irg-n013` - <https://www.unicode.org/irg/docs/n0013-ErrorReport.pdf>（registry date: 1993-10-04）
 - `irg-n2946` - <https://www.unicode.org/irg/docs/n2946-Recommendations.pdf>（registry date: 2026-10-15）
 - `utc-l2-26-238` - <https://www.unicode.org/L2/L2026/26238-cjk-unihan-wg-utc189.pdf>（registry date: 2026-10-19）
+- `irg-n3007` - <https://www.unicode.org/irg/docs/n3007-GBT-15564.pdf>
+- `irg-n3008` - <https://www.unicode.org/irg/docs/n3008-GBT-16500.pdf>

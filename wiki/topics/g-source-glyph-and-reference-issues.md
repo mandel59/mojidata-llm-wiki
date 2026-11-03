@@ -4,12 +4,12 @@ title: G-source Glyph and Source Reference Issues
 description: "IRG Section 9.1 に集まった G-source representative glyph と source reference correction の個別論点。"
 slug: g-source-glyph-and-reference-issues
 bodies: [IRG]
-documents: ["irg-n743", "irg-n891", "irg-n1519", "irg-n1528", "irg-n1531", "irg-n1532r", "irg-n2835r", "irg-n2837", "irg-n2838", "irg-n2864r", "irg-n2868", "irg-n2889r2", "irg-n2919r", "irg-n2923r", "irg-n2930", "irg-n2954", "irg-n2955", "irg-n2956", "irg-n2957", "irg-n2958", "irg-n2959", "irg-n2962", "irg-n2962r2", "irg-n2963r3", "irg-n2976", "irg-n2977", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "irg-n2988"]
+documents: [irg-n743, irg-n891, irg-n1519, irg-n1528, irg-n1531, irg-n1532r, irg-n2835r, irg-n2837, irg-n2838, irg-n2864r, irg-n2868, irg-n2889r2, irg-n2919r, irg-n2923r, irg-n2930, irg-n2954, irg-n2955, irg-n2956, irg-n2957, irg-n2958, irg-n2959, irg-n2962, irg-n2962r2, irg-n2963r3, irg-n2976, irg-n2977, irg-n2984, irg-n2985, irg-n2986, irg-n2987, irg-n2988, irg-n3007, irg-n3008]
 topics: [irg-source-data-and-representative-glyphs, v-source-representative-glyph-issues, cjk-horizontal-extensions]
 people: [roy-wang, kushim-jiang, ma-shijie, lin-anning, china, sat, irg]
 status: active
 tags: [irg, g-source, source-reference, representative-glyphs]
-timestamp: 2026-07-08T00:00:00+09:00
+timestamp: "2026-11-03T00:00:00+09:00"
 meetings: [irg-meeting-67]
 ---
 
@@ -92,6 +92,10 @@ G-source glyph / source reference issues は、すでに encoded された CJK U
 [IRG N2976](../documents/irg-n2976.md) は U+21D0A を original evidence の形へ戻す案、[IRG N2977](../documents/irg-n2977.md) は U+26842 / U+26866 の G / V-source と radical を合わせて扱う案である。
 
 [IRG N2984](../documents/irg-n2984.md) / [IRG N2987](../documents/irg-n2987.md) は新しい horizontal extension glyph に関する論争であり、既存 G-source correction と区別する。修正意向と source normalization の方針は [CJK Horizontal Extensions](cjk-horizontal-extensions.md) で追う。
+
+## 原規格への入口
+
+[GB/T 15564-1995](../documents/irg-n3007.md) と [GB/T 16500-1998](../documents/irg-n3008.md) は `GH` / `GE` source referencesの原資料として参照できる。公開の経緯は [親topic](irg-source-data-and-representative-glyphs.md) へ。
 
 ## 関連文書
 

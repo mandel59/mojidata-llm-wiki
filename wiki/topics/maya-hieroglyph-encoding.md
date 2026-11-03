@@ -4,11 +4,11 @@ title: Maya Hieroglyph Encoding
 description: Codical Maya と Classic Maya Hieroglyphs Extended-A の staged / unified encoding。
 slug: maya-hieroglyph-encoding
 bodies: [UTC, WG2]
-documents: [utc-l2-26-145, utc-l2-26-145r, utc-l2-26-146, utc-l2-26-151, utc-l2-26-158, wg2-n5354, wg2-n5365, wg2-n5366, wg2-n5367, utc-l2-26-145r2, utc-l2-26-145r3, utc-l2-26-239]
+documents: [utc-l2-26-145, utc-l2-26-145r, utc-l2-26-146, utc-l2-26-151, utc-l2-26-158, wg2-n5354, wg2-n5365, wg2-n5366, wg2-n5367, utc-l2-26-145r2, utc-l2-26-145r3, utc-l2-26-239, utc-l2-26-145r4, utc-l2-26-242]
 meetings: [utc-meeting-188, wg2-meeting-73, utc-meeting-189]
 status: proposed
 tags: [script, maya, hieroglyphs, format-controls, extension]
-timestamp: "2026-07-08T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
 events: [sew-189-script-provisional-assignment-recommendations]
 ---
 
@@ -16,9 +16,9 @@ events: [sew-189-script-provisional-assignment-recommendations]
 
 ## 概要
 
-Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classic Maya extensions に分けて、unified script として符号化する提案群を扱う topic である。[L2/26-145R3](../documents/utc-l2-26-145.md) Codical Maya Hieroglyphs と [L2/26-146](../documents/utc-l2-26-146.md) Maya Hieroglyphs Extended-A が提出されている。
+Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classic Maya extensions に分けて、unified script として符号化する提案群を扱う topic である。[L2/26-145R4](../documents/utc-l2-26-145.md) Codical Maya Hieroglyphs と [L2/26-146](../documents/utc-l2-26-146.md) Maya Hieroglyphs Extended-A が提出されている。
 
-旧版と Extended-A は in-progress draft / not for citation とされた。WG2 \#73 は `WG2 N5366` / `WG2 N5367` として同 proposals を受け取り、WG2 \#74 までの review を求めた。UTC \#188 minutes は採択 consensus を置いておらず、Codical proposal は会合後に Version 1.2、Version 1.5 を経て2026-10-19登録の Version 1.6 へ改訂された。
+旧版と Extended-A は in-progress draft / not for citation とされた。WG2 \#73 は `WG2 N5366` / `WG2 N5367` として同 proposals を受け取り、WG2 \#74 までの review を求めた。UTC \#188 minutes は採択 consensus を置いておらず、Codical proposal は会合後に Version 1.2、1.5、1.6を経て2026-10-27登録のVersion 1.81へ改訂された。
 
 ## 経緯
 
@@ -32,12 +32,13 @@ Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classi
 | 2026-09-01 | UTC | [L2/26-145R](../documents/utc-l2-26-145.md) | Codical proposal Version 1.2 が property tables を含む改訂版として作成された。 |
 | 2026-10-12 | UTC | [L2/26-145R2](../documents/utc-l2-26-145.md) | Version 1.5 を登録。property tables は481 signs と30 controls。 |
 | 2026-10-19 | UTC | [L2/26-145R3](../documents/utc-l2-26-145.md) | Version 1.6、481文字と32 controls の2 block を提案。 |
+| 2026-10-27 | UTC | [L2/26-145R4](../documents/utc-l2-26-145.md) | Version 1.81へ改訂。新規repertoireは引き続き481文字と32 controls。 |
 
 ## 主な論点
 
 ### Version 1.5 からの改訂
 
-旧 Version 1.5 は481 signs と30 controls を列挙した。最新版の数・block / property ranges は [Version 1.6](../documents/utc-l2-26-145.md) に整理し、旧版の不一致を現在の提案の状態として持ち越さない。
+旧 Version 1.5 は481 signs と30 controls を列挙した。最新版の数・block / property ranges は [Version 1.81](../documents/utc-l2-26-145.md) に整理し、旧版の不一致を現在の提案の状態として持ち越さない。
 
 ### Codical Maya を base set にする
 
@@ -51,11 +52,11 @@ Maya Hieroglyph Encoding は、Maya writing を Codical Maya base set と Classi
 
 Maya hieroglyphic writing は glyph blocks と affixation を持つため、plain linear sequence だけでは表現できない。Codical proposal の format controls は Classic Maya proposal も依存するため、repertoire より先に text model / rendering model の妥当性を確認する必要がある。
 
-Codical Version 1.6 は joiners、appearance modifiers、segment delimiters、compression controls、damage modifiers と proposed property values を示す。Extended-A draft はこの control set に依存する一方、`Properties` section が placeholder のままである。したがって両案は同時に review する必要があるが、仕様成熟度は同一ではない。
+Codical Version 1.81 は joiners、appearance modifiers、segment delimiters、compression controls、damage modifiers と proposed property values を示す。Extended-A draft はこの control set に依存する一方、`Properties` section が placeholder のままである。したがって両案は同時に review する必要があるが、仕様成熟度は同一ではない。
 
-## UTC \#189 に向けた改訂
+## UTC \#189の前後の改訂
 
-最新版は [L2/26-145R3](../documents/utc-l2-26-145.md) Version 1.6。481文字と32 controls の2 block、計513文字へ改訂された。SEW review の節目は [canonical event](../events/sew-189-script-provisional-assignment-recommendations.md) へ。Extended-A は in process の別案として扱う。
+最新版は [L2/26-145R4](../documents/utc-l2-26-145.md) Version 1.81。481文字と32 controls の2 block、計513文字を維持する。既存numeralsのScript値に関する本文とデータ案の不一致もdocument pageに記した。SEW review の節目は [canonical event](../events/sew-189-script-provisional-assignment-recommendations.md) へ。Extended-A は in process の別案として扱う。
 
 ## 関連文書
 
@@ -78,3 +79,4 @@ Codical Version 1.6 は joiners、appearance modifiers、segment delimiters、co
 - `utc-l2-26-145r2` - <https://www.unicode.org/L2/L2026/26145r2-codical-maya.pdf>
 - `utc-l2-26-145r3` - <https://www.unicode.org/L2/L2026/26145r3-codical-maya.pdf>（registry date: 2026-10-19）
 - `utc-l2-26-239` - <https://www.unicode.org/L2/L2026/26239-sew-report-utc189.pdf>（registry date: 2026-10-24）
+- `utc-l2-26-145r4` - <https://www.unicode.org/L2/L2026/26145r4-codical-maya.pdf>（registry date: 2026-10-27）

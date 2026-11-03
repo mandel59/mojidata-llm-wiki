@@ -2,6 +2,15 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-11-03
+
+- **Catalog**: 4 registryの最新registerを同期し、過去entryの削除なし。UTCに `L2/26-145R4` / `237R` / `241R` を追加し、`226` / `242` の公開を反映。IRGは `N3006` の日付、`N3007` / `N3008` の公開、`N3009` の表題・source・日付を更新。PRIは `#523` / `#555` / `#556` をresolvedへ、`#510` / `#533` / `#557`〜`#560` のdeadlineを2026-12-30へ更新し、`#561` を追加した。
+- **Digest**: [L2/26-226](documents/utc-l2-26-226.md) UTS \#61 snapshot、[L2/26-242](documents/utc-l2-26-242.md) SEI report、[IRG N3007](documents/irg-n3007.md) / [N3008](documents/irg-n3008.md) のGB/T原規格、[PRI \#561](documents/pri-561.md) の5文書ページを追加。[PRI \#510](documents/utc-l2-25-100.md) / [\#523](documents/utc-l2-26-111.md) は既存canonical pageのaliasesを維持してreview状況を更新。IRG掲載日と1995 / 1998年制定の原規格を分け、111文字・3,778文字とGH / GE source対応を照合した。
+- **Revision**: MayaをVersion 1.81へ更新し、既存numeralsのScript値について本文とdata案の不一致を記録。ESRの新文字4件＋directional ZWJ sequenceを [canonical event](events/esr-189-four-characters-directional-zwj-recommendations.md) に整理。RMGは具体的な2,075文字の集計と旧2,090の脚注等の不一致を保持した。revisionは既存canonical pageのaliasesへ追加した。
+- **PRI**: [review終了event](events/utc-189-pri-523-555-556-review-closures.md) を追加。UTS \#61の公開予定と現行Draft、PRI \#555のClosedと正式採用記録の不在を区別した。UTR \#25 draft 5、UAX \#38 draft 4、UAX \#50 draft 2と延長deadlineを既存review・topicへ反映した。
+- **Wiki**: UTC \#189を開催前の案内から改訂資料・SEI・review終了の入口へ更新し、`awaiting-minutes` とした。関連topic・5 emoji proposals・root index・生成indexを接続し、継続中の編集ノートを保持・更新した。
+- **Fetch / review**: 公開PDF・PRI・現行HTMLを非Git cacheへ取得し、Maya表紙・property data、ESR勧告表、RMG集計、GB/T原規格を画像照合。IRG N3001〜N3005は再取得でHTTP 404。UTC \#189 minutesもcatalog上unpostedのため、未取得本文やWG勧告から会合採択を補っていない。
+
 ## 2026-11-02
 
 - **Catalog**: `WG2 N4563` と誤表示されたコメントを PDF 表紙の `WG2 N4653` に基づいて補正。IRG N1022 / N1024–N1027 / N1129 / N1168 / N1210 / N1224 の番号再利用10資料は、文書番号を保ったまま本体 filename に基づく ID で区別し、全 URL を保持。PRI \#1–84 / \#86–176 の archive fragment を実在する anchor へ修正し、PRI \#174 の URL alias だけを取り込み元・関連リンクを保持して1行に統合した。

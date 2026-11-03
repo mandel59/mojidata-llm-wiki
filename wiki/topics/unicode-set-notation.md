@@ -5,19 +5,20 @@ description: "UTS #61 draft が定義する、Unicode specifications と tools �
 slug: unicode-set-notation
 aliases: ["UTS #61", UnicodeSet]
 bodies: [UTC]
-documents: [utc-l2-26-111, utc-l2-26-092, utc-l2-26-096, utc-l2-26-235]
+documents: [utc-l2-26-111, utc-l2-26-092, utc-l2-26-096, utc-l2-26-235, utc-l2-26-226, pri-523]
 topics: [unicode-properties-and-algorithms]
 meetings: [utc-meeting-187, utc-meeting-189]
 status: draft-uts
 tags: [uts61, unicode-set, properties, algorithms, tooling]
-timestamp: "2026-07-08T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
+events: [utc-189-pri-523-555-556-review-closures]
 ---
 
 # Unicode Set Notation
 
 ## 概要
 
-Unicode Set Notation は、Unicode specifications と tools で有限の code point / string sets を machine-readable に表す notation を定義する UTS \#61 draft の論点である。[L2/26-111](../documents/utc-l2-26-111.md) が Proposed Draft UTS \#61 として登録された。
+Unicode Set Notation は、Unicode specifications と tools で有限の code point / string sets を machine-readable に表す notation を定義する UTS \#61 draft の論点である。現在のsnapshotは [L2/26-226](../documents/utc-l2-26-226.md) のRevision 2・Version 1 draft 4で、[PRI \#523](../documents/utc-l2-26-111.md) のResolutionはreview終了と公開予定を告知する。
 
 この topic は、properties / algorithms の文書が集合をどう書くか、ICU / UTS \#35 由来の UnicodeSet 構文を Unicode Standard 側でどう参照可能にするかを追う。
 
@@ -43,9 +44,15 @@ Draft は escaped / named / bracketed elements、property queries、difference /
 
 Unicode specifications では、POSIX-style property queries を避け、`\p` を基本にし、regex match / property comparison / version qualifier を仕様本文で使わないことが推奨される。Higher-level syntax で `#` が comment marker になる場合は escape する、という実務的な注意も含まれる。
 
-## UTC \#189 向けの公開勧告
+## review終了と公開予定
 
-[PAG report](../documents/utc-l2-26-235.md) §13.4 が UTS \#61 の初版公開と PRI \#523 の終了を勧告する。PRI / draft の現状は会合後の minutes と正式公開で確認する。
+[PRI \#523のreview終了](../events/utc-189-pri-523-555-556-review-closures.md) へ。Resolutionはfeedback反映とUTS公開予定を告知するが、現行Revision 2はDraftであり、正式版の公開済み記録と分ける。
+
+現在読むsnapshotは [L2/26-226](../documents/utc-l2-26-226.md)。旧Revision 1からの変更として集合演算の優先順位、conformance testing案、segmentation dialectを確認できる。
+
+### segmentation用のdialect
+
+Revision 2の8節はUAX \#14 / UAX \#29向けにimplicit property queriesとvariablesを導入する。一般のUnicodeSet構文・APIのsubset・仕様本文のdialectを同一視しない。
 
 ## 関連文書
 
@@ -63,3 +70,5 @@ Unicode specifications では、POSIX-style property queries を避け、`\p` �
 - `utc-l2-26-092` - <https://www.unicode.org/L2/L2026/26092.htm>
 - `utc-l2-26-096` - <https://www.unicode.org/L2/L2026/26096-pag-report-utc187.pdf>
 - `utc-l2-26-235` - <https://www.unicode.org/L2/L2026/26235-utc189-properties-recs.pdf>（registry date: 2026-10-20）
+- `utc-l2-26-226` - <https://www.unicode.org/L2/L2026/26226-uts61-2-draft-pri523.pdf>（registry date: 2026-10-25）
+- `pri-523` - <https://www.unicode.org/review/pri523/>

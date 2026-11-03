@@ -4,12 +4,13 @@ title: Emoji Interoperability and Intake
 description: "UTC #187 ESR report を入口にした emoji interoperability、inclusion criteria、CLDR keyword intake。"
 slug: emoji-interoperability-and-intake
 bodies: [UTC]
-documents: [utc-l2-25-230r, utc-l2-25-254, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-092, utc-l2-26-093, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r, utc-l2-26-237, utc-l2-26-235]
+documents: [utc-l2-25-230r, utc-l2-25-254, utc-l2-26-008r, utc-l2-26-048, utc-l2-26-092, utc-l2-26-093, utc-l2-26-098, utc-l2-26-104, utc-l2-26-156r, utc-l2-26-237, utc-l2-26-235, pri-560]
 topics: [emoji-repertoire-proposals, unicode-18-change-sources]
 meetings: [utc-meeting-187, utc-meeting-189]
 status: active
 tags: [emoji, interoperability, cldr, uts51, intake]
-timestamp: "2026-07-08T00:00:00+09:00"
+timestamp: "2026-11-03T00:00:00+09:00"
+events: [esr-189-four-characters-directional-zwj-recommendations]
 ---
 
 # Emoji Interoperability and Intake
@@ -55,7 +56,11 @@ Emoji 19.0 の review は 2026-04-02 に始まり、submissions は 2026-07-31 �
 
 ## Emoji 20.0 への intake 調整
 
-[ESR report](../documents/utc-l2-26-237.md) は Emoji 20.0 の受付を2027-02-02〜05-31、Q3勧告・Q4確定に合わせる予定を報告する。[PAG report](../documents/utc-l2-26-235.md) §11 は future emoji 領域の width / orientation defaults の変更を勧告しており、候補の選定とは別に追う。
+[ESR改訂report](../documents/utc-l2-26-237.md) は Emoji 20.0 の受付を2027-02-02〜05-31、Q3勧告・Q4確定に合わせる予定を報告する。[PAG report](../documents/utc-l2-26-235.md) §11 は future emoji 領域の width / orientation defaults の変更を勧告しており、候補の選定とは別に追う。
+
+### 表現形式と縦書きの後続review
+
+[ESR勧告 event](../events/esr-189-four-characters-directional-zwj-recommendations.md) は、emoji件数と新規コードポイントの数を分ける例となる。[PRI \#560](../documents/pri-560.md) の最新draftはemojiとして表示する際の縦書きorientationを扱う。repertoire選定とrendering guidanceは別の変更である。
 
 ## 関連文書
 
@@ -81,5 +86,5 @@ Emoji 19.0 の review は 2026-04-02 に始まり、submissions は 2026-07-31 �
 - `utc-l2-26-008r` - <https://www.unicode.org/L2/L2026/26008r-esr-report-utc186.pdf>
 - `utc-l2-26-098` - <https://www.unicode.org/L2/L2026/26098-esr-report-utc187.pdf>
 - `utc-l2-26-104` - <https://www.unicode.org/L2/L2026/26104-uts51-30-update-pri543.pdf>
-- `utc-l2-26-237` - <https://www.unicode.org/L2/L2026/26237-esr-report-utc-189.pdf>（registry date: 2026-10-23）
+- `utc-l2-26-237r` - <https://www.unicode.org/L2/L2026/26237r-esr-report-utc-189.pdf>（registry date: 2026-10-27）
 - `utc-l2-26-235` - <https://www.unicode.org/L2/L2026/26235-utc189-properties-recs.pdf>（registry date: 2026-10-20）

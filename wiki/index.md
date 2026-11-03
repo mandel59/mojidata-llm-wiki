@@ -17,7 +17,8 @@ okf_version: "0.1"
 
 ## Current Focus
 
-- [UTC Meeting \#189](meetings/utc/utc-meeting-189.md) - 10月26〜28日の会合前資料。Unicode 19.0計画とscript / CJK / property / emoji勧告。
+- [UTC Meeting \#189](meetings/utc/utc-meeting-189.md) - 改訂ESR / RMG、SEI report、PRI終了を反映。Unicode 19.0計画と会合の採択確認を分けて追う。
+- [UTC \#190 feedback](documents/pri-561.md) - 12月30日締切の、次回向け一般feedback受付。
 
 - [Early IRG History (1993–1996)](topics/early-irg-history.md) - 1993年の設立案から1996年の第7回・WG2第31回へ。source column、構成記法、配置判断を現在と比較。
 
@@ -36,7 +37,10 @@ okf_version: "0.1"
 
 ## Current Decisions and Milestones
 
-- [SEW \#189 script 勧告](events/sew-189-script-provisional-assignment-recommendations.md) - Maya / N’ti / Ndiko Jonam / KORE SEBELI。UTC採択前の節目。
+- [ESR \#189の改訂emoji勧告](events/esr-189-four-characters-directional-zwj-recommendations.md) - 新文字4件とdirectional ZWJ sequence。
+- [PRI \#523・\#555・\#556のreview終了](events/utc-189-pri-523-555-556-review-closures.md) - UTS \#61の公開予定と、一般feedbackの次会合への移行。
+
+- [SEW \#189 script 勧告](events/sew-189-script-provisional-assignment-recommendations.md) - Maya / N’ti / Ndiko Jonam / KORE SEBELI。UTCの採択確認とは分けるWG勧告。
 
 - [IRG \#67 horizontal extension dispositions](events/irg-67-horizontal-extension-dispositions.md) - 4 body の受入勧告と Vietnam の継続 review。
 - [IRG \#67 WS2024 Version 6.0 schedule](events/irg-67-ws2024-version6-review-schedule.md) - 次版作成、ORT review、次期提出準備。
