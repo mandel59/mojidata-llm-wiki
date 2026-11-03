@@ -53,7 +53,9 @@ glyph 修正対象は U+250A9、U+25805、U+26C25 である。source reference �
 
 ### glyph correction と source reference change の混在
 
-`IRG N2919R` は representative glyph correction と source reference correction を同時に扱う。Meeting \#66 の結果は、glyph の一部は in principle accepted、reference changes は pending という分離された状態であり、wiki でも同一文書内の提案を一括で採否判定しない。
+`IRG N2919R` は representative glyph correction と source reference correction を同時に扱う。Meeting \#66 の結果は、glyph の一部は in principle accepted、reference changes は pending という分離された状態である。
+
+<!-- editorial: wiki でも同一文書内の提案を一括で採否判定しない。 -->
 
 ## 関連文書
 

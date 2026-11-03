@@ -46,7 +46,9 @@ timestamp: 2026-07-08T00:00:00+09:00
 
 ### policy before repertoire
 
-`IRG N2885R` は、特定の character list より先に、IRG scope、P&P、terminology、legacy mapping を明確にする必要を示す feedback である。この観点は [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) の umbrella policy に残す。
+`IRG N2885R` は、特定の character list より先に、IRG scope、P&P、terminology、legacy mapping を明確にする必要を示す feedback である。関連する政策論点は [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) を参照する。
+
+<!-- editorial: この観点は [CJK Hybrid Characters](../topics/cjk-hybrid-characters.md) の umbrella policy に残す。 -->
 
 ### 候補数による process choice
 

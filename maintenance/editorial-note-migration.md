@@ -1,6 +1,6 @@
 # 編集ノート移行の進捗
 
-2026-11-02。**全体の移行は継続中。検索候補の精査と、記事全文の精査は別に数える。**
+2026-11-03。**全体の移行は継続中。検索候補の精査と、記事全文の精査は別に数える。**
 
 ## 対象と移行結果（454b9cc時点）
 
@@ -15,13 +15,13 @@
 
 | 区分 | ページ数 |
 | --- | ---: |
-| 候補精査・変更・検証済み | 87 |
-| 候補精査済み・本文に残す | 131 |
-| 検索候補なし・全文精査済み | 99 |
-| 検索候補なし・全文精査は未実施 | 306 |
+| 候補精査・変更・検証済み | 99 |
+| 候補精査済み・本文に残す | 126 |
+| 検索候補なし・全文精査済み | 199 |
+| 検索候補なし・全文精査は未実施 | 199 |
 | 対象外の index / log | 10 |
 
-全文精査済みは **168 / 623ページ**。未完了は455ページ。そのうち306ページは検索候補がなかったページ。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
+全文精査済みは **346 / 623ページ**。未完了は277ページ。そのうち199ページは検索候補がなかったページ。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
 
 ## 本文に残す判断
 
@@ -35,14 +35,14 @@
 ## 次の確認範囲
 
 1. 未完了が残るディレクトリの全文を読み、検索語に出ない編集上の判断・作業記録を確認する。
-2. 候補行を確認した217ページも、未読部分を残したまま全件完了とは扱わない。
+2. 候補行を確認したページも、未読部分を残したまま全件完了とは扱わない。
 3. 新規・更新されたページは管理データの SHA-256 と照合し、変更後の内容を再確認する。
 4. 全文精査と検証が終わるまで、この移行を全件完了にはしない。
 
 | ディレクトリ | 全文精査済み | 未完了 |
 | --- | ---: | ---: |
 | delta | 41 | 0 |
-| documents | 2 | 455 |
+| documents | 180 | 277 |
 | events | 29 | 0 |
 | families | 4 | 0 |
 | meetings | 15 | 0 |
@@ -55,7 +55,7 @@
 
 ```sh
 uv run python tools/editorial_migration_review.py status
-uv run python tools/editorial_migration_review.py packet --directory topics --max-chars 12000 --receipt .cache/editorial-review.json
+uv run python tools/editorial_migration_review.py packet --directory documents --max-chars 12000 --receipt .cache/editorial-review.json
 ```
 
 表示された本文を読み終え、移行対象が残っていないことを確認してから記録する。
@@ -67,7 +67,7 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 移行対象が見つかったページだけ未完了に残し、同時に確認した他のページを記録できる。保留するパスは表示内のものに限る。全ページを保留した場合は記録しない。
 
 ~~~sh
-uv run python tools/editorial_migration_review.py record .cache/editorial-review.json --defer topics/example.md
+uv run python tools/editorial_migration_review.py record .cache/editorial-review.json --defer documents/example.md
 ~~~
 
 表示後に台帳やファイルが変更された場合は記録を拒否する。Wikiを変更した場合は台帳のハッシュと判断を更新し、変更後の本文を改めて確認する。記事の追加・削除も台帳との再照合が必要になる。
@@ -84,11 +84,22 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 - Small Seal Script: 追加property提案の採択を確認していないという調査状態。
 - T-source Representative Glyph Issues: 正式なgroup dispositionの確認待ち。TCAの同意・font提出との区別は本文に残す。
 
-全文精査で検索ルールに出ない6行を追加し、現在の候補記録は218ページ・319行。以下の候補ページ別判断も更新した。残りはdocumentsの455ページで、他ディレクトリのconcept記事は全文精査済みである。
+この追加確認時点では、検索ルールに出ない6行を加え、候補記録は218ページ・319行。残りはdocumentsの455ページだった。
+
+## IRG / PRI 文書の全文精査（2026-11-03）
+
+577d845以降に文書178記事（IRG 154、PRI 24）を追加確認した。これによりIRG文書155記事、PRI文書25記事はすべて全文精査済みとなった。13記事を整理し、編集指示・判断・調査状態12件を近接ノートへ分離した。既存156ノートは保持し、編集後は168ノート。解消済みの404取得記録1件は削除して既存Source Documentへの案内へ置き換えた。
+
+- Wiki内の出典への帰属、topicに残す観点、一括採否判定を避ける編集方針を分離。review input・editorial conclusions・formal recommendationsの役割は本文に明示した。
+- 未確認やpending follow-upという編集上の分類を、正式な未決定として本文に残さない。agendaへの掲載と会合決定の違いは本文に保持した。
+- agendaの会合後更新と、複数topicへの導線を維持する指示をノートへ移した。既存topic・成果文書への読者向けリンクは本文に残した。
+- IRG N2932に残っていた、要約済みIRG N2933の過去の404取得記録を整理した。旧catalogに基づくIRG N2968の履歴や資料間の数値・日付差は、読者に必要な解釈上の注意として残した。
+
+検索候補記録は225ページ・329行。残り277ページはUTC文書229、WG2文書48である。通常のノート執筆にID・分類・一律の日付を要求する変更は加えていない。
 
 ## 検証
 
-85 unit tests（確認補助の12テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、既存151ノートの保持と追加5ノートの行位置、移行後の本文に空の節がないことを確認した。
+85 unit tests（確認補助の12テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、既存156ノートの保持と追加12ノートの行位置、移行後の本文に空の節がないことを確認した。
 
 ## 候補ページ別の判断
 
@@ -119,23 +130,27 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [documents/irg-n2840.md](../wiki/documents/irg-n2840.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/irg-n2868.md](../wiki/documents/irg-n2868.md) | 本文に残す | 原文が示す今後の調査方針。標準化側の計画なので本文に残す。 |
 | [documents/irg-n2874r.md](../wiki/documents/irg-n2874r.md) | 移行・整理 | 具体的な字形を一次資料で確認する注意は残し、要約作成時の制約を移す。 |
-| [documents/irg-n2888.md](../wiki/documents/irg-n2888.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
+| [documents/irg-n2885r.md](../wiki/documents/irg-n2885r.md) | ノートへ分離 | 関連topicのumbrella policyへ観点を残すという編集判断を近接ノートへ移す。原文書が求める政策の明確化は本文に残す。 |
+| [documents/irg-n2888.md](../wiki/documents/irg-n2888.md) | ノートへ分離 | Wikiでの書き分け指示を近接ノートへ移す。review input・editorial conclusions・IRG全体の決定の出典区分は本文に残す。 |
 | [documents/irg-n2889r2.md](../wiki/documents/irg-n2889r2.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2892.md](../wiki/documents/irg-n2892.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/irg-n2899.md](../wiki/documents/irg-n2899.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/irg-n2909.md](../wiki/documents/irg-n2909.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [documents/irg-n2910.md](../wiki/documents/irg-n2910.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
-| [documents/irg-n2911.md](../wiki/documents/irg-n2911.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
+| [documents/irg-n2910.md](../wiki/documents/irg-n2910.md) | ノートへ分離 | Wikiでの出典への帰属指示をノートへ移す。個別review conclusionsとVersion 5.0の正式な承認・期限の出典は本文で明示する。 |
+| [documents/irg-n2911.md](../wiki/documents/irg-n2911.md) | ノートへ分離 | 会合決定のcanonical sourceをWikiでどこへ置くかという編集指示をノートへ移す。formal recommendationsと個別issueの判断理由の出典区分は本文に残す。 |
 | [documents/irg-n2914r.md](../wiki/documents/irg-n2914r.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/irg-n2916.md](../wiki/documents/irg-n2916.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/irg-n2918.md](../wiki/documents/irg-n2918.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
+| [documents/irg-n2919r.md](../wiki/documents/irg-n2919r.md) | ノートへ分離 | Wikiでの一括採否判定を避ける編集指示をノートへ移す。glyphの一部受入とreference changesのpendingという会合記録は本文に残す。 |
 | [documents/irg-n2925.md](../wiki/documents/irg-n2925.md) | 移行・整理 | 既存の会合記録への案内に整理する。 |
 | [documents/irg-n2928.md](../wiki/documents/irg-n2928.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
+| [documents/irg-n2929.md](../wiki/documents/irg-n2929.md) | ノートへ分離 | Meeting #67のdispositionを未確認という調査状態を近接ノートへ移す。改訂提案の提出と件数変更は本文に残し、会合で未決定だったとは断定しない。 |
 | [documents/irg-n2929r.md](../wiki/documents/irg-n2929r.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 / agenda の掲載事実を本文に残す。 |
 | [documents/irg-n2931.md](../wiki/documents/irg-n2931.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
+| [documents/irg-n2932.md](../wiki/documents/irg-n2932.md) | 解消・整理 | IRG N2933は既にSource Document化されており、過去の404取得記録は解消済みとして除去する。consolidated commentsへの読者向けリンクへ置き換える。 |
 | [documents/irg-n2933.md](../wiki/documents/irg-n2933.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/irg-n2934r.md](../wiki/documents/irg-n2934r.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
-| [documents/irg-n2935.md](../wiki/documents/irg-n2935.md) | 移行・整理 | 入力文書と採択の区別を本文に残し、調査予定を移す。 |
+| [documents/irg-n2935.md](../wiki/documents/irg-n2935.md) | ノートへ分離 | 会合後にrecommendationsで状態を更新する編集手順を近接ノートへ移す。継続確認項目はagenda自身の記述とし、正式な会合結果への案内を本文に残す。 |
 | [documents/irg-n2939r.md](../wiki/documents/irg-n2939r.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2940.md](../wiki/documents/irg-n2940.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2941.md](../wiki/documents/irg-n2941.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
@@ -143,7 +158,7 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [documents/irg-n2945.md](../wiki/documents/irg-n2945.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2952.md](../wiki/documents/irg-n2952.md) | 移行・整理 | recommendations は既にページ化済み。公開待ちの記述を解消し、既存の会合記録を案内する。 |
 | [documents/irg-n2953.md](../wiki/documents/irg-n2953.md) | 移行・整理 | agenda と採否の違いは残す。既存ページがあるので available 待ちの記述を解消する。 |
-| [documents/irg-n2962r2.md](../wiki/documents/irg-n2962r2.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
+| [documents/irg-n2962r2.md](../wiki/documents/irg-n2962r2.md) | ノートへ分離 | 会合前のfeedbackとagenda掲載だけから未決定と断定しない。採否の確認をノートに残し、本文はfeedbackの資料上の役割を示す。 |
 | [documents/irg-n2968.md](../wiki/documents/irg-n2968.md) | 本文に残す | 旧文書・旧 catalog を根拠とする要約だと示す出典の注意。隠すと現行 Registry の記録と誤認する。 |
 | [documents/irg-n2969.md](../wiki/documents/irg-n2969.md) | 移行・整理 | 既存の結果文書への案内に整理する。agenda の討議完了を採択とは書かない。 |
 | [documents/irg-n2969r.md](../wiki/documents/irg-n2969r.md) | 移行・整理 | 既存の正式な会合記録への案内に整理する。 |
@@ -151,7 +166,9 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [documents/irg-n2972.md](../wiki/documents/irg-n2972.md) | 移行・整理 | agenda と採択の違いを残し、採否の調査予定を移す。 |
 | [documents/irg-n2972r.md](../wiki/documents/irg-n2972r.md) | 移行・整理 | TA / T9 の集計上の注意は本文に残し、反映の照合予定を移す。 |
 | [documents/irg-n2973.md](../wiki/documents/irg-n2973.md) | 移行・整理 | 提案時点と会合結果を分け、既存の結果文書を案内する。 |
+| [documents/irg-n2974.md](../wiki/documents/irg-n2974.md) | ノートへ分離 | 正式採択の未確認という調査状態をノートへ移す。TCAの同意・font提出と会議体の正式採択の区別を本文に残す。 |
 | [documents/irg-n2975.md](../wiki/documents/irg-n2975.md) | 移行・整理 | source-owner 同意と標準データ反映の違いを残し、確認作業を移す。 |
+| [documents/irg-n2976.md](../wiki/documents/irg-n2976.md) | ノートへ分離 | 既にSource Document化されているN2946の公開待ちを除き、個別dispositionの照合を近接ノートへ移す。提案と会合勧告の違いを本文に残す。 |
 | [documents/irg-n2977.md](../wiki/documents/irg-n2977.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2983.md](../wiki/documents/irg-n2983.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/irg-n2984.md](../wiki/documents/irg-n2984.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
@@ -163,11 +180,12 @@ uv run python tools/editorial_migration_review.py record .cache/editorial-review
 | [documents/irg-n391.md](../wiki/documents/irg-n391.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/irg-n394r.md](../wiki/documents/irg-n394r.md) | 本文に残す | 改訂案と正式承認の違いという資料解釈上の限界。 |
 | [documents/pri-259.md](../wiki/documents/pri-259.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [documents/pri-534.md](../wiki/documents/pri-534.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
+| [documents/pri-534.md](../wiki/documents/pri-534.md) | ノートへ分離 | 公開済みUTC #188記録の待機とpending follow-upという仮分類を整理する。個別採否の未確認はノートへ、review終了と採択の違い・照合先は本文に残す。 |
 | [documents/pri-544.md](../wiki/documents/pri-544.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/pri-545.md](../wiki/documents/pri-545.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/pri-547.md](../wiki/documents/pri-547.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
 | [documents/pri-550.md](../wiki/documents/pri-550.md) | 移行・整理 | digest 作成時の指示を、読者に必要な同時期の references update という関係へ整理する。 |
+| [documents/pri-553.md](../wiki/documents/pri-553.md) | ノートへ分離 | 複数topicから辿れるようにする編集上の導線方針を近接ノートへ移す。securityとrelease全体に関する既存topicへの読者向け案内は本文に残す。 |
 | [documents/pri-554.md](../wiki/documents/pri-554.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/utc-l2-10-198.md](../wiki/documents/utc-l2-10-198.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/utc-l2-19-015.md](../wiki/documents/utc-l2-19-015.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
