@@ -11,6 +11,8 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Callable, Iterable
 
+import yaml
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "wiki"
@@ -19,7 +21,6 @@ DEFAULT_SCHEMA = ROOT / "schema" / "concept_types.json"
 RESERVED_FILENAMES = {"index.md", "log.md"}
 RELATION_KEYS = ["documents", "topics", "people", "meetings", "events"]
 
-KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):(?:\s*(.*))?$")
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 SCHEME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*:")
 EDITORIAL_START = "<!-- editorial:"
@@ -249,64 +250,50 @@ def split_frontmatter(path: Path, text: str) -> FrontmatterDocument:
     return FrontmatterDocument(None, text, [f"{path}: frontmatter is not closed"])
 
 
-def parse_value(value: str | None) -> object:
-    if value is None:
-        return ""
-    value = value.strip()
-    if value == "":
-        return ""
-    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
-        return value[1:-1]
-    if value.startswith("[") and value.endswith("]"):
-        inner = value[1:-1].strip()
-        if not inner:
-            return []
-        return [parse_value(item) for item in inner.split(",")]
-    return value
+class FrontmatterLoader(yaml.BaseLoader):
+    """Parse YAML with string scalars and the wiki's duplicate/comment checks."""
 
+    def __init__(self, source: str) -> None:
+        self.source = source
+        super().__init__(source)
 
-def value_has_unquoted_comment_marker(value: str | None) -> bool:
-    if value is None:
-        return False
-    quote: str | None = None
-    escaped = False
-    for index, char in enumerate(value):
-        if quote is not None:
-            if quote == '"' and char == "\\" and not escaped:
-                escaped = True
-                continue
-            if char == quote and not escaped:
-                quote = None
-            escaped = False
-            continue
-        if char in {"'", '"'}:
-            quote = char
-            continue
-        if char == "#" and (index == 0 or value[index - 1].isspace()):
-            return True
-    return False
+    def construct_mapping(self, node: yaml.MappingNode, deep: bool = False) -> dict:
+        mapping = super().construct_mapping(node, deep=deep)
+        seen: set[str] = set()
+        for key_node, _value_node in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            if key in seen:
+                raise yaml.constructor.ConstructorError(
+                    None, None, f"duplicate frontmatter key: {key}", key_node.start_mark
+                )
+            seen.add(key)
+        return mapping
+
+    def construct_scalar(self, node: yaml.ScalarNode) -> str:
+        # Keep the existing guard against silently truncating e.g. UTC #187.
+        # YAML's node positions identify comments without re-parsing quoting.
+        if node.style is None:
+            suffix = self.source[node.end_mark.index :].split("\n", 1)[0]
+            if suffix.lstrip().startswith("#"):
+                raise yaml.constructor.ConstructorError(
+                    None, None, "frontmatter value containing # must be quoted", node.start_mark
+                )
+        return super().construct_scalar(node)
 
 
 def parse_frontmatter_header(path: Path, header: str) -> tuple[dict[str, object], list[str]]:
-    data: dict[str, object] = {}
-    errors: list[str] = []
-
-    for offset, line in enumerate(header.splitlines(), start=2):
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            continue
-        match = KEY_RE.match(line)
-        if not match:
-            errors.append(f"{path}:{offset}: cannot parse frontmatter line")
-            continue
-        key, value = match.groups()
-        if key in data:
-            errors.append(f"{path}:{offset}: duplicate frontmatter key: {key}")
-        if value_has_unquoted_comment_marker(value):
-            errors.append(f"{path}:{offset}: frontmatter value containing # must be quoted")
-        data[key] = parse_value(value)
-
-    return data, errors
+    try:
+        data = yaml.load(header, Loader=FrontmatterLoader)
+    except yaml.YAMLError as error:
+        mark = getattr(error, "problem_mark", None)
+        location = f"{path}:{mark.line + 2}:{mark.column + 1}" if mark else str(path)
+        problem = getattr(error, "problem", None) or str(error)
+        return {}, [f"{location}: invalid YAML frontmatter: {problem}"]
+    if data is None:
+        return {}, []
+    if not isinstance(data, dict) or any(not isinstance(key, str) for key in data):
+        return {}, [f"{path}: frontmatter must be a YAML mapping with string keys"]
+    return data, []
 
 
 def parse_frontmatter(path: Path) -> tuple[dict[str, object], list[str]]:
@@ -670,19 +657,8 @@ def update_frontmatter(
 
 
 def render_page(frontmatter: dict[str, object], body: str) -> str:
-    lines = ["---"]
-    for key, value in frontmatter.items():
-        lines.append(f"{key}: {render_value(value)}")
-    lines.extend(["---", "", body.rstrip(), ""])
-    return "\n".join(lines)
-
-
-def render_value(value: object) -> str:
-    if isinstance(value, list):
-        return "[" + ", ".join(render_value(item) for item in value) + "]"
-    if isinstance(value, str) and (":" in value or "#" in value):
-        return json.dumps(value, ensure_ascii=False)
-    return str(value)
+    header = yaml.safe_dump(frontmatter, allow_unicode=True, sort_keys=False).rstrip()
+    return f"---\n{header}\n---\n\n{body.rstrip()}\n"
 
 
 def relative_link(from_path: Path, to_path: Path, title: object) -> str:

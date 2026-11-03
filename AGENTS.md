@@ -79,11 +79,14 @@ tools/
 - 本文中の Markdown link は実在する wiki page または外部 URL に限る。まだページ化されていないが関連として残したい概念・文書・会合・人物・出来事は、本文リンクではなく frontmatter の `documents`、`topics`、`people`、`meetings`、`events` に slug / entry_id として記録する。
 - frontmatter relation は未ページ化 target を許容する。`tools/query_wiki.py` の JSON 出力では、既存 concept へ解決できた relation は `links` に入り、未解決 relation は `unresolved_relations` に残る。
 - `tags` は YAML list とする。外部根拠は本文末尾の `## 出典` に公開 URL と `entry_id` を残す。
+- frontmatter の文字列には YAML のエスケープ規則を使い、Markdown 本文用の `\#` を入れない。`#` を含む値は `title: "IRG Meeting #67"` のように引用符で囲む。二重引用符内の `\#` は不正な YAML escape であり、単一引用符内では不要なバックスラッシュが値に残る。
 - wiki 内リンクからローカル `.cache/`、`raw/`、`downloads/` へリンクしない。
 
 ## Wiki Data API
 
 `tools/wiki_store.py` は wiki の programmatic access layer とする。Markdown frontmatter の split / parse、concept identity、concept graph、Markdown link resolution、schema validation、marker block 置換など、複数 tool で再利用する処理はここへ置く。
+
+frontmatter 全体の解析・書き出しは PyYAML を使い、独自の簡易 YAML parser / serializer は実装しない。読み込みは `BaseLoader` を基に scalar を文字列として保持し、重複 key と引用漏れによる `#` 以降の欠落を検出する。
 
 concept lookup は `id`、ファイル path、`title`、`doc_number`、frontmatter の `aliases` を対象にする。たとえば同じ Source Document が UTC `L2/...` と WG2 `N...` の両方で参照される場合は、canonical な `entry_id` のページを 1 つ作り、もう一方の文書番号を `aliases` に入れる。
 

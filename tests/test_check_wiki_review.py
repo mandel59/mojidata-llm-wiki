@@ -1,12 +1,16 @@
 import unittest
 import sys
+import tempfile
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from tools.check_wiki_review import (
     CatalogEntry,
     available_catalog_name_index,
     catalog_entries_mentioned_in_line,
+    check_body_obsidian_tags,
+    check_overescaped_hashes_in_inline_code,
     escape_obsidian_tags_in_markdown,
     line_describes_document_as_unavailable,
     unescape_hashes_in_inline_code_markdown,
@@ -14,6 +18,25 @@ from tools.check_wiki_review import (
 
 
 class CheckWikiReviewTests(unittest.TestCase):
+    def test_body_fixes_leave_yaml_frontmatter_unchanged(self):
+        header = (
+            '---\ntitle: "IRG Meeting #67"\n'
+            'aliases: ["UAX #38", "PRI #534"]\n'
+            'description: "Literal `\\\\#67`"\n---\n'
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            bundle = Path(tmp)
+            path = bundle / "page.md"
+            path.write_text(header + "\nUTC #187 and `PRI \\#534`.\n", encoding="utf-8")
+            with patch("tools.check_wiki_review.WIKI", bundle), patch("tools.check_wiki_review.ROOT", bundle):
+                self.assertEqual(len(check_body_obsidian_tags(fix=True)), 1)
+                self.assertEqual(len(check_overescaped_hashes_in_inline_code(fix=True)), 1)
+                self.assertEqual(check_body_obsidian_tags(), [])
+                self.assertEqual(check_overescaped_hashes_in_inline_code(), [])
+            self.assertEqual(
+                path.read_text(encoding="utf-8"), header + "\nUTC \\#187 and `PRI #534`.\n"
+            )
+
     def test_escapes_obsidian_tag_like_body_tokens(self):
         fixed, findings = escape_obsidian_tags_in_markdown(
             "UTC #187 が UAX #38 の revision を確認した。\n"

@@ -4,6 +4,7 @@
 
 ## 2026-11-03
 
+- **Tools / wiki**: 7ページのfrontmatterで `#` の前に混入したMarkdown用バックスラッシュを9行から除去。簡易パーサー・serializerを廃止してfrontmatter全体の読み書きをPyYAMLへ移し、不正なescape・重複keyを検出する。日付等のscalarは従来どおり文字列として保持し、block list・複数行文字列にも対応した。
 - **Catalog**: 4 registryの最新registerを同期し、過去entryの削除なし。UTCに `L2/26-145R4` / `237R` / `241R` を追加し、`226` / `242` の公開を反映。IRGは `N3006` の日付、`N3007` / `N3008` の公開、`N3009` の表題・source・日付を更新。PRIは `#523` / `#555` / `#556` をresolvedへ、`#510` / `#533` / `#557`〜`#560` のdeadlineを2026-12-30へ更新し、`#561` を追加した。
 - **Digest**: [L2/26-226](documents/utc-l2-26-226.md) UTS \#61 snapshot、[L2/26-242](documents/utc-l2-26-242.md) SEI report、[IRG N3007](documents/irg-n3007.md) / [N3008](documents/irg-n3008.md) のGB/T原規格、[PRI \#561](documents/pri-561.md) の5文書ページを追加。[PRI \#510](documents/utc-l2-25-100.md) / [\#523](documents/utc-l2-26-111.md) は既存canonical pageのaliasesを維持してreview状況を更新。IRG掲載日と1995 / 1998年制定の原規格を分け、111文字・3,778文字とGH / GE source対応を照合した。
 - **Revision**: MayaをVersion 1.81へ更新し、既存numeralsのScript値について本文とdata案の不一致を記録。ESRの新文字4件＋directional ZWJ sequenceを [canonical event](events/esr-189-four-characters-directional-zwj-recommendations.md) に整理。RMGは具体的な2,075文字の集計と旧2,090の脚注等の不一致を保持した。revisionは既存canonical pageのaliasesへ追加した。
