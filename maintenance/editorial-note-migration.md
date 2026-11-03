@@ -1,6 +1,6 @@
 # 編集ノート移行の進捗
 
-2026-11-03。**全体の移行は継続中。検索候補の精査と、記事全文の精査は別に数える。**
+2026-11-03。**対象623記事すべての全文精査と編集ノート移行を完了。index / log 10ファイルは対象外。** 検索候補の精査と、記事全文の精査は別に記録した。
 
 ## 対象と移行結果（454b9cc時点）
 
@@ -15,13 +15,13 @@
 
 | 区分 | ページ数 |
 | --- | ---: |
-| 候補精査・変更・検証済み | 102 |
-| 候補精査済み・本文に残す | 126 |
-| 検索候補なし・全文精査済み | 291 |
-| 検索候補なし・全文精査は未実施 | 104 |
+| 候補精査・変更・検証済み | 112 |
+| 候補精査済み・本文に残す | 118 |
+| 検索候補なし・全文精査済み | 393 |
+| 検索候補なし・全文精査は未実施 | 0 |
 | 対象外の index / log | 10 |
 
-全文精査済みは **453 / 623ページ**。未完了は170ページ。そのうち104ページは検索候補がなかったページ。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
+全文精査済みは **623 / 623ページ**。未完了は0ページ。検索候補のないページも含めて確認した。候補行と周辺だけの確認は全文精査に数えない。全文精査は記事本文の編集記述混入の確認を指す。
 
 ## 本文に残す判断
 
@@ -32,17 +32,17 @@
 
 採否を調べていないことから、会合で未決定だったと推論しない。ノートを除いても、読者に必要な注意と根拠が本文に残るようにする。
 
-## 次の確認範囲
+## 完了範囲と更新時の扱い
 
-1. 未完了が残るディレクトリの全文を読み、検索語に出ない編集上の判断・作業記録を確認する。
-2. 候補行を確認したページも、未読部分を残したまま全件完了とは扱わない。
-3. 新規・更新されたページは管理データの SHA-256 と照合し、変更後の内容を再確認する。
-4. 全文精査と検証が終わるまで、この移行を全件完了にはしない。
+1. 台帳に記録した623 concept articles の全文を精査した。候補行と周辺だけの確認を全文精査に数えていない。
+2. 移行は本文への編集記述混入を対象とする。原資料自身の調査計画、未決事項、解釈限界は本文に残した。
+3. この完了状態を再検証する場合は台帳の SHA-256 と現在のファイルを照合し、新規・更新ページを再確認する。今回の完了は記録したsnapshotの範囲を指す。
+4. ノート内の調査事項そのものをすべて解消したという意味ではない。通常の執筆時にID・分類・管理台帳の更新を必須にしない。
 
 | ディレクトリ | 全文精査済み | 未完了 |
 | --- | ---: | ---: |
 | delta | 41 | 0 |
-| documents | 287 | 170 |
+| documents | 457 | 0 |
 | events | 29 | 0 |
 | families | 4 | 0 |
 | meetings | 15 | 0 |
@@ -107,11 +107,22 @@ d2362fe以降にUTC文書107記事を追加確認した。2025年以前のUTC文
 
 ファイル名の並び順で末尾となる1999年の文書は、editing表示で省略せず全文を確認して記録した。
 
-原資料の調査予定・review不足、提案と確定仕様の違い、repertoireの数値不整合、source dataとevidenceの違いは、読者に必要な注意として本文に保持した。検索候補に出ない3行を追加し、候補記録は228ページ・332行。全体は453/623記事確認済み、残り170記事は2026年のUTC文書122記事とWG2文書48記事である。
+原資料の調査予定・review不足、提案と確定仕様の違い、repertoireの数値不整合、source dataとevidenceの違いは、読者に必要な注意として本文に保持した。検索候補に出ない3行を追加し、候補記録は228ページ・332行。この追加確認時点で全体は453/623記事確認済みとなり、残りは2026年のUTC文書122記事とWG2文書48記事の計170記事だった。
+
+## 全文精査の完了（2026-11-03）
+
+74f3e02以降に残り170記事（UTC 122、WG2 48）を追加確認し、623記事すべての全文精査を終えた。文書457記事の内訳はUTC 229、WG2 48、IRG 155、PRI 25。11記事を整理して10件を近接ノートへ移し、完了済みの作業予定2件を解消した。既存171ノートは保持し、編集後は181ノート。
+
+- UAX #38のtopic接続方針、Zou提案の画像照合と矛盾の記録方針を分離した。説明文書と実データ、PUAと正式割当の違い、原資料の表の不一致は本文に残した。
+- Small Sealの基準文字数の選択、J-sourceとSmall Sealのcanonical eventへの集約、時点を分けて記録する指示を分離した。読者向けの既存topic / eventリンクと、文字数・body・段階の違いは本文に残した。
+- IRG summary reportの状態更新予定と、topicでbody・時点を明示する指示を分離した。日付付きのstatusと、Unicode / ISO/IEC 10646の変更範囲の違いは本文に残した。
+- L2/26-110のPRI #547ページ化予定と、L2/26-215の将来のIRG N2946を待つ記述は、既存ページへの案内に更新した。
+
+検索候補記録は230ページ・338行。今回の再開作業全体では277記事を追加確認し、14記事を整理、13件をノートへ移行、作業予定2件を解消した。開始時の168ノートを保持し、最終181ノート。index / log 10ファイルを除く全文精査の未完了は0記事である。
 
 ## 検証
 
-85 unit tests（確認補助の12テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、既存168ノートの保持と追加3ノートの行位置、移行後の本文に空の節がないことを確認した。
+85 unit tests（確認補助の12テストを含む）、catalog / OKF / wiki review / event 検査、document / event index の生成差分検査が成功。全633ファイルと台帳の対応、候補行と基準コミットの一致、既存171ノートの保持と追加10ノートの行位置、移行後の本文に空の節がないことを確認した。
 
 ## 候補ページ別の判断
 
@@ -220,10 +231,11 @@ d2362fe以降にUTC文書107記事を追加確認した。2025年以前のUTC文
 | [documents/utc-l2-26-097.md](../wiki/documents/utc-l2-26-097.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/utc-l2-26-101.md](../wiki/documents/utc-l2-26-101.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
 | [documents/utc-l2-26-102.md](../wiki/documents/utc-l2-26-102.md) | 移行・整理 | 当時の予定日の不一致は残す。正式公開の報告が既にあるので、draft / beta を常に優先する旧編集方針は解消する。 |
-| [documents/utc-l2-26-105.md](../wiki/documents/utc-l2-26-105.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
+| [documents/utc-l2-26-105.md](../wiki/documents/utc-l2-26-105.md) | 移行・整理 | 説明変更とrelease全体を別topicへ接続する編集方針を近接ノートへ移す。説明文書と実データの区別、既存topicへの読者向け案内は本文に残す。 |
 | [documents/utc-l2-26-106.md](../wiki/documents/utc-l2-26-106.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
 | [documents/utc-l2-26-107.md](../wiki/documents/utc-l2-26-107.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
 | [documents/utc-l2-26-108.md](../wiki/documents/utc-l2-26-108.md) | 本文に残す | 一次資料の記載内容、文書の役割、決定主体・時点の違い、または解釈上の注意。読者に必要な本文。 |
+| [documents/utc-l2-26-110.md](../wiki/documents/utc-l2-26-110.md) | 移行・整理 | 既に存在するPRI #547を別にページ化する編集予定を解消し、そのページへの読者向け案内に置き換える。 |
 | [documents/utc-l2-26-112.md](../wiki/documents/utc-l2-26-112.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
 | [documents/utc-l2-26-131.md](../wiki/documents/utc-l2-26-131.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/utc-l2-26-132.md](../wiki/documents/utc-l2-26-132.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 / SEW 勧告と UTC 採否の区別、会合ページへの案内を残す。 |
@@ -236,6 +248,7 @@ d2362fe以降にUTC文書107記事を追加確認した。2025年以前のUTC文
 | [documents/utc-l2-26-208.md](../wiki/documents/utc-l2-26-208.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/utc-l2-26-212.md](../wiki/documents/utc-l2-26-212.md) | 移行・整理 | 日付と勧告段階は本文に残し、採否の照合予定を移す。 |
 | [documents/utc-l2-26-214.md](../wiki/documents/utc-l2-26-214.md) | 移行・整理 | 日付と勧告段階は本文に残し、採否の照合予定を移す。 |
+| [documents/utc-l2-26-215.md](../wiki/documents/utc-l2-26-215.md) | 移行・整理 | 公開・要約済みのIRG N2946を将来の文書として待つ記述を解消し、既存勧告ページへの案内に更新する。activity reportと会合決定の区別は本文に残す。 |
 | [documents/utc-l2-26-217.md](../wiki/documents/utc-l2-26-217.md) | 移行・整理 | feedback の性質は本文に残し、disposition の確認作業を移す。 / 日付と勧告段階は本文に残し、採否の照合予定を移す。 |
 | [documents/utc-l2-26-219.md](../wiki/documents/utc-l2-26-219.md) | 移行・整理 | 会合への入力資料という性質と採択との違いは本文に残し、編集時点と確認予定を移す。 |
 | [documents/utc-l2-26-221.md](../wiki/documents/utc-l2-26-221.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
@@ -255,7 +268,7 @@ d2362fe以降にUTC文書107記事を追加確認した。2025年以前のUTC文
 | [documents/utc-l2-26-245.md](../wiki/documents/utc-l2-26-245.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
 | [documents/utc-l2-26-247.md](../wiki/documents/utc-l2-26-247.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
 | [documents/utc-l2-26-257.md](../wiki/documents/utc-l2-26-257.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
-| [documents/utc-l2-26-258.md](../wiki/documents/utc-l2-26-258.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
+| [documents/utc-l2-26-258.md](../wiki/documents/utc-l2-26-258.md) | 移行・整理 | 画像の照合と内部矛盾を補正せず記録する編集手順を近接ノートへ移す。PUAと正式割当の違い、各表の対応不一致は本文に残す。 |
 | [documents/utc-l2-26-259.md](../wiki/documents/utc-l2-26-259.md) | 移行・整理 | 採否・反映の調査予定であり、一次文書が記録する結論とは分ける。 |
 | [documents/utc-l2-26-260.md](../wiki/documents/utc-l2-26-260.md) | 移行・整理 | 会合への入力資料という性質と採択との違いは本文に残し、編集時点と確認予定を移す。 |
 | [documents/utc-l2-26-261.md](../wiki/documents/utc-l2-26-261.md) | 移行・整理 | 会合への入力資料という性質と採択との違いは本文に残し、編集時点と確認予定を移す。 |
@@ -272,14 +285,14 @@ d2362fe以降にUTC文書107記事を追加確認した。2025年以前のUTC文
 | [documents/utc-l2-26-272.md](../wiki/documents/utc-l2-26-272.md) | 移行・整理 | 会合への入力資料という性質と採択との違いは本文に残し、編集時点と確認予定を移す。 |
 | [documents/utc-l2-26-273.md](../wiki/documents/utc-l2-26-273.md) | 移行・整理 | 会合への入力資料という性質と採択との違いは本文に残し、編集時点と確認予定を移す。 |
 | [documents/wg2-n4634.md](../wiki/documents/wg2-n4634.md) | 移行・整理 | 同一文書の別番号という事実は残し、ページ統合の編集方針を移す。 |
-| [documents/wg2-n4688.md](../wiki/documents/wg2-n4688.md) | 本文に残す | 11,108文字と11,116 entries の区別を説明する根拠。本文の採用値の理由を読者から隠さない。 |
-| [documents/wg2-n5296.md](../wiki/documents/wg2-n5296.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [documents/wg2-n5301.md](../wiki/documents/wg2-n5301.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [documents/wg2-n5304.md](../wiki/documents/wg2-n5304.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
-| [documents/wg2-n5306.md](../wiki/documents/wg2-n5306.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
+| [documents/wg2-n4688.md](../wiki/documents/wg2-n4688.md) | 移行・整理 | Wikiで基準とするproposal countを選ぶ編集判断を近接ノートへ移す。Section 4の11,116 entriesとsummary form・後続参照の11,108 charactersの資料内不一致は本文に残す。 |
+| [documents/wg2-n5296.md](../wiki/documents/wg2-n5296.md) | 移行・整理 | Wiki内で決定をcanonical eventへ集約する編集方針を近接ノートへ移す。WG2の勧告と既存eventへの読者向け案内は本文に残す。 |
+| [documents/wg2-n5301.md](../wiki/documents/wg2-n5301.md) | 移行・整理 | J-source glyph revertをcanonical eventへ集約する編集方針を近接ノートへ移す。minutesの対象範囲、formal recommendationとの対応、既存eventへの案内は本文に残す。 |
+| [documents/wg2-n5304.md](../wiki/documents/wg2-n5304.md) | 移行・整理 | 関連topic・eventへの接続方針と、Small Sealの異なる時点を分けて記録する編集指示を近接ノートへ移す。勧告の射程、body・時点の違い、既存ページへの案内は本文に残す。 |
+| [documents/wg2-n5306.md](../wiki/documents/wg2-n5306.md) | 移行・整理 | Small Sealの節目をcanonical eventへ集約する編集方針を近接ノートへ移す。future edition candidateという勧告の内容と既存eventへの案内は本文に残す。 |
 | [documents/wg2-n5339.md](../wiki/documents/wg2-n5339.md) | 本文に残す | 技術用語・property 名・符号化モデルの説明。canonical / alias 等の検索一致であり編集メモではない。 |
-| [documents/wg2-n5353.md](../wiki/documents/wg2-n5353.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
-| [documents/wg2-n5354.md](../wiki/documents/wg2-n5354.md) | 本文に残す | 記事の対象範囲と関連 topic / event / 文書への読者向け案内。 |
+| [documents/wg2-n5353.md](../wiki/documents/wg2-n5353.md) | 移行・整理 | 後続会合文書で現在状態を更新する編集予定を近接ノートへ移す。2026-04-30時点のstatusという注意と後続資料への案内は本文に残す。 |
+| [documents/wg2-n5354.md](../wiki/documents/wg2-n5354.md) | 移行・整理 | topic pageでbodyと時点を明示する編集指示を近接ノートへ移す。UnicodeとISO/IEC 10646の変更範囲・段階の違いは本文に残す。 |
 | [events/irg-4-officer-role-restriction-withdrawal.md](../wiki/events/irg-4-officer-role-restriction-withdrawal.md) | 本文に残す | 過去の役割分担を全時期へ広げないための史料解釈上の限界。 |
 | [events/sew-189-script-provisional-assignment-recommendations.md](../wiki/events/sew-189-script-provisional-assignment-recommendations.md) | 移行・整理 | SEW 勧告そのものの記述と、UTC 採否の確認作業を分ける。 |
 | [events/uax60-unicode-18-first-published-version.md](../wiki/events/uax60-unicode-18-first-published-version.md) | 本文に残す | 補足検索の候補を周辺文脈と照合。一次資料の内容、読者向け案内・解釈限界を本文に残す。 |
