@@ -2,6 +2,13 @@
 
 このファイルは OKF bundle の作業ログです。新しい日付を上に置き、各日付の下に flat list で entries を追記します。
 
+## 2026-11-12
+
+- **Catalog** - UTC / WG2 / IRG / PRI の最新registerを再取得。UTCに `L2/26-274` を追加。WG2の `N5352` のsource表記と `N5370` の公開・表題・source・日付・URLを更新。IRGの `N3001` の日付を更新し、未公開予約枠 `N3011`〜`N3020` を追加。既存entryは全件保持し、PRIの目録差分はなかった。
+- **Digest** - [L2/26-274 / IRG N3001](documents/utc-l2-26-274.md) をcanonicalな1ページで追加。PDF本文・添付dataの66行・block別件数を照合し、既存74文字案とのcode point重複がないことを確認。UCV \#277の適用拡張、UAX \#45、source / glyph、UTCの関連ページとroot / 文書indexへ接続した。
+- **Registry identity** - 新たに掲載された WG2 N5370 は既存 [IRG N2946](documents/irg-n2946.md) と同一PDFであることを確認し、既存aliasを保持してWG2出典URLを追加。Registryの「\#66」と表紙の「\#67」の不一致を文書・会合ページに反映した。
+- **Fetch / review** - 3つの公開PDFを非Git cacheへ取得し、表紙・unification notesを画像照合。IRG N3002〜N3005は2026-11-12の再取得でもHTTP 404であり、後続確認を新文書の編集ノートに記録した。
+
 ## 2026-11-03
 
 - **Tools / wiki**: 7ページのfrontmatterで `#` の前に混入したMarkdown用バックスラッシュを9行から除去。簡易パーサー・serializerを廃止してfrontmatter全体の読み書きをPyYAMLへ移し、不正なescape・重複keyを検出する。日付等のscalarは従来どおり文字列として保持し、block list・複数行文字列にも対応した。

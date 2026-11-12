@@ -4,7 +4,7 @@ title: CJK Horizontal Extensions
 description: 既存 CJK Unified Ideographs に JMJ / G / UK / U / V source data を追加する horizontal extension 提案。
 slug: cjk-horizontal-extensions
 bodies: [IRG, WG2, UTC]
-documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, irg-n2945, irg-n2960, utc-l2-26-147, irg-n2970, irg-n2972, pri-546, irg-n2939r, irg-n2943, irg-n2983, irg-n2984, irg-n2987, irg-n2929r2, irg-n2972r, irg-n080, irg-n131, irg-n2946, utc-l2-26-238]
+documents: [wg2-n5221, irg-n2721, irg-n2722, irg-n2369r, utc-l2-24-012, irg-n2909, irg-n2923r, irg-n2929, irg-n2929r, irg-n2935, irg-n2936, irg-n2945, irg-n2960, utc-l2-26-147, irg-n2970, irg-n2972, pri-546, irg-n2939r, irg-n2943, irg-n2983, irg-n2984, irg-n2987, irg-n2929r2, irg-n2972r, irg-n080, irg-n131, irg-n2946, utc-l2-26-238, utc-l2-26-274]
 topics: [irg-disunified-ideographs, jmj-horizontal-extension-review-path, uax45-u-source-ideographs, irg-source-data-and-representative-glyphs, unihan-data-format-and-property-syntax, ideographic-variation-database, early-irg-history]
 status: active
 tags: [irg, cjk, horizontal-extension, source-data]
@@ -21,7 +21,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 
 近年の例には、Japan NB の JMJ references、China の `G-source` 9,178 characters、UK の 2 characters、UTC の `U-source` 改訂版74 characters、Vietnam の V-source 9,263 references がある。TCA は [IRG N2972](../documents/irg-n2972.md) で700件の T-source references を提案した。大規模 source addition は、source owner の review、representative glyph、Unihan source property maintenance に接続する。
 
-2026-10-15 の最新 disposition は [IRG \#67 horizontal extension event](../events/irg-67-horizontal-extension-dispositions.md)を参照する。従来の提案・agenda 各行はその時点の記録として残す。
+2026-11-10提出の [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) は66文字の U-source 案。内容は同文書の要約、IRG \#67 の disposition は [IRG \#67 horizontal extension event](../events/irg-67-horizontal-extension-dispositions.md)を参照する。従来の提案・agenda 各行はその時点の記録として残す。
 
 ## 経緯
 
@@ -48,6 +48,7 @@ CJK horizontal extension は、既に encoded されている CJK Unified Ideogr
 | 2026-10-11/12 | IRG | [IRG N2984](../documents/irg-n2984.md), [IRG N2987](../documents/irg-n2987.md) | N2929R の glyph normalization への feedback と回答。U+217B2 / U+28545 の修正意向を示した。 |
 | 2026-10-12 | IRG / UTC | [IRG N2929R2](../documents/irg-n2929r2.md)、[IRG N2961R3](../documents/utc-l2-26-147.md) | 提案総数を維持する改訂版を登録。 |
 | 2026-10-12 | TCA / IRG | [source replacement](../events/irg-67-tca-u2403d-source-replacement.md) | No.420 の変更記録は canonical event を参照。 |
+| 2026-11-10 | UTC / IRG | [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) | 66文字の U-source horizontal extension を提出。 |
 
 ## 主な論点
 
@@ -85,6 +86,8 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 
 ### U-source horizontal extension
 
+2026-11-10の提出案は [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md)。対象文字・添付data・UCV \#277 の論点は同文書の要約を参照する。
+
 [IRG N2961R3 / L2/26-147R3](../documents/utc-l2-26-147.md) は、UTC が URO、Extensions A through C、Extensions E through J にまたがる74 CJK Unified Ideographs へ `kIRG_USource` property values と U-source representative glyphs を追加する改訂提案である。source-specific notes では UCV number や ad hoc unification への参照が示されており、horizontal extension と [IRG Indexing Rules](irg-indexing-rules.md) が接続している。
 
 [IRG N2369R](../documents/irg-n2369r.md) / `WG2 N5085` は、2019 年の U-source horizontal extension precedent である。[L2/24-012](../documents/utc-l2-24-012.md) の U+3150D / UTC-00420 追加は小規模な同型作業で、UAX \#45 にある encoded ideographs へ U-source identifiers を付ける点で、2026 年の `IRG N2961` と同じ type の作業として読める。
@@ -108,6 +111,8 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 [CJK & Unihan 勧告](../documents/utc-l2-26-238.md) §13〜16 は IRG \#67 の G 9,178 / T 700 / UK 2 / U 74文字の horizontal extensions を Unicode 19.0向けに受け入れる案。IRG段階の勧告を、UTC採択・正式データ反映と読み替えない。
 
 ## 関連文書
+
+- [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) - 2026年11月の66文字案。
 
 - [IRG N2972R](../documents/irg-n2972r.md) - TCA が Extension B の700字に対する T-source horizontal extension proposal を改訂する。
 
@@ -158,6 +163,8 @@ U+2EA07 の問題は [IRG N2983](../documents/irg-n2983.md) に分けられ、so
 - [UTC](../people/utc.md)
 
 ## 出典
+
+- `utc-l2-26-274` / `irg-n3001` - <https://www.unicode.org/L2/L2026/26274-irgn3001-unicodehorizontalextension.pdf> / <https://www.unicode.org/irg/docs/n3001-UnicodeHorizontalExtension.pdf>（両registry date: 2026-11-10）
 
 - `irg-n2929r` - <https://www.unicode.org/irg/docs/n2929r-ChinaHorizontalExtension.pdf>
 - `irg-n2936` - <https://www.unicode.org/irg/docs/n2936-ChinaActivityReport.pdf>

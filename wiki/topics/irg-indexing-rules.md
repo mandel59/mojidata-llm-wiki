@@ -4,7 +4,7 @@ title: IRG Indexing Rules
 description: UCV / NUCV、FS / SC、radical assignment rules の IRG 運用論点。
 slug: irg-indexing-rules
 bodies: [IRG]
-documents: ["irg-n1105", "irg-n2171", "irg-n2221", "irg-n2826", "irg-n2850r", "irg-n2862r2", "irg-n2909", "irg-n2915", "irg-n2925", "irg-n2931", "irg-n2935", "irg-n2951", "irg-n2952", "utc-l2-26-134", "utc-l2-26-148", "irg-n100", "irg-n131", "irg-n2946"]
+documents: [irg-n1105, irg-n2171, irg-n2221, irg-n2826, irg-n2850r, irg-n2862r2, irg-n2909, irg-n2915, irg-n2925, irg-n2931, irg-n2935, irg-n2951, irg-n2952, utc-l2-26-134, utc-l2-26-148, irg-n100, irg-n131, irg-n2946, utc-l2-26-274]
 topics: ["unihan-data-format-and-property-syntax", "ucv-nucv-lists", "cjk-hybrid-characters", "cjk-multi-syllabic-and-abbreviation-characters", "early-irg-history"]
 status: active
 tags: [irg, ucv, nucv, radicals, stroke-count]
@@ -64,7 +64,13 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 
 [1994年の Annex 送付](../events/irg-3-unification-annex-forwarding.md)は、規則の適用対象を既存1993年版に限定した。[N100](../documents/irg-n100.md)の source separation・abstract / actual shape と現代の review rules の比較は [初期 IRG 議論](early-irg-history.md)へ。M67.04 は [N2952](../documents/irg-n2952.md)を今後の提出用 radical rules として受理した（[N2946](../documents/irg-n2946.md)）。
 
+## 2026年11月の UCV 適用提案
+
+[L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) の source-specific notes は UCV \#277 の適用拡張を求める。対象と先例の対応は文書要約にまとめる。
+
 ## 関連文書
+
+- [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) - U-source horizontal extension と unification の根拠。
 
 - [IRG Meeting \#67](../meetings/irg/irg-meeting-67.md)
 - [IRG N1105](../documents/irg-n1105.md)
@@ -99,6 +105,8 @@ UCV / NUCV は unification / disunification boundary に近いため、詳細は
 - [IRG](../people/irg.md)
 
 ## 出典
+
+- `utc-l2-26-274` / `irg-n3001` - <https://www.unicode.org/L2/L2026/26274-irgn3001-unicodehorizontalextension.pdf> / <https://www.unicode.org/irg/docs/n3001-UnicodeHorizontalExtension.pdf>（両registry date: 2026-11-10）
 
 - `irg-n2862r2` - <https://www.unicode.org/irg/docs/n2862r2-SCFS.pdf>
 - `irg-n1105` - <https://www.unicode.org/irg/docs/n1105-IRGN954AR-Amendment.pdf>

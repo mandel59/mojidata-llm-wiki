@@ -8,7 +8,7 @@ bodies: [IRG]
 meeting: 67
 date: "2026-10-12/16"
 location: Tokyo, Japan
-documents: ["irg-n2914r", "irg-n2928", "irg-n2929r", "irg-n2934r", "irg-n2935", "irg-n2936", "irg-n2938", "irg-n2939", "irg-n2940", "irg-n2942", "irg-n2944", "irg-n2945", "irg-n2946", "irg-n2952", "irg-n2953", "irg-n2960", "irg-n2962r2", "irg-n2963r3", "irg-n2967", "irg-n2968", "irg-n2969", "irg-n2970", "irg-n2971", "irg-n2972", "irg-n2973", "irg-n2974", "irg-n2975", "utc-l2-26-147", "utc-l2-26-215", "utc-l2-26-216", "irg-n2939r", "irg-n2941", "irg-n2981", "irg-n2982", "irg-n2943", "irg-n2976", "irg-n2977", "irg-n2983", "irg-n2984", "irg-n2985", "irg-n2986", "irg-n2987", "utc-l2-26-218", "irg-n2929r2", "irg-n2961r3", "irg-n2969r", "irg-n2972r", "irg-n2988", "irg-n2989"]
+documents: [irg-n2914r, irg-n2928, irg-n2929r, irg-n2934r, irg-n2935, irg-n2936, irg-n2938, irg-n2939, irg-n2940, irg-n2942, irg-n2944, irg-n2945, irg-n2946, irg-n2952, irg-n2953, irg-n2960, irg-n2962r2, irg-n2963r3, irg-n2967, irg-n2968, irg-n2969, irg-n2970, irg-n2971, irg-n2972, irg-n2973, irg-n2974, irg-n2975, utc-l2-26-147, utc-l2-26-215, utc-l2-26-216, irg-n2939r, irg-n2941, irg-n2981, irg-n2982, irg-n2943, irg-n2976, irg-n2977, irg-n2983, irg-n2984, irg-n2985, irg-n2986, irg-n2987, utc-l2-26-218, irg-n2929r2, irg-n2961r3, irg-n2969r, irg-n2972r, irg-n2988, irg-n2989, wg2-n5370]
 topics: ["irg-working-set-2024", "cjk-horizontal-extensions", "uax45-u-source-ideographs", "irg-source-data-and-representative-glyphs", "g-source-glyph-and-reference-issues", "t-source-representative-glyph-issues", "v-source-representative-glyph-issues", "kirg-sgsource", "cjkv-components", "irg-indexing-rules", "ucv-nucv-lists", "irg-working-process-and-liaison", "irg-disunified-ideographs", "small-seal-script", "uax60-large-east-asian-scripts", "early-irg-history"]
 tags: [meeting, irg, agenda, ws2024]
 timestamp: 2026-07-06T21:31:45+09:00
@@ -52,7 +52,7 @@ UK の [IRG N2943](../../documents/irg-n2943.md) は次期 Working Set の候補
 
 ## 決定事項
 
-2026-10-15 の [IRG N2946](../../documents/irg-n2946.md)が正式 recommendation / action items の一次ソースである。
+2026-10-15 の [IRG N2946 / WG2 N5370](../../documents/irg-n2946.md)が正式 recommendation / action items の一次ソースである。WG2 Registry の会合番号表記とPDF表紙の不一致は同文書の要約で確認できる。
 
 - [Horizontal extension disposition](../../events/irg-67-horizontal-extension-dispositions.md) - 4 body の受入勧告と Vietnam の継続 review。
 - [WS2024 Version 6.0 schedule](../../events/irg-67-ws2024-version6-review-schedule.md) - 生成・ORT review と次期 Working Set 準備。
@@ -88,6 +88,8 @@ UK の [IRG N2943](../../documents/irg-n2943.md) は次期 Working Set の候補
 - `IRG N2946` - Meeting \#67 Recommendations and Action Items 用の row。2026-10-15 公開の正式勧告として読む。
 
 ## 出典
+
+- `wg2-n5370` - <https://www.unicode.org/wg2/docs/n5370-IRG67Recommendations.pdf>（registry date: 2026-10-15）
 
 - `irg-n2914r` - <https://www.unicode.org/irg/docs/n2914r-LogisticsIRG67.pdf>
 - `irg-n2935` - <https://www.unicode.org/irg/docs/n2935-ScheduleAgenda.html>

@@ -4,7 +4,7 @@ title: UTC
 description: Unicode Standard の技術的な検討と承認を担う Unicode Technical Committee。
 slug: utc
 bodies: [UTC, IRG, WG2]
-documents: [utc-l2-07-159, utc-l2-08-284, irg-n1534, irg-n1535, irg-n2369r, irg-n2439, irg-n2935, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-25-199, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, pri-547, pri-548, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148]
+documents: [utc-l2-07-159, utc-l2-08-284, irg-n1534, irg-n1535, irg-n2369r, irg-n2439, irg-n2935, utc-l2-22-279, utc-l2-25-049, utc-l2-25-111, utc-l2-25-199, utc-l2-26-082, utc-l2-26-086, utc-l2-26-092, utc-l2-26-093, utc-l2-26-099, utc-l2-26-102, pri-547, pri-548, utc-l2-26-105, utc-l2-26-112, utc-l2-26-127, utc-l2-26-133, utc-l2-26-134, utc-l2-26-136, utc-l2-26-147, utc-l2-26-148, utc-l2-26-274]
 topics: [unicode-18-change-sources, cjk-horizontal-extensions, irg-source-data-and-representative-glyphs, unihan-database-maintenance, unihan-data-format-and-property-syntax, uax45-u-source-ideographs, cjk-security-confusables, ideographic-punctuation-proposals, small-seal-script]
 tags: [organization, standards-body, utc]
 timestamp: 2026-07-08T00:00:00+09:00
@@ -31,6 +31,8 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 | `IRG N2935` | UTC CJK & Unihan Working Group / UTC Meeting \#187 を経た source data changes が Unicode Version 18.0 Beta review に反映された status を記録。 | [IRG Source Data and Representative Glyphs](../topics/irg-source-data-and-representative-glyphs.md) |
 
 ## 関連文書
+
+- [L2/26-274 / IRG N3001](../documents/utc-l2-26-274.md) - 2026年11月提出の U-source horizontal extension。
 
 - `utc-l2-07-159` - U-source database as versioned document
 - `utc-l2-08-284` - Draft UTR \#45
@@ -73,6 +75,8 @@ UTC は、Unicode Standard の技術的な検討と承認を担う Unicode Conso
 - [Ideographic Punctuation Proposals](../topics/ideographic-punctuation-proposals.md)
 
 ## 出典
+
+- `utc-l2-26-274` / `irg-n3001` - <https://www.unicode.org/L2/L2026/26274-irgn3001-unicodehorizontalextension.pdf> / <https://www.unicode.org/irg/docs/n3001-UnicodeHorizontalExtension.pdf>（両registry date: 2026-11-10）
 
 - `utc-l2-07-159` - <https://www.unicode.org/L2/L2007/07159-u-source-db.pdf>
 - `utc-l2-08-284` - <https://www.unicode.org/L2/L2008/08284-utr45-1.pdf>

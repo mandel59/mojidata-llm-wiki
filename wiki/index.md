@@ -17,6 +17,8 @@ okf_version: "0.1"
 
 ## Current Focus
 
+- [U-source horizontal extension 66文字案](documents/utc-l2-26-274.md) - 2026-11-10提出。添付data、unification の根拠、74文字案との関係を追う。
+
 - [UTC Meeting \#189](meetings/utc/utc-meeting-189.md) - 改訂ESR / RMG、SEI report、PRI終了を反映。Unicode 19.0計画と会合の採択確認を分けて追う。
 - [UTC \#190 feedback](documents/pri-561.md) - 12月30日締切の、次回向け一般feedback受付。
 

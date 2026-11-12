@@ -8,6 +8,7 @@
 
 ### 2026
 
+- [L2/26-274](utc-l2-26-274.md) - 66 encoded CJK Unified Ideographs へ kIRG_USource values と U-source representative glyphs を追加する2026年11月の提案。
 - [L2/26-241](utc-l2-26-241.md) - 改訂RMG reportが Unicode 19.0 の2,075文字の具体案と2027年の工程を示す。本文・脚注には旧集計が残る。
 - [L2/26-237](utc-l2-26-237.md) - 改訂ESR reportが Unicode 19.0 向けに新文字4件と EYES LOOKING RIGHT の RGI ZWJ sequence を勧告する。
 - [L2/26-145](utc-l2-26-145.md) - Codical Maya Hieroglyphs を481文字と32 format controls、計513文字で符号化する Version 1.81 proposal。
